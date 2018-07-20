@@ -1,0 +1,409 @@
+<Type Name="LinkFormat" FullName="Microsoft.Office.Interop.Word.LinkFormat">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f8294bafcd1f6920b3ef713f96dedbabca82b54c" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20669976" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface LinkFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LinkFormat" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LinkFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Interface LinkFormat" />
+  <TypeSignature Language="C++ CLI" Value="public interface class LinkFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020931-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt die Verknüpfungseigenschaften für ein OLE-Objekt oder eine OLE-Grafik dar.</summary>
+    <remarks>
+      <para>Mit der <b>LinkFormat</b> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Word.Shape" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, oder <see cref="T:Microsoft.Office.Interop.Word.Field" /> Objekts, um das <b>LinkFormat</b> -Objekt zurückzugeben.</para>
+      <para>Nicht alle Arten von Formen, Inlineformen und Felder können mit einer Quelle verknüpft werden. Verwenden Sie die <b>Type</b> -Eigenschaft eines <b>Shape-</b> oder <b>InlineShape</b> -Objekts, um festzustellen, ob ein bestimmtes Shape verknüpft werden kann. Die <b>Type</b> -Eigenschaft für ein <b>Field</b> -Objekt gibt den Typ des Felds zurück.</para>
+      <para>Können sowohl die <see cref="M:Microsoft.Office.Interop.Word.LinkFormat.Update" /> Methode und die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" /> Eigenschaft Verknüpfungen zu aktualisieren. Verwenden Sie zum Zurückgeben oder Festlegen des vollständigen Pfads für einen bestimmten Link-Quelldatei, die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> -Eigenschaft.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoUpdate">
+      <MemberSignature Language="C#" Value="public bool AutoUpdate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoUpdate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoUpdate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoUpdate { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn die angegebene Verknüpfung wird aktualisiert automatisch, wenn die Container-Datei geöffnet wird oder wenn die Quelldatei geändert wird.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BreakLink">
+      <MemberSignature Language="C#" Value="public void BreakLink ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BreakLink() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LinkFormat.BreakLink" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BreakLink ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BreakLink();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hebt die Verknüpfung zwischen der Quelldatei und dem angegebenen OLE-Objekt, dem angegebenen Bild bzw. dem verknüpften Feld auf.</summary>
+        <remarks>
+          <para>Nachdem Sie diese Methode verwenden, wird nicht das Ergebnis der Verknüpfung automatisch aktualisiert werden, wenn die Quelldatei geändert wird.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn ein <see cref="T:Microsoft.Office.Interop.Word.Field" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt ist gesperrt, um die automatische Aktualisierung zu verhindern.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn Sie diese Eigenschaft mit einem <b>Shape</b> -Objekt verwenden, eine beweglichen verknüpfte Grafik ist (ein Bild hinzugefügt, mit der <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Objekt), tritt ein Fehler auf.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SavePictureWithDocument">
+      <MemberSignature Language="C#" Value="public bool SavePictureWithDocument { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SavePictureWithDocument" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SavePictureWithDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Property SavePictureWithDocument As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SavePictureWithDocument { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn das angegebene Bild mit dem Dokument gespeichert wird.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft funktioniert nur bei Formen und Inlineformen, die verknüpfte Bilder sind.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceFullName">
+      <MemberSignature Language="C#" Value="public string SourceFullName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceFullName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceFullName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceFullName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt, oder legt den Pfad und Namen der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder dar.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die Verwendung dieser Eigenschaft entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, und <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> Eigenschaften.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Namen der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder Feld zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft gibt nicht den Pfad für die Quelldatei zurück.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourcePath">
+      <MemberSignature Language="C#" Value="public string SourcePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourcePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourcePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourcePath { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Pfad der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder dar.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der Pfad enthalten kein nachfolgendes Zeichen (z. B. "C:\MSOffice"). Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> Eigenschaft, um den Dateinamen ohne Pfad und mit zurückzugeben der <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> Eigenschaft zusammen mit der Pfad und Dateiname zurückgeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLinkType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLinkType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdLinkType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLinkType Type { Microsoft::Office::Interop::Word::WdLinkType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLinkType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Linktyp an.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <b>Type</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLinkType" /> Konstanten.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LinkFormat.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aktualisiert die angegebene Verknüpfung.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

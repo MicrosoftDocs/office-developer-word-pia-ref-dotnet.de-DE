@@ -1,0 +1,893 @@
+<Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="534019c643dbd50c521e73ede295686eb260edbc" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20669424" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Template" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Template" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Template" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002096A-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt eine Dokumentvorlage dar.</summary>
+    <remarks>
+      <para>
+        <b>Template</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Templates" /> Auflistung. Die <b>Templates</b> -Auflistung enthält alle verfügbaren <b>Template</b> -Objekte.</para> Verwenden von <b>Vorlagen</b><para>(<paramref name="index" />), wobei <paramref name="index" /> ist der Vorlagenname oder die Indexzahl darstellt, um ein einzelnes <b>Template</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Vorlage in der <b>Templates</b> -Auflistung.</para><para>Der <b>Add</b> -Methode ist nicht verfügbar für der <b>Templates</b> -Auflistung. Sie können stattdessen eine Vorlage auf der <b>Templates</b> -Auflistung hinzufügen, indem jeder der folgenden Schritte:</para><list type="bullet"><item><para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.Documents" /> -Auflistung, um ein Dokument öffnen, basierend auf einer Vorlage oder eine Vorlage</para></item><item><para>mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />-Methode mit der <b>Documents</b> -Auflistung zum Öffnen eines neuen Dokuments basierend auf einer Vorlage</para></item><item><para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> -Auflistung, um eine globale Vorlage laden</para></item><item><para>verwenden die <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> -Eigenschaft mit der <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt, das eine Vorlage mit einem Dokument verbinden</para></item></list><para>verwenden die <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> Eigenschaft, um ein Template-Objekt zurückzugeben, das auf der Vorlage Normal.dot verweist. Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> Eigenschaft für das Zurückgeben der Vorlage mit dem angegebenen Dokument verbundenen.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> -Eigenschaft zum Zurückgeben oder Festlegen des Orts für Benutzer oder Arbeitsgruppen-Vorlagen (d. h., in den Ordner, in dem diese Vorlagen gespeichert werden sollen).</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoTextEntries">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.AutoTextEntries AutoTextEntries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.AutoTextEntries AutoTextEntries" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoTextEntries As AutoTextEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::AutoTextEntries ^ AutoTextEntries { Microsoft::Office::Interop::Word::AutoTextEntries ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> -Auflistung, die alle AutoText-Einträge in der angegebenen Dokumentvorlage darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildingBlockEntries">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.BuildingBlockEntries BuildingBlockEntries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.BuildingBlockEntries BuildingBlockEntries" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuildingBlockEntries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildingBlockEntries As BuildingBlockEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockEntries ^ BuildingBlockEntries { Microsoft::Office::Interop::Word::BuildingBlockEntries ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> -Auflistung, die die Auflistung von Bausteineinträgen in einer Vorlage darstellt. Schreibgeschützt.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildingBlockTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.BuildingBlockTypes BuildingBlockTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.BuildingBlockTypes BuildingBlockTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuildingBlockTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildingBlockTypes As BuildingBlockTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockTypes ^ BuildingBlockTypes { Microsoft::Office::Interop::Word::BuildingBlockTypes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> -Auflistung, die die Auflistung von Bausteintypen darstellt, die in einer Vorlage enthalten sind. Schreibgeschützt.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltInDocumentProperties">
+      <MemberSignature Language="C#" Value="public object BuiltInDocumentProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object BuiltInDocumentProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltInDocumentProperties As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BuiltInDocumentProperties { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.DocumentProperties" /> -Auflistung, die alle integrierten Dokumenteigenschaften für das angegebene Dokument darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Core.DocumentProperty" /> verwenden Sie <b>BuiltinDocumentProperties</b>-Objekt, das eine bestimmte integrierte Dokumenteigenschaft darstellt (<paramref name="index" />), wobei <paramref name="index" /> ist ein <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> Konstante.</para>
+          <para>Wenn Microsoft Word nicht für eine der integrierten Dokumenteigenschaften kein Wert definieren beim Lesen der <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> -Eigenschaft für diese Dokumenteigenschaft einen Fehler generiert.</para>
+          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> -Eigenschaft auf die Auflistung benutzerdefinierter Dokumenteigenschaften zurückzugeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomDocumentProperties">
+      <MemberSignature Language="C#" Value="public object CustomDocumentProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CustomDocumentProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDocumentProperties As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CustomDocumentProperties { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.DocumentProperties" /> -Auflistung, die alle benutzerdefinierten Dokumenteigenschaften für das angegebene Dokument darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> -Eigenschaft auf die Auflistung integrierter Dokumenteigenschaften zurückzugeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FarEastLineBreakLanguage">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID FarEastLineBreakLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID FarEastLineBreakLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FarEastLineBreakLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakLanguage As WdFarEastLineBreakLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID FarEastLineBreakLanguage { Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID get(); void set(Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die ostasiatische Sprache für den Zeilenumbruch von Text im angegebenen Dokument oder Vorlage verwenden.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />kann eine der folgenden <b>WdFarEastLineBreakLanguageID</b> -Konstanten sein:</para>
+          <para>
+            <b>WdLineBreakJapanese</b>
+          </para>
+          <para>
+            <b>WdLineBreakKorean</b>
+          </para>
+          <para>
+            <b>WdLineBreakSimplifiedChinese</b>
+          </para>
+          <para>
+            <b>WdLineBreakTraditionalChinese</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FarEastLineBreakLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel FarEastLineBreakLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel FarEastLineBreakLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FarEastLineBreakLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakLevel As WdFarEastLineBreakLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel FarEastLineBreakLevel { Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel get(); void set(Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurück oder legt die Steuerungsebene des Zeilenumbruchs für das angegebene Dokument.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" /> kann eine der folgenden <b>WdFarEastLineBreakLevel</b> -Konstanten sein:</para>
+          <para>
+            <b>wdFarEastLineBreakLevelCustom</b>
+          </para>
+          <para>
+            <b>wdFarEastLineBreakLevelNormal</b>
+          </para>
+          <para>
+            <b>wdFarEastLineBreakLevelStrict</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullName">
+      <MemberSignature Language="C#" Value="public string FullName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Namen einer Vorlage, einschließlich der Laufwerk oder im Web an.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die Verwendung dieser Eigenschaft entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, und <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> Eigenschaften in Folge.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JustificationMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdJustificationMode JustificationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdJustificationMode JustificationMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.JustificationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property JustificationMode As WdJustificationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdJustificationMode JustificationMode { Microsoft::Office::Interop::Word::WdJustificationMode get(); void set(Microsoft::Office::Interop::Word::WdJustificationMode value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdJustificationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die zeichenabstandausrichtung für die angegebene Vorlage.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />kann eine der folgenden <b>WdJustificationMode</b> -Konstanten sein:</para>
+          <para>
+            <b>WdJustificationModeCompress</b>
+          </para>
+          <para>
+            <b>WdJustificationModeCompressKana</b>
+          </para>
+          <para>
+            <b>WdJustificationModeExpand</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KerningByAlgorithm">
+      <MemberSignature Language="C#" Value="public bool KerningByAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KerningByAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.KerningByAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property KerningByAlgorithm As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KerningByAlgorithm { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn Microsoft Word halbbreite lateinische Zeichen und Interpunktionszeichen im angegebenen Dokument unterschnitten.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLanguageID LanguageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLanguageID LanguageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.LanguageID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Sprache für das angegebene Objekt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</para>
+          <para>Einige der <b>WdLanguageID</b> -Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageIDFarEast">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLanguageID LanguageIDFarEast { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLanguageID LanguageIDFarEast" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.LanguageIDFarEast" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageIDFarEast As WdLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDFarEast { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen eine ostasiatische Sprache für das angegebene Objekt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</para>
+          <para>Dies ist die empfohlene Option zum Zurückgeben oder Festlegen der Sprache des ostasiatischen Text in einem Dokument in eine ostasiatische Version von Microsoft Word erstellt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListTemplates">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ListTemplates ListTemplates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ListTemplates ListTemplates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.ListTemplates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplates As ListTemplates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplates ^ ListTemplates { Microsoft::Office::Interop::Word::ListTemplates ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> -Auflistung, die alle in die Liste formatiert, für die angegebene Vorlage.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Name" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoLineBreakAfter">
+      <MemberSignature Language="C#" Value="public string NoLineBreakAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NoLineBreakAfter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoLineBreakAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoLineBreakAfter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NoLineBreakAfter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurück oder legt den Kinsoku-Zeichen, nach denen kein von Microsoft Word Zeilenumbruch, eine Linie.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoLineBreakBefore">
+      <MemberSignature Language="C#" Value="public string NoLineBreakBefore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NoLineBreakBefore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoLineBreakBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoLineBreakBefore As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NoLineBreakBefore { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurück oder legt den Kinsoku-Zeichen, vor denen kein von Microsoft Word Zeilenumbruch, eine Linie.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoProofing">
+      <MemberSignature Language="C#" Value="public int NoProofing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NoProofing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoProofing" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoProofing As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoProofing { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn der Rechtschreib- und grammatikprüfung ignoriert auf dieser Vorlage basierende Dokumente.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAsDocument">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document OpenAsDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document OpenAsDocument() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenAsDocument () As Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Document ^ OpenAsDocument();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Öffnet die angegebene Vorlage als Dokument und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Öffnen eine Vorlage als Dokument ermöglicht dem Benutzer den Inhalt der Vorlage bearbeiten. Dies kann erforderlich sein, wenn eine Eigenschaft oder Methode (die <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> z. B.-Eigenschaft) ist nicht verfügbar, aus der <see cref="T:Microsoft.Office.Interop.Word.Template" /> Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Nicht den Pfad ein nachfolgendes Zeichen enthalten, z. B. "C:\MSOffice" oder "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> -Eigenschaft auf den Dateinamen ohne Pfad und mit Zurückgeben der <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> -Eigenschaft auf den Dateinamen und den Pfad zusammen zurück.</para>
+          <para>
+            <b>Hinweis</b> Sie können <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl sie Schrägstriche (/) und der <b>PathSeparator</b> -Eigenschaft enthalten wird standardmäßig auf einen umgekehrten Schrägstrich (\).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Template.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Speichert das angegebene Dokument oder einer Vorlage.</summary>
+        <remarks>
+          <para>Wenn das Dokument oder die Vorlage noch nicht gespeichert wurde, fordert das Dialogfeld Speichern unter den Benutzer für einen Dateinamen ein.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Saved">
+      <MemberSignature Language="C#" Value="public bool Saved { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Saved" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Saved" />
+      <MemberSignature Language="VB.NET" Value="Public Property Saved As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Saved { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn das angegebene Dokument oder die Vorlage seit dem letzten Speichern geändert hat. <b>False,</b> Wenn Microsoft Word wird der Benutzer aufgefordert, die Änderungen zu speichern, wenn das Dokument geschlossen wird.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdTemplateType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdTemplateType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdTemplateType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTemplateType Type { Microsoft::Office::Interop::Word::WdTemplateType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdTemplateType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Vorlagentyp.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />kann eine der folgenden <b>WdTemplateType</b> -Konstanten sein:</para>
+          <para>
+            <b>WdAttachedTemplate</b>
+          </para>
+          <para>
+            <b>WdGlobalTemplate</b>
+          </para>
+          <para>
+            <b>WdNormalTemplate</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VBProject">
+      <MemberSignature Language="C#" Value="public Microsoft.Vbe.Interop.VBProject VBProject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Vbe.Interop.VBProject VBProject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.VBProject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VBProject As VBProject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vbe::Interop::VBProject ^ VBProject { Microsoft::Vbe::Interop::VBProject ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(99)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(99)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Vbe.Interop.VBProject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das <b>VBProject</b>-Objekt für die angegebene Vorlage zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Verwenden Sie diese Eigenschaft für den Zugriff auf Codemodule und Benutzerformulare.</para>
+          <para>, Um das <b>VBProject</b> -Objekt im Objektbrowser anzuzeigen, Sie müssen auswählen das Microsoft Visual Basic für Applikationen-Erweiterung Kontrollkästchen im Dialogfeld Verweise (Menü Extras) im Visual Basic-Editor.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

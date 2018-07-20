@@ -1,0 +1,417 @@
+<Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a21d5c2632a3938485eff78ac0f2f1d8a922befc" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20669304" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Subdocuments : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020988-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> -Objekten, die die Filialdokumente in einem Bereich oder einem Dokument darstellen.</summary>
+    <remarks>
+      <para>Verwenden Sie die <b>Subdocuments</b> -Eigenschaft des eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekts, um die <b>Subdocuments</b> -Auflistung zurückzugeben.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> oder <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> -Methode, um ein Filialdokument zu einem Dokument hinzugefügt.</para>
+      <para>Verwendung <b>Filialdokumente</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Subdocument</b> -Objekt zurückzugeben.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddFromFile">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Subdocument AddFromFile (ref object Name, ref object ConfirmConversions, ref object ReadOnly, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Subdocument AddFromFile([in]object&amp; Name, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFromFile (ByRef Name As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object) As Subdocument" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Subdocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Name">
+          <b>Objekt</b>erforderlich. Der Dateiname des Filialdokuments, das in das Zentraldokument eingefügt werden soll.</param>
+        <param name="ConfirmConversions">Optionales- <b>Objekt</b>. <b>True,</b> um die dateikonvertierung im Dialogfeld Datei konvertieren zu bestätigen, wenn die Datei nicht im Microsoft Word-Format vorliegt.</param>
+        <param name="ReadOnly">Optionales- <b>Objekt</b>. <b>True</b>, um das Filialdokument als schreibgeschütztes Dokument einzufügen.</param>
+        <param name="PasswordDocument">Optionales- <b>Objekt</b>. Das Kennwort zum Öffnen des Filialdokuments, sofern es mit Kennwortschutz versehen ist.</param>
+        <param name="PasswordTemplate">Optionales- <b>Objekt</b>. Das Kennwort zum Öffnen einer mit dem Filialdokument verbundenen Vorlage (sofern diese mit Kennwortschutz versehen ist).</param>
+        <param name="Revert">Optionales- <b>Objekt</b>. Steuert, was geschieht, wenn <paramref name="Name" /> ist der Dateiname eines geöffneten Dokuments. <b>True</b> , wenn die gespeicherte Version des Filialdokuments einzufügen. <b>False</b> , wenn die geöffnete Version des Filialdokuments, legen Sie die deshalb nicht gespeicherte Änderungen enthalten kann.</param>
+        <param name="WritePasswordDocument">Optionales- <b>Objekt</b>. Das Kennwort zum Speichern von Änderungen in einem Dokument, wenn ist schreibgeschützt.</param>
+        <param name="WritePasswordTemplate">Optionales- <b>Objekt</b>. Das Kennwort zum Speichern von Änderungen an der Vorlage, die mit dem Filialdokument verbundenen Vorlage ist schreibgeschützt.</param>
+        <summary>Fügt das angegebene Filialdokument in das Zentraldokument am Anfang der Auswahl und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> Objekt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>Hinweis</b>  Wenn die aktive Ansicht nicht Gliederungsansicht oder die Zentraldokument-Ansicht ist, tritt ein Fehler auf.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFromRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Subdocument AddFromRange (Microsoft.Office.Interop.Word.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Subdocument AddFromRange([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Subdocument ^ AddFromRange(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Subdocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Das <b>Range</b> -Objekt verwendet, um ein oder mehrere Filialdokumente zu erstellen.</param>
+        <summary>Erstellt mindestens ein Filialdokument aus dem Text im angegebenen Bereich und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> Objekt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>Hinweis</b>  Der Bereich muss mit einem integrierten Überschriftenebene (z. B. Überschrift 1) beginnen. Filialdokumente werden an jedem Absatz mit demselben Überschriftsformat am Anfang des Bereichs erstellt. Filialdokumentdateien gespeichert werden, wenn das Zentraldokument gespeichert wird und automatisch mit Text aus der ersten Zeile in der Datei benannt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löscht das angegebene Objekt.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expanded">
+      <MemberSignature Language="C#" Value="public bool Expanded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Expanded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Expanded" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expanded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Expanded { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn die Filialdokumente im angegebenen Dokument erweitert werden.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Subdocument this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Subdocument Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Subdocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Subdocument ^ default[int] { Microsoft::Office::Interop::Word::Subdocument ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Subdocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public void Merge (ref object FirstSubdocument, ref object LastSubdocument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Merge([in]object&amp; FirstSubdocument, [in]object&amp; LastSubdocument) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Merge(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Merge (Optional ByRef FirstSubdocument As Object, Optional ByRef LastSubdocument As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FirstSubdocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LastSubdocument" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FirstSubdocument">Optionales- <b>Objekt</b>. Der Pfad- und Dateiname des Originaldokuments, in dem Überarbeitungen zusammengeführt werden sollen.</param>
+        <param name="LastSubdocument">Optionales- <b>Objekt</b>. Das letzte Filialdokument in einem Bereich von Filialdokumenten, die zusammengeführt werden sollen.</param>
+        <summary>Verbindet die angegebenen Filialdokumente eines Zentraldokuments zu einem einzigen Filialdokument.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wählt das angegebene Objekt aus.</summary>
+        <remarks>
+          <para>
+            <b>Hinweis</b>  Verwenden Sie nach Verwendung dieser Methode können Sie die <b>Selection</b> -Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,403 @@
+<Type Name="Windows" FullName="Microsoft.Office.Interop.Word.Windows">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="aa5d387f914422cf8c79854703cd4dd7eb61e181" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20669939" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Windows" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Windows : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020961-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekten, die alle verfügbaren Fenster darstellen.</summary>
+    <remarks>
+      <para>Verwenden Sie die <b>Windows</b> -Eigenschaft der <see cref="T:Microsoft.Office.Interop.Word.Application" /> oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekts, um die <b>Windows</b> -Auflistung zurückzugeben. Die <b>Windows</b> -Auflistung für das <b>Application</b> -Objekt enthält alle Fenster der Anwendung, während die <b>Windows</b> -Auflistung für das <b>Document</b> -Objekt lediglich die Fenster enthält, die das angegebene Dokument anzeigen.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> Methode oder die <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> -Methode, um die Windows-Auflistung ein neues Fenster hinzugefügt.</para>
+      <para>Mithilfe von <b>Windows</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Fenstername oder die Indexzahl darstellt, um ein einzelnes <b>Window</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer ist die Anzahl der links neben dem Namen im Menü Fenster.</para>
+      <para>Ein Doppelpunkt (:)) und eine Zahl angezeigt in der fensterbeschriftung, wenn mehrere Fenster für ein Dokument geöffnet ist.</para>
+      <para>, Wenn Sie die Ansicht zur Seitenansicht wechseln, wird ein neues Fenster erstellt. Beim Schließen der Seitenansicht wird dieses Fenster aus der <b>Windows</b> -Auflistung entfernt.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Window Add (ref object Window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Window Add([in]object&amp; Window) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Window" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Window">Optionales- <b>Objekt</b>. Das <b>Window</b> -Objekt, dem Sie für ein anderes Fenster öffnen möchten. Wenn dieses Argument ausgelassen wird, wird ein neues Fenster für das aktive Dokument geöffnet.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekt, das ein neues Fenster eines Dokuments darstellt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Wenn mehrere Fenster für das Dokument geöffnet ist, werden in die Beschriftung des Fensters ein Doppelpunkt (:)) und eine Zahl angezeigt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arrange">
+      <MemberSignature Language="C#" Value="public void Arrange (ref object ArrangeStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Arrange([in]object&amp; ArrangeStyle) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.Arrange(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Arrange (Optional ByRef ArrangeStyle As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ArrangeStyle" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ArrangeStyle">Optionales- <b>Objekt</b>. Die fensteranordnung. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> Konstanten: <b>WdIcons</b> oder <b>WdTiled</b>.</param>
+        <summary>Ordnet alle geöffneten Dokumentfenster im Anwendungsarbeitsbereich an. Da Microsoft Word eine einfache Dokumentschnittstelle (SDI, Single Document Interface) verwendet, hat diese Methode keine Auswirkungen mehr.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BreakSideBySide">
+      <MemberSignature Language="C#" Value="public bool BreakSideBySide ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BreakSideBySide() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.BreakSideBySide" />
+      <MemberSignature Language="VB.NET" Value="Public Function BreakSideBySide () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BreakSideBySide();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Side-by-Side-Modus wird beendet, wenn zwei Fenster Side-by-Side-Modus werden. Gibt einen Wert <b>vom Typ Boolean</b> , der angibt, ob die Methode erfolgreich war.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareSideBySideWith">
+      <MemberSignature Language="C#" Value="public bool CompareSideBySideWith (ref object Document);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CompareSideBySideWith([in]object&amp; Document) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.CompareSideBySideWith(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareSideBySideWith (ByRef Document As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CompareSideBySideWith(System::Object ^ % Document);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Document">
+          <b>Objekt</b>erforderlich. Das Dokument in der Side-by-Side Windows anzeigen.</param>
+        <summary>Öffnet zwei Fenster im Side-by-Side-Modus.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Sie können die <b>CompareSideBySideWith</b> -Methode mit können nicht verwenden die <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt oder die <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> Eigenschaft.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Window this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Window Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Window ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Window ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetPositionsSideBySide">
+      <MemberSignature Language="C#" Value="public void ResetPositionsSideBySide ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetPositionsSideBySide() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.ResetPositionsSideBySide" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetPositionsSideBySide ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetPositionsSideBySide();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Setzt zwei Dokumentfenster zurück, die sich im Anzeigemodus Nebeneinander vergleichen mit befinden.</summary>
+        <remarks>
+          <para>Die <b>ResetPositionsSideBySide</b> -Methode entspricht der Position des Fensters zurücksetzen Symbolleiste auf die Schaltfläche Vergleichen nebeneinander.</para>
+          <para>Verwenden die <b>ResetPositionsSideBySide</b> -Methode, um die Anzeige von zwei Dokumenten zurückzusetzen. Beispielsweise wenn ein Benutzer minimiert oder maximiert eine der zwei Dokumentfenster verglichen wird, die <b>ResetPositionsSideBySide</b> -Methode setzt die Anzeige zurück, sodass die beiden Fenster angezeigte Side-by-Side erneut sind.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncScrollingSideBySide">
+      <MemberSignature Language="C#" Value="public bool SyncScrollingSideBySide { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SyncScrollingSideBySide" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.SyncScrollingSideBySide" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncScrollingSideBySide As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SyncScrollingSideBySide { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1003)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> ermöglicht des Inhalts von Fenstern der gleichzeitigen Bildlauf. <b>False</b> deaktiviert von Fenstern der gleichzeitigen Bildlauf.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

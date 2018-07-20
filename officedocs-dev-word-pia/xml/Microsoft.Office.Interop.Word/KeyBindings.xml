@@ -1,0 +1,406 @@
+<Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="82a4dc883d5b7257bb70e07ee869a0f2dba9b2f1" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20669854" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
+  <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class KeyBindings : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020996-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekten, die benutzerdefinierten Tastenbelegungen im aktuellen Kontext darstellen. Benutzerdefinierte Tastenbelegungen werden im Dialogfeld Tastatur anpassen erstellt.</summary>
+    <remarks>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> -Eigenschaft auf die <b>KeyBindings</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode der <b>KeyBindings</b> -Auflistung ein <b>KeyBinding</b> -Objekt hinzu.</para>
+      <para>Verwendung <b>KeyBindings</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>KeyBinding</b> -Objekt zurückzugeben.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding Add (Microsoft.Office.Interop.Word.WdKeyCategory KeyCategory, string Command, int KeyCode, ref object KeyCode2, ref object CommandParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Add([in]valuetype Microsoft.Office.Interop.Word.WdKeyCategory KeyCategory, [in]string Command, [in]int32 KeyCode, [in]object&amp; KeyCode2, [in]object&amp; CommandParameter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (KeyCategory As WdKeyCategory, Command As String, KeyCode As Integer, Optional ByRef KeyCode2 As Object, Optional ByRef CommandParameter As Object) As KeyBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="KeyCategory" Type="Microsoft.Office.Interop.Word.WdKeyCategory" />
+        <Parameter Name="Command" Type="System.String" />
+        <Parameter Name="KeyCode" Type="System.Int32" />
+        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="KeyCategory">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. Die Kategorie der Tastenbelegung.</param>
+        <param name="Command">
+          <b>String</b> erforderlich. Der Befehl, der mithilfe der angegebenen Tastenkombination ausgeführt wird.</param>
+        <param name="KeyCode">
+          <b>Integer</b>erforderlich. Eine Taste, die Sie angeben, indem Sie mit einer der der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
+        <param name="KeyCode2">Optionales- <b>Objekt</b>. Eine zweite Taste, die Sie angeben, indem Sie eines der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
+        <param name="CommandParameter">Optionales- <b>Objekt</b>. Zusätzlicher Text, sofern zutreffend, erforderlich für den Befehl durch angegebenen <paramref name="Command" />. Weitere Informationen hierzu finden Sie unter "Hinweise" weiter unten.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt, das eine neue Tastenkombination für ein Makro, integrierten Befehl, Schriftart, AutoText-Eintrag, Formatvorlage oder Symbol darstellt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode zum Erstellen der <paramref name="KeyCode" /> oder <paramref name="KeyCode2" /> Argument.</para>
+          <para>In der folgenden Tabelle, die linke Spalte enthält Befehle, die ein erforderlich ist, und die rechte Spalte wird beschrieben, was Sie tun müssen, um anzugeben, <paramref name="CommandParameter" /> für jeden der folgenden Befehle. (Die entsprechende Aktion im Dialogfeld Tastatur anpassen (Menü Extras) mit der Angabe <paramref name="CommandParameter" /> entspricht dem Auswählen eines Elements im Listenfeld, das angezeigt wird, wenn Sie einen der folgenden Befehle im Feld Befehle auswählen.)</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>Borders</b>, <b>Color</b>, oder <b>Schattierung</b></description>
+              <description>eine Zahl – als Text angegebene – entsprechend der Position der Einstellung im Listenfeld, die Werte enthalten, wobei 0 (null) das erste Element ist, 1 ist das zweite Element und so weiter</description>
+            </item>
+            <item>
+              <description>
+                <b>Spalten</b>
+              </description>
+              <description>eine Zahl zwischen 1 und 45 – als Text angegebene – entsprechend der Anzahl der Spalten, die Sie anwenden möchten</description>
+            </item>
+            <item>
+              <description>
+                <b>Schmal</b>
+              </description>
+              <description>Ein Textmaß zwischen 0,1 Punkt und 12,75 Punkt in 0,05-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll) angegebenen</description>
+            </item>
+            <item>
+              <description>
+                <b>Erweitert</b>
+              </description>
+              <description>Ein Textmaß zwischen 0,1 Punkt und 12,75 Punkt, das in 0,05-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll)</description>
+            </item>
+            <item>
+              <description>
+                <b>FileOpenFile</b>
+              </description>
+              <description> Der Pfad und Dateiname der Name der Datei geöffnet werden soll. Wenn der Pfad nicht angegeben ist, wird der aktuelle Ordner verwendet.</description>
+            </item>
+            <item>
+              <description>
+                <b>Schriftgrad</b>
+              </description>
+              <description>ein positives Textmaß, angegeben in 0,5-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll)</description>
+            </item>
+            <item>
+              <description>
+                <b>Tieferstellen</b>, <b>erhöht</b></description>
+              <description>Ein Textmaß zwischen 1 Punkt und 64 Punkt, das in 0,5-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll)</description>
+            </item>
+            <item>
+              <description>
+                <b>Symbol</b>
+              </description>
+              <description>eine Zeichenfolge, die durch Verkettung <b>einer Chr()-Anweisung</b> und der Name einer Schriftart Symbol erstellt (z. B. Chr(167) &amp; "Symbol")</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAll">
+      <MemberSignature Language="C#" Value="public void ClearAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.ClearAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löscht alle benutzerdefinierten Tastenbelegungen und stellt die ursprünglichen Belegungen für Tastenkombinationen in Microsoft Word wieder her.</summary>
+        <remarks>
+          <para>Nach dem Anwenden der <b>ClearAll</b> -Methode, um die <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> -Objekts, die Tastenkombinationen in der angegebenen Vorlage oder das Dokument auf die Standardeinstellungen zurückgesetzt werden. Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> -Eigenschaft vor der Verwendung der <b>ClearAll</b> -Methode ein Dokument oder einer Vorlage Kontext an.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public object Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt, das den Speicherort der angegebenen Tastenkombination darstellt. Diese Eigenschaft kann Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Template" />, oder <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Integrierte Tastenbelegungen (beispielsweise STRG + I für <b>Kursiv</b>) zurückgeben das <b>Application</b> -Objekt als Kontext aus. Alle Tastenbelegungen, die Sie hinzufügen werden ein <b>Dokument</b> oder einer <b>Vorlage</b> -Objekt zurückgegeben, je nach Kontext der Anpassung in Kraft bei der <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt hinzugefügt wurde.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.KeyBinding Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As KeyBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::KeyBinding ^ default[int] { Microsoft::Office::Interop::Word::KeyBinding ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding Key (int KeyCode, ref object KeyCode2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Key([in]int32 KeyCode, [in]object&amp; KeyCode2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Key (KeyCode As Integer, Optional ByRef KeyCode2 As Object) As KeyBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="KeyCode" Type="System.Int32" />
+        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="KeyCode">
+          <b>Integer</b>erforderlich. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <param name="KeyCode2">Optionales- <b>Objekt</b>. Eine zweite Taste, die Sie angeben, indem Sie eines der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt, das die angegebene benutzerdefinierte Tastenkombination darstellt. Wenn diese Tastenkombination nicht vorhanden ist, gibt diese Methode <b>Nothing</b> zurück.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode zum Erstellen der <paramref name="KeyCode" /> oder <paramref name="KeyCode2" /> Argument.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

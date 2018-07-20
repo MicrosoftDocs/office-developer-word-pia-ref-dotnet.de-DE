@@ -1,0 +1,589 @@
+<Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Word.SmartTagAction">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e5c4bc9e1f8c1df339fe6ea64518ce507e0f8afe" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20669177" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagAction" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SmartTagAction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("DFB6AA6C-1068-420F-969D-01280FCC1630")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt eine einzelne Aktion für ein Smarttag dar.</summary>
+    <remarks>
+      <para>Smarttag-Aktionen sind Prozesse, die in Smarttags programmiert sind, mit die Benutzer bestimmte Funktionen im Zusammenhang mit dem Smarttag ausführen können. Beispielsweise eine Aktion für ein Smarttag auf eine Website zuzugreifen, während eine andere Aktion Kontaktinformationen in Microsoft Outlook eingefügt werden kann, während er sich noch eine andere Zuordnung und treibende erfahren Sie, wie anzeigt.</para>
+      <para>Smarttag-Aktionen beziehen sich auch für Aktionen, die in smart Documents integriert und für die Steuerelemente im Aufgabenbereich Dokumentaktionen. Angenommen, haben Sie ein Textbox-Steuerelement angezeigt wird, klicken Sie im Aufgabenbereich für ein SmartDocument, die eine Aktion ausgeführt wird, wenn ein Benutzer den Inhalt des Textfelds ändert.</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <b>SmartTagAction</b>und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich jedes Element, das eine Komponente Smarttag erkannt wird, ein <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekt. "Stadt" in der Adresse Smarttag-Komponente ist beispielsweise ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttag-Typ City verfügt über verbundene <b>SmartTagRecognizer</b> -Objekten (der Teil der Smarttag-Komponente, die Smarttags vom Typ "Stadt" in Dokumenten erkennt) und <b>SmartTagAction</b> -Objekte (der Teil der Smarttag-Komponente, die Aktionen bereitstellt im Zusammenhang mit der bestimmten Smarttag-Typ, der Nachschlagen einer erkannten Stadt in Microsoft MapPoint auf MSN). Einfach ausgedrückt, ist die Kennzeichnung, die Aktionsbehandlungsroutine bereit und beide ist der Typ des Smarttags, deren Funktionsweise auf.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" /> -Methode, um ein einzelnes <b>SmartTagAction</b> -Objekt aus Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> Auflistung.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> -Eigenschaft bestimmt den Typ des Steuerelements mit einem <b>SmartTagAction</b> -Objekt verknüpften.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveXControl">
+      <MemberSignature Language="C#" Value="public object ActiveXControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ActiveXControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.ActiveXControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveXControl As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveXControl { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1012)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1012)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <b>Objekt</b> , das ein im Aufgabenbereich Dokumentaktionen angezeigten ActiveX-Steuerelement darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckboxState">
+      <MemberSignature Language="C#" Value="public bool CheckboxState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckboxState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.CheckboxState" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckboxState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckboxState { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1007)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1007)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1007)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob ein Kontrollkästchen in einem SmartDocument aktiviert ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft gibt <b>true,</b> Wenn das Kontrollkästchen markiert ist, und <b>False</b> zurück, falls es deaktiviert ist.</para>
+          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SmartTagAction.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Führt die angegebene Smarttag-Aktion.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandDocumentFragment">
+      <MemberSignature Language="C#" Value="public bool ExpandDocumentFragment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExpandDocumentFragment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.ExpandDocumentFragment" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpandDocumentFragment As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExpandDocumentFragment { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1011)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1011)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1011)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob das angegebene Dokumentfragment-Steuerelement erweitert oder reduziert im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft gibt <b>true,</b> um anzugeben, dass das Steuerelement erweitert wird, und <b>False,</b> um anzugeben, dass das Steuerelement reduziert ist.</para>
+          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandHelp">
+      <MemberSignature Language="C#" Value="public bool ExpandHelp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExpandHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.ExpandHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpandHelp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExpandHelp { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1006)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1006)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1006)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob das angegebene SmartDocument-Hilfetext-Steuerelement erweitert oder reduziert im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft gibt <b>True</b> an, dass das Steuerelement ist erweitert, und <b>False</b> an, dass das Steuerelement wird reduziert.</para>
+          <para>Weitere Informationen zu smart Documents finden Sie in der Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListSelection">
+      <MemberSignature Language="C#" Value="public int ListSelection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ListSelection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.ListSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListSelection As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListSelection { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1009)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1009)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1009)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die Indexnummer des ausgewählten Elements in einem SmartDocument-Listenfeldsteuerelement repräsentiert.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.Name" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Namen des angegebenen Objekts zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PresentInPane">
+      <MemberSignature Language="C#" Value="public bool PresentInPane { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PresentInPane" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.PresentInPane" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresentInPane As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PresentInPane { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1005)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1005)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert <b>vom Typ Boolean</b> , der angibt, ob ein SmartDocument-Steuerelement momentan im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadioGroupSelection">
+      <MemberSignature Language="C#" Value="public int RadioGroupSelection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RadioGroupSelection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.RadioGroupSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property RadioGroupSelection As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RadioGroupSelection { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1010)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1010)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1010)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die Indexnummer des ausgewählten Elements in einer Gruppe von Optionsfeldsteuerelementen in einem smart Document darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextboxText">
+      <MemberSignature Language="C#" Value="public string TextboxText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextboxText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.TextboxText" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextboxText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextboxText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1008)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1008)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1008)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen einer <b>Zeichenfolge</b> , die den Text in einem SmartDocument Textbox-Steuerelement darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdSmartTagControlType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdSmartTagControlType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdSmartTagControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdSmartTagControlType Type { Microsoft::Office::Interop::Word::WdSmartTagControlType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1004)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1004)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdSmartTagControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> , die den Typ des im Aufgabenbereich Dokumentaktionen angezeigten SmartDocument-Steuerelement darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> kann eine der folgenden Konstanten sein:</para>
+          <para>
+            <b>wdControlActiveX</b>
+          </para>
+          <para>
+            <b>wdControlButton</b>
+          </para>
+          <para>
+            <b>wdControlCheckbox</b>
+          </para>
+          <para>
+            <b>wdControlCombo</b>
+          </para>
+          <para>
+            <b>wdControlDocumentFragment</b>
+          </para>
+          <para>
+            <b>wdControlDocumentFragmentURL</b>
+          </para>
+          <para>
+            <b>wdControlHelp</b>
+          </para>
+          <para>
+            <b>wdControlHelpURL</b>
+          </para>
+          <para>
+            <b>wdControlImage</b>
+          </para>
+          <para>
+            <b>wdControlLabel</b>
+          </para>
+          <para>
+            <b>wdControlLink</b>
+          </para>
+          <para>
+            <b>wdControlListbox</b>
+          </para>
+          <para>
+            <b>wdControlRadioGroup</b>
+          </para>
+          <para>
+            <b>wdControlSeparator</b>
+          </para>
+          <para>
+            <b>wdControlSmartTag</b>
+          </para>
+          <para>
+            <b>wdControlTextbox</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

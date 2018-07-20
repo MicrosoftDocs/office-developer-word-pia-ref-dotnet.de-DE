@@ -1,0 +1,898 @@
+<Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="43a95d54648a4f84b9738139489698d0d40d0080" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20669202" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface TextFrame" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
+  <TypeSignature Language="C++ CLI" Value="public interface class TextFrame" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209B2-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt den Textrahmen in einem <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt. Enthält den Text im Textrahmen sowie die Eigenschaften, die die Ränder und die Ausrichtung des Textrahmens steuern.</summary>
+    <remarks>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> Eigenschaft, um das <b>TextFrame</b> -Objekt für eine Form zurückzugeben. Die <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> -Eigenschaft gibt eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Textbereich innerhalb des angegebenen Textrahmens darstellt.</para>
+      <b>Hinweis</b> einige Shapes nicht unterstützen 
+      <para>angefügt Text (Zeilen, Freihandformen, Bilder und OLE-Objekte, beispielsweise). Wenn Sie versuchen, Eigenschaften zum Steuern von Text in einem Textrahmen für diese Objekte festzulegen oder zurückzugeben, tritt ein Fehler auf.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> Eigenschaft, um zu bestimmen, ob der Textrahmen Text enthält.</para><para>Textrahmen können miteinander verknüpft werden, damit der Text aus dem Textrahmen einer Form in den Textrahmen einer anderen Form fließt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> und <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> Eigenschaften Textrahmen verknüpfen.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> zurückzugebende Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den gesamten Artikel, die darstellt zwischen fließt verknüpfte Textrahmen.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSize">
+      <MemberSignature Language="C#" Value="public int AutoSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoSize { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5009)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5009)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5009)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die angibt, ob die Größe eines Textrahmens automatisch angepasst wird.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BreakForwardLink">
+      <MemberSignature Language="C#" Value="public void BreakForwardLink ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BreakForwardLink() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.BreakForwardLink" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BreakForwardLink ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BreakForwardLink();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5004)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hebt die Textfeldverknüpfung für den angegebenen Textrahmen auf, wenn eine solche Verknüpfung vorhanden ist.</summary>
+        <remarks>
+          <para>Durch Anwenden dieser Methode mit einer Form in der Mitte eine Kette von Formen mit verknüpften Textrahmen unterbricht die Kette zwei Sätze von verknüpften Shapes. Des gesamten Texts, bleibt jedoch in der ersten Datenreihe des verknüpften Shapes.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextColumn2 Column { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextColumn2 Column" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As TextColumn2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextColumn2 ^ Column { Microsoft::Office::Core::TextColumn2 ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5015)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5015)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.Office.Core.TextColumn2" /> -Objekt, das die Spalten des angegebenen Textrahmens darstellt.</summary>
+        <value>Die <see cref="T:Microsoft.Office.Core.TextColumn2" /> -Objekt, das die Spalten des angegebenen Textrahmens darstellt.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainingRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range ContainingRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range ContainingRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingRange As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContainingRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den gesamten Artikel in einer Reihe von Shapes mit verknüpften Textrahmen darstellt, zu der der angegebene Textrahmen gehört.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteText">
+      <MemberSignature Language="C#" Value="public void DeleteText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteText() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.DeleteText" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteText ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteText();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5018)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löscht den Text aus einem Textrahmen und alle zugehörigen Texteigenschaften, einschließlich der Zeichenformatierungen.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasText">
+      <MemberSignature Language="C#" Value="public int HasText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HasText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.HasText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasText As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HasText { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5008)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5008)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn die angegebene Form mit Text verknüpft ist.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalAnchor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoHorizontalAnchor HorizontalAnchor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoHorizontalAnchor HorizontalAnchor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.HorizontalAnchor" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalAnchor As MsoHorizontalAnchor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoHorizontalAnchor HorizontalAnchor { Microsoft::Office::Core::MsoHorizontalAnchor get(); void set(Microsoft::Office::Core::MsoHorizontalAnchor value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5012)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5012)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5012)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoHorizontalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die horizontale Ausrichtung von Text in einem Textrahmen.</summary>
+        <value>Die horizontale Ausrichtung von Text in einem Textrahmen.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginBottom">
+      <MemberSignature Language="C#" Value="public float MarginBottom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MarginBottom" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginBottom" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarginBottom As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginBottom { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem unteren Rand des Textrahmens und dem unteren Rand des beschrifteten Rechtecks der Form zurück, die den Text enthält, oder legt den Abstand fest.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginLeft">
+      <MemberSignature Language="C#" Value="public float MarginLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MarginLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarginLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem linken Rand des Textrahmens und dem linken Rand des beschrifteten Rechtecks der Form zurück, die den Text enthält, oder legt den Abstand fest.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginRight">
+      <MemberSignature Language="C#" Value="public float MarginRight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MarginRight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginRight" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarginRight As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginRight { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem rechten Rand des Textrahmens und dem rechten Rand des beschrifteten Rechtecks der Form zurück, die den Text enthält, oder legt den Abstand fest.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginTop">
+      <MemberSignature Language="C#" Value="public float MarginTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MarginTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarginTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem oberen Rand des Textrahmens und dem oberen Rand des beschrifteten Rechtecks der Form zurück, die den Text enthält, oder legt den Abstand fest.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TextFrame Next { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TextFrame Next" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Next" />
+      <MemberSignature Language="VB.NET" Value="Public Property Next As TextFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ Next { Microsoft::Office::Interop::Word::TextFrame ^ get(); void set(Microsoft::Office::Interop::Word::TextFrame ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Das nächste Objekt in der Auflistung wird zurückgegeben.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoTextRotation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState NoTextRotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState NoTextRotation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.NoTextRotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoTextRotation As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState NoTextRotation { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5017)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5017)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5017)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt fest, ob der Text im Textrahmen nicht gedreht werden sollte, wenn die Form gedreht wird.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Core.MsoTriState" /> Objekt.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoTriState" />. Nur die <b>MsoTriState</b> -Konstanten <b>MsoFalse</b> und <b>MsoTrue</b> können verwendet werden, um diese Eigenschaft festzulegen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orientation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTextOrientation Orientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTextOrientation Orientation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As MsoTextOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextOrientation Orientation { Microsoft::Office::Core::MsoTextOrientation get(); void set(Microsoft::Office::Core::MsoTextOrientation value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Ausrichtung des Texts innerhalb des Rahmens.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />Dies kann eine der folgenden <b>MsoTextOrientation</b> -Konstanten sein. </para>
+          <para>
+            <b>MsoTextOrientationDownward </b>
+          </para>
+          <para>
+            <b>"msoTextOrientationHorizontal" </b>
+          </para>
+          <para>
+            <b>MsoTextOrientationHorizontalRotatedFarEast </b>
+          </para>
+          <para>
+            <b>MsoTextOrientationMixed </b>
+          </para>
+          <para>
+            <b>MsoTextOrientationUpward</b>
+          </para>
+          <para>
+            <b> MsoTextOrientationVertical </b>
+          </para>
+          <para>
+            <b>"msoTextOrientationVerticalFarEast"</b>
+          </para>
+          <para>einige der oben aufgeführten Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para>Können Sie die Ausrichtung für einen Textrahmen oder einem Bereich oder einer Auswahl, die in einem Textrahmen erfolgt zufällig festlegen. Informationen zu den Unterschieden zwischen einem Textrahmen und einem Textfeld finden Sie unter der <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> -Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overflowing">
+      <MemberSignature Language="C#" Value="public bool Overflowing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Overflowing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Overflowing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Overflowing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Overflowing { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5003)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn der Text innerhalb des angegebenen Textrahmens vollständig in den Frame passt nicht.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ Parent { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die übergeordnete Form des Textrahmens darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoPathFormat PathFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoPathFormat PathFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.PathFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property PathFormat As MsoPathFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPathFormat PathFormat { Microsoft::Office::Core::MsoPathFormat get(); void set(Microsoft::Office::Core::MsoPathFormat value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5013)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5013)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5013)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoPathFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt den Pfadtyp für den angegebenen Textrahmen fest.</summary>
+        <value>Der Pfadtyp für den angegebenen Textrahmen.</value>
+        <remarks>
+          <para>Der Wert dieser Eigenschaft kann eine der folgenden <see cref="T:Microsoft.Offic.Core.MsoPathType" /> Konstanten:</para>
+          <list type="bullet">
+            <item>
+              <para>
+                <b>msoPathType1</b>
+              </para>
+            </item>
+            <item>
+              <para>
+                <b>msoPathType2</b>
+              </para>
+            </item>
+            <item>
+              <para>
+                <b>msoPathType3</b>
+              </para>
+            </item>
+            <item>
+              <para>
+                <b>msoPathType4</b>
+              </para>
+            </item>
+            <item>
+              <para>
+                <b>MsoPathTypeMixed</b>
+              </para>
+            </item>
+            <item>
+              <para>
+                <b>MsoPathTypeNone</b>
+              </para>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Previous">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TextFrame Previous { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TextFrame Previous" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />
+      <MemberSignature Language="VB.NET" Value="Public Property Previous As TextFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ Previous { Microsoft::Office::Interop::Word::TextFrame ^ get(); void set(Microsoft::Office::Interop::Word::TextFrame ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Das vorherige Objekt in der Auflistung wird zurückgegeben.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range TextRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range TextRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextRange As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ TextRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text im angegebenen Textrahmen darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreeD">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ThreeDFormat ThreeD { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ThreeDFormat ThreeD" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.ThreeD" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreeD As ThreeDFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ThreeDFormat ^ ThreeD { Microsoft::Office::Interop::Word::ThreeDFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5016)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5016)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> -Objekt, das 3D-Effekt Formateigenschaften für den angegebenen Textrahmen enthält.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> -Objekt, das 3D-Effekt Formateigenschaften für den angegebenen Textrahmen enthält.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidLinkTarget">
+      <MemberSignature Language="C#" Value="public bool ValidLinkTarget (Microsoft.Office.Interop.Word.TextFrame TargetTextFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidLinkTarget([in]class Microsoft.Office.Interop.Word.TextFrame TargetTextFrame) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.ValidLinkTarget(Microsoft.Office.Interop.Word.TextFrame)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidLinkTarget (TargetTextFrame As TextFrame) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidLinkTarget(Microsoft::Office::Interop::Word::TextFrame ^ TargetTextFrame);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5006)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
+      </Parameters>
+      <Docs>
+        <param name="TargetTextFrame">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> Objekt. Der Zieltextrahmen, zu dem Sie den angegebenen Textrahmen verknüpfen möchten.</param>
+        <summary>Bestimmt, ob der Textrahmen einer Form in den Textrahmen einer anderen Form verknüpft werden kann.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Die <b>TextFrame</b> -Eigenschaft gibt <b>True</b> zurück, wenn <paramref name="TargetTextFrame" /> ein gültiges Ziel. Es gibt <b>False</b> zurück, wenn <paramref name="TargetTextFrame" /> bereits Text enthält oder bereits verknüpft ist oder wenn die Form nicht unterstützt zugeordneten Text.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalAnchor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoVerticalAnchor VerticalAnchor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoVerticalAnchor VerticalAnchor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.VerticalAnchor" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerticalAnchor As MsoVerticalAnchor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoVerticalAnchor VerticalAnchor { Microsoft::Office::Core::MsoVerticalAnchor get(); void set(Microsoft::Office::Core::MsoVerticalAnchor value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5011)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5011)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5011)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen eine <b>MsoVerticalAnchor</b> -Konstanten, die die vertikale Ausrichtung des Texts innerhalb einer Form darstellt. Lese-/Schreibzugriff.</summary>
+        <value>
+          <b>MsoVerticalAnchor</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WarpFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoWarpFormat WarpFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoWarpFormat WarpFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.WarpFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property WarpFormat As MsoWarpFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoWarpFormat WarpFormat { Microsoft::Office::Core::MsoWarpFormat get(); void set(Microsoft::Office::Core::MsoWarpFormat value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5014)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5014)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5014)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dient zum Abrufen oder das Verzerrungsformat (wie der Text verzogen ist) für den angegebenen Textrahmen festgelegt.</summary>
+        <value>Das Verzerrungsformat (wie der Text verzogen ist) für den angegebenen Textrahmen.</value>
+        <remarks>
+          <para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WordWrap">
+      <MemberSignature Language="C#" Value="public int WordWrap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WordWrap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.WordWrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WordWrap { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5010)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5010)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5010)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn Microsoft Word westlichen Text in der Mitte eines Worts in der angegebenen Absätze oder Textrahmen umbrochen wird.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <b>WordWrap</b> -Eigenschaft gibt <b>wdUndefined zurück</b> , wenn sie nur für einige der angegebenen Absätze oder Textrahmen auf <b>True</b> festgelegt ist.</para>
+          <para>Diese Verwendung möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

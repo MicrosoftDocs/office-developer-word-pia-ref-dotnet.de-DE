@@ -1,0 +1,277 @@
+<Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0b87b76ff93cbb3eea67868bd57964e4eb8e0287" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670016" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Conflict" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Conflict" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6215E4B1-545A-406E-9824-0A5B5AC8AD21")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt eine miteinander in Konflikt stehende bearbeiten in einem Dokument mit mehreren Autoren gleichzeitig bearbeitet. Der Typ des einer <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekt wird angegeben, indem die <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> Enumeration.</summary>
+    <remarks>
+      <para>Normalerweise, wenn ein Dokument mit gemeinsame dokumenterstellung aktiviert gleichzeitig wird bearbeitet haben, nur eine Mitautor gleichzeitig zu einen bestimmten Bereich bearbeiten kann. Microsoft Word 2010 automatisch setzt eine Sperre für den Bereich der Zeitpunkt der Mitautor beginnt zur Bearbeitung, sodass andere Mitautoren denselben Bereich zur selben Zeit nicht bearbeitet werden können.</para>
+      <para>Ein Konflikt kann auftreten, wenn ein bestimmter Bereich in einem Dokument mit aktivierter gemeinsame dokumenterstellung aktiviert gleichzeitig bearbeitet wird, bevor eine beliebige einzelne Mitautor eine exklusive Sperre für den Bereich abgerufen. In einer Situation Konflikt wird sie auf jeden mitautors, dass eine exklusive Sperre auf den Bereich aufweisen, aber ihre Sperre ist nicht auf andere Mitautoren kommuniziert. Der Mitautor, die auf dem Server speichert sieht den Konflikt, da ihre Version des Dokuments die eingerichteten Version wird zuerst nicht. Mitautoren, die versuchen, zu speichern, nachdem der erste Mitautor gespeichert hat auftreten ein Konflikts. Der Konflikt besteht zwischen den unterschiedlichen Versionen desselben Bereichs.</para>
+      <para>Wenn ein Mitautor dem Satz, "The quick brown Fox" Lesen "Fast Rot Fox" und einem anderen Mitautor gleichzeitig bearbeitet bearbeitet beispielsweise den Satz bevor entweder Mitautor eine exklusive Sperre auf erhält lesen "Schnelle White Fox" und beide Bearbeitungsvorgänge auftreten der Absatz, tritt ein Konflikt. In diesem Fall "schnell Rot" und "schnelle White" kann nicht durch Word 2010 abgeglichen werden. Der erste Mitautor speichern ihre Version des Dokuments auf dem Server ist kein Konflikt auftreten. Wenn der nächste Mitautor versucht, ihre Version des Dokuments auf dem Server speichern, ein Konflikt auftritt und der Mitautor muss den Konflikt beheben, indem entweder annehmen oder Ablehnen der Änderungen wählen.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public void Accept ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Accept() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Accept" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Accept ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Accept();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Akzeptiert die vom Benutzer angegebene Änderung des Konflikts, entfernt den Konflikt und führt die Änderung mit dem Serverexemplar des Dokuments zusammen.</summary>
+        <remarks>
+          <para>Diese Methode die Benutzerversion der Änderung eines Konflikts akzeptiert und die Serverversion der Änderung des Konflikts abgelehnt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</value>
+        <remarks>
+          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Word verfügt beispielsweise über den Erstellercode MSWD.</para>
+          <para>
+            <b>Vorsicht</b>: Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert, der die Position eines Elements in einer Auflistung darstellt.</summary>
+        <value>Gibt <see cref="T:System.Int32" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekt.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reject">
+      <MemberSignature Language="C#" Value="public void Reject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reject() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Reject" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reject ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reject();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Weist die vom Benutzer angegebene Änderung zurück, entfernt den Konflikt und akzeptiert das Serverexemplar für die Änderung des Konflikts.</summary>
+        <remarks>
+          <para>Diese Methode weist die Benutzerversion eines Konflikts zurück und akzeptiert die Version, die derzeit auf dem Server befindet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdRevisionType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdRevisionType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdRevisionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionType Type { Microsoft::Office::Interop::Word::WdRevisionType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> für die <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekt.</summary>
+        <value>Die <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> für die <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekt.</value>
+        <remarks>
+          <para>Schreibgeschützt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
