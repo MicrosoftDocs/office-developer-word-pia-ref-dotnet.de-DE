@@ -1,0 +1,995 @@
+<Type Name="Legend" FullName="Microsoft.Office.Interop.Word.Legend">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a9e9e5a1d2b39e9479a75403dfc61a2ef2c8fbaf" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670543" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Legend" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Legend" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Legend" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Legend" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Legend" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("B3A1E8C6-E1CE-4A46-8D12-E017157B03D7")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d1805-p101">Stellt die Legende in einem Diagramm dar. Jedes Diagramm kann nur eine Legende aufweisen.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d1805-p101">Represents the legend in a chart. Each chart can have only one legend.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="d1805-103">
+        <para>Die <see cref="T:Microsoft.Office.Interop.Word.Legend" /> -Objekt enthält eine oder mehrere <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekte. Jede <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> -Objekt enthält eine <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> -Objekt.</para>
+        <para>Der Diagrammlegende ist nicht sichtbar, wenn die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> -Eigenschaft ist <b>True</b>. Wenn diese Eigenschaft <b>False</b>, Eigenschaften und Methoden für die <see cref="T:Microsoft.Office.Interop.Word.Legend" /> Objekt schlägt fehl.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d1805-103">
+          <para>The <see cref="T:Microsoft.Office.Interop.Word.Legend" /> object contains one or more <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects; each <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object contains a <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object.</para>
+          <para>The chart legend isn’t visible unless the <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> property is <b>True</b>. If this property is <b>False</b>, properties and methods of the <see cref="T:Microsoft.Office.Interop.Word.Legend" /> object will fail.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="d1805-104">
+        <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Word.Legend" /> Objekt. Im folgende Beispiel wird den Schriftschnitt für die Legende des ersten Diagramms im aktiven Dokument fett formatiert.</para>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d1805-104">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" /> property to return the <see cref="T:Microsoft.Office.Interop.Word.Legend" /> object. The following example sets the font style for the legend of the first chart in the active document to bold.</para>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-105">Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-105">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+          <span data-ttu-id="d1805-106">Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.)</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-106">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
+          </span>
+          <span data-ttu-id="d1805-107">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-107">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-108">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-108">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoScaleFont">
+      <MemberSignature Language="C#" Value="public object AutoScaleFont { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AutoScaleFont" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.AutoScaleFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoScaleFont As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AutoScaleFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1525)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1525)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1525)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-109">
+            <b>True,</b> Wenn der Text im Objekt Schriftgrad ändert, wenn die Größe des Objekts ändert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-109">
+              <b>True</b> if the text in the object changes font size when the object size changes.</span>
+          </span>
+          <span data-ttu-id="d1805-110">Der Standardwert ist <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-110">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-111">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-111">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Border">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartBorder Border { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartBorder Border" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Border" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-112">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Border" /> object that represents the border of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public object Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clear() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Legend.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clear () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Clear();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-113">Löscht das gesamte Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-113">Clears the entire object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="d1805-114">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-114">
+              <b>Object</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-115">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-115">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+          <span data-ttu-id="d1805-116">Schreibgeschützter <b>Integer</b>-Wert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-116">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-117">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-117">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="d1805-118">
+            <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-118">
+              <para>If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public object Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Legend.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-119">Löscht das Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-119">Deletes the object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="d1805-120">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-120">
+              <b>Object</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartFillFormat Fill { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartFillFormat Fill" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Fill" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As ChartFillFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFillFormat ^ Fill { Microsoft::Office::Interop::Word::ChartFillFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-121">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> -Objekt für eine angegebene Form oder einem <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> -Objekt für ein angegebenes Diagramm, das Formateigenschaften für das Shape oder Diagramm der Füllung enthält.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-121">Returns a <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> object for a specified shape or a <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> object for a specified chart that contains fill formatting properties for the shape or chart.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-122">
+            <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-122"></span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartFont Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartFont Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As ChartFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFont ^ Font { Microsoft::Office::Interop::Word::ChartFont ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(146)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(146)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-123">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-123">Returns a <see cref="T:Microsoft.Office.Interop.Word.Font" /> object that represents the font of the specified object.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartFormat Format { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartFormat Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743834)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743834)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-124">Gibt die Linien-, Füll- und effektformatierung für das Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-124">Returns the line, fill, and effect formatting for the object.</span>
+          </span>
+          <span data-ttu-id="d1805-125">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-125">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-126">Gibt, oder legt einen <b>Double</b> -Wert, der die Höhe des Objekts in Punkt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-126">Returns or sets a <b>Double</b> value that represents the height, in points, of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-127">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-127">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeInLayout">
+      <MemberSignature Language="C#" Value="public bool IncludeInLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeInLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.IncludeInLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeInLayout As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeInLayout { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2418)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2418)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2418)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-128">Auf <b>True</b> festgelegt, wenn eine Legende Layout Diagrammbereich eingenommenen, ein Diagrammlayouts ermittelt wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-128">Set to <b>True</b> if a legend will occupy the chart layout space when a chart layout is being determined.</span>
+          </span>
+          <span data-ttu-id="d1805-129">Der Standardwert ist <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-129">The default value is <b>True</b>.</span>
+          </span>
+          <span data-ttu-id="d1805-130">
+            <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-130">Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-131">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-131">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="d1805-132">
+            <para>Diese Eigenschaft wirkt sich nicht, ob ein Diagramm in Autolayout-Modus oder nicht ist.  Wenn der Benutzer einen Titel mit dem Befehl über Diagramm hinzufügt, wird das Diagramm beträgt, wie in früheren Versionen von Microsoft Office angepasst.  Wenn der Benutzer dann den Titel entfernt oder eine der Überlagerungstitel auswählt, wird das Diagramm angepasst größer, als wäre der Titel nicht im Diagramm.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-132">
+              <para>This property does not affect whether a chart is in autolayout mode or not.  If the user adds a title using the Above Chart  command, the chart will resize smaller, as in previous versions of Microsoft Office.  If the user then removes the title or selects one of the overlay title options, the chart will resize larger, as if the title were not on the chart.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interior">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Interior Interior { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Interior Interior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Interior" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Interior ^ Interior { Microsoft::Office::Interop::Word::Interior ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-133">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Interior" /> -Objekt, das den Innenbereich des angegebenen Objekts darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-133">Returns an <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object that represents the interior of the specified object.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-134">Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) von der linken Seite des Objekts zur linken Seite des Diagrammbereichs darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-134">Returns a <b>Double</b> value that represents the distance, in points, from the left edge of the object to the left edge of the chart area.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-135">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-135">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegendEntries">
+      <MemberSignature Language="C#" Value="public object LegendEntries (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object LegendEntries([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Legend.LegendEntries(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LegendEntries (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(173)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>
+          <span data-ttu-id="d1805-136">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> -Objekt, das die Legendeneinträge der Legende darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-136">Returns a <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> object that represents the legend entries for the legend.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="d1805-137">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-137">
+              <b>Object</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-138">Gibt einen <b>String</b> -Wert, der den Namen des Objekts darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-138">Returns a <b>String</b> value that represents the name of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-139">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-139">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-p107">Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-p107">Returns the parent for the specified object. Read-only <b>Object</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-142">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-142">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XlLegendPosition Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.XlLegendPosition Position" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As XlLegendPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlLegendPosition Position { Microsoft::Office::Interop::Word::XlLegendPosition get(); void set(Microsoft::Office::Interop::Word::XlLegendPosition value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XlLegendPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-143">Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /> Wert, der die Position der Legende im Diagramm darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-143">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /> value that represents the position of the legend on the chart.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public object Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Select() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Legend.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-144">Markiert das Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-144">Selects the object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="d1805-145">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-145">
+              <b>Object</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="public bool Shadow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Shadow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Shadow" />
+      <MemberSignature Language="VB.NET" Value="Public Property Shadow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shadow { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-146">Gibt einen <b>Boolean</b>-Wert zurück, der bestimmt, ob das Objekt einen Schatten aufweist, oder legt diesen Wert fest.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-146">Returns or sets a <b>Boolean</b> value that determines if the object has a shadow.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-147">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-147">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-148">Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder bis zum oberen Rand des Diagrammbereichs (in einem Diagramm) darstellt, oder legt diesen Wert fest.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-148">Returns or sets a <b>Double</b> value that represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-149">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-149">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Legend.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d1805-150">Gibt, oder legt einen <b>Double</b> -Wert, der die Breite des Objekts in Punkt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-150">Returns or sets a <b>Double</b> value that represents the width, in points, of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d1805-151">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d1805-151">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

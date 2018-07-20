@@ -1,0 +1,243 @@
+<Type Name="CoAuthUpdate" FullName="Microsoft.Office.Interop.Word.CoAuthUpdate">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8afbe4cb2bb4043cbb3dcabbe8ea7903fb2ee981" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670334" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CoAuthUpdate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdate" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CoAuthUpdate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("9E6B5EC5-E8E4-40AF-9540-6203F71E2823")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="3c38e-101">Stellt einen Textbereich dar, der von einem Mitautor aktualisiert wurde.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3c38e-101">Represents a range of text that has been updated by a co-author.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="3c38e-102">
+        <para>Wenn ein Dokument mit gemeinsame dokumenterstellung aktiviert gleichzeitig bearbeitet wird, sind von einem Mitautor vorgenommene Änderungen als Updates für andere Mitautoren verfügbar. Jede Änderung wird durch ein einzelnes <b>CoAuthUpdate</b> -Objekt dargestellt. Wenn einem Mitautor ihre Version des Dokuments speichert, werden diese co-Autor Version des Dokuments Änderungen durch andere Mitautoren zusammengeführt. Vor dem Zeitpunkt, wann der Mitautor eine Version des Dokuments gespeichert, Änderungen durch andere Mitautoren als Updates verfügbar sind.</para>
+        <para>Beispielsweise, wenn zwei Personen sind Bearbeiten eines Dokuments, die zunächst enthält einen einzigen Absatz mit dem Text "The brown Fox". Wenn der erste Mitautor den Satz zum Lesen von bearbeitet, "Franz erfolgt ein Sprung über das Protokoll" und dann speichert das Dokument, die Wörter "quick" und "über das Protokoll" zur Verfügung stehen der zweiten Mitautor wie 2 mit dem Dokument aktualisiert. Diese zwei Updates werden als zwei <b>CoAuthUpdate</b> -Objekten im Microsoft Word 2010-Objektmodell dargestellt. Wenn der zweite Mitautor des Dokuments speichert, werden die Updates von der ersten Mitautor in das Dokument zusammengeführt.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3c38e-102">
+          <para>When a document with co-authoring enabled is simultaneously edited, changes made by one co-author are available to other co-authors as updates. Each change is represented by a single <b>CoAuthUpdate</b> object. When a co-author saves their version of the document, changes made by other co-authors are merged into that co-author's version of the document. Prior to the time when the co-author saves a version of the document, changes made by other co-authors are available as updates.</para>
+          <para>For example, when two people are editing a document that initially contains a single paragraph with the text, "The brown fox." If the first co-author edits the sentence to read, "The quick brown fox jumps over the log" and then saves the document, the words "quick" and "over the log" are available to the second co-author as two updates to the document. These two updates are represented in the Microsoft Word 2010 object model as two <b>CoAuthUpdate</b> objects. When the second co-author saves the document, the updates from the first co-author are merged into the document.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdate.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3c38e-103">Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-103">Gets an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="3c38e-104">Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-104">An <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="3c38e-105">
+            <para>Schreibgeschützt.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-105">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdate.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3c38e-106">Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-106">Gets a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="3c38e-107">Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-107">A 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="3c38e-108">
+            <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Word verfügt beispielsweise über den Erstellercode MSWD.</para>
+            <para>
+              <b>Vorsicht</b>:</para>
+            <para>Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-108">
+              <para>Read-only <b>long</b>. If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD". This property was primarily designed to be used on the Apple Macintosh, where each application has a four-character creator code. For example, Word has the creator code MSWD.</para>
+              <para>
+                <b>Caution</b>: </para>
+              <para>This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdate.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3c38e-109">Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-109">Gets an <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="3c38e-110">Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-110">An <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> object.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdate.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3c38e-111">Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-111">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="3c38e-112">Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-112">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="3c38e-113">
+            <para>Schreibgeschützt.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3c38e-113">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
