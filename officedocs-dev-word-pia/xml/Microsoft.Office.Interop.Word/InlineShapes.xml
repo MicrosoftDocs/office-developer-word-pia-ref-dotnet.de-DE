@@ -1,0 +1,608 @@
+<Type Name="InlineShapes" FullName="Microsoft.Office.Interop.Word.InlineShapes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c25c65b0fb5c59926539a5d393bfd72559673469" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670195" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShapes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShapes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface InlineShapes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class InlineShapes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209A9-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekten, die alle Inlineformen in einem Dokument, einem Bereich oder einer Auswahl darstellt.</summary>
+    <remarks>
+      <para>Verwenden Sie die <b>InlineShapes</b> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Word._Document" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, oder <see cref="T:Microsoft.Office.Interop.Word.Selection" /> zurückzugebenden-Objekts ein <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> -Methode, um ein neues Bild als Inlineform erstellen. Sie können die <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> und <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Methoden verwenden, um Bilder oder OLE-Objekte hinzufügen und mit einer Quelldatei verknüpfen. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> -Methode, um ein ActiveX-Steuerelement hinzufügen.</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekte sind an einen Textbereich verankert, aber nicht verankert werden und können an einer beliebigen Stelle auf der Seite positioniert werden. Sie können die <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> Methode und der <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> -Methode, um zu einem anderen Shapes von einem Typ zu konvertieren. Sie können nur Bilder, OLE-Objekte und ActiveX-Steuerelementen in Inlineformen konvertiert.</para>
+      <para>Der <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Gezählt werden Elemente in anderen Textabschnitten verwenden Sie die Auflistung mit den <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt.</para>
+      <para>Beim Öffnen eines Dokuments in einer früheren Version von Microsoft Word erstellt wurde, werden Bilder in Inlineformen konvertiert.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddChart (Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddChart([in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddChart(Microsoft.Office.Core.XlChartType,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart (Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="Range">To be added.</param>
+        <summary>Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddChart2 (int Style = -1, Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Range, ref object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddChart2([in]int32 Style, [in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Range, [in]object&amp; NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddChart2(System.Int32,Microsoft.Office.Core.XlChartType,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart2 (Optional Style As Integer = -1, Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Range As Object, Optional ByRef NewLayout As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Style">Chart-Vorlage.</param>
+        <param name="Type">Der Typ des Diagramms.</param>
+        <param name="Range">Der Bereich, in dem das Diagramm in den Text eingefügt wird. Das Diagramm ersetzt den Bereich, es sei denn, der Bereich nicht reduziert ist. Wenn dieses Argument ausgelassen wird, wird das Diagramm automatisch platziert.</param>
+        <param name="NewLayout">Wenn <paramref name="NewLayout" /> true ist, wird das Diagramm mithilfe der neuen dynamischen Formatierungsregeln eingefügt (Titel wird auf und Legende ist auf nur, wenn mehrere Reihen vorliegen).</param>
+        <summary>Ein Diagramm hinzugefügt mit dem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt, das das Diagramm darstellt, und fügt es der angegebenen Auflistung hinzu.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHorizontalLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddHorizontalLine (string FileName, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddHorizontalLine([in]string FileName, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddHorizontalLine (FileName As String, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> erforderlich. Der Dateiname des Bilds, das Sie für die horizontale Linie verwenden möchten.</param>
+        <param name="Range">Optionales- <b>Objekt</b>. Der Bereich über dem Microsoft Word die horizontale Linie einfügt. Wenn dieses Argument ausgelassen wird, fügt Word die horizontale Linie oberhalb der aktuellen Markierung.</param>
+        <summary>Fügt im aktuellen Dokument eine horizontale Linie ein, die auf einer Bilddatei basiert.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Um eine horizontale Linie hinzufügen, die nicht auf einer bestehenden Bilddatei basiert, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> Methode.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHorizontalLineStandard">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddHorizontalLineStandard (ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddHorizontalLineStandard([in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddHorizontalLineStandard (Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Optionales- <b>Objekt</b>. Der Bereich über dem Microsoft Word die horizontale Linie einfügt. Wenn dieses Argument ausgelassen wird, fügt Word die horizontale Linie oberhalb der aktuellen Markierung.</param>
+        <summary>Fügt eine horizontale Linie im aktuellen Dokument ein.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Zum Hinzufügen einer horizontalen Linie auf einer vorhandenen Bilddatei basiert, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> Methode.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddOLEControl (ref object ClassType, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddOLEControl([in]object&amp; ClassType, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEControl (Optional ByRef ClassType As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">Optionales- <b>Objekt</b>. Die Programm-ID für das zu erstellende ActiveX-Steuerelement.</param>
+        <param name="Range">Optionales- <b>Objekt</b>. Der Bereich, in dem das ActiveX-Steuerelement in den Text eingefügt wird. Das ActiveX-Steuerelement ersetzt den Bereich, wenn der Bereich nicht reduziert ist. Wenn dieses Argument ausgelassen wird, wird das ActiveX-Steuerelement automatisch platziert.</param>
+        <summary>Erstellt ein ActiveX-Steuerelement (früher als OLE-Steuerelement bezeichnet).</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Diese Methode gibt die <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt, das das neue ActiveX-Steuerelement darstellt.</para>
+          <para>ActiveX-Steuerelemente werden entweder als dargestellt <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> Objekte oder <b>InlineShape</b> -Objekte in Microsoft Word. Verwenden Sie zum Ändern der Eigenschaften für ein ActiveX-Steuerelement der <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> -Objekt für die angegebene Form oder Inlineform.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddOLEObject (ref object ClassType, ref object FileName, ref object LinkToFile, ref object DisplayAsIcon, ref object IconFileName, ref object IconIndex, ref object IconLabel, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddOLEObject([in]object&amp; ClassType, [in]object&amp; FileName, [in]object&amp; LinkToFile, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEObject (Optional ByRef ClassType As Object, Optional ByRef FileName As Object, Optional ByRef LinkToFile As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">Optionales- <b>Objekt</b>. Der Name der Anwendung, die zum Aktivieren des angegebenen OLE-Objekts verwendet wird.</param>
+        <param name="FileName">Optionales- <b>Objekt</b>. Die Datei, aus der das Objekt erstellt werden soll. Wenn dieses Argument ausgelassen wird, wird der aktuelle Ordner verwendet. Geben Sie entweder die <paramref name="ClassType" /> oder <paramref name="FileName" /> Argument für das Objekt, jedoch nicht beide.</param>
+        <param name="LinkToFile">Optionales- <b>Objekt</b>. <b>True,</b> verknüpft das OLE-Objekt mit der Datei, aus der es erstellt wurde. <b>False</b> , wenn das OLE-Objekt als separate Kopie der Datei zu machen. Wenn Sie einen Wert für angegeben <paramref name="ClassType" />, die <paramref name="LinkToFile" /> -Argument muss <b>"false"</b>sein. Der Standardwert lautet <b>False</b>.</param>
+        <param name="DisplayAsIcon">Optionales- <b>Objekt</b>. <b>True</b> , wenn das OLE-Objekt als Symbol anzuzeigen. Der Standardwert lautet <b>False</b>.</param>
+        <param name="IconFileName">Optionales- <b>Objekt</b>. Die Datei, die das anzuzeigende Symbol enthält.</param>
+        <param name="IconIndex">Optionales- <b>Objekt</b>. Die Indexnummer des Symbols in <paramref name="IconFileName" />. Die Reihenfolge der Symbole in der angegebenen Datei entspricht der Reihenfolge, in dem die Symbole angezeigt, in das Dialogfeld Symbol ändern (Menü "Einfügen", im Dialogfeld Objekt werden) Wenn das Kontrollkästchen als Symbol anzeigen aktiviert ist. Das erste Symbol in der Datei weist die Indexnummer 0 (Null) auf. Wenn kein Symbol mit der angegebenen Indexnummer in existiert <paramref name="IconFileName" />, das Symbol mit der Indexnummer 1 (das zweite Symbol in der Datei) verwendet wird. Der Standardwert ist 0 (Null).</param>
+        <param name="IconLabel">Optionales- <b>Objekt</b>. Ein Bezeichnungsfeld (Beschriftung), das unter dem Symbol angezeigt wird.</param>
+        <param name="Range">Optionales- <b>Objekt</b>. Der Bereich, in dem das OLE-Objekt im Text platziert wird. Das OLE-Objekt ersetzt den Bereich, es sei denn, der Bereich nicht reduziert ist. Wenn dieses Argument ausgelassen wird, wird das Objekt automatisch platziert.</param>
+        <summary>Erstellt ein OLE-Objekt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Gibt die <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt, das das neue OLE-Objekt darstellt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPicture">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddPicture (string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> erforderlich. Der Pfad und der Dateiname des Bilds.</param>
+        <param name="LinkToFile">Optionales- <b>Objekt</b>. <b>True</b> , wenn verknüpft das Bild mit der Datei, aus der es erstellt wurde. <b>False</b> , wenn dem Bild eine unabhängige Kopie der Datei vornehmen. Der Standardwert lautet <b>False</b>.</param>
+        <param name="SaveWithDocument">Optionales- <b>Objekt</b>. <b>True</b> , wenn die verknüpfte Grafik mit dem Dokument gespeichert. Der Standardwert lautet <b>False</b>.</param>
+        <param name="Range">Optionales- <b>Objekt</b>. Der Speicherort, in dem das Bild in den Text eingefügt wird. Wenn Sie der Bereich nicht reduziert ist, ersetzt das Bild des Bereichs. Andernfalls wird das Bild eingefügt. Wenn dieses Argument ausgelassen wird, wird das Bild automatisch platziert.</param>
+        <summary>Ein Bild hinzugefügt zu einem Dokument.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Diese Methode gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, welches das Bild repräsentiert und fügt es an, die <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPictureBullet">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddPictureBullet (string FileName, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddPictureBullet([in]string FileName, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddPictureBullet(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPictureBullet (FileName As String, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> erforderlich. Der Dateiname der Grafik, die Sie für das Aufzählungszeichen verwenden möchten.</param>
+        <param name="Range">Optionales- <b>Objekt</b>. Der Bereich, in dem Microsoft Word das Aufzählungszeichen hinzufügt. Word fügt das Aufzählungszeichen auf jeden Absatz im Bereich hinzu. Wenn dieses Argument ausgelassen wird, fügt Word das Aufzählungszeichen zu jedem Absatz in der aktuellen Auswahl.</param>
+        <summary>Fügt ein Aufzählungszeichen basierend auf einer Bilddatei im aktuellen Dokument.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Diese Methode gibt eine <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSmartArt">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddSmartArt (Microsoft.Office.Core.SmartArtLayout Layout, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddSmartArt([in]class Microsoft.Office.Core.SmartArtLayout Layout, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddSmartArt(Microsoft.Office.Core.SmartArtLayout,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSmartArt (Layout As SmartArtLayout, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Layout" Type="Microsoft.Office.Core.SmartArtLayout" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Layout">Ein <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> -Objekt, das das Layout für die SmartArt-Grafik angibt.</param>
+        <param name="Range">Gibt den Text an dem SmartArt-Grafik gebunden ist. Wenn <paramref name="Range" /> angegeben ist, wird die SmartArt-Grafik am Anfang des ersten Absatzes im Bereich positioniert ist. Wenn dieser Parameter ausgelassen wird, der Bereich automatisch ausgewählt ist, und die SmartArt-Grafik wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Fügt eine SmartArt-Grafik als Inlineform in das aktive Dokument ein.</summary>
+        <returns>So fügen Sie ein SmartArt-Grafik.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWebVideo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddWebVideo (string EmbedCode, ref object VideoWidth, ref object VideoHeight, ref object PosterFrameImage, ref object Url, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddWebVideo([in]string EmbedCode, [in]object&amp; VideoWidth, [in]object&amp; VideoHeight, [in]object&amp; PosterFrameImage, [in]object&amp; Url, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddWebVideo(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWebVideo (EmbedCode As String, ByRef VideoWidth As Object, ByRef VideoHeight As Object, Optional ByRef PosterFrameImage As Object, Optional ByRef Url As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EmbedCode" Type="System.String" />
+        <Parameter Name="VideoWidth" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VideoHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PosterFrameImage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Url" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="EmbedCode">Den Einbettungscode für das Video.</param>
+        <param name="VideoWidth">Eine ganze Zahl, die die Breite des Webs Videodaten in Pixel darstellt.</param>
+        <param name="VideoHeight">Eine ganze Zahl, die die Höhe des Webs Videodaten in Pixel darstellt.</param>
+        <param name="PosterFrameImage">Eine Zeichenfolge, die auf die Datei als Posterrahmen für das Web video verwenden verweist.</param>
+        <param name="Url">Die URL für das Video.</param>
+        <param name="Range">Der Bereich, an dem das Video Web eingefügt werden soll. Wenn <paramref name="Range" /> wird Length angegeben, wird die aktuelle Auswahl verwendet.</param>
+        <summary>Dem Dokument hinzugefügt ein neues Web Video.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.InlineShape Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As InlineShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ default[int] { Microsoft::Office::Interop::Word::InlineShape ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape New (Microsoft.Office.Interop.Word.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape New([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ New(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(200)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position der neuen Grafik.</param>
+        <summary>Fügt ein leeres, 1 cm Microsoft Word Bildobjekt von einem Rahmen umgeben.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Diese Methode gibt die neue Grafik als ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

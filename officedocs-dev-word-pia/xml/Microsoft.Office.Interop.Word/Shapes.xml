@@ -1,0 +1,1079 @@
+<Type Name="Shapes" FullName="Microsoft.Office.Interop.Word.Shapes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="596f5d04825cbd4362b47c3e2b57a588a0ededd6" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670600" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shapes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Shapes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002099F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekten, die alle Formen in einem Dokument oder alle Formen in den Kopf- und Fußzeilen in einem Dokument darstellen.</summary>
+    <remarks>&lt;b0&gt;Jedes &lt;b1&gt;Shape&lt;/b1&gt; -Objekt stellt ein Objekt in der Zeichnungsebene, wie beispielsweise eine AutoForm, Freihandform, OLE-Objekt oder Bild.&lt;/b0&gt; &lt;b2&gt; &lt;b3&gt;Hinweis&lt;/b3&gt; Wenn Sie mit einer Teilmenge der Formen in einem Dokument arbeiten möchten – beispielsweise nur die AutoFormen im Dokument oder nur die ausgewählten Shapes – müssen Sie erstellen eine &lt;b4&gt;&lt;/b4&gt; -Auflistung, die die Shapes enthält, die Sie mit arbeiten möchten. &lt; / C2 &gt;&lt;b5&gt;Verwendung der &lt;b6&gt;&lt;/b6&gt; -Eigenschaft die &lt;b7&gt;Shapes&lt;/b7&gt; -Auflistung zurückzugeben.&lt;/b5&gt; &lt;b8&gt; &lt;b9&gt;Hinweis&lt;/b9&gt; Wenn Sie möchten (z. B. löschen oder Festlegen einer Eigenschaft) für alle Formen in einem Dokument zur gleichen Zeit, verwenden Sie die &lt;b10&gt;&lt;/b10&gt; -Methode, um ein &lt;b11&gt;ShapeRange&lt;/b11&gt; -Objekt zu erstellen, die alle Formen in der &lt;b12&gt;Shapes&lt;/b12&gt; -Auflistung enthält und Klicken Sie dann die entsprechende Eigenschaft oder Methode auf das &lt;b13&gt;ShapeRange&lt;/b13&gt; -Objekt gelten.&lt;/b8&gt; &lt;b14&gt;Verwenden Sie eine der folgenden Methoden der &lt;b15&gt;Shapes&lt;/b15&gt; -Auflistung: &lt;b16&gt; &lt;/b16&gt;, &lt;b17&gt; &lt;/b17&gt;, &lt;b18&gt; &lt;/b18&gt;, &lt;b19&gt; &lt;/b19&gt;, &lt;b20&gt; &lt;/b20&gt;, &lt;b21&gt; &lt;/b21&gt;, &lt;b22&gt; &lt;/b22&gt;, &lt;b23&gt; &lt;/b23&gt;, &lt;b24&gt; &lt;/b24&gt;, &lt;b25&gt; &lt;/b25&gt;, oder &lt;b26&gt;&lt;/b26&gt; zu einem Dokument eine Form hinzugefügt und ein &lt;b27&gt;Shape&lt;/b27&gt; -Objekt, das die neu erstellte Form darstellt, zurückzugeben.&lt;/b14&gt; &lt;b28&gt;Verwenden von &lt;b29&gt;Formen&lt;/b29&gt;(&lt;b30&gt;&lt;/b30&gt;), wobei &lt;b31&gt;&lt;/b31&gt; ist der Name oder die Indexzahl darstellt, um ein einzelnes &lt;b32&gt;Shape&lt;/b32&gt; -Objekt zurückzugeben.&lt;/b28&gt; &lt;b33&gt;Jeder Form wird ein Standardname zugewiesen, bei der Erstellung. Angenommen, wenn Sie drei verschiedene Formen zu einem Dokument hinzufügen, sie möglicherweise werden mit dem Namen "Rechteck 2", "Textfeld 3" und "Oval 4". Um einer Form einen aussagekräftigeren Namen geben, legen die &lt;b34&gt;&lt;/b34&gt; -Eigenschaft.&lt;/b33&gt; &lt;b35&gt;Der Shapes-Auflistung enthält keinen &lt;b36&gt;&lt;/b36&gt; Objekte. &lt;b37&gt;InlineShape&lt;/b37&gt; -Objekte werden wie Zeichen behandelt und innerhalb einer Textzeile positioniert. &lt;b38&gt;Shape&lt;/b38&gt; -Objekte sind an einen Textbereich verankert, aber nicht verankert werden und können an einer beliebigen Stelle auf der Seite positioniert werden. Sie können die &lt;b39&gt;&lt;/b39&gt; Methode und der &lt;b40&gt;&lt;/b40&gt; -Methode, um zu einem anderen Shapes von einem Typ zu konvertieren. Sie können nur Bilder, OLE-Objekte und ActiveX-Steuerelementen in Inlineformen konvertiert.&lt;/b35&gt; &lt;b41&gt;Der &lt;b42&gt;&lt;/b42&gt; -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Verwenden Sie zum zählen der Formen in den Kopf- und Fußzeilen die &lt;b43&gt;Shapes&lt;/b43&gt; -Auflistung mit einem &lt;b44&gt;&lt;/b44&gt; -Objekt.&lt;/b41&gt;&lt;/b2&gt;&lt;b45&gt;&lt;/b45&gt;</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCallout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCallout (Microsoft.Office.Core.MsoCalloutType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCallout([in]valuetype Microsoft.Office.Core.MsoCalloutType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCallout (Type As MsoCalloutType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoCalloutType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Erforderliche <see cref="T:Microsoft.Office.Core.MsoCalloutType" />. Der Typ der Legende. <b>MsoCalloutType</b> kann eine der folgenden Konstanten sein. <b>MsoCalloutOne</b> – positioniert die Legendenlinie gerade nach unten entlang des linken Rands des das am Legendentextfeld ansetzt. <b>MsoCalloutTwo</b> – positioniert die Legendenlinie diagonal nach unten und abgesetzt vom linken Rand des das am Legendentextfeld ansetzt. <b>MsoCalloutThree</b> – positioniert die Legendenlinie gerade diagonal nach unten und dann abwesend vom linken Rand des das am Legendentextfeld ansetzt. <b>MsoCalloutFour</b> – positioniert die Legendenlinie entlang des linken Rands des Legendentextfelds. <b>MsoCalloutMixed</b> – ein Rückgabewert, der anzeigt, dass mehrere <b>MsoCalloutType</b> in einem Bereich oder einer Auswahl vorhanden ist.</param>
+        <param name="Left">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Position des linken Rands des umgebenden Felds der Legende.</param>
+        <param name="Top">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Position des oberen Rands des umgebenden Felds der Legende.</param>
+        <param name="Width">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Breite des umgebenden Felds der Legende.</param>
+        <param name="Height">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Höhe des umgebenden Felds der Legende.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den die Legende gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und die Legende wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Eine rahmenlose Legende mit Linie hinzugefügt zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die Legende darstellt, und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Sie können vielfältigere Legenden, z. B. Blasen und Wolken, Einfügen von der <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> Methode.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCanvas">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCanvas (float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCanvas([in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCanvas(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCanvas (Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des linken Randes des Zeichenbereichs, relativ zur Verankerung.</param>
+        <param name="Top">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des oberen Randes des Zeichenbereichs, relativ zur Verankerung.</param>
+        <param name="Width">
+          <b>Single</b>erforderlich. Die Breite (in Punkt) des Zeichenbereichs.</param>
+        <param name="Height">
+          <b>Single</b>erforderlich. Die Höhe (in Punkt) des Zeichenbereichs.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den der Zeichenbereich gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und der Zeichenbereich wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Fügt einen Zeichenbereich zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das Zeichenbereich darstellt, und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart (Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart([in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart(Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart (Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="Left">To be added.</param>
+        <param name="Top">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Anchor">To be added.</param>
+        <summary>Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word.Shape" />
+        </returns>
+        <remarks>To be added.</remarks>
+        <example>
+          <para>Im folgenden Beispiel wird ein neues 3D-Säulendiagramm erstellt und dem aktiven Dokument hinzugefügt.</para>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart2 (int Style = -1, Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor, ref object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart2([in]int32 Style, [in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor, [in]object&amp; NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart2(System.Int32,Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart2 (Optional Style As Integer = -1, Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object, Optional ByRef NewLayout As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Style">Chart-Vorlage.</param>
+        <param name="Type">Der Typ des Diagramms.</param>
+        <param name="Left">Die Position (in Punkten) des linken Rands des Diagramms, relativ zur Verankerung.</param>
+        <param name="Top">Die Position (in Punkten) des oberen Rands des Diagramms relativ zur Verankerung.</param>
+        <param name="Width">Die Breite des Diagramms in Punkten.</param>
+        <param name="Height">Die Höhe des Diagramms in Punkten.</param>
+        <param name="Anchor">Wenn <paramref name="NewLayout" /> true ist, wird das Diagramm mithilfe der neuen dynamischen Formatierungsregeln eingefügt (Titel wird auf und Legende ist auf nur, wenn mehrere Reihen vorliegen).</param>
+        <param name="NewLayout">Wenn <paramref name="NewLayout" /> true ist, wird das Diagramm mithilfe der neuen dynamischen Formatierungsregeln eingefügt (Titel wird auf und Legende ist auf nur, wenn mehrere Reihen vorliegen).</param>
+        <summary>Ein Diagramm hinzugefügt mit dem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das ein Diagramm darstellt, und der angegebenen Auflistung hinzugefügt.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConnector">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddConnector (Microsoft.Office.Core.MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddConnector([in]valuetype Microsoft.Office.Core.MsoConnectorType Type, [in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddConnector(Microsoft.Office.Core.MsoConnectorType,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddConnector (Type As MsoConnectorType, BeginX As Single, BeginY As Single, EndX As Single, EndY As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddConnector(Microsoft::Office::Core::MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoConnectorType" />
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="BeginX">To be added.</param>
+        <param name="BeginY">To be added.</param>
+        <param name="EndX">To be added.</param>
+        <param name="EndY">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCurve">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCurve (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCurve([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCurve (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <b>Objekt</b>erforderlich. Ein Array von Koordinatenpaaren, das die Scheitelpunkte und Kontrollpunkte der Kurve. Der erste Punkt, den Sie angeben, wird dem ersten Scheitelpunkt und, und die nächsten beiden Punkte sind Kontrollpunkte für das erste Bézier-Segment. Für jedes zusätzliche Segment der Kurve geben Sie dann einen Scheitelpunkt und zwei Kontrollpunkte. Der letzte Punkt die von den Ihnen angegebenen ist Endscheitelpunkts für die Kurve. Beachten Sie, dass Sie immer 3n + 1 Punkt, wobei n die Anzahl der Abschnitte in der Kurve ist angeben müssen.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den die Kurve gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und die Kurve wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das eine Bézier-Kurve in einem Dokument darstellt.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDiagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddDiagram (Microsoft.Office.Core.MsoDiagramType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddDiagram([in]valuetype Microsoft.Office.Core.MsoDiagramType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDiagram (Type As MsoDiagramType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Erforderliche <see cref="T:Microsoft.Office.Core.MsoDiagramType" />. <b>MsoDiagramType</b> kann eine der folgenden Konstanten sein: <b>MsoDiagramCycle</b> – stellt einen Prozess mit einem fortlaufenden Zyklus. <b>MsoDiagramMixed</b> – mit dieser Methode nicht verwendet. <b>msoDiagramOrgChart tritt</b> – zeigt hierarchische Beziehungen. <b>MsoDiagramPyramid</b> – zeigt Foundation-basierte Beziehungen. <b>MsoDiagramRadial</b> – ein zentrales Element zeigt Beziehungen zwischen. <b>MsoDiagramTarget</b> – zielorientierten Schritte. <b>MsoDiagramVenn</b> – von überlappenden zwischen Elementen Bereichen.</param>
+        <param name="Left">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des linken Rands des umgebenden Felds des Diagramms, relativ zur Verankerung.</param>
+        <param name="Top">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des oberen Rands des umgebenden Felds des Diagramms, relativ zur Verankerung.</param>
+        <param name="Width">
+          <b>Single</b>erforderlich. Die Breite (in Punkt) des umgebenden Felds des Diagramms.</param>
+        <param name="Height">
+          <b>Single</b>erforderlich. Die Höhe (in Punkt) des umgebenden Felds des Diagramms.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den das Diagramm gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und das Diagramm wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das ein neu erstelltes Diagramm in einem Dokument darstellt.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLabel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLabel (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLabel([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLabel (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">Erforderliche <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />. Die Ausrichtung des Texts. <b>MsoTextOrientation</b> kann eine der folgenden Konstanten sein: <b>MsoTextOrientationDownward </b><b>"msoTextOrientationHorizontal" </b><b>MsoTextOrientationHorizontalRotatedFarEast </b><b>MsoTextOrientationMixed</b><b> MsoTextOrientationUpward </b><b>MsoTextOrientationVertical </b><b>"msoTextOrientationVerticalFarEast" </b>einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt haben oder installiert.</param>
+        <param name="Left">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des linken Rands des Bezeichnungsfelds relativ zur Verankerung.</param>
+        <param name="Top">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des oberen Rands der Beschriftung, relativ zur Verankerung.</param>
+        <param name="Width">
+          <b>Single</b>erforderlich. Die Breite der Beschriftung in Punkt.</param>
+        <param name="Height">
+          <b>Single</b>erforderlich. Die Höhe der Beschriftung in Punkt.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den die Beschriftung gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und die Beschriftung wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Eine Beschriftung hinzugefügt zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die textbeschriftung darstellt und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLine (float BeginX, float BeginY, float EndX, float EndY, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLine([in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLine (BeginX As Single, BeginY As Single, EndX As Single, EndY As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="BeginX">
+          <b>Single</b>erforderlich. Die horizontale Position (in Punkt) des Startpunkts der Linie, relativ zur Verankerung.</param>
+        <param name="BeginY">
+          <b>Single</b>erforderlich. Die vertikale Position (in Punkt) des Startpunkts der Linie, relativ zur Verankerung.</param>
+        <param name="EndX">
+          <b>Single</b>erforderlich. Die horizontale Position (in Punkt) des Endpunkts der Linie, relativ zur Verankerung.</param>
+        <param name="EndY">
+          <b>Single</b>erforderlich. Die vertikale Position (in Punkt) des Endpunkts der Linie, relativ zur Verankerung.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den die Beschriftung gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und die Beschriftung wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Fügt eine Linie zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die Zeile darstellt und fügt es an die <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Wenn Sie einen Pfeil erstellen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> Eigenschaft, um eine Zeile.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEControl (ref object ClassType, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEControl([in]object&amp; ClassType, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEControl (Optional ByRef ClassType As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">Optionales- <b>Objekt</b>. Die Programm-ID für das zu erstellende ActiveX-Steuerelement.</param>
+        <param name="Left">Optionales- <b>Objekt</b>. Die Position (in Punkt) des linken Rands des neuen Objekts relativ zur Verankerung.</param>
+        <param name="Top">Optionales- <b>Objekt</b>. Die Position (in Punkt) des oberen Rands des neuen Objekts relativ zur Verankerung.</param>
+        <param name="Width">Optionales- <b>Objekt</b>. Die Breite des ActiveX-Steuerelements in Punkt.</param>
+        <param name="Height">Optionales- <b>Objekt</b>. Die Höhe des ActiveX-Steuerelements in Punkt.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Der Bereich, an dem welches das ActiveX-Steuerelement gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, jedoch der Anker wird automatisch eingefügt, und das ActiveX-Steuerelement wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Erstellt ein ActiveX-Steuerelement (früher als OLE-Steuerelement bezeichnet). Gibt die <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das das neue ActiveX-Steuerelement darstellt.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEObject (ref object ClassType, ref object FileName, ref object LinkToFile, ref object DisplayAsIcon, ref object IconFileName, ref object IconIndex, ref object IconLabel, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEObject([in]object&amp; ClassType, [in]object&amp; FileName, [in]object&amp; LinkToFile, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEObject (Optional ByRef ClassType As Object, Optional ByRef FileName As Object, Optional ByRef LinkToFile As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">Optionales- <b>Objekt</b>. Der Name der Anwendung, die zum Aktivieren des angegebenen OLE-Objekts verwendet wird.</param>
+        <param name="FileName">Optionales- <b>Objekt</b>. Die Datei, aus der das Objekt erstellt werden soll. Wenn dieses Argument ausgelassen wird, wird der aktuelle Ordner verwendet. Geben Sie entweder die <paramref name="ClassType" /> oder <paramref name="FileName" /> Argument für das Objekt, jedoch nicht beide.</param>
+        <param name="LinkToFile">Optionales-<b>Objekt</b>. <b>True</b> , wenn verknüpft das OLE-Objekt mit der Datei, aus der es erstellt wurde. <b>False</b> , wenn das OLE-Objekt als separate Kopie der Datei zu machen. Wenn Sie einen Wert für angegeben <paramref name="ClassType" />, die <paramref name="LinkToFile" /> -Argument muss <b>"false"</b>sein. Der Standardwert lautet <b>False</b>.</param>
+        <param name="DisplayAsIcon">Optionales- <b>Objekt</b>. <b>True</b> , wenn das OLE-Objekt als Symbol anzuzeigen. Der Standardwert lautet <b>False</b>.</param>
+        <param name="IconFileName">Optionales- <b>Objekt</b>. Die Datei, die das anzuzeigende Symbol enthält.</param>
+        <param name="IconIndex">Optionales- <b>Objekt</b>. Die Indexnummer des Symbols in <paramref name="IconFileName" />. Die Reihenfolge der Symbole in der angegebenen Datei entspricht der Reihenfolge, in dem die Symbole angezeigt, in das Dialogfeld Symbol ändern (Menü "Einfügen", im Dialogfeld Objekt werden) Wenn das Kontrollkästchen als Symbol anzeigen aktiviert ist. Das erste Symbol in der Datei weist die Indexnummer 0 (Null) auf. Wenn kein Symbol mit der angegebenen Indexnummer in existiert <paramref name="IconFileName" />, das Symbol mit der Indexnummer 1 (das zweite Symbol in der Datei) verwendet wird. Der Standardwert ist 0 (Null).</param>
+        <param name="IconLabel">Optionales- <b>Objekt</b>. Ein Bezeichnungsfeld (Beschriftung), das unter dem Symbol angezeigt wird.</param>
+        <param name="Left">Optionales- <b>Objekt</b>. Die Position (in Punkt) des linken Rands des neuen Objekts relativ zur Verankerung.</param>
+        <param name="Top">Optionales- <b>Objekt</b>. Die Position (in Punkt) des oberen Rands des neuen Objekts relativ zur Verankerung.</param>
+        <param name="Width">Optionales- <b>Objekt</b>. Die Breite des OLE-Objekts in Punkt.</param>
+        <param name="Height">Optionales- <b>Objekt</b>. Die Höhe des OLE-Objekts in Punkt.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Der Bereich, an dem welches das OLE-Objekt gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes des Bereichs Verankern positioniert wird. Wenn <paramref name="Anchor" /> nicht angegeben ist, wird automatisch der Anker platziert und das OLE-Objekt wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Erstellt ein OLE-Objekt. Gibt die <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das das neue OLE-Objekt darstellt.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPicture">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPicture (string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> erforderlich. Der Pfad und der Dateiname des Bilds.</param>
+        <param name="LinkToFile">Optionales- <b>Objekt</b>. <b>True</b> , wenn verknüpft das Bild mit der Datei, aus der es erstellt wurde. <b>False</b> , wenn dem Bild eine unabhängige Kopie der Datei vornehmen. Der Standardwert lautet <b>False</b>.</param>
+        <param name="SaveWithDocument">Optionales- <b>Objekt</b>. <b>True</b> , wenn die verknüpfte Grafik mit dem Dokument gespeichert. Der Standardwert lautet <b>False</b>.</param>
+        <param name="Left">Optionales- <b>Objekt</b>. Die Position (in Punkt) des linken Rands des neuen Bilds, relativ zur Verankerung.</param>
+        <param name="Top">Optionales- <b>Objekt</b>. Die Position (in Punkt) des oberen Rands des neuen Bilds, relativ zur Verankerung.</param>
+        <param name="Width">Optionales- <b>Objekt</b>. Die Breite des Bilds in Punkt.</param>
+        <param name="Height">Optionales- <b>Objekt</b>. Die Höhe des Bilds in Punkt.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Der Bereich, an dem welches das Bild gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, jedoch wird automatisch der Anker platziert, und das Bild wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Ein Bild hinzugefügt zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, welches das Bild repräsentiert und fügt es an, die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPolyline">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPolyline (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPolyline([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPolyline (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <b>Objekt</b>erforderlich. Ein Array von Koordinatenpaaren, das die Scheitelpunkte der Polylinienzeichnung angibt.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den die Polylinie gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und die Linie relativ zum oberen und linken Rand der Seite positioniert wird.</param>
+        <summary>Ein offenes oder geschlossenes Polygon hinzugefügt zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das das Polygon darstellt und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Um ein geschlossenes Vieleck zu bilden, wird dem ersten und letzten Scheitelpunkt der Polylinie weisen Sie dieselben Koordinaten zu.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddShape (int Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddShape([in]int32 Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddShape (Type As Integer, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Int32" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <b>Integer</b>erforderlich. Der Typ der Form zurückgegeben werden soll. Kann eine <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> Konstante.</param>
+        <param name="Left">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Position des linken Rands der AutoForm.</param>
+        <param name="Top">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Position des oberen Rands der AutoForm.</param>
+        <param name="Width">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Breite der AutoForm.</param>
+        <param name="Height">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Höhe der AutoForm.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an die die AutoForm gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und die AutoForm relativ zum oberen und linken Rand der Seite positioniert wird.</param>
+        <summary>Fügt eine AutoForm zu einem Dokument hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die AutoForm darstellt, und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Um den Typ einer hinzugefügten AutoForm zu ändern, die Sie hinzugefügt haben, legen Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> Eigenschaft.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSmartArt">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddSmartArt (Microsoft.Office.Core.SmartArtLayout Layout, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddSmartArt([in]class Microsoft.Office.Core.SmartArtLayout Layout, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddSmartArt(Microsoft.Office.Core.SmartArtLayout,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSmartArt (Layout As SmartArtLayout, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Layout" Type="Microsoft.Office.Core.SmartArtLayout" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Layout">Ein <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> -Objekt, das das Layout für die SmartArt-Grafik angibt.</param>
+        <param name="Left">Der Abstand zwischen dem linken Folienrand und dem linken Rand der SmartArt-Grafik in Punkt.</param>
+        <param name="Top">Der Abstand zwischen dem oberen Folienrand und dem oberen Rand der SmartArt-Grafik in Punkt.</param>
+        <param name="Width">Die Breite der SmartArt-Grafik.</param>
+        <param name="Height">Die Höhe der SmartArt-Grafik.</param>
+        <param name="Anchor">Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an den die SmartArt-Grafik gebunden ist. Wenn Anchor angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert. Wenn dieser Parameter nicht angegeben ist, der Verankern Bereich automatisch ausgewählt ist, und die SmartArt-Grafik wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Fügt die angegebene SmartArt-Grafik in das aktive Dokument ein.</summary>
+        <returns>Eine <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextbox">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextbox (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextbox([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextbox (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">Erforderliche <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />. Die Ausrichtung des Texts. Einige dieser Konstanten stehen Ihnen, abhängig von der ausgewählten oder installierten Sprachunterstützung (z. B. Deutsch), möglicherweise nicht zur Verfügung.</param>
+        <param name="Left">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Position des linken Rands des Textfelds.</param>
+        <param name="Top">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Position des oberen Rands des Textfelds.</param>
+        <param name="Width">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Breite des Textfelds.</param>
+        <param name="Height">
+          <b>Single</b>erforderlich. Die in Punkt gemessene Höhe des Textfelds.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an das das Textfeld gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und das Textfeld wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Ein Textfeld hinzugefügt zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das das Textfeld darstellt, und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextEffect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextEffect (Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, string Text, string FontName, float FontSize, Microsoft.Office.Core.MsoTriState FontBold, Microsoft.Office.Core.MsoTriState FontItalic, float Left, float Top, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextEffect([in]valuetype Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, [in]string Text, [in]string FontName, [in]float32 FontSize, [in]valuetype Microsoft.Office.Core.MsoTriState FontBold, [in]valuetype Microsoft.Office.Core.MsoTriState FontItalic, [in]float32 Left, [in]float32 Top, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextEffect (PresetTextEffect As MsoPresetTextEffect, Text As String, FontName As String, FontSize As Single, FontBold As MsoTriState, FontItalic As MsoTriState, Left As Single, Top As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PresetTextEffect" Type="Microsoft.Office.Core.MsoPresetTextEffect" />
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="FontName" Type="System.String" />
+        <Parameter Name="FontSize" Type="System.Single" />
+        <Parameter Name="FontBold" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="FontItalic" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="PresetTextEffect">Erforderliche <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />. Eine vordefinierte Texteffekt. Die Werte der <b>MsoPresetTextEffect</b> -Konstanten entsprechen den Formaten im Dialogfeld WordArt-Katalog (von links nach rechts und von oben nach unten nummeriert) aufgeführt.</param>
+        <param name="Text">
+          <b>String</b> erforderlich. Der Text in der WordArt.</param>
+        <param name="FontName">
+          <b>String</b> erforderlich. Der Name der Schriftart, die in der WordArt verwendet wird.</param>
+        <param name="FontSize">
+          <b>Single</b>erforderlich. Die Größe in Punkt, der im WordArt-Objekt verwendeten Schriftart.</param>
+        <param name="FontBold">Erforderliche <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>MsoTrue</b>, wenn die im WordArt-Objekt verwendete Schriftart fett formatiert werden soll.</param>
+        <param name="FontItalic">Erforderliche <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>MsoTrue</b>, wenn die im WordArt-Objekt verwendete Schriftart kursiv formatiert werden soll.</param>
+        <param name="Left">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des linken Rands der WordArt-Form relativ zur Verankerung.</param>
+        <param name="Top">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des oberen Rands der WordArt-Form relativ zur Verankerung.</param>
+        <param name="Anchor">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an die das WordArt-Objekt gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und die WordArt relativ zum oberen und linken Rand der Seite positioniert wird.</param>
+        <summary>Fügt eine WordArt-Form zu einem Dokument. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das das WordArt-Objekt darstellt, und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Wenn Sie einem Dokument WordArt hinzufügen, werden die Höhe und Breite der WordArt automatisch festgelegt basierend auf der Größe und Menge des angegebenen Texts.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWebVideo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddWebVideo (string EmbedCode, ref object VideoWidth, ref object VideoHeight, ref object PosterFrameImage, ref object Url, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddWebVideo([in]string EmbedCode, [in]object&amp; VideoWidth, [in]object&amp; VideoHeight, [in]object&amp; PosterFrameImage, [in]object&amp; Url, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddWebVideo(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWebVideo (EmbedCode As String, ByRef VideoWidth As Object, ByRef VideoHeight As Object, Optional ByRef PosterFrameImage As Object, Optional ByRef Url As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EmbedCode" Type="System.String" />
+        <Parameter Name="VideoWidth" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VideoHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PosterFrameImage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Url" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="EmbedCode">Der HTML-Code einbetten.</param>
+        <param name="VideoWidth">Eine ganze Zahl, die die Breite des Webs Videodaten in Pixel darstellt.</param>
+        <param name="VideoHeight">Eine ganze Zahl, die die Höhe des Webs Videodaten in Pixel darstellt.</param>
+        <param name="PosterFrameImage">Eine Zeichenfolge, die auf die Datei als Posterrahmen für das Web video verwenden verweist.</param>
+        <param name="Url">Eine Zeichenfolge, die die URL im Web video enthält.</param>
+        <param name="Left">Die Position (in Punkt) des linken Rands des Posterrahmens von der Kante des Dokuments.</param>
+        <param name="Top">Die Position (in Punkt) des oberen Rands des Posterrahmens von der Kante des Dokuments.</param>
+        <param name="Width">Die Breite (in Punkt) des Posterrahmens, in dem Dokument.</param>
+        <param name="Height">Die Höhe (in Punkt) des Posterrahmens, in dem Dokument.</param>
+        <param name="Anchor">Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text darstellt, an dem das video Web gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird die Verankerung am Anfang des ersten Absatzes im Bereich Verankern positioniert wird. Wenn dieses Argument ausgelassen wird, verankern Bereich automatisch ausgewählt ist, und das Video wird relativ zum oberen und linken Rand der Seite positioniert.</param>
+        <summary>Dem Dokument hinzugefügt ein neues Web Video.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFreeform">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform (Microsoft.Office.Core.MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform([in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildFreeform (EditingType As MsoEditingType, X1 As Single, Y1 As Single) As FreeformBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::FreeformBuilder ^ BuildFreeform(Microsoft::Office::Core::MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FreeformBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
+        <Parameter Name="X1" Type="System.Single" />
+        <Parameter Name="Y1" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="EditingType">Die Bearbeitungseigenschaft des ersten Knotens. Erforderliche <see cref="T:Microsoft.Office.Core.MsoEditingType" />. <b>MsoEditingType</b> kann eine der folgenden Konstanten sein (kann nicht <b>MsoEditingSmooth</b> oder <b>MsoEditingSymmetric</b>sein). <b>msoEditingAuto</b><b>msoEditingCorner</b></param>
+        <param name="X1">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des ersten Knotens der Freihandzeichnung, relativ zur oberen linken Ecke des Dokuments.</param>
+        <param name="Y1">
+          <b>Single</b>erforderlich. Die Position (in Punkt) des ersten Knotens der Freihandzeichnung, relativ zur oberen linken Ecke des Dokuments.</param>
+        <summary>Baut ein Freihandobjekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> -Objekt zurück, das die Freihandform während des Aufbaus darstellt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> -Methode, um Abschnitte zu der Freihandform hinzuzufügen. Nachdem Sie mindestens ein Segment hinzugefügt haben, können Sie mithilfe der <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> -Methode, um das <b>FreeformBuilder</b> -Objekt in Umwandeln einer <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, die die geometrische Beschreibung hat Sie im <b>FreeformBuilder</b> -Objekt definiert haben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Shape ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeRange Range (ref object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ShapeRange Range([in]object&amp; Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Range (ByRef Index As Object) As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Range(System::Object ^ % Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objekt</b>erforderlich. Gibt an, welche Formen im angegebenen Bereich enthalten sein. Kann eine ganze Zahl, die angibt, der die Indexnummer des einer Form innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> -Auflistung, eine Zeichenfolge, die den Namen einer Form angibt, oder ein <b>Objekt</b> -Array, das ganze Zahlen oder Zeichenfolgen enthält.</param>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Objekt.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Position-Zeichenwerte beginnen mit 0 (null) am Anfang des Dokuments. Alle Zeichen werden gezählt, einschließlich der nicht druckbare Zeichen. Ausgeblendete Zeichen werden gezählt, auch wenn sie nicht angezeigt werden. Wenn Start- und Endzeichenpositionen verwendet für die <b>Range</b> -Methode nicht angeben, wird das gesamte Dokument als zurückgegeben eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt.</para> Fügen Sie keine 
+          <para><b>ShapeRange</b> -Objekte <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekte. Ein <b>InlineShape</b> -Objekt entspricht einem Zeichen und wird wie ein Zeichen innerhalb eines Bereichs von Text positioniert. <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekte sind an einen Textbereich verankert (standardmäßig die Markierung), aber eine beliebige Stelle auf der Seite positioniert werden soll. Ein <b>Shape</b> -Objekt wird immer auf derselben Seite wie der Bereich, der es verankert wird angezeigt,.</para><para>Können auch mit einem <b>ShapeRange</b> -Objekt, die eine einzelne Form enthält die meisten Vorgänge möglich, dass Sie ein <b>Shape</b> -Objekt Sie durchführen. Bei einigen Vorgängen, wenn auf ein <b>ShapeRange</b> -Objekt durchgeführt, die mehrere Shapes enthält führen zu einem Fehler.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectAll">
+      <MemberSignature Language="C#" Value="public void SelectAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wählt alle Formen im Hauptartikel, in einem Zeichenbereich oder in Kopf- und Fußzeilen eines Dokuments.</summary>
+        <remarks>
+          <para>Wählen Sie diese Methode nicht <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Objekte.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

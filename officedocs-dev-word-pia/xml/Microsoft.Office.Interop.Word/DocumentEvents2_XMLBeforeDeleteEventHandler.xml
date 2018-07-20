@@ -1,0 +1,52 @@
+<Type Name="DocumentEvents2_XMLBeforeDeleteEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bdccc03eae449e6d6d0cebfd1fb535ccc2027181" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670347" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLBeforeDeleteEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLBeforeDeleteEventHandler(DeletedRange As Range, OldXMLNode As XMLNode, InUndoRedo As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range ^ DeletedRange, XMLNode ^ OldXMLNode, bool InUndoRedo);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="DeletedRange" Type="Microsoft.Office.Interop.Word.Range" />
+    <Parameter Name="OldXMLNode" Type="Microsoft.Office.Interop.Word.XMLNode" />
+    <Parameter Name="InUndoRedo" Type="System.Boolean" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="DeletedRange">
+      <see cref="T:Microsoft.Office.Interop.Word.Range" />-Objekt. Der Inhalt des XML-Elements, das gelöscht wird. Wenn nur ein Element gelöscht wird und nicht Text zugeordnete, der <paramref name="DeletedRange" /> Parameter ist nicht vorhanden und wird daher auf <b>Nothing</b>festgelegt.</param>
+    <param name="OldXMLNode">
+      <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />-Objekt. Der Knoten, der gelöscht wird.</param>
+    <param name="InUndoRedo">
+      <b>Boolean</b>. <b>True</b> gibt an, dass die Aktion mithilfe des Befehls <b>Rückgängig</b> oder <b>Wiederholen</b> in Microsoft Word ausgeführt wurde.</param>
+    <summary>Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> Ereignis. <b>XMLBeforeDelete</b> -Ereignis tritt auf, wenn ein Benutzer ein XML-Element aus einem Dokument gelöscht.</summary>
+    <remarks>
+      <para>Wenn die <paramref name="InUndoRedo" /> Parameter den Wert <b>True</b>hat, nicht ändern, den XML-Code in einem Dokument während der <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> und <b>XMLBeforeDelete</b> ausgeführt. </para>
+      <para>Wenn die <paramref name="InUndoRedo" /> Parameter <b>False</b>ist, können Sie einfügen und löschen Sie den XML-Code im Dokument – aber Achten Sie darauf, dass die Ereignisse <b>XMLAfterInsert</b> und <b>XMLBeforeDelete</b> nicht versucht, miteinander Abbrechen verursacht eine Endlosschleife. Sie können mithilfe einer globalen unendliche Schleifen verhindern <b>Boolean</b> -Variable und überprüfen Sie, die am Anfang der Fehlerhandler.</para>
+      <para />
+    </remarks>
+  </Docs>
+</Type>

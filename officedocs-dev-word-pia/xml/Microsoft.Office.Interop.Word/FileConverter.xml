@@ -1,0 +1,401 @@
+<Type Name="FileConverter" FullName="Microsoft.Office.Interop.Word.FileConverter">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b895588fe75d88bfa9fe9416f0d5c82af0369a00" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670391" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FileConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FileConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FileConverter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FileConverter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020999-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt einen Dateikonverter, der zum Öffnen oder Speichern von Dateien verwendet wird.</summary>
+    <remarks>
+      <para>Das <b>FileConverter</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> Auflistung. Die <b>FileConverters</b> -Auflistung enthält alle installierten Dateikonverter zum Öffnen und Speichern von Dateien.</para>
+      <para>Verwendung <b>FileConverters</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine Klassenname oder die Indexzahl darstellt, um ein einzelnes <b>FileConverter</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Dateikonverters in der <b>FileConverters</b> -Auflistung.</para>
+      <para>Sie keinen neuen Dateikonverter erstellen oder der <b>FileConverters</b> -Auflistung hinzufügen. <b>FileConverter</b> -Objekten werden während der Installation von Microsoft Office oder durch Installieren zusätzlicher Dateikonverter hinzugefügt. Verwenden Sie entweder die <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> oder <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> Eigenschaft, um zu bestimmen, ob ein <b>FileConverter</b> -Objekt zum Öffnen oder Speichern von Dokument verwendet werden kann.</para>
+      <para>Datei Konverter zum Speichern von Dokumenten werden im Dialogfeld Speichern unter aufgelistet. Dateikonverter zum Öffnen von Dokumenten in einem Dialogfeld angezeigt werden, wenn das Konvertierung beim Öffnen Kontrollkästchen bestätigen auf der Registerkarte Allgemein im Dialogfeld Optionen (Menü Extras) ausgewählt ist.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanOpen">
+      <MemberSignature Language="C#" Value="public bool CanOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanOpen { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bestimmt, ob der angegebene Dateikonverter zum Öffnen von Dateien konzipiert ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn der angegebene Dateikonverter zum Öffnen von Dateien, und <b>False,</b> Wenn nicht entworfen wurde.</para>
+          <para>Der <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> -Eigenschaft gibt <b>True</b> zurück, wenn der angegebene Dateikonverter zum Speichern (exportieren) von Dateien verwendet werden kann.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSave">
+      <MemberSignature Language="C#" Value="public bool CanSave { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSave" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanSave As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanSave { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bestimmt, ob der angegebene Dateikonverter zum Speichern von Dateien konzipiert ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> -Eigenschaft gibt <b>True</b> zurück, wenn der angegebene Dateikonverter zum Öffnen (importieren) von Dateien verwendet werden kann.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassName">
+      <MemberSignature Language="C#" Value="public string ClassName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.ClassName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen eindeutigen Namen, der den Dateikonverter identifiziert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public string Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Extensions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extensions { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Datei verknüpft ist, mit dem angegebenen Namen Extensions <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> Objekt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatName">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.FormatName" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property FormatName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Namen des angegebenen Dateikonvertierungsprogramms zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die Formatnamen erscheinen klicken Sie im Feld Dateityp im Dialogfeld Speichern unter (Menü Datei).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenFormat">
+      <MemberSignature Language="C#" Value="public int OpenFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OpenFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpenFormat As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OpenFormat { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das Dateiformat des angegebenen Dateikonvertierungsprogramms zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <b>OpenFormat</b> -Eigenschaft kann eine beliebige gültige <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> -Konstante, oder es kann eine eindeutige Zahl, die einen externen Dateikonverter darstellt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Nicht den Pfad ein nachfolgendes Zeichen enthalten, z. B. "C:\MSOffice" oder "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.FileConverter.Name" /> -Eigenschaft auf den Dateinamen ohne den Pfad zurück</para>
+          <para>Sie können <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl sie Schrägstriche (/) und die <b>PathSeparator</b> -Eigenschaft standardmäßig einen umgekehrten Schrägstrich enthalten (\).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveFormat">
+      <MemberSignature Language="C#" Value="public int SaveFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SaveFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.SaveFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SaveFormat As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SaveFormat { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das Dateiformat des angegebenen Dateikonvertierungsprogramms zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der zurückgegebene Wert ist eine eindeutige Zahl, die einen externen Dateikonverter gibt an, oder ein <see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" /> Konstante.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

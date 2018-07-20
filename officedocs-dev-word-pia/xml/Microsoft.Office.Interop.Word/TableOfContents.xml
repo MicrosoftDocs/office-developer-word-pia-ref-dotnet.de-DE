@@ -1,0 +1,614 @@
+<Type Name="TableOfContents" FullName="Microsoft.Office.Interop.Word.TableOfContents">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="053fb8945387416b2c4e96275be1372a3daede59" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20670225" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface TableOfContents" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableOfContents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableOfContents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface TableOfContents" />
+  <TypeSignature Language="C++ CLI" Value="public interface class TableOfContents" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020913-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt ein einzelnes Inhaltsverzeichnis in einem Dokument dar.</summary>
+    <remarks>
+      <para>Das <b>TableOfContents</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> Auflistung. <b>TablesOfContents</b> -Auflistung enthält alle Inhaltsverzeichnisse in einem Dokument.</para>
+      <para>Verwendung <b>TablesOfContents</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>TableOfContents</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Inhaltsverzeichnisses im Dokument.</para>
+      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um einem Dokument ein Inhaltsverzeichnis hinzugefügt.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TableOfContents.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löscht das angegebene Objekt.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadingStyles">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.HeadingStyles HeadingStyles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.HeadingStyles HeadingStyles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.HeadingStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeadingStyles As HeadingStyles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::HeadingStyles ^ HeadingStyles { Microsoft::Office::Interop::Word::HeadingStyles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.HeadingStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> -Objekt, weitere zum Kompilieren ein Inhaltsverzeichnis (andere Formatvorlagen als die Formatvorlagen Überschrift 1 – Überschrift 9) verwendete Formatvorlagen darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HidePageNumbersInWeb">
+      <MemberSignature Language="C#" Value="public bool HidePageNumbersInWeb { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HidePageNumbersInWeb" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.HidePageNumbersInWeb" />
+      <MemberSignature Language="VB.NET" Value="Public Property HidePageNumbersInWeb As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HidePageNumbersInWeb { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt fest, ob die Seitenzahlen in einer Tabelle der Inhalt beim Veröffentlichen im Web ausgeblendet werden sollen.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludePageNumbers">
+      <MemberSignature Language="C#" Value="public bool IncludePageNumbers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludePageNumbers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.IncludePageNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludePageNumbers As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludePageNumbers { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> wenn Seitenzahlen in das Inhaltsverzeichnis enthalten sind.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LowerHeadingLevel">
+      <MemberSignature Language="C#" Value="public int LowerHeadingLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LowerHeadingLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.LowerHeadingLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property LowerHeadingLevel As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LowerHeadingLevel { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Überschriftenebene für ein Inhaltsverzeichnis.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>LowerHeadingLevel</b> -Eigenschaft entspricht dem Endwert mit dem Schalter \o für ein Feld (Inhaltsverzeichnis) verwendet.</para>
+          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TableOfContents.UpperHeadingLevel" /> -Eigenschaft auf die Überschriftenebene festzulegen. Legen Sie beispielsweise zum Festlegen des TOC-Feld die Syntax {TOC \o "1-3"} <b>LowerHeadingLevel</b> -Eigenschaft auf 3 und die <b>UpperHeadingLevel</b> -Eigenschaft auf 1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="P:Microsoft.Office.Interop.Word.TableOfContents.Range" /> Methode.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightAlignPageNumbers">
+      <MemberSignature Language="C#" Value="public bool RightAlignPageNumbers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RightAlignPageNumbers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.RightAlignPageNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public Property RightAlignPageNumbers As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RightAlignPageNumbers { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> wenn Seitenzahlen am rechten Rand eines Inhaltsverzeichnisses ausgerichtet sind.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabLeader">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdTabLeader TabLeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdTabLeader TabLeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.TabLeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabLeader As WdTabLeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTabLeader TabLeader { Microsoft::Office::Interop::Word::WdTabLeader get(); void set(Microsoft::Office::Interop::Word::WdTabLeader value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen das Zeichen zwischen Einträgen und den Seitenzahlen in einem Inhaltsverzeichnis.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />eine der folgenden <b>WdTabLeader</b> -Konstanten kann sein. </para>
+          <para>
+            <b>WdTabLeaderDashes </b>
+          </para>
+          <para>
+            <b>WdTabLeaderDots </b>
+          </para>
+          <para>
+            <b>WdTabLeaderHeavy </b>
+          </para>
+          <para>
+            <b>WdTabLeaderLines </b>
+          </para>
+          <para>
+            <b>WdTabLeaderMiddleDot </b>
+          </para>
+          <para>
+            <b>WdTabLeaderSpaces</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableID">
+      <MemberSignature Language="C#" Value="public string TableID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TableID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.TableID" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen einer Kennzeichen aus einem Buchstaben, die zum Erstellen eines Inhaltsverzeichnisses aus TOC-Feldern verwendet wird.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>TableID</b> -Eigenschaft entspricht dem Schalter \f für ein TOC-Feld. "T" erstellt beispielsweise ein Inhaltsverzeichnis aus TOC-Feldern mithilfe der Verzeichnis-ID T.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TableOfContents.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aktualisiert die in das angegebene Inhaltsverzeichnis angezeigten Einträge.</summary>
+        <remarks>
+          <para>
+            <b>Hinweis</b>   Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TableOfContents.UpdatePageNumbers" /> -Methode, um die Seitennummern von Elementen in einem Inhaltsverzeichnis zu aktualisieren.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatePageNumbers">
+      <MemberSignature Language="C#" Value="public void UpdatePageNumbers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdatePageNumbers() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TableOfContents.UpdatePageNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdatePageNumbers ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdatePageNumbers();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aktualisiert die Seitenzahlen für Elemente im angegebenen Inhaltsverzeichnis.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpperHeadingLevel">
+      <MemberSignature Language="C#" Value="public int UpperHeadingLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UpperHeadingLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.UpperHeadingLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpperHeadingLevel As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int UpperHeadingLevel { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Überschriftenebene für ein Inhaltsverzeichnis.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <b>UpperHeadingLevel</b> -Eigenschaft entspricht dem Startwert, der mit dem Schalter \o für ein Feld (Inhaltsverzeichnis) verwendet.</para>
+          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TableOfContents.LowerHeadingLevel" /> Eigenschaft, um die Überschriftenebene festzulegen. Legen Sie beispielsweise zum Festlegen des TOC-Feld die Syntax {TOC \o "1-3"} <b>LowerHeadingLevel</b> -Eigenschaft auf 3 und die <b>UpperHeadingLevel</b> -Eigenschaft auf 1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseFields">
+      <MemberSignature Language="C#" Value="public bool UseFields { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseFields" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.UseFields" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseFields As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseFields { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn die Tabelle der Inhalt TC Felder (Verzeichniseintrag) verwendet werden, um ein Inhaltsverzeichnis zu erstellen.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseHeadingStyles">
+      <MemberSignature Language="C#" Value="public bool UseHeadingStyles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseHeadingStyles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.UseHeadingStyles" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseHeadingStyles As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseHeadingStyles { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True,</b> Wenn Sie integrierte Formatvorlagen für Überschriften verwendet werden, um ein Inhaltsverzeichnis zu erstellen.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseHyperlinks">
+      <MemberSignature Language="C#" Value="public bool UseHyperlinks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseHyperlinks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableOfContents.UseHyperlinks" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseHyperlinks As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseHyperlinks { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt fest, ob die Einträge in einem Inhaltsverzeichnis bei Veröffentlichung im Web als Hyperlinks formatiert werden sollen.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
