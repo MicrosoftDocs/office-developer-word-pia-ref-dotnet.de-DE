@@ -1,13 +1,5 @@
 <Type Name="Tables" FullName="Microsoft.Office.Interop.Word.Tables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0295eb260914340962417034fdb652888fbf97c0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669289" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="73c9bbc17f2a0e8f243a1e02441a94bc43b4d4be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146030" /></Metadata><TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Tables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Tables" />
   <TypeSignature Language="VB.NET" Value="Public Interface Tables&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Table" /> -Objekten, die die Tabellen in einer Auswahl, einem Bereich oder einem Dokument darstellen.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Tables</b> -Eigenschaft, um die <b>Tables</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> -Methode, um eine Tabelle im angegebenen Bereich hinzuzufügen.</para>
-      <para>Mit <b>Tabellen</b>(<paramref name="index" />), wobei Index die <paramref name="index" /> darstellt, um ein einzelnes <b>Table</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Tabelle in der Auswahl, einem Bereich oder einem Dokument.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Gezählt werden Elemente in anderen Textabschnitten verwenden Sie die Auflistung mit den <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Table" /> Objekten, die die Tabellen in einer Auswahl, einem Bereich oder einem Dokument darstellen.</summary>
+    <remarks><para>Mit der <b>Tables</b>-Eigenschaft geben Sie die <b>Tables</b>-Auflistung zurück.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> die-Methode, um eine Tabelle im angegebenen Bereich hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Tables (<paramref name="index" />), wobei Index <paramref name="index" /> die Zahl ist, um ein einzelnes <b>Table</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Tabelle in der Auswahl, im Bereich oder im Dokument dar.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Zum zählen von Elementen in anderen Textabschnitten verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.Range" /> Auflistung mit dem-Objekt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,14 +55,12 @@
         <Parameter Name="AutoFitBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem Sie die Tabelle angezeigt werden soll. Die Tabelle ersetzt den Bereich, wenn der Bereich nicht reduziert ist.</param>
-        <param name="NumRows">
-          <b>Integer</b>erforderlich. Die Anzahl der Zeilen, die die Tabelle umfassen soll.</param>
-        <param name="NumColumns">
-          <b>Integer</b>erforderlich. Die Anzahl der Spalten, die die Tabelle umfassen soll.</param>
-        <param name="DefaultTableBehavior">Optionales- <b>Objekt</b>. Festlegen eines Werts, das angibt, ob Word automatisch Zellen in Tabellen angepasst wird (AutoAnpassen) den Inhalt der Zellen angepasst wird. Kann eine der folgenden Konstanten sein: <b>wdWord8TableBehavior</b> (AutoAnpassen deaktiviert) oder <b>wdWord9TableBehavior</b> (AutoAnpassen aktiviert). Die Standardkonstante ist <b>wdWord8TableBehavior</b>.</param>
-        <param name="AutoFitBehavior">Optionales- <b>Objekt</b>. Legt die AutoAnpassen-Regeln für die Tabellengröße in Microsoft Word geändert. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> Konstanten: <b>WdAutoFitContent</b>, <b>WdAutoFitFixed</b>oder <b>WdAutoFitWindow</b>. Wenn <paramref name="DefaultTableBehavior" /> ist festgelegt auf <b>wdWord8TableBehavior</b>, wird dieses Argument ignoriert.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Table" /> -Objekt, das eine neue, leere Tabelle zu einem Dokument hinzugefügt wurde.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem die Tabelle angezeigt werden soll. Die Tabelle ersetzt den Bereich, wenn der Bereich nicht reduziert ist.</param>
+        <param name="NumRows">Erforderliche <b>ganze Zahl</b>. Die Anzahl der Zeilen, die die Tabelle umfassen soll.</param>
+        <param name="NumColumns">Erforderliche <b>ganze Zahl</b>. Die Anzahl der Spalten, die die Tabelle umfassen soll.</param>
+        <param name="DefaultTableBehavior">Optionales <b>Objekt</b>. Legt einen Wert fest, der angibt, ob Word Zellen in Tabellen automatisch so ändert, dass Sie in den Inhalt der Zellen passt (Auto anpassen). Kann eine der folgenden Konstanten sein: <b>wdWord8TableBehavior</b> (Auto Anpassung deaktiviert) oder <b>wdWord9TableBehavior</b> (Auto anpassen aktiviert). Die Standardkonstante ist <b>wdWord8TableBehavior</b>.</param>
+        <param name="AutoFitBehavior">Optionales <b>Objekt</b>. Legt die Regeln für die automatische Anpassung fest, wie Microsoft Word Größentabellen. Kann <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> eine der folgenden Konstanten sein: <b>wdAutoFitContent</b>, <b>wdAutoFitFixed</b>oder <b>wdAutoFitWindow</b>. Wenn <paramref name="DefaultTableBehavior" /> auf <b>wdWord8TableBehavior</b>festgelegt ist, wird dieses Argument ignoriert.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Table" /> Objekt zurück, das eine neue, leere Tabelle darstellt, die einem Dokument hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,11 +181,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -258,7 +244,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -287,12 +273,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Schachtelungsebene der angegebenen Tabellen zurück.</summary>
+        <summary>Gibt die Verschachtelungsebene der angegebenen Tabellen zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die äußerste Tabelle hat eine Verschachtelungsebene 1. Die Schachtelungsebene der einzelnen nacheinander geschachtelte Tabelle ist eine höher ist als der vorherigen Tabelle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die äußerste Tabelle liegt auf Verschachtelungsbene 1. Die Verschachtelungsebene jeder folgenden geschachtelten Tabelle liegt um 1 höher als die der vorhergehenden Tabelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

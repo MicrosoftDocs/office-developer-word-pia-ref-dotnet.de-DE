@@ -1,13 +1,5 @@
 <Type Name="CoAuthoring" FullName="Microsoft.Office.Interop.Word.CoAuthoring">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d195f255aaf0a9c9baac4c0c2a349c00374fd387" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669692" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthoring" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aa37e28413aff41cf5c8b6361b6d410b11b49671" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147270" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthoring" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthoring" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthoring" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthoring" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt den primären Einstiegspunkt für das CoAuthoring-Objektmodell bereit.</summary>
-    <remarks>
-      <para>Das <b>CoAuthoring</b> -Objekt stellt Informationen zur gemeinsamen dokumenterstellung auf Dokumentebene. Beispielsweise das <b>CoAuthoring</b> -Objekt kann finden Sie Informationen zu an, ob im Dokument, welche Benutzer aktuelle Sperren im Dokument vorhanden sind, sind alle Sperren oder oder nicht Updates des Dokumentinhalts vom Server verfügbar ist. Verwendung der <see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" /> -Eigenschaft auf das <b>CoAuthoring</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>CoAuthoring</b>-Objekt stellt Informationen über Mitautoren auf Dokumentebene bereit. So kann das <b>CoAuthoring</b>-Objekt beispielsweise Informationen darüber liefern, ob es im Dokument irgendwelche Sperren gibt, welche Benutzer gegenwärtig Sperren für das Dokument festgelegt haben oder ob es auf dem Server Aktualisierungen des Dokumentinhalts gibt. Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" /> die-Eigenschaft, um das Mitverfasser Objekt zurückzugeben. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,12 +46,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das die Microsoft Word Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt, das die Microsoft Word Anwendung darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Authors">
@@ -87,12 +75,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> -Auflistung, die alle Mitautoren das Dokument gegenwärtig bearbeiten darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> -Auflistung, die alle Mitautoren das Dokument gegenwärtig bearbeiten darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt. Die von dieser Eigenschaft zurückgegebene Auflistung ist statisch. Wenn dieser Auflistung gespeichert und dann neue Benutzer beginnen mit Bearbeitung des Dokuments oder aktueller Benutzer sind nicht mehr bearbeiten des Dokuments, die gespeicherte Auflistung wird nicht geändert.</para>
-          <para />
-        </remarks>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> Auflistung ab, die alle Co-Autoren darstellt, die das Dokument derzeit bearbeiten.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> Auflistung, die alle Co-Autoren darstellt, die das Dokument derzeit bearbeiten.</value>
+        <remarks><para>Schreibgeschützt. Die von dieser Eigenschaft zurückgegebene Auflistung ist statisch. Wenn diese Sammlung gespeichert wird und neue Benutzer mit der Bearbeitung des Dokuments beginnen oder die aktuellen Benutzer das Dokument nicht mehr bearbeiten, wird die gespeicherte Auflistung nicht mehr geändert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanMerge">
@@ -119,16 +105,14 @@
       </ReturnValue>
       <Docs>
         <summary>Ruft ab, ob das Dokument automatisch zusammengeführt werden kann.</summary>
-        <value>
-          <b>true,</b> Wenn das Dokument automatisch zusammengeführt werden kann. anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Nur Dokumente, die sich auf einer Microsoft SharePoint Server 2010-Dokumentbibliothek befinden können automatisch zusammengeführt werden. Darüber hinaus kann kein Dokument mit den folgenden Features automatisch zusammengeführt werden:</para>
+        <value><b>true</b> , wenn das Dokument automatisch zusammengeführt werden kann; andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Nur Dokumente, die sich in einer Microsoft SharePoint Server 2010 Dokumentbibliothek befinden, können automatisch zusammengeführt werden. Daneben kann auch ein Dokument mit den folgenden Features nicht automatisch zusammengeführt werden:</para>
           <list type="bullet">
             <item>
-              <para>Digital Rights Management</para>
+              <para>Verwaltung digitaler Rechte (DRM, Digital Rights Management)</para>
             </item>
             <item>
-              <para>Digitaler Signaturen</para>
+              <para>Digitale Signaturen</para>
             </item>
             <item>
               <para>Final-Modus</para>
@@ -140,8 +124,7 @@
               <para>Zentraldokument</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanShare">
@@ -167,13 +150,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab, ob dieses Dokument mehreren Autoren gleichzeitig bearbeitet werden kann.</summary>
-        <value>
-          <b>true,</b> Wenn dieses Dokument Mitautor werden kann. anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Schreibgeschützt. <b>Diese Eigenschaft gilt nur, wenn</b> die <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" /> -Eigenschaft <b>true</b> ist und das Dokument eine DOCX-Datei.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ab, ob dieses Dokument gemeinsam erstellt werden kann.</summary>
+        <value><b>true</b> , wenn dieses Dokument gemeinsam verfasst werden kann; andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Schreibgeschützt. Diese Eigenschaft ist nur dann <b>true</b> , <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" /> wenn die Eigenschaft auf <b>true</b> festgelegt ist und das Dokument eine DOCX-Datei ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Conflicts">
@@ -199,12 +179,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> -Auflistung, die alle Konflikte in einem Dokument darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> -Auflistung, die alle Konflikte in einem Dokument darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Auflistung ab, die alle Konflikte in einem Dokument darstellt.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Auflistung, die alle Konflikte in einem Dokument darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -232,12 +210,10 @@
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</value>
-        <remarks>
-          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Word verfügt beispielsweise über den Erstellercode MSWD.</para>
+        <remarks><para>Schreibgeschützter <b>Long</b>-Wert. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Apple Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD.</para>
           <para>
-            <b>Vorsicht</b>: Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para />
-        </remarks>
+            <b>Vorsicht</b>: dieser Wert kann auch durch die Konstante <b>wdCreatorCode</b>dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locks">
@@ -263,12 +239,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> -Auflistung, die Sperren im Dokument darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> -Auflistung, die Sperren im Dokument darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> Auflistung ab, die die Sperren im Dokument darstellt.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> Auflistung, die die Sperren im Dokument darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Me">
@@ -294,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> -Objekt, das den aktuellen Benutzer darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> -Objekt, das den aktuellen Benutzer darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> Objekt ab, das den aktuellen Benutzer darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> Objekt, das den aktuellen Benutzer darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -325,8 +297,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> Objekt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> Objekt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> angegebenen Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,13 +325,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab, ob das Dokument ausstehende Updates verfügt, die nicht akzeptiert wurden.</summary>
-        <value>
-          <b>true,</b> Wenn das Dokument ausstehende Updates verfügt, die nicht akzeptiert wurden. anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ab, ob das Dokument ausstehende Updates enthält, die nicht akzeptiert wurden.</summary>
+        <value><b>true</b> , wenn das Dokument ausstehende Updates, die nicht akzeptiert wurden; andernfalls <b>false</b>.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Updates">
@@ -385,12 +354,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthUpdates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> -Auflistung, die alle verfügbaren Updates für das Dokument darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> -Auflistung, die alle verfügbaren Updates für das Dokument darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> Auflistung ab, die alle verfügbaren Updates für das Dokument darstellt.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> Auflistung, die alle verfügbaren Updates für das Dokument darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

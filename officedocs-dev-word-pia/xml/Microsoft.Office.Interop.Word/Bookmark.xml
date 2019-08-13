@@ -1,13 +1,5 @@
 <Type Name="Bookmark" FullName="Microsoft.Office.Interop.Word.Bookmark">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2164b8c51939ffb7e00b90163ced95a4db5c49d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670464" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bookmark" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4d16f348543910c5ebcb48db2c87d1c11e3f73c5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146346" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmark" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmark" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmark" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmark" />
@@ -26,16 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine einzelne Textmarke.</summary>
-    <remarks>
-      <para>Das <b>Bookmark</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> Auflistung. Bookmarks-Auflistung enthält alle Textmarken im Dialogfeld Textmarke (Menü "Einfügen").</para>
-      <para>Use <b>Lesezeichen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name der Textmarke oder die Indexzahl darstellt, um ein einzelnes <b>Bookmark</b> -Objekt zurückzugeben. Sie müssen exakt übereinstimmen, die Rechtschreibung (jedoch nicht unbedingt die Groß-/Kleinschreibung) von der Name der Textmarke.</para>
-      <para>Die Indexnummer stellt die Position der Textmarke in die <see cref="T:Microsoft.Office.Interop.Word.Selection" /> oder <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Für die <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekts, der die Indexnummer stellt die Position der Textmarke in die alphabetische Liste der Textmarken im Dialogfeld Textmarken (klicken Sie auf Name, um die Liste der Textmarken alphabetisch sortieren).</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> -Methode, um eine Textmarke in einen Dokumentbereich hinzufügen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /> -Eigenschaft für ein Range- oder Selection-Objekt, um die Indexnummer des <b>Bookmark</b> -Objekts in der <b>Bookmarks</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> -Methode, um zu bestimmen, ob eine Textmarke bereits in der Auswahl, einem Bereich oder einem Dokument vorhanden ist.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine einzelne Textmarke dar.</summary>
+    <remarks><para>Das <b>Bookmark</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> Auflistung. Die Bookmarks-Auflistung enthält alle Textmarken im Dialogfeld Textmarke (Menü Einfügen).</para>
+      <para>Verwenden <b></b>Sie Bookmarks (<paramref name="index" />) <paramref name="index" /> , wobei es sich um den Namen oder die Indexnummer der Textmarke handelt, um ein einzelnes <b>Bookmark</b> -Objekt zurückzugeben. Halten Sie sich genau an die Schreibweise des Textmarkennamens (Groß-/Kleinschreibung spielt keine Rolle).</para>
+      <para>Die Indexnummer stellt die Position der Textmarke im Objekt <see cref="T:Microsoft.Office.Interop.Word.Selection" /> oder <see cref="T:Microsoft.Office.Interop.Word.Range" /> dar. Für das <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt stellt die Indexnummer die Position der Textmarke in der alphabetischen Liste der Lesezeichen im Dialogfeldtext Marken dar (Klicken Sie auf Name, um die Liste der Lesezeichen alphabetisch zu sortieren).</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> die-Methode, um einem Dokumentbereich eine Textmarke hinzuzufügen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /> die-Eigenschaft mit einem Range-oder Selection-Objekt, um die Indexnummer des <b>Bookmark</b> -Objekts in der <b>Bookmarks</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> die-Methode, um zu bestimmen, ob eine Textmarke bereits in der Auswahl, im Bereich oder im Dokument vorhanden ist.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, ob die angegebene Textmarke eine Tabellenspalte ist.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob es sich bei der angegebenen Textmarke um eine Tabellenspalte handelt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +108,7 @@
       </Parameters>
       <Docs>
         <param name="Name">Der Name der neuen Textmarke.</param>
-        <summary>Legt eine neue Textmarke identifizierten der <paramref name="Name" /> Argument für den Speicherort gekennzeichnet durch die angegebene <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt.</summary>
+        <summary>Legt eine neue Textmarke fest, <paramref name="Name" /> die durch das Argument auf den durch das <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> angegebene Objekt markierten Speicherort festgelegt wird.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,13 +136,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -203,13 +191,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, ob die angegebene Textmarke leer ist.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob die angegebene Textmarke leer ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Eine leere Textmarke markiert eine Position (eine reduzierte Auswahl); es nicht Text markieren.</para>
-          <para>Ein Fehler tritt auf, wenn die angegebene Textmarke nicht vorhanden ist. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> -Methode, um zu bestimmen, ob die Textmarke vorhanden ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Eine leere Textmarke markiert eine Position (eine reduzierte Auswahl); Text wird nicht markiert.</para>
+          <para>Wenn die angegebene Textmarke nicht vorhanden ist, tritt ein Fehler auf. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> die-Methode, um zu bestimmen, ob die Textmarke vorhanden ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -238,14 +224,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Position des letzten Zeichens einer Textmarke.</summary>
+        <summary>Gibt die Position des letzten Zeichens einer Textmarke zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> -Objekt besitzt eine Anfangsposition und eine Endposition. Die Endposition ist der Punkt weitesten vom Anfang des Textabschnitts.</para>
-          <para>Gibt diese Eigenschaft die Endzeichenposition relativ zum Anfang des Textabschnitts. Der Hauptartikel (<b>WdMainTextStory</b>) beginnt mit der Zeichenposition 0 (null). Sie können die Größe einer Textmarke durch Festlegen dieser Eigenschaft ändern.</para>
-          <para>Wenn diese Eigenschaft auf einen Wert kleiner als festgelegt ist die <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> Eigenschaft, wird die <b>Start</b> -Eigenschaft auf denselben Wert festgelegt (d. h., <b>Starten</b> und <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> -Eigenschaft sind gleich).</para>
-          <para />
-        </remarks>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt hat eine Anfangsposition und eine Endposition. Die Endposition ist der Punkt, der am weitesten vom Anfang des Artikels entfernt ist.</para>
+          <para>Diese Eigenschaft gibt die Endzeichenposition relativ zum Anfang der Dokumentkomponente zurück. Der Hauptdokument Text (<b>wdMainTextStory</b>) beginnt mit der Zeichenposition 0 (null). Sie können die Größe einer Textmarke durch Festlegen dieser Eigenschaft ändern.</para>
+          <para>Wenn diese Eigenschaft auf einen Wert festgelegt ist, der <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> kleiner als die-Eigenschaft ist, wird die <b>Start</b> -Eigenschaft auf denselben Wert festgelegt ( <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> das heißt, die <b>Start</b> -und die-Eigenschaft sind gleich).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -271,7 +255,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt.</summary>
+        <summary>Gibt den Namen des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekts zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,7 +283,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt.</summary>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> angegebenen Objekts zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,12 +311,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der in der angegebenen enthalten hat <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument finden Sie unter <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -356,11 +338,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt.</summary>
-        <remarks>
-          <para>Nach Verwendung dieser Methode können Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Wählt das angegebene <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt aus.</summary>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -389,14 +369,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Position des ersten Zeichens einer Textmarke.</summary>
+        <summary>Gibt die Anfangszeichenposition einer Textmarke zurück oder legt diese Position fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> -Objekt besitzt eine Anfangsposition und eine Endposition. Die Endposition ist der Punkt weitesten vom Anfang des Textabschnitts.</para>
-          <para>Gibt diese Eigenschaft die Endzeichenposition relativ zum Anfang des Textabschnitts. Der Hauptartikel (<b>WdMainTextStory</b>) beginnt mit der Zeichenposition 0 (null). Sie können die Größe einer Textmarke durch Festlegen dieser Eigenschaft ändern.</para>
-          <para>Wenn diese Eigenschaft auf einen Wert größer ist als der festgelegt ist die <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> -Eigenschaft, die <b>End</b> -Eigenschaft ist festgelegt auf den gleichen Wert wie der <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> -Eigenschaft.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt hat eine Anfangsposition und eine Endposition. Die Endposition ist der Punkt, der am weitesten vom Anfang des Artikels entfernt ist.</para>
+          <para>Diese Eigenschaft gibt die Endzeichenposition relativ zum Anfang der Dokumentkomponente zurück. Der Hauptdokument Text (<b>wdMainTextStory</b>) beginnt mit der Zeichenposition 0 (null). Sie können die Größe einer Textmarke durch Festlegen dieser Eigenschaft ändern.</para>
+          <para>Wenn diese Eigenschaft auf einen Wert festgelegt ist, der größer ist <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> als die Eigenschaft, wird die <b>End</b> -Eigenschaft auf denselben Wert wie die <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> Eigenschaft festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoryType">
@@ -422,7 +400,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStoryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Art des Artikels für die angegebene Textmarke zurück.</summary>
+        <summary>Gibt den texttexttyp für die angegebene Textmarke zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

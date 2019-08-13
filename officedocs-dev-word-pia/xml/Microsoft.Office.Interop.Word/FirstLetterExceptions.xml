@@ -1,13 +1,5 @@
 <Type Name="FirstLetterExceptions" FullName="Microsoft.Office.Interop.Word.FirstLetterExceptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="be4f4c5cc8c394619978e1c92f645b802d0e9e31" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669274" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f5a5fc4bea4aa243b52aaff1c5351191136e2e06" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146829" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterExceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterExceptions&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" /> -Objekten, die von der automatischen Korrektur ausgeschlossen Abkürzungen darstellen.</summary>
-    <remarks>
-      <para>Das erste Zeichen folgt ein Zeitraum automatisch wird großgeschrieben, wenn die <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> -Eigenschaft auf <b>True</b>festgelegt ist. Die <b>FirstLetterExceptions</b> -Auflistung enthält Ausnahmen für dieses Verhalten (beispielsweise Abkürzungen wie "Adresse." und "Abt.").</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" /> Eigenschaft, um der <b>FirstLetterExceptions</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> -Methode, um eine Abkürzung zur Liste der Ausnahmen hinzuzufügen.</para>
-      <para>Verwendung <b>FirstLetterExceptions</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Abkürzung oder die Indexzahl darstellt, um ein einzelnes <b>FirstLetterException</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" /> Objekten, die die Abkürzungen darstellen, die von der automatischen Korrektur ausgeschlossen werden.</summary>
+    <remarks><para>Das erste Zeichen nach einem Punkt wird automatisch groß geschrieben, wenn <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> die Eigenschaft auf <b>true</b>festgelegt ist. Die <b>FirstLetterExceptions</b> -Auflistung enthält Ausnahmen zu diesem Verhalten (beispielsweise Abkürzungen wie "addr"). und "apt.").</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" /> die-Eigenschaft, um die <b>FirstLetterExceptions</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> die-Methode, um eine Abkürzung zur Liste der Ausnahmen für den ersten Buchstaben hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie FirstLetterExceptions<paramref name="index" />(), <paramref name="index" /> wobei die Abkürzung oder die Indexnummer ist, um ein einzelnes <b>FirstLetterException</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,14 +53,11 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> erforderlich. Die Abkürzung, die Sie nicht, dass Microsoft Word so konfiguriert, führen die mit einem Großbuchstaben möchten.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" /> -Objekt, das eine neue der Liste der AutoKorrektur-Ausnahmen hinzugefügte Ausnahme darstellt.</summary>
+        <param name="Name"><b>String</b> erforderlich. Die Abkürzung, die Microsoft Word nicht mit einem Großbuchstaben gefolgt werden soll.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" /> Objekt zurück, das eine neue Ausnahme darstellt, die der Liste der AutoKorrektur-Ausnahmen hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" /> -Eigenschaft ist <b>True</b>, werden automatisch Abkürzungen in die Liste der Ausnahmen hinzugefügt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" /> Eigenschaft auf <b>true</b>festgelegt ist, werden der Liste der Ausnahmen für den ersten Buchstaben automatisch Abkürzungen hinzugefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,11 +141,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

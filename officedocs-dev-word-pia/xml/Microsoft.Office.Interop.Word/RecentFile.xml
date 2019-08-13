@@ -1,13 +1,5 @@
 <Type Name="RecentFile" FullName="Microsoft.Office.Interop.Word.RecentFile">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1e434d3e1e088bc212d7bbc10abf5c431e2964b4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670080" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecentFile" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a818ea88a0f5d83922bdd03f47dd18ee09e79b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147704" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFile" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFile" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RecentFile" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFile" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine kürzlich verwendete Datei.</summary>
-    <remarks>
-      <para>Das <b>RecentFile</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> Auflistung. Die <b>RecentFiles</b> -Auflistung enthält alle Dateien, die zuletzt verwendet wurden. Am unteren Rand des Menüs Datei werden die Elemente in der <b>RecentFiles</b> -Auflistung angezeigt.</para>
-      <para>Verwendung <b>RecentFiles</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>RecentFile</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Datei im Menü <b>Datei</b> .</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" /> -Methode, um der <b>RecentFiles</b> -Auflistung eine Datei hinzuzufügen.</para>
-      <para>Der <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> und <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Methoden umfassen eine <paramref name="AddToRecentFiles" /> Argument, das steuert, ob eine Datei Liste der zuletzt verwendeten Dateien hinzugefügt wird, wenn die Datei geöffnet oder gespeichert wird.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine zuletzt geöffnete Datei dar.</summary>
+    <remarks><para>Das <b>Recent</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> Auflistung. Die <b>RecentFiles</b>-Auflistung enthält alle zuletzt geöffneten Dateien. Die Elemente in der <b>RecentFiles</b> -Auflistung werden am unteren Rand des Menüs Datei angezeigt.</para>
+      <para>Verwenden <b></b>Sie RecentFiles<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, <b></b> um ein einzelnes recentdatei-Objekt zurückzugeben. Die Indexnummer stellt die Position der Datei im Menü <b>Datei</b> dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" /> die-Methode, um der <b>RecentFiles</b> -Auflistung eine Datei hinzuzufügen.</para>
+      <para>Die <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Methoden <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> und enthalten ein <paramref name="AddToRecentFiles" /> Argument, das steuert, ob eine Datei zur Liste der zuletzt verwendeten Dateien hinzugefügt wird, wenn die Datei geöffnet oder gespeichert wird.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,11 +79,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,7 +132,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Long-Wert, der die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt einen Wert vom Typ Long zurück, der die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +160,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,7 +186,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Öffnet das angegebene Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt, das das geöffnete Objekt darstellt.</summary>
+        <summary>Öffnet das angegebene Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück, das das geöffnete Objekt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,12 +244,10 @@
       <Docs>
         <summary>Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nicht den Pfad ein nachfolgendes Zeichen enthalten, z. B. "C:\MSOffice" oder "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <b>Name</b> -Eigenschaft, um den Dateinamen ohne den Pfad zurückzugeben</para>
+        <remarks><para>Der Pfad enthält kein nachfolgendes Zeichen, beispielsweise "C:\MSOffice" oder "http://MyServer". Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <b>Name</b> -Eigenschaft, um den Dateinamen ohne den Pfad zurückzugeben.</para>
           <para>
-            <b>Hinweis</b> Sie können <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl sie Schrägstriche (/) und der <b>PathSeparator</b> -Eigenschaft enthalten wird standardmäßig auf einen umgekehrten Schrägstrich (\).</para>
-          <para />
-        </remarks>
+            <b>Hinweis:</b>  Sie können die <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl Sie Schrägstriche (/) enthalten und die <b>PathSeparator</b> -Eigenschaft\)standardmäßig einen umgekehrten Schrägstrich (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -290,8 +276,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Änderungen am Dokument nicht mit dem Originaldokument gespeichert werden können.</summary>
+        <summary><b>True</b>, wenn Änderungen am Dokument nicht im Originaldokument gespeichert werden können.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

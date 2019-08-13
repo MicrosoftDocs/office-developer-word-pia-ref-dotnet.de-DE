@@ -1,13 +1,5 @@
 <Type Name="MailMergeFieldName" FullName="Microsoft.Office.Interop.Word.MailMergeFieldName">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="17a0081b8837d936e44189872bd9579df6529bc8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669323" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFieldName" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b4c0158d84ccca477189a42554fd7e06a18f8c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147893" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFieldName" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFieldName" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFieldName" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFieldName" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt einen Seriendruck-Feldnamen in einer Datenquelle dar.</summary>
-    <remarks>
-      <para>Das <b>MailMergeFieldName</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" /> Auflistung. Die <b>MailMergeFieldNames</b> -Auflistung enthält die Namen aller Datenfelder in einer Seriendruck-Datenquelle.</para>
-      <para>Verwendung <b>FieldNames</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>MailMergeFieldName</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Felds in der Seriendruck-Datenquelle.</para>
-      <para>Der <b>MailMergeFieldNames</b> -Auflistung Felder hinzugefügt werden kann. Die Namen der Felder in einer Datenquelle werden automatisch in die <b>MailMergeFieldNames</b> -Auflistung aufgenommen.</para>
-      <para />
-    </remarks>
+    <summary>Stellt den Namen eines Seriendruckfelds in einer Datenquelle dar.</summary>
+    <remarks><para>Das <b>MailMergeFieldName</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" /> Auflistung. Die <b>MailMergeFieldNames</b>-Auflistung enthält die Namen aller Datenfelder in einer Seriendruck-Datenquelle.</para>
+      <para>Verwenden <b></b>Sie FieldName<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um ein einzelnes <b>MailMergeFieldName</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Felds in der Seriendruck-Datenquelle dar.</para>
+      <para>Sie können der <b>MailMergeFieldNames</b>-Auflistung keine Felder hinzufügen. Die Namen der Felder in einer Datenquelle werden automatisch in die <b>MailMergeFieldNames</b>-Auflistung aufgenommen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -118,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +134,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

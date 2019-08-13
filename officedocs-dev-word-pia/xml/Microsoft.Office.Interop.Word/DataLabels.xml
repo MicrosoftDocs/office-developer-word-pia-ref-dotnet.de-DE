@@ -1,13 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Word.DataLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a33924104c6a32705d90232fdb8eadce5b62224e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669222" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="849af9e318dead8239cad6dd722fca3def9aadf0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147116" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -30,15 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> -Objekte für die angegebene Datenreihe.</summary>
-    <remarks>
-      <para>Jede <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> -Objekt eine Datenbeschriftung für einen Datenpunkt oder der Trendlinie darstellt. Bei einer Datenreihe ohne definierbare Punkte (beispielsweise eine Bereichsdatenreihe) die <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> -Auflistung enthält eine einzelne Datenbeschriftung.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" /> -Methode zum Zurückgeben der <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> Auflistung. Im folgenden Beispiel wird das Zahlenformat für datenbeschriftungen auf der ersten Datenreihe des ersten Diagramms im aktiven Dokument festgelegt.</para>
-      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> (<paramref name="Index" />), wobei <paramref name="Index" /> ist die Daten bezeichnen Indexzahl darstellt, um die Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> -Objekt.</para>
-    </example>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> Objekte für die angegebene Datenreihe.</summary>
+    <remarks><para>Jedes <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> Objekt stellt eine Datenbeschriftung für einen Zeiger oder eine Trendlinie dar. Bei einer Reihe ohne definierbare Punkte (beispielsweise eine Flächenreihe) enthält <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> die Auflistung eine einzelne Datenbeschriftung.</para>
+      <para> </para></remarks>
+    <example><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" /> die-Methode, <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> um die Auflistung zurückzugeben. Im folgenden Beispiel wird das Zahlenformat für datenbeschriftungen auf der ersten Datenreihe des ersten Diagramms im aktiven Dokument festgelegt.</para>
+      <para>Verwenden <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> Sie<paramref name="Index" />(), <paramref name="Index" /> wobei die Indexnummer der Datenbeschriftung ist, um ein <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> einzelnes Objekt zurückzugeben.</para></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,10 +84,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,11 +121,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text im Objekt Schriftgrad ändert, wenn die Größe des Objekts ändert. Der Standardwert ist <b>True</b>. Lese-Schreib- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird. Der Standardwert lautet <b>True</b>. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,14 +152,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Auf <b>True</b> festgelegt, wenn alle Objekte in der Auflistung automatisch basierend auf Kontext angemessenen Text generiert. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Festlegen des Werts dieser Eigenschaft wird die <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> -Eigenschaft aller <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> -Objekte in der Auflistung. Diese Eigenschaft gibt <b>True</b> zurück, nur, wenn die <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> -Eigenschaft für alle <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> -Objekte in der Auflistung auf <b>True</b>; festgelegt ist andernfalls gibt diese Eigenschaft <b>False</b>zurück.</para>
-          <para />
-        </remarks>
+        <summary>Auf <b>true</b> festgelegt, wenn alle Objekte in der Auflistung automatisch entsprechenden Text basierend auf Kontext generieren. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Durch Festlegen des Werts dieser Eigenschaft wird die <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> Eigenschaft aller <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> Objekte festgelegt, die in der Auflistung enthalten sind. Diese Eigenschaft gibt nur dann <b>true</b> zurück <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> , wenn die <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> Eigenschaft für alle in der Auflistung enthaltenen Objekte auf <b>true</b>festgelegt ist; Andernfalls gibt diese Eigenschaft <b>false</b>zurück. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -205,10 +184,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Border" /> Objekt zurück, das den Rahmen des Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,10 +212,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Integer</b> -Wert, der die Anzahl der Objekte in der Auflistung darstellt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt einen <b>ganzzahligen</b> Wert zurück, der die Anzahl der Objekte in der Auflistung darstellt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,14 +240,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD".  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -297,9 +268,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,10 +298,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> -Objekt für eine angegebene Form oder einem <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> -Objekt für ein angegebenes Diagramm, das Formateigenschaften für das Shape oder Diagramm der Füllung enthält. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> Objekt für eine angegebene Form oder ein <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> Objekt für ein angegebenes Diagramm zurück, das Füll Formatierungseigenschaften für die Form oder das Diagramm enthält. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,10 +329,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,10 +358,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,15 +421,11 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen einen <b>Object</b> -Wert, der die horizontale Ausrichtung für das angegebene Objekt darstellt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft kann auf eine der festgelegt werden die <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> Konstanten.</para>
-          <para>Hinweis: einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para />
-        </remarks>
+        <summary>Gibt einen <b>Object</b> -Wert zurück, der die horizontale Ausrichtung für das angegebene Objekt darstellt, oder legt diesen fest.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Der Wert dieser Eigenschaft kann auf eine der <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> Konstanten festgelegt werden.</para>
+          <para>Hinweis: einige dieser Konstanten stehen Ihnen möglicherweise nicht zur Verfügung, abhängig von der Sprachunterstützung (beispielsweise US-Englisch), die Sie ausgewählt oder installiert haben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -495,10 +454,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Interior" /> -Objekt, das den Innenbereich des angegebenen Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Interior" /> Objekt zurück, das das Innere des angegebenen Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,12 +485,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index">Erforderliches <b>Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus der Auflistung zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,9 +515,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>String</b> -Wert, der den Namen des Objekts darstellt.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -594,13 +546,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>String</b>-Wert zurück, der den Formatierungscode für das Objekt darstellt, oder legt diesen Wert fest.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die Eigenschaften <b>NumberFormat</b> und <b>NumberFormatLocal</b> .</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format</b>-Funktion verwendet andere Zeichenfolgen im Formatierungscode als die Eigenschaften <b>NumberFormat</b> und <b>NumberFormatLocal</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -629,10 +577,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Auf <b>True</b> festgelegt, wenn das Zahlenformat (so, dass das Zahlenformat in die Beschriftungen ändert, wenn es in den Zellen ändert) an die Zellen verknüpft ist. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Wird auf <b>true</b> festgelegt, wenn das Zahlenformat mit den Zellen verknüpft ist (damit sich das Zahlenformat in den Beschriftungen ändert, wenn es sich in den Zellen ändert). <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,14 +608,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen <b>einer Objektwert, der den Formatierungscode des Objekts als Zeichenfolge in der Sprache des Benutzers darstellt</b> .</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" /> und <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" /> Eigenschaften.</para>
-          <para />
-        </remarks>
+        <summary>Gibt einen <b>Object</b> -Wert zurück, der den Formatcode für das Objekt als Zeichenfolge in der Sprache des Benutzers darstellt, oder legt diesen fest.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatcode <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" /> als <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" /> die Eigenschaften und.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -698,14 +640,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt, oder legt eine <b>ganze</b> Zahl, die die Ausrichtung von Text darstellt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft kann eine Ganzzahl zwischen – 90 und 90 Grad oder eine der entsprechen den <see cref="T:Microsoft.Office.Interop.Word.XlOrientation" /> Konstanten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt einen ganzzahligen <b></b> Wert zurück, der die Textausrichtung darstellt, oder legt diesen fest.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Der Wert dieser Eigenschaft kann ein ganzzahliger Wert von – 90 bis 90 Grad oder eine der <see cref="T:Microsoft.Office.Interop.Word.XlOrientation" /> Konstanten sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -732,9 +670,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -764,10 +700,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlDataLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /> -Wert, der die Position von datenbeschriftungen darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" />
-        </value>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /> Wert zurück, der die Position der Datenbeschriftungen darstellt, oder legt diesen Wert fest.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,12 +728,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Indexnummer in der <b>DataLabels</b> -Auflistung der Datenbeschriftung weitergegeben.</param>
-        <summary>Überträgt den Inhalt und die Formatierung der angegebenen Daten Bezeichnung aller anderen datenbeschriftungen der Datenreihe an.</summary>
-        <remarks>
-          <para>Wenn die Datenquelle Beschriftung Felder, die mit der Bezeichnung Ziel Daten nicht kompatibel sind unterstützt, werden diese Felder im Formular [Feldname] eingefügt.</para>
-          <para />
-        </remarks>
+        <param name="Index">Die Indexnummer in der <b></b> DataLabels-Auflistung der zu propagierenden Datenbeschriftung.</param>
+        <summary>Gibt den Inhalt und die Formatierung der angegebenen Datenbeschriftung an alle anderen Datenbeschriftungen in der Datenreihe weiter.</summary>
+        <remarks><para>Wenn die Quelldaten Beschriftung Felder unterstützt, die nicht mit der Ziel Datenbeschriftung kompatibel sind, werden diese Felder in das Formular [Feldname] eingefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -828,10 +760,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen eines <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> -Konstante, die leserichtung für das angegebene Objekt darstellt. Lese-/Schreibzugriff <b>Integer</b>.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> Konstante zurück, die die Leserichtung für das angegebene Objekt darstellt, oder legt diese fest. <b>Ganze Zahl</b> mit Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -857,9 +787,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Markiert das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,14 +817,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest oder gibt ein <b>Objekt</b> zurück, das Trennzeichen für die datenbeschriftungen in einem Diagramm darstellt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Wenn Sie eine Zeichenfolge verwenden, erhalten Sie eine Zeichenfolge als Trennzeichen. Wenn Sie, das Äquivalent von Festlegen der <see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" /> -Konstante (= 1), erhalten Sie das standardmäßige datenbeschriftungs-Trennzeichen der entweder ein Komma oder Schreiben eines Zeilenumbruchzeichens, je nach der Datenbeschriftung ist.</para>
-          <para />
-        </remarks>
+        <summary>Legt fest oder gibt ein <b>Objekt</b> zurück, das das für die Datenbeschriftungen in einem Diagramm verwendete Trennzeichen darstellt. Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Wenn Sie eine Zeichenfolge verwenden, erhalten Sie eine Zeichenfolge als Trennzeichen. Wenn Sie den Wert auf die Entsprechung der <see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" /> Konstante (= 1) festlegen, erhalten Sie das standardmäßige Daten Beschriftungs Trennzeichen, das entweder ein Komma oder ein Zeilenumbruch ist, je nach Datenbeschriftung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -926,9 +850,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der bestimmt, ob das Objekt einen Schatten aufweist, oder legt diesen Wert fest.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -958,10 +880,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Festlegen Sie auf <b>True</b> wird die Blasengröße für die datenbeschriftungen in einem Diagramm anzeigen. <b>False</b> , ausgeblendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Legen Sie den Wert auf <b>true</b> fest, um die Blasengröße für die Datenbeschriftungen in einem Diagramm anzuzeigen. Mit <b>False</b> wird sie ausgeblendet. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,10 +911,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legen Sie auf <b>true fest</b> , um den Rubrikennamen für die datenbeschriftungen in einem Diagramm anzuzeigen. <b>False</b> , ausgeblendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Legen Sie den Wert auf <b>true</b> fest, um den Kategorienamen für die Datenbeschriftungen in einem Diagramm anzuzeigen. Mit <b>False</b> wird sie ausgeblendet. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1024,10 +942,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Auf <b>True</b> festgelegt, wenn das Daten Bezeichnung Legendensymbol angezeigt wird. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Wird auf <b>true</b> festgelegt, wenn der Legendenschlüssel für die Datenbeschriftung sichtbar ist. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1057,10 +973,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zum Anzeigen des Prozentwert für die datenbeschriftungen in einem Diagramm auf <b>True</b> festgelegt. <b>False</b> , ausgeblendet. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Auf <b>true</b> festgelegt, um den Prozentwert für die Datenbeschriftungen in einem Diagramm anzuzeigen. Mit <b>False</b> wird sie ausgeblendet. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1090,7 +1004,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bereichsfeld <b>Von Zellen mit Werten</b> aller Diagramm datenbeschriftungen für ein angegebenes Diagramm anzuzeigenden auf <b>True</b> festgelegt. Legen Sie auf <b>false fest</b> , um dieses Feld auszublenden. Lese-/Schreibzugriff <b>vom Typ Boolean</b> (<b>Bool</b> in c#).</summary>
+        <summary>Legen Sie <b>true</b> fest, um den <b>Wert aus Zellen</b> bereichsfeld in allen Diagrammdaten Beschriftungen für ein angegebenes Diagramm anzuzeigen. Auf <b>false</b> festlegen, um dieses Feld auszublenden. <b>Boolescher Wert</b> mit Lese-/Schreibzugriff. (<b>bool</b> in C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1121,10 +1035,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Boolean</b>-Wert zurück, der das Anzeigeverhalten der Datenreihennamen für Datenbeschriftungen in einem Diagramm angibt, oder legt diesen Wert fest. Mit <b>True</b> wird der Datenreihenname angezeigt. Mit <b>False</b> wird er ausgeblendet. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Gibt einen <b>Boolean</b>-Wert zurück, der das Anzeigeverhalten der Datenreihennamen für Datenbeschriftungen in einem Diagramm angibt, oder legt diesen Wert fest. Mit <b>True</b> wird der Datenreihenname angezeigt. Mit <b>False</b> werden sie ausgeblendet. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1155,9 +1067,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der dem Anzeigeverhalten der Datenbeschriftungswerte eines angegebenen Diagramms entspricht, oder legt diesen Wert fest. Mit <b>True</b> werden die Werte angezeigt. Mit <b>False</b> werden sie ausgeblendet. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1193,10 +1103,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Typ der Beschriftung. Lese-Schreib- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt den Bezeichnungs zurück oder legt ihn fest. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1226,14 +1134,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen <b>einer Objektwert, der die vertikale Ausrichtung des angegebenen Objekts darstellt</b> .</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft kann auf eine der festgelegt werden die <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> Konstanten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt einen <b>Object</b> -Wert zurück, der die vertikale Ausrichtung des angegebenen Objekts darstellt, oder legt diesen fest.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Der Wert dieser Eigenschaft kann auf eine der <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> Konstanten festgelegt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

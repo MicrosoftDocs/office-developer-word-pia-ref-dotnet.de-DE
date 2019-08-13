@@ -1,13 +1,5 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Word.SmartTag">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90397c8f538990a390264fd3d1b286f3e023f2a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670215" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa49cb1dcddf81834677aefdc8cd50240fa9578" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146122" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
@@ -26,13 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Zeichenfolge in einem Dokument oder Bereich, die bekannten Typinformationen enthält.</summary>
-    <remarks>
-      <para>
-        <b>SmartTag</b> -Objekts ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> Auflistung. <b>SmartTags</b> -Auflistung enthält alle Smarttags in einem Dokument oder Bereich von Text in einem Dokument. Microsoft Word eine Datei Recognizer Beschriftung von Smarttags verwendet, und es eine Aktionsdatei zum Ausführen von Aktionen im Zusammenhang mit Smarttags, wie das Verknüpfen mit Websites verwendet.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> Methode – oder <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), wobei <paramref name="index" /> die Nummer des Smarttags darstellt, um ein einzelnes <b>SmartTag</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Zeichenfolge in einem Dokument oder Bereich dar, die erkannte Typinformationen enthält.</summary>
+    <remarks><para>Das <b>Smarttag</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> Auflistung. Die <b>Smarttags</b> -Auflistung enthält alle Smarttags in einem Dokument oder Textbereich in einem Dokument. Microsoft Word verwendet eine Recognizer-Datei, um Smarttags zu bezeichnen, und verwendet eine Aktionsdatei, um Aktionen im Zusammenhang mit Smarttags auszuführen, beispielsweise das Verknüpfen mit Websites.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> -<paramref name="index" />oder () <paramref name="index" /> , wobei die Nummer des Smarttags darstellt, um ein einzelnes <b>Smarttag</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,11 +83,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -157,10 +144,8 @@
       <Docs>
         <summary>Gibt eine <b>Zeichenfolge</b> , die die URL-Adresse für ein Smarttag darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die URL-Adresse wird in der zugehörigen Smarttag-Erkennung-Datei angegeben. Wenn ein Textstück erkannt und markiert ist, wird die URL Teil der Informationen, die im Smarttag enthalten sind. <b>DownloadURL</b> -Eigenschaft ist nützlich, wenn ein Dokument an eine Person gesendet wird, die nicht die erforderlichen Erkennung und Aktionsdateien auf ihrem Computer installiert haben. Der Benutzer kann die URL zum Herunterladen der Dateien erforderlichen Smarttag folgen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die URL-Adresse wird in der entsprechenden Smarttagerkennungs-Datei angegeben. Wenn ein Textteil erkannt und markiert wird, wird die URL als Teil der im Smarttag enthaltenen Information aufgenommen. Die <b>DownloadURL</b>-Eigenschaft ist hilfreich, wenn ein Dokument an jemanden gesendet wird, auf dessen Computer die erforderlichen Erkennungs- und Aktionsdateien nicht installiert sind. Der Benutzer kann der URL folgen, um die erforderlichen Smarttagdateien zu herunterzuladen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -251,12 +236,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> -Objekt, das die Eigenschaften für ein Smarttag darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> Objekt zurück, das die Eigenschaften eines Smarttags darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> -Methode, um benutzerdefinierte Eigenschaften hinzufügen. Benutzerdefinierte Eigenschaften sind jedoch in der Regel in der Smarttag-Erkennung und Aktionsdateien angegeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können die <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> -Methode verwenden, um benutzerdefinierte Eigenschaften hinzuzufügen. Benutzerdefinierte Eigenschaften werden jedoch in der Regel in den Smarttag-Erkennungsmodul-und Aktionsdateien angegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -285,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> unter der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -317,11 +298,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
-        <remarks>
-          <para>Nach Verwendung dieser Methode können Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Markiert das angegebene Objekt.</summary>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTagActions">
@@ -350,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> -Auflistung, die die Auflistung aller für ein Smarttag verfügbarer Aktionen darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> Auflistung zurück, die die Auflistung von Aktionen darstellt, die für ein Smarttag verfügbar sind.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -381,7 +360,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge</b> , die das zugehörige XML für ein Smarttag darstellt.</summary>
+        <summary>Gibt eine <b>Zeichenfolge</b> , die die zugehörige XML für ein Smarttag darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -412,12 +391,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> -Objekt, das das XML-Element für ein Smarttag darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Objekt zurück, das das XML-Element für ein Smarttag darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nicht alle Smarttags enthalten XML-Knoten. Entwicklern jedoch möglich, die <b>XMLNode</b> -Eigenschaft auf die XML-Knoten von Smarttags zuzugreifen, die XML-Knoten enthalten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Nicht alle Smarttags enthalten XML-Knoten; mit der <b>XmlNode</b> -Eigenschaft können Entwickler jedoch auf die XML-Knoten für Smarttags zugreifen, die XML-Knoten enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

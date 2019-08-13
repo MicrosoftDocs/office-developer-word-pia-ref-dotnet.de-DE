@@ -1,13 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Word.DiagramNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="781ae7dde743bb26d8b688f166e2d47c3047c43d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669172" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9738bbfbf5c67a83fbc7807283833051a5fadce7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147095" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen einzelnen Diagrammknoten in einem Diagramm dar.</summary>
-    <remarks>
-      <para>Das <b>DiagramNode</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> Auflistung.</para>
-      <para>Verwendung der <b>DiagramNode</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.Shape" /> oder <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Objekts, um ein <b>DiagramNode</b> -Objekt zurückzugeben. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> -Methode, um ein Knoten einem Diagramm hinzufügen.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> -Methode, um einen Knoten aus einem Diagramm entfernen.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>DiagramNode</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> Auflistung.</para>
+      <para>Verwenden Sie die <b>DiagramNode</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Shape" /> des <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> oder-Objekts, um ein <b>DiagramNode</b> -Objekt zurückzugeben. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> die-Methode, um einem Diagramm einen Knoten hinzuzufügen.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> die-Methode, um einen Knoten aus einem Diagramm zu entfernen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -58,9 +48,9 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Pos">Optionale <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Gibt an, an der Knoten, relativ zum aufrufenden Knoten hinzugefügt wird.</param>
-        <param name="NodeType">Optionale <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Gibt den Knotentyp an.</param>
-        <summary>Erstellt einen Diagrammknoten Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> -Objekt, das den neuen Diagrammknoten darstellt. Für konzeptionelle Diagramme wird das <b>DiagramNode</b> -Objekt an das Ende der Liste Shapes hinzugefügt.</summary>
+        <param name="Pos">Optional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Gibt an, wo der Knoten relativ zum aufrufenden Knoten hinzugefügt wird.</param>
+        <param name="NodeType">Optional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Gibt den Knotentyp an.</param>
+        <summary>Erstellt einen Diagrammknoten und gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt zurück, das den neuen Diagrammknoten darstellt. Für konzeptionelle Diagramme wird das <b>DiagramNode</b> -Objekt am Ende der Shapes-Liste hinzugefügt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNodeChildren</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" /> -Objekt, das alle untergeordneten Elemente des Knotens angegebenen Diagramm enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" /> Objekt zurück, das alle untergeordneten Elemente des angegebenen Diagrammknotens enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,10 +135,10 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="copyChildren">Erforderlicher <b>boolescher Wert</b>. True, um den Diagrammknoten untergeordneten Elemente sowie klonen.</param>
-        <param name="TargetNode">Optional <b>DiagramNode</b> -Objekt. Der Knoten, auf dem der neue Knoten eingefügt wird.</param>
-        <param name="Pos">Optionale <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Wenn <paramref name="TargetNode" /> angegeben ist, gibt an, an der Knoten relativ zum hinzugefügt wird <paramref name="TargetNode" />.</param>
-        <summary>Kopiert einen bestimmten Diagrammknoten. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> -Objekt, das die Kopie repräsentiert.</summary>
+        <param name="copyChildren">Erforderlicher <b>Boolean</b>-Wert. True, um auch die untergeordneten Elemente des Diagrammknotens zu klonen.</param>
+        <param name="TargetNode">Optionales <b>DiagramNode</b> -Objekt. Der Knoten, in dem der neue Knoten eingefügt wird.</param>
+        <param name="Pos">Optional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Wenn <paramref name="TargetNode" /> angegeben ist, gibt an, wo der Knoten relativ zu <paramref name="TargetNode" />hinzugefügt wird.</param>
+        <summary>Klont einen angegebenen Diagrammknoten. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt zurück, das den Klon darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,11 +168,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft beispielsweise die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt beispielsweise in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -233,7 +221,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Diagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Diagram" /> -Objekt wird an dem ein Diagrammknoten gehört.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Diagram" /> Objekt zurück, zu dem ein Diagrammknoten gehört.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,7 +252,7 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" /> Konstanten zur Angabe der Formatierung der untergeordneten Knoten in einem Organigramm.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" /> Konstante zurück, die die Formatierung der untergeordneten Knoten in einem Organigramm angibt, oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,8 +281,8 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Diagrammknoten, in dem der angegebene Knoten verschoben werden sollen.</param>
-        <param name="Pos">Erforderliche <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Gibt an, an der Knoten relativ zum hinzugefügt wird <paramref name="TargetNode" />.</param>
+        <param name="TargetNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Diagrammknoten, in dem der angegebene Knoten verschoben wird.</param>
+        <param name="Pos">Erforderlich <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Gibt an, wo der Knoten relativ zu <paramref name="TargetNode" />hinzugefügt wird.</param>
         <summary>Verschiebt einen Diagrammknoten und alle untergeordneten Knoten in einem Diagramm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,12 +308,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt die nächste <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt in einer Auflistung von Diagrammknoten.</summary>
+        <summary>Gibt das nächste <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt in einer Auflistung von Diagrammknoten zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" /> -Methode, um das vorherige <b>DiagramNode</b> -Objekt in einer Auflistung von Diagrammknoten zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" /> die-Methode, um das vorherige <b>DiagramNode</b> -Objekt in einer Auflistung von Diagrammknoten zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -377,12 +363,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> -Objekt, das den vorherigen Diagrammknoten in einer Auflistung von Diagrammknoten darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt zurück, das den vorherigen Diagrammknoten in einer Auflistung von Diagrammknoten darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" /> -Methode, um das nächste <b>DiagramNode</b> -Objekt in einer Auflistung von Diagrammknoten zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" /> die-Methode, um das nächste <b>DiagramNode</b> -Objekt in einer Auflistung von Diagrammknoten zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceNode">
@@ -408,12 +392,10 @@
         <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Diagrammknoten ersetzt werden.</param>
-        <summary>Einen Ziel-Diagrammknoten ersetzt mit der Quelldiagrammknoten.</summary>
-        <remarks>
-          <para>Der Ziel-Diagrammknoten wird gelöscht, und der Quellknoten einschließlich aller untergeordneten Knoten, an, bei denen der Zieldiagrammknoten war verschoben werden.</para>
-          <para />
-        </remarks>
+        <param name="TargetNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Diagrammknoten, der ersetzt werden soll.</param>
+        <summary>Ersetzt einen Zieldiagrammknoten durch den Quelldiagrammknoten.</summary>
+        <remarks><para>Der Zieldiagrammknoten wird gelöscht, und der Quelldiagrammknoten, einschließlich aller untergeordneten Knoten, wird dorthin verschoben, wo sich der Zieldiagrammknoten befand.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -439,7 +421,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> -Objekt, das den Stammknoten Diagramm darstellt, zu dem der Quelldiagrammknoten gehört.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Wert vom Typs Object zurück, der den Stammdiagrammknoten darstellt, zu dem der Quelldiagrammknoten gehört.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -467,7 +449,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt für den angegebenen Diagrammknoten.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt für den angegebenen Diagrammknoten zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,13 +477,11 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Knoten mit dem vertauschen.</param>
-        <param name="Pos">Optionale <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Die Position des Knotens relativ zu den Knoten mit dem dieser vertauscht wird.</param>
-        <summary>Vertauscht den Ziel-Diagrammknoten mit der Quelldiagrammknoten.</summary>
-        <remarks>
-          <para>Alle untergeordneten Diagrammknoten werden zusammen mit ihren entsprechenden Stammknoten verschoben.</para>
-          <para />
-        </remarks>
+        <param name="TargetNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Knoten, mit dem gewechselt werden soll.</param>
+        <param name="Pos">Optional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Die Position des Knotens relativ zu dem Knoten, mit dem er ausgetauscht wird.</param>
+        <summary>Tauscht den Knoten Zieldiagramm mit dem Knoten Quelldiagramm aus.</summary>
+        <remarks><para>Alle untergeordneten Diagrammknoten werden zusammen mit den entsprechenden Stammknoten verschoben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextShape">
@@ -527,7 +507,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die Form des Textfelds darstellt, die ein Diagrammknoten zugeordnet.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Wert vom Typs Object zurück, der die Form des einem Diagrammknoten zugeordneten Textfelds darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -555,8 +535,8 @@
         <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ReceivingNode">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Knoten, der die untergeordneten Knoten übertragen.</param>
-        <summary>Verschiebt die untergeordneten Knoten des Knotens Diagramm Quelle der Diagrammknoten Ziel (Empfänger).</summary>
+        <param name="ReceivingNode">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt. Der Knoten, an den die untergeordneten Knoten übertragen werden sollen.</param>
+        <summary>Verschiebt die untergeordneten Knoten des Quelldiagramm Knotens in den Knoten Ziel (empfangender) Diagramm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="TablesOfAuthorities" FullName="Microsoft.Office.Interop.Word.TablesOfAuthorities">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b04829d6e20038907ae0e4d3dfef9a45a8da9159" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669685" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fef3d3e5c7ec2a8397d6977b226d1f8051218c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143931" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfAuthorities implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfAuthorities&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> Objekten (TOA-Feldern), die die Rechtsgrundlagenverzeichnisse in einem Dokument darstellt.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> Eigenschaft, um die <b>TablesOfAuthorities</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um einem Dokument ein Rechtsgrundlagenverzeichnis hinzufügen. Ein Rechtsgrundlagenverzeichnis aus TA-Feld (Rechtsgrundlagenverzeichnis) Felder in einem Dokument erstellt wird.</para>
-      <para>Verwendung <b>TablesOfAuthorities</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>TableOfAuthorities</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Rechtsgrundlagenverzeichnis im Dokument.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> Objekten (Toa-Felder), die die Rechtsgrundlagenverzeichnisse in einem Dokument darstellt.</summary>
+    <remarks><para>Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> die-Eigenschaft, um die <b>TablesOfAuthorities</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um einem Dokument ein Autoritäts Verzeichnis hinzuzufügen. Rechtsgrundlagenverzeichnisse werden aus TOA-Feldern (Felder für Rechtsgrundlagenverzeichnis) in einem Dokument erstellt.</para>
+      <para>Verwenden <b></b>Sie TablesOfAuthorities<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>TableOfAuthorities</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Rechtsgrundlagenverzeichnis im Dokument dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -70,23 +60,21 @@
         <Parameter Name="PageNumberSeparator" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem Sie im Rechtsgrundlagenverzeichnis angezeigt werden soll. Das Rechtsgrundlagenverzeichnis ersetzt den Bereich, wenn der Bereich nicht reduziert ist.</param>
-        <param name="Category">Optionales- <b>Objekt</b>. Die Kategorie der Einträge in das Rechtsgrundlagenverzeichnis aufgenommen werden soll. Entspricht dem Schalter \c für eine Tabelle von Behörden (TOA-Feld). Werte von 0 bis 16 entsprechen den Einträgen im Feld Kategorie auf der Registerkarte Rechtsgrundlagenverzeichnis im Dialogfeld Index und Verzeichnisse (Befehl Referenz, Menü "Einfügen"). Der Standardwert ist 1.</param>
-        <param name="Bookmark">Optionales- <b>Objekt</b>. Der Name der Zeichenfolge der Textmarke aus der Sie Einträge für das Rechtsgrundlagenverzeichnis erfassen möchten. Wenn <paramref name="Bookmark" /> angegeben ist, werden die Einträge nur aus dem Teil des Dokuments, der durch die Textmarke gekennzeichnet gesammelt werden. Entspricht dem Schalter \b für eine Tabelle von Behörden (TOA-Feld).</param>
-        <param name="Passim">Optionales- <b>Objekt</b>. <b>True</b> , wenn fünf oder mehr Seitenverweise zur gleichen Rechtsgrundlage durch Passim in das Rechtsgrundlagenverzeichnis ersetzt. Entspricht dem Schalter \p in einem TOA-Feld (Rechtsgrundlagenverzeichnis-Feld). Wenn dieses Argument ausgelassen wird, <paramref name="Passim" /> wird davon ausgegangen, dass auf <b>false festgelegt</b>ist.</param>
-        <param name="KeepEntryFormatting">Optionales- <b>Objekt</b>. <b>True,</b> um die Formatierung der Behörden Einträge auf die Einträge im Rechtsgrundlagenverzeichnis. Entspricht dem Schalter \f in einem TOA-Feld (Rechtsgrundlagenverzeichnis-Feld). Wenn dieses Argument ausgelassen wird, <paramref name="KeepEntryFormatting" /> wird davon ausgegangen, dass <b>Wahr</b>sein.</param>
-        <param name="Separator">Optionales- <b>Objekt</b>. Die Zeichen (bis zu fünf) zwischen jedem Sequenznummer und Seitenzahl in der Tabelle Rechtsgrundlagenverzeichnis. Entspricht dem Schalter \d für eine Tabelle von Behörden (TOA-Feld). Wenn das Argument weggelassen wird, wird ein Bindestrich (-) verwendet.</param>
-        <param name="IncludeSequenceName">Optionales- <b>Objekt</b>. Eine Zeichenfolge, die den Feldbezeichner Sequenz (SEQ) für das Rechtsgrundlagenverzeichnis angibt. Entspricht dem Schalter \s in einem TOA-Feld (Rechtsgrundlagenverzeichnis-Feld).</param>
-        <param name="EntrySeparator">Optionales- <b>Objekt</b>. Die Zeichen (bis zu fünf), die jeden Eintrag und Seitenzahl in der Tabelle Rechtsgrundlagenverzeichnis getrennt. Entspricht dem Schalter \e für eine Tabelle von Behörden (TOA-Feld). Wenn dieses Argument ausgelassen wird, wird kein Trennzeichen verwendet.</param>
-        <param name="PageRangeSeparator">Optionales- <b>Objekt</b>. Die Zeichen (bis zu fünf), die Anfangs- und Endpunkte Seitenzahlen auf jeder Seite getrennt, range Rechtsgrundlagenverzeichnis. Entspricht dem Schalter \g für eine Tabelle von Behörden (TOA-Feld). Wenn dieses Argument ausgelassen wird, wird ein Gedankenstrich verwendet.</param>
-        <param name="IncludeCategoryHeader">Optionales- <b>Objekt</b>. <b>True</b> , wenn der Kategoriename für jede Gruppe von Einträgen aus der in das Rechtsgrundlagenverzeichnis (z. B. Anfragen) angezeigt werden. Entspricht dem Schalter \h in einem TOA-Feld (Rechtsgrundlagenverzeichnis-Feld). Wenn dieses Argument ausgelassen wird, <paramref name="IncludeCategoryHeader" /> wird davon ausgegangen, dass <b>Wahr</b>sein.</param>
-        <param name="PageNumberSeparator">Optionales- <b>Objekt</b>. Die Zeichen (bis zu fünf), die einzelne Seitenzahlen in Seitenverweisen in der Tabelle Rechtsgrundlagenverzeichnis getrennt. Entspricht dem Schalter \l für eine Tabelle von Behörden (TOA-Feld). Wenn dieses Argument ausgelassen wird, werden ein Komma und ein Leerzeichen verwendet.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> -Objekt, das ein Rechtsgrundlagenverzeichnis zu einem Dokument hinzugefügt wurde.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem das Rechtsgrundlagenverzeichnis angezeigt werden soll. Das Rechtsgrundlagenverzeichnis ersetzt den Bereich, wenn der Bereich nicht reduziert ist.</param>
+        <param name="Category">Optionales <b>Objekt</b>. Die Kategorie der Einträge, die im Rechtsgrundlagenverzeichnis enthalten sein sollen. Entspricht der \c-Option für ein Feld für ein Autoritäts Verzeichnis (Toa). Die Werte 0 bis 16 entsprechen den Elementen, die im Feld Kategorie auf der Registerkarte Rechtsgrundlagenverzeichnis im Dialogfeld Index und Tabellen (Verweis Befehl, Menü Einfügen) aufgeführt sind. Der Standardwert ist 1.</param>
+        <param name="Bookmark">Optionales <b>Objekt</b>. Der Zeichenfolgenname der Textmarke, aus der Sie Einträge für das Rechtsgrundlagenverzeichnis erfassen möchten. Wenn <paramref name="Bookmark" /> angegeben ist, werden die Einträge nur aus dem Teil des Dokuments gesammelt, der durch die Textmarke gekennzeichnet ist. Entspricht der Option \b für ein Feld für ein Autoritäts Verzeichnis (Toa).</param>
+        <param name="Passim">Optionales <b>Objekt</b>. <b>True</b> , um fünf oder mehr Seitenverweise auf dieselbe Autorität durch passim im Rechtsgrundlagenverzeichnis zu ersetzen. Entspricht dem Schalter \p in einem TOA-Feld (Rechtsgrundlagenverzeichnis-Feld). Wenn dieses Argument ausgelassen wird, <paramref name="Passim" /> wird davon ausgegangen, dass es sich um <b>false</b>handelt.</param>
+        <param name="KeepEntryFormatting">Optionales <b>Objekt</b>. <b>True</b> , um die Formatierung von den Einträgen des Rechtsgrundlagenverzeichnis auf die Einträge im Rechtsgrundlagenverzeichnis anzuwenden. Entspricht dem Schalter \f in einem TOA-Feld (Rechtsgrundlagenverzeichnis-Feld). Wenn dieses Argument ausgelassen wird, <paramref name="KeepEntryFormatting" /> wird davon ausgegangen, dass es <b>wahr</b>ist.</param>
+        <param name="Separator">Optionales <b>Objekt</b>. Bis zu fünf Zeichen, die im Rechtsgrundlagenverzeichnis zwischen der Folgenummer und der entsprechenden Seitenzahl gesetzt werden. Entspricht dem Schalter \d in einem TOA-Feld (Table of Authorities, Rechtsgrundlagenverzeichnis). Wenn dieses Argument ausgelassen wird, wird ein Bindestrich (-) verwendet.</param>
+        <param name="IncludeSequenceName">Optionales <b>Objekt</b>. Eine Zeichenfolge, welche die ID des SEQ-Felds für das Rechtsgrundlagenverzeichnis angibt. Entspricht dem Schalter \s in einem TOA-Feld (Table of Authorities, Rechtsgrundlagenverzeichnis).</param>
+        <param name="EntrySeparator">Optionales <b>Objekt</b>. Bis zu fünf Zeichen, die im Rechtsgrundlagenverzeichnis zwischen den Einträgen und der entsprechende Seitenzahl gesetzt werden. Entspricht dem Schalter \e in einem TOA-Feld (Table of Authorities, Rechtsgrundlagenverzeichnis). Wenn dieses Argument ausgelassen wird, wird kein Trennzeichen verwendet.</param>
+        <param name="PageRangeSeparator">Optionales <b>Objekt</b>. Bis zu fünf Zeichen, die im Rechtsgrundlagenverzeichnis zwischen den Seitenzahlen der ersten und letzten Seite in jedem Seitenbereich gesetzt werden. Entspricht dem Schalter \g in einem TOA-Feld (Table of Authorities, Rechtsgrundlagenverzeichnis). Wenn dieses Argument ausgelassen wird, wird ein Gedankenstrich verwendet.</param>
+        <param name="IncludeCategoryHeader">Optionales <b>Objekt</b>. <b>True</b> , wenn der Kategorienamen für jede Gruppe von Einträgen im Rechtsgrundlagenverzeichnis angezeigt werden soll (beispielsweise in Fällen). Entspricht dem Schalter \h in einem TOA-Feld (Rechtsgrundlagenverzeichnis-Feld). Wenn dieses Argument ausgelassen wird, <paramref name="IncludeCategoryHeader" /> wird davon ausgegangen, dass es <b>wahr</b>ist.</param>
+        <param name="PageNumberSeparator">Optionales <b>Objekt</b>. Bis zu fünf Zeichen, die im Rechtsgrundlagenverzeichnis zwischen einzelne Seitenzahlen in Seitenverweisen gesetzt werden. Entspricht dem Schalter \l in einem TOA-Feld (Table of Authorities, Rechtsgrundlagenverzeichnis). Wenn dieses Argument ausgelassen wird, werden ein Komma und ein Leerzeichen verwendet.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> Objekt zurück, das ein einem Dokument hinzugefügtes Autoritäts Verzeichnis darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ein Rechtsgrundlagenverzeichnis wird aus der Tabelle der Behörden Eintrag (TA) Felder in einem Dokument erstellt. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> -Methode, um Einträge, die in das Rechtsgrundlagenverzeichnis eingeschlossen werden sollen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Rechtsgrundlagenverzeichnisse werden aus TA-Feldern (Eintragsfelder für Rechtsgrundlagenverzeichnisse) in einem Dokument erstellt. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> die-Methode, um Zitate zu markieren, die im Rechtsgrundlagenverzeichnis enthalten sein sollen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -112,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,11 +158,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -203,28 +189,26 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdToaFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Formatierung für die Rechtsgrundlagenverzeichnisse im angegebenen Dokument.</summary>
+        <summary>Gibt die Formatierung für die Rechtsgrundlagenverzeichnisse im angegebenen Dokument zurück oder legt diese Formatierung fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />kann eine der folgenden <b>WdToaFormat</b> -Konstanten sein:</para>
           <para>
-            <b>WdTOAClassic</b>
+            <b>wdTOAClassic</b>
           </para>
           <para>
-            <b>WdTOAFormal</b>
+            <b>wdTOAFormal</b>
           </para>
           <para>
-            <b>WdTOATemplate</b>
+            <b>wdTOATemplate</b>
           </para>
           <para>
-            <b>WdTOADistinctive</b>
+            <b>wdTOADistinctive</b>
           </para>
           <para>
-            <b>WdTOASimple</b>
+            <b>wdTOASimple</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -285,7 +269,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -316,12 +300,11 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>String</b> erforderlich. Der Text für das kurze Zitat, so wie er im Dialogfeld Zitat markieren angezeigt wird (Menü Einfügen, Befehl Index und Verzeichnisse).</param>
-        <param name="LongCitation">Optionales- <b>Objekt</b>. Der Text für das lange Zitat, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
-        <param name="LongCitationAutoText">Optionales- <b>Objekt</b>. Der Name für den AutoText-Eintrag, der den Text des langen Zitats enthält, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
-        <param name="Category">Optionales- <b>Objekt</b>. Die Nummer der Kategorie, die dem Eintrag zugeordnet wird. Hierbei entspricht 1 der ersten Kategorie im Feld Kategorie des Dialogfelds Zitat markieren, 2 der zweiten Kategorie usw.</param>
-        <summary>Fügt ein TA-Feld (Rechtsgrundlagenverzeichnis) Feld nach allen Vorkommen des der <paramref name="ShortCitation" /> Text.</summary>
+        <param name="ShortCitation"><b>String</b> erforderlich. Der Text für das kurze Zitat, so wie er im Dialogfeld Zitat markieren angezeigt wird (Menü Einfügen, Befehl Index und Verzeichnisse).</param>
+        <param name="LongCitation">Optionales <b>Objekt</b>. Der Text für das lange Zitat, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
+        <param name="LongCitationAutoText">Optionales <b>Objekt</b>. Der Name für den AutoText-Eintrag, der den Text des langen Zitats enthält, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
+        <param name="Category">Optionales <b>Objekt</b>. Die Nummer der Kategorie, die dem Eintrag zugeordnet wird. Hierbei entspricht 1 der ersten Kategorie im Feld Kategorie des Dialogfelds Zitat markieren, 2 der zweiten Kategorie usw.</param>
+        <summary>Fügt nach allen Instanzen des <paramref name="ShortCitation" /> Texts ein TA-Feld (Rechtsgrundlagen Eintrag) ein.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,13 +333,12 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Speicherort der Tabelle der Eintrag für das Rechtsgrundlagenverzeichnis. Das TA-Feld wird eingefügt, nach dem <paramref name="Range" />.</param>
-        <param name="ShortCitation">
-          <b>String</b> erforderlich. Der Text für das kurze Zitat, so wie er im Dialogfeld Zitat markieren angezeigt wird (Menü Einfügen, Befehl Index und Verzeichnisse).</param>
-        <param name="LongCitation">Optionales- <b>Objekt</b>. Das lange Zitat, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
-        <param name="LongCitationAutoText">Optionales- <b>Objekt</b>. Der Name für den AutoText-Eintrag, der den Text des langen Zitats enthält, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
-        <param name="Category">Optionales- <b>Objekt</b>. Die Nummer der Kategorie, die dem Eintrag zugeordnet wird. Hierbei entspricht 1 der ersten Kategorie im Feld Kategorie des Dialogfelds Zitat markieren, 2 der zweiten Kategorie usw.</param>
-        <summary>Fügt ein TA-Feld (Rechtsgrundlagenverzeichnis) ein und gibt das Feld als ein <see cref="T:Microsoft.Office.Interop.Word.Field" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des Eintrags für das Rechtsgrundlagenverzeichnis. Das TA-Feld wird nach <paramref name="Range" />eingefügt.</param>
+        <param name="ShortCitation"><b>String</b> erforderlich. Der Text für das kurze Zitat, so wie er im Dialogfeld Zitat markieren angezeigt wird (Menü Einfügen, Befehl Index und Verzeichnisse).</param>
+        <param name="LongCitation">Optionales <b>Objekt</b>. Das lange Zitat, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
+        <param name="LongCitationAutoText">Optionales <b>Objekt</b>. Der Name für den AutoText-Eintrag, der den Text des langen Zitats enthält, wie er im Rechtsgrundlagenverzeichnis angezeigt wird.</param>
+        <param name="Category">Optionales <b>Objekt</b>. Die Nummer der Kategorie, die dem Eintrag zugeordnet wird. Hierbei entspricht 1 der ersten Kategorie im Feld Kategorie des Dialogfelds Zitat markieren, 2 der zweiten Kategorie usw.</param>
+        <summary>Fügt ein TA-Feld (Tabelle of Authorities Entry) ein und gibt das <see cref="T:Microsoft.Office.Interop.Word.Field" /> Feld als Objekt zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,9 +366,8 @@
         <Parameter Name="ShortCitation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>String</b> erforderlich. Der Text des kurzen Zitats.</param>
-        <summary>Sucht und markiert das nächste Vorkommen eines angegebenen Eintrags.</summary>
+        <param name="ShortCitation"><b>String</b> erforderlich. Der Text des kurzen Zitats.</param>
+        <summary>Sucht und markiert die nächste Instanz eines angegebenen Zitats.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

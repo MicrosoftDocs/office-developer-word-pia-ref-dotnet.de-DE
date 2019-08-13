@@ -1,13 +1,5 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="040fc6fe1bbe3d61841dfc8c2ab0322e89c441c7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669755" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146661" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
@@ -26,19 +18,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Sprache für die Korrektur und Formatierung in Microsoft Word verwendet.</summary>
-    <remarks>
-      <para>Das <b>Language</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Languages" /> Auflistung.</para>
-      <para>Verwendung <b>Sprachen</b>(<paramref name="index" />) um ein einzelnes <b>Language</b> -Objekt zurückzugeben, in dem <paramref name="index" /> kann der Wert von der <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> -Eigenschaft, wird der Wert der der <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> -Eigenschaft, eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> -Konstanten oder eine der der <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> Konstanten.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> -Eigenschaft gibt den Namen einer Sprache zurück, während die <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> -Eigenschaft gibt den Namen einer Sprache zurück, in der Sprache des Benutzers.</para>
-      <para>Für jede Sprache, für die Microsoft Office proofing Tools installiert sind, können Sie die <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, und <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> Eigenschaften zurückgegeben werden sollen das entsprechende <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt.</para>
-      <para>Der Schreibstil ist der Satz von Regeln bei der Rechtschreibprüfung. Die <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> -Eigenschaft gibt ein Array von Zeichenfolgen, die die verfügbaren Schreibstile für die angegebene Sprache darstellen.</para>
-      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> festzulegenden den Standardschreibstil Word verwenden soll.</para>
-      <para>Können Sie mit den Standardschreibstil überschreiben der <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> Eigenschaft. Diese Eigenschaft gilt für ein angegebenes Dokument für Text in einer bestimmten Sprache gekennzeichnet.</para>
-      <para>Benötigen Sie die Microsoft Office proofing Tools installiert, die für jede Sprache, die Sie überprüfen möchten.</para>
-      <para>Wenn Sie Text als <b>WdNoProofing</b>markieren, überspringt Word den markierten Text, bei der Ausführung ein Kontrollkästchen Rechtschreibung und Grammatik.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Sprache dar, die bei der Korrektur oder Formatierung in Microsoft Word verwendet wird.</summary>
+    <remarks><para>Das <b>Language</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Languages" /> Auflistung.</para>
+      <para>Verwenden <b></b>Sie languages (<paramref name="index" />), um ein einzelnes <b>Language</b> - <paramref name="index" /> Objekt zurückzugeben, wobei der <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> Wert der Eigenschaft, der Wert <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> der Eigenschaft, eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten oder eine der <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> Konstanten sein kann.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> -Eigenschaft gibt den Namen einer Sprache zurück, während <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> die-Eigenschaft den Namen einer Sprache in der Sprache des Benutzers zurückgibt.</para>
+      <para>Für jede Sprache, für die Korrekturhilfen installiert sind, können Sie die <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, und <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> verwenden, um das entsprechende <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurückzugeben.</para>
+      <para>Der Schreibstil besteht aus einer Reihe von Regeln, die von der Grammatikprüfung verwendet werden. Die <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> -Eigenschaft gibt ein Array von Zeichenfolgen zurück, die die verfügbaren Schreibstile für die angegebene Sprache darstellen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> die-Eigenschaft, um den standardmäßigen Schreibstil festzulegen, den Word verwenden soll.</para>
+      <para>Sie können den Standardschreibstil mit der <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> -Eigenschaft außer Kraft setzen. Diese Eigenschaft wird dem angegebenen Dokument für Text in einer bestimmten Sprache zugewiesen.</para>
+      <para>Für jede zu überprüfende Sprache müssen Korrekturhilfen installiert werden.</para>
+      <para>Wenn Sie Text als <b>wdNoProofing</b> markieren, überspringt ihn Word bei der Rechtschreib- und Grammatikprüfung.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveGrammarDictionary">
@@ -64,12 +54,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt, das das aktive Grammatikwörterbuch für die angegebene Sprache repräsentiert.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das das aktive Grammatikwörterbuch für die angegebene Sprache darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ist kein Grammatikwörterbuch für die angegebene Sprache installiert, gibt diese Eigenschaft <b>Nothing zurück</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn für die angegebene Sprache kein Grammatikwörterbuch installiert ist, gibt diese Eigenschaft <b>Nothing</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveHyphenationDictionary">
@@ -95,12 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt, das aktive Wörterbuch für die angegebene Sprache darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das das aktive Silben Trennungs Wörterbuch für die angegebene Sprache darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ist kein Wörterbuch für die angegebene Sprache installiert, gibt diese Eigenschaft <b>Nothing zurück</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn für die angegebene Sprache kein Silben Trennungs Wörterbuch installiert ist, gibt diese Eigenschaft <b>Nothing</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSpellingDictionary">
@@ -126,12 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt, das das aktive Wörterbuch für die angegebene Sprache repräsentiert.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das das aktive Rechtschreibwörterbuch für die angegebene Sprache darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ist kein Wörterbuch für die angegebene Sprache installiert, gibt diese Eigenschaft <b>Nothing zurück</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn für die angegebene Sprache kein Rechtschreibwörterbuch installiert ist, gibt diese Eigenschaft <b>Nothing</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveThesaurusDictionary">
@@ -157,12 +141,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt, welches das aktive Thesauruswörterbuch für die angegebene Sprache darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das das aktive Thesaurus-Wörterbuch für die angegebene Sprache darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ist kein Thesauruswörterbuch für die angegebene Sprache installiert, gibt diese Eigenschaft <b>Nothing zurück</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn kein Thesaurus-Wörterbuch für die angegebene Sprache installiert ist, gibt diese Eigenschaft <b>Nothing</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -188,7 +170,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,11 +200,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultWritingStyle">
@@ -251,13 +231,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Standardschreibstil wird von der grammatikprüfung für die angegebene Sprache. Der Name der Formatvorlage schreiben ist den lokalisierten Namen für die angegebene Sprache.</summary>
+        <summary>Gibt den von der Grammatikprüfung verwendeten Standardschreibstil für die angegebene Sprache zurück oder legt ihn fest. Der Name des Schreibstils ist der lokalisierte Name der angegebenen Sprache.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft steuert die globale Einstellung für den Schreibstil. Wenn Sie diese Eigenschaft festlegen, müssen Sie den genauen Namen in das Feld Schreibstil die Rechtschreibung verwenden &amp; Grammatik Registerkarte im Dialogfeld Optionen (Menü Extras).</para>
-          <para>Der <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> -Eigenschaft festgelegt, wird den Schreibstil für jede Sprache in einem Dokument. Die <b>ActiveWritingStyle</b> -Einstellung überschreibt die Einstellung der <b>DefaultWritingStyle</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft steuert die globalen Einstellungen für den Schreibstil. Wenn Sie diese Eigenschaft festlegen, müssen Sie den genauen Namen verwenden, der im Feld Schreibstil auf der &amp; Registerkarte Rechtschreib Grammatik im Dialogfeldoptionen (Menü Extras) gefunden wurde.</para>
+          <para>Die <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> -Eigenschaft legt den Schreibstil für jede Sprache in einem Dokument fest. Die <b>ActiveWritingStyle</b>-Einstellung setzt die <b>DefaultWritingStyle</b>-Einstellung außer Kraft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -283,12 +261,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Zahl, die die angegebene Sprache identifiziert.</summary>
+        <summary>Gibt eine Nummer zurück, die die angegebene Sprache identifiziert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>ID</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>ID</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -314,7 +290,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -342,7 +318,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen einer Sprache für die Rechtschreibprüfung Tool in der Sprache des Benutzers zurück.</summary>
+        <summary>Gibt den Namen einer Sprache der Korrekturhilfe in der Sprache des Benutzers zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -401,13 +377,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDictionaryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Typ der Korrekturhilfe. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt den Typ der Korrekturhilfe zurück oder legt diesen Typ fest. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Können Sie diese Eigenschaft verwenden, um die Rechtschreibprüfung ein juristisches Wörterbuch in einem der Wörterbücher verfügbaren Add-on zu ändern, die mit Microsoft Word arbeiten. Beispielsweise stehen juristische, medizinische oder vollständige Wörterbücher anstelle der standard-Wörterbuch können.</para>
-          <para>Der <b>SpellingDictionaryType</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> Konstanten. Einige der folgenden Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft verwenden, um das aktive Rechtschreibwörterbuch in eines der verfügbaren Add-on-Wörterbücher zu ändern, die mit Microsoft Word arbeiten. An Stelle des Standardwörterbuchs können Sie z. B. juristische, medizinische oder vollständige Wörterbücher verwenden.</para>
+          <para>Die <b>SpellingDictionaryType</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> Konstanten sein. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingStyleList">
@@ -433,7 +407,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Zeichenfolgenarray mit den Namen der verfügbaren Schreibstile für die angegebene Sprache zurück.</summary>
+        <summary>Gibt einen Array mit Zeichenfolgen zurück, der die Namen aller verfügbaren Schreibstile für die angegebene Sprache enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Dictionaries" FullName="Microsoft.Office.Interop.Word.Dictionaries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="956b16fdc0aae78cbea233341ebca861e8235368" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670715" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dictionaries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25481a745c77f77a431162c88cbb1a8efa0fcf1e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147060" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionaries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionaries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionaries" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionaries&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekten, die die aktiven Benutzerwörterbücher enthalten.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.CustomDictionaries" /> -Eigenschaft auf die Auflistung der momentan aktiven Benutzerwörterbücher zurück.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> -Methode, um die Auflistung der aktiven Benutzerwörterbücher ein neues Benutzerwörterbuch hinzugefügt. Wenn es keine Datei mit dem Namen von angegebenen <paramref name="FileName" />, Word erstellt darauf verweisen</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" /> -Methode, um alle Benutzerwörterbücher entladen. Beachten Sie jedoch, dass diese Methode nicht die Dateien der Wörterbücher gelöscht. Nachdem Sie diese Methode verwenden, wird die Anzahl der Benutzerwörterbücher in der Auflistung ist 0 (null).</para>
-      <para>Legen Sie das Benutzerwörterbuch, dem neue Wörter, mithilfe hinzugefügt werden, der <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> Eigenschaft. Wenn Sie versuchen, diese Eigenschaft für ein Wörterbuch festzulegen, ein Benutzerwörterbuch ist, tritt ein Fehler auf.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" /> -Eigenschaft gibt die maximale Anzahl von gleichzeitigen Benutzerwörterbücher, die die Anwendung unterstützt. Für Microsoft Word dieses Maximum ist 10.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekten, die die aktiven benutzerdefinierten Rechtschreibwörterbücher enthält.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.CustomDictionaries" /> die-Eigenschaft, um die Auflistung der derzeit aktiven Benutzerwörterbücher zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> die-Methode, um der Auflistung aktiver Benutzerwörterbücher ein neues Benutzerwörterbuch hinzuzufügen. Wenn keine Datei mit dem angegebenen Namen vorhanden ist, <paramref name="FileName" />wird Sie von Word erstellt.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" /> die-Methode, um alle Benutzerwörterbücher zu entladen. Dabei werden jedoch nicht die Dateien der Wörterbücher gelöscht. Nach der Verwendung dieser Methode ist die Anzahl der Benutzerwörterbücher in der Auflistung 0 (Null).</para>
+      <para>Sie legen das Benutzerwörterbuch fest, auf das neue Wörter mithilfe der <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> -Eigenschaft hinzugefügt werden. Wenn Sie versuchen, diese Eigenschaft für ein Wörterbuch festzulegen, bei dem es sich nicht um ein Benutzerwörterbuch handelt, tritt ein Fehler auf.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" /> -Eigenschaft gibt die maximale Anzahl gleichzeitiger benutzerdefinierter Rechtschreibwörterbücher zurück, die von der Anwendung unterstützt werden können. Für Microsoft Word beträgt dieser Wert 10.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveCustomDictionary">
@@ -67,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt, das Benutzerwörterbuch darstellt, zu dem Wörter hinzugefügt werden.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das das Benutzerwörterbuch darstellt, dem Wörter hinzugefügt werden, oder legt dieses fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,16 +85,13 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> erforderlich. Der Name der Zeichenfolge der Wörterbuchdatei. Wenn kein Pfad in der Zeichenfolge angegeben ist, wird der Pfad des Microsoft Office proofing Tools verwendet.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt, das ein neues benutzerdefiniertes Konvertierung Benutzerwörterbuch oder zur Auflistung der aktiven benutzerdefinierten Rechtschreibung oder Konvertierungswörterbücher hinzugefügt darstellt.</summary>
+        <param name="FileName"><b>String</b> erforderlich. Der Zeichenfolgename der Wörterbuchdatei. Wenn in der Zeichenfolge kein Pfad angegeben ist, wird der Pfad für die Korrekturhilfen verwendet.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das eine neue benutzerdefinierte Rechtschreibung oder ein neues Konvertierungswörterbuch darstellt, das der Auflistung aktiver benutzerdefinierter Rechtschreib-oder Konvertierungswörterbücher hinzugefügt wurde</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>, Wenn eine Datei mit dem angegebenen Namen nicht vorhanden ist, erstellt Microsoft Word eine.</para>
-          <para>Der <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> -Auflistung enthält nur die aktiven Benutzerwörterbücher. <b>Dictionary</b> -Objekten, die von abgeleitet sind die <see cref="T:Microsoft.Office.Interop.Word.Languages" /> Auflistung nicht über eine <b>Add</b> -Methode verfügen. Hierzu gehören die Dictionary-Objekte zurückgegeben, die durch die <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, und <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> Eigenschaften.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> Eigenschaft, um die Auflistung von benutzerdefinierten Konvertierungswörterbücher zurückzugeben. Die <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> -Auflistung enthält nur die aktiven benutzerdefinierten Konvertierungswörterbücher.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn keine Datei mit dem angegebenen Namen vorhanden ist, erstellt Microsoft Word eine.</para>
+          <para>Die <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> Auflistung enthält nur die aktiven benutzerdefinierten Rechtschreibwörterbücher. <b>Dictionary</b> -Objekte, die von der <see cref="T:Microsoft.Office.Interop.Word.Languages" /> Auflistung abgeleitet werden, verfügen nicht über eine <b>Add</b> -Methode. Dazu gehören die Dictionary-Objekte, die <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />von <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />den <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />Eigenschaften, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> , und zurückgegeben werden.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> die-Eigenschaft, um die Auflistung von benutzerdefinierten Konvertierungs Wörterbüchern zurückzugeben. Die <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> Auflistung enthält nur die aktiven benutzerdefinierten Konvertierungswörterbücher.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -130,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,11 +144,8 @@
       <Parameters />
       <Docs>
         <summary>Entfernt alle Benutzer- oder Konvertierungswörterbücher.</summary>
-        <remarks>
-          <para>
-            <b>ClearAll</b> -Methode bei der Verwendung auf einem <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> oder <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> Objekt löscht nicht die oder benutzerdefinierten Wörterbuch-Dateien. Nach Verwendung dieser Methode wird die Anzahl der Benutzer- und Konvertierungswörterbücher in der Auflistung 0 (null).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>ClearAll</b> -Methode, wenn Sie <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> in <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> einem oder-Objekt verwendet wird, werden die benutzerdefinierten oder Konvertierungswörterbuch-Dateien nicht gelöscht. Nachdem Sie diese Methode verwendet haben, ist die Anzahl der benutzerdefinierten oder Konvertierungswörterbücher in der Auflistung 0 (null).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -217,11 +201,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -282,7 +264,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -311,7 +293,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die maximale Anzahl von oder Konvertierungswörterbücher zulässig.</summary>
+        <summary>Gibt die maximal zulässige Anzahl von Benutzer- oder Konvertierungswörterbüchern zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

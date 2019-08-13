@@ -1,13 +1,5 @@
 <Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="81695bc0d7c2fa5c37720ad879012f8adc13b827" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669076" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3120d6713fa67507a7ea299781a6f722aba24386" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147879" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
@@ -30,15 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekten, die den Seriendruck darstellen seriendruckbezogenen Felder in einem Dokument.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> -Eigenschaft auf die <b>MailMergeFields</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> -Methode, um ein Seriendruckfeld <b>MailMergeFields</b> -Auflistung hinzugefügt.</para>
-      <para>Use <b>Feldern</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>MailMergeField</b> -Objekt zurückzugeben.</para>
-      <para>
-        <b>MailMergeFields</b> -Auflistung verfügt über zusätzliche Methoden, z. B. <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> und <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, für das Hinzufügen von Feldern in Zusammenhang mit einem Seriendruckvorgang.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekten, die die seriendruckbezogenen Felder in einem Dokument darstellen.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> die-Eigenschaft, um die <b>MailMergeFields</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> die-Methode, um der <b>MailMergeFields</b> -Auflistung ein Seriendruckfeld hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Fields (<paramref name="index" />) <paramref name="index" /> , wobei es sich um die Indexnummer handelt <b></b> , um ein einzelnes MailMergeField-Objekt zurückzugeben.</para>
+      <para>Die <b>MailMergeFields</b> -Auflistung verfügt über zusätzliche Methoden, <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> wie <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />zum Beispiel und, zum Hinzufügen von Feldern im Zusammenhang mit einem Seriendruck Vorgang.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,10 +53,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem das Feld angezeigt werden soll. In diesem Feld ersetzt den Bereich, wenn der Bereich nicht reduziert ist.</param>
-        <param name="Name">
-          <b>String</b> erforderlich. Der Name des Felds.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt, das ein Seriendruckfeld darstellt, das dem Datenquelldokument hinzugefügt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem das Feld angezeigt werden soll. Der Bereich wird durch das Feld ersetzt, wenn der Bereich nicht reduziert ist.</param>
+        <param name="Name"><b>String</b> erforderlich. Der Name des Felds.</param>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Wert vom Datentyp Object zurück, der ein Seriendruckfeld darstellt, das dem Datenquellendokument hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,18 +85,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position für das ASK-Feld.</param>
-        <param name="Name">
-          <b>String</b> erforderlich. Der name der Textmarke, der Antwort oder Standardtext zugewiesen ist. Verwenden Sie ein REF-Feld mit der Name der Textmarke, um das Ergebnis in einem Dokument anzuzeigen.</param>
-        <param name="Prompt">Optionales- <b>Objekt</b>. Der im Dialogfeld angezeigte Text.</param>
-        <param name="DefaultAskText">Optionales- <b>Objekt</b>. Die Standardantwort, die im Textfeld angezeigt wird, wenn das Dialogfeld angezeigt wird. Entspricht dem Schalter \d für ein ASK-Feld.</param>
-        <param name="AskOnce">Optionales- <b>Objekt</b>. <b>True</b> , wenn das Dialogfeld nur einmal und nicht jedes Mal ein neuen Datensatz zusammengeführt wird angezeigt. Entspricht dem Schalter \o für ein ASK-Feld.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein ASK-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position für das ASK-Feld.</param>
+        <param name="Name"><b>String</b> erforderlich. Der Name der Textmarke, der die Antwort oder ein Standardtext zugewiesen wird. Verwenden Sie zum Anzeigen des Ergebnisses in einem Dokument ein REF-Feld mit dem Namen der Textmarke.</param>
+        <param name="Prompt">Optionales <b>Objekt</b>. Der im Dialogfeld angezeigte Text.</param>
+        <param name="DefaultAskText">Optionales <b>Objekt</b>. Die Standardantwort, die im Textfeld zu sehen ist, wenn das Dialogfeld angezeigt wird. Entspricht dem Schalter \d für ein ASK-Feld.</param>
+        <param name="AskOnce">Optionales <b>Objekt</b>. <b>True</b> , wenn das Dialogfeld nur einmal angezeigt wird, statt jedes Mal, wenn ein neuer Datensatz zusammengeführt wird. Entspricht der \o-Option für ein ASK-Feld.</param>
+        <summary>Fügt ein ASK-Feld in ein Seriendruck-Hauptdokument ein. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Bei einer Aktualisierung zeigt ein ASK-Feld ein Dialogfeld an, die Sie für Text, der die angegebene Textmarke zuweisen aufgefordert werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei einer Aktualisierung wird in einem ASK-Feld ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, Text einzugeben, der der angegebenen Textmarke zugeordnet werden soll.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFillIn">
@@ -135,17 +120,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des FILLIN-Felds.</param>
-        <param name="Prompt">Optionales- <b>Objekt</b>. Der im Dialogfeld angezeigte Text.</param>
-        <param name="DefaultFillInText">Optionales- <b>Objekt</b>. Die Standardantwort, die im Textfeld angezeigt wird, wenn das Dialogfeld angezeigt wird. Entspricht dem Schalter \d für ein FILLIN-Feld.</param>
-        <param name="AskOnce">Optionales- <b>Objekt</b>. <b>True</b> , wenn die Aufforderung nur einmal und nicht jedes Mal ein neuen Datensatz zusammengeführt wird angezeigt. Entspricht dem Schalter \o für ein FILLIN-Feld. Der Standardwert lautet <b>False</b>.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein FILLIN-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des FILLIN-Felds.</param>
+        <param name="Prompt">Optionales <b>Objekt</b>. Der im Dialogfeld angezeigte Text.</param>
+        <param name="DefaultFillInText">Optionales <b>Objekt</b>. Die Standardantwort, die im Textfeld zu sehen ist, wenn das Dialogfeld angezeigt wird. Entspricht dem Schalter \d für ein FILLIN-Feld.</param>
+        <param name="AskOnce">Optionales <b>Objekt</b>. <b>True</b> , wenn die Eingabeaufforderung nur einmal angezeigt werden soll, statt jedes Mal, wenn ein neuer Datensatz zusammengeführt wird. Entspricht der \o-Option für ein FILLIN-Feld. Der Standardwert ist <b>False</b>.</param>
+        <summary>Fügt einem Seriendruck-Hauptdokument ein FILLIN-Feld hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Bei einer Aktualisierung zeigt ein FILLIN-Feld ein Dialogfeld, das Sie für den Text in das Dokument an der Position des FILLIN-Felds einzufügen auffordert.</para>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.Fields" /> -Auflistungsobjekt ein Dokument als ein Seriendruck-Hauptdokument ein FILLIN-Feld hinzu.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei einer Aktualisierung wird in einem FILLIN-Feld ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, Text einzugeben, der im Dokument an der Position des FILLIN-Felds eingefügt wird.</para>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.Fields" /> mit dem Collection-Objekt, um ein FILLIN-Feld zu einem anderen Dokument als einem Seriendruck-Hauptdokument hinzuzufügen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIf">
@@ -176,21 +159,18 @@
         <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des IF-Felds.</param>
-        <param name="MergeField">
-          <b>String</b> erforderlich. Der Name des Seriendruckfelds.</param>
-        <param name="Comparison">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Der im Vergleich verwendete Operator.</param>
-        <param name="CompareTo">Optionales- <b>Objekt</b>. Der Text, der im Vergleich zu den Inhalt der <paramref name="MergeField" />.</param>
-        <param name="TrueAutoText">Optionales- <b>Objekt</b>. Der AutoText-Eintrag, der eingefügt wird, wenn der Vergleich wahr ist. Wenn dieses Argument angegeben wird, <paramref name="TrueText" /> wird ignoriert.</param>
-        <param name="TrueText">Optionales- <b>Objekt</b>. Der Text, der bei einem übereinstimmenden Vergleich eingefügt wird.</param>
-        <param name="FalseAutoText">Optionales- <b>Objekt</b>. Der AutoText-Eintrag, der eingefügt wird, wenn der Vergleich falsch ist. Wenn dieses Argument angegeben wird, <paramref name="FalseText" /> wird ignoriert.</param>
-        <param name="FalseText">Optionales- <b>Objekt</b>. Der Text, der bei einem nicht übereinstimmenden Vergleich eingefügt wird.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein IF-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des IF-Felds.</param>
+        <param name="MergeField"><b>String</b> erforderlich. Der Name des Seriendruckfelds.</param>
+        <param name="Comparison">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Der im Vergleich verwendete Operator.</param>
+        <param name="CompareTo">Optionales <b>Objekt</b>. Der Text, der mit dem Inhalt von <paramref name="MergeField" />verglichen werden soll.</param>
+        <param name="TrueAutoText">Optionales <b>Objekt</b>. Der AutoText-Eintrag, der bei einem übereinstimmenden Vergleich eingefügt wird. Wenn dieses Argument angegeben wird, <paramref name="TrueText" /> wird ignoriert.</param>
+        <param name="TrueText">Optionales <b>Objekt</b>. Der Text, der bei einem übereinstimmenden Vergleich eingefügt wird.</param>
+        <param name="FalseAutoText">Optionales <b>Objekt</b>. Der AutoText-Eintrag, der bei einem nicht übereinstimmenden Vergleich eingefügt wird. Wenn dieses Argument angegeben wird, <paramref name="FalseText" /> wird ignoriert.</param>
+        <param name="FalseText">Optionales <b>Objekt</b>. Der Text, der bei einem nicht übereinstimmenden Vergleich eingefügt wird.</param>
+        <summary>Fügt ein IF-Feld in ein Seriendruck-Hauptdokument ein. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Bei einer Aktualisierung vergleicht ein IF-Feld ein Feld in einem Datensatz mit einem angegebenen Wert und fügt, je nach den Vergleich der entsprechenden Text ein.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei der Aktualisierung vergleicht ein IF-Feld ein Feld in einem Datensatz mit einem angegebenen Wert und fügt dann den entsprechenden Text entsprechend dem Ergebnis des Vergleichs ein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeRec">
@@ -215,13 +195,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des MERGEREC-Felds.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein MERGEREC-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des MERGEREC-Felds.</param>
+        <summary>Fügt ein MERGEREC-Feld in ein Seriendruck-Hauptdokument ein. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ein MERGEREC-Feld fügt während des Seriendrucks die Nummer des aktuellen Datensatzes (die Position des Datensatzes im aktuellen Abfrageergebnis) ein.</para>
-          <para />
-        </remarks>
+        <remarks><para>Ein MERGEREC-Feld fügt die Nummer des aktuellen Datensatzes (die Position des Datensatzes im aktuellen Abfrageergebnis) während eines Seriendrucks ein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeSeq">
@@ -246,13 +224,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des MERGESEQ-Felds.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein MERGESEQ-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des MERGESEQ-Felds.</param>
+        <summary>Fügt ein MERGESEQ-Feld in ein Seriendruck-Hauptdokument ein. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ein MERGESEQ-Feld fügt eine Zahl, die basierend auf der Reihenfolge, in der Datensätze zusammengeführt werden (beispielsweise wenn Satz 50 der Sätze 50 bis 100 zusammengeführt wird, fügt MERGESEQ die Nummer 1 ein).</para>
-          <para />
-        </remarks>
+        <remarks><para>Ein MERGESEQ-Feld fügt basierend auf der Reihenfolge, in der Datensätze zusammengeführt werden, eine Zahl ein (Wenn beispielsweise der Datensatz 50 der Datensätze 50 bis 100 zusammengeführt wird, fügt MERGESEQ die Zahl 1 ein).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNext">
@@ -277,13 +253,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des NEXT-Felds.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein NEXT-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des NEXT-Felds.</param>
+        <summary>Fügt ein NEXT-Feld in ein Seriendruck-Hauptdokument ein. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ein NEXT-Feld springt zum nächsten Datensatz, damit Daten aus mehreren Datensätzen in demselben Seriendruckdokument (beispielsweise ein Blatt mit Adressetiketten) zusammengeführt werden können.</para>
-          <para />
-        </remarks>
+        <remarks><para>Ein nächstes Feld wechselt zum nächsten Datensatz, sodass Daten aus mehr als einem Datensatz in demselben Seriendruckdokument zusammengeführt werden können (beispielsweise ein Blatt mit Adressetiketten).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNextIf">
@@ -310,18 +284,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des NEXTIF-Felds.</param>
-        <param name="MergeField">
-          <b>String</b> erforderlich. Der Name des Seriendruckfelds.</param>
-        <param name="Comparison">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Der im Vergleich verwendete Operator.</param>
-        <param name="CompareTo">
-          <b>String</b> erforderlich. Der Text, der im Vergleich zu den Inhalt der <paramref name="MergeField" />.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein NEXTIF-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des NEXTIF-Felds.</param>
+        <param name="MergeField"><b>String</b> erforderlich. Der Name des Seriendruckfelds.</param>
+        <param name="Comparison">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Der im Vergleich verwendete Operator.</param>
+        <param name="CompareTo"><b>String</b> erforderlich. Der Text, der mit dem Inhalt von <paramref name="MergeField" />verglichen werden soll.</param>
+        <summary>Fügt ein NEXTIF-Feld in ein Seriendruck-Hauptdokument ein. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ein NEXTIF-Feld vergleicht zwei Ausdrücke, und wenn der Vergleich true ist, wird der nächste Datensatz mit dem aktuellen Seriendruckdokument zusammengeführt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Ein NEXTIF-Feld vergleicht zwei Ausdrücke, und wenn der Vergleich auf true festgelegt ist, wird der nächste Datensatz mit dem aktuellen Seriendruckdokument zusammengeführt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSet">
@@ -348,17 +318,14 @@
         <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des SET-Felds.</param>
-        <param name="Name">
-          <b>String</b> erforderlich. Der name der Textmarke, die <paramref name="ValueText" /> zugewiesen ist.</param>
-        <param name="ValueText">Optionales- <b>Objekt</b>. Der Text vom angegebenen Textmarke zugeordnet wurde die <paramref name="Name" /> Argument.</param>
-        <param name="ValueAutoText">Optionales- <b>Objekt</b>. Der AutoText-Eintrags, der Text vom festgelegten Textmarke zugeordnet enthält die <paramref name="Name" /> Argument. Wenn dieses Argument angegeben wird, <paramref name="ValueText" /> wird ignoriert.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein SET-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des SET-Felds.</param>
+        <param name="Name"><b>String</b> erforderlich. Der Name der Textmarke, <paramref name="ValueText" /> die zugewiesen ist.</param>
+        <param name="ValueText">Optionales <b>Objekt</b>. Der Text, der dem durch das <paramref name="Name" /> Argument angegebenen Lesezeichen zugeordnet ist.</param>
+        <param name="ValueAutoText">Optionales <b>Objekt</b>. Der AutoText-Eintrag, der Text enthält, der mit dem durch <paramref name="Name" /> das Argument angegebenen Lesezeichen verknüpft ist. Wenn dieses Argument angegeben wird, <paramref name="ValueText" /> wird ignoriert.</param>
+        <summary>Fügt ein SET-Feld in ein Seriendruck-Hauptdokument ein. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ein SET-Feld definiert den Text der angegebenen Textmarke.</para>
-          <para />
-        </remarks>
+        <remarks><para>Ein SET-Feld definiert den Text der angegebenen Textmarke.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSkipIf">
@@ -385,17 +352,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des SKIPIF-Felds.</param>
-        <param name="MergeField">
-          <b>String</b> erforderlich. Der Name des Seriendruckfelds.</param>
-        <param name="Comparison">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Der im Vergleich verwendete Operator.</param>
-        <param name="CompareTo">Optionales- <b>Objekt</b>. Der Text, der im Vergleich zu den Inhalt der <paramref name="MergeField" />.</param>
-        <summary>Ein Seriendruck-Hauptdokument hinzugefügt ein SKIPIF-Feld. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des SKIPIF-Felds.</param>
+        <param name="MergeField"><b>String</b> erforderlich. Der Name des Seriendruckfelds.</param>
+        <param name="Comparison">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Der im Vergleich verwendete Operator.</param>
+        <param name="CompareTo">Optionales <b>Objekt</b>. Der Text, der mit dem Inhalt von <paramref name="MergeField" />verglichen werden soll.</param>
+        <summary>Fügt einem Seriendruck-Hauptdokument ein SKIPIF-Feld hinzu. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> -Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Ein SKIPIF-Feld vergleicht zwei Ausdrücke und der Vergleich auf true festgelegt ist, SKIPIF wechselt zum nächsten Datensatz in der Datenquelle und startet ein neues Dokument zusammenführen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Ein SKIPIF-Feld vergleicht zwei Ausdrücke, und wenn der Vergleich auf true festgelegt ist, wechselt SKIPIF zum nächsten Datensatz in der Datenquelle und startet ein neues Seriendruckdokument.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -421,7 +385,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -479,11 +443,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -544,7 +506,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
