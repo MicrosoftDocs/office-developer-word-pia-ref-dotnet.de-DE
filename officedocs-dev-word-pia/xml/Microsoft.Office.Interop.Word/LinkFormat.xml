@@ -1,13 +1,5 @@
 <Type Name="LinkFormat" FullName="Microsoft.Office.Interop.Word.LinkFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f8294bafcd1f6920b3ef713f96dedbabca82b54c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669976" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LinkFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c971517dcfc20eb4687dbc3c18cb470ffe6557a7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146598" /></Metadata><TypeSignature Language="C#" Value="public interface LinkFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LinkFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LinkFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface LinkFormat" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Verknüpfungseigenschaften für ein OLE-Objekt oder eine OLE-Grafik dar.</summary>
-    <remarks>
-      <para>Mit der <b>LinkFormat</b> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Word.Shape" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, oder <see cref="T:Microsoft.Office.Interop.Word.Field" /> Objekts, um das <b>LinkFormat</b> -Objekt zurückzugeben.</para>
-      <para>Nicht alle Arten von Formen, Inlineformen und Felder können mit einer Quelle verknüpft werden. Verwenden Sie die <b>Type</b> -Eigenschaft eines <b>Shape-</b> oder <b>InlineShape</b> -Objekts, um festzustellen, ob ein bestimmtes Shape verknüpft werden kann. Die <b>Type</b> -Eigenschaft für ein <b>Field</b> -Objekt gibt den Typ des Felds zurück.</para>
-      <para>Können sowohl die <see cref="M:Microsoft.Office.Interop.Word.LinkFormat.Update" /> Methode und die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" /> Eigenschaft Verknüpfungen zu aktualisieren. Verwenden Sie zum Zurückgeben oder Festlegen des vollständigen Pfads für einen bestimmten Link-Quelldatei, die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> -Eigenschaft.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie die <b>LinkFormat</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Shape" />eines <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />,- <see cref="T:Microsoft.Office.Interop.Word.Field" /> oder-Objekts, um das <b>LinkFormat</b> -Objekt zurückzugeben.</para>
+      <para>Nicht alle Arten von Formen, Inlineformen und Felder können mit einer Quelle verknüpft werden. Verwenden Sie die <b>Type</b> -Eigenschaft eines <b>Shape</b> -oder InlineShape-Objekts, um zu bestimmen, ob eine bestimmte Form verknüpft werden kann. <b></b> Die <b>Type</b>-Eigenschaft für ein <b>Field</b>-Objekt gibt den Typ des Felds zurück.</para>
+      <para>Sie können sowohl die <see cref="M:Microsoft.Office.Interop.Word.LinkFormat.Update" /> -Methode als auch <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" /> die-Eigenschaft verwenden, um Verknüpfungen zu aktualisieren. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> -Eigenschaft, um den vollständigen Pfad für die Quelldatei einer bestimmten Verknüpfung zurückzugeben oder festzulegen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,8 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die angegebene Verknüpfung wird aktualisiert automatisch, wenn die Container-Datei geöffnet wird oder wenn die Quelldatei geändert wird.</summary>
+        <summary><b>True</b>, wenn die angegebene Verknüpfung beim Öffnen der Containerdatei oder beim Ändern der Quelldatei automatisch aktualisiert wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +106,8 @@
       <Parameters />
       <Docs>
         <summary>Hebt die Verknüpfung zwischen der Quelldatei und dem angegebenen OLE-Objekt, dem angegebenen Bild bzw. dem verknüpften Feld auf.</summary>
-        <remarks>
-          <para>Nachdem Sie diese Methode verwenden, wird nicht das Ergebnis der Verknüpfung automatisch aktualisiert werden, wenn die Quelldatei geändert wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, wird das Verknüpfungsergebnis beim Ändern der Quelldatei nicht mehr automatisch aktualisiert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -148,11 +135,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -181,13 +166,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn ein <see cref="T:Microsoft.Office.Interop.Word.Field" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt ist gesperrt, um die automatische Aktualisierung zu verhindern.</summary>
+        <summary><b>True</b> , wenn <see cref="T:Microsoft.Office.Interop.Word.Field" />ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />-, <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -oder-Objekt gesperrt ist, um die automatische Aktualisierung zu verhindern.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn Sie diese Eigenschaft mit einem <b>Shape</b> -Objekt verwenden, eine beweglichen verknüpfte Grafik ist (ein Bild hinzugefügt, mit der <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Objekt), tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie diese Eigenschaft mit einem <b>Shape</b> -Objekt verwenden, bei dem es sich um eine unverankerte verknüpfte <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Grafik handelt ( <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> ein Bild, das mit der-Methode des Objekts hinzugefügt wurde), tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -244,13 +226,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Bild mit dem Dokument gespeichert wird.</summary>
+        <summary><b>True</b>, wenn das angegebene Bild zusammen mit dem Dokument gespeichert wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft funktioniert nur bei Formen und Inlineformen, die verknüpfte Bilder sind.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft steht nur für Formen und Inlineformen zur Verfügung, die verknüpfte Bilder sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceFullName">
@@ -279,12 +258,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt, oder legt den Pfad und Namen der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder dar.</summary>
+        <summary>Gibt den Pfad und den Namen der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder Feld zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Verwendung dieser Eigenschaft entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, und <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> Eigenschaften.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Verwendung dieser Eigenschaft entspricht der Verwendung in Sequence für <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />die <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />Eigenschaften, <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> und.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -310,12 +287,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder Feld zurück.</summary>
+        <summary>Gibt den Namen der Quelldatei für das angegebene verknüpfte OLE-Objekt, die Grafik oder das Feld zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt nicht den Pfad für die Quelldatei zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt nicht den Pfad für die Quelldatei zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourcePath">
@@ -341,12 +316,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Pfad der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder dar.</summary>
+        <summary>Gibt den Pfad der Quelldatei für das angegebene verknüpfte OLE-Objekt, das Bild oder das Feld zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Pfad enthalten kein nachfolgendes Zeichen (z. B. "C:\MSOffice"). Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> Eigenschaft, um den Dateinamen ohne Pfad und mit zurückzugeben der <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> Eigenschaft zusammen mit der Pfad und Dateiname zurückgeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der Pfad enthält kein nachfolgendes Zeichen (beispielsweise "C:\MSOffice"). Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> die-Eigenschaft, um den Dateinamen ohne den Pfad zurück <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> zugeben, und verwenden Sie die-Eigenschaft, um den Pfad und den Dateinamen zusammen zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -372,12 +345,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLinkType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Linktyp an.</summary>
+        <summary>Gibt den Typ der Verknüpfung zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Type</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLinkType" /> Konstanten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>Type</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLinkType" /> Konstanten sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">

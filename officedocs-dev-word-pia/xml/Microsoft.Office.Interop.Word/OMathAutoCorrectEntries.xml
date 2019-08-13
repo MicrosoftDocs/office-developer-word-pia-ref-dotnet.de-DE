@@ -1,13 +1,5 @@
 <Type Name="OMathAutoCorrectEntries" FullName="Microsoft.Office.Interop.Word.OMathAutoCorrectEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d58a8ffaf591069c193d93e4ce28b69fe92bac84" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669632" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathAutoCorrectEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35cd1a7cab040433579eb73434d2c6b194d3661b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147830" /></Metadata><TypeSignature Language="C#" Value="public interface OMathAutoCorrectEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathAutoCorrectEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathAutoCorrectEntries&#xA;Implements IEnumerable" />
@@ -30,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Auflistung von AutoKorrektur-Einträge. Verwendung der <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> -Objekt einzelne AutoKorrektur-Einträge zuzugreifen.</summary>
+    <summary>Stellt eine Auflistung von Einträgen für die AutoKorrektur von Mathematik dar. Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> das-Objekt, um auf einzelne AutoKorrektur-Einträge zuzugreifen.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,14 +50,10 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Zeichenfolge</b> der Name der AutoKorrektur-Eintrag erforderlich. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Name" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> Objekt.</param>
-        <param name="Value">
-          <b>Zeichenfolge</b> der Wert der AutoKorrektur-Eintrag erforderlich. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Value" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> Objekt.</param>
-        <summary>AutoKorrektur-Eintrags für eine Formel erstellt und gibt ein <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> Objekt.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />
-        </returns>
+        <param name="Name">Erforderliche <b>Zeichenfolge</b> der Name des AutoKorrektur-Eintrags. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Name" /> -Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> Objekts.</param>
+        <param name="Value">Erforderliche <b>Zeichenfolge</b> der Wert des AutoKorrektur-Eintrags. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Value" /> -Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> Objekts.</param>
+        <summary>Erstellt einen automatischen Gleichungs korrekten Eintrag und gibt <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> ein Objekt zurück.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +80,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +108,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,15 +136,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>, Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para>Diese Eigenschaft in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung verfügt über einen vierstelligen Erstellercode entworfen wurde. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para>Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -221,11 +201,9 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Erforderliche <b>Zeichenfolge</b> oder eine <b>ganze Zahl</b> , die den Namen oder die Ordnungsposition des Objekts in der Auflistung darstellt.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" /> -Objekt, das das angegebene Element in der Auflistung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" />
-        </value>
+        <param name="Index">Erforderliche <b>Zeichenfolge</b> oder <b>ganze Zahl</b> , die den Namen oder die Ordnungsposition des Objekts in der Auflistung darstellt.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" /> Objekt zurück, das das angegebene Element in der Auflistung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,10 +230,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

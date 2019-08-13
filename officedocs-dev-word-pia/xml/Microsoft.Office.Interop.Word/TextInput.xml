@@ -1,13 +1,5 @@
 <Type Name="TextInput" FullName="Microsoft.Office.Interop.Word.TextInput">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4c269a8af7d2406a141bb70d586f5cf03e141f7d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670588" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextInput" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25278b86c7e130fb95e96e6347a7d97c8e594d89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143805" /></Metadata><TypeSignature Language="C#" Value="public interface TextInput" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextInput" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextInput" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextInput" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes Textformularfeld dar.</summary>
-    <remarks>
-      <para>Verwenden Sie <b>FormFields</b>(<paramref name="index" />), wobei <paramref name="index" /> entweder der Name der Textmarke Textformularfeld oder die Indexnummer zurückzugebenden zugeordnet ist ein <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> -Eigenschaft mit dem <b>FormField</b> -Objekt um ein <b>TextInput</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Formularfelds in der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> -Methode mit dem <b>FormFields</b> -Objekt ein Textformularfeld hinzufügen.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden <b></b>Sie FormFields<paramref name="index" />(), <paramref name="index" /> wobei entweder der Name der Textmarke ist, der dem Textformularfeld oder der Indexnummer zugeordnet <see cref="T:Microsoft.Office.Interop.Word.FormField" /> ist, um ein Objekt zurückzugeben. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> die-Eigenschaft mit dem <b>FormField</b> -Objekt, um ein TextInput-Objekt zurückzugeben. <b></b></para>
+      <para>Die Indexnummer stellt die Position des Formularfelds in der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> die-Methode mit dem <b>FormFields</b> -Objekt, um ein Textformularfeld hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,11 +103,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -146,7 +134,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Text, der der Standardinhalt des Textfelds darstellt.</summary>
+        <summary>Gibt den Text zurück, der den standardmäßigen Textfeldinhalt darstellt, oder legt diesen Text fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,10 +164,10 @@
         <Parameter Name="Enabled" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />. Der Typ des Textfelds. <b>WdTextFormFieldType-Wert</b> kann einer der folgenden Konstanten sein: <b>WdCalculationText </b><b>WdCurrentDateText </b><b>WdCurrentTimeText </b><b>WdDateText </b><b>WdNumberText </b><b>WdRegularText</b></param>
-        <param name="Default">Optionales- <b>Objekt</b>. Der Standardtext, der im Textfeld angezeigt wird.</param>
-        <param name="Format">Optionales- <b>Objekt</b>. Die Zeichenfolge für die Formatierung verwendet, um den Text, Zahl oder Datum formatieren (z. B. "0,00", "Groß-/Kleinschreibung" oder "M/JJ"). Weitere Beispiele für Formate finden Sie in der Liste der Formate für das angegebene Textformularfeld Geben Sie im Dialogfeld Optionen.</param>
-        <param name="Enabled">Optionales- <b>Objekt</b>. <b>True</b>, um das Formularfeld für Texteingabe zu aktivieren.</param>
+        <param name="Type">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />. Der Typ des Textfeldes. <b>WdTextFormFieldType</b> kann eine der folgenden Konstanten sein: <b>wdCalculationText </b> <b>wdCurrentDateText </b> <b>wdCurrentTimeText </b> <b>wdDateText </b> <b>wdNumberText </b> <b>wdRegularText</b></param>
+        <param name="Default">Optionales <b>Objekt</b>. Der Standardtext, der im Textfeld angezeigt wird.</param>
+        <param name="Format">Optionales <b>Objekt</b>. Die Formatierungszeichenfolge, die zum Formatieren des Texts, der Zahl oder des Datums verwendet wird (z. B. "0,00", "Erster Buchstabe groß" oder "M/T/JJ"). Weitere Beispiele für Formate finden Sie in der Formatliste für den angegebenen Textformular-Feldtyp im Dialogfeld Optionen für Textformularfelder.</param>
+        <param name="Enabled">Optionales <b>Objekt</b>. <b>True</b>, um das Formularfeld für Texteingabe zu aktivieren.</param>
         <summary>Legt Optionen für das angegebene Textformularfeld fest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,7 +195,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Text-Formatierung für das angegebene Textfeld zurück.</summary>
+        <summary>Gibt die Textformatierung für das angegebene Textfeld zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,31 +251,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTextFormFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Textformularfeld zurück.</summary>
+        <summary>Gibt den Typ des Textformularfelds zurück.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />Dies kann eine der folgenden <b>WdTextFormFieldType</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />kann eine der folgenden <b>WdTextFormFieldType</b> -Konstanten sein: </para>
-          <para>
-            <b>WdCalculationText </b>
+            <b>wdCalculationText</b>
           </para>
           <para>
-            <b>WdCurrentDateText </b>
+            <b>wdCurrentDateText</b>
           </para>
           <para>
-            <b>WdCurrentTimeText </b>
+            <b>wdCurrentTimeText</b>
           </para>
           <para>
-            <b>WdDateText </b>
+            <b>wdDateText</b>
           </para>
           <para>
-            <b>WdNumberText </b>
+            <b>wdNumberText</b>
           </para>
           <para>
-            <b>WdRegularText</b>
+            <b>wdRegularText</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -313,13 +299,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die angegebene Formularfeld ein gültiges Kontrollkästchen-Formularfeld handelt.</summary>
+        <summary><b>True</b>, wenn es sich bei dem angegebenen Formularfeldobjekt um ein zulässiges Kontrollkästchen-Formularfeld handelt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden der <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.FormField" /> -Objekt, das den Typ des Formularfelds (<b>WdFieldFormCheckBox</b>, <b>WdFieldFormDropDown</b>oder <b>WdFieldFormTextInput</b>) vor dem Anwenden bestimmen die <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> Eigenschaft. Diese Vorsichtsmaßnahme wird sichergestellt, dass das <b>FormField</b> -Objekt dem erwarteten Typ ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.FormField" /> des Objekts, um den Typ des Formularfelds (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>oder <b>wdFieldFormTextInput</b>) vor dem Anwenden <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> der Eigenschaft zu bestimmen. Durch diese Vorsichts <b></b> Maßnahme wird sichergestellt, dass das FormField-Objekt der erwartete Typ ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -348,7 +331,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt sie fest.</summary>
+        <summary>Gibt die Breite des angegebenen Objekts (in Punkten) zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

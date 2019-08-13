@@ -1,13 +1,5 @@
 <Type Name="TabStop" FullName="Microsoft.Office.Interop.Word.TabStop">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6b088ecca52ac6b33337fa1643b74eb4f6121cce" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669305" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TabStop" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="56a10ea770b5716d55d205fab36ee4d9b04667f9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146052" /></Metadata><TypeSignature Language="C#" Value="public interface TabStop" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TabStop" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TabStop" />
   <TypeSignature Language="VB.NET" Value="Public Interface TabStop" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen einzelnen Tabstopp dar.</summary>
-    <remarks>
-      <para>Das <b>TabStop</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> Auflistung. Die <b>TabStops</b> -Auflistung stellt alle benutzerdefinierten und Standardtabstopps in einem Absatz oder eine Absatzgruppe.</para>
-      <para>Verwendung <b>TabStops</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Position des Tabstopps (in Punkt) oder die Indexzahl darstellt, um ein einzelnes <b>TabStop</b> -Objekt zurückzugeben. Tabstopps werden von links nach rechts am Lineal numerisch indiziert.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> -Methode, um einen Tabstopp hinzuzufügen.</para>
-      <para>Sie können auch einen Tabstopp hinzufügen, indem Sie eine Position mit der <b>TabStops</b> -Eigenschaft angeben.</para>
+    <remarks><para>Das <b>TabStop</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> Auflistung. Die <b>TabStops</b> -Auflistung stellt alle benutzerdefinierten und Standardtabstopps in einem Absatz oder eine Absatzgruppe.</para>
+      <para>Verwenden <b></b>Sie TabStops<paramref name="index" />(), <paramref name="index" /> wobei die Position des Tabstopps (in Punkt) oder die Indexnummer ist, um ein einzelnes <b>TabStop</b> -Objekt zurückzugeben. Tabstopps werden von links nach rechts am Lineal numerisch indiziert.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> die-Methode, um einen Tabstopp hinzuzufügen.</para>
+      <para>Tabstopps können Sie auch hinzufügen, indem Sie eine Position mit der <b>TabStops</b>-Eigenschaft angeben.</para>
       <para>
-        <b>Hinweis</b> Satz der <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> -Eigenschaft auf die Abstände von Standardtabstopps anzupassen.</para>
-      <para />
-    </remarks>
+        <b>Hinweis:</b>   Legen Sie <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> die-Eigenschaft fest, um die Abstände von Standardtabstopps anzupassen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -64,31 +54,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder es wird eine Konstante, die die Ausrichtung für den angegebenen Tabstopp darstellt.</summary>
+        <summary>Zurückgeben oder Festlegen einer Konstanten, die die Ausrichtung für den angegebenen Tabstopp darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" />Dies kann eine der folgenden <b>WdTabAlignment</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" />eine der folgenden <b>WdTabAlignment</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdAlignTabBar </b>
+            <b>wdAlignTabBar</b>
           </para>
           <para>
-            <b>WdAlignTabCenter </b>
+            <b>wdAlignTabCenter</b>
           </para>
           <para>
-            <b>WdAlignTabDecimal </b>
+            <b>wdAlignTabDecimal</b>
           </para>
           <para>
-            <b>WdAlignTabLeft </b>
+            <b>wdAlignTabLeft</b>
           </para>
           <para>
-            <b>WdAlignTabList </b>
+            <b>wdAlignTabList</b>
           </para>
           <para>
-            <b>WdAlignTabRight</b>
+            <b>wdAlignTabRight</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -114,7 +102,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,11 +157,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomTab">
@@ -199,8 +185,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der angegebenen Tabstopp einen benutzerdefinierten Tabstopp darstellt.</summary>
+        <summary><b>True</b>, wenn der angegebene Tabstopp ein benutzerdefinierter Tabstopp ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,31 +216,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Leiter für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> Objekt.</summary>
+        <summary>Gibt die Führungslinie für das angegebene <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />Dies kann eine der folgenden <b>WdTabLeader</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />eine der folgenden <b>WdTabLeader</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdTabLeaderDashes </b>
+            <b>wdTabLeaderDashes</b>
           </para>
           <para>
-            <b>WdTabLeaderDots </b>
+            <b>wdTabLeaderDots</b>
           </para>
           <para>
-            <b>WdTabLeaderHeavy </b>
+            <b>wdTabLeaderHeavy</b>
           </para>
           <para>
-            <b>WdTabLeaderLines </b>
+            <b>wdTabLeaderLines</b>
           </para>
           <para>
-            <b>WdTabLeaderMiddleDot </b>
+            <b>wdTabLeaderMiddleDot</b>
           </para>
           <para>
-            <b>WdTabLeaderSpaces</b>
+            <b>wdTabLeaderSpaces</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -340,7 +323,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Position eines Tabstopps relativ zum linken Rand.</summary>
+        <summary>Gibt die Position eines Tabstopps relativ zum linken Seitenrand zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

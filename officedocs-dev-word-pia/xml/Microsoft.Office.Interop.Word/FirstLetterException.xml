@@ -1,13 +1,5 @@
 <Type Name="FirstLetterException" FullName="Microsoft.Office.Interop.Word.FirstLetterException">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d471bbc02a21b87dfe03d212e18b23ef9c5542ad" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669917" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FirstLetterException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae232b80e55fea218975f3d9714a8531449d4ef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146836" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterException" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterException" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Abkürzung von der automatischen Korrektur ausgeschlossen.</summary>
-    <remarks>
-      <para>Das <b>FirstLetterException</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> Auflistung. Die <b>FirstLetterExceptions</b> -Auflistung enthält alle ausgeschlossenen Abkürzungen. Das erste Zeichen folgt ein Zeitraum automatisch wird großgeschrieben, wenn die <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> -Eigenschaft auf <b>True</b>festgelegt ist. Das Zeichen geben Sie Folgendes ein Element in der <b>FirstLetterExceptions</b> -Auflistung wird nicht großgeschrieben.</para>
-      <para>Verwendung <b>FirstLetterExceptions</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Abkürzung oder die Indexzahl darstellt, um ein einzelnes <b>FirstLetterException</b> -Objekt zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> -Methode, um eine Abkürzung zur Liste der Ausnahmen hinzuzufügen.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Abkürzung dar, die von der automatischen Korrektur ausgeschlossen ist.</summary>
+    <remarks><para>Das <b>FirstLetterException</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> Auflistung. Die <b>FirstLetterExceptions</b> -Auflistung enthält alle ausgeschlossenen Abkürzungen. Das erste Zeichen nach einem Punkt wird automatisch groß geschrieben, wenn <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> die Eigenschaft auf <b>true</b>festgelegt ist. Das Zeichen, das Sie nach einem Element in der <b>FirstLetterExceptions</b> -Auflistung eingeben, wird nicht groß geschrieben.</para>
+      <para>Verwenden <b></b>Sie FirstLetterExceptions<paramref name="index" />(), <paramref name="index" /> wobei die Abkürzung oder die Indexnummer ist, um ein einzelnes <b>FirstLetterException</b> -Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> die-Methode, um eine Abkürzung zur Liste der Ausnahmen für den ersten Buchstaben hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -143,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,7 +159,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="CoAuthor" FullName="Microsoft.Office.Interop.Word.CoAuthor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a54fc1ec631ea87a62d012687dd65c54b7edee9d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669276" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f0255cfbbf0271c447cea6351afd1bdc1f6eca9f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147230" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthor" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthor" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine einzelne Mitautor im Dokument. Die <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> -Auflistung enthält alle Mitautoren im Dokument (Autoren, die das Dokument aktiv bearbeiten).</summary>
-    <remarks>
-      <para>Verwenden Sie <b>CoAuthors</b>(<paramref name="Index" />), wobei <paramref name="Index" /> ist die Indexnummer für ein einzelnes <b>CoAuthor</b> -Objekt zurückzugeben.</para>
+    <summary>Steht für einen einzelnen Mitautor im Dokument. Das <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> Auflistung enthält alle Co-Autoren im Dokument (Autoren, die das Dokument aktiv bearbeiten).</summary>
+    <remarks><para>Verwenden <b></b>Sie Mitverfasser (<paramref name="Index" />), wobei <paramref name="Index" /> es sich um die Indexnummer handelt, mit der ein einzelnes Mitverfasser Objekt zurückgegeben wird. <b></b></para>
       <para>
-        <b>Vorsicht</b>: Wenn ein neuer Mitautor zum Bearbeiten des Dokuments begonnen hat, kann es bis zu einer dauern, Minute oder länger der Mitautor im Dokument angezeigt werden.</para>
-      <para />
-    </remarks>
+        <b>Vorsicht</b>: Wenn ein neuer Co-Autor mit der Bearbeitung des Dokuments beginnt, kann es bis zu eine Minute oder länger dauern, bis der gemeinsame Autor im Dokument angezeigt wird.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,12 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Word-Anwendung darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das die Microsoft Word Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt, das die Word-Anwendung darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -91,13 +79,11 @@
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</value>
-        <remarks>
-          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Word verfügt beispielsweise über den Erstellercode MSWD.</para>
+        <remarks><para>Schreibgeschützter <b>Long</b>-Wert. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Apple Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD.</para>
           <para>
-            <b>Vorsicht</b>:</para>
-          <para>Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para />
-        </remarks>
+            <b>Vorsicht</b>: </para>
+          <para>Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EmailAddress">
@@ -123,12 +109,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft eine Zeichenfolge, die e-Mail-Adresse des angegebenen mitautors angibt.</summary>
-        <value>Die e-Mail-Adresse des angegebenen mitautors.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft eine Zeichenfolge ab, die die e-Mail-Adresse des angegebenen Co-Autors angibt.</summary>
+        <value>Die e-Mail-Adresse des angegebenen gemeinsamen Autors.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -154,12 +138,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den eindeutigen Bezeichner für den angegebenen Autor.</summary>
+        <summary>Ruft den eindeutigen Bezeichner für den angegebenen Autor ab.</summary>
         <value>Der eindeutige Bezeichner für den angegebenen Autor.</value>
-        <remarks>
-          <para>Schreibgeschützt. Der eindeutige Bezeichner, der von dieser Eigenschaft zurückgegebene sollte nicht zu einer bestimmten Länge oder Format haben angenommen werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Schreibgeschützt. Der von dieser Eigenschaft zurückgegebene eindeutige Bezeichner sollte nicht davon ausgegangen werden, dass er eine bestimmte Länge oder ein bestimmtes Format aufweist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMe">
@@ -185,13 +167,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab, ob diese Autor den aktuellen Benutzer darstellt.</summary>
-        <value>
-          <b>true,</b> Wenn der Autor den aktuellen Benutzer darstellt. anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ab, ob dieser Autor den aktuellen Benutzer darstellt.</summary>
+        <value><b>true</b> , wenn der Autor den aktuellen Benutzer darstellt; andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locks">
@@ -217,12 +196,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> -Auflistung, die Sperren im Dokument darstellt, die der angegebenen Mitautor zugeordnet sind.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> -Auflistung, die Sperren im Dokument darstellt, die der angegebenen Mitautor zugeordnet sind.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> Auflistung ab, die die Sperren im Dokument darstellt, die dem angegebenen gemeinsamen Autor zugeordnet sind.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> Auflistung, die die Sperren im Dokument darstellt, die dem angegebenen gemeinsamen Autor zugeordnet sind.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -248,12 +225,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Anzeigenamen des angegebenen mitautors ab.</summary>
-        <value>Der Anzeigename des angegebenen mitautors.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft den Anzeigenamen des angegebenen Co-Authors ab.</summary>
+        <value>Der Anzeigename des angegebenen gemeinsamen Autors.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -279,8 +254,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> Objekt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> Objekt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> angegebenen Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

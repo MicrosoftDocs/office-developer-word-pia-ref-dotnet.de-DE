@@ -1,13 +1,5 @@
 <Type Name="Page" FullName="Microsoft.Office.Interop.Word.Page">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="89b8ef148f01e9d3f0c12f2806f50476efc1f370" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669967" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Page" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8d472e16e6aba91d640b12e000710035de65e0ab" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144239" /></Metadata><TypeSignature Language="C#" Value="public interface Page" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Page" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Page" />
   <TypeSignature Language="VB.NET" Value="Public Interface Page" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Seite in einem Dokument dar. Mit dem <b>Page</b>-Objekt und den zugehörigen Methoden und Eigenschaften können Sie das Seitenlayout in einem Dokument programmgesteuert definieren.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" /> -Methode, um eine bestimmte Seite in einem Dokument zuzugreifen.</para>
-      <para>Verwenden Sie den Zugriff auf die Seitenzahl der <see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" /> -Eigenschaft des eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Selection" /> -Objekt oder der <see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" /> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Word.Break" /> -Objekt, das gehört die <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> Auflistung des angegebenen <b>Page</b> -Objekts.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Page.Top" /> und <see cref="P:Microsoft.Office.Interop.Word.Page.Left" /> Eigenschaften des <b>Page</b> -Objekts 0 (null), der angibt, in der oberen linken Ecke der Seite immer zurück. Die <see cref="P:Microsoft.Office.Interop.Word.Page.Height" /> und <see cref="P:Microsoft.Office.Interop.Word.Page.Width" /> Eigenschaften geben die Höhe und Breite in Punkt (72 Punkt = 1 Zoll) zurück, der Papiergröße angegeben wird, im Dialogfeld Seite einrichten oder über die <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> Objekt. Beispielsweise gibt für eine 8 1/2 x 11 Zoll-Seite im Hochformat die <b>Height</b> -Eigenschaft 792 und die <b>Width</b> -Eigenschaft 612 zurück. Alle vier Eigenschaften sind schreibgeschützt.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" /> die-Methode, um auf eine bestimmte Seite in einem Dokument zuzugreifen.</para>
+      <para>Um auf die Seitenzahl zuzugreifen, <see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" /> verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.Range" /> - <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Eigenschaft eines oder- <see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" /> Objekts oder die <see cref="T:Microsoft.Office.Interop.Word.Break" /> Eigenschaft eines Objekts, das <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> zu der Auflistung des angegebenen <b>Page</b> -Objekts gehört.</para>
+      <para>Für <see cref="P:Microsoft.Office.Interop.Word.Page.Top" /> die <see cref="P:Microsoft.Office.Interop.Word.Page.Left" /> und-Eigenschaften des <b>Page</b> -Objekts wird immer 0 (null) zurückgegeben, wobei die obere linke Ecke der Seite angezeigt wird. Die <see cref="P:Microsoft.Office.Interop.Word.Page.Height" /> - <see cref="P:Microsoft.Office.Interop.Word.Page.Width" /> und-Eigenschaften geben die Höhe und Breite in Punkt (72 Punkt = 1 Zoll) des Papierformats zurück, das im Dialogfeldseite <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> einrichten oder über das Objekt angegeben wird. Beispielsweise gibt die <b>height</b> -Eigenschaft für eine 8-1/2-Zoll-Seite im Hochformat 792 zurück, und die <b>Width</b> -Eigenschaft gibt 612 zurück. Alle vier Eigenschaften sind schreibgeschützt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Breaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> -Auflistung, die die Umbrüche auf einer Seite darstellt. <b>Breaks</b> -Auflistung schließt Seiten-, Spalten- und Abschnittswechsel.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> Auflistung zurück, die die Unterbrechungen auf einem Zeichenblatt darstellt. Die <b>Breaks</b> -Auflistung enthält Seiten-, Spalten-und Abschnittsumbrüche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie die <b>Breaks</b> -Auflistung und damit zusammenhängende Objekte und Eigenschaften zum Seitenlayout in einem Dokument programmatisch definiert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Mit der <b>Breaks</b>-Auflistung und den zugehörigen Objekten und Eigenschaften können Sie das Seitenlayout in einem Dokument programmgesteuert definieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -119,11 +107,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnhMetaFileBits">
@@ -149,14 +135,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> , das eine bilddarstellung der Darstellung einer Seite des Texts darstellt. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" /> -Eigenschaft gibt ein Array von Bytes, die mit der Microsoft Windows 32 Anwendungsprogrammierschnittstelle innerhalb der Entwicklungsumgebung von Microsoft Visual Basic oder Microsoft C++ verwendet werden kann.</para>
-          <para />
-        </remarks>
+        <summary>Gibt ein <b>Objekt</b> zurück, das eine Bilddarstellung zeigt, wie eine Seite mit Text angezeigt wird. Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" /> -Eigenschaft gibt ein Bytearray zurück, das mit der Microsoft Windows 32-Anwendungsprogrammierschnittstelle in der Entwicklungsumgebung von Microsoft Visual Basic oder Microsoft C++ verwendet werden kann.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -182,12 +164,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die <b>Height</b> -Eigenschaft gibt die Höhe in Punkt (72 Punkt = 1 Zoll) der Papiergröße angegeben wird, im Dialogfeld Seite einrichten oder über die <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> Objekt.</summary>
+        <summary>Die <b>height</b> -Eigenschaft gibt die Höhe in Punkt (72 Punkt = 1 Zoll) des Papierformats zurück, das im Dialogfeldseite einrichten <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> oder über das Objekt angegeben wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Beispielsweise gibt für eine 8 1/2 x 11 Zoll-Seite im Hochformat die <b>Height</b> -Eigenschaft 792 und die <b>Width</b> -Eigenschaft 612 zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Beispielsweise gibt die <b>height</b> -Eigenschaft für eine 8-1/2-Zoll-Seite im Hochformat 792 zurück, und die <b>Width</b> -Eigenschaft gibt 612 zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -213,7 +193,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt 0 (null) zurück, der der oberen linken Ecke der Seite angibt.</summary>
+        <summary>Gibt 0 (null) zurück, der die obere linke Ecke der Seite angibt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,12 +249,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rectangles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> -Auflistung, die einen Bereich mit Text oder Grafik auf einer Seite in einem Dokument darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> Auflistung zurück, die einen Teil von Text oder Grafiken auf einer Seite in einem Dokument darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie die <b>Rectangles</b> -Auflistung und damit zusammenhängende Objekte und Eigenschaften für das Seitenlayout in einem Dokument programmgesteuert definieren. Rechtecke entsprechen Bereichen mit Text oder Grafik auf einer Seite in einem Dokument.</para>
-          <para />
-        </remarks>
+        <remarks><para>Mit der <b>Rectangles</b>-Auflistung und den zugehörigen Objekten und Eigenschaften können Sie das Seitenlayout in einem Dokument programmgesteuert definieren. Rechtecke entsprechen Bereichen mit Text oder Grafik auf einer Seite eines Dokuments.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsPNG">
@@ -331,7 +309,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt 0 (null) zurück, der der oberen linken Ecke der Seite angibt.</summary>
+        <summary>Gibt 0 (null) zurück, der die obere linke Ecke der Seite angibt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,12 +337,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite in Punkt (72 Punkt = 1 Zoll) zurück, der Papiergröße angegeben wird, im Dialogfeld Seite einrichten oder über die <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> Objekt.</summary>
+        <summary>Gibt die Breite in Punkt (72 Punkt = 1 Zoll) des Papierformats zurück, das im Dialogfeldseite einrichten oder <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> über das Objekt angegeben wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Beispielsweise gibt für eine 8 1/2 x 11 Zoll-Seite im Hochformat die <b>Height</b> -Eigenschaft 792 und die <b>Width</b> -Eigenschaft 612 zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Beispielsweise gibt die <b>height</b> -Eigenschaft für eine 8-1/2-Zoll-Seite im Hochformat 792 zurück, und die <b>Width</b> -Eigenschaft gibt 612 zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

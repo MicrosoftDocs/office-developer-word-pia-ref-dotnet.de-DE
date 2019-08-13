@@ -1,13 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Word.Trendlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4677ea796f02bb8de0655ac078e65a42f7c9be02" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669196" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d5d8e0ba867d614dca0f443355bc975b7ca84d93" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143742" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> -Objekte für die angegebene Datenreihe.</summary>
-    <remarks>
-      <para>Jede <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> Objekt stellt eine Trendlinie in einem Diagramm dar. Eine Trendlinie zeigt den Trend oder die Richtung der Daten in einer Datenreihe.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> Objekte für die angegebene Datenreihe.</summary>
+    <remarks><para>Jedes <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> Objekt stellt eine Trendlinie in einem Diagramm dar. Eine Trendlinie zeigt den Trend oder die Richtung der Daten in einer Datenreihe.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -64,7 +54,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Für die interne Verwendung reserviert.</summary>
-        <returns>Gibt <see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</returns>
+        <returns>Gibt <see cref="T:Microsoft.Office.Interop.Word.Trendline" />zurück.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,19 +88,17 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Optionale <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />. Der Trendlinientyp.</param>
-        <param name="Order">Optionales- <b>Objekt</b>. Erforderlich, wenn der Typ ist <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />. Die Ordnung der Trendlinien. Muss eine ganze Zahl zwischen 2 und 6 (einschließlich).</param>
-        <param name="Period">Optionales- <b>Objekt</b>. Erforderlich, wenn der Typ ist <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />. Periode der Trendlinie. Eine ganze Zahl muss größer als 1 und kleiner als die Anzahl von Datenpunkten in der Datenreihe, denen Sie eine Trendlinie hinzufügen sein.</param>
-        <param name="Forward">Optionales- <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie vorwärts erstreckt.</param>
-        <param name="Backward">Optionales- <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie zurück erstreckt.</param>
-        <param name="Intercept">Optionales- <b>Objekt</b>. Der Schnittpunkt der Trendlinie. Wenn dieses Argument ausgelassen wird, wird der Schnittpunkt automatisch durch die Regressionsformel festgelegt.</param>
-        <param name="DisplayEquation">Optionales- <b>Objekt</b>. <b>True</b>, wenn die Formel der Trendlinie im Diagramm (in demselben Beschriftungsfeld als R-quadrierten Wert) anzeigen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="DisplayRSquared">Optionales- <b>Objekt</b>. True, wenn den Wert der Trendlinie im Diagramm (in demselben Beschriftungsfeld wie die Gleichung) anzeigen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="Name">Optionales- <b>Objekt</b>. Der Name der Trendlinie als Text. Wenn dieses Argument ausgelassen wird, erstellt Microsoft Excel einen Namen an.</param>
-        <summary>Erstellt eine neue Trendlinie. Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> Objekt.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Trendline" />
-        </returns>
+        <param name="Type">Optional <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />. Der Trendlinientyp.</param>
+        <param name="Order">Optionales <b>Objekt</b>. Erforderlich, wenn Type <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />ist. Die Reihenfolge der Trendlinien. Dies muss eine ganze Zahl zwischen 2 und 6 (einschließlich) sein.</param>
+        <param name="Period">Optionales <b>Objekt</b>. Erforderlich, wenn Type <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />ist. Die Periode der Trendlinie. Muss eine ganze Zahl größer 1 und kleiner als die Anzahl der Datenpunkte der Datenreihe sein, der Sie eine Trendlinie hinzufügen.</param>
+        <param name="Forward">Optionales <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie vorwärts erstreckt.</param>
+        <param name="Backward">Optionales <b>Objekt</b>. Die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), über die sich eine Trendlinie zurück erstreckt.</param>
+        <param name="Intercept">Optionales <b>Objekt</b>. Der Schnittpunkt der Trendlinie. Wird dieses Argument nicht angegeben, wird der Schnittpunkt automatisch durch Regression festgelegt.</param>
+        <param name="DisplayEquation">Optionales <b>Objekt</b>. Mit  <b>True</b> wird die Formel der Trendlinie des Diagramms angezeigt (in derselben Datenbeschriftung wie das Bestimmtheitsmaß). Der Standardwert ist <b>False</b>.</param>
+        <param name="DisplayRSquared">Optionales <b>Objekt</b>. Mit  True wird der Wert für das Bestimmtheitsmaß der Trendlinie des Diagramms angezeigt (in derselben Datenbeschriftung wie die Formel). Der Standardwert ist <b>False</b>.</param>
+        <param name="Name">Optionales <b>Objekt</b>. Der Name der Trendlinie als Text. Wenn dieses Argument nicht angegeben wird, wird von Microsoft Excel ein Name erstellt.</param>
+        <summary>Erstellt eine neue Trendlinie. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> -Objekt zurück.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Trendline" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +125,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Anwendung</b> (siehe oben)</value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Anwendung</b> (siehe oben)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,10 +153,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Integer</b> -Wert, der die Anzahl der Objekte in der Auflistung darstellt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt einen <b>ganzzahligen</b> Wert zurück, der die Anzahl der Objekte in der Auflistung darstellt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,14 +181,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD".  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -234,7 +215,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Gibt <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Gibt <see cref="T:System.Collections.IEnumerator" />zurück.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,11 +245,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b>erforderlich. Der Name oder die Indexnummer für das Objekt.</param>
+        <param name="Index">Erforderliches <b>Objekt</b>. Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus der Auflistung zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,9 +275,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Paragraphs" FullName="Microsoft.Office.Interop.Word.Paragraphs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7a4ec3a3f9cef850ee4d2525ac862807859cba1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669078" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4a2d70536ec093f37369ebe6d8b316aed7b9976a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144169" /></Metadata><TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Paragraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Paragraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Paragraphs&#xA;Implements IEnumerable" />
@@ -30,15 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> -Objekte in einer Auswahl, einem Bereich oder einem Dokument.</summary>
-    <remarks>
-      <para>
-        <b>Paragraphs</b> -Eigenschaft verwenden, um der <b>Paragraphs</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />, oder <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" /> -Methode, um einem Dokument einen neuen Absatz hinzugefügt.</para>
-      <para>Verwendung <b>Absätze</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein einzelnes <b>Paragraph</b> -Objekt zurückzugeben.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Gezählt werden Elemente in anderen Textabschnitten verwenden Sie die Auflistung mit den <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> Objekten in einer Auswahl, einem Bereich oder einem Dokument.</summary>
+    <remarks><para>Mit der <b>Paragraphs</b>-Eigenschaft können Sie die <b>Paragraphs</b>-Auflistung zurückgeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />die <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />,, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" /> oder-Methode, um einem Dokument einen neuen Absatz hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Absätze<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um ein einzelnes <b>Paragraph</b> -Objekt zurückzugeben.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Zum zählen von Elementen in anderen Textabschnitten verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.Range" /> Auflistung mit dem-Objekt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,13 +52,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Optionales- <b>Objekt</b>. Der Bereich den neuen Absatz hinzugefügt werden soll. Der neue Absatz nicht den Bereich nicht ersetzen.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> -Objekt, das einen neuen, leeren Absatz zu einem Dokument hinzugefügt wurde.</summary>
+        <param name="Range">Optionales <b>Objekt</b>. Der Bereich, vor dem der neue Absatz hinzugefügt werden soll. Der Bereich wird nicht durch den neuen Absatz ersetzt.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> Objekt zurück, das einen neuen, leeren Absatz darstellt, der einem Dokument hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn <paramref name="Range" /> nicht angegeben ist, wird der neue Absatz nach der Markierung oder des Bereichs oder am Ende des Dokuments hinzugefügt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn <paramref name="Range" /> nicht angegeben, wird der neue Absatz nach der Auswahl oder dem Bereich oder am Ende des Dokuments hinzugefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSpaceBetweenFarEastAndAlpha">
@@ -98,13 +85,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word so konfiguriert, automatisch Leerzeichen zwischen Text in Japanischer und lateinischer Schrift für die angegebenen Absätze festgelegt ist.</summary>
+        <summary>Bestimmt, ob Microsoft Word so festgelegt ist, dass automatisch Leerzeichen zwischen dem japanischen und dem lateinischen Text für die angegebenen Absätze hinzugefügt werden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word so konfiguriert, automatisch Leerzeichen zwischen Text in Japanischer und lateinischer Schrift für die angegebenen Absätze, und <b>False</b> Wenn nicht festgelegt ist. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>wdUndefined zurück</b> , wenn sie nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word so festgelegt ist, dass Leerzeichen zwischen dem japanischen und dem lateinischen Text für die angegebenen Absätze automatisch hinzugefügt werden, und <b>false</b> , wenn nicht. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn sie nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSpaceBetweenFarEastAndDigit">
@@ -133,13 +118,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word so konfiguriert, automatisch Leerzeichen zwischen japanischem Text und Zahlen für die angegebenen Absätze festgelegt ist.</summary>
+        <summary>Bestimmt, ob Microsoft Word so festgelegt ist, dass automatisch Leerzeichen zwischen dem japanischen Text und den Zahlen für die angegebenen Absätze hinzugefügt werden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word so konfiguriert, automatisch Leerzeichen zwischen japanischem Text und Zahlen für die angegebenen Absätze, und <b>False</b> Wenn nicht festgelegt ist. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>wdUndefined zurück</b> , wenn sie nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word so festgelegt ist, dass Leerzeichen zwischen japanischem Text und Zahlen für die angegebenen Absätze automatisch hinzugefügt werden, und <b>false</b> , wenn nicht. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn sie nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -168,12 +151,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdParagraphAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> -Konstante, die die Ausrichtung für die angegebenen Absätze darstellt.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> einer Konstanten, die die Ausrichtung für die angegebenen Absätze darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Einige der oben aufgeführten Konstanten haben möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise).</para>
-          <para />
-        </remarks>
+        <remarks><para>Einige der oben aufgeführten Konstanten sind möglicherweise nicht verfügbar. Dies hängt von der ausgewählten oder installierten Sprachunterstützung ab (z. B. Deutsch).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -199,7 +180,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,13 +211,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word so eingestellt ist, dass den rechten Einzug für die angegebenen Absätze automatisch angepasst, wenn Sie eine festgelegte Anzahl von Zeichen pro Zeile angegeben haben.</summary>
+        <summary>Bestimmt, ob Microsoft Word so eingestellt ist, dass der Rechte Einzug für die angegebenen Absätze automatisch angepasst wird, wenn Sie eine festgelegte Anzahl von Zeichen pro Zeilen angegeben haben.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word festgelegt ist, den rechten Einzug für die angegebenen Absätze automatisch angepasst wird, wenn Sie eine festgelegte Anzahl von Zeichen pro Zeile, und <b>False,</b> Wenn dies nicht angegeben haben. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>wdUndefined zurück</b> , wenn die <b>AutoAdjustRightIndent</b> -Eigenschaft nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word so festgelegt ist, dass der Rechte Einzug für die angegebenen Absätze automatisch angepasst wird, wenn Sie eine festgelegte Anzahl von Zeichen pro Zeilen angegeben haben, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn die <b>AutoAdjustRightIndent</b> -Eigenschaft für nur einige der angegebenen Absätze auf <b>true</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseLineAlignment">
@@ -265,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" /> -Konstante, die die vertikale Position der Schriftarten in einer Zeile darstellt.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" /> einer Konstanten, die die vertikale Position von Schriftarten in einer Reihe darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,7 +275,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Borders" /> -Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung zurück, die alle Rahmen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,12 +306,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Wert (in Zeichen) für einen Erstzeileneinzug oder hängenden Einzug.</summary>
+        <summary>Gibt den Wert (in Zeichen) für einen Erstzeileneinzug oder einen hängenden Einzug zurück, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie einen positiven Wert, um einen Erstzeileneinzug festzulegen, und verwenden Sie einen negativen Wert einen hängender Einzug festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie zum Festlegen eines Erstzeileneinzugs einen positiven Wert, und verwenden Sie für einen negativen Wert für einen hängenden Einzug.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CharacterUnitLeftIndent">
@@ -361,7 +338,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den linke Einzug-Wert (in Zeichen) für die angegebenen Absätze.</summary>
+        <summary>Gibt den Wert für den linken Einzug (in Zeichen) für die angegebenen Absätze zurück, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +369,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den rechte Einzug-Wert (in Zeichen) für die angegebenen Absätze.</summary>
+        <summary>Gibt den Wert für den rechten Einzug (in Zeichen) für die angegebenen Absätze zurück, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -475,11 +452,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DecreaseSpacing">
@@ -533,13 +508,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word richtet Zeichen in den angegebenen Absätzen am Zeilenraster, wenn eine festgelegte Anzahl von Zeilen pro Seiten angegeben ist.</summary>
+        <summary>Bestimmt, ob Microsoft Word Zeichen in den angegebenen Absätzen an das Linienraster richtet, wenn eine festgelegte Anzahl von Zeilen pro Seite angegeben wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word Zeichen in den angegebenen Absätzen am Zeilenraster richtet, wenn eine festgelegte Anzahl von Zeilen pro Seiten angegeben ist, und <b>False</b> Wenn nicht. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Gibt <b>wdUndefined zurück</b> , wenn die <b>DisableLineHeightGrid</b> -Eigenschaft nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word Zeichen in den angegebenen Absätzen an das Linienraster richtet, wenn eine festgelegte Anzahl von Zeilen pro Seite angegeben ist, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Gibt <b>wdUndefined</b> zurück, wenn die <b>DisableLineHeightGrid</b>-Eigenschaft nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakControl">
@@ -568,13 +541,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word ostasiatische Zeilenwechsel Regeln für die angegebenen Absätze gilt.</summary>
+        <summary>Bestimmt, ob Microsoft Word ostasiatische Linien umbruchregeln auf die angegebenen Absätze anwendet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word ostasiatische Zeilenwechsel Regeln für die angegebenen Absätze, und <b>False</b> Wenn nicht gilt. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>wdUndefined zurück</b> , wenn die <b>FarEastLineBreakControl</b> -Eigenschaft nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word ostasiatische Linien umbruchregeln auf die angegebenen Absätze anwendet, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn die <b>FarEastLineBreakControl</b> -Eigenschaft für nur einige der angegebenen Absätze auf <b>true</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -600,7 +571,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> -Objekt, das das erste Element in der <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> Auflistung.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> Objekt zurück, das das erste Element in <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> der Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -631,12 +602,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder der Wert (in Punkt) für einen Erstzeileneinzug oder hängenden Einzug festgelegt.</summary>
+        <summary>Gibt den Wert (in Punkt) für einen Erstzeileneinzug oder einen hängenden Einzug zurück, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie einen positiven Wert, um einen Erstzeileneinzug festzulegen, und verwenden Sie einen negativen Wert einen hängender Einzug festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie zum Festlegen eines Erstzeileneinzugs einen positiven Wert, und verwenden Sie für einen hängenden Einzug einen negativen Wert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -665,7 +634,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> -Objekt, das die Formatierung eines der angegebenen Absatz oder den angegebenen Absätzen darstellt.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> eines Objekts, das die Formatierung des angegebenen Absatzes oder Absätze darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -728,13 +697,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word die Interpunktionszeichen am Anfang einer Zeile in Zeichen halber Breite für die angegebenen Absätze ändert.</summary>
+        <summary>Bestimmt, ob Microsoft Word Satzzeichen am Anfang einer Textreihe in Zeichen mit halber Breite für die angegebenen Absätze ändert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word Interpunktionszeichen am Anfang einer Zeile in Zeichen halber Breite für die angegebenen Absätze, und <b>False</b> Wenn nicht ändert. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>WdUndefined</b> zurück, wenn nur für einige der angegebenen Absätze auf <b>True</b> festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word Satzzeichen am Anfang einer Textreihe in Zeichen mit halber Breite für die angegebenen Absätze ändert, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn für nur einige der angegebenen Absätze auf <b>true</b> festgelegt ist. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangingPunctuation">
@@ -763,13 +730,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob für die angegebenen Absätze hängende Zeichensetzung aktiviert ist.</summary>
+        <summary>Bestimmt, ob hängende Interpunktion für die angegebenen Absätze aktiviert ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn die hängende Interpunktion für die angegebenen Absätze, und <b>False</b> Wenn nicht aktiviert ist. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>WdUndefined</b> zurück, wenn nur für einige der angegebenen Absätze auf <b>True</b> festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die hängende Interpunktion für die angegebenen Absätze aktiviert ist, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn für nur einige der angegebenen Absätze auf <b>true</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hyphenation">
@@ -798,14 +763,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die angegebenen Absätze in die automatische Silbentrennung einbezogen werden.</summary>
+        <summary>Bestimmt, ob die angegebenen Absätze in der automatischen Silbentrennung enthalten sind.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn die angegebenen Absätze in die automatische Silbentrennung und <b>False,</b> Wenn nicht enthalten sind. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>False</b> zurück, wenn die angegebenen Absätze aus der automatischen Silbentrennung ausgeschlossen werden.</para>
-          <para>Mögliche Werte sind <b>True</b>, <b>False</b> und <b>WdUndefined</b>zurückgeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die angegebenen Absätze in der automatischen Silbentrennung enthalten sind, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>false</b> zurück, wenn die angegebenen Absätze von der automatischen Silbentrennung ausgeschlossen werden sollen.</para>
+          <para>Mögliche Rückgabewerte sind <b>true</b>, <b>false</b> und <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncreaseSpacing">
@@ -855,10 +818,8 @@
       <Parameters />
       <Docs>
         <summary>Zieht mindestens einen Absatz um eine Ebene ein.</summary>
-        <remarks>
-          <para>Mit dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug vergrößern auf der Formatsymbolleiste.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Verwendung dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug vergrößern auf der Formatsymbolleiste.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentCharWidth">
@@ -884,13 +845,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>Kurze</b>erforderlich. Die Anzahl der Zeichen, um die die angegebenen Absätze eingezogen werden sollen.</param>
+        <param name="Count"><b>Short</b>erforderlich. Die Anzahl der Zeichen, um die die angegebenen Absätze eingezogen werden sollen.</param>
         <summary>Zieht mindestens einen Absatz um eine angegebene Anzahl von Zeichen ein.</summary>
-        <remarks>
-          <para>Mit dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug vergrößern auf der Formatsymbolleiste.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Verwendung dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug vergrößern auf der Formatsymbolleiste.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentFirstLineCharWidth">
@@ -916,13 +874,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>Kurze</b>erforderlich. Die Anzahl der Zeichen, um die die angegebenen Absätze eingezogen werden sollen.</param>
+        <param name="Count"><b>Short</b>erforderlich. Die Anzahl der Zeichen, um die die angegebenen Absätze eingezogen werden sollen.</param>
         <summary>Zieht mindestens einen Absatz um eine angegebene Anzahl von Zeichen ein.</summary>
-        <remarks>
-          <para>Mit dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug vergrößern auf der Formatsymbolleiste.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Verwendung dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug vergrößern auf der Formatsymbolleiste.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -951,7 +906,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -983,13 +938,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob alle Zeilen in den angegebenen Absätzen auf derselben Seite bleiben, wenn Microsoft Word neu umgebrochen.</summary>
+        <summary>Bestimmt, ob alle Zeilen in den angegebenen Absätzen auf derselben Seite verbleiben, wenn Microsoft Word das Dokument neu paginiert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn alle Zeilen in den angegebenen Absätzen auf derselben Seite bleiben, wenn Word ein Seitenumbruch für das Dokument, und <b>False</b> Wenn nicht ausgeführt. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Mögliche Werte sind <b>True</b>, <b>False</b>und <b>WdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn alle Zeilen in den angegebenen Absätzen auf derselben Seite verbleiben, wenn Word das Dokument neu paginiert, und <b>false</b> , wenn nicht. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Mögliche Werte sind <b>true</b>, <b>false</b>und <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepWithNext">
@@ -1018,13 +971,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob der angegebene Absatz auf derselben Seite wie der Absatz, das Wort bleibt, wenn Microsoft Word neu umgebrochen.</summary>
+        <summary>Bestimmt, ob der angegebene Absatz auf derselben Seite wie der nachfolgenden Absatz verbleibt, wenn Microsoft Word das Dokument neu paginiert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn der angegebene Absatz auf derselben Seite wie der Absatz nachfolgende bleibt Wenn Microsoft Word ein Seitenumbruch für das Dokument, und <b>False,</b> Wenn nicht ausgeführt. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Mögliche Werte sind <b>True</b>, <b>False</b>oder <b>WdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn der angegebene Absatz auf derselben Seite wie der nachfolgenden Absatz verbleibt, wenn Microsoft Word das Dokument neu paginiert, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Mögliche Werte sind <b>true</b>, <b>false</b>oder <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -1050,7 +1001,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das letzte Element in der <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> -Auflistung als ein <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> Objekt.</summary>
+        <summary>Gibt das letzte Element in der <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> Auflistung als <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> Objekt zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1081,7 +1032,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>einzelnen</b> , die den linken Einzugswert (in Punkt) für die angegebenen Absätze darstellt.</summary>
+        <summary>Gibt einen Wert vom Typ <b>Single</b> zurück, der den linken Einzugswert (in Punkten) für die angegebenen Absätze darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1112,19 +1063,17 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Zeilenabstand (in Punkt) für die angegebenen Absätze fest.</summary>
+        <summary>Gibt den Zeilenabstand (in Punkten) für die angegebenen Absätze zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>LineSpacing</b> -Eigenschaft kann festgelegt werden, nachdem die <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" /> eingestellt wurde wie folgt:</para>
+        <remarks><para>Die <b>LineSpacing</b> -Eigenschaft kann festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" /> , nachdem die Eigenschaft auf Folgendes festgelegt wurde:</para>
           <para>
-            <b>WdLineSpaceAtLeast</b> - der Zeilenabstand kann größer oder gleich, jedoch niemals kleiner als der angegebene <b>LineSpacing</b> -Wert sein.</para>
+            <b>wdLineSpaceAtLeast</b> : der Zeilenabstand kann größer oder gleich, jedoch nie kleiner als der angegebene <b>LineSpacing</b> -Wert sein.</para>
           <para>
-            <b>WdLineSpaceExactly</b> - der Zeilenabstand nie ändert aus dem angegebenen <b>LineSpacing</b> -Wert, selbst wenn in dem Absatz eine größere Schriftart verwendet wird.</para>
+            <b>wdLineSpaceExactly</b> – der Zeilenabstand ändert sich nie vom angegebenen <b>LineSpacing</b> -Wert, selbst wenn innerhalb des Absatzes eine größere Schriftart verwendet wird.</para>
           <para>
-            <b>wdLineSpaceMultiple für</b> - ein Wert der <b>LineSpacing</b> -Eigenschaft muss angegeben werden, und die in Punkten.</para>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" /> -Methode, um eine Anzahl von Zeilen in den entsprechenden Wert in Punkt zu konvertieren.</para>
-          <para />
-        </remarks>
+            <b>wdLineSpaceMultiple</b> – ein <b>LineSpacing</b> -Eigenschaftswert muss in Punkt angegeben werden.</para>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" /> die-Methode, um eine Anzahl von Zeilen in den entsprechenden Wert in Punkt zu konvertieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineSpacingRule">
@@ -1153,11 +1102,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineSpacing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Zeilenabstand für die angegebenen Absätze fest.</summary>
+        <summary>Gibt den Zeilenabstand für die angegebenen Absätze zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" /> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />Dies kann eine der folgenden Konstanten sein: </para>
           <para>
             <b>wdLineSpace1pt5</b>
           </para>
@@ -1165,20 +1113,19 @@
             <b>wdLineSpaceAtLeast</b>
           </para>
           <para>
-            <b>wdLineSpaceDouble</b>
+            <b>wlinespacedouble</b>
           </para>
           <para>
             <b>wdLineSpaceExactly</b>
           </para>
           <para>
-            <b>wdLineSpaceMultiple für</b>
+            <b>wdLineSpaceMultiple</b>
           </para>
           <para>
             <b>wdLineSpaceSingle</b>
           </para>
-          <para>Verwendung <b>WdLineSpaceSingle</b>, <b>wdLineSpace1pt5</b>oder <b>WdLineSpaceDouble</b> den Zeilenabstand auf einen der folgenden Werte festgelegt. Sie müssen auch festlegen, um den Zeilenabstand auf eine genaue Anzahl von Punkten oder eine vielfache Anzahl von Zeilen festgelegt, die <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" /> -Eigenschaft.</para>
-          <para />
-        </remarks>
+          <para>Verwenden Sie <b>wdLineSpaceSingle</b>, <b>wdLineSpace1pt5</b> oder <b>wdLineSpaceDouble</b> zum Festlegen des Zeilenabstands auf einen dieser Werte. Wenn Sie den Zeilenabstand auf eine exakte Anzahl von Punkten oder auf eine mehrere Anzahl von Zeilen festlegen möchten, müssen Sie auch <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" /> die-Eigenschaft festlegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineUnitAfter">
@@ -1207,7 +1154,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Abstand (in Gitternetzlinien) nach den angegebenen Absätzen.</summary>
+        <summary>Gibt die Größe des Abstands (in Gitternetzlinien) nach den angegebenen Absätzen zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1238,7 +1185,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Abstand (in Gitternetzlinien) vor den angegebenen Absätzen.</summary>
+        <summary>Gibt die Größe des Abstands (in Gitternetzlinien) vor den angegebenen Absätzen zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1269,14 +1216,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Zeilennummern für die angegebenen Absätze unterdrückt werden.</summary>
+        <summary>Bestimmt, ob die Zeilennummern für die angegebenen Absätze unterdrückt werden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Zeilennummern für die angegebenen Absätze, und <b>False,</b> Wenn nicht unterdrückt werden. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Mögliche Werte sind <b>True</b>, <b>False</b>und <b>WdUndefined</b>.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> festzulegenden Zeilennummern.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die Zeilennummern für die angegebenen Absätze unterdrückt werden, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Mögliche Werte sind <b>true</b>, <b>false</b>und <b>wdUndefined</b>. </para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> die-Eigenschaft, um Zeilennummern festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenOrCloseUp">
@@ -1351,10 +1296,8 @@
       <Parameters />
       <Docs>
         <summary>Entfernt eine Einzugsebene für mindestens einen Absatz.</summary>
-        <remarks>
-          <para>Mit dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug verkleinern auf der Formatsymbolleiste.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Verwendung dieser Methode entspricht dem Klicken auf die Schaltfläche Einzug verringern auf der Formatsymbolleiste.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemote">
@@ -1379,10 +1322,8 @@
       <Parameters />
       <Docs>
         <summary>Weist dem angegebenen Absatz oder den angegebenen Absätzen die Überschriftformatvorlage der nächsten Ebene (Überschrift 1 bis Überschrift 8) zu.</summary>
-        <remarks>
-          <para>Wenn ein Absatz mit der Formatvorlage Überschrift 2 formatiert ist, stuft diese Methode den Absatz tiefer, indem die Formatvorlage in Überschrift3 geändert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn ein Absatz mit der Formatvorlage Überschrift 2 formatiert ist, stuft diese Methode den Absatz tiefer, indem die Formatvorlage in Überschrift 3 geändert wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemoteToBody">
@@ -1436,10 +1377,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdOutlineLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Gliederungsebene für die angegebenen Absätze.</summary>
+        <summary>Gibt die Gliederungsebene der angegebenen Absätze zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Rückgabewert Wert kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /> Konstanten:</para>
+        <remarks><para>Das Rückgabe-Vale kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /> Konstanten sein:</para>
           <para>
             <b>wdOutLineLevel1</b>
           </para>
@@ -1459,7 +1399,7 @@
             <b>wdOutLineLevel6</b>
           </para>
           <para>
-            <b> wdOutLineLevel7</b>
+            <b>wdOutLineLevel7</b>
           </para>
           <para>
             <b>wdOutLineLevel8</b>
@@ -1468,12 +1408,11 @@
             <b>wdOutLineLevel9</b>
           </para>
           <para>
-            <b>WdOutLineLevelBodyText</b>
+            <b>wdOutLineLevelBodyText</b>
           </para>
-          <para>, wenn ein Absatz eine Formatvorlage für Überschriften angewendet (Überschrift 1 bis Überschrift 9), die Gliederungsebene ist dieselbe wie die Formatvorlage für Überschriften und kann nicht geändert werden.</para>
-          <para>Gliederungsebenen sind nur in der Gliederungsansicht oder Zuordnung Dokumentfenster sichtbar.</para>
-          <para />
-        </remarks>
+          <para>Wenn einem Absatz eine Überschriftformatvorlage zugewiesen wurde (Überschrift 1 bis Überschrift 9), entspricht die Gliederungsebene der Überschriftformatvorlage und kann nicht geändert werden.</para>
+          <para>Gliederungsebenen sind nur in der Gliederungsansicht oder im Dokumentstrukturbereich sichtbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlinePromote">
@@ -1498,10 +1437,8 @@
       <Parameters />
       <Docs>
         <summary>Weist dem angegebenen Absatz oder den angegebenen Absätzen die Überschriftformatvorlage der nächsthöheren Ebene (Überschrift 1 bis Überschrift 8) zu.</summary>
-        <remarks>
-          <para>Wenn ein Absatz mit der Formatvorlage Überschrift 2 formatiert ist, stuft diese Methode den Absatz höher, indem die Formatvorlage in Überschrift 1 geändert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn ein Absatz mit der Formatvorlage Überschrift 2 formatiert ist, stuft diese Methode den Absatz höher, indem die Formatvorlage in Überschrift 1 geändert wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageBreakBefore">
@@ -1530,13 +1467,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob vor den angegebenen Absätzen ein Seitenumbruch erzwungen wird.</summary>
+        <summary>Bestimmt, ob ein Seitenumbruch vor den angegebenen Absätzen erzwungen wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn ein Seitenumbruch erzwungen wird, vor dem angegebenen Absätze, und <b>False</b> Wenn nicht. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Mögliche Werte sind <b>True</b>, <b>False</b>und <b>WdUndefined</b>zurückgeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn ein Seitenumbruch vor den angegebenen Absätzen erzwungen wird, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Mögliche Rückgabewerte sind <b>true</b>, <b>false</b>und <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1593,20 +1528,18 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdReadingOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Lesereihenfolge der angegebenen Absätze ohne ihre Ausrichtung ändern.</summary>
+        <summary>Legt die Leserichtung der angegebenen Absätze ohne Änderung der Ausrichtung fest, oder gibt diese zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />kann eine der folgenden <b>WdReadingOrder</b> -Konstanten sein:</para>
           <para>
-            <b>WdReadingOrderLtr </b>
+            <b>wdReadingOrderLtr</b>
           </para>
           <para>
-            <b>WdReadingOrderRtl</b>
+            <b>wdReadingOrderRtl</b>
           </para>
-          <para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />, und <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" /> Methoden verwenden, um die absatzausrichtung zusammen mit den Lesebereich ändern Reihenfolge.</para>
-          <para />
-        </remarks>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />die <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />Methoden <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />,, <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" /> und, um die Absatzausrichtung zusammen mit der Leserichtung zu ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1631,10 +1564,8 @@
       <Parameters />
       <Docs>
         <summary>Entfernt manuell vorgenommene Absatzformatierungen (Formatierungen, die nicht mithilfe einer Formatvorlage vorgenommen wurden).</summary>
-        <remarks>
-          <para>Wenn Sie einen Absatz manuell rechts ausrichten und die zugrunde liegende Formatvorlage eine andere Ausrichtung aufweist, ändert die <b>Reset</b> -Methode die Ausrichtung so, dass mit der Formatierung der zugrunde liegenden Formatvorlage übereinstimmt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie einen Absatz manuell rechts ausrichten und die zugrunde liegende Formatvorlage eine andere Ausrichtung aufweist, ändert die <b>Reset</b>-Methode die Ausrichtung so, dass sie mit der Formatierung der zugrunde liegenden Formatvorlage übereinstimmt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightIndent">
@@ -1663,7 +1594,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den rechten Einzug für die angegebenen Absätze (in Punkt).</summary>
+        <summary>Gibt den rechten Einzug (in Punkten) für die angegebenen Absätze zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1691,7 +1622,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt, das auf die Formatierung der Schattierung des angegebenen Objekts verweist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1718,10 +1649,8 @@
       <Parameters />
       <Docs>
         <summary>Legt für die angegebenen Absätze einfachen Zeilenabstand fest.</summary>
-        <remarks>
-          <para>Der genaue Zeilenabstand wird durch den Schriftgrad der größten Zeichen in jedem Absatz bestimmt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der genaue Zeilenabstand wird durch den Schriftgrad der größten Zeichen in jedem Absatz bestimmt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Space15">
@@ -1746,10 +1675,8 @@
       <Parameters />
       <Docs>
         <summary>Formatiert die angegebenen Absätze mit eineinhalbfachem Zeilenabstand.</summary>
-        <remarks>
-          <para>Der genaue Zeilenabstand wird durch Addition von 6 Punkt zum Schriftgrad des größten Zeichens in jedem Absatz bestimmt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der genaue Zeilenabstand wird durch Addition von 6 Punkt zum Schriftgrad des größten Zeichens in jedem Absatz bestimmt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Space2">
@@ -1774,10 +1701,8 @@
       <Parameters />
       <Docs>
         <summary>Legt für die angegebenen Absätze einen doppelten Zeilenabstand fest.</summary>
-        <remarks>
-          <para>Der genaue Zeilenabstand wird durch Addition von 12 Punkt zum Schriftgrad des größten Zeichens in jedem Absatz bestimmt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der genaue Zeilenabstand wird durch Addition von 12 Punkt zum Schriftgrad des größten Zeichens in jedem Absatz bestimmt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceAfter">
@@ -1806,7 +1731,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Abstand (in Punkt) nach dem angegebenen Absatz oder den angegebenen Text Spalte.</summary>
+        <summary>Gibt den Abstand (in Punkt) nach dem angegebenen Absatz oder der Textspalte zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1837,15 +1762,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die Größe des Abstands nach den angegebenen Absätzen automatisch von Microsoft Word festgelegt.</summary>
+        <summary>Bestimmt, ob Microsoft Word automatisch den Abstand nach den angegebenen Absätzen festlegt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word automatisch die Größe des Abstands nach der angegebenen Absätze, und <b>False</b> festgelegt, wenn nicht. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>wdUndefined zurück</b> , wenn die <b>SpaceAfterAuto</b> -Eigenschaft nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
-          <para>Wenn Sie ein HTML-Dokument ohne cascading Stylesheets öffnen, wird von Word automatisch festgelegt die <b>SpaceAfterAuto</b> -Eigenschaft auf <b>true fest,</b> um den Absätzen genau wie es in einem Webbrowser angezeigt wird.</para>
-          <para>Wenn <b>SpaceAfterAuto</b> auf <b>True</b>festgelegt, wird die <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" /> -Eigenschaft wird ignoriert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word automatisch den Abstand nach den angegebenen Absätzen festlegt, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn die <b>SpaceAfterAuto</b>-Eigenschaft nur für einige der angegebenen Absätze auf <b>True</b> festgelegt ist.</para>
+          <para>Wenn Sie ein HTML-Dokument ohne Cascading Stylesheets öffnen, wird die <b>SpaceAfterAuto</b> -Eigenschaft von Word automatisch auf <b>true</b> festgelegt, um den Absatzabstand exakt so darzustellen, wie er in einem Webbrowser angezeigt würde.</para>
+          <para>Wenn <b>SpaceAfterAuto</b> auf <b>true</b>festgelegt ist, <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" /> wird die Eigenschaft ignoriert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceBefore">
@@ -1874,7 +1797,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Abstand (in Punkt) vor den angegebenen Absätzen.</summary>
+        <summary>Gibt den Abstand (in Punkt) vor den angegebenen Absätzen zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1905,15 +1828,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word automatisch festgelegt, der Abstand vor den angegebenen Absätzen wird.</summary>
+        <summary>Bestimmt, ob Microsoft Word automatisch den Abstand vor den angegebenen Absätzen festlegt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word automatisch den Abstand vor den angegebenen Absätzen und <b>"false"</b> festgelegt, wenn nicht. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>wdUndefined zurück</b> , wenn die <b>SpaceBeforeAuto</b> -Eigenschaft für nur einige der angegebenen Absätze auf True festgelegt ist.</para>
-          <para>Wenn Sie ein HTML-Dokument ohne cascading Stylesheets öffnen, wird von Word automatisch festgelegt die <b>SpaceBeforeAuto</b> -Eigenschaft auf <b>true fest,</b> um den Absätzen genau wie es in einem Webbrowser angezeigt wird.</para>
-          <para>Wenn <b>SpaceBeforeAuto</b> auf <b>True</b>festgelegt, wird die <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" /> -Eigenschaft wird ignoriert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word automatisch den Abstand vor den angegebenen Absätzen festlegt, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn die <b>SpaceBeforeAuto</b>-Eigenschaft nur für einige der angegebenen Absätze auf True festgelegt ist.</para>
+          <para>Wenn Sie ein HTML-Dokument ohne Cascading Stylesheets öffnen, wird die <b>SpaceBeforeAuto</b> -Eigenschaft von Word automatisch auf <b>true</b> festgelegt, um den Absatzabstand exakt so darzustellen, wie er in einem Webbrowser angezeigt würde.</para>
+          <para>Wenn <b>SpaceBeforeAuto</b> auf <b>true</b>festgelegt ist, <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" /> wird die Eigenschaft ignoriert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1942,13 +1863,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Formatvorlage für das angegebene Objekt fest.</summary>
+        <summary>Gibt die Formatvorlage für das angegebene Objekt zurück oder legt diese Formatvorlage fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Zum Festlegen dieser Eigenschaft entweder den lokalen Namen der Formatvorlage, eine ganze Zahl, eine <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> -Konstante oder ein Objekt, das die Formatvorlage darstellt.</para>
-          <para>Nur der Stil des erste Zeichens oder Absatz wird zurückgegeben, wenn Sie die Formatvorlage für einen Bereich zurückgeben, mehr als eine Formatvorlage enthält,.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um diese Eigenschaft festzulegen, geben Sie den lokalen Namen der Formatvorlage, eine ganze <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Zahl, eine Konstante oder ein Objekt an, das die Formatvorlage darstellt.</para>
+          <para>Wenn Sie die Formatvorlage für einen Bereich zurückgeben, der mehr als eine Formatvorlage enthält, wird nur die Formatvorlage für das erste Zeichen oder den ersten Absatz zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHangingIndent">
@@ -1974,13 +1893,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>Kurze</b>erforderlich. Die Anzahl der Tabstopps, um die eingezogen werden soll (wenn positiv), oder die Anzahl der Tabstopps, die vom Einzug entfernt werden sollen (wenn negativ).</param>
+        <param name="Count"><b>Short</b>erforderlich. Die Anzahl der Tabstopps, um die eingezogen werden soll (wenn positiv), oder die Anzahl der Tabstopps, die vom Einzug entfernt werden sollen (wenn negativ).</param>
         <summary>Legt einen hängenden Einzug auf eine angegebene Anzahl von Tabstopps fest.</summary>
-        <remarks>
-          <para>Kann verwendet werden, um Tabstopps von einem hängenden Einzug zu entfernen, wenn der Wert der <paramref name="Count" /> eine negative Zahl ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Kann verwendet werden, um Tabstopps aus einem hängenden Einzug zu entfernen, <paramref name="Count" /> wenn der Wert einer negativen Zahl ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndent">
@@ -2006,13 +1922,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>Kurze</b>erforderlich. Die Anzahl der Tabstopps, um die eingezogen werden soll (wenn positiv), oder die Anzahl der Tabstopps, die vom Einzug entfernt werden sollen (wenn negativ).</param>
+        <param name="Count"><b>Short</b>erforderlich. Die Anzahl der Tabstopps, um die eingezogen werden soll (wenn positiv), oder die Anzahl der Tabstopps, die vom Einzug entfernt werden sollen (wenn negativ).</param>
         <summary>Legt den linken Einzug für die angegebenen Absätze auf eine angegebene Anzahl von Tabstopps fest.</summary>
-        <remarks>
-          <para>Kann auch verwendet werden, um den Einzug zu entfernen, wenn der Wert der <paramref name="Count" /> eine negative Zahl ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Kann auch verwendet werden, um den Einzug zu entfernen, wenn <paramref name="Count" /> der Wert einer negativen Zahl ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStops">
@@ -2041,7 +1954,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> -Auflistung, die alle benutzerdefinierten Tabstopps für die angegebenen Absätze beendet.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> einer Auflistung, die alle benutzerdefinierten Tabstopps für die angegebenen Absätze darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2072,13 +1985,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die erste und letzte Zeile im angegebenen Absatz auf derselben Seite wie der Rest des Absatzes bleiben, wenn Microsoft Word neu umgebrochen.</summary>
+        <summary>Bestimmt, ob die erste und die letzte Zeile des angegebenen Absatzes auf derselben Seite wie der Rest des Absatzes verbleiben, wenn Microsoft Word das Dokument neu paginiert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn die erste und letzte Zeile im angegebenen Absatz auf derselben Seite wie der Rest des Absatzes bleiben, wenn Word ein Seitenumbruch für das Dokument, und <b>False</b> Wenn nicht ausgeführt. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Mögliche Werte sind <b>True</b>, <b>False</b> und <b>WdUndefined</b>zurückgeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die erste und die letzte Zeile des angegebenen Absatzes auf derselben Seite wie der Rest des Absatzes verbleiben, wenn Word das Dokument neu paginiert, und <b>false</b> , wenn nicht. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Mögliche Rückgabewerte sind <b>true</b>, <b>false</b> und <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -2107,14 +2018,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Microsoft Word westlichen Text in der Mitte eines Worts in der angegebenen Absätze oder Textrahmen umbrochen wird.</summary>
+        <summary>Bestimmt, ob Microsoft Word lateinischen Text in der Mitte eines Wortes in den angegebenen Absätzen oder Textrahmen umschließt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn Word westlichen Text in der Mitte eines Worts in der angegebenen Absätze oder Textrahmen, und <b>False</b> Wenn nicht umbrochen wird. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Diese Eigenschaft gibt <b>WdUndefined</b> zurück, wenn nur für einige der angegebenen Absätze oder Textrahmen auf <b>True</b> festgelegt.</para>
-          <para>Diese Verwendung möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Word lateinischen Text in der Mitte eines Wortes in den angegebenen Absätzen oder Textrahmen umschließt, und <b>false</b> , wenn nicht. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn für nur einige der angegebenen Absätze oder Textrahmen auf " <b>true</b> " festgelegt ist.</para>
+          <para>Diese Verwendung steht Ihnen möglicherweise nicht zur Verfügung, abhängig von der Sprachunterstützung (beispielsweise US-Englisch), die Sie ausgewählt oder installiert haben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

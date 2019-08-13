@@ -1,13 +1,5 @@
 <Type Name="OMathFunctions" FullName="Microsoft.Office.Interop.Word.OMathFunctions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="251e37f0700f852eabe59b08119f35f0842a15eb" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669058" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathFunctions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f9dd73b5c31b36fb270ed019c2844a18dc9255cc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147788" /></Metadata><TypeSignature Language="C#" Value="public interface OMathFunctions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathFunctions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathFunctions&#xA;Implements IEnumerable" />
@@ -30,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Auflistung von Funktionen oder Strukturen, die Microsoft Office Word unterstützt, z. B. Brüche, integrale, Summen und radikale.</summary>
+    <summary>Stellt eine Auflistung von Funktionen oder Strukturen dar, die Microsoft Office Wort unterstützt, wie Brüche, integrale, Summen und radikale.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,14 +50,12 @@
         <Parameter Name="NumCols" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> die Stelle, an der eine Formel eingefügt wird.</param>
-        <param name="Type">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" />den Typ der einzufügenden Formel.</param>
-        <param name="NumArgs">Optionales <b>Objekt</b> die Anzahl von Argumenten in der Formel.</param>
+        <param name="Range"><see cref="T:Microsoft.Office.Interop.Word.Range" /> Die Stelle, an der eine Formel insrt werden muss.</param>
+        <param name="Type">Der <see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" />Typ der einzufügenden Formel ist erforderlich.</param>
+        <param name="NumArgs">Optionales <b>Objekt</b> die Anzahl der Argumente in der Formel.</param>
         <param name="NumCols">Optionales <b>Objekt</b> die Anzahl der Spalten in der Formel.</param>
-        <summary>Fügt eine neue Struktur, wie beispielsweise einen Bruch, in eine Formel an der angegebenen Position und gibt ein <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> -Objekt, das die Struktur darstellt.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" />
-        </returns>
+        <summary>Fügt eine neue Struktur, beispielsweise einen Bruch, in eine Gleichung an der angegebenen Position ein und gibt <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> ein Objekt zurück, das die Struktur darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,14 +139,10 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>, Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Diese Eigenschaft in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung verfügt über einen vierstelligen Erstellercode entworfen wurde. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden. </para>
+          <para>Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -221,12 +203,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Ganze Zahl</b> , gibt die Ordnungsposition des Objekts in der Auflistung erforderlich.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> -Objekt, das das angegebene Element in der Auflistung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" />
-        </value>
+        <param name="Index">Required <b>Integer</b> gibt die Ordnungsposition des Objekts in der Auflistung an.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> Objekt zurück, das das angegebene Element in der Auflistung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +232,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

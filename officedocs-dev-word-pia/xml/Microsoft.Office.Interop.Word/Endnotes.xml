@@ -1,13 +1,5 @@
 <Type Name="Endnotes" FullName="Microsoft.Office.Interop.Word.Endnotes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="106a420cd9bef3a857395aa622ff27a222b3fb61" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670683" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a74d0528b197f8c97921c1994c703d6aec5f9941" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146885" /></Metadata><TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Endnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Endnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Endnotes&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> -Objekten, die alle Endnoten in einer Auswahl, einem Bereich oder einem Dokument darstellt.</summary>
-    <remarks>
-      <para>Mit der <b>Endnotes</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekten, die <b>Endnotes</b> -Auflistung zurückgegeben.</para>
-      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> -Methode der <b>Endnotes</b> -Auflistung eine Endnote hinzugefügt.</para>
-      <para>Verwendung <b>Endnoten</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Endnote</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Endnote in einer Auswahl, einem Bereich oder einem Dokument.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> Objekten, die alle Endnoten in einer Auswahl, einem Bereich oder einem Dokument darstellt.</summary>
+    <remarks><para>Verwenden Sie <b></b> die Endnotes- <see cref="T:Microsoft.Office.Interop.Word.Selection" />Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Range" />des, <see cref="T:Microsoft.Office.Interop.Word.Document" /> -oder-Objekts, um die Endnotes-Auflistung zurückzugeben. <b></b></para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> die-Methode, um eine Endnote zur Endnotes-Auflistung hinzuzufügen. <b></b></para>
+      <para>Verwenden <b></b>Sie Endnoten (<paramref name="index" />) <paramref name="index" /> , wobei es sich um die Indexnummer handelt, um ein einzelnes <b>Endnote</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Endnote in einer Auswahl, einem Bereich oder einem Dokument dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,15 +52,13 @@
         <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <b>Range</b> -Objekt. Der Bereich für die Endnote markiert. Dies kann ein reduzierter Bereich sein.</param>
-        <param name="Reference">Optionales- <b>Objekt</b>. Der Text für das benutzerdefinierte Verweiszeichen. Wenn dieses Argument ausgelassen wird, fügt Microsoft Word eine automatisch nummerierte Fußnotenzeichen.</param>
-        <param name="Text">Optionales- <b>Objekt</b>. Der Text der Endnote.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> -Objekt, das eine einem Bereich hinzugefügte Endnote darstellt.</summary>
+        <param name="Range">Erforderliches <b>Range</b> -Objekt. Der für die Endnote markierte Bereich. Dies kann ein reduzierter Bereich sein.</param>
+        <param name="Reference">Optionales <b>Objekt</b>. Der Text für das benutzerdefinierte Fuß- oder Endnotenzeichen. Wenn dieses Argument fehlt, wird in Microsoft Word ein automatisch nummeriertes Fuß- oder Endnotenzeichen eingefügt.</param>
+        <param name="Text">Optionales <b>Objekt</b>. Der Text der Endnote.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> Objekt zurück, das eine Endnote darstellt, die einem Bereich hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Zum Angeben eines Symbols für das <paramref name="Reference" /> -Argument verwenden die Syntax {<paramref name="FontName CharNum" />}. <paramref name="FontName" /> ist der Name der Schriftart, die das Symbol enthält. Namen von dekorativen Schriftarten werden im Feld Schriftart im Dialogfeld Symbol (Menü "Einfügen") angezeigt. <paramref name="CharNum" /> ist die Summe von 31 und der Zahl entsprechend der Position des Symbols, das Sie einfügen möchten, auf, von links nach rechts gezählt in der Tabelle der Symbole. Das Argument zum Angeben eines Symbols Omega (ω) an der Position 56 in der Tabelle der Symbole in der Schriftart Symbol würde beispielsweise "{Symbol 87}" sein.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie die Syntax { <paramref name="Reference" /> <paramref name="FontName CharNum" />}, um ein Symbol für das Argument anzugeben. <paramref name="FontName" />ist der Name der Schriftart, die das Symbol enthält. Die Namen von dekorativen Schriftarten werden im Dialogfeld Symbol (Menü Einfügen) im Feld Schriftart angezeigt. <paramref name="CharNum" />ist die Summe von 31 und der Zahl, die der Position des Symbols entspricht, das Sie einfügen möchten, wobei von links nach rechts in der Tabelle mit Symbolen gezählt wird. Um beispielsweise ein Omega-Symbol (ω) an Position 56 in der Tabelle mit Symbolen in der Symbolschriftart anzugeben, lautet das Argument "{Symbol 87}".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Fortsetzungshinweis einer Fuß- oder Endnote darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das die Fortsetzungshinweis für Fußnote oder Endnote darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das die Fortsetzungstrennlinie für Fuß- oder Endnote darstellt.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Range" /> Wert vom Typs Object zurück, der das Fortsetzungs Trennzeichen für Fußnote oder Endnote darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,11 +223,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -300,7 +286,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -332,7 +318,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdEndnoteLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Position des alle Endnoten.</summary>
+        <summary>Gibt die Position aller Endnoten zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,7 +349,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, wie Fuß- oder Endnoten nach einem Seiten-nummeriert werden oder Abschnittsumbruch.</summary>
+        <summary>Gibt die Art der Fußnoten- oder Endnotennummerierung nach einem Seiten- oder Abschnittsumbruch zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -394,7 +380,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNoteNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt das Zahlenformat für die angegebenen Endnoten.</summary>
+        <summary>Gibt die Zahlenformatvorlage für die angegebenen Endnoten zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -449,10 +435,8 @@
       <Parameters />
       <Docs>
         <summary>Setzt den Fortsetzungshinweis einer Endnote auf den Standardhinweis zurück.</summary>
-        <remarks>
-          <para>Der Standardhinweis ist leer, die einen entsprechender Hinweis ohne Text darstellt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der Standard Hinweis ist leer, was einen Hinweis ohne Text darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetContinuationSeparator">
@@ -477,10 +461,8 @@
       <Parameters />
       <Docs>
         <summary>Setzt die Fortsetzungstrennlinie einer Endnote auf die Standardtrennlinie zurück.</summary>
-        <remarks>
-          <para>Die Standardtrennlinie handelt es sich um eine lange horizontale Linie, die von Notizen, die von der vorherigen Seite fortgesetzt Dokumenttext trennt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei der Standardtrennlinie handelt es sich um eine lange horizontale Linie, die den Dokumenttext von den Fuß- oder Endnoten trennt, die von der vorherigen Seite fortgesetzt wurden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetSeparator">
@@ -505,10 +487,8 @@
       <Parameters />
       <Docs>
         <summary>Setzt die Trennlinie einer Endnote auf die Standardtrennlinie zurück.</summary>
-        <remarks>
-          <para>Die Standardtrennlinie handelt es sich um eine kurze horizontale Linie, die Dokumenttext von den Fuß-oder Endnoten trennt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei der Standardtrennlinie handelt es sich um eine kurze horizontale Linie, die den Dokumenttext von den Fuß- oder Endnoten trennt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -534,7 +514,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das Trennzeichen Endnote oder Fußnote darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das das Endnoten-oder Fußnoten Trennzeichen darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -565,7 +545,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Startnummer Notiz.</summary>
+        <summary>Gibt die Start Notizen Nummer zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -592,10 +572,8 @@
       <Parameters />
       <Docs>
         <summary>Konvertiert alle Endnoten in einem Dokument in Fußnoten und umgekehrt.</summary>
-        <remarks>
-          <para>Einen Fußnoten-oder Endnotenbereich konvertieren, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> -Methode, um einen Bereich von Endnoten in Fußnoten zu konvertieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

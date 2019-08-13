@@ -1,13 +1,5 @@
 <Type Name="OtherCorrectionsException" FullName="Microsoft.Office.Interop.Word.OtherCorrectionsException">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e186e6e8e85e147427b61c8a653479e1f59b6e02" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669499" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OtherCorrectionsException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fac51f3d9d305116cf8247fe9c821060c032481" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144246" /></Metadata><TypeSignature Language="C#" Value="public interface OtherCorrectionsException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OtherCorrectionsException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OtherCorrectionsException" />
   <TypeSignature Language="VB.NET" Value="Public Interface OtherCorrectionsException" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine einzelne AutoKorrektur-Ausnahmen.</summary>
-    <remarks>
-      <para>Das <b>OtherCorrectionsException</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" /> Auflistung. Die <b>OtherCorrectionsExceptions</b> -Auflistung enthält alle Wörter, die Microsoft Word nicht automatisch korrigiert werden. Diese Liste entspricht der Liste der AutoKorrektur-Ausnahmen auf der Registerkarte Weitere Korrekturen im Dialogfeld AutoKorrektur-Ausnahmen (Befehl AutoKorrektur, im Menü Extras).</para>
-      <para>Verwendung <b>OtherCorrectionsExceptions</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name der AutoKorrektur-Ausnahme oder die Indexzahl darstellt, um ein einzelnes <b>OtherCorrectionsException</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position der AutoKorrektur-Ausnahme in der <b>OtherCorrectionsExceptions</b> -Auflistung.</para>
-      <para>Wenn der Wert der <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" /> -Eigenschaft ist <b>True</b>, werden automatisch Wörter in die Liste der AutoKorrektur-Ausnahmen hinzugefügt. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" /> -Methode, um ein Element der <b>OtherCorrectionsExceptions</b> -Auflistung hinzufügen.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine einzelne AutoKorrektur-Ausnahme dar.</summary>
+    <remarks><para>Das <b>OtherCorrectionsException</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" /> Auflistung. Die <b>OtherCorrectionsExceptions</b>-Auflistung enthält alle Wörter, die von Microsoft Word nicht automatisch korrigiert werden. Diese Liste entspricht der Liste der AutoKorrektur-Ausnahmen auf der Registerkarte andere Korrekturen im Dialogfeld AutoKorrektur-Ausnahmen (Befehl AutoKorrektur, Menü Extras).</para>
+      <para>Verwenden <b></b>Sie OtherCorrectionsExceptions<paramref name="index" />(), <paramref name="index" /> wobei der Name der AutoKorrektur-Ausnahme oder die Indexnummer ist, um ein einzelnes <b>OtherCorrectionsException</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position der AutoKorrektur-Ausnahme in der <b>OtherCorrectionsExceptions</b>-Auflistung dar.</para>
+      <para>Wenn der Wert der <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" /> Eigenschaft auf <b>true</b>festgelegt ist, werden Wörter automatisch der Liste der AutoKorrektur-Ausnahmen hinzugefügt. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" /> die-Methode, um der <b>OtherCorrectionsExceptions</b> -Auflistung ein Element hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,11 +79,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Komplexe_zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft den hexadezimalen Inumber 4D535744 zurück zurück, der die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,7 +132,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +160,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

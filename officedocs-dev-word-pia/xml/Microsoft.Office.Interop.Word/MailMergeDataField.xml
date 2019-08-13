@@ -1,13 +1,5 @@
 <Type Name="MailMergeDataField" FullName="Microsoft.Office.Interop.Word.MailMergeDataField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="847238fe1da13e6be4d3d410aab2159918c55b3e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669858" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bde8cf0716521eb5937f2d0e38f75cfde3f6bdda" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144484" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeDataField" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes Seriendruckfeld in einer Datenquelle dar.</summary>
-    <remarks>
-      <para>Das <b>MailMergeDataField</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> Auflistung. Die <b>MailMergeDataFields</b> -Auflistung enthält alle Datenfelder in einer Seriendruck-Datenquelle (beispielsweise Name, Adresse und Ort).</para>
-      <para>Verwendung <b>DataFields</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Felds oder die Indexzahl darstellt, um ein einzelnes <b>MailMergeDataField</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Datenfelds in der Seriendruck-Datenquelle.</para>
-      <para>Die <b>MailMergeDataFields</b> -Auflistung Felder hinzugefügt werden kann. Alle Datenfelder in einer Datenquelle werden automatisch in die <b>MailMergeDataFields</b> -Auflistung aufgenommen.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>MailMergeDataField</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> Auflistung. Die <b>MailMergeDataFields</b> -Auflistung enthält alle Datenfelder in einer Seriendruck-Datenquelle (beispielsweise Name, Adresse und Ort).</para>
+      <para>Verwenden <b></b>Sie DataFields<paramref name="index" />(), <paramref name="index" /> wobei der Name des Datenfelds oder die Indexnummer ist, um ein einzelnes <b>MailMergeDataField</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Datenfelds in der Seriendruck-Datenquelle dar.</para>
+      <para>Sie können keine Felder zur <b>MailMergeDataFields</b> -Auflistung hinzufügen. Alle Datenfelder in einer Datenquelle werden automatisch in die <b>MailMergeDataFields</b> -Auflistung enthalten.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -118,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +134,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,12 +190,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Inhalt des Seriendruck-Datenfelds für den aktuellen Datensatz zurück.</summary>
+        <summary>Gibt den Inhalt des Felds Seriendruckdaten für den aktuellen Datensatz zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> -Eigenschaft auf den aktiven Datensatz in einer Seriendruck-Datenquelle festlegen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> die-Eigenschaft, um den aktiven Datensatz in einer Seriendruck-Datenquelle festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

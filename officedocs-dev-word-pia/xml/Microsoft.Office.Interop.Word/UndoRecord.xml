@@ -1,13 +1,5 @@
 <Type Name="UndoRecord" FullName="Microsoft.Office.Interop.Word.UndoRecord">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cad0a001261dae8c6e1145efa4c99df630fc70b1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669813" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UndoRecord" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dccd67ac1bae806d140ca00b07a8119ac1166895" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143791" /></Metadata><TypeSignature Language="C#" Value="public interface UndoRecord" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UndoRecord" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UndoRecord" />
   <TypeSignature Language="VB.NET" Value="Public Interface UndoRecord" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Bietet einen Einstiegspunkt in den Rollbackpuffer.</summary>
+    <summary>Stellt einen Einstiegspunkt für den Rückgängig-Stapel bereit.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,12 +45,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word 2010-Anwendung darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word 2010-Anwendung darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das die Microsoft Word 2010 Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt, das die Microsoft Word 2010 Anwendung darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -86,12 +76,10 @@
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</value>
-        <remarks>
-          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Word verfügt beispielsweise über den Erstellercode MSWD.</para>
+        <remarks><para>Schreibgeschützter <b>Long</b>-Wert. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Apple Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD.</para>
           <para>
-            <b>Vorsicht</b>: Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para />
-        </remarks>
+            <b>Vorsicht</b>: dieser Wert kann auch durch die Konstante <b>wdCreatorCode</b>dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordLevel">
@@ -117,12 +105,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert, der die Anzahl der Anrufe von benutzerdefinierten Rückgängig-Aktion angibt, die derzeit aktiv sind.</summary>
-        <value>Gibt die Anzahl von benutzerdefinierten Rückgängig-Aktion aufrufen, die derzeit aktiv sind.</value>
-        <remarks>
-          <para>Schreibgeschützt. Wenn keine benutzerdefinierte Rückgängig-Aktion aktiv ist, wird diese Eigenschaft auf 0 (null) festgelegt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft einen Wert ab, der die Anzahl der benutzerdefinierten Undo-Aktionsaufrufe angibt, die derzeit aktiv sind.</summary>
+        <value>Gibt die Anzahl der benutzerdefinierten Undo-Aktionsaufrufe an, die derzeit aktiv sind.</value>
+        <remarks><para>Schreibgeschützt. Wenn keine benutzerdefinierte Rückgängig-Aktion aktiv ist, wird diese Eigenschaft auf 0 (null) festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordName">
@@ -148,12 +134,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft eine Zeichenfolge, die den Eintrag, der angezeigt wird auf den Rückgängig-Stapel gibt an, wenn alle benutzerdefinierten Rückgängig-Aktionen abgeschlossen haben.</summary>
-        <value>Gibt den Eintrag, der angezeigt wird auf den Rückgängig-Stapel an, wenn alle benutzerdefinierten Rückgängig-Aktionen abgeschlossen haben.</value>
-        <remarks>
-          <para>Schreibgeschützt. Wenn benutzerdefinierte Rückgängig-Datensätzen in anderen benutzerdefinierten Rückgängig-Einträgen geschachtelt sind, gibt diese Eigenschaft an, welche Zeichenfolge auf den Rückgängig-Stapel erst, nachdem alle benutzerdefinierten angezeigt wird, Rückgängig-Aktionen abgeschlossen haben. Wenn mehrere Aufrufe der <see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" /> Methode geschachtelt sind, wird der erste Aufruf angegebene Zeichenfolge von dieser Eigenschaft zurückgegeben. Wenn keine Aktion aktiv ist, gibt die Eigenschaft eine leere Zeichenfolge.</para>
-          <para />
-        </remarks>
+        <summary>Ruft eine Zeichenfolge ab, die den Eintrag angibt, der im Rückgängig-Stapel angezeigt wird, wenn alle benutzerdefinierten Rückgängig-Aktionen abgeschlossen wurden.</summary>
+        <value>Gibt den Eintrag an, der im Rückgängig-Stapel angezeigt wird, wenn alle benutzerdefinierten Rückgängig-Aktionen abgeschlossen wurden.</value>
+        <remarks><para>Schreibgeschützt. Wenn benutzerdefinierte Rückgängig-Datensätze in anderen benutzerdefinierte Rückgängig-Datensätzen geschachtelt sind, gibt diese Eigenschaft an, welche Zeichenfolge im Rollbackpuffer angezeigt wird, nachdem alle benutzerdefinierten Rückgängig-Aktionen abgeschlossen sind. Wenn mehrere Aufrufe der <see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" /> Methode geschachtelt sind, wird die vom ersten Aufruf angegebene Zeichenfolge von dieser Eigenschaft zurückgegeben. Ist keine Aktion aktiv, gibt die Eigenschaft eine leere Zeichenfolge zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCustomRecord">
@@ -205,12 +189,9 @@
       </ReturnValue>
       <Docs>
         <summary>Ruft ab, ob eine benutzerdefinierte Rückgängig-Aktion aufgezeichnet wird.</summary>
-        <value>
-          <b>true,</b> Wenn eine benutzerdefinierte Rückgängig-Aktion aufgezeichnet wird. anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <value><b>true</b> , wenn eine benutzerdefinierte Rückgängig-Aktion aufgezeichnet wird; andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -236,8 +217,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> Objekt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> Objekt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> angegebenen Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,13 +244,11 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">Gibt den Namen des benutzerdefinierten Rückgängig-Datensatzes. Diese Zeichenfolge ist auf 64 Zeichen begrenzt. Wenn eine Zeichenfolge längere bereitgestellt wird, wird die Zeichenfolge auf 64 Zeichen gekürzt.</param>
-        <summary>Initiiert die Erstellung eines benutzerdefinierten Rückgängig-Datensatzes.</summary>
-        <remarks>
-          <para>Wenn die <paramref name="Name" /> Parameter ausgelassen wird oder eine leere Zeichenfolge ist, Word 2010 verwendet den Namen des ersten Befehls als den Namen der Rückgängig-Datensatzes ausgeführt.</para>
-          <para>Diese Methode beginnt die Erstellung eines benutzerdefinierten Rückgängig-Datensatzes, der alle für die Anwendung ausgeführt wird Aktionen, während sie aktiv unter einem Datensatz namentlich definiert ist.</para>
-          <para />
-        </remarks>
+        <param name="Name">Gibt den Namen des benutzerdefinierten Undo-Eintrags an. Diese Zeichenfolge ist auf 64 Zeichen limitiert. Wenn eine längere Zeichenfolge angegeben wird, wird die Zeichenfolge auf 64 Zeichen abgeschnitten.</param>
+        <summary>Leitet die Erstellung eines benutzerdefinierten Rückgängig-Datensatzes ein.</summary>
+        <remarks><para>Wenn der <paramref name="Name" /> Parameter ausgelassen wird oder eine leere Zeichenfolge ist, verwendet Word 2010 den Namen des ersten Befehls, der als Name des Undo-Datensatzes ausgeführt wird.</para>
+          <para>Diese Methode beginnt mit der Erstellung eines benutzerdefinierten Undo-Eintrags, der alle Aktionen aufzeichnet, die für die Anwendung ausgeführt werden, während Sie unter einem durch Name definierten Datensatz aktiv ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

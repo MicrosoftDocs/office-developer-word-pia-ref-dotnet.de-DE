@@ -1,13 +1,5 @@
 <Type Name="Cells" FullName="Microsoft.Office.Interop.Word.Cells">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca7cc850320cd08b337cf0125a3f5f4d3ec787ec" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670348" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Cells : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5f1f919c60f50e8edbe09241cd688bb7b561fc76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147354" /></Metadata><TypeSignature Language="C#" Value="public interface Cells : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Cells implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Cells" />
   <TypeSignature Language="VB.NET" Value="Public Interface Cells&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Cell" /> Objekten in einer Tabellenspalte, Tabellenzeile, Auswahl oder einem Bereich.</summary>
-    <remarks>
-      <para>Die <b>Cells</b> -Eigenschaft verwenden, um die <b>Cells</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" /> -Methode <b>Cells</b> -Auflistung ein <b>Cell</b> -Objekt hinzu. Sie können auch die <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekt So fügen Sie neue Zellen ein.</para>
-      <para>Verwendung <b>Zelle</b>(<paramref name="row" />, <paramref name="column" />), wobei <paramref name="row" /> ist die Nummer der Zeile und <paramref name="column" /> ist die Spaltennummer oder <b>Zellen</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein <b>Cell</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Cell" /> Objekten in einer Tabellenspalte, einer Tabellenzeile, einer Auswahl oder einem Bereich.</summary>
+    <remarks><para>Mit der <b>Cells</b>-Eigenschaft wird die <b>Cells</b>-Auflistung zurückgegeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" /> die-Methode, um ein <b>Cell</b> - <b></b> Objekt zur Cells-Auflistung hinzuzufügen. Sie können auch die <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> -Methode des- <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekts verwenden, um neue Zellen einzufügen.</para>
+      <para>Verwenden <b></b>Sie Cell<paramref name="row" />( <paramref name="column" />,), <paramref name="row" /> wobei die Zeilennummer und <paramref name="column" /> die Spaltennummer ist, oder <b>Cells</b>(<paramref name="index" />), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein <b>Cell</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,8 +51,8 @@
         <Parameter Name="BeforeCell" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeCell">Ein <see cref="T:Microsoft.Office.Interop.Word.Cell" /> -Objekt, das die Zelle, die angezeigt wird unmittelbar rechts neben die angegebenen Zellen darstellt.</param>
-        <summary>Fügt eine Zelle einer Tabelle hinzu.</summary>
+        <param name="BeforeCell">Ein <see cref="T:Microsoft.Office.Interop.Word.Cell" /> Objekt, das die Zelle darstellt, die unmittelbar rechts neben den angegebenen Zellen angezeigt wird.</param>
+        <summary>Fügt einer Tabelle eine Zelle hinzu.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +107,8 @@
       <Parameters />
       <Docs>
         <summary>Ändert die Breite einer Tabellenspalte und passt diese an die Breite des Texts an, ohne die Art zu ändern, wie der Text in den Zellen umbrochen wird.</summary>
-        <remarks>
-          <para>Wenn die Tabelle bereits so breit wie der Abstand zwischen dem linken und rechten Seitenrand ist, hat diese Methode keine Auswirkung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die Tabelle bereits die Breite des Abstands zwischen dem linken und rechten Rand aufweist, hat diese Methode keinerlei Auswirkung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -149,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Borders" /> -Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung zurück, die alle Rahmen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,13 +193,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -236,8 +222,8 @@
         <Parameter Name="ShiftCells" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShiftCells">Die Richtung, in dem die verbleibenden Zellen verschoben werden sollen. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" /> Konstante. Wenn Length angegeben, werden die Zellen rechts neben der zuletzt gelöschten Zelle nach links verschoben.</param>
-        <summary>Zellen in einer Tabelle löscht und optional Steuerelemente wie die verbleibenden Zellen verschoben werden.</summary>
+        <param name="ShiftCells">Die Richtung, in die die verbleibenden Zellen verschoben werden. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" /> Konstante sein. Wenn keine Angabe erfolgt, werden die Zellen rechts von der letzten gelöschten Zelle nach links verschoben.</param>
+        <summary>Löscht Zellen in einer Tabelle und steuert optional, wie die verbleibenden Zellen verschoben werden.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,7 +248,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Legt eine gleiche Höhe für die angegebenen Zellen, damit sie gleich sind.</summary>
+        <summary>Passt die Höhe der angegebenen Zellen so an, dass Sie gleich sind.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,7 +273,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Legt eine gleiche Breite für die angegebenen Zellen, damit sie gleich sind.</summary>
+        <summary>Passt die Breite der angegebenen Zellen so an, dass Sie gleich sind.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,12 +335,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Höhe für die angegebenen Zellen in einer Tabelle fest.</summary>
+        <summary>Gibt die Höhe der angegebenen Zellen in einer Tabelle zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> -Eigenschaft der angegebenen Zeile <b>WdRowHeightAuto</b>ist, gibt <b>Height</b><b>wdUndefined zurück</b>; Festlegen der <b>Height</b> -Eigenschaft wird <b>HeightRule</b> auf <b>wdRowHeightAtLeast festgelegt</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> Eigenschaft der angegebenen Zeile <b>wdRowHeightAuto</b>ist, gibt <b>height</b> <b>wdUndefined</b>; durch Festlegen der <b>height</b> -Eigenschaft wird <b>HeightRule</b> auf <b>wdRowHeightAtLeast festgelegt</b>festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -383,12 +367,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowHeightRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Regel zum Bestimmen der Höhe für die angegebenen Zellen fest.</summary>
+        <summary>Gibt die Regel zum Bestimmen der Höhe der angegebenen Zellen zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Festlegen der <b>HeightRule</b> -Eigenschaft einer <see cref="T:Microsoft.Office.Interop.Word.Cell" /> Objekt automatisch die Eigenschaft für die gesamte Zeile festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Durch Festlegen der <b>HeightRule</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Cell" /> eines Objekts wird automatisch die Eigenschaft für die gesamte Zeile festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -445,10 +427,8 @@
       <Parameters />
       <Docs>
         <summary>Verbindet die angegebenen Tabellenzellen miteinander.</summary>
-        <remarks>
-          <para>Das Ergebnis für den Aufruf dieser Eigenschaft ist eine einzelne Zelle einer Tabelle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Ergebnis des Aufrufs dieser Eigenschaft ist eine einzelne Tabellenzelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NestingLevel">
@@ -474,12 +454,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Schachtelungsebene der angegebenen Zellen zurück.</summary>
+        <summary>Gibt die Verschachtelungsebene der angegebenen Zellen zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die äußerste Tabelle hat eine Verschachtelungsebene 1. Die Schachtelungsebene der einzelnen nacheinander geschachtelte Tabelle ist eine höher ist als der vorherigen Tabelle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die äußerste Tabelle liegt auf Verschachtelungsbene 1. Die Verschachtelungsebene jeder folgenden geschachtelten Tabelle liegt um 1 höher als die der vorhergehenden Tabelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -505,7 +483,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,7 +514,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die bevorzugte Breite (in Punkt oder als Prozentsatz der Fensterbreite) für die angegebenen Zellen fest.</summary>
+        <summary>Gibt die bevorzugte Breite (in Punkt oder als prozentualen Anteil der Fensterbreite) für die angegebenen Zellen zurück oder legt diese Breite fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,7 +545,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPreferredWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die bevorzugte Maßeinheit für die Breite für die angegebenen Zellen.</summary>
+        <summary>Gibt die bevorzugte Maßeinheit für die Breite der angegebenen Zellen zurück oder legt diese Einheit fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -599,10 +577,8 @@
         <param name="RowHeight">Die Höhe der Zeile oder Zeilen in Punkt.</param>
         <param name="HeightRule">Die Regel zum Festlegen der Höhe für die angegebenen Zellen.</param>
         <summary>Legt die Höhe von Tabellenzellen fest.</summary>
-        <remarks>
-          <para>Festlegen der <b>SetHeight</b> -Eigenschaft einer <see cref="T:Microsoft.Office.Interop.Word.Cells" /> Objekt automatisch die Eigenschaft für die gesamte Zeile festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Durch Festlegen <b></b> der SetHeight-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Cells" /> eines Objekts wird automatisch die Eigenschaft für die gesamte Zeile festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWidth">
@@ -629,13 +605,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">Die Breite der angegebenen Spalte, die in Punkt.</param>
-        <param name="RulerStyle">Steuert die Microsoft Word passt Zellenbreiten.</param>
-        <summary>Legt die Breite der Zellen in einer Tabelle fest.</summary>
-        <remarks>
-          <para>Die <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> oben beschriebene Verhalten gilt für Tabellen linksbündig ausgerichtet. Verhalten von <b>WdRulerStyle nicht</b> für zentrierten und rechtsbündigen Tabellen kann unerwartete sein. in diesen Fällen die <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> Methode sollte mit Vorsicht verwendet werden.</para>
-          <para />
-        </remarks>
+        <param name="ColumnWidth">Die Breite der angegebenen Spalte in Punkt.</param>
+        <param name="RulerStyle">Steuert die Art und Weise, wie Microsoft Word Zellenbreite anpasst.</param>
+        <summary>Legt die Breite von Zellen in einer Tabelle fest.</summary>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> oben beschriebene Verhalten gilt für Links ausgerichtete Tabellen. Das <b>WdRulerStyle</b> -Verhalten für zentrierte und rechtsbündige Tabellen kann unerwartet sein; in diesen Fällen sollte die <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> Methode mit Bedacht verwendet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -661,7 +635,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt, das auf die Formatierung der Schattierung des angegebenen Objekts verweist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -690,9 +664,9 @@
         <Parameter Name="MergeBeforeSplit" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumRows">Die Anzahl der Zeilen, die die Gruppe von Zellen aufgeteilt werden soll.</param>
-        <param name="NumColumns">Die Anzahl der Spalten, in die Gruppe von Zellen aufgeteilt werden soll.</param>
-        <param name="MergeBeforeSplit">Ein Wert, der angibt, ob um Zellen zusammenzuführen, bevor Sie miteinander verbinden.</param>
+        <param name="NumRows">Die Anzahl der Zeilen, in die die Gruppe von Zellen aufgeteilt werden soll.</param>
+        <param name="NumColumns">Die Anzahl der Spalten, in die die Gruppe von Zellen aufgeteilt werden soll.</param>
+        <param name="MergeBeforeSplit">Ein Wert, der angibt, ob die Zellen vor dem teilen miteinander zusammengeführt werden.</param>
         <summary>Teilt einen Bereich von Tabellenzellen auf.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,7 +697,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCellVerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder legt die vertikale Ausrichtung von Text in Zelle einer Tabelle fest.</summary>
+        <summary>Gibt die vertikale Ausrichtung von Text in Zellen einer Tabelle zurück oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -754,7 +728,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt sie fest.</summary>
+        <summary>Gibt die Breite des angegebenen Objekts (in Punkten) zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

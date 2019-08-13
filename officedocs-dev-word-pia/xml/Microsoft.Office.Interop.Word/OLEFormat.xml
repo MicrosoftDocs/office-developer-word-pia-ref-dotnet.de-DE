@@ -1,13 +1,5 @@
 <Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Word.OLEFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67318725a843161eb77654b732cf7c9e63c73493" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669924" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="209f601ba96966afbaf1e2c89c3e30b339f7d58f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144407" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OLEFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Stellt die OLE-Merkmale (mit Ausnahme der Verknüpfung) für ein OLE-Objekt, ActiveX-Steuerelement oder ein Feld dar.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>OLEFormat</b> -Eigenschaft für ein <see cref="T:Microsoft.Office.Interop.Word.Shape" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, oder <see cref="T:Microsoft.Office.Interop.Word.Field" /> Objekts, um das <b>OLEFormat</b> -Objekt zurückzugeben.</para>
-      <para>Nicht alle Arten von Formen, Inlineformen und Feldern OLE-Funktionen haben. Verwenden Sie die <b>Type</b> -Eigenschaft für die <b>Shape-</b> und <b>InlineShape</b> -Objekts, um zu bestimmen, welche Kategorie die angegebene Form oder Inlineform fällt. Die <b>Type</b> -Eigenschaft für ein <b>Field</b> -Objekt gibt den Typ des Felds zurück.</para>
-      <para>Können Sie die <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" />, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />, und <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" /> Methoden zum Automatisieren eines OLE-Objekts.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.Object" /> -Eigenschaft auf ein Objekt zurück, das ein ActiveX-Steuerelement oder OLE-Objekt darstellt. Mit diesem Objekt können Sie die Eigenschaften und Methoden der containeranwendung oder das ActiveX-Steuerelement verwenden.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <b>die OLEFormat</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Shape" />für <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />ein, <see cref="T:Microsoft.Office.Interop.Word.Field" /> -oder-Objekt, um das <b>OLEFormat</b> -Objekt zurückzugeben.</para>
+      <para>Nicht alle Arten von Formen, Inlineformen und Feldern verfügen über OLE-Funktionalität. Verwenden Sie die <b>Type</b>-Eigenschaft für die <b>Shape</b>- und <b>InlineShape</b>-Objekte, um zu bestimmen, in welche Kategorie die angegebene Form oder Inlineform fällt. Die <b>Type</b>-Eigenschaft für ein <b>Field</b>-Objekt gibt den Typ des Felds zurück.</para>
+      <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />Methoden, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" />, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />und <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" /> verwenden, um ein OLE-Objekt zu automatisieren.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.Object" /> die-Eigenschaft, um ein Objekt zurückzugeben, das ein ActiveX-Steuerelement oder OLE-Objekt darstellt. Bei diesem Objekt können Sie die Eigenschaften und Methoden der Containeranwendung oder des ActiveX-Steuerelements verwenden.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -84,8 +74,7 @@
         <Parameter Name="ClassType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ClassType">
-          <b>String</b> erforderlich. Der Name der Anwendung, in der ein OLE-Objekt geöffnet wird. Um eine Liste der Objekttypen anzuzeigen, die das OLE-Objekt aktiviert werden kann, klicken Sie auf das Objekt, und öffnen Sie das Dialogfeld konvertieren (Menü Bearbeiten, Untermenü Objekt). Sie finden die <paramref name="ClassType" /> Zeichenfolge durch ein Objekt als Inlineform einfügen und dann die Feldfunktionen anzeigen. Der Klassentyp des Objekts folgt das Wort "EINBETTEN" oder das Wort "LINK".</param>
+        <param name="ClassType"><b>String</b> erforderlich. Der Name der Anwendung, in der ein OLE-Objekt geöffnet wird. Wenn Sie eine Liste der Objekttypen anzeigen möchten, die das OLE-Objekt als aktiviert werden kann, klicken Sie auf das Objekt, und öffnen Sie dann das Dialogfeld konvertieren (Menü Bearbeiten, Untermenü Objekt). Sie können die <paramref name="ClassType" /> Zeichenfolge suchen, indem Sie ein Objekt als Inlineform einfügen und dann die Feldfunktionen anzeigen. Der Klassentyp des Objekts folgt entweder dem Wort "einbetten" oder dem Wort "Link".</param>
         <summary>Legt den Windows-Registrierungswert fest, der die Standardanwendung zum Aktivieren des angegebenen OLE-Objekts bestimmt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +102,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,13 +133,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Klassentyp für die angegebene OLE-Objekt, Bild oder dar.</summary>
+        <summary>Gibt den Klassentyp für das angegebene OLE-Objekt, das Bild oder das Feld zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft ist schreibgeschützt für verknüpfte Objekte als DDE-Verknüpfungen.</para>
-          <para>Sie eine Liste der verfügbaren Anwendungen im Feld Typ auf die Registerkarte neu erstellen (Menü "Einfügen") im Dialogfeld Objekt sehen können. Sie finden die <paramref name="ClassType" /> Zeichenfolge durch ein Objekt als Inlineform einfügen und dann die Feldfunktionen anzeigen. Der Klassentyp des Objekts folgt das Wort "EINBETTEN" oder das Wort "LINK."</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft ist für verknüpfte Objekte (mit Ausnahme von DDE-Verknüpfungen) schreibgeschützt.</para>
+          <para>Sie können eine Liste der verfügbaren Anwendungen im Feld Objekttyp auf der Registerkarte neue erstellen im Dialogfeldobjekt (Menü Einfügen) anzeigen. Sie können die <paramref name="ClassType" /> Zeichenfolge suchen, indem Sie ein Objekt als Inlineform einfügen und dann die Feldfunktionen anzeigen. Der Klassentyp des Objekts folgt entweder dem Wort "einbetten" oder dem Wort "Link".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -179,12 +166,12 @@
         <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">Optionales- <b>Objekt</b>. Der Name der Anwendung zum Aktivieren des OLE-Objekts verwendet. Sie können eine Liste der verfügbaren Anwendungen im Feld Typ auf die Registerkarte neu erstellen (Menü "Einfügen") im Dialogfeld Objekt finden Sie unter. Sie finden die <paramref name="ClassType" /> Zeichenfolge durch ein Objekt als Inlineform einfügen und dann die Feldfunktionen anzeigen. Der Klassentyp des Objekts folgt das Wort "EINBETTEN" oder das Wort "LINK".</param>
-        <param name="DisplayAsIcon">Optionales- <b>Objekt</b>. <b>True</b> , wenn das OLE-Objekt als Symbol anzuzeigen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="IconFileName">Optionales- <b>Objekt</b>. Die Datei, die das anzuzeigende Symbol enthält.</param>
-        <param name="IconIndex">Optionales- <b>Objekt</b>. Die Indexnummer des Symbols in <paramref name="IconFileName" />. Die Reihenfolge der Symbole in der angegebenen Datei entspricht der Reihenfolge, in dem die Symbole angezeigt, in das Dialogfeld Symbol ändern (Menü "Einfügen", im Dialogfeld Objekt werden) Wenn das Kontrollkästchen als Symbol anzeigen aktiviert ist. Das erste Symbol in der Datei weist die Indexnummer 0 (Null) auf. Wenn kein Symbol mit der angegebenen Indexnummer in existiert <paramref name="IconFileName" />, das Symbol mit der Indexnummer 1 (das zweite Symbol in der Datei) verwendet wird. Der Standardwert ist 0 (Null).</param>
-        <param name="IconLabel">Optionales- <b>Objekt</b>. Ein Bezeichnungsfeld (Beschriftung), das unter dem Symbol angezeigt wird.</param>
-        <summary>Konvertiert das angegebene OLE-Objekt aus einer Klasse in eine andere, sodass Sie das Objekt in einer anderen Server-Anwendung bearbeiten oder ändern, wie das Objekt im Dokument angezeigt wird.</summary>
+        <param name="ClassType">Optionales <b>Objekt</b>. Der Name der Anwendung, die zum Aktivieren des OLE-Objekts verwendet wird. Sie können eine Liste der verfügbaren Anwendungen im Feld Objekttyp auf der Registerkarte neue erstellen im Dialogfeldobjekt (Menü Einfügen) anzeigen. Sie können die <paramref name="ClassType" /> Zeichenfolge suchen, indem Sie ein Objekt als Inlineform einfügen und dann die Feldfunktionen anzeigen. Der Klassentyp des Objekts folgt entweder dem Wort "einbetten" oder dem Wort "Link".</param>
+        <param name="DisplayAsIcon">Optionales <b>Objekt</b>. <b>True</b>, wenn das OLE-Objekt als Symbol angezeigt werden soll. Der Standardwert ist <b>False</b>.</param>
+        <param name="IconFileName">Optionales <b>Objekt</b>. Die Datei, die das anzuzeigende Symbol enthält.</param>
+        <param name="IconIndex">Optionales <b>Objekt</b>. Die Indexnummer des Symbols in <paramref name="IconFileName" />. Die Reihenfolge der Symbole in der angegebenen Datei entspricht der Reihenfolge, in der die Symbole im dialogfeldsymbol ändern (Menü Einfügen, Dialogfeldobjekt) angezeigt werden, wenn das Kontrollkästchen als Symbol anzeigen aktiviert ist. Das erste Symbol in der Datei weist die Indexnummer 0 (Null) auf. Wenn kein Symbol mit der angegebenen Indexnummer vorhanden ist <paramref name="IconFileName" />, wird das Symbol mit der Indexnummer 1 (das zweite Symbol in der Datei) verwendet. Der Standardwert ist 0 (Null).</param>
+        <param name="IconLabel">Optionales <b>Objekt</b>. Ein Bezeichnungsfeld (Beschriftung), das unter dem Symbol angezeigt wird.</param>
+        <summary>Konvertiert das angegebene OLE-Objekt von einer Klasse in eine andere, sodass Sie das Objekt in einer anderen Serveranwendung bearbeiten oder ändern können, wie das Objekt im Dokument angezeigt wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,11 +200,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAsIcon">
@@ -246,8 +231,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Objekt als Symbol angezeigt wird.</summary>
+        <summary><b>True</b>, wenn das angegebene Objekt als Symbol angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,8 +258,8 @@
         <Parameter Name="VerbIndex" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="VerbIndex">Optionales- <b>Objekt</b>. Das Verb, das das OLE-Objekt ausführen soll. Wenn dieses Argument ausgelassen wird, wird das Standardverb gesendet. Wenn das OLE-Objekt das angeforderte Verb nicht unterstützt, tritt ein Fehler auf. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdOLEVerb" /> Konstante.</param>
-        <summary>Fordert, dass ein OLE-Objekt eines seiner verfügbaren Verben ausführen – die Aktionen ein OLE-Objekt durchführt, um seinen Inhalt zu aktivieren. Jedes OLE-Objekt unterstützt einen Satz von Verben, die zu diesem Objekt gehören.</summary>
+        <param name="VerbIndex">Optionales <b>Objekt</b>. Das Verb, das das OLE-Objekt ausführen soll. Wenn dieses Argument nicht angegeben ist, wird das Standardverb gesendet. Wenn das erforderliche Verb nicht vom OLE-Objekt unterstützt wird, tritt ein Fehler auf. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdOLEVerb" /> Konstante sein.</param>
+        <summary>Fordert an, dass ein OLE-Objekt eines der verfügbaren Verben ausführt – die Aktionen, die ein OLE-Objekt zum Aktivieren des Inhalts benötigt. Jedes OLE-Objekt unterstützt einen Satz von Verben, die zu diesem Objekt gehören.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +314,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt das Symbol, das verwendet, wenn hat die <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" /> -Eigenschaft ist <b>True</b>: 0 (null) entspricht dem ersten Symbol, 1 entspricht dem zweiten Symbol usw.. Wenn dieses Argument ausgelassen wird, wird das erste Symbol (Standard) verwendet.</summary>
+        <summary>Gibt das Symbol zurück, das verwendet wird, wenn <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" /> die Eigenschaft auf <b>true</b>festgelegt ist: 0 (null) entspricht dem ersten Symbol, 1 entspricht dem zweiten Symbol usw. Wenn dieses Argument ausgelassen wird, wird das erste Symbol (Standard) verwendet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -361,7 +345,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Text unterhalb des Symbols für ein OLE-Objekt angezeigt wird.</summary>
+        <summary>Gibt den Text zurück, der unter dem Symbol für ein OLE-Objekt angezeigt wird, oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +376,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Programmdatei, in der das Symbol für ein OLE-Objekt gespeichert ist.</summary>
+        <summary>Gibt die Programmdatei zurück, in der das Symbol für ein OLE-Objekt gespeichert ist, oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,7 +404,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Pfad der Datei, in der das Symbol für ein OLE-Objekt gespeichert ist.</summary>
+        <summary>Gibt den Pfad der Datei zurück, in der das Symbol für ein OLE-Objekt gespeichert ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -448,12 +432,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Zeichenfolge, die verwendet wird, um den Teil der Quelldatei zu identifizieren, die verknüpft wird. Beispielsweise kann, wenn die Quelldatei eine Microsoft Excel-Arbeitsmappe ist, die <b>Label</b> -Eigenschaft "Arbeitsmappe1! zurückgegeben R3C1:R4C2 "Wenn das OLE-Objekt nur einige wenige Zellen aus dem Arbeitsblatt enthält.</summary>
+        <summary>Gibt eine Zeichenfolge zurück, die dazu verwendet wird, den Teil der Quelldatei zu kennzeichnen, der verknüpft wurde. Wenn es sich bei der Quelldatei beispielsweise um eine Microsoft Excel Arbeitsmappe handelt, gibt die <b>Label</b> -Eigenschaft möglicherweise "Workbook1! R3C1: R4C2 ", wenn das OLE-Objekt nur einige Zellen aus dem Arbeitsblatt enthält.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft funktioniert nur für Formen, Inlineformen oder Feldern, die verknüpfte OLE-Objekte sind.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft funktioniert nur bei Formen, Inlineformen oder Feldern, die verknüpfte OLE-Objekte sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -563,13 +545,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> zugewiesene Formatierung in Microsoft Word für verknüpfte OLE-Objekte, wie etwa eine Tabelle verknüpfte Microsoft Excel-Tabelle.</summary>
+        <summary><b>True</b>, um die in Microsoft Word zugewiesene Formatierung für verknüpfte OLE-Objekte (beispielsweise mit Microsoft Excel-Arbeitsblättern verknüpfte Tabellen) beizubehalten.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn <b>PreserveFormattingOnUpdate</b> auf <b>True</b>festgelegt ist, wird vorgenommenen Änderungen für das Objekt in Word-Formatierung beibehalten, wenn das Objekt aktualisiert wird. Word aktualisiert nur den Inhalt des verknüpften Objekts.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn <b>PreserveFormattingOnUpdate</b> auf <b>True</b>festgelegt ist, werden in Word vorgenommene Formatierungsänderungen beim Aktualisieren des Objekts beibehalten. Word aktualisiert nur den Inhalt des verknüpften Objekts.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProgID">
@@ -597,12 +576,10 @@
       <Docs>
         <summary>Gibt die ProgID für das angegebene OLE-Objekt zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>ProgID</b> und <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" /> Eigenschaften (standardmäßig) die gleiche Zeichenfolge zurück. Sie können jedoch ändern, die <b>ClassType</b> -Eigenschaft für DDE-Verknüpfungen.</para>
+        <remarks><para>Bei <b></b> der ProgID <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" /> und den Eigenschaften wird (standardmäßig) die gleiche Zeichenfolge zurückgegeben. Sie können die <b>ClassType</b>-Eigenschaft für DDE-Verknüpfungen aber ändern.</para>
           <para>
-            <b>Sicherheit</b> Dynamic Data Exchange (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich eine sicherere Alternative zu DDE.</para>
-          <para />
-        </remarks>
+            <b>Sicherheit</b>  Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

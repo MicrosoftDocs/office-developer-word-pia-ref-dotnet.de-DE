@@ -1,13 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Word.WebOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0dd920613af1fb3693498c891ecd9ed8d8ff5348" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669074" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f88f221df7d67e0a725679f57bd1b9a883ba6147" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142731" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Enthält Attribute der Dokumentebene, die von Microsoft Word verwendet werden, wenn Sie ein Dokument als Webseite speichern oder eine Webseite öffnen.</summary>
-    <remarks>
-      <para>Sie können zurück oder legen Sie Attribute auf Anwendungsebene (global) oder auf Dokumentebene. (Beachten Sie, dass Attributwerte aus einem Dokument in eine andere unterschiedlich sein können, hängt vom Attributwert zum Zeitpunkt des Dokuments gespeichert wurde). Auf Dokumentebene Attribut Einstellungen haben Vorrang vor Einstellungen auf Anwendungsebene-Attribut. Attribute auf Anwendungsebene befinden sich der <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> -Objekt.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" /> -Eigenschaft auf das <b>WebOptions</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Sie können Attribute entweder auf der Anwendungsebene (Global) oder auf Dokumentebene zurückgeben oder festlegen. (Beachten Sie, dass Attributwerte je nach Attributwert zu dem Zeitpunkt, zu dem das Dokument gespeichert wurde, von einem Dokument in einem anderen unterschiedlich sein können.) Attributeinstellungen auf Dokumentebene setzen Attributeinstellungen auf Anwendungsebene außer Kraft. Attribute auf Anwendungsebene sind im- <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> Objekt enthalten.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" /> die-Eigenschaft, um das WebOptions-Objekt zurückzugeben. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowPNG">
@@ -60,13 +50,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> wenn PNG (Portable Network Graphics) als Bildformat zulässig ist, wenn Sie ein Dokument als Webseite speichern. <b>False,</b> wenn PNG als Ausgabeformat nicht zulässig ist. Der Standardwert lautet <b>False</b>.</summary>
+        <summary><b>True</b>, falls PNG (Portable Network Graphics) als Bildformat beim Speichern eines Dokuments als Webseite zugelassen ist. <b>False</b>, wenn PNG nicht als Ausgabeformat zugelassen ist. Der Standardwert ist <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn Sie Bilder im PNG-Format speichern und die Zielwebbrowser sind das PNG-Format unterstützen, möglicherweise die Bildqualität erhöhen oder verringern Sie die Größe der betreffenden Bilddateien und daher verringern Sie die Downloadzeit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie Bilder im PNG-Format speichern und die Zielwebbrowser das PNG-Format unterstützen, können Sie ggf. die Bildqualität verbessern oder die Größe der Bilddateien reduzieren und somit die Downloadzeit verringern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,23 +110,21 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBrowserLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt, oder legt eine Konstante, die Version des Webbrowsers darstellt, der angegebenen Webseite als Ziel soll.</summary>
+        <summary>Gibt eine Konstante zurück, die die Ebene des Webbrowsers darstellt, für die Sie die angegebene Webseite als Ziel festlegen möchten, oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" /> -Eigenschaft auf <b>False</b>festgelegt ist. </para>
+        <remarks><para>Diese Eigenschaft wird ignoriert, wenn <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" /> die Eigenschaft auf <b>false</b>festgelegt ist. </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" /> kann eine der folgenden <b>WdBrowserLevel</b> -Konstanten sein: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" />Dies kann eine der folgenden <b>WdBrowserLevel</b> -Konstanten sein: </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer6 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer6</b>
           </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer5 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer5</b>
           </para>
           <para>
             <b>wdBrowserLevelV4</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -167,11 +152,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -200,7 +183,7 @@
         <ReturnType>Microsoft.Office.Core.MsoEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen des Dokuments Codierung (Codepage oder Zeichensatz) vom Webbrowser verwendet werden soll, wenn Sie das gespeicherte Dokument anzeigen.</summary>
+        <summary>Gibt die Codierung des Dokuments (Codepage oder Zeichensatz) zurück, die vom Webbrowser zum Anzeigen des gespeicherten Dokuments verwendet werden soll, oder legt diese Codierung fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,17 +211,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Ordnersuffix, die Microsoft Word verwendet werden, wenn Sie ein Dokument als Webseite speichern, langen Dateinamen verwendet und die unterstützenden Dateien in einem separaten Ordner speichern (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> und <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> Eigenschaften auf <b>True</b>festgelegt sind).</summary>
+        <summary>Gibt das Ordnersuffix zurück, das Microsoft Word verwendet, wenn Sie ein Dokument als Webseite speichern, lange Dateinamen verwenden und die unterstützenden Dateien in einem separaten Ordner speichern möchten (also, wenn <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> Eigenschaften "and" auf " <b>true</b>" festgelegt sind).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Neu erstellte Dokumente verwenden das Suffix zurückgegeben wird durch die <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> Objekt. Der Wert der <b>FolderSuffix</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> Objekt kann aus dem des <b>DefaultWebOptions</b> -Objekts unterscheiden, wenn das Dokument zuvor in einer anderen Sprachversion von Microsoft Word bearbeitet wurde. Sie können die <see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" /> -Methode, um das Suffix in die Sprache ändern, die aktuell in Microsoft Office.</para>
-          <para>Wird standardmäßig der Name des unterstützenden Ordners ist der Name der Webseite plus einem Unterstrich (_), einem Punkt (.), oder ein Bindestrich (-) und das Wort "Files" (in der Sprache der Version von Word, in dem die Datei als Webseite gespeichert wurde). Nehmen wir beispielsweise an, dass Sie die niederländische Version von Word verwenden, um eine Datei namens "Page1" als Webseite speichern. Der Standardname des unterstützenden Ordners ist Page1_bestanden.</para>
-          <para>Die folgende Tabelle listet alle Sprachversionen von Office und dem jeweiligen <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> Eigenschaft und das Ordnersuffix. Für Sprachen, die in der Tabelle nicht aufgeführt sind, wird das Suffix "Files" verwendet.</para>
+        <remarks><para>Neu erstellte Dokumente verwenden das Suffix, das von <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> der Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> Objekts zurückgegeben wird. Der Wert der <b>FolderSuffix</b> -Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> Objekts kann von dem des <b>DefaultWebOptions</b> -Objekts abweichen, wenn das Dokument zuvor in einer anderen Sprachversion von Microsoft Word bearbeitet wurde. Sie können die <see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" /> -Methode verwenden, um das Suffix in die Sprache zu ändern, die Sie derzeit in Microsoft Office verwenden.</para>
+          <para>Standardmäßig besteht der Name des Unterstützungsordners aus dem Namen der Webseite und einem Unterstrich (_), einem Punkt (.) oder einem Bindestrich (-) sowie dem Wort files (das in der Sprache der Version von Word angezeigt wird, in der die Datei als Webseite gespeichert wurde). Wenn Sie beispielsweise die niederländische Sprachversion von Word verwenden, um eine Datei Page1 als Webseite zu speichern, lautet der Standardname des Unterstützungsordners Page1_bestanden.</para>
+          <para>In der folgenden Tabelle sind die einzelnen Sprachversionen von Office aufgeführt und <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> der zugehörige Eigenschaftswert und das Ordnersuffix angegeben. Bei Sprachen, die nicht in der Tabelle aufgeführt sind, wird das Suffix FILES verwendet.</para>
           <list type="table">
             <item>
               <description>Arabisch</description>
               <description>1025</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Baskisch</description>
@@ -253,7 +235,7 @@
             <item>
               <description>Bulgarisch</description>
               <description>1026</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Katalanisch</description>
@@ -261,14 +243,14 @@
               <description>_fitxers</description>
             </item>
             <item>
-              <description>Chinesisch - vereinfacht</description>
+              <description>Chinesisch - Vereinfacht</description>
               <description>2052</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
-              <description>Chinesisch - traditionell</description>
+              <description>Chinesisch - Traditionell</description>
               <description>1028</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Kroatisch</description>
@@ -281,17 +263,17 @@
               <description>_soubory</description>
             </item>
             <item>
-              <description>Dänische</description>
+              <description>Dänisch</description>
               <description>1030</description>
-              <description>-File-Server</description>
+              <description>-Filer</description>
             </item>
             <item>
-              <description>Niederländische</description>
+              <description>Niederländisch</description>
               <description>1043</description>
               <description>_bestanden</description>
             </item>
             <item>
-              <description>Englische</description>
+              <description>Englisch</description>
               <description>1033</description>
               <description>_files</description>
             </item>
@@ -313,17 +295,17 @@
             <item>
               <description>Deutsch</description>
               <description>1031</description>
-              <description>Erfahren Sie mehr über</description>
+              <description>-Dateien</description>
             </item>
             <item>
               <description>Griechisch</description>
               <description>1032</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Hebräisch</description>
               <description>1037</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Ungarisch</description>
@@ -331,23 +313,23 @@
               <description>_elemei</description>
             </item>
             <item>
-              <description>Italienische</description>
+              <description>Italienisch</description>
               <description>1040</description>
-              <description>_Datei</description>
+              <description>_file</description>
             </item>
             <item>
-              <description>Japanische</description>
+              <description>Japanisch</description>
               <description>1041</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Koreanisch</description>
               <description>1042</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
           </list>
           <para>
-            <b>LanguageID</b> -Eigenschaftswerte</para>
+            <b>Sprach</b> -Eigenschaftswerte</para>
           <list type="table">
             <item>
               <description>Lettisch</description>
@@ -362,7 +344,7 @@
             <item>
               <description>Norwegisch</description>
               <description>1044</description>
-              <description>-File-Server</description>
+              <description>-Filer</description>
             </item>
             <item>
               <description>Polnisch</description>
@@ -377,17 +359,17 @@
             <item>
               <description>Rumänisch</description>
               <description>1048</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
-              <description>Russische</description>
+              <description>Russisch</description>
               <description>1049</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Serbisch (Kyrillisch)</description>
               <description>3098</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Serbisch (Lateinisch)</description>
@@ -395,9 +377,9 @@
               <description>_fajlovi</description>
             </item>
             <item>
-              <description>Slowakische</description>
+              <description>Slowakischen</description>
               <description>1051</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Slowenisch</description>
@@ -412,12 +394,12 @@
             <item>
               <description>Schwedisch</description>
               <description>1053</description>
-              <description>-File-Server</description>
+              <description>-Filer</description>
             </item>
             <item>
-              <description>Thailändische</description>
+              <description>Thailändisch</description>
               <description>1054</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Türkisch</description>
@@ -427,16 +409,15 @@
             <item>
               <description>Ukrainisch</description>
               <description>1058</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
             <item>
               <description>Vietnamesisch</description>
               <description>1066</description>
-              <description>Files</description>
+              <description>. Files</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OptimizeForBrowser">
@@ -465,8 +446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Word neue Webseiten optimiert erstellt in Word für den Webbrowser durch die <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" /> Eigenschaft (für die <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> Objekt). <b>True,</b> Wenn Word die angegebene Webseite für den Webbrowser von optimiert die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> Eigenschaft (für die <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> Objekt).</summary>
+        <summary><b>True</b> , wenn Microsoft Word neue Webseiten optimiert, die in Word für den Webbrowser erstellt wurden, der <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" /> durch die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> (für das Objekt) angegeben wurde. <b>True</b> , wenn Word die angegebene Webseite für den Webbrowser optimiert, der durch die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> -Eigenschaft angegeben wird ( <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> für das Objekt).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -497,15 +477,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn alle werden Hilfsdateien, wie Hintergrundbilder und Grafiken, beim Speichern des angegebenen Dokuments als Webseite in einem separaten Ordner zusammengefasst. <b>False,</b> Wenn Hilfsdateien in demselben Ordner wie die Webseite gespeichert werden. Der Standardwert ist <b>True</b>.</summary>
+        <summary><b>True</b>, wenn alle Unterstützungsdateien, wie z.B. Hintergrundstrukturen und Grafiken, beim Speichern des angegebenen Dokuments als Webseite in einem separaten Ordner angeordnet werden. <b>False</b>, wenn die Unterstützungsdateien im gleichen Ordner wie die Webseite gespeichert werden. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der neue Ordner wird erstellt, in dem Ordner, in dem Sie die Webseite gespeichert haben, und nach dem Dokument benannt wird. Wenn langen Dateinamen verwendet werden, wird der Name des Ordners ein Suffix hinzugefügt. Die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> -Eigenschaft gibt das Ordnersuffix für die Unterstützung von Sprachen ausgewählt oder installiert oder das Standardsuffix Ordner wither.</para>
-          <para>Sie ein Dokument speichern, zuvor mit der <b>OrganizeInFolder</b> -Eigenschaft auf einen anderen Wert festgelegt wurde, Microsoft Word automatisch verschiebt die Hilfsdateien in oder aus dem Ordner.</para>
-          <para>, Wenn Sie keine langen Dateinamen verwenden (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> -Eigenschaft auf <b>False</b>festgelegt ist), speichert Word automatisch alle unterstützenden Dateien in einem separaten Ordner. Die Dateien können nicht im gleichen Ordner wie die Webseite gespeichert werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der neue Ordner wird in dem Ordner erstellt, in dem Sie die Webseite gespeichert haben, und wird nach dem Dokument benannt. Wenn Sie lange Dateinamen verwenden, wird dem Namen des Ordners ein Suffix hinzugefügt. Die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> -Eigenschaft gibt welken das Ordnersuffix für die Sprachunterstützung zurück, die Sie ausgewählt oder installiert haben, oder das Standardordnersuffix.</para>
+          <para>Beim Speichern eines Dokuments, dessen <b>OrganizeInFolder</b>-Eigenschaft beim letzten Speichern auf einen anderen Wert festgelegt war, werden die Hilfsdateien von Microsoft Word entsprechend in den Ordner oder aus dem Ordner verschoben.</para>
+          <para>Wenn Sie keine langen Dateinamen verwenden (wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> Eigenschaft auf <b>false</b>festgelegt ist), speichert Word automatisch alle unterstützenden Dateien in einem separaten Ordner. Die Dateien dürfen nicht im gleichen Ordner wie die Webseite gespeichert werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -562,14 +539,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Dichte (Pixel pro Zoll) von Grafiken und Tabellenzellen auf einer Webseite.</summary>
+        <summary>Gibt die Dichte (Pixel pro Zoll) von Grafikbildern und Tabellenzellen auf einer Webseite zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bereich von Einstellungen liegt normalerweise zwischen 19 und 480 und gemeinsame Einstellungen für beliebte Screen Größen sind 72, 96 und 120. Die Standardeinstellung ist 96.</para>
-          <para>Bestimmt diese Eigenschaft die Größe von Bildern und Zellen auf der angegebenen Webseite relativ zu der Größe des Texts, wenn Sie das gespeicherte Dokument in einem Webbrowser anzeigen. Die physischen Dimensionen der das resultierende Bild oder die Zelle sind das Ergebnis der ursprünglichen Dimensionen (in Zoll) und der Anzahl der Pixel pro Zoll.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" /> -Eigenschaft auf die optimale Bildschirmgröße für die Zielwebbrowser festlegen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der Einstellungsbereich beträgt normalerweise 19 bis 480; gebräuchliche Einstellungen für verbreitete Bildschirmgrößen betragen 72, 96 und 120. Die Standardeinstellung ist 96.</para>
+          <para>Diese Eigenschaft bestimmt die Größe der Bilder und Zellen auf der angegebenen Webseite relativ zu der Textgröße, wenn das gespeicherte Dokument in einem Webbrowser angezeigt wird. Die physikalischen Abmessungen des resultierenden Bildes oder der resultierenden Zelle ergeben sich aus den ursprünglichen Abmessungen (in Zoll) multipliziert mit der Anzahl der Pixel pro Zoll.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" /> die-Eigenschaft, um die optimale Bildschirmgröße für die Zielbrowser festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnCSS">
@@ -598,14 +573,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn für die Schriftart, die Formatierung beim Anzeigen eines gespeicherten Dokuments in einem Webbrowser cascading Stylesheets (CSS) verwendet werden.</summary>
+        <summary><b>True</b>, wenn Sie beim Anzeigen eines gespeicherten Dokuments in einem Webbrowser Cascading Stylesheets (CSS) zum Formatieren der Schriftart verwenden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word erstellt eine Datei des cascading Stylesheets und speichert sie in den angegebenen Ordner oder im gleichen Ordner wie die Webseite, je nach Wert der <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> Eigenschaft. <b>False,</b> wenn HTML &lt;Schriftart&gt; Tags und cascading Stylesheets verwendet werden. Der Standardwert lautet <b>True</b>.</para>
-          <para>Sie sollten diese Eigenschaft auf <b>True</b> festlegen, wenn Ihr Webbrowser unterstützt cascading Style sheet, da dadurch Sie exaktere Layout und die Formatierung erhalten auf Ihrer Webseite steuern und mehr wie Ihrem Dokument darstellen (wie in Word angezeigt).</para>
-          <para />
-        </remarks>
+        <remarks><para>In Microsoft Word wird eine Cascading Stylesheet-Datei erstellt, die je nach Wert der <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> Eigenschaft im angegebenen Ordner oder im gleichen Ordner wie die Webseite gespeichert wird. <b>False</b> , wenn &lt;HTML&gt; -Schriftart Tags und Cascading Stylesheets verwendet werden. Der Standardwert ist <b>True</b>.</para>
+          <para>Sie sollten diese Eigenschaft auf <b>true</b> festlegen, wenn Ihr Webbrowser Cascading Stylesheets unterstützt, da dies Ihnen genauere Layout-und Formatierungssteuerelemente auf Ihrer Webseite bietet und es Ihrem Dokument ähnelt (wie es in Word angezeigt wird).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnVML">
@@ -634,14 +606,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Bilddateien aus Zeichnungsobjekten beim Speichern eines Dokuments als Webseite nicht generiert werden. <b>False,</b> Wenn Bilder generiert werden. Der Standardwert lautet <b>False</b>.</summary>
+        <summary><b>True</b>, wenn beim Speichern eines Dokuments als Webseite aus Zeichnungsobjekten keine Bilddateien generiert werden. <b>False</b>, wenn Bilder generiert werden. Der Standardwert ist <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Können Sie Dateigrößen reduzieren, indem keine Bilder für Zeichnungsobjekte generieren, wenn Ihr Webbrowser Vector Markup Language (VML) unterstützt. Beispielsweise Microsoft Internet Explorer 5 dieses Feature unterstützt, und Sie sollten die <b>RelyOnVML</b> -Eigenschaft auf <b>True</b> festlegen, wenn Sie diesen Browser verwenden möchten. Für Browser, die nicht VML unterstützen, wird das Bild nicht angezeigt, wenn Sie eine Webseite gespeichert mit dieser Eigenschaft aktiviert anzeigen.</para>
-          <para>Generieren Sie keine Bilder, wenn Ihre Webseite Bilddateien verwendet, die Sie zuvor erstellt haben und der Speicherort, in dem Sie das Dokument speichern, von Ihren endgültigen Speicherort der Seite auf dem Webserver unterscheidet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sofern Ihr Webbrowser VML (Vector Markup Language) unterstützt, können Sie die Dateigrößen reduzieren, indem Sie keine Bilder für Zeichnungsobjekte generieren. Dieses Feature wird zum Beispiel von Microsoft Internet Explorer 5 unterstützt, und Sie sollten die <b>RelyOnVML</b>-Eigenschaft auf <b>True</b> festlegen, wenn Sie diesen Browser verwenden möchten. In Browsern, die VML nicht unterstützen, wird kein Bild angezeigt, wenn Sie eine Webseite anzeigen, bei der diese Eigenschaft beim Speichern aktiviert war.</para>
+          <para>Generieren Sie keine Bilder, wenn Ihre Webseite Bilddateien verwendet, die Sie zu einem früheren Zeitpunkt generiert haben, und wenn der Speicherort des Dokuments sich vom endgültigen Speicherort der Seite auf dem Webserver unterscheidet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenSize">
@@ -670,45 +639,43 @@
         <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die ideale minimale Bildschirmgröße (Breite x Höhe in Pixel), die Sie beim Anzeigen des gespeicherten Dokuments in einem Webbrowser verwenden sollten.</summary>
+        <summary>Gibt die ideale minimale Bildschirmgröße (Breite mal Höhe in Pixel) zurück, die zum Anzeigen des gespeicherten Dokuments in einem Webbrowser verwendet werden sollte, oder legt diese Größe fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoScreenSize" />Dies kann eine der folgenden <b>MsoScreenSize</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoScreenSize" />kann eine der folgenden <b>MsoScreenSize</b> -Konstanten sein: </para>
-          <para>
-            <b>msoScreenSize1024x768 </b>
+            <b>msoScreenSize1024x768</b>
           </para>
           <para>
-            <b>msoScreenSize1152x882 </b>
+            <b>msoScreenSize1152x882</b>
           </para>
           <para>
-            <b>msoScreenSize1152x900 </b>
+            <b>msoScreenSize1152x900</b>
           </para>
           <para>
-            <b>msoScreenSize1280x1024 </b>
+            <b>msoScreenSize1280x1024</b>
           </para>
           <para>
             <b>msoScreenSize1600x1200</b>
           </para>
           <para>
-            <b> msoScreenSize1800x1440 </b>
+            <b>msoScreenSize1800x1440</b>
           </para>
           <para>
-            <b>msoScreenSize1920x1200 </b>
+            <b>msoScreenSize1920x1200</b>
           </para>
           <para>
-            <b>msoScreenSize544x376 </b>
+            <b>msoScreenSize544x376</b>
           </para>
           <para>
-            <b>msoScreenSize640x480 </b>
+            <b>msoScreenSize640x480</b>
           </para>
           <para>
-            <b>msoScreenSize720x512 </b>
+            <b>msoScreenSize720x512</b>
           </para>
           <para>
             <b>msoScreenSize800x600</b> Standard</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetBrowser">
@@ -737,24 +704,22 @@
         <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest oder gibt eine Konstante, die als Zielbrowser für Dokumente, die in einem Webbrowser angezeigt darstellt.</summary>
+        <summary>Legt fest oder gibt eine Konstante zurück, die den Zielbrowser für Dokumente darstellt, die in einem Webbrowser angezeigt werden.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />Dies kann eine der folgenden <b>MsoTargetBrowser</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />kann eine der folgenden <b>MsoTargetBrowser</b> -Konstanten sein: </para>
+            <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4,0. </para>
           <para>
-            <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0.</para>
+            <b>msoTargetBrowserIE5</b> Internet Explorer 5. </para>
           <para>
-            <b>msoTargetBrowserIE5</b> InternetExplorer 5.</para>
+            <b>msoTargetBrowserIE6</b> Internet Explorer 6. </para>
           <para>
-            <b>msoTargetBrowserIE6</b> InternetExplorer 6.</para>
+            <b>msoTargetBrowserV3</b> Netscape Navigator 3. x. </para>
           <para>
-            <b>msoTargetBrowserV3</b> Netscape Navigator 3.x.</para>
-          <para>
-            <b>msoTargetBrowserV4</b> Netscape Navigator 4.x.</para>
-          <para>Der <b>TargetBrowser</b> -Eigenschaft legt die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /><b>-Eigenschaft, aber</b> nur wichtig ist wenn die <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" /> -Eigenschaft auf <b>True</b>festgelegt ist. Andernfalls wird sie ignoriert. <b>TargetBrowser</b> -Eigenschaft, jedoch nicht ignoriert, und legt Browserebene für alle Web-Dokumente oder für einen einzelnen Webdokument.</para>
-          <para />
-        </remarks>
+            <b>msoTargetBrowserV4</b> Netscape Navigator 4. x.</para>
+          <para>Die <b>TargetBrowser</b> -Eigenschaft legt <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> die Eigenschaft fest, aber <b>BrowserLevel</b> ist nur wichtig <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" /> , wenn die Eigenschaft auf <b>true</b>festgelegt ist. Andernfalls wird Sie ignoriert. Die <b>TargetBrowser</b> -Eigenschaft wird jedoch nicht ignoriert, und die Browserebene wird für alle Webdokumente oder für ein einzelnes Webdokument festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultFolderSuffix">
@@ -779,11 +744,9 @@
       <Parameters />
       <Docs>
         <summary>Legt das Ordnersuffix für das angegebene Dokument auf das Standardsuffix für die ausgewählte oder installierte Sprachunterstützung fest.</summary>
-        <remarks>
-          <para>Microsoft Word verwendet das Ordnersuffix, wenn Sie ein Dokument als Webseite speichern, langen Dateinamen verwendet, und wählen Sie zum Speichern von Hilfsdateien in einem separaten Ordner (d. h., wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> und <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> Eigenschaften auf <b>True</b>festgelegt sind).</para>
-          <para>Wird das Suffix im Namen Ordners nach den Namen des Dokuments angezeigt. Wenn das Dokument "Doc1" aufgerufen wird und die Sprache Englisch ist, lautet der Ordnername Doc1_files. Die verfügbaren Ordnersuffixe der <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> Thema-Eigenschaft.</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word verwendet das Ordnersuffix, wenn Sie ein Dokument als Webseite speichern, lange Dateinamen verwenden und die unterstützenden Dateien in einem separaten Ordner speichern (wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> Eigenschaften "and <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> " auf " <b>true</b>" festgelegt sind).</para>
+          <para>Das Suffix wird im Ordnernamen nach dem Dokumentnamen angezeigt. Wenn das Dokument beispielsweise "Doc1" heißt und die Sprache Englisch ist, lautet der Ordnername Doc1_files. Die verfügbaren Ordnersuffixe werden im <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> Thema Property aufgeführt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLongFileNames">
@@ -812,13 +775,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn langen Dateinamen verwendet werden, wenn Sie das Dokument als Webseite speichern. <b>False,</b> Wenn keine langen Dateinamen verwendet werden und das DOS-Dateinamenformat (8.3) wird verwendet. Der Standardwert ist <b>True</b>.</summary>
+        <summary><b>True</b>, wenn beim Speichern des Dokuments als Webseite lange Dateinamen verwendet werden. <b>False</b>, wenn keine langen Dateinamen, sondern das DOS-Dateinamenformat (8.3) verwendet wird. Der Standardwert ist <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn Sie keine langen Dateinamen verwenden, und das Dokument über Unterstützungsdateien verfügt, speichert Microsoft Word automatisch diese Dateien in einem separaten Ordner. Verwenden Sie andernfalls die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> Eigenschaft, um zu bestimmen, ob Hilfsdateien in einem separaten Ordner gespeichert sind.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie keine langen Dateinamen verwenden und in Ihrem Dokument Hilfsdateien vorhanden sind, werden diese Dateien von Microsoft Word automatisch in einem separaten Ordner gespeichert. Verwenden Sie andernfalls die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> -Eigenschaft, um zu bestimmen, ob unterstützende Dateien in einem separaten Ordner angeordnet sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

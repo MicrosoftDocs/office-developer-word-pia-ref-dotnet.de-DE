@@ -1,13 +1,5 @@
 <Type Name="Column" FullName="Microsoft.Office.Interop.Word.Column">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c3fd80490074f82dd9583409f8f86882d94dd68" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669704" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Column" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e45caf40bd3b70419995c7ac70846ec49a9f5e99" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146164" /></Metadata><TypeSignature Language="C#" Value="public interface Column" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Column" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Column" />
   <TypeSignature Language="VB.NET" Value="Public Interface Column" />
@@ -26,15 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine einzelne Tabellenspalte dar. Das <b>Column</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Columns" /> Auflistung.</summary>
-    <remarks>
-      <para>Die <b>Columns</b> -Auflistung enthält alle Spalten in einer Tabelle, einer Auswahl oder einer Range.</para>
-      <para>Verwendung <b>Spalten</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein einzelnes <b>Column</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Spalte in der <b>Columns</b> -Auflistung (von links nach rechts gezählt).</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Cell.Column" /> -Eigenschaft mit einem <see cref="T:Microsoft.Office.Interop.Word.Cell" /> Objekts, um ein <b>Column</b> -Objekt zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> -Methode, um eine Spalte zu einer Tabelle hinzuzufügen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> -Eigenschaft mit einem <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekts, um die aktuelle Spaltennummer zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine einzelne Tabellenspalte dar. Das <b>Column</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Columns" /> Auflistung.</summary>
+    <remarks><para>Die <b>Columns</b> -Auflistung enthält alle Spalten in einer Tabelle, die Markierung oder den Bereich.</para>
+      <para>Verwenden <b></b>Sie Columns<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>Column</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Spalte in der <b>Columns</b> -Auflistung (von links nach rechts gezählt).</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Cell.Column" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Cell" /> mit einem-Objekt, um ein <b>Column</b> -Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> die-Methode, um einer Tabelle eine Spalte hinzuzufügen. </para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Selection" /> mit einem Objekt, um die aktuelle Spaltennummer zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,10 +77,8 @@
       <Parameters />
       <Docs>
         <summary>Ändert die Breite einer Tabellenspalte und passt diese an die Breite des Texts an, ohne die Art zu ändern, wie der Text in den Zellen umbrochen wird.</summary>
-        <remarks>
-          <para>Wenn die Tabelle bereits so breit wie der Abstand zwischen dem linken und rechten Seitenrand ist, hat diese Methode keine Auswirkung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die Tabelle bereits die Breite des Abstands zwischen dem linken und rechten Rand aufweist, hat diese Methode keinerlei Auswirkung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -119,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.Borders" /> -Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.Borders" /> einer Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Cells" /> -Auflistung, die die Tabellenzellen in einer Spalte darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Cells" /> Auflistung zurück, die die Tabellenzellen in einer Spalte darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,13 +163,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -232,7 +218,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt einen Wert zurück, der die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, ob die angegebene Spalte die erste in der Tabelle ist.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob die angegebene Spalte der erste in der Tabelle ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,7 +274,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, ob die angegebene Spalte in der Tabelle die letzte ist.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob die angegebene Spalte der letzte in der Tabelle ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,12 +302,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Schachtelungsebene der angegebenen Spalte zurück.</summary>
+        <summary>Gibt die Schachtelungsebene der angegebenen Zelle zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die äußerste Tabelle hat eine Verschachtelungsebene 1. Die Schachtelungsebene der einzelnen nacheinander geschachtelte Tabelle ist eine höher ist als der vorherigen Tabelle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die äußerste Tabelle liegt auf Verschachtelungsbene 1. Die Verschachtelungsebene jeder folgenden geschachtelten Tabelle liegt um 1 höher als die der vorhergehenden Tabelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -375,7 +359,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,7 +390,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die bevorzugte Breite (in Punkt oder als Prozentsatz der Fensterbreite) für die angegebene Spalte.</summary>
+        <summary>Gibt die bevorzugte Breite (in Punkt oder als prozentualen Anteil der Fensterbreite) für die angegebene Spalte zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -437,7 +421,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPreferredWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die bevorzugte Maßeinheit für die Breite der angegebenen Spalte.</summary>
+        <summary>Gibt die bevorzugte Maßeinheit zurück, die für die Breite der angegebenen Spalte verwendet werden soll, oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -491,7 +475,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
+        <summary>Markiert das angegebene Objekt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,12 +504,10 @@
       </Parameters>
       <Docs>
         <param name="ColumnWidth">Die Breite der angegebenen Spalte in Punkt.</param>
-        <param name="RulerStyle">Ein Wert, der die steuert Zellenbreiten durch Microsoft Word.</param>
+        <param name="RulerStyle">Ein Wert, der steuert, wie Microsoft Word die Zellenbreite anpasst.</param>
         <summary>Legt die Breite einer Spalte in einer Tabelle fest.</summary>
-        <remarks>
-          <para>Die <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> Verhalten gilt für Tabellen linksbündig ausgerichtet. Verhalten von <b>WdRulerStyle nicht</b> für zentrierten und rechtsbündigen Tabellen kann unerwartete sein. in diesen Fällen die <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> Methode sollte mit Vorsicht verwendet werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> Verhalten gilt für Links ausgerichtete Tabellen. Das <b>WdRulerStyle</b> -Verhalten für zentrierte und rechtsbündige Tabellen kann unerwartet sein; in diesen Fällen sollte die <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> Methode mit Bedacht verwendet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -551,7 +533,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt, das auf die Formatierung der Schattierung des angegebenen Objekts verweist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -587,21 +569,19 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ExcludeHeader">Ein Wert, der angibt, ob die Kopfzeile der erste Zeile oder Absatz wird vom Sortiervorgang ausgeschlossen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="SortFieldType">Der Typ der Sortierung für die Spalte. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> Konstanten.</param>
-        <param name="SortOrder">Die Sortierreihenfolge für die Spalte verwenden. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> Konstante.</param>
-        <param name="CaseSensitive">Ein Wert, der angibt, ob mit Groß-und Kleinschreibung sortiert. Der Standardwert lautet <b>False</b>.</param>
-        <param name="BidiSort">Ein Wert, der angibt, ob sortieren basierend auf rechts-nach-links-Sprache-Regeln. Je nach ausgewählter oder installierter Sprachunterstützung, beispielsweise Deutsch (Standard), ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
-        <param name="IgnoreThe">Ein Wert, der angibt, ob die arabische Buchstabe Alef Lam beim Sortieren von Text in einer rechts-nach-links-Sprache ignoriert werden sollen. Je nach ausgewählter oder installierter Sprachunterstützung, beispielsweise Deutsch (Standard), ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
-        <param name="IgnoreKashida">Ein Wert, der angibt, ob beim Sortieren von Text in rechts-nach-links-Sprache Kashidas zu ignorieren. Je nach ausgewählter oder installierter Sprachunterstützung, beispielsweise Deutsch (Standard), ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
-        <param name="IgnoreDiacritics">Ein Wert, der angibt, ob die bidirektionale Steuerzeichen ignoriert beim Sortieren von Text in einer rechts-nach-links-Sprache. Je nach ausgewählter oder installierter Sprachunterstützung, beispielsweise Deutsch (Standard), ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
-        <param name="IgnoreHe">Ein Wert, der angibt, ob die Hebräisch ignorieren Zeichen er beim Sortieren von Text in einer rechts-nach-links-Sprache. Je nach ausgewählter oder installierter Sprachunterstützung, beispielsweise Deutsch (Standard), ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
-        <param name="LanguageID">Gibt die Sortiersprache an. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</param>
+        <param name="ExcludeHeader">Ein Wert, der angibt, ob die erste Zeile oder Absatz Kopfzeile aus dem Sortiervorgang ausgeschlossen werden soll. Der Standardwert ist <b>False</b>.</param>
+        <param name="SortFieldType">Die Sortierart für die Spalte. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> Konstanten sein.</param>
+        <param name="SortOrder">Die Sortierreihenfolge für die Spalte. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> Konstante sein.</param>
+        <param name="CaseSensitive">Ein Wert, der angibt, ob nach Groß-/Kleinschreibung sortiert werden soll. Der Standardwert ist <b>False</b>.</param>
+        <param name="BidiSort">Ein Wert, der angibt, ob basierend auf rechts-nach-links-Sprachregeln sortiert werden soll. Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
+        <param name="IgnoreThe">Ein Wert, der angibt, ob das Arabische Zeichen Alef Lam beim Sortieren von Texten mit rechts-nach-links-Sprache ignoriert werden soll. Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
+        <param name="IgnoreKashida">Ein Wert, der angibt, ob Kashidas beim Sortieren von Text mit rechts-nach-links-Sprache ignoriert werden soll. Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
+        <param name="IgnoreDiacritics">Ein Wert, der angibt, ob bidirektionale Steuerzeichen beim Sortieren von rechts-nach-links-Sprachtext ignoriert werden sollen. Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
+        <param name="IgnoreHe">Ein Wert, der angibt, ob das hebräische Zeichen, das er beim Sortieren von Texten mit rechts-nach-links-Sprache enthält, ignoriert werden soll. Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
+        <param name="LanguageID">Gibt die Sortiersprache an. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten sein.</param>
         <summary>Sortiert die angegebene Tabellenspalte.</summary>
-        <remarks>
-          <para>Wenn Sie Absätze innerhalb einer Tabellenzelle sortieren möchten, beziehen Sie nur die Absätze und nicht das Ende der Zelle Mark. Wenn Sie das Ende der Zelle Mark in einer Auswahl oder eines Bereichs einschließen und dann versuchen, die Absätze zu sortieren, zeigt Microsoft Word eine Meldung, dass es keine gültigen Datensätze zum Sortieren gefunden wurden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie Absätze in einer Tabellenzelle sortieren möchten, schließen Sie nur die Absätze und nicht die Markierung des Zellenendes ein. Wenn Sie das Zellenende in einer Markierung oder einem Bereich einfügen und dann versuchen, die Absätze zu sortieren, zeigt Microsoft Word eine Meldung an, die besagt, dass keine gültigen Datensätze zum Sortieren gefunden wurden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOld">
@@ -668,7 +648,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Breite des angegebenen Objekts in Punkt.</summary>
+        <summary>Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

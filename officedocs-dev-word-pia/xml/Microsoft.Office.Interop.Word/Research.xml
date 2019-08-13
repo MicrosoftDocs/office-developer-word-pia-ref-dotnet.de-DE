@@ -1,13 +1,5 @@
 <Type Name="Research" FullName="Microsoft.Office.Interop.Word.Research">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f3053e80208307ba476ee3813e42cec9f34c18c4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669033" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Research" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09c7f2651f0df71c7549952dfe0bc63e7b6d09f1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147683" /></Metadata><TypeSignature Language="C#" Value="public interface Research" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Research" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Research" />
   <TypeSignature Language="VB.NET" Value="Public Interface Research" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Bietet Zugriff auf den Recherchedienst in Microsoft Office Word.</summary>
+    <summary>Ermöglicht den Zugriff auf das Recherchedienst Feature von Microsoft Office Word.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,16 +73,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.Research.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD".  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <summary>Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.Research.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FavoriteService">
@@ -123,11 +109,9 @@
       <Docs>
         <summary>Dient zum Abrufen oder Festlegen einer Zeichenfolge, die den bevorzugten Recherchedienst angibt.</summary>
         <value>Gibt den bevorzugten Recherchedienst an.</value>
-        <remarks>
-          <para>Die Zeichenfolge, die festgelegt oder zurückgegeben, für diese Eigenschaft gibt die GUID der den bevorzugten Recherchedienst an.</para>
-          <para>Festlegen dieser Eigenschaft hat die gleiche Auswirkung wie die Auswahl einer bevorzugten Recherchediensts im Dialogfeld Optionen von Research in Microsoft Word 2010.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der String-Wert, der für diese Eigenschaft festgelegt oder zurückgegeben wird, gibt die GUID des bevorzugten Recherchediensts an.</para>
+          <para>Das Festlegen dieser Eigenschaft hat denselben Effekt wie das Auswählen eines bevorzugten Recherchediensts über das Dialogfeld Rechercheoptionen in Microsoft Word 2010.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsResearchService">
@@ -154,10 +138,8 @@
       </Parameters>
       <Docs>
         <param name="ServiceID">Gibt eine GUID an, die den Recherchedienst kennzeichnet.</param>
-        <summary>Gibt an, ob die GUID, in angegeben der <paramref name="ServiceID" /> Parameter einem derzeit konfigurierten Dienst entspricht.</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
+        <summary>Gibt an, ob die im- <paramref name="ServiceID" /> Parameter angegebene GUID einem derzeit konfigurierten Dienst entspricht.</summary>
+        <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +166,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> , das das übergeordnete Objekt des angegebenen repräsentiert <see cref="T:Microsoft.Office.Interop.Word.Research" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt einen Wert vom <b>Object</b> zurück, der das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Research" /> Objekts darstellt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,9 +200,8 @@
         <param name="ServiceID">Gibt eine GUID an, die den Recherchedienst kennzeichnet.</param>
         <param name="QueryString">Gibt die Abfragezeichenfolge an.</param>
         <param name="QueryLanguage">Gibt die Sprache der Abfragezeichenfolge an.</param>
-        <param name="UseSelection">
-          <b>True</b> , wenn die aktuelle Auswahl als Abfragezeichenfolge zu verwenden.  Dies überschreibt die <paramref name="QueryString" /> Parameter Wenn festgelegt. Standardwert ist <b>False</b>.</param>
-        <param name="LaunchQuery">True startet die Abfrage. False zeigt den Aufgabenbereich Recherchieren an, um den angegebenen Recherchedienst zu suchen.</param>
+        <param name="UseSelection"><b>True</b> , wenn die aktuelle Auswahl als Abfragezeichenfolge verwendet werden soll.  Dadurch wird der <paramref name="QueryString" /> Parameter bei Festlegung außer Kraft gesetzt. Standardwert ist <b>False</b>.</param>
+        <param name="LaunchQuery"><b>True,</b> wird die Abfrage gestartet. False zeigt den Aufgabenbereich Recherchieren an, der zum Durchsuchen des angegebenen Recherchediensts ausgelegt ist.</param>
         <summary>Gibt eine Rechercheabfrage an.</summary>
         <returns>Objekt</returns>
         <remarks>To be added.</remarks>
@@ -255,9 +234,7 @@
         <param name="LanguageFrom">Gibt die Sprache an, aus der übersetzt werden soll.</param>
         <param name="LanguageTo">Gibt die Sprache an, in die übersetzt werden soll.</param>
         <summary>Legt die Sprachen für den Übersetzungsdienst fest.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

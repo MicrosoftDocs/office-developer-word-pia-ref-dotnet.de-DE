@@ -1,13 +1,5 @@
 <Type Name="DocumentEvents2_Event" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c077ea562874318cedfe500378dbe980458be447" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669190" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DocumentEvents2_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c318434900b76815fa27167f9ada2316a86f93b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146969" /></Metadata><TypeSignature Language="C#" Value="public interface DocumentEvents2_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DocumentEvents2_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocumentEvents2_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Die Schnittstelle Ereignisse für Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt Ereignisse.</summary>
+    <summary>Ereignisschnittstelle für Microsoft Word <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt Ereignisse.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,11 +40,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_BuildingBlockInsertEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt beim Einfügen eines Bausteins in ein Dokument.</summary>
-        <remarks>
-          <para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> -Objekts, finden Sie unter <a href="HV10056852">Verwenden von Ereignissen mit dem Document-Objekt</a></para>
-          <para />
-        </remarks>
+        <summary>Tritt beim Einfügen eines Bausteins in ein Dokument ein.</summary>
+        <remarks><para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> Objekt finden Sie unter <a href="HV10056852">using Events with the Document Object</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -71,10 +61,8 @@
       </ReturnValue>
       <Docs>
         <summary>Tritt ein, wenn ein Dokument geschlossen wird.</summary>
-        <remarks>
-          <para>Wenn die Ereignisprozedur in einer Vorlage gespeichert ist, wird die Prozedur ausgeführt, wenn ein neues Dokument auf Grundlage, dass die Vorlage wird geschlossen, und wenn die Vorlage selbst (nach als ein Dokument geöffnet wird) geschlossen ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die Ereignisprozedur in einer Dokumentvorlage gespeichert ist, wird die Prozedur aufgerufen, sobald ein neues, auf dieser Dokumentvorlage basierendes Dokument geöffnet oder die Dokumentvorlage selbst geschlossen wird (nachdem sie als Dokument geöffnet wurde).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentControlAfterAdd">
@@ -92,12 +80,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_ContentControlAfterAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-		Tritt ein, nachdem ein Inhaltssteuerelement einem Dokument hinzugefügt wurde.</summary>
-        <remarks>
-          <para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> -Objekts, finden Sie unter <a href="HV10056852">Verwenden von Ereignissen mit dem Document-Objekt</a></para>
-          <para />
-        </remarks>
+        <summary>Tritt ein, nachdem ein Inhaltssteuerelement einem Dokument hinzugefügt wurde.</summary>
+        <remarks><para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> Objekt finden Sie unter <a href="HV10056852">using Events with the Document Object</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentControlBeforeContentUpdate">
@@ -115,12 +100,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_ContentControlBeforeContentUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-		Tritt ein, bevor der Inhalt eines Inhaltssteuerelements aktualisiert wird, allerdings nur, wenn der Inhalt aus dem Office-XML-Datenspeicher stammt.</summary>
-        <remarks>
-          <para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> -Objekts, finden Sie unter <a href="HV10056852">Verwenden von Ereignissen mit dem Document-Objekt</a></para>
-          <para />
-        </remarks>
+        <summary>Tritt ein, bevor der Inhalt eines Inhaltssteuerelements aktualisiert wird, allerdings nur, wenn der Inhalt aus dem Office-XML-Datenspeicher stammt.</summary>
+        <remarks><para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> Objekt finden Sie unter <a href="HV10056852">using Events with the Document Object</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentControlBeforeDelete">
@@ -138,11 +120,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_ContentControlBeforeDeleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt vor dem Entfernen eines Inhaltssteuerelements aus einem Dokument auf.</summary>
-        <remarks>
-          <para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> -Objekts, finden Sie unter <a href="HV10056852">Verwenden von Ereignissen mit dem Document-Objekt</a></para>
-          <para />
-        </remarks>
+        <summary>Tritt ein, bevor ein Inhaltssteuerelement aus einem Dokument entfernt wird.</summary>
+        <remarks><para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> Objekt finden Sie unter <a href="HV10056852">using Events with the Document Object</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentControlBeforeStoreUpdate">
@@ -160,11 +140,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_ContentControlBeforeStoreUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt vor dem Aktualisieren des XML-Datenspeichers des Dokuments mit dem Wert eines Inhaltssteuerelements auf.</summary>
-        <remarks>
-          <para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> -Objekts, finden Sie unter <a href="HV10056852">Verwenden von Ereignissen mit dem Document-Objekt</a></para>
-          <para />
-        </remarks>
+        <summary>Tritt ein, bevor der XML-Datenspeicher eines Dokuments mit dem Wert eines Inhaltssteuerelements aktualisiert wird.</summary>
+        <remarks><para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> Objekt finden Sie unter <a href="HV10056852">using Events with the Document Object</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentControlOnEnter">
@@ -183,12 +161,10 @@
       </ReturnValue>
       <Docs>
         <summary>Tritt auf, wenn ein Benutzer ein Inhaltssteuerelement eingibt.</summary>
-        <remarks>
-          <para>
-            <b>Wichtig</b>: Dieses Ereignis wird ausgelöst, nur für das Inhaltssteuerelement, die Sie eingeben und nicht für übergeordnete Inhaltssteuerelemente. Beispielsweise wenn Sie ein Textfeld Content-Steuerelement in einem Gruppen-Inhaltssteuerelement geschachtelt, und platzieren Sie den Cursor in das Textfeld-Inhaltssteuerelement verfügen, löst dieses Ereignis nur einmal für die Text-Inhaltssteuerelement; Es wird nicht ausgelöst, für die übergeordnete Gruppen-Inhaltssteuerelement.</para>
-          <para>Informationen zur Verwendung von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> -Objekts, finden Sie unter <a href="HV10056852">Verwenden von Ereignissen mit dem Document-Objekt</a></para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Wichtig</b>: Dieses Ereignis wird nur für das Inhaltssteuerelement ausgelöst, das Sie eingeben, und nicht für übergeordnete Inhaltssteuerelemente. Wenn Sie beispielsweise ein Text Feld-Inhaltssteuerelement in einem Gruppeninhalts Steuerelement geschachtelt haben und den Cursor innerhalb des Text Feld-Inhaltssteuerelements platzieren, wird dieses Ereignis nur einmal für das Inhaltssteuerelement des Textfeldes ausgelöst. Es wird nicht für das Inhaltssteuerelement der übergeordneten Gruppe ausgelöst.</para>
+          <para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> Objekt finden Sie unter <a href="HV10056852">using Events with the Document Object</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentControlOnExit">
@@ -207,12 +183,10 @@
       </ReturnValue>
       <Docs>
         <summary>Tritt ein, wenn ein Benutzer ein Inhaltssteuerelement verlässt.</summary>
-        <remarks>
-          <para>
-            <b>Wichtig</b>: Dieses Ereignis wird ausgelöst, nur für das Inhaltssteuerelement, das Sie verlassen und nicht für übergeordnete Inhaltssteuerelemente. Beispielsweise wird ausgelöst, wenn Sie ein Textfeld-Inhaltssteuerelement in einem Gruppen-Inhaltssteuerelement geschachtelt haben und verschieben Sie den Cursor im Feld Text-Inhaltssteuerelement und in einer anderen Stelle im Dokument, dieses Ereignis nur einmal für die Text-Inhaltssteuerelement; Es wird nicht ausgelöst, für die übergeordnete Gruppen-Inhaltssteuerelement.</para>
-          <para>Informationen zur Verwendung von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> -Objekts, finden Sie unter <a href="HV10056852">Verwenden von Ereignissen mit dem Document-Objekt</a></para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Wichtig</b>: Dieses Ereignis wird nur für das Inhaltssteuerelement ausgelöst, das Sie beenden, und nicht für übergeordnete Inhaltssteuerelemente. Wenn Sie beispielsweise ein Text Feld-Inhaltssteuerelement in einem Gruppeninhalts Steuerelement geschachtelt haben und den Cursor aus dem Inhaltssteuerelement des Textfeldes und an eine andere Stelle im Dokument bewegen, wird dieses Ereignis nur einmal für das Inhaltssteuerelement des Textfeldes ausgelöst. Es wird nicht für das Inhaltssteuerelement der übergeordneten Gruppe ausgelöst.</para>
+          <para>Informationen zum Verwenden von Ereignissen mit dem <see cref="T:Microsoft.Office.Interop.Word._Document" /> Objekt finden Sie unter <a href="HV10056852">using Events with the Document Object</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -230,11 +204,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_NewEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt auf, wenn ein neues Dokument basierend auf der Vorlage erstellt wird.</summary>
-        <remarks>
-          <para>Eine Prozedur für das <b>New</b> -Ereignis wird nur ausgeführt, wenn sie in einer Vorlage gespeichert ist.</para>
-          <para />
-        </remarks>
+        <summary>Tritt auf, wenn ein neues Dokument auf Grundlage der Vorlage erstellt wird.</summary>
+        <remarks><para>Eine Prozedur für das <b>New</b>-Ereignis wird nur ausgeführt, wenn sie in einer Vorlage gespeichert ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -253,10 +225,8 @@
       </ReturnValue>
       <Docs>
         <summary>Tritt ein, wenn ein Dokument geöffnet wird.</summary>
-        <remarks>
-          <para>Wenn die Ereignisprozedur in einer Vorlage gespeichert ist, wird die Prozedur ausgeführt, wenn ein neues Dokument auf Grundlage, dass die Vorlage geöffnet wird und wenn die Vorlage selbst als Dokument geöffnet wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die Ereignisprozedur in einer Vorlage gespeichert ist, wird die Prozedur ausgeführt, sobald ein neues, auf dieser Vorlage basierendes Dokument oder die Vorlage selbst als Dokument geöffnet wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sync">
@@ -293,11 +263,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_XMLAfterInsertEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt auf, wenn ein Benutzer eine neue XML-Elemente zu einem Dokument hinzugefügt.</summary>
-        <remarks>
-          <para>Wenn mehrere Elemente gleichzeitig (beispielsweise beim Ausschneiden und Einfügen von XML) mit dem Dokument hinzugefügt werden, löst das Ereignis für jedes Element, das eingefügt wird.</para>
-          <para />
-        </remarks>
+        <summary>Tritt ein, wenn ein Benutzer ein neues XML-Element zu einem Dokument hinzufügt.</summary>
+        <remarks><para>Wenn mehrere Elemente gleichzeitig zu einem Dokument hinzugefügt werden (z. B. beim Ausschneiden und Einfügen von XML), wird das Ereignis für jedes eingefügte Element ausgelöst.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XMLBeforeDelete">
@@ -315,11 +283,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt auf, wenn ein Benutzer ein XML-Element aus einem Dokument gelöscht.</summary>
-        <remarks>
-          <para>Wenn mehrere Elemente gleichzeitig (beispielsweise beim Ausschneiden und Einfügen von XML) aus dem Dokument gelöscht wird, löst das Ereignis für jedes Element, das gelöscht wird.</para>
-          <para />
-        </remarks>
+        <summary>Tritt ein, wenn ein Benutzer ein XML-Element aus einem Dokument löscht.</summary>
+        <remarks><para>Wenn mehrere Elemente gleichzeitig aus einem Dokument gelöscht werden (z. B. beim Ausschneiden und Einfügen von XML), wird das Ereignis für jedes gelöschte Element ausgelöst.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

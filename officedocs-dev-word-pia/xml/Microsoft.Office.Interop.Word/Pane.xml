@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6da467368e532f2064abfe444b232f810bf1434" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669773" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147739" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt einen Fensterausschnitt dar. Das <b>Pane</b> -Objekt ist ein Mitglied der <b>Panes</b> -Auflistung. Die <see cref="Panes#SameCHM" /> -Auflistung enthält alle Fensterausschnitte für ein einzelnes Fenster.</summary>
-    <remarks>
-      <para>Verwenden Sie <b>Panes</b>(<paramref name="Index" />), wobei <paramref name="Index" /> die Indexzahl darstellt, um ein einzelnes <b>Pane</b> -Objekt zurückzugeben. Im folgende Beispiel wird den aktive Ausschnitt geschlossen.</para>
+    <summary>Stellt einen Fensterausschnitt dar. Das <b>Pane</b> -Objekt ist ein Element der <b>Panes</b> -Auflistung. Die <see cref="Panes#SameCHM" /> Auflistung enthält alle Fensterbereiche für ein einzelnes Fenster.</summary>
+    <remarks><para>Verwenden <b></b>Sie Panes<paramref name="Index" />(), <paramref name="Index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>Pane</b> -Objekt zurückzugeben. Im folgenden Beispiel wird der aktive Bereich geschlossen.</para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -286,12 +277,12 @@
 
 
     ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
-      <para>Verwendung der <b>Add</b> -Methode oder die <b>Split</b> -Eigenschaft auf einen Fensterausschnitt hinzufügen. Im folgende Beispiel wird das aktive Fenster bei 20 % der aktuellen Fenstergröße.</para>
+      <para>Verwenden Sie die <b>Add</b> -Methode oder die <b>Split</b> -Eigenschaft, um einen Fensterausschnitt hinzuzufügen. Im folgenden Beispiel wird das aktive Fenster bei 20 % der aktuellen Fenstergröße geteilt.</para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
-      <para>Im folgende Beispiel wird das aktive Fenster in zwei Hälften geteilt.</para>
+      <para>Im folgenden Beispiel wird das aktive Fenster in zwei Hälften geteilt.</para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
-      <para>Sie können die <b>SplitSpecial</b> -Eigenschaft verwenden, um Kommentare, Fußnoten oder Endnoten in einem separaten Ausschnitt anzeigen.</para>
-      <para>Ein Fenster hat mehr als ein Bereich, wenn das Fenster geteilt ist oder die Ansicht nicht Drucklayoutansicht und Informationen wie Fußnoten ist oder Kommentare angezeigt werden. Das folgende Beispiel zeigt den Kommentarbereich in der Normalansicht und fordert klicken Sie dann zum Schließen des Bereichs.</para>
+      <para>Sie können die <b>SplitSpecial</b> -Eigenschaft verwenden, um Kommentare, Fußnoten oder Endnoten in einem separaten Bereich anzuzeigen.</para>
+      <para>Ein Fenster hat dann mehrere Ausschnitte, wenn das Fenster geteilt ist oder sich nicht in der Drucklayoutansicht befindet und Informationen (z. B. Fußnoten oder Kommentare) angezeigt werden. Im folgenden Beispiel wird der Ausschnitt für die Kommentare in der Normalansicht angezeigt. Anschließend werden Sie zum Schließen des Ausschnitts aufgefordert.</para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
@@ -2085,8 +2076,7 @@ If ActiveDocument.Comments.Count &amp;gt;= 1 Then
 
 
 End If&lt;/span&gt;</code>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -2112,8 +2102,7 @@ End If&lt;/span&gt;</code>
       <Docs>
         <summary>Aktiviert den angegebenen Fensterausschnitt.</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>In diesem Beispiel wird das aktive Fenster geteilt und dann der erste Fensterausschnitt aktiviert.</para>
+        <example><para>In diesem Beispiel wird das aktive Fenster geteilt und der erste Fensterausschnitt aktiviert.</para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2884,8 +2873,7 @@ End If&lt;/span&gt;</code>
 
     .Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Activate&lt;/span&gt;
-&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -2911,12 +2899,10 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Visual Basic Funktionen CreateObject und GetObject den Zugriff auf ein OLE-Automatisierungsobjekt aus einer Visual Basic für Applikationen-Projekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Mithilfe der Visual Basic-Funktionen CreateObject und GetObject können Sie aus Projekten in Visual Basic für Applikationen heraus auf ein OLE-Automatisierungsobjekt zugreifen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -2942,7 +2928,7 @@ End If&lt;/span&gt;</code>
         <Parameter Name="Velocity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Velocity">Die Geschwindigkeit für den Bildlauf.</param>
+        <param name="Velocity">Die Bildlaufgeschwindigkeit.</param>
         <summary>Führt einen automatischen Bildlauf durch den angegebenen Ausschnitt aus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3007,12 +2993,10 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite der Fläche in Punkt zurück, in welcher der Text im angegebenen Ausschnitt umbrochen wird. Schreibgeschützter <b>Long</b>-Wert.</summary>
+        <summary>Gibt die Breite der Fläche in Punkt zurück, in welcher der Text im angegebenen Ausschnitt umbrochen wird. Schreibgeschützter <b>langer</b> Wert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft funktioniert nur, wenn Sie sich in der Weblayoutansicht befinden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft funktioniert nur in der Weblayoutansicht.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -3038,8 +3022,7 @@ End If&lt;/span&gt;</code>
       <Docs>
         <summary>Schließt die angegebene Seriendruckdatenquelle, den Bereich oder die Aufgabe.</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>In diesem Beispiel wird den aktive Ausschnitt geschlossen, wenn das aktive Fenster geteilt ist.</para>
+        <example><para>In diesem Beispiel wird der aktive Ausschnitt geschlossen, wenn das aktive Fenster geteilt ist.</para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3297,8 +3280,7 @@ End If&lt;/span&gt;</code>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;Close&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Close&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -3326,10 +3308,8 @@ End If&lt;/span&gt;</code>
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>lang</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRulers">
@@ -3358,16 +3338,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn für den angegebenen Fensterausschnitt Lineale angezeigt werden. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn für den angegebenen Fensterausschnitt Lineale angezeigt werden. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayRulers</b> -Eigenschaft entspricht dem Ruler-Befehl im Menü Ansicht. Wenn <b>DisplayRulers</b> auf <b>False</b>festgelegt ist, nicht das horizontale und vertikale Lineal unabhängig von der Einstellung der <b>DisplayVerticalRuler</b> -Eigenschaft angezeigt.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel wird den aktiven Ausschnitt Drucklayoutansicht umgeschaltet und das horizontalen und vertikalen Lineal werden angezeigt.</para>
+        <remarks><para>Die <b>DisplayRulers</b> -Eigenschaft entspricht dem Befehl Lineal im Menü Ansicht. Wenn <b>DisplayRulers</b> auf <b>False</b> festgelegt ist, werden das horizontale und das vertikale Lineal unabhängig vom Status der <b>DisplayVerticalRuler</b>-Eigenschaft nicht angezeigt.</para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird der aktive Fensterausschnitt in die Drucklayoutansicht umgeschaltet und das horizontale und vertikale Lineal angezeigt.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3882,8 +3857,7 @@ End If&lt;/span&gt;</code>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayRulers&lt;/span&gt;
-&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalRuler">
@@ -3912,15 +3886,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn für den angegebenen Fensterausschnitt ein vertikales Lineal angezeigt wird. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn für den angegebenen Fensterausschnitt ein vertikales Lineal angezeigt wird. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ein vertikales Lineal wird nur in der Drucklayoutansicht, und nur, wenn die <b>DisplayRulers</b> -Eigenschaft auf <b>True</b>festgelegt ist.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel wird den aktiven Ausschnitt Drucklayoutansicht umgeschaltet und das horizontalen und vertikalen Lineal werden angezeigt.</para>
+        <remarks><para>Ein vertikales Lineal wird nur in der Drucklayoutansicht und nur unter der Voraussetzung angezeigt, dass die <b>DisplayRulers</b>-Eigenschaft auf <b>True</b> festgelegt ist.</para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird der aktive Fensterausschnitt in die Drucklayoutansicht umgeschaltet und das horizontale und vertikale Lineal angezeigt.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4691,8 +4661,7 @@ End If&lt;/span&gt;</code>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayVerticalRuler&lt;/span&gt;
-&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -4718,7 +4687,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt im angegebenen Bereich zugeordnet. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück, das dem angegebenen Bereich zugeordnet ist. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4746,19 +4715,15 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> -Objekt, das eine ganze Framesseite oder einen einzelnen Frame auf einer Framesseite darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekt zurück, das eine gesamte Framesseite oder einen einzelnen Frame auf einer Framesseite darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Weitere Informationen zum Erstellen von Framesseiten finden Sie unter <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel wird unmittelbar rechts neben dem angegebenen Frame einen neuen Frame hinzugefügt.</para>
+        <remarks><para>Weitere Informationen zum Erstellen von Frame-Seiten finden <see cref="Creatingframespages#SameCHM" />Sie unter.</para>
+          <para> </para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird unmittelbar rechts neben dem angegebenen Frame ein neuer Frame hinzugefügt.</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
-&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -4787,11 +4752,10 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die horizontale Bildlaufposition als Prozentsatz der Dokumentbreite zurück oder legt sie fest. <b>Long</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die horizontale Bildlaufposition als Prozentsatz der Dokumentbreite zurück oder legt sie fest. <b>Long</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>In diesem Beispiel wird ein Bildlauf für den aktiven Ausschnitt des Fensters für Document1 horizontal ganz nach links durchgeführt.</para>
+        <example><para>In diesem Beispiel wird der Fensterinhalt für den aktiven Ausschnitt des Fensters für Document1 horizontal ganz nach links verschoben.</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5306,8 +5270,7 @@ End If&lt;/span&gt;</code>
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;HorizontalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -5366,12 +5329,10 @@ End If&lt;/span&gt;</code>
         <param name="Down">Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach unten verschoben werden soll.</param>
         <param name="Up">Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach oben verschoben werden soll.</param>
         <param name="ToRight">Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach rechts verschoben werden soll.</param>
-        <param name="ToLeft">Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach links verschoben werden soll.</param>
+        <param name="ToLeft">Die Anzahl der Bildschirme, um die der Fensterinhalt des Fenster nach links verschoben werden soll.</param>
         <summary>Verschiebt im Fenster oder Ausschnitt den Fensterinhalt um die angegebene Anzahl von Bildschirmen.</summary>
-        <remarks>
-          <para>Diese Methode gleicht dem Klicken auf direkt vor oder direkt nach dem Bildlauffeld auf der horizontalen und vertikalen Bildlaufleisten verwendet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Mithilfe dieser Methode werden dieselben Schritte ausgeführt wie beim Klicken unmittelbar vor oder nach dem Bildlauffeld auf der horizontalen bzw. der vertikalen Bildlaufleiste.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumFontSize">
@@ -5400,14 +5361,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den kleinsten Schriftgrad (in Punkt) zurück, der im angegebenen Fensterausschnitt angezeigt wird, oder legt ihn fest. <b>Long</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt den kleinsten Schriftgrad (in Punkt) zurück, der im angegebenen Fensterausschnitt angezeigt wird, oder legt ihn fest. <b>Long</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft betrifft nur den Text in der Weblayoutansicht dargestellt. Die Schriftgrade, die auf der Formatsymbolleiste angezeigt und zum Drucken verwendet werden, nicht geändert.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel wird das aktive Fenster die Onlineansicht und anschließend als Mindestschriftgrad für den aktiven Ausschnitt auf 12 Punkt festgelegt.</para>
+        <remarks><para>Diese Eigenschaft wirkt sich nur auf die Anzeige von Text in der Weblayoutansicht aus. Die Schriftgrade, die auf der Formatsymbolleiste angezeigt und zum Drucken verwendet werden, werden nicht geändert.</para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird für das aktive Fenster die Onlineansicht und anschließend als Mindestschriftgrad für den aktiven Ausschnitt 12 Punkt festgelegt.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -6181,8 +6139,7 @@ End If&lt;/span&gt;</code>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NewFrameset">
@@ -6207,12 +6164,9 @@ End If&lt;/span&gt;</code>
       <Parameters />
       <Docs>
         <summary>Erstellt eine neue, auf dem angegebenen Fensterausschnitt basierende Framesseite.</summary>
-        <remarks>
-          <para>Weitere Informationen zum Erstellen von Framesseiten finden Sie unter <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel wird ein Dokument mit dem Namen "Temp.doc" geöffnet und anschließend erstellt eine neue Framesseite, deren einziger Frame "Temp.doc" enthält.</para>
+        <remarks><para>Weitere Informationen zum Erstellen von Frame-Seiten finden <see cref="Creatingframespages#SameCHM" />Sie unter.</para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird ein Dokument mit dem Namen Temp.doc geöffnet und anschließend eine neue Framesseite erstellt, deren einziger Frame die Datei Temp.doc enthält.</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6470,8 +6424,7 @@ End If&lt;/span&gt;</code>
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -6525,7 +6478,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Pages" /> -Auflistung, die die Seiten in einem Dokument darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Pages" /> Auflistung zurück, die die Seiten in einem Dokument darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6553,7 +6506,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">Die Anzahl der Seiten an, um einen Bildlauf nach unten durchgeführt werden.</param>
+        <param name="Down">Die Anzahl der Seiten, um die der Fensterinhalt nach unten verschoben werden soll.</param>
         <param name="Up">Die Anzahl der Seiten, um die der Fensterinhalt nach oben verschoben werden soll.</param>
         <summary>Führt bei dem angegebenen Bereich oder Fenster ein seitenweises Verschieben des Fensterinhalts durch.</summary>
         <remarks>To be added.</remarks>
@@ -6668,10 +6621,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">Die Anzahl der Zeilen, um der Fensterinhalt nach unten verschoben werden soll.</param>
-        <param name="Up">Die Anzahl der Zeilen, um der Fensterinhalt nach oben.</param>
-        <param name="ToRight">Die Anzahl der Zeilen, um der Fensterinhalt nach rechts verschoben werden soll.</param>
-        <param name="ToLeft">Die Anzahl der Zeilen, um der Fensterinhalt nach links verschoben werden soll.</param>
+        <param name="Down">Die Anzahl der Zeilen, um die der Fensterinhalt nach unten verschoben werden soll.</param>
+        <param name="Up">Die Anzahl der Zeilen, um die der Fensterinhalt nach oben verschoben werden soll.</param>
+        <param name="ToRight">Die Anzahl der Spalten, um die der Fensterinhalt nach rechts verschoben werden soll.</param>
+        <param name="ToLeft">Die Anzahl der Spalten, um die der Fensterinhalt nach links verschoben werden soll.</param>
         <summary>Verschiebt in einem Fenster oder einem Fensterbereich den Fensterinhalt um die angegebene Anzahl von Zeilen.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6698,12 +6651,9 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>Erstellt auf der Basis des angegebenen Dokuments ein Inhaltsverzeichnis und zeigt es in einem neuen Frame im linken Bereich der Framesseite an.</summary>
-        <remarks>
-          <para>Weitere Informationen zum Erstellen von Framesseiten finden Sie unter <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel öffnet eine Datei mit dem Namen "Angebot.doc", eine Framesseite auf Grundlage der Datei erstellt und wird ein Rahmen (auf der linken Seite der Seite), die ein Inhaltsverzeichnis für die Datei enthält.</para>
+        <remarks><para>Weitere Informationen zum Erstellen von Frame-Seiten finden <see cref="Creatingframespages#SameCHM" />Sie unter.</para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird die Datei Proposal.doc geöffnet, auf deren Grundlage eine Framesseite erstellt und (im linken Bereich der Seite) ein Frame mit einem Inhaltsverzeichnis für die Datei eingefügt wird.</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7217,8 +7167,7 @@ ActiveDocument.ActiveWindow.ActivePane.NewFrameset
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -7247,11 +7196,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die vertikale Bildlaufposition als Prozentsatz der Dokumentlänge zurück oder legt diese fest. <b>Long</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die vertikale Bildlaufposition als Prozentsatz der Dokumentlänge zurück oder legt diese fest. <b>Long</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>In diesem Beispiel wird ein Bildlauf für den aktiven Ausschnitt des Fensters für Document1 vertikal bis zum Ende durchgeführt.</para>
+        <example><para>In diesem Beispiel wird der Fensterinhalt für den aktiven Ausschnitt des Fensters für Document1 vertikal zum Ende verschoben.</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7766,8 +7714,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;VerticalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -7796,8 +7743,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <summary>Gibt ein <b>View</b>-Objekt zurück, das die Ansicht für den angegebenen Ausschnitt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Dieses Beispiel zeigt alle nicht druckbare Zeichen für Ausschnitte mit dem ersten Fenster in der <b>Windows</b> -Auflistung verbunden sind.</para>
+        <example><para>In diesem Beispiel werden alle nicht druckbaren Zeichen für Ausschnitte angezeigt, die mit dem ersten Fenster in der <b>Windows</b>-Auflistung verbunden sind.</para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8056,8 +8002,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     myPane.&lt;/span&gt;
 &lt;span class="label"&gt;View&lt;/span&gt;
-&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Zooms">
@@ -8083,14 +8028,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="Zooms#SameCHM" /> -Auflistung, die Zoom-Optionen für die einzelnen Ansichten (wie Normalansicht, Gliederungsansicht oder Seitenlayoutansicht) darstellt.</summary>
+        <summary>Gibt eine <see cref="Zooms#SameCHM" /> Auflistung zurück, die die Vergrößerungsoptionen für jede Ansicht darstellt (beispielsweise Normalansicht, Gliederungsansicht oder Drucklayoutansicht).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen zum Zurückgeben eines einzelnen Elements einer Auflistung finden Sie unter <see cref="ReturninganObjectfromaCollection#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel wird die Vergrößerung in der Normalansicht auf 100 % für jedes geöffnete Fenster.</para>
+        <remarks><para>Informationen zum Zurückgeben eines einzelnen Elements einer Auflistung finden Sie unter <see cref="ReturninganObjectfromaCollection#SameCHM" />.</para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird die Vergrößerung in der Normalansicht für jedes geöffnete Fenster auf 100 % festgelegt.</para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8862,11 +8804,10 @@ For Each wndLoop In Windows
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
-          <para>In diesem Beispiel wird die Vergrößerung in der Drucklayoutansicht so, dass eine ganze Seite sichtbar ist.</para>
+          <para>In diesem Beispiel wird die Vergrößerung in der Drucklayoutansicht so konfiguriert, dass eine ganze Seite sichtbar ist.</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
-&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>
       </Docs>
     </Member>
   </Members>

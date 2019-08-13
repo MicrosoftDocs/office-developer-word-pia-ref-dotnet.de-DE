@@ -1,13 +1,5 @@
 <Type Name="Categories" FullName="Microsoft.Office.Interop.Word.Categories">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40bfdd55758f26399f3d8b0589b3673685e9d356" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669453" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Categories" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="262df085f360d3a0744754fa774db2e3a5857658" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142341" /></Metadata><TypeSignature Language="C#" Value="public interface Categories" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Categories" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Categories" />
   <TypeSignature Language="VB.NET" Value="Public Interface Categories" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Auflistung von Bausteinkategorien dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> -Methode, um eine vorhandene Kategorie zuzugreifen. Sie können dann mithilfe der <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> -Eigenschaft auf eine Auflistung von zugreifen <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> -Objekte für die Kategorie. </para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> -Methode, um eine vorhandene Kategorie zuzugreifen; um eine neue Kategorie erstellen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> Auflistung. Legen Sie den Wert, der die <paramref name="Category" /> Parameter.</para>
-      <para>Weitere Informationen zu Bausteinen finden Sie unter <a href="HV10120827">Arbeiten mit Bausteinen</a></para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> die-Methode, um auf eine vorhandene-Kategorie zuzugreifen. Anschließend können Sie die <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> -Eigenschaft verwenden, um auf eine <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Auflistung von Objekten für die Kategorie zuzugreifen. </para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> die-Methode, um auf eine vorhandene-Kategorie zuzugreifen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> -Methode der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> Auflistung, um eine neue Kategorie zu erstellen. Legen Sie den Wert des <paramref name="Category" /> Parameters fest.</para>
+      <para>Weitere Informationen zum Erstellen von Bausteinen finden Sie unter <a href="HV10120827">Working with Building Blocks</a> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,10 +48,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.Categories" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.Categories" /> Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,15 +105,11 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -155,9 +137,7 @@
       <Docs>
         <param name="Index">Gibt ein <b>String</b> oder <b>Integer</b> an, das den Namen oder die Ordnungsposition des Objekts in der Auflistung darstellt.</param>
         <summary>Gibt das angegebene Element in der Auflistung zurück.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Category" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Category" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +164,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Categories" /> Auflistung.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt der <see cref="T:Microsoft.Office.Interop.Word.Categories" /> angegebenen Auflistung zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

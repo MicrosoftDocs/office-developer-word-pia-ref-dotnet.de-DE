@@ -1,13 +1,5 @@
 <Type Name="TableStyle" FullName="Microsoft.Office.Interop.Word.TableStyle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c8c17fa68b0d8fb4070ec8551c53dfe640b5d38a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669993" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableStyle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7853b4e30317d783a2c6181581ff9d0dca09465d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143889" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableStyle" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyle" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine einzelne Formatvorlage dar, die einer Tabelle zugewiesen werden kann.</summary>
-    <remarks>
-      <para>Verwenden der <see cref="P:Microsoft.Office.Interop.Word.Style.Table" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.Style" /> zurückzugebenden-Objekts ein <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> Objekt. Verwendung der <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Eigenschaft, um eine ganze Tabelle Rahmen zuzuweisen. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> -Methode, um die Rahmen und Schattierung nur zu anwenden Abschnitten einer Tabelle angegeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Style.Table" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Style" /> des Objekts, um <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> ein Objekt zurückzugeben. Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.Borders" /> die-Eigenschaft, um eine gesamte Tabelle mit Rahmen zu versehen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> die-Methode, um Rahmen oder Schattierung nur auf bestimmte Abschnitte einer Tabelle anzuwenden.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -59,22 +49,20 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder es wird eine Konstante, die die Ausrichtung für die angegebenen Zeilen darstellt.</summary>
+        <summary>Zurückgeben oder Festlegen einer Konstanten, die die Ausrichtung für die angegebenen Zeilen darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" />Dies kann eine der folgenden <b>WdRowAlignment</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" />eine der folgenden <b>WdRowAlignment</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdAlignRowLeft </b>
+            <b>wdAlignRowLeft</b>
           </para>
           <para>
-            <b>WdAlignRowCenter </b>
+            <b>wdAlignRowCenter</b>
           </para>
           <para>
-            <b>WdAlignRowRight</b>
+            <b>wdAlignRowRight</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowBreakAcrossPage">
@@ -103,12 +91,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest oder gibt eine <b>ganze Zahl</b> zurück, der angibt, ob die Zeilen in den Zeilen von Tabellen mit einen Umbruch für die angegebene Formatvorlage auf mehreren Seiten formatiert.</summary>
+        <summary>Legt fest oder gibt eine <b>ganze Zahl</b> zurück, der angibt, ob Zeilen in den Tabellenzeilen mit einem angegebenen Formatvorlagen Umbruch auf mehreren Seiten formatiert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Durch Festlegen der <b>AllowBreakAcrossPage</b> -Eigenschaft auf <b>True</b> Zeilenumbrüche die Zeilen in Tabellenzeilen über einen Seitenwechsel. Die-Eigenschaft auf <b>False</b> festlegen, behält die Zeilen in einer Zeile einer Tabelle auf derselben Seite. Die Standardeinstellung ist <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie die <b>AllowBreakAcrossPage</b> -Eigenschaft auf <b>true</b> festlegen, werden die Zeilen in Tabellenzeilen in Seitenumbrüchen unterbrochen. Wenn Sie die Eigenschaft auf <b>false</b> festlegen, werden die Zeilen in einer Tabellenzeile auf der gleichen Seite beibehalten. Die Standardeinstellung ist <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowPageBreaks">
@@ -137,7 +123,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Word so konfiguriert, die angegebene Tabelle ein Seitenumbruch ermöglicht.</summary>
+        <summary>Ermöglicht Microsoft Word, für die angegebene Tabelle einen Seitenumbruch auf die nächste Seite durchzuführen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,7 +151,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +182,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Borders" /> -Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung zurück, die alle Rahmen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,12 +213,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt mit ab oder legt den Abstand (in Punkt) unterhalb des Inhalts einer einzelnen Zelle oder alle Zellen in einer Tabelle hinzugefügt.</summary>
+        <summary>Gibt den Abstand (in Punkt) zurück, der unterhalb des Inhalts einer einzelnen Zelle oder aller Zellen in einer Tabelle hinzugefügt wird, oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Einstellung der <b>BottomPadding</b> -Eigenschaft für eine einzelne Zelle überschreibt die Einstellung der <b>BottomPadding</b> -Eigenschaft für die gesamte Tabelle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Einstellung der <b>BottomPadding</b>-Eigenschaft für eine einzelne Zelle überschreibt die Einstellung der <b>BottomPadding</b>-Eigenschaft für die gesamte Tabelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnStripe">
@@ -261,12 +245,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die Anzahl der Spalten in der banding festlegt, wenn eine Formatvorlage oder ungeradzahliger Spaltenverbünde darstellt.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom Typ Integer</b> , der die Anzahl der Spalten im Banding darstellt, wenn eine Formatvorlage ungerade-oder gerade-Spalten-Bänder angibt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> Methode, um festzulegen, oder ungeradzahliger Spaltenverbünde für eine Tabellenformatvorlage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> die-Methode, um ungeraden oder geraden Spaltenbänder für eine Tabellenformatvorlage festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -292,8 +274,8 @@
         <Parameter Name="ConditionCode" Type="Microsoft.Office.Interop.Word.WdConditionCode" />
       </Parameters>
       <Docs>
-        <param name="ConditionCode">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdConditionCode" />. Der Bereich der Tabelle an, auf die Formatierung angewendet werden soll.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ConditionalStyle" /> -Objekt, das besondere Formatierungen für einen Teil einer Tabelle darstellt.</summary>
+        <param name="ConditionCode">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdConditionCode" />. Der Bereich der Tabelle, auf den die Formatierung angewendet werden soll.</param>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.ConditionalStyle" /> Wert vom Typ Object zurück, der eine spezielle Formatvorlagenformatierung für einen Teil einer Tabelle darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,11 +305,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftIndent">
@@ -356,7 +336,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der angegebenen Tabellenformatvorlage einen <b>einzelnen</b> , die den linken Einzugswert (in Punkt) darstellt.</summary>
+        <summary>Zurückgeben oder Festlegen einer <b>einzelnen</b> , die den linken Einzugswert (in Punkt) für die angegebene Tabellenformatvorlage darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,7 +367,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) auf der linken Seite der Inhalt aller Zellen in einem Tabellenformat hinzufügen.</summary>
+        <summary>Gibt den Abstand (in Punkt) zurück, der Links vom Inhalt aller Zellen in einer Tabellenformatvorlage hinzugefügt werden soll, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -446,7 +426,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Abstand (in Punkt) der rechts neben dem Inhalt aller Zellen in einem Tabellenformat hinzu.</summary>
+        <summary>Gibt den Abstand (in Punkt) zurück, der rechts neben dem Inhalt aller Zellen in einer Tabellenformatvorlage hinzugefügt werden soll, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -477,12 +457,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die Anzahl der Zeilen zum Einschließen in das banding festlegt, wenn eine Formatvorlage banding oder -Zeile darstellt.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom Typ Integer</b> , der die Anzahl der Zeilen darstellt, die in das Banding eingeschlossen werden sollen, wenn eine Formatvorlage ungerade oder gerade Zeilenweises Banding angibt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> Methode, um festzulegen, oder ungeradzahliger Spaltenverbünde für eine Tabellenformatvorlage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> die-Methode, um ungeraden oder geraden Spaltenbänder für eine Tabellenformatvorlage festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -508,7 +486,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt, das auf die Formatierung der Schattierung des angegebenen Objekts verweist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -539,7 +517,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Abstand (in Punkt) zwischen den Zellen in einem Tabellenformat.</summary>
+        <summary>Gibt den Abstand (in Punkten) zwischen den Zellen in einer Tabellenformatvorlage zurück oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -570,20 +548,18 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTableDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Richtung in Microsoft Word sortiert der die Zellen in der angegebenen Tabelle oder Zeile.</summary>
+        <summary>Gibt die Richtung zurück, in der die Zellen in der angegebenen Tabelle oder Zeile von Microsoft Word sortiert werden, oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" />Dies kann eine der folgenden <b>WdTableDirection</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" />eine der folgenden <b>WdTableDirection</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdTableDirectionLtr </b>
+            <b>wdTableDirectionLtr</b>
           </para>
           <para>
-            <b>WdTableDirectionRtl</b>
+            <b>wdTableDirectionRtl</b>
           </para>
-          <para>Wenn <b>TableDirection</b> -Eigenschaft auf <b>WdTableDirectionLtr</b>festgelegt ist, werden die markierten Zeilen die erste Spalte ganz außen links angeordnet. Wenn die <b>TableDirection</b> -Eigenschaft auf <b>WdTableDirectionRtl</b>festgelegt ist, werden die markierten Zeilen die erste Spalte ganz außen angeordnet.</para>
-          <para />
-        </remarks>
+          <para>Wenn die <b>TableDirection</b>-Eigenschaft auf <b>wdTableDirectionLtr</b> festgelegt ist, werden die markierten Zeilen so angeordnet, dass sich die erste Spalte ganz außen links befindet. Wenn die <b>TableDirection</b>-Eigenschaft auf <b>wdTableDirectionRtl</b> festgelegt ist, werden die markierten Zeilen so angeordnet, dass sich die erste Spalte ganz außen rechts befindet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopPadding">
@@ -612,7 +588,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der den Abstand (in Punkt) über den Inhalt aller Zellen in einem Tabellenformat hinzufügen.</summary>
+        <summary>Gibt den Abstand (in Punkt) zurück, der über dem Inhalt aller Zellen in einer Tabellenformatvorlage hinzugefügt werden soll, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Word.LegendEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a77193ef54e946d0aa957ead0685d6bff35e8048" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670355" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="059f71dc3edd40069b1147fe21cabdefa3e8042d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146626" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
@@ -27,17 +19,14 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen Legendeneintrag in einer Diagrammlegende dar.</summary>
-    <remarks>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> -Auflistung enthält alle dem <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> -Objekte in der Legende.</para>
-      <para>Jeder Legendeneintrag besteht aus zwei Teilen: der Text des Eintrags, der den Namen der Datenreihe dem jeweiligen Legendeneintrag; und eine eintragsmarkierung, die mit der verknüpften Datenreihe oder Trendlinie im Diagramm den jeweiligen Legendeneintrag visuell verknüpft zugeordnet ist. Formateigenschaften der eingangsmarkierung und der zugeordneten Datenreihe oder Trendlinie sind im enthalten die <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> -Objekt.</para>
-      <para>Den Text eines Legendeneintrags kann nicht geändert werden. <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekte unterstützen die schriftartformatierung und kann gelöscht werden. Keine Muster Formatierung wird für die Legendeneinträge unterstützt. Die Position und Größe der Einträge ist feststehend.</para>
-      <para>Es ist keine direkte Möglichkeit, die Datenreihe oder Trendlinie, die dem jeweiligen Legendeneintrag entspricht zurückzugeben.</para>
-      <para>Nach Legendeneinträge gelöscht wurden, ist die einzige Möglichkeit zur Wiederherstellung entfernen und erneutes Erstellen der Legende, die sie festlegen enthalten die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> -Eigenschaft für das Diagramm auf <b>false festgelegt</b> und dann wieder auf <b>True</b>.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), wobei <paramref name="index" /> wird die Legende Eintrag-Indexnummer zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekt. Sie können nicht namentlich Legendeneinträge zurückkehren.</para> Anzahl der Index 
-      <para>stellt die Position des Legendeneintrags in der Legende dar. LegendEntries(1) steht oben in der Legende, und wird am unteren Legendeneintrags. </para></example>
+    <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Auflistung enthält alle <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekte in der Legende.</para>
+      <para>Jeder Legendeneintrag besteht aus zwei Teilen: dem Eintragstext, also dem Namen der mit dem Legendeneintrag verknüpften Datenreihe, und einer Eintragsmarkierung, die den Legendeneintrag visuell mit der verknüpften Datenreihe oder Trendlinie im Diagramm verbindet. Formatierungseigenschaften für die Eintragsmarkierung und die zugehörige Datenreihe oder Trendlinie <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> sind im-Objekt enthalten.</para>
+      <para>Der Text eines Legendeneintrags kann nicht geändert werden. <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />Objekte unterstützen Schriftartformatierungen und können gelöscht werden. Keine Muster Formatierung wird für die Legendeneinträge unterstützt. Position und Größe der Einträge sind festgelegt.</para>
+      <para>Der direkte Zugriff auf die Datenreihe oder Trendlinie, die dem jeweiligen Legendeneintrag entspricht, ist nicht möglich.</para>
+      <para>Nachdem Legendeneinträge gelöscht wurden, können Sie Sie nur wiederherstellen, indem Sie die Legende entfernen und neu erstellen, indem Sie die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> Eigenschaft für das Diagramm auf " <b>false</b> " und dann auf <b>true</b>zurücksetzen.</para>
+      <para> </para></remarks>
+    <example><para>Verwenden <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />Sie<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer des Legendeneintrags ist, um <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> ein einzelnes Objekt zurückzugeben. Sie können nicht namentlich Legendeneinträge zurückgeben.</para>
+      <para>Die Indexnummer stellt die Position des Eintrags innerhalb der Legende dar. LegendEntries(1) befindet sich oben in der Legende, LegendEntries(LegendEntries.Count) befindet sich unten. </para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,11 +89,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text im Objekt Schriftgrad ändert, wenn die Größe des Objekts ändert. Der Standardwert ist <b>True</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird. Der Standardwert lautet <b>True</b>.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,14 +117,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -165,9 +145,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,10 +172,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,10 +201,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,9 +230,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Double</b>-Wert zurück, der die Höhe des Objekts in Punkt darstellt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,9 +258,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt die Indexnummer des Objekts in einer Auflistung ähnlicher Objekte zurück.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,9 +286,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) von der linken Seite des Objekts zur linken Seite des Diagrammbereichs darstellt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,10 +313,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> -Objekt, das das Legendensymbol darstellt, die dem Eintrag zugeordnet.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LegendKey" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> Objekt zurück, das den dem Eintrag zugeordneten Legendenschlüssel darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LegendKey" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,9 +342,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,9 +368,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Markiert das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,9 +396,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder bis zum oberen Rand des Diagrammbereichs (in einem Diagramm) darstellt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,9 +424,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Double</b> -Wert, der die Breite des Objekts in Punkt darstellt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

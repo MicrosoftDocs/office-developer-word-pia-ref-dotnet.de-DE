@@ -1,13 +1,5 @@
 <Type Name="Frameset" FullName="Microsoft.Office.Interop.Word.Frameset">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a153326e0a463fab1ea2191a5ff18e8f268d65d4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669831" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a60060da0b1c4ff85a021ce286850c649ffa86e1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146808" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frameset implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frameset" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frameset&#xA;Implements IEnumerable" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine ganze Framesseite oder einen einzelnen Frame auf einer Framesseite dar.</summary>
-    <remarks>
-      <para>Es gibt keine <b>Framesets</b> -Auflistung. Jede <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt oder <see cref="T:Microsoft.Office.Interop.Word.Pane" /> -Objekt enthält nur ein <b>Frameset</b> -Objekt.</para>
-      <para>Verwenden Sie das <b>Frameset</b> -Eigenschaft eines Objekts <b>Dokument</b> oder <b>Bereich</b> , um das <b>Frameset</b> -Objekt zurückzugeben. Verwenden Sie bei Eigenschaften oder Methoden, die alle Frames auf einer Framesseite betreffen das <b>Frameset</b> -Objekt aus dem <b>Document</b> -Objekt. Für Eigenschaften oder Methoden, die einzelne Frames auf einer Framesseite betreffen, verwenden Sie das <b>Frameset</b> -Objekt des <b>Pane</b> -Objekts.</para>
-      <para />
-    </remarks>
+    <remarks><para>Es gibt keine <b>Framesets</b> -Auflistung; Jedes <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt oder <see cref="T:Microsoft.Office.Interop.Word.Pane" /> Objekt enthält nur ein <b>Frameset</b> -Objekt.</para>
+      <para>Verwenden Sie die <b>Frameset</b> -Eigenschaft eines <b>Document</b> -oder <b>Pane</b> -Objekts, um das <b>Frameset</b> -Objekt zurückzugeben. Verwenden Sie für Eigenschaften oder Methoden, die sich auf alle Frames auf einer Framesseite auswirken, das <b>Frameset</b> -Objekt aus dem <b>Document</b> -Objekt. Bei Eigenschaften oder Methoden, die einzelne Frames auf einer Framesseite betreffen, verwenden Sie das <b>Frameset</b> -Objekt aus dem <b>Pane</b> -Objekt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNewFrame">
@@ -61,7 +51,7 @@
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />
       </Parameters>
       <Docs>
-        <param name="Where">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />. Gibt an, an welcher Stelle relativ zum angegebenen Frame der neue Frame eingefügt werden soll.</param>
+        <param name="Where">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />. Gibt an, an welcher Stelle relativ zum angegebenen Frame der neue Frame eingefügt werden soll.</param>
         <summary>Fügt einer Framesseite einen neuen Frame hinzu.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,12 +108,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der untergeordneten <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekte, die dem angegebenen <b>Frameset</b> -Objekt zugeordnet.</summary>
+        <summary>Gibt die Anzahl der unter <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> geordneten Objekte zurück, die dem angegebenen <b>Frameset</b> -Objekt zugeordnet sind.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für <b>Frameset</b> -Objekte vom Typ <b>WdFramesetTypeFrameset</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gilt nur für <b>Frameset</b>-Objekte vom Typ <b>wdFramesetTypeFrameset</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildFramesetItem">
@@ -152,14 +140,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Die Indexnummer des angegebenen Frames.</param>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> -Objekt, das das angegebenen untergeordneten <b>Frameset</b> -Objekt darstellt.</summary>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Die Indexnummer des angegebenen Frames.</param>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekt zurück, das das angegebene untergeordnete <b>Frameset</b> -Objekt darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für <b>Frameset</b> -Objekte vom Typ <b>WdFramesetTypeFrameset</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gilt nur für <b>Frameset</b>-Objekte vom Typ <b>wdFramesetTypeFrameset</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -187,11 +172,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -245,7 +228,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Webseite oder einem anderen Dokument in den angegebenen Frame angezeigt werden, wenn die Framesseite geöffnet wird.</summary>
+        <summary>Gibt die Webseite oder ein anderes Dokument zurück, das beim Öffnen der Framesseite in einem angegebenen Frame angezeigt werden soll, oder legt dieses fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,8 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Framerahmenlinien auf der angegebenen Framesseite angezeigt werden.</summary>
+        <summary><b>True</b>, wenn die Framerahmenlinien auf der angegebenen Framesseite angezeigt werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,8 +290,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn von der Webseite oder einem anderen Dokument angegeben der <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> -Eigenschaft ist eine externe Datei an die Microsoft Word lediglich eine Verknüpfung im angegebenen Frame.</summary>
+        <summary><b>True</b> , wenn die von der <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> Eigenschaft angegebene Webseite oder ein anderes Dokument eine externe Datei ist, in der Microsoft Word nur einen Link aus dem angegebenen Frame verwaltet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,7 +321,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Namen des angegebenen Frames auf einer Framesseite.</summary>
+        <summary>Gibt den Namen des angegebenen Frames auf der Framesseite zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,8 +352,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Benutzer kann den angegebenen Frame Größe ändern, wenn die Framesseite in einem Webbrowser angezeigt wird.</summary>
+        <summary><b>True</b>, wenn der Benutzer die Größe des angegebenen Frames beim Anzeigen der Framesseite in einem Webbrowser ändern kann.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdScrollbarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, wenn Bildlaufleisten verfügbar für den angegebenen Frame beim Anzeigen der Framesseiten in einem Webbrowser sind.</summary>
+        <summary>Gibt zurück, ob bei Ansicht der Framesseite in einem Webbrowser für den angegebenen Frame Bildlaufleisten verfügbar sind, oder legt dieses fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,7 +414,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Farbe der Framerahmenlinien auf der angegebenen Framesseite fest. Kann die <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> Konstanten.</summary>
+        <summary>Gibt die Farbe der Framerahmenlinien auf der angegebenen Framesseite zurück oder legt die Farbe fest. Kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> Konstanten sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -465,7 +445,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Breite (in Punkt) des Frames auf der angegebenen Framesseite umgebenden Rahmen.</summary>
+        <summary>Gibt die Breite (in Punkt) des Rahmens zurück, der den Frame auf der angegebenen Framesseite umgibt, oder sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,12 +508,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Höhe des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekt.</summary>
+        <summary>Gibt die Höhe des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekts zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" /> -Eigenschaft bestimmt den Typ der Einheit, in denen dieser Wert ausgedrückt wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" /> -Eigenschaft bestimmt den Typ der Einheit, in der dieser Wert ausgedrückt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightType">
@@ -562,7 +540,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Breitentyp für den angegebenen Frame auf einer Framesseite.</summary>
+        <summary>Gibt den Breitentyp für den angegebenen Frame auf einer Framesseite zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -618,7 +596,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> -Objekt, das das übergeordnete Objekt des angegebenen <b>Frameset</b> -Objekts auf einer Framesseite repräsentiert.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Wert vom Typs Object zurück, der das übergeordnete Objekt des angegebenen <b>Frameset</b> -Objekts auf einer Framesseite darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -646,7 +624,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekttyp.</summary>
+        <summary>Gibt den <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Typ des Objekts zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -677,12 +655,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Breite des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekt.</summary>
+        <summary>Gibt die Breite des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekts zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" /> -Eigenschaft bestimmt den Typ der Einheit, in denen dieser Wert ausgedrückt wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" /> -Eigenschaft bestimmt den Typ der Einheit, in der dieser Wert ausgedrückt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthType">
@@ -711,7 +687,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Typ der Breite des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekt.</summary>
+        <summary>Gibt den width-Typ des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

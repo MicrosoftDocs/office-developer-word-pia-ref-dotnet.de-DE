@@ -1,13 +1,5 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Word.Legend">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a9e9e5a1d2b39e9479a75403dfc61a2ef2c8fbaf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670543" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Legend" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2dd8d5ba7022d056e55567fbb8487b158d46636d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146633" /></Metadata><TypeSignature Language="C#" Value="public interface Legend" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Legend" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Legend" />
   <TypeSignature Language="VB.NET" Value="Public Interface Legend" />
@@ -27,14 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Legende in einem Diagramm dar. Jedes Diagramm kann nur eine Legende aufweisen.</summary>
-    <remarks>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Word.Legend" /> -Objekt enthält eine oder mehrere <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekte. Jede <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> -Objekt enthält eine <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> -Objekt.</para>
-      <para>Der Diagrammlegende ist nicht sichtbar, wenn die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> -Eigenschaft ist <b>True</b>. Wenn diese Eigenschaft <b>False</b>, Eigenschaften und Methoden für die <see cref="T:Microsoft.Office.Interop.Word.Legend" /> Objekt schlägt fehl.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Word.Legend" /> Objekt. Im folgende Beispiel wird den Schriftschnitt für die Legende des ersten Diagramms im aktiven Dokument fett formatiert.</para>
-    </example>
+    <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.Legend" /> Objekt enthält ein oder mehrere <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekte; Jedes <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekt enthält ein <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> Objekt.</para>
+      <para>Die Diagrammlegende wird nur angezeigt, <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> wenn die Eigenschaft auf <b>true</b>festgelegt ist. Wenn diese Eigenschaft auf <b>false festgelegt</b>ist, treten für <see cref="T:Microsoft.Office.Interop.Word.Legend" /> die Eigenschaften und Methoden des Objekts ein Fehler auf.</para>
+      <para> </para></remarks>
+    <example><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" /> die-Eigenschaft, <see cref="T:Microsoft.Office.Interop.Word.Legend" /> um das-Objekt zurückzugeben. Im folgende Beispiel wird den Schriftschnitt für die Legende des ersten Diagramms im aktiven Dokument fett formatiert.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,11 +85,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text im Objekt Schriftgrad ändert, wenn die Größe des Objekts ändert. Der Standardwert ist <b>True</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird. Der Standardwert lautet <b>True</b>.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +116,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Border" /> -Objekt, das den Rahmen des Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Border" /> Objekt zurück, das den Rahmen des Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +143,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das gesamte Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,14 +170,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -223,9 +198,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +228,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> -Objekt für eine angegebene Form oder einem <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> -Objekt für ein angegebenes Diagramm, das Formateigenschaften für das Shape oder Diagramm der Füllung enthält.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> Objekt für eine angegebene Form oder ein <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> Objekt für ein angegebenes Diagramm zurück, das Füll Formatierungseigenschaften für die Form oder das Diagramm enthält.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,10 +259,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,10 +288,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,9 +320,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt, oder legt einen <b>Double</b> -Wert, der die Höhe des Objekts in Punkt darstellt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,14 +350,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Auf <b>True</b> festgelegt, wenn eine Legende Layout Diagrammbereich eingenommenen, ein Diagrammlayouts ermittelt wird. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft wirkt sich nicht, ob ein Diagramm in Autolayout-Modus oder nicht ist.  Wenn der Benutzer einen Titel mit dem Befehl über Diagramm hinzufügt, wird das Diagramm beträgt, wie in früheren Versionen von Microsoft Office angepasst.  Wenn der Benutzer dann den Titel entfernt oder eine der Überlagerungstitel auswählt, wird das Diagramm angepasst größer, als wäre der Titel nicht im Diagramm.</para>
-          <para />
-        </remarks>
+        <summary>Wird auf <b>true</b> festgelegt, wenn eine Legende den Diagramm Layoutbereich einnimmt, wenn ein Diagrammlayout bestimmt wird. Der Standardwert ist <b>True</b>. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkungen darauf, ob sich ein Diagramm im Autolayout-Modus befindet oder nicht.  Wenn der Benutzer einen Titel mithilfe des obigen Diagramm Befehls hinzufügt, wird die Größe des Diagramms wie in früheren Versionen von Microsoft Office kleiner.  Wenn der Benutzer dann den Titel entfernt oder eine Option für Überlagerungstitel auswählt, wird das Diagramm größer angepasst, als wenn das Diagramm keinen Titel enthält.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -420,10 +382,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Interior" /> -Objekt, das den Innenbereich des angegebenen Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Interior" /> Objekt zurück, das das Innere des angegebenen Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,9 +414,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) von der linken Seite des Objekts zur linken Seite des Diagrammbereichs darstellt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,10 +441,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> -Objekt, das die Legendeneinträge der Legende darstellt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Objekt zurück, das die Legendeneinträge für die Legende darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,9 +470,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>String</b> -Wert, der den Namen des Objekts darstellt.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -544,9 +498,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,10 +528,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlLegendPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /> Wert, der die Position der Legende im Diagramm darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" />
-        </value>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /> Wert zurück, der die Position der Legende im Diagramm darstellt, oder legt diesen Wert fest.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,9 +555,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Markiert das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -638,9 +586,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der bestimmt, ob das Objekt einen Schatten aufweist, oder legt diesen Wert fest.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,9 +617,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder bis zum oberen Rand des Diagrammbereichs (in einem Diagramm) darstellt, oder legt diesen Wert fest.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,9 +648,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt, oder legt einen <b>Double</b> -Wert, der die Breite des Objekts in Punkt darstellt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

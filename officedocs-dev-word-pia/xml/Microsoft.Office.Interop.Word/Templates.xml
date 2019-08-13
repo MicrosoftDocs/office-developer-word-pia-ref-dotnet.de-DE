@@ -1,13 +1,5 @@
 <Type Name="Templates" FullName="Microsoft.Office.Interop.Word.Templates">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4fe7644306f01e74a51b86f41f1804f6d1567d98" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670270" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Templates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca599c52638f5408c860ce6ae6c04bd7ff85d141" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143847" /></Metadata><TypeSignature Language="C#" Value="public interface Templates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Templates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Templates" />
   <TypeSignature Language="VB.NET" Value="Public Interface Templates&#xA;Implements IEnumerable" />
@@ -30,30 +22,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Template" /> -Objekten, die alle Vorlagen darstellen, die derzeit verfügbar sind.</summary>
-    <remarks>
-      <para>Diese Auflistung enthält geöffnete Vorlagen, geöffneten Dokumenten verbundene Vorlagen und globale Vorlagen, die im Dialogfeld Vorlagen und Add-Ins (Menü Extras).</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.Templates" /> Eigenschaft, um der <b>Templates</b> -Auflistung zurückzugeben.</para>
-      <para>Der <b>Add</b> -Methode ist nicht verfügbar für der <b>Templates</b> -Auflistung. Sie können stattdessen eine Vorlage auf der <b>Templates</b> -Auflistung hinzufügen, indem jeder der folgenden Schritte:</para>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Template" /> Objekten, die alle derzeit verfügbaren Vorlagen darstellen.</summary>
+    <remarks><para>Diese Auflistung enthält geöffnete Vorlagen, an geöffnete Dokumente angefügte Vorlagen und globale Vorlagen, die im Dialogfeldvorlagen und Add-Ins (Menü Extras) geladen wurden.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.Templates" /> die-Eigenschaft, um die <b>Templates</b> -Auflistung zurückzugeben.</para>
+      <para>Die <b>Add</b>-Methode ist für die <b>Templates</b>-Auflistung nicht verfügbar. Sie haben stattdessen folgende Möglichkeiten, der <b>Templates</b>-Auflistung eine Vorlage hinzuzufügen:</para>
       <list type="bullet">
         <item>
-          <para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.Documents" /> -Auflistung, um ein Dokument öffnen, basierend auf einer Vorlage oder eine Vorlage.</para>
+          <para>Verwenden der <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit <see cref="T:Microsoft.Office.Interop.Word.Documents" /> der Auflistung, um ein Dokument zu öffnen, das auf einer Vorlage oder Vorlage basiert.</para>
         </item>
         <item>
-          <para>Mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit der <b>Documents</b> -Auflistung zum Öffnen eines neuen Dokuments basierend auf einer Vorlage.</para>
+          <para>Verwenden der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit <b></b> der Documents-Auflistung, um ein neues Dokument basierend auf einer Vorlage zu öffnen.</para>
         </item>
         <item>
-          <para>Mithilfe der <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> -Auflistung, um eine globale Vorlage laden.</para>
+          <para>Verwenden der <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode mit <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> der Auflistung, um eine globale Vorlage zu laden.</para>
         </item>
         <item>
-          <para>Mithilfe der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> -Eigenschaft mit dem <b>Document</b> -Objekt um eine Vorlage mit einem Dokument verbinden.</para>
+          <para>Verwenden der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> Eigenschaft mit dem <b>Document</b> -Objekt, um eine Vorlage an ein Dokument anzufügen.</para>
         </item>
       </list>
-      <para>Verwenden von <b>Vorlagen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Vorlagenname oder die Indexzahl darstellt, um ein einzelnes <b>Template</b> -Objekt die Indexnummer zurückzugeben stellt die Position der Vorlage in der <b>Templates</b> -Auflistung.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> Eigenschaft, um ein Template-Objekt zurückzugeben, das auf der Vorlage Normal.dot verweist. Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> Eigenschaft für das Zurückgeben der Vorlage mit dem angegebenen Dokument verbundenen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> -Eigenschaft bestimmen den Speicherort der Benutzer- oder Arbeitsgruppen-Vorlagen (d. h., in den Ordner, in dem diese Vorlagen gespeichert werden sollen).</para>
-      <para />
-    </remarks>
+      <para>Verwenden <b></b>Sie Vorlagen<paramref name="index" />(), <paramref name="index" /> wobei der Vorlagenname oder die Indexnummer ist, um ein einzelnes <b>Vorlagen</b> Objekt zurückzugeben. die Indexnummer stellt die Position der Vorlage in der <b>Templates</b> -Auflistung dar.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> die-Eigenschaft, um ein Template-Objekt zurückzugeben, das auf die normale Vorlage verweist. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> die-Eigenschaft, um die dem angegebenen Dokument zugeordnete Vorlage zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> die-Eigenschaft, um den Speicherort der Benutzer-oder Arbeitsgruppenvorlagen zu ermitteln (also den Ordner, in dem Sie diese Vorlagen speichern möchten).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -79,7 +69,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,11 +127,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -202,7 +190,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -230,10 +218,8 @@
       <Parameters />
       <Docs>
         <summary>Lädt die Bausteine für alle Vorlagen in Microsoft Office Word.</summary>
-        <remarks>
-          <para>Word wird normalerweise Bausteine geladen, wenn sie zunächst beispielsweise wenn ein Benutzer einen Katalog mit dem Menüband zeigt benötigt werden. Diese Methode erzwingt, dass Word alle Bausteine sofort zu laden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Word lädt normalerweise Bausteine, wenn Sie zuerst benötigt werden, beispielsweise, wenn ein Benutzer mithilfe des Menübands einen Katalog anzeigt. Diese Methode zwingt Word, alle Bausteine sofort zu laden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

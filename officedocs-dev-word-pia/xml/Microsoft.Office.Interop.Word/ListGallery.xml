@@ -1,13 +1,5 @@
 <Type Name="ListGallery" FullName="Microsoft.Office.Interop.Word.ListGallery">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="966516dad1e0dd08ab38c58e333200e586d28db7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670545" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListGallery" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5bd7ff965569856360b744ab132d1fadf6ac4b2d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147886" /></Metadata><TypeSignature Language="C#" Value="public interface ListGallery" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGallery" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGallery" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGallery" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen einzelnen Katalog von Listenformaten dar.</summary>
-    <remarks>
-      <para>Das <b>ListGallery</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> Auflistung. Jedes <b>ListGallery</b> -Objekt stellt eine der drei Registerkarten im Aufzählungszeichen im Dialogfeld Nummerierung und.</para>
-      <para>Verwendung <b>ListGalleries</b>(<paramref name="index" />), wobei <paramref name="index" /><b>WdBulletGallery</b>, <b>WdNumberGallery</b>oder <b>WdOutlineNumberGallery</b>ist, um ein einzelnes <b>ListGallery</b> -Objekt zurückzugeben.</para>
-      <para>, Um festzustellen, ob die Formatierung in Microsoft Word, Verwendung die angegebenen Listenvorlage enthält die <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> -Eigenschaft für das <b>ListGallery</b> -Objekt. Um die Formatierung auf das ursprüngliche Listenformat zurückzusetzen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> -Methode für das <b>ListGallery</b> -Objekt.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>ListGallery</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> Auflistung. Jedes <b>ListGallery</b> -Objekt stellt eine der drei Registerkarten im Dialogfeld Nummerierung und Aufzählungszeichen dar.</para>
+      <para>Verwenden <b></b>Sie ListGalleries<paramref name="index" />(), <paramref name="index" /> wobei <b>wdBulletGallery</b>, <b>wdNumberGallery</b>oder <b>wdOutlineNumberGallery</b>ist, um ein einzelnes <b>ListGallery</b> -Objekt zurückzugeben.</para>
+      <para>Um zu sehen, ob die angegebene Listenvorlage die in Microsoft Word integrierte Formatierung enthält, <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> verwenden Sie die-Eigenschaft für das <b>ListGallery</b> -Objekt. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> -Methode für das <b>ListGallery</b> -Objekt, um die Formatierung auf das ursprüngliche Listenformat zurückzusetzen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -118,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> -Auflistung, die alle in die Liste für den angegebenen Listenkatalog formatiert.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> Auflistung zurück, die alle Listenformate für den angegebenen Listenkatalog darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,15 +137,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Eine Zahl zwischen 1 und 7, die die Position der Vorlage in die Aufzählungszeichen entspricht, und Dialogfeld Nummerierung (Menü "Format"). Option ohne ausgenommen, sind die Vorlagen von links nach rechts, beginnend mit der obersten Zeile nummeriert.</param>
-        <summary>
-          <b>True,</b> Wenn die angegebenen Listenvorlage nicht die integrierte Listenvorlage für diese Position im Listenkatalog handelt.</summary>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Eine Zahl zwischen 1 und 7, die der Position der Vorlage im Dialogfeld Aufzählungszeichen und Nummerierung entspricht (Menü Format). Ohne Option None werden die Vorlagen von links nach rechts nummeriert, beginnend mit der obersten Zeile.</param>
+        <summary><b>True</b>, wenn es sich bei der angegebenen Listenvorlage nicht um die integrierte Listenvorlage für diese Position im Listenkatalog handelt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> -Methode, um eine Listenvorlage aus dem Listenkatalog auf die integrierte Listenvorlage zurück festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> die-Methode, um eine Listenvorlage in einem Listenkatalog zurück auf die integrierte Listenvorlage festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -211,8 +195,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>.</param>
         <summary>Setzt die angegebene Listenvorlage für den Listenkatalog auf das integrierte Listenvorlagenformat zurück.</summary>
         <remarks>To be added.</remarks>
       </Docs>

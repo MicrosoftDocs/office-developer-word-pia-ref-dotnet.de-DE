@@ -1,13 +1,5 @@
 <Type Name="Sections" FullName="Microsoft.Office.Interop.Word.Sections">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7164f7e4bfc02da5d54d10cc8a60f240644b351c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669434" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Sections : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fe2cba10cfbd345cb511c3cbdb748c5431925b9f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144064" /></Metadata><TypeSignature Language="C#" Value="public interface Sections : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sections implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Sections" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sections&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Section" /> -Objekte in einer Auswahl, einem Bereich oder einem Dokument.</summary>
-    <remarks>
-      <para>Verwenden Sie die Eigenschaft <b>Abschnitte</b> von einer <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekts, um der <b>Sections</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" /> Methode oder die <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" /> -Methode, um einen neuen Abschnitt zu einem Dokument hinzufügen.</para>
-      <para>Verwendung <b>Abschnitte</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein einzelnes <b>Section</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Section" /> Objekten in einer Auswahl, einem Bereich oder einem Dokument.</summary>
+    <remarks><para>Verwenden Sie <b></b> die Sections- <see cref="T:Microsoft.Office.Interop.Word.Selection" />Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Range" />eines, <see cref="T:Microsoft.Office.Interop.Word.Document" /> -oder-Objekts, um die <b>Sections</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" /> die-Methode <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" /> oder die-Methode, um einem Dokument einen neuen Abschnitt hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Sections (<paramref name="index" />) <paramref name="index" /> , wobei es sich um die Indexnummer handelt, um ein einzelnes <b>section</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,9 +52,9 @@
         <Parameter Name="Start" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Optionales- <b>Objekt</b>. Der Bereich, vor dem der Abschnittsumbruch eingefügt werden soll. Wenn dieses Argument ausgelassen wird, wird der Abschnittsumbruch am Ende des Dokuments eingefügt.</param>
-        <param name="Start">Optionales- <b>Objekt</b>. Der Typ des Abschnittswechsels, den Sie hinzufügen möchten. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdSectionStart" /><b></b>Konstanten: <b>WdSectionContinuous</b>, <b>WdSectionEvenPage</b>, <b>WdSectionNewColumn</b>, <b>WdSectionNewPage</b>oder <b>WdSectionOddPage</b>. Wenn dieses Argument ausgelassen wird, wird ein Seitenumbruch hinzugefügt.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Section" /> -Objekt, das einen neuen Abschnitt hinzugefügt, die zu einem Dokument darstellt.</summary>
+        <param name="Range">Optionales <b>Objekt</b>. Der Bereich, vor dem der Abschnittsumbruch eingefügt werden soll. Ist dieses Argument nicht angegeben, wird der Abschnittsumbruch am Ende des Dokuments eingefügt.</param>
+        <param name="Start">Optionales <b>Objekt</b>. Die Art des hinzuzufügenden Abschnittsumbruchs. Kann <see cref="T:Microsoft.Office.Interop.Word.WdSectionStart" /> <b> </b>eine der folgenden Konstanten sein: <b>wdSectionContinuous</b>, <b>wdSectionEvenPage</b>, <b>wdSectionNewColumn</b>, <b>wdSectionNewPage</b>oder <b>wdSectionOddPage</b>. Ist dieses Argument nicht angegeben, wird ein Seitenumbruch hinzugefügt.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Section" /> Objekt zurück, das einen neuen Abschnitt darstellt, der einem Dokument hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,11 +140,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -180,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Section</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Section" /> -Objekt, das das erste Element in der <see cref="T:Microsoft.Office.Interop.Word.Sections" /> Auflistung.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Section" /> Objekt zurück, das das erste Element in <see cref="T:Microsoft.Office.Interop.Word.Sections" /> der Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,7 +231,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -272,7 +260,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Section</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das letzte Element in der <see cref="T:Microsoft.Office.Interop.Word.Sections" /> -Auflistung als ein <see cref="T:Microsoft.Office.Interop.Word.Section" /> Objekt.</summary>
+        <summary>Gibt das letzte Element in der <see cref="T:Microsoft.Office.Interop.Word.Sections" /> Auflistung als <see cref="T:Microsoft.Office.Interop.Word.Section" /> Objekt zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,7 +291,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageSetup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> -Objekt, das die angegebenen Abschnitte zugeordnet ist</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> Objekt zurück, das den angegebenen Abschnitten zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

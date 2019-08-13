@@ -1,13 +1,5 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Word.Characters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="970f47e28fba4dae64b3146c852a17fe54ae01d1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669313" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Characters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ed2d642991aec68ae45afbf33e3cbb38e71bb89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142320" /></Metadata><TypeSignature Language="C#" Value="public interface Characters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Characters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Characters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Characters&#xA;Implements IEnumerable" />
@@ -30,16 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung der Zeichen in einer Auswahl, einem Bereich oder einem Dokument.</summary>
-    <remarks>
-      <para>Es gibt kein <b>Character</b> -Objekt. Stattdessen wird jedes Element in der <b>Characters</b> -Auflistung ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das ein Zeichen darstellt.</para>
-      <para>Verwenden Sie die <b>Characters</b> -Eigenschaft, um <b>Characters</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden <b>Zeichen</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein <b>Range</b> -Objekt zurückzugeben, das ein Zeichen darstellt. Die Indexnummer stellt die Position eines Zeichens in der <b>Characters</b> -Auflistung.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Characters.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Gezählt werden Elemente in anderen Textabschnitten verwenden Sie die Auflistung mit der <b>Range</b> -Objekt.</para>
-      <para>
-        <b>Add</b> -Methode ist nicht verfügbar für die Characters-Auflistung. Verwenden Sie stattdessen die <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> oder <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> -Methode, um ein <b>Range</b> -Objekt Zeichen hinzugefügt.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von Zeichen in einer Auswahl, einem Bereich oder einem Dokument.</summary>
+    <remarks><para>Es gibt kein <b>Character</b> -Objekt; Stattdessen ist jedes Element in der <b>Characters</b> -Auflistung <see cref="T:Microsoft.Office.Interop.Word.Range" /> ein Objekt, das ein Zeichen darstellt.</para>
+      <para>Verwenden Sie <b></b> die Characters-Eigenschaft, um die <b>Characters</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden <b></b>Sie Characters (<paramref name="index" />) <paramref name="index" /> , wobei es sich um die Indexnummer handelt, um ein <b>Range</b> -Objekt zurückzugeben, das ein Zeichen darstellt. Die Indexnummer stellt die Position eines Zeichens in der <b>Characters</b>-Auflistung dar.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Characters.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Verwenden Sie zum Zählen der Elemente in anderen Artikeln die Auflistung mit dem <b>Range</b> -Objekt.</para>
+      <para>Eine <b>Add</b> -Methode ist für die Characters-Auflistung nicht verfügbar. Verwenden Sie stattdessen die <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> oder <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> -Methode, um einem <b>Range</b> -Objekt Zeichen hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -65,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,13 +110,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Ruft einen Wert ab, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -153,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das das erste Zeichen in einem Dokument darstellt.</summary>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt ab, das das erste Zeichen in einem Dokument darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,7 +204,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Ein Wert, der die Ordnungsposition des einzelnen Objekts angibt.</param>
-        <summary>Ruft ein einzelnes Objekt in einer Auflistung.</summary>
+        <summary>Ruft ein einzelnes Objekt in einer Auflistung ab.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das das letzte Zeichen, die Wort oder den Satz in einem Dokument darstellt.</summary>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt ab, das das letzte Zeichen, Wort oder den letzten Satz in einem Dokument darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,7 +260,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein Objekt, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
+        <summary>Ruft ein Objekt ab, das das übergeordnete Objekt des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

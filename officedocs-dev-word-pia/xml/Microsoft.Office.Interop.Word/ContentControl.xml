@@ -1,13 +1,5 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cc2bb690be9293f31f98e8e695e89ae1d1508d27" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670031" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147291" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
@@ -26,12 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Ein einzelnes Inhaltssteuerelement. Inhaltssteuerelemente sind begrenzt und potenziell mit der Bezeichnung Bereiche in einem Dokument, das als Container für bestimmte Arten von Inhalten dienen. Einzelne Inhaltssteuerelemente können Inhalt wie Daten, Listen oder Absätze mit formatierten Text enthalten. Das <b>ContentControl</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> Auflistung.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> -Auflistung, um ein Inhaltssteuerelement zu erstellen. Verwendung der <paramref name="Type" /> Parameter der <b>Add</b> -Methode den Typ des zu erstellenden Inhaltssteuerelements an. </para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> -Eigenschaft das Inhaltssteuerelement in einen anderen Typ des Inhaltssteuerelements geändert.  Beispielsweise möchten vielleicht Sie aus einem Steuerelement in ein Textfeld-Steuerelement zu ändern. Jedoch können Sie nicht alle Inhaltssteuerelemente in einen anderen Typ ändern können; Einige möglicherweise nicht zulassen, deren Typ ändern.  Darüber hinaus können je nach den Inhalt eines Inhaltssteuerelements, Sie nicht den Typ ändern können. Angenommen, wenn das Inhaltssteuerelement, das Sie ändern möchten, die in der vorhandenen Inhaltssteuerelement ist den Typ des Inhalts nicht zulässt, ist nicht zulässig und generiert einen Laufzeitfehler versuchen, den Typ zu ändern.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> -Methode, um den Platzhaltertext aus der Standardzeichenfolge in einen besser geeignet für das Steuerelement zu ändern. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> -Eigenschaft auf den Titeltext für das Steuerelement anzugeben.  Hierdurch wird oberhalb des Steuerelements angezeigt, wenn der Cursor sich innerhalb des Steuerelements befindet oder der Mauszeiger über dem Steuerelement.</para>
-      <para>Je nach Typ des Inhaltssteuerelements, die Ihnen, Sie möglicherweise nicht alle Eigenschaften und Methoden des <b>ContentControl</b> -Objekts verwenden können.</para>
+    <summary>Ein einzelnes Inhaltssteuerelement. Inhaltssteuerelemente sind gebundene und möglicherweise mit Beschriftungen versehene Bereiche in einem Dokument, die als Container für bestimmte Typen von Inhalt dienen. Einzelne Inhaltssteuerelemente können Inhalt wie Daten, Listen oder Absätze mit formatiertem Text enthalten. Das <b>ContentControl</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> Auflistung.</summary>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> der Auflistung, um ein Inhaltssteuerelement zu erstellen. Verwenden Sie <paramref name="Type" /> den-Parameter der <b>Add</b> -Methode, um den Typ des zu erstellende Inhaltssteuerelements anzugeben. </para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> die-Eigenschaft, um das Inhaltssteuerelement in einen anderen Typ des Inhaltssteuerelements zu ändern.  Sie können z. B. ein Datumssteuerelement in ein Textsteuerelement ändern. Allerdings können nicht alle Inhaltssteuerelemente in einen anderen Typ geändert werden, da bei einigen Inhaltssteuerelementen das Ändern des Typs nicht zulässig ist.  Außerdem kann es auch an dem Inhalt eines Inhaltssteuerelements liegen, dass der Typ nicht geändert werden kann. Wenn z. B. das Inhaltssteuerelement, in das Sie die Änderung vornehmen möchten, den Typ von Inhalt nicht zulässt, der sich im vorhandenen Inhaltssteuerelement befindet, wird eine Änderung nicht zugelassen, und es wird ein Laufzeitfehler ausgegeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> die-Methode, um den Platzhaltertext von der Standardzeichenfolge in einen Zweck zu ändern, der für das Steuerelement besser geeignet ist. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> die-Eigenschaft, um den Titeltext für das Steuerelement anzugeben.  Dieser wird oberhalb des Steuerelements angezeigt, wenn Sie den Cursor innerhalb des Steuerelements positionieren oder den Mauszeiger über das Steuerelement bewegen.</para>
+      <para>Je nach Typ des vorliegenden Steuerelements können Sie möglicherweise nicht alle Eigenschaften und Methoden des <b>ContentControl</b>-Objekts verwenden.</para>
       <code />
       <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
       <list type="table">
@@ -76,8 +67,7 @@
           <description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description>
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowInsertDeleteSection">
@@ -106,12 +96,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob Benutzer können Abschnitte hinzufügen oder aus dem angegebenen wiederholten Abschnitt-Inhaltssteuerelement entfernen mithilfe der Benutzeroberfläche.</summary>
+        <summary>Dient zum Abrufen oder festlegen, ob Benutzer mithilfe der Benutzeroberfläche Abschnitte aus dem angegebenen Inhaltssteuerelement für wiederholte Abschnitte hinzufügen oder entfernen können.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft können nur mit wiederholter Abschnitt Inhaltssteuerelemente. Verwenden sie mit anderen Inhalten, die einen Fehler Nachricht Effekt Steuerelemente führt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft nur mit Steuerelementen für wiederholte Abschnitts Inhalte verwenden. Die Verwendung mit anderen Inhaltssteuerelementen führt zu einem Fehlermeldung Effekt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -140,7 +128,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt das Erscheinungsbild des Inhaltssteuerelements fest. Lese-/Schreibzugriff<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></summary>
+        <summary>Gibt die Darstellung des Inhaltssteuerelements zurück oder legt Sie fest. Lese-/Schreibzugriff<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,10 +156,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,14 +187,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Kategorie für ein Baustein-Inhaltssteuerelement. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für Baustein-Inhaltssteuerelemente und entspricht der Option Kategorie im Dialogfeld Eigenschaften von Inhaltssteuerelementen. Sie können diese Eigenschaft auf eine beliebige Zeichenfolge festgelegt. Wenn Sie es auf eine Zeichenfolge, die für die vorhanden ist keine entsprechende Kategorie, wird der Wert der Kategorie auf (alle Kategorien)"festgelegt.</para>
-          <para />
-        </remarks>
+        <summary>Zurückgeben oder Festlegen der Kategorie für ein Building Block-Inhaltssteuerelement. Lese-/Schreibzugriff.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Diese Eigenschaft gilt nur für Baustein Inhaltssteuerelemente und entspricht der Option Kategorie im DialogfeldEigenschaften von Inhaltssteuerelementen. Sie können diese Eigenschaft auf eine beliebige Zeichenfolge festlegen; Wenn Sie es jedoch auf eine Zeichenfolge festlegen, für die keine entsprechende Kategorie vorhanden ist, wird der Wert der Option Category auf "(alle Kategorien)" festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildingBlockType">
@@ -237,34 +219,30 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Typ des Bausteins für ein Baustein-Inhaltssteuerelement fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für Baustein Inhalte steuert und entspricht der Option Katalog im Dialogfeld Eigenschaften von Inhaltssteuerelementen. Sie können diese Eigenschaft nur für die folgenden Typen von Bausteinen festlegen:</para>
+        <summary>Gibt den Typ des Bausteins für ein Inhaltssteuerelement für Bausteine zurück oder legt ihn fest. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /></value>
+        <remarks><para>Diese Eigenschaft gilt nur für Baustein-Inhaltssteuerelemente und entspricht der Option Katalog im Dialogfeld Eigenschaften von Inhaltssteuerelementen. Sie können diese Eigenschaft für die folgenden Typen von Bausteinen festlegen:</para>
           <list type="bullet">
             <item>
               <para>Benutzerdefiniert 1 bis Benutzerdefiniert 5</para>
             </item>
             <item>
-              <para>Autotext</para>
+              <para>AutoText</para>
             </item>
             <item>
               <para>Schnellbausteine</para>
             </item>
             <item>
-              <para>Autotext benutzerdefinierte</para>
+              <para>Benutzerdefinierter AutoText</para>
             </item>
             <item>
-              <para>Schnellbausteine benutzerdefinierte</para>
+              <para>Benutzerdefinierte Schnellbausteine</para>
             </item>
             <item>
               <para>Formeln</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -293,13 +271,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen des aktuellen Status (aktiviert/deaktiviert ist) für ein Kontrollkästchen.</summary>
-        <value>
-          <b>true,</b> Wenn das Kontrollkästchen aktiviert ist. andernfalls; <b>"false"</b>.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff. Verwenden Sie diese Eigenschaft zum Abrufen oder Festlegen des aktuellen Status für ein Kontrollkästchen-Inhaltssteuerelement an. Wenn das Steuerelement nicht um ein Kontrollkästchen ist, versucht, auf die Eigenschaft Fehler mit der Laufzeitfehler zuzugreifen "Diese Eigenschaft ist nur verfügbar für das Kontrollkästchen Inhaltssteuerelemente."</para>
-          <para />
-        </remarks>
+        <summary>Dient zum Abrufen oder Festlegen des aktuellen Status (aktiviert/deaktiviert) für ein Kontrollkästchen.</summary>
+        <value><b>true</b> , wenn das Kontrollkästchen aktiviert ist, andernfalls false. sonst <b>false</b>.</value>
+        <remarks><para>Lese-/Schreibzugriff. Verwenden Sie diese Eigenschaft, um den aktuellen Status für ein Kontrollkästchen-Inhaltssteuerelement abzurufen oder festzulegen. Wenn das Steuerelement kein Kontrollkästchen ist, tritt beim Versuch, auf die Eigenschaft zuzugreifen, ein Fehler mit dem Laufzeitfehler auf "diese Eigenschaft ist nur für Inhaltssteuerelemente für Kontrollkästchen verfügbar."</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -328,7 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Farbe des Inhaltssteuerelements fest. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</summary>
+        <summary>Gibt die Farbe des Inhaltssteuerelements zurück oder legt Sie fest. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,12 +329,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-		 Kopiert das Inhaltssteuerelement aus dem aktiven Dokument in die Zwischenablage.</summary>
-        <remarks>
-          <para>Wenn Sie die <b>Copy</b> -Methode verwenden, wird das ursprüngliche Inhaltssteuerelement im aktiven Dokument, sondern eine Kopie des Steuerelements, einschließlich der Einstellungen für alle Text- und -Eigenschaft bleibt, wird in die Zwischenablage verschoben. Sie können dann das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekt oder der <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
-          <para />
-        </remarks>
+        <summary>Kopiert das Inhaltssteuerelement aus dem aktiven Dokument in die Zwischenablage.</summary>
+        <remarks><para>Wenn Sie die <b>Copy</b> -Methode verwenden, verbleibt das ursprüngliche Inhaltssteuerelement im aktiven Dokument, aber eine Kopie des Steuerelements, einschließlich aller Text-und Eigenschafteneinstellungen, wird in die Zwischenablage verschoben. Anschließend können Sie das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.Selection" /> des Objekts oder <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> die Methode des <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -385,16 +357,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <summary>Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -418,12 +386,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-		Entfernt das Inhaltssteuerelement aus dem aktiven Dokument und verschiebt dieses in die Zwischenablage.</summary>
-        <remarks>
-          <para>Wenn Sie die <b>Copy</b> -Methode verwenden, wird das ursprüngliche Inhaltssteuerelement im aktiven Dokument, sondern eine Kopie des Steuerelements, einschließlich der Einstellungen für alle Text- und -Eigenschaft bleibt, wird in die Zwischenablage verschoben. Sie können dann das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekt oder der <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
-          <para />
-        </remarks>
+        <summary>Entfernt das Inhaltssteuerelement aus dem aktiven Dokument und verschiebt dieses in die Zwischenablage.</summary>
+        <remarks><para>Wenn Sie die <b>Copy</b> -Methode verwenden, verbleibt das ursprüngliche Inhaltssteuerelement im aktiven Dokument, aber eine Kopie des Steuerelements, einschließlich aller Text-und Eigenschafteneinstellungen, wird in die Zwischenablage verschoben. Anschließend können Sie das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.Selection" /> des Objekts oder <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> die Methode des <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateCalendarType">
@@ -452,10 +417,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCalendarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Kalendertyp für ein Inhaltssteuerelement Kalender.  Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" />
-        </value>
+        <summary>Gibt den Kalendertyp für ein Kalender Inhaltssteuerelement zurück oder legt ihn fest.  Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,14 +448,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt das Format, in dem Datumsangaben angezeigt werden. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Das Standardformat ist die Einstellung der Format in Microsoft Office Word auf System des Benutzers in der Regel abhängig von der Einstellung Speicherort in Microsoft Windows angegebenen. Beispielsweise ist das Standardformat für Datumsangaben für Englisch (USA) "mm/tt/jjjj". Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> -Eigenschaft auf ein anderes Datumsformat angeben.</para>
-          <para />
-        </remarks>
+        <summary>Gibt das Format zurück, in dem Datumsangaben angezeigt werden, oder legt dieses fest. Lese-/Schreibzugriff.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Das Standardformat ist die in Microsoft Office Word auf dem Benutzer System angegebene Formateinstellung, die in der Regel von der Standorteinstellung in Microsoft Windows abhängt. Das Standardformat der Daten für Englisch (USA) ist beispielsweise "mm/tt/jjjj". Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> die-Eigenschaft, um ein anderes Datumsformat anzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDisplayLocale">
@@ -521,14 +480,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein das Sprachformat für das Datum in ein Datums-Inhaltssteuerelement angezeigt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />
-        </value>
-        <remarks>
-          <para>In der Standardeinstellung der <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> -Eigenschaft ist zunächst auf die in Microsoft Office Word angegebene Bearbeitungssprache festgelegt, handelt es sich vom in Microsoft Windows angegebenen Speicherort.</para>
-          <para />
-        </remarks>
+        <summary>Gibt das Sprachformat für das Datum zurück, das in einem Datums-Inhaltssteuerelement angezeigt wird. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /></value>
+        <remarks><para>Standardmäßig wird die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> Eigenschaft anfänglich auf die in Microsoft Office Word angegebene Bearbeitungssprache festgelegt, wenn sich dies von dem in Microsoft Windows angegebenen Speicherort unterscheidet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateStorageFormat">
@@ -557,14 +512,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder setzt das Format für die Speicherung und den Abruf von Daten, wenn ein Datums-Inhaltssteuerelement an den XML-Datenspeicher des aktiven Dokuments gebunden ist. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" />
-        </value>
-        <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> -Eigenschaft können Sie Datumsangaben im Datumsformat, Datums-/Uhrzeitformat oder im Textformat speichern.</para>
-          <para />
-        </remarks>
+        <summary>Gibt das Format für das Speichern und Abrufen von Datumsangaben zurück, wenn ein Datums-Inhaltssteuerelement an den XML-Datenspeicher des aktiven Dokuments gebunden ist, oder legt dieses fest. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" /></value>
+        <remarks><para>Mit <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> der-Eigenschaft können Sie Datumsangaben im Datumsformat, im Format für Datum/Uhrzeit oder im Text Format speichern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTextStyle">
@@ -593,10 +544,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Namen der Zeichenformatvorlage zum Formatieren von Text in einem Text-Inhaltssteuerelement. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt den Namen des Zeichenformats zurück, das zum Formatieren von Text in einem Textinhalts Steuerelement verwendet werden soll, oder legt diesen fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -622,9 +571,8 @@
         <Parameter Name="DeleteContents" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="DeleteContents">Gibt an, ob die Inhalte aus dem Steuerelement gelöscht werden sollen. <b>True</b> entfernt sowohl das Inhaltssteuerelement als auch dessen Inhalte. <b>False</b> entfernt das Steuerelement, lässt aber die Inhalte des Inhaltssteuerelements im aktiven Dokument. Der Standartwert lautet <b>False</b>.</param>
-        <summary>
-		Löscht das angegebene Inhaltssteuerelement und die Inhalte des Steuerelements.</summary>
+        <param name="DeleteContents">Gibt an, ob die Inhalte aus dem Steuerelement gelöscht werden sollen.  <b>True</b> entfernt sowohl das Inhaltssteuerelement als auch dessen Inhalte. <b>False</b> entfernt das Steuerelement, lässt aber die Inhalte des Inhaltssteuerelements im aktiven Dokument. Der Standardwert ist <b>False</b>.</param>
+        <summary>Löscht das angegebene Inhaltssteuerelement und die Inhalte des Steuerelements.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,10 +599,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControlListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Elemente zurück in ein Dropdownlisten-Inhaltssteuerelement oder in einem Kombinationsfeld-Inhaltssteuerelement. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
-        </value>
+        <summary>Gibt die Elemente in einem Dropdownlisten-Inhaltssteuerelement oder in einem Kombinationsfeld-Inhaltssteuerelement zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,14 +627,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Kennung für ein Inhaltssteuerelement zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Die <b>ID</b> -Eigenschaft ist eine interne Nummer, die Sie ändern können, aber die Sie zum Identifizieren eines Inhaltssteuerelements in Code verwenden können. Diese Nummer ist eindeutig für jedes Inhaltssteuerelement und wird nicht geändert.</para>
-          <para />
-        </remarks>
+        <summary>Gibt die ID für ein Inhaltssteuerelement zurück. Schreibgeschützt.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Bei der <b>ID</b>-Eigenschaft handelt es sich um eine interne Nummer, die Sie nicht ändern können, die Sie aber zum Identifizieren eines Inhaltssteuerelements in Code verwenden können. Diese Nummer ist eindeutig für jedes Inhaltssteuerelement; sie ändert sich nicht.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -714,7 +656,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Ebene des Inhaltssteuerelements zurück – gibt an, ob das Inhaltssteuerelement Text, Absätze, Tabellenzellen oder Tabellenzeilen; umgibt oder Inline ist. Read-only <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</summary>
+        <summary>Gibt die Ebene des Inhaltssteuerelements zurück, unabhängig davon, ob das Inhaltssteuerelement Text, Absätze, Tabellenzellen oder Tabellenzeilen umgibt. oder wenn es Inline ist. Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -746,15 +688,11 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob der Benutzer ein Inhaltssteuerelement aus dem aktiven Dokument löschen kann, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Der Standardwert dieser Eigenschaft ist <b>False</b>.  Diese Eigenschaft entspricht dem Inhalt Steuerelement nicht gelöschten Kontrollkästchen im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
+        <value><b>Boolean</b></value>
+        <remarks><para>Der Standardwert dieser Eigenschaft ist <b>False</b>.  Diese Eigenschaft entspricht dem Kontrollkästchen Das Inhaltssteuerelement kann nicht gelöscht werden im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
           <para>
-            <b>Hinweis</b>: Diese Eigenschaft kann nicht festgelegt werden, wenn die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> -Eigenschaft auf <b>True</b>festgelegt ist.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: Diese Eigenschaft kann nicht festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> , wenn die Eigenschaft auf <b>true</b>festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockContents">
@@ -784,13 +722,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob der Benutzer den Inhalt eines Inhaltssteuerelements bearbeiten kann, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Der Standardwert dieser Eigenschaft ist <b>False</b>.  Diese Eigenschaft entspricht der Inhalt kann nicht bearbeitet das Kontrollkästchen im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Der Standardwert dieser Eigenschaft ist <b>False</b>.  Diese Eigenschaft entspricht dem Kontrollkästchen Der Inhalt kann nicht bearbeitet werden im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -820,13 +754,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob ein Text-Inhaltssteuerelement mehrere Textzeilen zulässt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für Text-Inhaltssteuerelemente sowie rich-Text-Inhaltssteuerelemente.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Diese Eigenschaft gilt nur für Text-Inhaltssteuerelemente sowie Rich-Text-Inhaltssteuerelemente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -852,10 +782,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein, der das übergeordnete Objekt des angegebenen repräsentiert <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt einen zurück, der das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> des angegebenen Objekts darstellt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -882,14 +810,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Inhaltssteuerelement für einen Inhalt steuern, d. h., die in ein Rich-Text-Steuerelement oder ein Gruppensteuerelement geschachtelt werden. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
-        <remarks>
-          <para>Wenn ein Inhaltssteuerelement nicht geschachtelt ist, gibt diese Eigenschaft gibt einen Fehler zurück.</para>
-          <para />
-        </remarks>
+        <summary>Gibt das übergeordnete Inhaltssteuerelement für ein Inhaltssteuerelement zurück, das in einem Rich-Text-Steuerelement oder einem Gruppensteuerelement geschachtelt ist. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
+        <remarks><para>Diese Eigenschaft gibt einen Fehler zurück, wenn ein Inhaltssteuerelement nicht geschachtelt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlaceholderText">
@@ -915,12 +839,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> -Objekt, das den Platzhaltertext für ein Inhaltssteuerelement darstellt. Schreibgeschützt.</summary>
-        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />.</value>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> -Methode, um den Platzhaltertext für ein Inhaltssteuerelement festzulegen.</para>
-          <para />
-        </remarks>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt zurück, das den Platzhaltertext für ein Inhaltssteuerelement darstellt. Schreibgeschützt.</summary>
+        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />zurück.</value>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> die-Methode, um den Platzhaltertext für ein Inhaltssteuerelement festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -946,12 +868,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> , das den Inhalt des Inhaltssteuerelements im aktiven Dokument darstellt. Schreibgeschützt.</summary>
-        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Range" />.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> -Eigenschaft auf den Text, der die Formatierung für den Text und andere Texteigenschaften zuzugreifen.  Weitere Informationen finden Sie unter <a href="HV10056876">Arbeiten mit Range-Objekten</a></para>
-          <para />
-        </remarks>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Range" /> zurück, der den Inhalt des Inhaltssteuerelements im aktiven Dokument darstellt. Schreibgeschützt.</summary>
+        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Range" />zurück.</value>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> die-Eigenschaft, um auf den Text, die Formatierung für den Text und andere Texteigenschaften zuzugreifen.  Weitere Informationen finden Sie unter <a href="HV10056876">Arbeiten mit Range-Objekten</a> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItems">
@@ -977,12 +897,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.RepeatingSectionItemColl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Auflistung wiederholter Abschnitt Elemente im angegebenen wiederholten Abschnitt Inhaltssteuerelement. Schreibgeschützt.</summary>
+        <summary>Gibt die Auflistung von wiederholten Abschnittselementen im angegebenen Inhaltssteuerelement für wiederholtes Abschnitts zurück. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft verwenden, mit wiederholter Abschnitt nur von Inhaltssteuerelementen. Andere Inhaltssteuerelemente mit führt einen Fehler.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft nur mit wiederholten Abschnitts Inhaltssteuerelementen verwenden. Die Verwendung mit anderen Inhaltssteuerelementen führt zu einem Fehler.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItemTitle">
@@ -1011,12 +929,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Name der wiederholten Abschnitt Elemente im Kontextmenü der angegebenen wiederholten Abschnitt-Inhaltssteuerelement zugeordnet verwendet. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt den Namen der wiederholten Abschnittselemente zurück, die im Kontextmenü verwendet werden, das dem angegebenen wiederholten Abschnitts Inhaltssteuerelement zugeordnet ist, oder legt diesen fest. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft verwenden, mit wiederholter Abschnitt nur von Inhaltssteuerelementen. Andere Inhaltssteuerelemente mit führt einen Fehler.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft nur mit wiederholten Abschnitts Inhaltssteuerelementen verwenden. Die Verwendung mit anderen Inhaltssteuerelementen führt zu einem Fehler.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCheckedSymbol">
@@ -1042,9 +958,9 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer, die die Summe der 31 (die Anzahl der Steuerelement-Symbole am Anfang der Schriftart) und der Zahl, die die Position des Symbols in der Tabelle der Symbole (von links nach rechts gezählt) entspricht. Um ein Delta an Position 37 in der Tabelle der Symbole in der Schriftart Symbol anzugeben, legen Sie beispielsweise <paramref name="CharacterNumber" /> auf 68.</param>
+        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer gleich der Summe aus 31 (der Anzahl der Steuerelementsymbole am Anfang der Schriftart) und der Zahl, die der Position des Symbols in der Tabelle der Symbole entspricht (gezählt von links nach rechts). Um beispielsweise ein Delta Zeichen an Position 37 in der Tabelle mit Symbolen in der Symbol Schriftart anzugeben, legen Sie <paramref name="CharacterNumber" /> den Wert auf 68 fest.</param>
         <param name="Font">Der Name der Schriftart, die das Symbol enthält.</param>
-        <summary>Legt das Symbol fest, das zum Darstellen des aktivierten Zustands eines Kontrollkästchen-Inhaltssteuerelements verwendet wird.</summary>
+        <summary>Legt das Symbol fest, mit dem der aktivierte Zustand eines Kontrollkästchen-Inhaltssteuerelements dargestellt wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1071,15 +987,12 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="BuildingBlock">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> -Objekt, das den Inhalt des Platzhaltertexts enthält.</param>
-        <param name="Range">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Inhalt des Platzhaltertexts enthält.</param>
+        <param name="BuildingBlock">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt an, das den Inhalt des Platzhaltertexts enthält.</param>
+        <param name="Range">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt an, das den Inhalt des Platzhaltertexts enthält.</param>
         <param name="Text">Gibt den Inhalt des Platzhaltertexts an.</param>
-        <summary>
-		Legt den Platzhaltertext fest, der im Inhaltssteuerelement angezeigt wird, bis ein Benutzer einen eigenen Text einfügt.</summary>
-        <remarks>
-          <para>Nur einer der Parameter wird verwendet, beim Platzhaltertext angeben.  Wenn mehr als einen Parameter verwendet wird, verwendet Microsoft Office Word den Text im ersten Parameter angegeben. Wenn alle Parameter ausgelassen werden, ist der Platzhaltertext leer.</para>
-          <para />
-        </remarks>
+        <summary>Legt den Platzhaltertext fest, der im Inhaltssteuerelement angezeigt wird, bis ein Benutzer einen eigenen Text einfügt.</summary>
+        <remarks><para>Beim Angeben des Platzhaltertexts wird nur ein Parameter verwendet.  Wenn mehr als ein Parameter verwendet wird, verwendet Microsoft Office Word den im ersten Parameter angegebenen Text. Werden alle Parameter weggelassen, bleibt der Platzhaltertext leer.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUncheckedSymbol">
@@ -1105,9 +1018,9 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer, die die Summe der 31 (die Anzahl der Steuerelement-Symbole am Anfang der Schriftart) und der Zahl, die die Position des Symbols in der Tabelle der Symbole (von links nach rechts gezählt) entspricht. Um ein Delta an Position 37 in der Tabelle der Symbole in der Schriftart Symbol anzugeben, legen Sie beispielsweise <paramref name="CharacterNumber" /> auf 68.</param>
+        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer gleich der Summe aus 31 (der Anzahl der Steuerelementsymbole am Anfang der Schriftart) und der Zahl, die der Position des Symbols in der Tabelle der Symbole entspricht (gezählt von links nach rechts). Um beispielsweise ein Delta Zeichen an Position 37 in der Tabelle mit Symbolen in der Symbol Schriftart anzugeben, legen Sie <paramref name="CharacterNumber" /> den Wert auf 68 fest.</param>
         <param name="Font">Der Name der Schriftart, die das Symbol enthält.</param>
-        <summary>Legt das Symbol fest, das zum Darstellen des deaktivierten Zustands eines Kontrollkästchen-Inhaltssteuerelements verwendet wird.</summary>
+        <summary>Legt das Symbol fest, mit dem der deaktivierte Zustand eines Kontrollkästchen-Inhaltssteuerelements dargestellt wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1135,9 +1048,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob der Platzhaltertext für das Inhaltssteuerelement angezeigt wird. Schreibgeschützt.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1167,14 +1078,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt einen Wert zum Identifizieren eines Inhaltssteuerelements. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> Eigenschaft unterscheidet sich von der <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> -Eigenschaft im, die ein Tag nie während eines Benutzers angezeigt werden bearbeitet ein Dokument.  Stattdessen können Entwickler es Sie einen Wert für die programmgesteuerte Bearbeitung speichern, während das Dokument geöffnet wird.</para>
-          <para />
-        </remarks>
+        <summary>Gibt einen Wert zum Identifizieren eines Inhaltssteuerelements zurück oder legt ihn fest. Lese-/Schreibzugriff.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> -Eigenschaft unterscheidet <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> sich von der Eigenschaft darin, dass ein Tag niemals angezeigt wird, während ein Benutzer ein Dokument bearbeitet.  Stattdessen können Entwickler mit der Eigenschaft einen Wert für die programmgesteuerte Bearbeitung speichern, während das Dokument geöffnet ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -1204,15 +1111,11 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob ein Inhaltssteuerelement aus dem aktiven Dokument entfernt wird, wenn der Benutzer den Inhalt des Steuerelements bearbeitet, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Der Standardwert ist <b>False</b>. Diese Eigenschaft entspricht der Remove-Inhaltssteuerelement wird Inhalt bearbeiteten Kontrollkästchen im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
+        <value><b>Boolean</b></value>
+        <remarks><para>Der Standardwert ist <b>False</b>. Diese Eigenschaft entspricht dem Kontrollkästchen Inhaltssteuerelement beim Bearbeiten des Inhalts entfernen im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
           <para>
-            <b>Hinweis</b>: Diese Eigenschaft kann nicht festgelegt werden, wenn die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> -Eigenschaft auf <b>True</b>festgelegt ist.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: Diese Eigenschaft kann nicht festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> , wenn die Eigenschaft auf <b>true</b>festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1241,10 +1144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen des Titels für ein Inhaltssteuerelement. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>Gibt den Titel für ein Inhaltssteuerelement zurück oder legt ihn fest. Lese-/Schreibzugriff.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1274,14 +1175,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Typ für ein Inhaltssteuerelement fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" />
-        </value>
-        <remarks>
-          <para>Sie können die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> -Eigenschaft den Typ eines Inhaltssteuerelements von einem Typ in einen anderen geändert.  Die Möglichkeit, den Typ des Steuerelements ändern hängt jedoch auf dem ursprünglichen Typ und für den Inhalt des Inhaltssteuerelements zum Zeitpunkt der Änderung.  Alle Inhaltssteuerelemente können in rich-Text oder Baustein Inhaltssteuerelemente vom Typ geändert werden, da diese Typen beliebiger anderer Inhalt zulässig.  Für andere Arten Wenn der Inhalt für den Typ gültig ist, ändern Sie die gewünschten ist ändern Sie dann den Typ zulässig ist.  Andernfalls wird die Änderung abgelehnt, was zu einem Laufzeitfehler.</para>
-          <para />
-        </remarks>
+        <summary>Gibt den Typ für ein Inhaltssteuerelement zurück oder legt ihn fest. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" /></value>
+        <remarks><para>Sie können die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> -Eigenschaft verwenden, um den Typ eines Inhaltssteuerelements von einem Typ in einen anderen zu ändern.  Ob dies möglich ist, hängt allerdings von dem ursprünglichen Typ sowie dem Inhalt des Inhaltssteuerelements zum Zeitpunkt der Änderung ab.  Alle Inhaltssteuerelemente können in Inhaltssteuerelemente vom Typ Rich-Text oder Bausteinkatalog geändert werden, da bei diesen Typen beliebiger anderer Inhalt zulässig ist.  Bei anderen Typen ist eine Änderung nur möglich, wenn der Inhalt für den Typ gültig ist, in den die Änderung erfolgen soll.  Andernfalls wird die Änderung abgelehnt und ein Laufzeitfehler angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ungroup">
@@ -1305,12 +1202,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-		Entfernt ein Gruppen-Inhaltssteuerelement aus einem Dokument, sodass die zugehörigen untergeordneten Inhaltssteuerelemente nicht mehr geschachtelt sind und uneingeschränkt bearbeitet werden können.</summary>
-        <remarks>
-          <para>Diese Methode schlägt fehl, wenn Sie es auf einem Steuerelement ausführen, die nicht vom Typ ist <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />.</para>
-          <para />
-        </remarks>
+        <summary>Entfernt ein Gruppen-Inhaltssteuerelement aus einem Dokument, sodass die zugehörigen untergeordneten Inhaltssteuerelemente nicht mehr geschachtelt sind und uneingeschränkt bearbeitet werden können.</summary>
+        <remarks><para>Diese Methode schlägt fehl, wenn Sie Sie auf einem Steuerelement ausführen, das <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />nicht vom Typ ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XMLMapping">
@@ -1337,9 +1231,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Zuordnung eines Inhaltssteuerelements zu XML-Daten im Datenspeicher eines Dokuments zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XMLMapping" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XMLMapping" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

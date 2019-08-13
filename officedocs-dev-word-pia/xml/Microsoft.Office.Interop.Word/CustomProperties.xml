@@ -1,13 +1,5 @@
 <Type Name="CustomProperties" FullName="Microsoft.Office.Interop.Word.CustomProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8f6473f0e4c3581ad32f4763037b5c6429e43eb2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669731" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="22226bea0164d096e40f7c20b44e97dd1e5c0a19" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147151" /></Metadata><TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomProperties&#xA;Implements IEnumerable" />
@@ -30,15 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.CustomProperty" /> -Objekten, die die Eigenschaften im Zusammenhang mit einem Smarttag hinzu.</summary>
-    <remarks>
-      <para>
-        <b>CustomProperties</b> -Auflistung enthält alle benutzerdefinierten Smarttag-Eigenschaften in einem Dokument.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> Eigenschaft, um ein einzelnes <b>CustomProperties</b> -Objekt zurückzugeben. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.CustomProperties.Add(System.String,System.String)" /> -Methode des <b>CustomProperties</b> -Objekts zum Erstellen einer benutzerdefinierten Eigenschaft.</para>
-      <para>Verwendung <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> (<paramref name="index" />) um eine einzelne Eigenschaft für ein Smarttag zurückzugeben, wobei Index die Nummer der Eigenschaft ist.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Count" /> Eigenschaft, um die Anzahl der benutzerdefinierten Eigenschaften für ein Smarttag zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.CustomProperty" /> Objekten, die die Eigenschaften im Zusammenhang mit einem Smarttag darstellt.</summary>
+    <remarks><para>Die <b>CustomProperties</b>-Auflistung enthält alle benutzerdefinierten Smarttageigenschaften in einem Dokument.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> die-Eigenschaft, um ein einzelnes <b>CustomProperties</b> -Objekt zurückzugeben. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CustomProperties.Add(System.String,System.String)" /> die-Methode des <b>CustomProperties</b> -Objekts mit, um eine benutzerdefinierte Eigenschaft zu erstellen.</para>
+      <para>Verwenden <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> Sie<paramref name="index" />(), um eine einzelne Eigenschaft für ein Smarttag zurückzugeben, wobei Index die Nummer der Eigenschaft ist.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Count" /> die-Eigenschaft, um die Anzahl der benutzerdefinierten Eigenschaften für ein Smarttag zurückzugeben. </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,11 +54,9 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> erforderlich. Der Name der benutzerdefinierten Smarttageigenschaft.</param>
-        <param name="Value">
-          <b>String</b> erforderlich. Der Wert der benutzerdefinierten Smarttageigenschaft.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CustomProperty" /> -Objekt, das eine benutzerdefinierte Eigenschaft hinzugefügt, die mit einem Smarttag darstellt.</summary>
+        <param name="Name"><b>String</b> erforderlich. Der Name der benutzerdefinierten Smarttageigenschaft.</param>
+        <param name="Value"><b>String</b> erforderlich. Der Wert der Custom Smart Tag-Eigenschaft.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CustomProperty" /> Objekt zurück, das eine benutzerdefinierte Eigenschaft darstellt, die einem Smarttag hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,11 +142,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,7 +205,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

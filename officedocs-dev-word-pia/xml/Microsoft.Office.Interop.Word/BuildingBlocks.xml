@@ -1,13 +1,5 @@
 <Type Name="BuildingBlocks" FullName="Microsoft.Office.Interop.Word.BuildingBlocks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b564762e13b8c2ff90781598a75c43d3264e0999" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670014" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlocks" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d401d5ea86105b9d1451c3ac5f79c1694c918bbe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142355" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlocks" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlocks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlocks" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlocks" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> -Objekte für eine bestimmte Bausteintyp und eine Kategorie in einer Vorlage.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> -Methode, um einen neuen Baustein erstellen und zu einer Vorlage hinzufügen. </para>
-      <para>Mit zurückgegebenen Auflistung der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> -Auflistung ist eine gefilterte Auflistung basierend auf den Typ und identischer Kategorie. Je nachdem, wie Sie die Auflistung zugreifen die zurückgegebene Auflistung geändert wird.  Beispielsweise, wenn Sie Zugriff auf eine Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> mit der Kategorie "Allgemein", die zurückgegebene Auflistung möglicherweise aus der Auflistung zurückgegeben, wenn Sie Zugriff auf eine Auflistung von Bausteinen mit einem anderen <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> mit einer Kategorie "Benutzerdefiniert".  Es ist außerdem aus der Auflistung zurückgegeben, wenn Sie Zugriff auf die Auflistung von Bausteinen mit einem anderen <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> mit der Kategorie "Allgemein".</para>
-      <para>Weitere Informationen zu Bausteinen finden Sie unter <a href="HV10120827">Arbeiten mit Bausteinen</a></para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekten für einen bestimmten Bausteintyp und eine bestimmte Kategorie in einer Vorlage dar.</summary>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> die-Methode, um einen neuen Baustein zu erstellen und zu einer Vorlage hinzuzufügen. </para>
+      <para>Die mit der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> Auflistung zurückgegebene Auflistung ist eine gefilterte Auflistung basierend auf dem Typ und der Kategorie. Je nachdem, wie Sie auf die Auflistung zugreifen, hat die Auflistung Änderungen zurückgegeben.  Wenn Sie beispielsweise auf eine Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General" zugreifen, kann sich die zurückgegebene Auflistung von der Auflistung unterscheiden, die zurückgegeben wird, wenn Sie <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> auf eine Auflistung von Bausteinen mit einem Typ von mit einem Category-Objekt zugreifen. von "Custom".  Es unterscheidet sich auch von der Auflistung, die zurückgegeben wird, wenn Sie auf die Auflistung <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> von Bausteinen mit einem Typ von mit einer Kategorie von "General" zugreifen.</para>
+      <para>Weitere Informationen zum Erstellen von Bausteinen finden Sie unter <a href="HV10120827">Working with Building Blocks</a> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,14 +49,12 @@
         <Parameter Name="InsertOptions" Type="Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />
       </Parameters>
       <Docs>
-        <param name="Name">Gibt den Namen des Eintrags Baustein.  Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt.</param>
-        <param name="Range">Gibt den Wert des Eintrags für den Baustein an. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt.</param>
-        <param name="Description">Gibt die Beschreibung des Eintrags für den Baustein an. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt.</param>
-        <param name="InsertOptions">Gibt an, ob der Bausteineintrag als eine Seite, einen Absatz oder Inline eingefügt wird. Wenn Length angegeben, der Standardwert ist <see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" />. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> -Eigenschaft für die <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt.</param>
-        <summary>Erstellt einen neuen Baustein und gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />
-        </returns>
+        <param name="Name">Gibt den Namen des Eintrags für den Baustein an.  Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> -Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekts.</param>
+        <param name="Range">Gibt den Wert des Eintrags für den Baustein an. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> -Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekts.</param>
+        <param name="Description">Gibt die Beschreibung des Eintrags für den Baustein an. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> -Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekts.</param>
+        <param name="InsertOptions">Gibt an, ob der Eintrag für den Baustein als Seite oder Absatz oder in einer Linie eingefügt wird. Wenn nicht angegeben, ist <see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" />der Standardwert. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> -Eigenschaft für das <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt.</param>
+        <summary>Erstellt einen neuen Baustein und gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt zurück.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +81,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,10 +109,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,16 +137,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <summary>Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -190,9 +170,7 @@
       <Docs>
         <param name="Index">Gibt ein <b>String</b> oder <b>Integer</b> an, das den Namen oder die Ordnungsposition des Objekts in der Auflistung darstellt.</param>
         <summary>Gibt das angegebene Element in der Auflistung zurück.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,10 +197,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

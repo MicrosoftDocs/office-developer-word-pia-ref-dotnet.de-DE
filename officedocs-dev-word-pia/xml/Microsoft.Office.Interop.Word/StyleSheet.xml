@@ -1,13 +1,5 @@
 <Type Name="StyleSheet" FullName="Microsoft.Office.Interop.Word.StyleSheet">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="72919b7cdf16361f5caf5cd5a9ed121ce0c8383c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670035" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StyleSheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2da0d0a53e0f2e767486bea8385d1ef59128f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143945" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheet" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein einzelnes cascading Stylesheet, einem Webdokument zugeordnet ist.</summary>
-    <remarks>
-      <para>Das <b>StyleSheet</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.StyleSheets" /> Auflistung. <b>StyleSheets</b> -Auflistung enthält alle für die mit dem angegebenen Dokument angefügten cascading Stylesheets.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> -Eigenschaft oder <b>StyleSheets</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name oder die Nummer des Stylesheets der <b>StyleSheets</b> -Auflistung, um ein <b>StyleSheet</b> -Objekt zurückzugeben.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" /> -Eigenschaft auf die Rangfolge von cascading Stylesheets bestimmen.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> -Methode, um die Rangfolge von Neuanordnen angefügten Stylesheets.</para>
-      <para />
-    </remarks>
+    <summary>Stellt ein einzelnes Cascading Stylesheet dar, das mit einem Webdokument verbunden ist.</summary>
+    <remarks><para>Das <b>Stylesheet</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.StyleSheets" /> Auflistung. Die <b>StyleSheets</b>-Auflistung enthält alle Cascading Stylesheets, die an ein bestimmtes Dokument angefügt sind.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> die Eigenschaft oder Stylesheets<paramref name="index" />(), <paramref name="index" /> wobei es sich um den Namen oder die Nummer des Stylesheets handelt, der <b>Stylesheets</b> -Auflistung, um ein <b>Stylesheet</b> -Objekt zurückzugeben. <b></b></para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" /> die-Eigenschaft, um die Rangfolge von Cascading Stylesheets zu bestimmen.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> die-Methode, um die Rangfolge der angefügten Stylesheets neu anzuordnen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,11 +79,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,12 +132,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen der eines cascading Stylesheets, einschließlich der Laufwerk oder im Web an.</summary>
+        <summary>Gibt den Namen eines Cascading Stylesheets einschließlich Laufwerk- oder Webpfad an.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Verwendung dieser Eigenschaft entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, und <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> Eigenschaften in Folge.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Verwendung dieser Eigenschaft entspricht der nacheinander <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />Verwendung <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />der Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> , und.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -175,7 +161,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +189,7 @@
         <Parameter Name="Precedence" Type="Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />
       </Parameters>
       <Docs>
-        <param name="Precedence">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />. Die Ebene der Rangfolge. Kann eine der folgenden WdStyleSheetPrecedence-Konstanten sein:<b>WdStyleSheetPrecedenceHigher</b><b>WdStyleSheetPrecedenceHighest</b><b>WdStyleSheetPrecedenceLower</b><b>WdStyleSheetPrecedenceLowest</b></param>
+        <param name="Precedence">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />. Die Ebene der Rangfolge. Kann eine der folgenden WdStyleSheetPrecedence-Konstanten sein:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
         <summary>Verschiebt die Rangfolge einer Formatvorlage.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,12 +275,10 @@
       <Docs>
         <summary>Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nicht den Pfad ein nachfolgendes Zeichen enthalten, z. B. "C:\MSOffice" oder "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> -Eigenschaft auf den Dateinamen ohne Pfad und mit Zurückgeben der <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> -Eigenschaft auf den Dateinamen und den Pfad zusammen zurück.</para>
+        <remarks><para>Der Pfad enthält kein nachfolgendes Zeichen, beispielsweise "C:\MSOffice" oder "http://MyServer". Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> die-Eigenschaft, um den Dateinamen ohne den Pfad zurück <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> zugeben, und verwenden Sie die-Eigenschaft, um den Dateinamen und den Pfad zusammen zurückzugeben.</para>
           <para>
-            <b>Hinweis</b> Sie können <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl sie Schrägstriche (/) und der <b>PathSeparator</b> -Eigenschaft enthalten wird standardmäßig auf einen umgekehrten Schrägstrich (\).</para>
-          <para />
-        </remarks>
+            <b>Hinweis:</b>  Sie können die <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl Sie Schrägstriche (/) enthalten und die <b>PathSeparator</b> -Eigenschaft\)standardmäßig einen umgekehrten Schrägstrich (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -323,7 +307,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge</b> , die den Titel eines Webstylesheets darstellt.</summary>
+        <summary>Gibt eine <b>Zeichenfolge</b> zurück, die den Titel eines Webstylesheets darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,11 +338,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStyleSheetLinkType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Vorlagentyp.</summary>
+        <summary>Gibt den Typ der Vorlage zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />. kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>wdAttachedTemplate</b>
           </para>
@@ -368,8 +351,7 @@
           <para>
             <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

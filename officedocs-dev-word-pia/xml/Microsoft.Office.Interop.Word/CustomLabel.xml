@@ -1,13 +1,5 @@
 <Type Name="CustomLabel" FullName="Microsoft.Office.Interop.Word.CustomLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc491a73c52a2fd4e6f048a49a9302b5b1ff748f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670703" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f214b3428fec4a541bfb576068a5cc01082ae76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147263" /></Metadata><TypeSignature Language="C#" Value="public interface CustomLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomLabel" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein benutzerdefiniertes Adressetikett dar.</summary>
-    <remarks>
-      <para>Das <b>CustomLabel</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> Auflistung. Die <b>CustomLabels</b> -Auflistung enthält alle im Dialogfeld Etiketten einrichten aufgeführten, benutzerdefinierten Adressetiketten.</para>
-      <para>Verwendung <b>CustomLabels</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der benutzerdefinierte Etikettenname oder die Indexzahl darstellt, um ein einzelnes <b>CustomLabel</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des benutzerdefinierten Adressetiketts in der <b>CustomLabels</b> -Auflistung.</para>
+    <remarks><para>Das <b>CustomLabel</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> Auflistung. Die <b>CustomLabels</b> -Auflistung enthält alle benutzerdefinierten Adressetiketten, die im Dialogfeld Bezeichnungsoptionen aufgelistet sind.</para>
+      <para>Verwenden <b></b>Sie CustomLabels<paramref name="index" />(), <paramref name="index" /> wobei es sich um den Namen oder die Indexnummer der benutzerdefinierten Bezeichnung handelt, um ein einzelnes <b>CustomLabel</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des benutzerdefinierten Adressetiketts in der <b>CustomLabels</b>-Auflistung dar.</para>
       <para>
-        <b>Hinweis</b>: <b>CustomLabel</b> -Objekte werden in der <b>CustomLabels</b> -Auflistung alphabetisch sortiert und ihre Indexnummern sind dynamisch neu als der Inhalt der Auflistung. Aus diesem Grund ist es sicherer verweisen auf ein bestimmtes <b>CustomLabel</b> -Objekt nach Namen und nicht durch Indexnummer.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" /> -Methode, um ein benutzerdefiniertes Etikett erstellen.</para>
-      <para />
-    </remarks>
+        <b>Hinweis</b>: <b>CustomLabel</b> -Objekte werden in der <b>CustomLabels</b> -Auflistung alphabetisch sortiert, und ihre Indexnummern werden dynamisch neu zugewiesen, wenn sich der Inhalt der Sammlung ändert. Aus diesem Grund ist es sicherer, auf ein bestimmtes <b>CustomLabel</b> -Objekt anhand des Namens und nicht anhand der Indexnummer zu referenzieren.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" /> die-Methode, um eine benutzerdefinierte Bezeichnung zu erstellen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,11 +81,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -146,8 +134,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Drucker für das angegebene benutzerdefinierte Etikett eingeben ist Nadeldrucker. <b>"False"</b> Wenn Laserdruckern oder Freihand ist.</summary>
+        <summary><b>True</b>, wenn der Druckertyp für das angegebene benutzerdefinierte Etikett ein Nadeldrucker ist. <b>False</b>, wenn es sich um einen Laser- oder Tintenstrahldrucker handelt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +165,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Höhe des angegebenen benutzerdefinierten Adressetiketts in Punkt fest.</summary>
+        <summary>Gibt die Höhe des angegebenen benutzerdefinierten Adressetiketts in Punkt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,12 +196,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den horizontalen Abstand (in Punkt) zwischen dem linken Rand eines benutzerdefinierten Adressetiketts und der linken Kante des nächsten Adressetiketts.</summary>
+        <summary>Gibt den horizontalen Abstand (in Punkt) zwischen der linken Kante eines benutzerdefinierten Adressetiketts und der linken Kante des nächsten Adressetiketts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf einen anderen Wert, die für das Layout des angegebenen Adressetiketts nicht gültig ist geändert wird, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn diese Eigenschaft auf einen Wert geändert wird, der für das Layout des angegebenen Adressetiketts nicht gültig ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -240,7 +225,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +256,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,12 +287,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Anzahl der benutzerdefinierten Adressetiketten über eine Seite.</summary>
+        <summary>Gibt die Anzahl der benutzerdefinierten Adressetiketten, die auf vertikal eine Seite passen, zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf einen anderen Wert, die für das Layout des angegebenen Adressetiketts nicht gültig ist geändert wird, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn diese Eigenschaft auf einen Wert geändert wird, der für das Layout des angegebenen Adressetiketts nicht gültig ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberDown">
@@ -336,12 +319,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Anzahl der benutzerdefinierten Adressetiketten, um die Länge einer Seite nach unten.</summary>
+        <summary>Gibt die Anzahl der benutzerdefinierten Adressetiketten, die horizontal auf eine Seite passen, zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf einen anderen Wert, die für das Layout des angegebenen Adressetiketts nicht gültig ist geändert wird, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn diese Eigenschaft auf einen Wert geändert wird, der für das Layout des angegebenen Adressetiketts nicht gültig ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -370,12 +351,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCustomLabelPageSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Seitengröße für das angegebene benutzerdefinierte Adressetikett.</summary>
+        <summary>Gibt die Seitengröße für das benutzerdefinierte Adressetikett zurück oder legt diese Seitengröße fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>PageSize</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" /> Konstanten. Einige der folgenden Konstanten haben möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>PageSize</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" /> Konstanten sein. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -432,12 +411,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Breite des Seitenrandes (in Punkt) für das angegebene benutzerdefinierte Adressetikett.</summary>
+        <summary>Gibt die Breite des Seitenrandes (in Punkt) für das angegebene benutzerdefinierte Adressetikett zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf einen anderen Wert, die für das Layout des angegebenen Adressetiketts nicht gültig ist geändert wird, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn diese Eigenschaft auf einen Wert geändert wird, der für das Layout des angegebenen Adressetiketts nicht gültig ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopMargin">
@@ -466,7 +443,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem oberen Rand der Seite und der oberen Begrenzung des Textkörpers.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen der Seitenoberkante und der oberen Begrenzung des Textkörpers zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -494,8 +471,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die verschiedenen Eigenschaften (beispielsweise <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" />, <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />, und <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />) für die angegebene benutzerdefinierte Etikett arbeiten zusammen, um ein gültiges Adressetikett ergeben.</summary>
+        <summary><b>True</b> , wenn die verschiedenen Eigenschaften (beispielsweise <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" /> <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />,, und <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />) für die angegebene benutzerdefinierte Bezeichnung zusammenarbeiten, um eine gültige Adressetikett zu erstellen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,12 +502,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den vertikalen Abstand zwischen dem oberen Rand Adressetiketts und im oberen Bereich des nächsten Adressetiketts.</summary>
+        <summary>Gibt den vertikalen Abstand zwischen der Oberkante eines Adressetiketts und der Oberkante des nächsten Adressetiketts zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf einen anderen Wert, die für das Layout des angegebenen Adressetiketts nicht gültig ist geändert wird, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn diese Eigenschaft auf einen Wert geändert wird, der für das Layout des angegebenen Adressetiketts nicht gültig ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -560,7 +534,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt sie fest.</summary>
+        <summary>Gibt die Breite des angegebenen Objekts (in Punkten) zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

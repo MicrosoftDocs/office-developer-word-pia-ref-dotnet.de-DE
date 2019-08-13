@@ -1,13 +1,5 @@
 <Type Name="Version" FullName="Microsoft.Office.Interop.Word.Version">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3228b06fa6ed14a8bcc13974239f6775681d7027" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670575" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Version" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1093fbf071b1d02c902b04fc31b1548af334174f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143735" /></Metadata><TypeSignature Language="C#" Value="public interface Version" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Version" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Version" />
   <TypeSignature Language="VB.NET" Value="Public Interface Version" />
@@ -27,8 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine einzelne Version eines Dokuments dar.</summary>
-    <remarks>
-      <para>Das <b>Version</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Versions" /> Auflistung. Die <b>Versions</b> -Auflistung enthält alle Versionen des angegebenen Dokuments.</para> Verwenden Sie <b>Versionen</b><para>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Version</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Version in der <b>Versions</b> -Auflistung dar. Die erste Version der <b>Versions</b> -Auflistung hinzugefügt wird, Indexnummer 1.</para><para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" /> -Methode, um die <b>Versions</b> -Auflistung ein Element hinzuzufügen.</para><para /></remarks>
+    <remarks><para>Das <b>Version</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Versions" /> Auflistung. Die <b>Versions</b>-Auflistung enthält alle Versionen des angegebenen Dokuments.</para>
+      <para>Verwenden <b></b>Sie Versionen<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>Version</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Version in der Versions <b></b> -Auflistung dar. Die erste Version, die der <b>Versions</b> -Auflistung hinzugefügt wird, ist die Indexnummer 1.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" /> die-Methode, um der <b>Versions</b> -Auflistung ein Element hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -54,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +76,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die angegebene Version eines Dokuments zugeordneten Kommentar zurück.</summary>
+        <summary>Gibt den Kommentar zurück, der mit der angegebenen Version eines Dokuments verbunden ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,11 +106,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -142,7 +134,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Das Datum und die Uhrzeit, das die Dokumentversion gespeichert wurde.</summary>
+        <summary>Das Datum und die Uhrzeit des Speicherns der Dokumentversion.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +187,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,7 +213,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Öffnet das angegebene Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt, das das geöffnete Objekt darstellt.</summary>
+        <summary>Öffnet das angegebene Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück, das das geöffnete Objekt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -305,7 +297,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des Benutzers, der die angegebene Version des Dokuments gespeichert.</summary>
+        <summary>Gibt den Namen des Benutzers zurück, der die angegebene Version des Dokuments gespeichert hat.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

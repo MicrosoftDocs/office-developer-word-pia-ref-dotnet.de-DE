@@ -1,13 +1,5 @@
 <Type Name="MappedDataField" FullName="Microsoft.Office.Interop.Word.MappedDataField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ad9be617499eec01e5a31a469501445354966e87" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670209" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MappedDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dc041533103e222b636ea93cb4c8248a9eb022ba" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147918" /></Metadata><TypeSignature Language="C#" Value="public interface MappedDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MappedDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MappedDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MappedDataField" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein einzelnes zugeordnetes Datenfeld dar.</summary>
-    <remarks>
-      <para>Das <b>MappedDataField</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> Auflistung. Die <b>MappedDataFields</b> -Auflistung enthält alle in Microsoft Word verfügbaren zugeordneten Datenfelder.</para>
-      <para>A zugeordneten Datenfeld handelt es sich um ein Feld in Word, die häufig verwendete enthaltenen Namen oder die Adresse verwendete, z. B. "Vorname". Wenn eine Datenquelle ein "First Name"-Feld oder eine Variation enthält (z. B. "Vorname", "FirstName", "First" oder "FName"), das Feld in der Datenquelle wird automatisch die entsprechenden zugeordneten Datenfeld in Word zugeordnet. Wenn einem Dokument oder einer Vorlage ist mit mehr als einer Datenquelle zusammengeführt werden sollen, zugeordneten Datenfelder stellen es nicht erforderlich, die Felder in das Dokument auf Übereinstimmung mit den Feldnamen in der Datenbank erneut eingeben.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> Eigenschaft, um ein <b>MappedDataField</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Represents a single mapped data field.</summary>
+    <remarks><para>Das <b>MappedDataField</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> Auflistung. Die <b>MappedDataFields</b> -Auflistung enthält alle zugeordneten Datenfelder, die in Microsoft Word verfügbar sind.</para>
+      <para>Ein zugeordnetes Datenfeld ist ein in Word enthaltenes Feld, das häufig verwendete namens-oder Adressinformationen wie "Vorname" darstellt. Wenn eine Datenquelle ein "First Name"-Feld oder eine Variation (wie z. B. "First_Name," "FirstName," "First" oder "FName") enthält, wird das Feld in der Datenquelle automatisch dem zugehörigen zugeordneten Datenfeld in Word zugeordnet. Wenn ein Dokument oder eine Vorlage mit mehr als einer Datenquelle zusammengeführt werden soll, ist es bei zugeordneten Datenfeldern überflüssig, zur Übereinstimmung mit den Feldnamen in der Datenbank die Felder in das Dokument erneut einzugeben.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> die-Eigenschaft, um ein <b>MappedDataField</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldIndex">
@@ -121,12 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die entsprechende Nummer eines Felds in der Seriendruck-Datenquelle darstellt, der keinem zugeordneten Datenfeld zugeordnet ist.</summary>
+        <summary>Zurückgeben oder Festlegen einer <b>ganzen Zahl</b> , die die entsprechende Feld Nummer in der Seriendruck-Datenquelle darstellt, die eine zugeordnete Daten Feld zugeordnet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>MappedDataField</b> -Eigenschaft gibt 0 (null) zurück, wenn das angegebene Datenfeld keinem zugeordneten Datenfeld zugeordnet ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>MappedDataField</b> -Eigenschaft gibt 0 (null) zurück, wenn das angegebene Datenfeld keinem zugeordneten Daten Feld zugeordnet ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldName">
@@ -152,12 +138,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest oder gibt eine <b>Zeichenfolge</b> , die den Namen des Felds in der Seriendruck-Datenquelle darstellt, der keinem zugeordneten Datenfeld zugeordnet ist.</summary>
+        <summary>Legt fest oder gibt eine <b>Zeichenfolge</b> , die den Namen des Felds in der Seriendruck-Datenquelle darstellt, die eine zugeordnete Daten Feld zugeordnet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>DataFieldName-Eigenschaft gibt eine leere Zeichenfolge zurück, wenn das angegebene Datenfeld keinem zugeordneten Datenfeld zugeordnet ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die DataFieldName-Eigenschaft gibt eine leere Zeichenfolge zurück, wenn das angegebene Datenfeld keinem zugeordneten Daten Feld zugeordnet ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -183,7 +167,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +195,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,12 +251,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Inhalt des Seriendruck-Datenfeld oder zugeordneten Datenfeld für den aktuellen Datensatz zurück.</summary>
+        <summary>Gibt den Inhalt des Felds Seriendruckdaten oder zugeordnete Daten für den aktuellen Datensatz zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> -Eigenschaft auf den aktiven Datensatz in einer Seriendruck-Datenquelle festlegen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> die-Eigenschaft, um den aktiven Datensatz in einer Seriendruck-Datenquelle festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

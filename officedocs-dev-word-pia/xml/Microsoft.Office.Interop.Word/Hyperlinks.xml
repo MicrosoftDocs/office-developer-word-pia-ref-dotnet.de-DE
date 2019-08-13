@@ -1,13 +1,5 @@
 <Type Name="Hyperlinks" FullName="Microsoft.Office.Interop.Word.Hyperlinks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8d151b1c999c955b2def6c04b13e872538ebe676" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670524" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6826833cc30e7cdb396aeda67c34be780ae7876a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147977" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlinks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlinks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlinks&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Auflistung der <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> Objekte in einem Dokument, einem Bereich oder einer Auswahl.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Hyperlinks</b> -Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, oder <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekts, um die <b>Hyperlinks</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Hyperlinks.Add(System.Object,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um einen Hyperlink erstellen und der <b>Hyperlinks</b> -Auflistung hinzugefügt.</para>
-      <para>Mit <b>Hyperlinks</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Hyperlink</b> -Objekt in einem Dokument, einem Bereich oder einer Auswahl zurückzugeben.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Hyperlinks.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Wenn Elemente in anderen Artikeln zählen möchten, verwenden Sie die Auflistung mit der <b>Range</b> -Objekt.</para>
-      <para />
-    </remarks>
+    <summary>Stellt die Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> Objekten in einem Dokument, einem Bereich oder einer Auswahl dar.</summary>
+    <remarks><para>Verwenden Sie die <b>Hyperlinks</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Document" />eines <see cref="T:Microsoft.Office.Interop.Word.Range" />, oder <see cref="T:Microsoft.Office.Interop.Word.Selection" /> -Objekts, um die <b>Hyperlinks</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Hyperlinks.Add(System.Object,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um einen Hyperlink zu erstellen und ihn der <b>Hyperlinks</b> -Auflistung hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Hyperlinks<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>Hyperlink</b> -Objekt in einem Dokument, einem Bereich oder einer Auswahl zurückzugeben.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Hyperlinks.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Wenn Sie Elemente in anderen Textabschnitten zählen möchten, verwenden Sie die Auflistung mit dem <b>Range</b> -Objekt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Add">
@@ -102,14 +92,13 @@
         <Parameter Name="Target" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Anchor">
-          <b>Objekt</b>erforderlich. Der Text oder die Grafik, der bzw. die in einen Hyperlink umgewandelt werden soll.</param>
-        <param name="Address">Optionales- <b>Objekt</b>. Die Adresse für den angegebenen Hyperlink. Die Adresse kann eine e-Mail-Adresse, eine IP-Adresse oder einen Dateinamen ein. Beachten Sie, dass Microsoft Word die Genauigkeit der Adresse nicht überprüft, ob ein.</param>
-        <param name="SubAddress">Optionales- <b>Objekt</b>. Der Name einer Stelle innerhalb der Zieldatei, beispielsweise eine Textmarke, ein benannter Bereich oder eine Foliennummer.</param>
-        <param name="ScreenTip">Optionales- <b>Objekt</b>. Der Text, der als QuickInfo angezeigt wird, wenn der Mauszeiger über dem angegebenen Hyperlink positioniert wird. Der Standardwert lautet <paramref name="Address" />.</param>
-        <param name="TextToDisplay">Optionales- <b>Objekt</b>. Der Anzeigetext des angegebenen Hyperlinks. Der Wert dieses Arguments ersetzt den Text oder Grafik, die vom angegebenen <paramref name="Anchor" />.</param>
-        <param name="Target">Optionales- <b>Objekt</b>. Der Name des Frames oder Fensters, in den bzw. das Sie den angegebenen Hyperlink laden möchten.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> -Objekt, das einen neuen Hyperlink hinzugefügt, einem Bereich, eine Auswahl oder ein Dokument repräsentiert.</summary>
+        <param name="Anchor">Erforderliches <b>Objekt</b>. Der Text oder die Grafik, der bzw. die in einen Hyperlink umgewandelt werden soll.</param>
+        <param name="Address">Optionales <b>Objekt</b>. Die Adresse für den angegebenen Hyperlink. Bei der Adresse kann es sich um eine E-Mail-Adresse, eine Internetadresse oder einen Dateinamen handeln. Beachten Sie, dass von Microsoft Word nicht überprüft wird, ob die Adresse richtig ist.</param>
+        <param name="SubAddress">Optionales <b>Objekt</b>. Der Name einer Stelle innerhalb der Zieldatei, beispielsweise eine Textmarke, ein benannter Bereich oder eine Foliennummer.</param>
+        <param name="ScreenTip">Optionales <b>Objekt</b>. Der Text, der als QuickInfo angezeigt wird, wenn der Mauszeiger auf dem angegebenen Hyperlink positioniert ist. Der Standardwert ist <paramref name="Address" />.</param>
+        <param name="TextToDisplay">Optionales <b>Objekt</b>. Der Anzeigetext des angegebenen Hyperlinks. Der Wert dieses Arguments ersetzt den durch <paramref name="Anchor" />angegebenen Text oder die Grafik.</param>
+        <param name="Target">Optionales <b>Objekt</b>. Der Name des Frames oder Fensters, in den bzw. das Sie den angegebenen Hyperlink laden möchten.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> Objekt zurück, das einen neuen Hyperlink darstellt, der einem Bereich, einer Markierung oder einem Dokument hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,11 +184,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -260,7 +247,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

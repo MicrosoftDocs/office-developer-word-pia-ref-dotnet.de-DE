@@ -1,13 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Word.ChartGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4444187f8205ad4277847ad3e62bd596ec10edd2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670337" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c46b7a3f6b3884f675aec38fe394cce284c200df" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142271" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine oder mehrere Datenreihen dar, die unter Verwendung desselben Formats in ein Diagramm gezeichnet wurden.</summary>
-    <remarks>
-      <para>Ein Diagramm enthält eine oder mehrere Diagrammgruppen, jede Diagrammgruppe enthält eine oder mehrere <see cref="T:Microsoft.Office.Interop.Word.Series" /> -Objekte, und jede Datenreihe enthält einen oder mehrere <see cref="T:Microsoft.Office.Interop.Word.Points" /> Objekte. Beispielsweise kann ein einzelnes Diagramm sowohl eine Liniendiagrammgruppe, mit der Liniendiagramm gezeichneten enthält und eine Balkendiagrammgruppe, die mit dem Format des Balkendiagramms gezeichneten enthält enthalten. <b>ChartGroup</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung.</para>
-      <para>Verwendung <b>ChartGroups</b>(<paramref name="Index" />), wobei <paramref name="index" /> ist die Indexnummer der Diagrammgruppe, um ein einzelnes <b>ChartGroup</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Ein Diagramm enthält eine oder mehrere Diagrammgruppen, jede Diagrammgruppe enthält mindestens ein <see cref="T:Microsoft.Office.Interop.Word.Series" /> Objekt, und jede Datenreihe enthält ein oder mehrere <see cref="T:Microsoft.Office.Interop.Word.Points" /> Objekte. Beispielsweise kann ein einzelnes Diagramm sowohl eine Liniendiagrammgruppe, mit der Liniendiagramm gezeichneten enthält und eine Balkendiagrammgruppe, die mit dem Format des Balkendiagramms gezeichneten enthält enthalten. Das <b>Chart Group</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung.</para>
+      <para>Verwenden <b></b>Sie ChartGroups<paramref name="Index" />(), <paramref name="index" /> wobei die Indexnummer der Diagrammgruppe ist, um ein einzelnes <b>Chart</b> Group-Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +79,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt den Typ der Achsengruppe zurück. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,14 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Skalierungsfaktor für Blasen in der angegebenen Diagrammgruppe.  Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft kann auf eine Ganzzahl zwischen 0 (null) und 300 entsprechend eines Prozentsatzes der Standardgröße festgelegt werden.</para>
-          <para />
-        </remarks>
+        <summary>Gibt den Skalierungsfaktor für Blasen in der angegebenen Diagrammgruppe zurück oder legt ihn fest.  Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Diese Eigenschaft kann auf eine ganze Zahl zwischen 0 (null) und 300 festgelegt werden, die einem Prozentsatz der Standardgröße entspricht. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryCollection">
@@ -158,8 +140,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Indexnummer in der Auflistung sichtbar Kategorie der Kategorie, die zurückgegeben werden soll.</param>
-        <summary>Gibt alle sichtbaren Kategorien in der Diagrammgruppe oder der angegebenen sichtbar Kategorie zurück.</summary>
+        <param name="Index">Die Indexnummer in der sichtbaren Category-Auflistung der zurückzugebenden Kategorie.</param>
+        <summary>Gibt alle sichtbaren Kategorien in der Diagrammgruppe oder die angegebene sichtbare Kategorie zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,13 +170,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" zurück.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -223,10 +201,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder die Größe der Lücke in eine Ringdiagrammgruppe festgelegt. Die Innenringgröße wird als Prozentwert der Diagrammgröße angegeben und kann zwischen 10 bis 90 Prozent liegen. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Innenringgröße einer Ringdiagrammgruppe zurück oder legt sie fest. Die Innenringgröße wird als Prozentwert der Diagrammgröße angegeben und kann im Bereich von 10 bis 90 Prozent liegen. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,9 +230,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die negativen Abweichungen eines Liniendiagramms zurück. Gilt nur für Liniendiagramme. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DownBars" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DownBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +257,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Bezugslinien für eine Datenreihe eines Linien- oder Flächendiagramms zurück. Gilt nur für Linien- oder Flächendiagramme. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DropLines" />
-        </value>
+        <summary>Gibt die Bezugslinien für eine Datenreihe eines Linien- oder Flächendiagramms zurück. Gilt nur für Liniendiagramme und Flächendiagramme. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DropLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,14 +288,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Winkel des ersten Kreis- oder Ringsegments Segments in Grad (vertikal im Uhrzeigersinn). Gilt nur für Kreis-, 3-d Kreis- und Ringdiagrammen. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Ein Wert zwischen 0 und 360 kann sein.</para>
-          <para />
-        </remarks>
+        <summary>Gibt den Winkel des ersten Kreisdiagramm- oder Ringdiagrammsegments in Grad (ab vertikal im Uhrzeigersinn) zurück, oder legt diesen fest. Gilt nur für Kreis-, 3D-Kreis- und Ringdiagramme. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Dies kann ein Wert von 0 bis 360 sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullCategoryCollection">
@@ -351,8 +319,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Indexnummer in der Auflistung vollständige Kategorie der Kategorie, die zurückgegeben werden soll.</param>
-        <summary>Gibt alle Kategorien in der Diagrammgruppe oder der angegebenen Kategorie, ob sichtbar oder out gefilterte können.</summary>
+        <param name="Index">Die Indexnummer in der vollständigen Category-Auflistung der zurückzugebenden Kategorie.</param>
+        <summary>Gibt alle Kategorien in der Diagrammgruppe oder die angegebene Kategorie zurück, unabhängig davon, ob Sie sichtbar oder herausgefiltert werden.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -383,14 +351,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Häufig verwendete Hyperlinks und Spalte Diagramme: zurück oder legt den Abstand zwischen Balken- oder Säulengruppen als Prozentsatz der Balken- oder Breite. Kreis aus Kreis und Balken-aus-Kreis-Diagramme: Gibt zurück oder legt den Abstand zwischen den primären und sekundären Abschnitten des Diagramms fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft muss zwischen 0 und 500 liegen.</para>
-          <para />
-        </remarks>
+        <summary>Balken- und Säulendiagramme: Gibt den Abstand zwischen Balken- oder Säulengruppen als Prozentsatz der Balken- oder Säulenbreite zurück oder legt den Abstand fest. Kreis-aus-Kreis- und Balken-aus-Kreis-Diagramme: Gibt den Abstand zwischen den primären und sekundären Abschnitten des Diagramms zurück oder legt diesen fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>The value of this property must be between 0 and 500.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -419,14 +383,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Wert feststellen, ob es sich bei eine Diagrammgruppe eine 3D-Schattierung besitzt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Vom Typ Boolean</b> auf <b>True</b> festgelegt hat Diagrammgruppe dreidimensionale Schattierung, andernfalls <b>False</b>.</value>
-        <remarks>
-          <para>
-            <b>Hinweis</b>: die Einstellung <b>Has3DShading</b> = <b>False</b> wirkt sich das Diagramm Material auf "Flach" festlegen, oder Entfernen von den Effekt während der <b>Has3DShading</b>festlegen = <b>True</b> legt den Diagramminhalt auf den Standardwert.</para>
-          <para />
-        </remarks>
+        <summary>Gibt den Wert zurück, der bestimmt, ob eine Diagrammgruppe dreidimensionale Schattierungen aufweist, oder legt diesen fest. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher Wert</b> , der auf <b>true</b> festgelegt ist, wenn die Diagrammgruppe dreidimensionale Schattierungen aufweist, andernfalls <b>false</b>.</value>
+        <remarks><para>
+            <b>Hinweis</b>: durch Festlegen von <b>Has3DShading</b> = <b>false</b> wird das Diagramm Material auf "Flat" festgelegt oder der Effekt entfernt, während durch Festlegen des <b>Has3DShading</b> = <b>true</b> der Diagramm Inhalt auf den Standardwert festgelegt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDropLines">
@@ -455,9 +416,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Wert, der angibt, wenn das Diagramm Bezugslinien besitzt. Gilt nur für Linien- und Flächendiagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Vom Typ Boolean</b> auf <b>True</b> festgelegt, wenn die Zeile oder Flächendiagramms Bezugslinien angezeigt; andernfalls <b>"false"</b></value>
+        <summary>Gibt den Wert zurück oder legt ihn fest, der angibt, ob das Diagrammlinien enthält. Nur gültig für Linien- oder Flächendiagramme. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher Wert</b> , der auf <b>true</b> festgelegt ist, wenn das Linien-oder Flächendiagramm Liniendiagrammen enthält; andernfalls <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,9 +447,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Wert, der angibt, wenn das Diagramm Spannweitenlinien besitzt. Gilt nur für Liniendiagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Vom Typ Boolean</b> auf <b>True</b> festgelegt, wenn das Liniendiagramm Spannweitenlinien enthält; andernfalls <b>"false"</b></value>
+        <summary>Gibt den Wert zurück, der angibt, ob das Diagramm hoch niedrige Linien aufweist, oder legt diesen fest. Gilt nur für Liniendiagramme. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher Wert</b> , der auf <b>true</b> festgelegt ist, wenn das Liniendiagramm hoch niedrige Zeilen aufweist; andernfalls <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,9 +478,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Wert, der angibt, wenn ein Netzdiagramm Achse Beschriftungen besitzt. Gilt nur für Netzdiagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Vom Typ Boolean</b> auf <b>True</b> festgelegt, wenn ein Netzdiagramm Achse Beschriftungen besitzt; andernfalls <b>"false"</b></value>
+        <summary>Gibt den Wert zurück, der angibt, ob ein Netzdiagramm Achsenbeschriftungen aufweist, oder legt diesen fest. Nur gültig für Netzdiagramme. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher Wert</b> , der auf <b>true</b> festgelegt ist, wenn ein Netzdiagramm Achsenbezeichnungen aufweist; andernfalls <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,9 +509,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Wert besagt, wenn ein Säulendiagramm oder ein Balkendiagramm Verbindungslinien hat oder wenn ein Kreis-aus-Kreis-Diagramm oder Balken-aus-Kreis-Diagramm Verbindungslinien zwischen den beiden Abschnitten hat. Gilt nur für 2D-Diagramme gestapelten Balken 2D-Diagramme, gestapelte 2D-Säulendiagramme, Kreis aus Kreis oder Balken-aus-Kreis-Diagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b> , der in der folgenden Tabelle entsprechend aufgeführten Umstände aufgeführten Werte festgelegt ist. DescriptionReturn ValueA Kreis-aus-Kreis oder Balken aus-Kreis-Diagramm, die Verbindungslinien zwischen den beiden Abschnitten hat. <b>"True"</b> Eine Säulendiagramm oder Balkendiagramm, der Datenreihe Zeilen<b>True</b>Otherwise<b>False</b></value>
+        <summary>Gibt zurück oder legt den Wert fest, der angibt, ob ein gestapeltes Säulendiagramm oder Balkendiagramm Reihenlinien oder wenn ein Kreis-aus-Kreis-Diagramm oder Balken-aus-Kreis-Diagramm Verbindungslinien zwischen den beiden Abschnitten verfügt. Diese Eigenschaft kann nur auf gestapelte 2D-Diagramme, gestapelte 2D-Säulendiagramme, Kreis-aus-Kreis-Diagramme oder Balken-aus-Kreis-Diagramme angewendet werden. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher</b> Wert, der gemäß den aufgeführten Bedingungen auf die in der Tabelle unten aufgeführten Werte festgelegt ist. DescriptionReturn valuea Pie of pie-Diagramm oder Balken-aus-Kreis-Diagramm mit Verbindungslinien zwischen den beiden Abschnitten. <b>True</b> Ein gestapeltes Säulendiagramm oder Balkendiagramm mit Daten bankzeilen mit<b>true</b>andernfalls<b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -583,9 +540,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Wert, der angibt, wenn ein Diagramm Abweichungsbalken aufweist. Gilt nur für Liniendiagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Vom Typ Boolean</b> auf <b>True</b> festgelegt, wenn das Liniendiagramm Abweichungsbalken; andernfalls <b>False</b>.</value>
+        <summary>Gibt zurück oder legt den Wert fest, der angibt, ob ein Diagramm auf und ab Balken verfügt. Gilt nur für Liniendiagramme. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher Wert</b> , der auf <b>true</b> festgelegt ist, wenn das Liniendiagramm auf-und abseits Balken; andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -613,9 +569,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Spannweitenlinien für eine Datenreihe eines Liniendiagramms zurück. Gilt nur für Liniendiagramme. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.HiLoLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -643,9 +597,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Indexnummer des Objekts in einer Auflistung ähnlicher Objekte zurück.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -675,14 +627,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, wie Balken und Spalten angeordnet sind. Ein Wert zwischen – 100 und 100 kann sein. Gilt nur für 2D-Diagramme Balken und 2 2D-Säulendiagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf – festgelegt ist werden 100, die Balken, damit es ist eine Balkenbreite dazwischen positioniert. Wenn die Überlappung 0 (null) ist, besteht kein Abstand zwischen Balken (ein Balken startet unmittelbar nach der vorherigen Leiste). Wenn die Überlappung 100 ist, werden die Balken übereinander positioniert.</para>
-          <para />
-        </remarks>
+        <summary>Bestimmt die Positionierung von Balken und Säulen. Zulässige Werte liegen zwischen -100 und 100. Nur gültig für 2D-Balken- und 2D-Säulendiagramme. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn diese Eigenschaft auf – 100 festgelegt ist, werden Balken so positioniert, dass es eine Balkenbreite dazwischen gibt. Beträgt der Wert 0, so besteht kein Abstand zwischen den Balken (die Balken folgen direkt nacheinander). Beträgt der Wert 100, werden die Balken genau übereinander positioniert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -709,9 +657,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,9 +685,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Netzachsenbeschriftungen der angegebenen Diagrammgruppe zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.TickLabels" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.TickLabels" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,14 +715,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Größe des sekundären Abschnitts entweder ein Kreis-aus-Kreis oder Balken-aus-Kreis-Diagramms als Prozentsatz der Größe des primären Kreises. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Ein Wert zwischen 5 und 200 kann sein.</para>
-          <para />
-        </remarks>
+        <summary>Gibt die Größe des sekundären Abschnitts eines Kreises aus einem Kreisdiagramm oder eines Balkens aus einem Kreisdiagramm als Prozentsatz der Größe des primären Kreises zurück, oder legt diese fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Dies kann ein Wert von 5 bis 200 sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SeriesCollection">
@@ -803,9 +743,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b> der Name oder die Nummer der Datenreihe, die zurückgegeben werden soll. Wenn Index nicht verwendet wird, werden alle Datenreihen in der Diagrammgruppe zurückgegeben.</param>
-        <summary>Gibt die angeforderte Serie aus in der Diagrammgruppe zurück.</summary>
-        <returns>Ein <b>Objekt</b> in der <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> Format, die alle angeforderten Datenreihen in der Diagrammgruppe darstellt.</returns>
+        <param name="Index">Optionales <b>Objekt</b> der Name oder die Nummer der Datenreihe, die Sie zurückgeben möchten. Wenn Index nicht verwendet wird, werden alle Datenreihen in der Diagrammgruppe zurückgegeben.</param>
+        <summary>Gibt die angeforderte Datenreihe in der Diagrammgruppe zurück.</summary>
+        <returns>Ein <b>Objekt</b> im <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> Format, das alle angeforderten Datenreihen in der Diagrammgruppe darstellt.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,10 +772,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Verbindungslinien für 2D-Diagramme gestapelten Balken 2D-Diagramme, gestapelte 2D-Säulendiagramme, Kreis aus Kreis oder Balken-aus-Kreis-Diagramm zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SeriesLines" />
-        </value>
+        <summary>Gibt die Datenreihen für eine gestapelte 2D-Leiste, eine gestapelte 2D-Spalte, einen Kreis aus einem Kreis oder ein Balken-aus-Kreis-Diagramm zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SeriesLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -865,8 +803,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Wert, der bestimmt, ob der Diagrammgruppe negative Blasen angezeigt werden. Gilt nur für Blasendiagramme verwendet werden. Lese-/Schreibzugriff.</summary>
-        <value>Ein <b>Boolean</b> auf <b>True</b> festgelegt, wenn für die Diagrammgruppe, andernfalls <b>False</b>negative Blasen angezeigt werden.</value>
+        <summary>Gibt den Wert zurück, der bestimmt, ob für die Diagrammgruppe negative Blasen angezeigt werden, oder legt diesen fest. Dies gilt nur für Blasendiagramme. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher Wert</b> , der auf <b>true</b> festgelegt wird, wenn für die Diagrammgruppe negative Blasen angezeigt werden, andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,7 +835,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt sie fest, was die Blasengröße auf einem Blasendiagramm darstellt. Lese-/Schreibzugriff.</summary>
-        <value>Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> Konstanten: <b>XlSizeIsArea</b> oder <b>XlSizeIsWidth</b></value>
+        <value>Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> Konstanten sein: <b>xlSizeIsArea</b> oder <b>xlSizeIsWidth</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -927,10 +865,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, die ein Kreis-aus-Kreis oder Balken-aus-Kreis-Diagramms geteilt werden wie. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" />
-        </value>
+        <summary>Gibt die Aufteilung zweier Abschnitte eines Kreises aus einem Kreisdiagramm oder einer Balkens aus einem Kreisdiagramm zurück, oder legt diese fest. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -960,10 +896,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Schwellenwert Trennen der zwei Abschnitte entweder ein Kreis-aus-Kreis oder Balken-aus-Kreis-Diagramms. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt den Schwellenwert, der zwei Abschnitte eines Kreis-aus-Kreis-Diagramms oder Balken-aus-Kreis-Diagramms teilt, zurück oder legt ihn fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1000,9 +934,7 @@
       </ReturnValue>
       <Docs>
         <summary>Für die interne Verwendung reserviert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1039,8 +971,7 @@
       </ReturnValue>
       <Docs>
         <summary>Für die interne Verwendung reserviert.</summary>
-        <value>
-          <b>Ganze Zahl</b>.</value>
+        <value><b>Integer</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1068,9 +999,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die positiven Abweichungen eines Liniendiagramms zurück. Gilt nur für Liniendiagramme. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.UpBars" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.UpBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1100,9 +1029,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Wert, der angibt, wenn Microsoft Word jede Datenpunkt eine andere Farbe oder ein Muster zuweist. Das Diagramm darf nur eine Datenreihe enthalten. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Vom Typ Boolean</b> auf <b>True</b> festgelegt, wenn Microsoft Word jede datenpunktmarkierung eine andere Farbe oder ein Muster zuweist; andernfalls <b>"false"</b></value>
+        <summary>Gibt den Wert zurück oder legt diesen fest, der angibt, ob Microsoft Word jeder Datenpunktmarkierung eine andere Farbe oder ein anderes Muster zuweist. Das Diagramm darf nur eine Datenreihe enthalten. Lese-/Schreibzugriff.</summary>
+        <value>Ein <b>boolescher Wert</b> , der auf <b>true</b> festgelegt wird, wenn Microsoft Word jeder Datenpunktmarkierung eine andere Farbe oder ein anderes Muster zuweist. andernfalls <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="XMLNamespace" FullName="Microsoft.Office.Interop.Word.XMLNamespace">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e3cee4ccfb64e6e5f08d4d11a8818c1cafb6cce0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669975" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNamespace" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d3b52eee4a72b22c5b40876def419ead67fb9091" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145415" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespace" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespace" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespace" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespace" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes Schema innerhalb der Schemabibliothek dar.</summary>
-    <remarks>
-      <para>Können Sie von der Registerkarte XML-Schema im Dialogfeld Vorlagen und Add-Ins Schemabibliothek aus Microsoft Word zugreifen. Der Schemabibliothek darstellt, auf dem Computer eines Benutzers, die ein Benutzer auf ein Word-Dokument angewendet hat oder die ein Benutzer über das Dialogfeld Schemabibliothek explizit zur Schemabibliothek hinzugefügt hat, installierten Schemas.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" /> Auflistung, um ein einzelnes <b>XMLNameSpace</b> -Objekt zurückzugeben. Der Indexwert der <b>Item</b> -Eigenschaft kann eine <b>ganze Zahl</b>, die die Position des Schemas in der Schemabibliothek angezeigt wird, oder eine <b>Zeichenfolge</b>, die den Namen des Schemas darstellt, wie mit zurückgegeben werden die <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> (die Eigenschaft TargetNamespace-Einstellung im Schema definiert).</para>
-      <para />
-    </remarks>
+    <remarks><para>Über die Registerkarte XML-Schema im Dialogfeld Vorlagen und Add-Ins können Sie in Microsoft Word auf die Schemabibliothek zugreifen. Die Schemabibliothek stellt Schemas dar, die auf dem Computer eines Benutzers installiert sind, den ein Benutzer auf ein Word-Dokument angewendet hat oder den ein Benutzer der Schemabibliothek explizit mithilfe des Dialogfelds Schemabibliothek hinzugefügt hat.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" /> der Auflistung, um ein einzelnes XmlNamespace-Objekt zurückzugeben. <b></b> Der Indexwert der <b>Item</b> -Eigenschaft kann entweder eine <b>ganze Zahl</b>sein, die die Position des Schemas in der Schemabibliothek angibt, oder eine <b>Zeichenfolge</b>, die den Namen des Schemas darstellt, der mit der <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> -Eigenschaft zurückgegeben wird (der Im Schema definierte TargetNamespace-Einstellung).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alias">
@@ -63,8 +53,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True,</b> Wenn alle Benutzer Zugriff auf das angegebene Objekt vorhanden sind.</param>
-        <summary>Gibt eine <b>Zeichenfolge</b> , die den Anzeigenamen für das angegebene Objekt darstellt.</summary>
+        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True</b> , wenn alle Benutzer Zugriff auf das angegebene Objekt haben.</param>
+        <summary>Gibt einen Wert vom <b>Typ String</b> zurück, der den Anzeigenamen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,8 +110,7 @@
         <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>Objekt</b>erforderlich. Das Dokument, an das das angegebene XML-Schema angefügt werden soll.</param>
+        <param name="Document">Erforderliches <b>Objekt</b>. Das Dokument, an das das angegebene XML-Schema angefügt werden soll.</param>
         <summary>Fügt ein XML-Schema an ein Dokument an.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,11 +140,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTransform">
@@ -187,8 +174,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True,</b> Wenn alle Benutzer Zugriff auf das angegebene Objekt vorhanden sind.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> -Objekt, das die standardmäßige Extensible Stylesheet Language Transformation (XSLT)-Datei beim Öffnen eines Dokuments in einem XML-Schema für einen bestimmten Namespace verwendet darstellt.</summary>
+        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True</b> , wenn alle Benutzer Zugriff auf das angegebene Objekt haben.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> Objekt zurück, das die XSLT-Standarddatei (Extensible Stylesheet Language Transformation) darstellt, die beim Öffnen eines Dokuments aus einem XML-Schema für einen bestimmten Namespace verwendet werden soll.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,8 +234,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True,</b> Wenn alle Benutzer Zugriff auf das angegebene Objekt vorhanden sind.</param>
-        <summary>Dient zum Abrufen oder Festlegen des Speicherorts der angegebenen XML-Namespace.</summary>
+        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True</b> , wenn alle Benutzer Zugriff auf das angegebene Objekt haben.</param>
+        <summary>Dient zum Abrufen oder Festlegen des Speicherorts des angegebenen XML-Namespaces.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,7 +319,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XSLTransforms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> -Auflistung, die die Extensible Stylesheet Language Transformation (XSLT) Dateien für die Verwendung mit einem Schema darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> Auflistung zurück, die die XSLT-Dateien (Extensible Stylesheet Language Transformation) darstellt, die für die Verwendung mit einem Schema angegeben wurden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="CheckBox" FullName="Microsoft.Office.Interop.Word.CheckBox">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="49c5e968d7ca83ab33c2d641b57ba5240bef239d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669314" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CheckBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="44f3ebc6503c36473eb317875150d1134c7933aa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147179" /></Metadata><TypeSignature Language="C#" Value="public interface CheckBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CheckBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CheckBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface CheckBox" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes Kontrollkästchen-Formularfeld dar.</summary>
-    <remarks>
-      <para>Verwenden Sie <b>FormFields</b>(<paramref name="index" />), wobei <paramref name="index" /> Indexnummer oder der Name der Textmarke zugeordnet ist das Kontrollkästchen zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> -Eigenschaft mit dem <b>FormField</b> -Objekt um ein <b>CheckBox</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Formularfelds in der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> -Methode mit dem <b>FormFields </b>-Objekt um ein Kontrollkästchen-Formularfeld hinzuzufügen.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden <b></b>Sie FormFields<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer oder der dem Kontrollkästchen zugeordnete Name der Textmarke ist, um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> ein einzelnes Objekt zurückzugeben. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> die-Eigenschaft mit dem <b>FormField</b> -Objekt, um ein <b>CheckBox</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Formularfelds in der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> die-Methode mit dem <b>FormFields </b>-Objekt, um ein Kontrollkästchen-Formularfeld hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,8 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> wird die Größe des Kontrollkästchens oder Textrahmen entsprechend dem Schriftgrad des umgebenden Texts. <b>False</b> wird die Größe des Kontrollkästchens oder Textrahmens anhand der <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> Eigenschaft.</summary>
+        <summary>Bei <b>True</b> wird die Größe des Kontrollkästchens oder des Textrahmens entsprechend dem Schriftgrad des umgebenden Texts angepasst. <b>False</b> passt die Größe des Kontrollkästchens oder Textrahmens <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> entsprechend der Eigenschaft an.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,13 +107,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -153,7 +140,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Standardwert für das Kontrollkästchen.</summary>
+        <summary>Gibt den Standardwert für das Kontrollkästchen zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +168,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,7 +199,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Größe des angegebenen Kontrollkästchens in Punkt.</summary>
+        <summary>Gibt die Größe des angegebenen Kontrollkästchens in Punkt zurück oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,12 +227,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, ob der angegebene Formularfeld ein gültiges Kontrollkästchen-Formularfeld handelt.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob das angegebene Formularfeldobjekt ein gültiges Kontrollkästchen-Formularfeld ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.FormField" /> -Objekt, das den Typ des Formularfelds zu bestimmen (<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" />, <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" />, oder <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />) vor dem Anwenden der <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> Eigenschaft. Diese Vorsichtsmaßnahme wird sichergestellt, dass das <b>FormField </b>-Objekt dem erwarteten Typ ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.FormField" /> des Objekts, um den Typ des Formularfelds<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" />( <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" />, oder <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />) vor dem Anwenden <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> der Eigenschaft zu bestimmen. Durch diese Vorsichts <b> </b>Maßnahme wird sichergestellt, dass das FormField-Objekt der erwartete Typ ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -274,7 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob das Kontrollkästchen aktiviert ist.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob das Kontrollkästchen aktiviert ist, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

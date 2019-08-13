@@ -1,13 +1,5 @@
 <Type Name="DownBars" FullName="Microsoft.Office.Interop.Word.DownBars">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="afe32958072786003f671a96246de5d7c5f9f62b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669799" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DownBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f83d3ab2ff75cc5513807729e60d0a241fa1cd13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144582" /></Metadata><TypeSignature Language="C#" Value="public interface DownBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DownBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DownBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface DownBars" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt die negativen Abweichungen in einer Diagrammgruppe dar.</summary>
-    <remarks>
-      <para>Negative Abweichung verbinden Punkte auf der ersten Datenreihe in der Diagrammgruppe mit niedrigeren Werten in der letzten Reihe (die Zeilen sinken aus der ersten Datenreihe). Nur 2D-Diagramme Zeile Gruppen, die mindestens zwei Datenreihen enthalten können Abweichungsbalken enthalten. Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das einen einzelnen negativen Abweichungsbalken darstellt Balken; positive und negative Abweichungsbalken sind für alle Punkte in einer Diagrammgruppe müssen oder eingeschaltet ausgeschaltet</para>
-      <para>Wenn das <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> -Eigenschaft <b>False</b>ist, sind die meisten Eigenschaften des <b>DownBars</b> -Objekts deaktiviert.</para>
-      <para />
-    </remarks>
+    <remarks><para>Negative Abweichungen verbinden Punkte der ersten Datenreihe mit niedrigeren Werten der letzten Datenreihe in einer Diagrammgruppe (die Linien verlaufen von den Punkten der ersten Datenreihe aus nach unten). Nur Diagrammgruppen mit 2D-Linien, die mindestens zwei Datenreihen aufweisen, können über negative Abweichungen verfügen. Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne negative Abweichung darstellt, die positiven und negativen Abweichungen müssen für alle Punkte in einer Diagrammgruppe gleichzeitig aktiviert oder deaktiviert werden.</para>
+      <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> Eigenschaft auf <b>false festgelegt</b>ist, sind die meisten Eigenschaften des <b>DownBars</b> -Objekts deaktiviert.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> -Objekt, das den Rahmen des Objekts darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Objekt zurück, das den Rahmen des Objekts darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,14 +106,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.DownBars.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD".  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.DownBars.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -152,9 +134,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +164,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> -Objekt für das übergeordnete Diagrammelement an, die für das Diagrammelement Formateigenschaften der Füllung enthält. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> Objekt für das übergeordnete Diagrammelement zurück, das Füll Formatierungseigenschaften für das Chart-Element enthält. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,10 +194,8 @@
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
 
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,10 +225,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Interior" /> -Objekt, das den Innenbereich des Objekts darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Interior" /> Objekt zurück, das das Innere des Objekts darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +254,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>String</b> -Wert, der den Namen des Objekts darstellt.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,9 +282,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,9 +308,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Markiert das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

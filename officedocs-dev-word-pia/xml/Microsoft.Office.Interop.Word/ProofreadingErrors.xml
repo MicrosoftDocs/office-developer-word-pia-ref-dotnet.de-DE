@@ -1,13 +1,5 @@
 <Type Name="ProofreadingErrors" FullName="Microsoft.Office.Interop.Word.ProofreadingErrors">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f10bd2f36ccd49a6e2ce9df79a605d805e0e9d07" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669807" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0c61f910fa45ca20cb739f36d01474a098c8703d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144141" /></Metadata><TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProofreadingErrors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProofreadingErrors&#xA;Implements IEnumerable" />
@@ -31,14 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung mit Rechtschreib- oder Grammatikfehlern für das angegebene Dokument oder den Bereich.</summary>
-    <remarks>
-      <para>Es gibt kein ProofreadingError-Objekt. Stattdessen wird jedes Element in der <b>ProofreadingErrors</b> -Auflistung ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das eine Rechtschreib- oder Grammatikfehlern Fehler darstellt.</para>
-      <para>Mit der <b>SpellingErrors</b> oder <b>GrammaticalErrors</b> -Eigenschaft des eine <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder Range-Objekt, um die <b>ProofreadingErrors</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung <b>SpellingErrors</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um einen einzelnen Rechtschreibfehler (dargestellt durch ein <b>Range</b> -Objekt) zurückzugeben.</para>
-      <para>Verwendung <b>GrammarErrors</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um einen einzelnen Grammatikfehler (dargestellt durch ein <b>Range</b> -Objekt) zurückzugeben.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Zum zählen der Elemente in anderen Artikeln verwenden Sie die Auflistung mit der <b>Range</b> -Objekt. Wenn alle Wörter im Dokument oder Bereich richtig geschrieben werden und sind grammatikalisch zu beheben, die <b>Count</b> -Eigenschaft für die <b>ProofreadingErrors</b> -Objekt gibt 0 (null) und die <b>SpellingChecked</b> und <b>GrammarChecked</b> Eigenschaften des <b>Dokuments</b> oder eines <b>Bereichs</b> -Objekts <b>True</b>zurückgegeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Es gibt kein ProofreadingError-Objekt; Stattdessen ist jedes Element in der <b>ProofreadingErrors</b> -Auflistung ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt, das einen Schreib-oder Grammatikfehler darstellt.</para>
+      <para>Verwenden Sie die <b>SpellingErrors</b> -oder die <b>GrammaticalErrors</b> -Eigenschaft eines <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder Range-Objekts, um die <b>ProofreadingErrors</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden <b></b>Sie SpellingErrors<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um einen einzelnen Rechtschreibfehler zurückzugeben (dargestellt durch ein <b>Range</b> -Objekt).</para>
+      <para>Verwenden <b></b>Sie GrammarErrors<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um einen einzelnen grammatischen Fehler zurückzugeben (dargestellt durch ein <b>Range</b> -Objekt).</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Verwenden Sie zum Zählen der Elemente in anderen Artikeln die Auflistung mit dem <b>Range</b> -Objekt. Wenn alle Wörter im Dokument oder Bereich richtig geschrieben sind und grammatikalisch korrekt sind, gibt die <b>count</b> -Eigenschaft für das <b>ProofreadingErrors</b> -Objekt 0 (null) und die <b>SpellingChecked</b> -und <b>GrammarChecked</b> -Eigenschaften von zurück. Das <b>Document</b> -oder <b>Range</b> -Objekt gibt <b>true</b>zurück.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,11 +112,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -187,7 +175,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -244,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdProofreadingErrorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Korrekturlesefehlers zurück.</summary>
+        <summary>Gibt den Typ des Korrekturfehlers zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

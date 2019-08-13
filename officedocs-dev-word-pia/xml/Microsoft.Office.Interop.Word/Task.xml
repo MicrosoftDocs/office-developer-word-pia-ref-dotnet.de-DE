@@ -1,13 +1,5 @@
 <Type Name="Task" FullName="Microsoft.Office.Interop.Word.Task">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a293fe302e518f71d73a2b60dd8cf985017ecc8a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670099" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Task" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="475c1671362444c8d7ebcb134d01290da862e462" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143875" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Task" />
   <TypeSignature Language="VB.NET" Value="Public Interface Task" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine einzelne Aufgabe, die im System ausgeführt.</summary>
-    <remarks>
-      <para>Das <b>Task</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> Auflistung. Die <b>Tasks</b> -Auflistung enthält alle Anwendungen, die derzeit im System ausgeführt werden.</para>
-      <para>Verwendung <b>Aufgaben</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name der Anwendung oder die Indexzahl darstellt, um ein einzelnes <b>Task</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Stellt einen einzelnen Task dar, der auf Ihrem System ausgeführt wird.</summary>
+    <remarks><para>Das <b>Task</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> Auflistung. Die <b>Tasks</b>-Auflistung enthält alle Anwendungen, die momentan auf Ihrem System ausgeführt werden.</para>
+      <para>Verwenden <b></b>Sie Tasks<paramref name="index" />(), <paramref name="index" /> wobei der Anwendungsname oder die Indexnummer verwendet wird, um ein einzelnes <b>Task</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -56,8 +46,8 @@
         <Parameter Name="Wait" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wait">Optionales- <b>Objekt</b>. <b>True</b> , wenn warten, bis der Benutzer Microsoft Word aktiviert hat, bevor der Task aktiviert wird. <b>False</b> , wenn den Task sofort zu aktivieren, auch wenn Word nicht aktiv ist.</param>
-        <summary>Aktiviert die <see cref="T:Microsoft.Office.Interop.Word.Task" /> Objekt.</summary>
+        <param name="Wait">Optionales <b>Objekt</b>. <b>True</b> , um zu warten, bis der Benutzer Microsoft Word aktiviert hat, bevor die Aufgabe aktiviert wird. <b>False</b>, um den Task sofort zu aktivieren, auch wenn Word nicht aktiv ist.</param>
+        <summary>Aktiviert das <see cref="T:Microsoft.Office.Interop.Word.Task" /> Objekt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +74,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,11 +129,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -172,7 +160,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Höhe des angegebenen Task-Fensters in Punkt.</summary>
+        <summary>Gibt die Höhe des angegebenen Aufgabenfensters in Punkt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +191,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die horizontale Position des angegebenen Vorgangs, gemessen in Punkten darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die horizontale Position des angegebenen Vorgangs in Punkt darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,10 +220,8 @@
         <Parameter Name="Top" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Integer</b>erforderlich. Die horizontale Bildschirmposition des angegebenen Fensters.</param>
-        <param name="Top">
-          <b>Integer</b>erforderlich. Die vertikale Bildschirmposition des angegebenen Fensters.</param>
+        <param name="Left">Erforderliche <b>ganze Zahl</b>. Die horizontale Bildschirmposition des angegebenen Fensters.</param>
+        <param name="Top">Erforderliche <b>ganze Zahl</b>. Die vertikale Bildschirmposition des angegebenen Fensters.</param>
         <summary>Positioniert ein Taskfenster.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,7 +249,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,16 +306,12 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Width">
-          <b>Integer</b>erforderlich. Die Breite des Fensters in Punkt.</param>
-        <param name="Height">
-          <b>Integer</b>erforderlich. Die Höhe des Fensters in Punkt.</param>
+        <param name="Width">Erforderliche <b>ganze Zahl</b>. Die Breite des Fensters in Punkt.</param>
+        <param name="Height">Erforderliche <b>ganze Zahl</b>. Die Höhe des Fensters in Punkt.</param>
         <summary>Ändert die Größe des angegebenen Taskfensters. Wenn das Fenster maximiert oder minimiert ist, tritt ein Fehler auf.</summary>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> oder <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> Eigenschaft, um die Breite und Höhe Fensters unabhängig voneinander festzulegen.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Hinweis:</b>  Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> die <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> oder-Eigenschaft, um die Fensterbreite und-Höhe unabhängig festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SendWindowMessage">
@@ -357,12 +339,9 @@
         <Parameter Name="lParam" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Message">
-          <b>Integer</b>erforderlich. Eine hexadezimale Zahl, die die Nachricht entspricht, die Sie senden möchten. Wenn Sie im Microsoft Platform Software Development Kit verfügen, können Sie suchen nach oben den Namen der Nachricht in den Headerdateien (z. B. Winuser.h) die zugeordnete hexadezimale Zahl suchen (vorangehen den Hexadezimalwert mit &amp;h).</param>
-        <param name="wParam">
-          <b>Integer</b>erforderlich. Parameter für die Nachricht, die Sie senden. Informationen zur Bedeutung dieser Werte darstellen Sie, finden Sie im Referenzthema für diese Nachricht in der Dokumentation zu im Microsoft Platform Software Development Kit. Um die entsprechenden Werte abzurufen, müssen Sie möglicherweise das Dienstprogramm Spy++ verwenden (die im Kit enthalten).</param>
-        <param name="lParam">
-          <b>Integer</b>erforderlich. Parameter für die Nachricht, die Sie senden. Informationen zur Bedeutung dieser Werte darstellen Sie, finden Sie im Referenzthema für diese Nachricht in der Dokumentation zu im Microsoft Platform Software Development Kit. Um die entsprechenden Werte abzurufen, müssen Sie möglicherweise das Dienstprogramm Spy++ verwenden (die im Kit enthalten).</param>
+        <param name="Message">Erforderliche <b>ganze Zahl</b>. Eine Hexadezimalzahl, die der Nachricht entspricht, die Sie senden möchten. Wenn Sie über das Microsoft Platform Software Development Kit verfügen, können Sie den Namen der Nachricht in den Headerdateien (beispielsweise Winuser. h) nachschlagen, um die zugeordnete hexadezimale Zahl (dem Hexadezimalwert mit &amp;h voranzustellen) zu suchen.</param>
+        <param name="wParam">Erforderliche <b>ganze Zahl</b>. Entsprechende Parameter für die Nachricht, die Sie senden. Informationen dazu, was diese Werte darstellen, finden Sie im Referenzthema für diese Nachricht in der Dokumentation zum Microsoft Platform Software Development Kit. Um die entsprechenden Werte abzurufen, müssen Sie möglicherweise das Dienstprogramm "Spy" verwenden (das mit dem Kit geliefert wird).</param>
+        <param name="lParam">Erforderliche <b>ganze Zahl</b>. Entsprechende Parameter für die Nachricht, die Sie senden. Informationen dazu, was diese Werte darstellen, finden Sie im Referenzthema für diese Nachricht in der Dokumentation zum Microsoft Platform Software Development Kit. Um die entsprechenden Werte abzurufen, müssen Sie möglicherweise das Dienstprogramm "Spy" verwenden (das mit dem Kit geliefert wird).</param>
         <summary>Sendet eine Windows-Nachricht und die dazugehörigen Parameter an den angegebenen Task.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,7 +372,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder die vertikale Position des angegebenen Vorgangs, die in Punkt festgelegt.</summary>
+        <summary>Gibt die vertikale Position der angegebenen Aufgabe in Punkt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -424,13 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Objekt sichtbar ist.</summary>
+        <summary><b>True</b>, wenn das angegebene Objekt sichtbar ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Einige Methoden und Eigenschaften möglicherweise nicht verfügbar, wenn die <b>Visible</b> -Eigenschaft auf <b>false festgelegt</b>ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Einige Methoden und Eigenschaften sind möglicherweise nicht verfügbar, wenn die <b>Visible</b>-Eigenschaft auf <b>False</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -459,7 +435,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt sie fest.</summary>
+        <summary>Gibt die Breite des angegebenen Objekts (in Punkten) zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -490,23 +466,21 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Zustand des angegebenen Taskfensters fest.</summary>
+        <summary>Gibt den Status des angegebenen Aufgabenfensters zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />Dies kann eine der folgenden <b>WdWindowState</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />eine der folgenden <b>WdWindowState</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdWindowStateMaximize </b>
+            <b>wdWindowStateMaximize</b>
           </para>
           <para>
-            <b>WdWindowStateNormal </b>
+            <b>wdWindowStateNormal</b>
           </para>
           <para>
-            <b>WdWindowStateMinimize</b>
+            <b>wdWindowStateMinimize</b>
           </para>
-          <para>die <b>WdWindowStateNormal</b> -Konstante gibt ein Fenster, das nicht maximiert oder minimiert ist. Der Zustand eines inaktiven Fensters kann nicht festgelegt werden. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> -Methode, um vor dem Festlegen des Fensterstatus ein Fenster aktivieren.</para>
-          <para />
-        </remarks>
+          <para>Die <b>wdWindowStateNormal</b>-Konstante gibt ein Fenster an, das nicht maximiert oder minimiert ist. Der Status eines inaktiven Fensters kann nicht festgelegt werden. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> die-Methode, um ein Fenster vor dem Festlegen des Fenster Status zu aktivieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

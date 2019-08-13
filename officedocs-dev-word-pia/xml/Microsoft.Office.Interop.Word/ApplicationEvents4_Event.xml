@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_Event" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e8fc8679de3e808303fc2750b432e5243a2d864f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670064" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a8775d8e740f980588b7c678e2c9ffe63481ea2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144834" /></Metadata><TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ApplicationEvents4_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ApplicationEvents4_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Die Schnittstelle Ereignisse für Word<see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt Ereignisse. Dies ist ein .NET-Schnittstelle erstellt, bei der Verarbeitung von COM-Co-Klasse, die von verwaltetem Code für die Interoperabilität mit den entsprechenden COM-Objekt erforderlich ist. Diese Schnittstelle implementiert alle Ereignisse früherer Schnittstellen sowie alle zusätzlichen neue Ereignisse. Verwenden Sie diese Schnittstelle nur, wenn das Ereignis, den, das Sie verwenden möchten, den gleichen Namen wie eine Methode des COM-Objekts teilt. In diesem Fall dieser Schnittstelle für die Verbindung an das Ereignis umgewandelt, und in die primäre Schnittstelle zum Aufrufen der Methode umgewandelt. Verwenden Sie andernfalls die .NET-Schnittstelle, die von der COM-Co-Klasse Zugriff auf Methoden, Eigenschaften und Ereignisse das COM-Objekt abgeleitet ist.</summary>
+    <summary>Ereignisschnittstelle für Word<see cref="T:Microsoft.Office.Interop.Excel.Application" /> -Objekt Ereignisse. Dies ist eine .NET-Schnittstelle, die bei der Verarbeitung einer com-Co-Klasse erstellt wird, die von verwaltetem Code für die Interoperabilität mit dem entsprechenden COM-Objekt erforderlich ist. Diese Schnittstelle implementiert alle Ereignisse früherer Schnittstelle und alle zusätzlichen neuen Ereignisse. Verwenden Sie diese Schnittstelle nur, wenn das Ereignis, das Sie verwenden möchten, den gleichen Namen aufweist wie eine Methode des COM-Objekts; casten Sie in diesem Fall zu dieser Schnittstelle, um eine Verbindung zum Ereignis herzustellen, und casten Sie zur primären Schnittstelle, um die Methode aufzurufen. Verwenden Sie andernfalls die von der COM-CoClass abgeleitete .NET-Schnittstelle, um auf Methoden, Eigenschaften und Ereignisse des COM-Objekts zuzugreifen.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -201,10 +193,8 @@
       </ReturnValue>
       <Docs>
         <summary>Tritt ein, wenn ein Benutzer auf die Schaltfläche E-Porto-Eigenschaften (Dialogfeld Umschläge und Etiketten) oder die Schaltfläche Elektronisches Porto drucken auf der Symbolleiste klickt.</summary>
-        <remarks>
-          <para>Dieses Ereignis kann eine Anwendung Drittanbietersoftware abzufangen und im Dialogfeld Eigenschaften anzeigen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Es kann von Software eines Drittherstellers zum Anzeigen ihres Eigenschaftsdialogfelds unterbrochen werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeAfterMerge">
@@ -318,10 +308,8 @@
       </ReturnValue>
       <Docs>
         <summary>Tritt auf, wenn ein Benutzer eine Adressenbestätigung ausführt, indem er im Dialogfeld Seriendruckempfänger auf Gültigkeit klickt.</summary>
-        <remarks>
-          <para>Wenn Sie nicht auf Ihrem Computer installiert haben, kann das <b>MailMergeDataSourceValidate</b> -Ereignis Sie einfache Filtern Routinen, erstellen wie Durchlaufen von Datensätzen die Postleitzahlen überprüfen und entfernen alle, sind außerhalb der USA</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn auf Ihrem Computer keine Adress Verifizierungs Software installiert ist, können Sie mit dem <b>MailMergeDataSourceValidate</b> -Ereignis einfache Filterroutinen erstellen, beispielsweisedurch Schleifen von Datensätzen, um die Postleitzahlen zu überprüfen und alle zu entfernen, die nicht-U. S.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataSourceValidate2">
@@ -339,14 +327,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeDataSourceValidate2EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-		Tritt auf, wenn ein Benutzer Seriendruckempfänger durch Klicken auf die Schaltfläche Adressen überprüfen im Dialogfeld Seriendruckempfänger überprüft.</summary>
-        <remarks>
-          <para>Wenn Sie nicht auf Ihrem Computer installiert haben, kann das <b>MailMergeDataSourceValidate2</b> (Ereignis) Sie einfache Filtern Routinen, erstellen wie Durchlaufen von Datensätzen die Postleitzahlen überprüfen und entfernen alle, sind US-</para>
+        <summary>Tritt auf, wenn ein Benutzer Seriendruckempfänger durch Klicken auf die Schaltfläche Adressen überprüfen im Dialogfeld Seriendruckempfänger überprüft.</summary>
+        <remarks><para>Wenn auf dem Computer keine Software zur Gültigkeitsüberprüfung von Adressen installiert ist, können Sie mit dem <b>MailMergeDataSourceValidate2</b>-Ereignis einfache Filterroutinen erstellen (z. B. Durchlaufen der Datensätze zum Überprüfen der Postleitzahlen und Entfernen aller ausländischen Postleitzahlen).</para>
           <para>
-            <b>Hinweis</b>: Dieses Ereignis in einem Microsoft Visual Basic für Applikationen (VBA) Projekt kann nicht heraufgestuft werden.  Dieses Ereignis ist nur in der verwalteten Add-Ins und externe Anwendungen ordnungsgemäß. Verwenden Sie für COM-add-ins, die <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" /> Ereignis.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: Sie können dieses Ereignis nicht in einem VBA-Projekt (Microsoft Visual Basic für Anwendungen) auslösen.  Dieses Ereignis funktioniert nur in verwalteten Add-Ins und externen Anwendungen ordnungsgemäß. Verwenden Sie für COM-Add-Ins <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" /> das-Ereignis.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardSendToCustom">
@@ -364,11 +349,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeWizardSendToCustomEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt auf, wenn in Schritt 6 des Seriendruck-Assistenten auf die benutzerdefinierte Schaltfläche geklickt wird.</summary>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" /> -Eigenschaft auf eine benutzerdefinierte Schaltfläche im sechsten Schritt des Seriendruck-Assistenten erstellen.</para>
-          <para />
-        </remarks>
+        <summary>Tritt auf, wenn auf die Schaltfläche Benutzerdefiniert auf Schritt 6 des Seriendruck-Assistenten geklickt wird.</summary>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" /> die-Eigenschaft, um eine benutzerdefinierte Schaltfläche im sechsten Schritt des Seriendruck-Assistenten zu erstellen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardStateChange">
@@ -424,7 +407,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt ein, wenn ein Geschützte Ansicht-Fenster aktiviert wird.</summary>
+        <summary>Occurs when any protected view window is activated.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,7 +426,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt unmittelbar vor dem Schließen eines Geschützte Ansicht-Fensters oder eines Dokuments in einer geschützten Ansicht auf.</summary>
+        <summary>Occurs immediately before a protected view window or a document in a protected view window closes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,7 +445,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeEditEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt unmittelbar vor dem Aktivieren der Bearbeitung für das Dokument im angegebenen Geschützte Ansicht-Fenster auf.</summary>
+        <summary>Occurs immediately before editing is enabled on the document in the specified protected view window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,7 +464,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowDeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt ein, wenn ein Geschützte Ansicht-Fenster deaktiviert wird.</summary>
+        <summary>Occurs when a protected view window is deactivated.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,7 +483,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowOpenEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt ein, wenn ein Geschützte Ansicht-Fenster geöffnet wird.</summary>
+        <summary>Occurs when a protected view window is opened.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,7 +502,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowSizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt auf, wenn ein Fenster mit geschützter Ansicht angepasst oder verschoben wird.</summary>
+        <summary>Tritt auf, wenn ein Fenster mit geschützter Ansicht verschoben oder geändert wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -709,7 +692,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_XMLValidationErrorEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tritt auf, wenn ein Gültigkeitsprüfungsfehler im Dokument besteht.</summary>
+        <summary>Tritt auf, wenn ein Validierungsfehler im Dokument vorliegt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

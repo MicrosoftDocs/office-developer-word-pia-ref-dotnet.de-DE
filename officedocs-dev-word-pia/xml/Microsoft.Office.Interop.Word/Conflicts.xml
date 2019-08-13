@@ -1,13 +1,5 @@
 <Type Name="Conflicts" FullName="Microsoft.Office.Interop.Word.Conflicts">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8acd040a46e32fdf2f9818dcf2eaace7cc901801" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669187" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Conflicts : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="51c75eb68c226ad55f02f5d6aaf9e02311ccbc95" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147243" /></Metadata><TypeSignature Language="C#" Value="public interface Conflicts : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflicts implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflicts" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflicts&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> -Objekten, die die Konflikte in einem Dokument darstellt. Der Typ des einer <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekt wird angegeben, indem die <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> Enumeration.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" /> Eigenschaft, um das <b>Conflicts</b> -Auflistung für ein Dokument zurückzugeben. Verwenden Sie <b>Konflikte</b>(<paramref name="Index" />), wobei <paramref name="Index" /> die Konflikt Indexzahl darstellt, um ein einzelnes <b>Conflict</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekten, die die Konflikte in einem Dokument darstellt. Der Typ eines <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekts wird durch die <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> -Enumeration angegeben.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" /> die-Eigenschaft, um die <b>Conflicts</b> -Auflistung für ein Dokument zurückzugeben. Verwenden <b></b>Sie Konflikte<paramref name="Index" />(), <paramref name="Index" /> wobei die Indexnummer des Konflikts ist, um ein einzelnes <b>Conflict</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptAll">
@@ -85,12 +75,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das die Microsoft Word Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt, das die Microsoft Word Anwendung darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -116,12 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Auflistung.</summary>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Auflistung zurück.</summary>
         <value>Die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Auflistung.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -149,12 +135,10 @@
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</value>
-        <remarks>
-          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Word verfügt beispielsweise über den Erstellercode MSWD.</para>
+        <remarks><para>Schreibgeschützter <b>Long</b>-Wert. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Apple Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD.</para>
           <para>
-            <b>Vorsicht</b>: Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para />
-        </remarks>
+            <b>Vorsicht</b>: dieser Wert kann auch durch die Konstante <b>wdCreatorCode</b>dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -185,7 +169,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Gibt <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Gibt <see cref="T:System.Collections.IEnumerator" />zurück.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +201,7 @@
       <Docs>
         <param name="Index">Das einzelne Objekt zurückgegeben werden soll.</param>
         <summary>Gibt ein einzelnes <b>Conflicts</b>-Objekt in einer Auflistung zurück.</summary>
-        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Conflict" />.</value>
+        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Conflict" />zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +228,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Objekt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Objekt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> angegebenen Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lehnt alle Änderungen des Benutzers ab und behält das Serverexemplar des Dokuments.</summary>
+        <summary>Lehnt alle Änderungen des Benutzers ab und behält die Serverkopie des Dokuments bei.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

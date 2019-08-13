@@ -1,13 +1,5 @@
 <Type Name="SeriesLines" FullName="Microsoft.Office.Interop.Word.SeriesLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5e59e7a5c31aee69e69e9ddc5fa491ec4a6cf6c6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669417" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="55cf8420da87920af7d7dc437b2d926031899488" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147655" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesLines" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt Verbindungslinien in einer Diagrammgruppe dar.</summary>
-    <remarks>
-      <para>Verbindungslinien verbinden die Datenwerte jeder Datenreihe.  Nur 2D-Diagramme gestapelten Balken 2D-Diagramme, gestapelte 2D-Säulendiagramme, Kreis aus Kreis oder Balken-aus-Kreis-Diagramme können Sie Verbindungslinien besitzen. Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Datenreihe Linie darstellt. Sie müssen die Verbindungslinien für alle Punkte in einer Diagrammgruppe oder eingeschaltet ausgeschaltet</para>
-      <para>Wenn das <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" /> -Eigenschaft <b>False</b>ist, sind die meisten Eigenschaften des <b>SeriesLines</b> -Objekts deaktiviert.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verbindungslinien verbinden die Datenwerte jeder Datenreihe.  Nur gestapelte 2D-Diagramme, gestapelte 2D-Säulendiagramme, Kreis-aus-Kreis-Diagramme oder Balken-aus-Kreis-Diagramme können Verbindungslinien aufweisen. Dieses Objekt stellt keine Auflistung dar. Es gibt kein Objekt, das eine einzelne Datenreihenlinie darstellt. Sie haben entweder Reihenlinien für alle Punkte in einer Diagrammgruppe aktiviert oder Sie sind deaktiviert.</para>
+      <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" /> Eigenschaft auf <b>false festgelegt</b>ist, sind die meisten Eigenschaften des <b>SeriesLines</b> -Objekts deaktiviert.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,9 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Anwendung</b> (siehe oben)</value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Anwendung</b> (siehe oben)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> -Objekt, das den Rahmen des Objekts darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Objekt zurück, das den Rahmen des Objekts darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,14 +103,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD".  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -177,10 +160,8 @@
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
 
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,9 +189,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>String</b> -Wert, der den Namen des Objekts darstellt.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,9 +217,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

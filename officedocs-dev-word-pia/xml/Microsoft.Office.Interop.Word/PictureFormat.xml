@@ -1,13 +1,5 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Word.PictureFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7533126a34adfedd4e31baade1a3e4d7b7ecdbc5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669833" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PictureFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47daacc6dd5e59ccb2bda07ea680b3bf997208f5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144183" /></Metadata><TypeSignature Language="C#" Value="public interface PictureFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PictureFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PictureFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface PictureFormat" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Enthält Eigenschaften und Methoden, die Grafiken und OLE-Objekten zugewiesen werden.</summary>
-    <remarks>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> -Objekt enthält Eigenschaften und Methoden, die nur verknüpfte OLE-Objekte gelten. Die <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> -Objekt enthält Eigenschaften und Methoden, die OLE-Objekte betreffen, ob diese verknüpft sind oder nicht.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Shape.PictureFormat" /> Eigenschaft, um ein <b>PictureFormat</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> Objekt enthält Eigenschaften und Methoden, die nur für verknüpfte OLE-Objekte gelten. Das <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> Objekt enthält Eigenschaften und Methoden, die für OLE-Objekte gelten, unabhängig davon, ob Sie verknüpft sind.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.PictureFormat" /> die-Eigenschaft, um ein <b>PictureFormat</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Helligkeit des angegebenen Bilds oder OLE-Objekt fest. Der Wert für diese Eigenschaft muss eine Zahl zwischen 0,0 (am dunkelsten) und 1,0 (am hellsten).</summary>
+        <summary>Gibt die Helligkeit des angegebenen Bildes oder OLE-Objekts zurück oder legt sie fest. Der Wert für diese Eigenschaft muss eine Zahl zwischen 0,0 (am dunkelsten) und 1,0 (am hellsten).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +140,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Kontrast des angegebenen Bilds oder OLE-Objekts zurück oder legt ihn fest. Der Wert für diese Eigenschaft muss im Bereich von 0,0 (geringster Kontrast) bis 1,0 (höchster Kontrast) liegen.</summary>
+        <summary>Gibt den Kontrast des angegebenen Bildes oder OLE-Objekts zurück oder legt ihn fest. Der Wert dieser Eigenschaft muss eine Zahl zwischen 0,0 (geringster Kontrast) und 1,0 (höchster Kontrast) sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,11 +170,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crop">
@@ -213,12 +201,10 @@
         <ReturnType>Microsoft.Office.Core.Crop</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen einer <see cref="T:Microsoft.Office.Core.Crop" /> -Objekt, das einem bildzuschnitt darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Core.Crop" /> -Objekt, das einem bildzuschnitt darstellt.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff. Durch Festlegen dieser Eigenschaft hat die gleiche Auswirkung wie das Auswählen eines Elements in der Dropdownliste im Dialogfeld Word-2010Options (Registerkarte Erweitert, Bearbeitungsoptionen, Formatvorlage aktualisieren, um die Auswahl anzupassen:.</para>
-          <para />
-        </remarks>
+        <summary>Dient zum Abrufen oder <see cref="T:Microsoft.Office.Core.Crop" /> Festlegen eines Objekts, das ein Bild zuschneiden darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Core.Crop" /> Objekt, das ein Bild zuschneiden darstellt.</value>
+        <remarks><para>Lese-/Schreibzugriff. Das Festlegen dieser Eigenschaft hat denselben Effekt wie das Auswählen eines Elements in der Dropdownliste im Dialogfeld Word 2010options (Registerkarte Erweitert, Bearbeitungsoptionen, Formatvorlage aktualisieren zur Übereinstimmung mit Auswahl:).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -249,10 +235,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der unteren Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild mit der ursprünglichen 100 Punkt einfügen, skalieren es auf eine hohe 200 Punkte und anschließend für die <b>CropBottom</b> -Eigenschaft 50 festlegen, werden 100 Punkt (nicht 50) vom unteren Rand des Bildes abgeschnitten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Wenn Sie beispielsweise ein Bild einfügen, das ursprünglich 100 Punkt hoch ist, Skalieren Sie es so um, dass es 200 Punkte hoch ist, und legen Sie dann die <b>CropBottom</b> -Eigenschaft auf 50 fest, 100 Punkte (nicht 50) werden am unteren Rand des Bilds abgeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropLeft">
@@ -283,10 +267,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der linken Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild mit der ursprünglichen Breite von 100 Punkt einfügen, skalieren es auf eine Breite von 200 Punkt und anschließend für die <b>CropLeft</b> -Eigenschaft 50 festlegen, werden 100 Punkt (nicht 50) von der linken Seite des Bilds abgeschnitten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Wenn Sie beispielsweise ein Bild einfügen, das ursprünglich 100 Punkt breit ist, Skalieren Sie es so um, dass es 200 Punkte breit ist, und legen Sie dann die <b>CropLeft</b> -Eigenschaft auf 50 fest, 100 Punkte (nicht 50) werden von der linken Seite des Bilds abgeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropRight">
@@ -317,10 +299,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der rechten Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild mit der ursprünglichen Breite von 100 Punkt einfügen, skalieren es auf eine Breite von 200 Punkt und anschließend für die <b>CropRight</b> -Eigenschaft 50 festlegen, werden 100 Punkt (nicht 50) von der rechten Seite des Bilds abgeschnitten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Wenn Sie beispielsweise ein Bild einfügen, das ursprünglich 100 Punkt breit ist, Skalieren Sie es so um, dass es 200 Punkte breit ist, und legen Sie dann die <b>CropRight</b> -Eigenschaft auf 50 fest, 100 Punkte (nicht 50) werden von der rechten Seite des Bilds abgeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropTop">
@@ -351,10 +331,8 @@
       <Docs>
         <summary>Gibt die Anzahl der Punkte zurück, um die das angegebene Bild oder OLE-Objekt an der oberen Seite zugeschnitten wird, oder legt die Anzahl fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Angenommen, wenn Sie ein Bild mit der ursprünglichen 100 Punkt einfügen, skalieren es auf eine hohe 200 Punkte und anschließend für die <b>CropTop</b> -Eigenschaft 50 festlegen, werden 100 Punkt (nicht 50) vom oberen Rand Ihres Bilds abgeschnitten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Zuschneiden wird relativ zur ursprünglichen Größe des Bilds berechnet. Wenn Sie beispielsweise ein Bild einfügen, das ursprünglich 100 Punkt hoch ist, Skalieren Sie es so um, dass es 200 Punkte hoch ist, und legen Sie dann die <b>CropTop</b> -Eigenschaft auf 50 fest, 100 Punkte (nicht 50) werden vom oberen Rand des Bilds abgeschnitten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementBrightness">
@@ -380,13 +358,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>erforderlich. Gibt an, wie viel den Wert der <b>Brightness</b> -Eigenschaft für das Bild zu ändern. Ein positiver Wert wird das Bild heller; ein negativer Wert macht es dunkler.</param>
-        <summary>Ändert die Helligkeit des Bildes um den angegebenen Wert. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Brightness" /> Eigenschaft, um die absolute Helligkeit des Bildes festzulegen.</summary>
-        <remarks>
-          <para>Sie können die Helligkeit einer Grafik über der oberen oder unteren Begrenzung für die <b>Brightness</b> -Eigenschaft nicht anpassen. Wenn die <b>Brightness</b> -Eigenschaft anfangs auf 0,9 festgelegt ist, und geben Sie für 0,3 beispielsweise die <paramref name="Increment" /> -Argument werden die resultierenden Helligkeit Ebene 1.0, die obere Grenze für die <b>Brightness</b> -Eigenschaft nicht 1,2.</para>
-          <para />
-        </remarks>
+        <param name="Increment">Erforderlicher <b>Single</b>-Wert. Gibt an, wie viel den Wert der <b>Brightness</b> -Eigenschaft für das Bild zu ändern. Ein positiver Wert wird das Bild heller; ein negativer Wert macht es dunkler.</param>
+        <summary>Ändert die Helligkeit des Bildes um den angegebenen Wert. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Brightness" /> die-Eigenschaft, um die absolute Helligkeit des Bilds festzulegen.</summary>
+        <remarks><para>Sie können die Helligkeit einer Grafik über der oberen oder unteren Begrenzung für die <b>Brightness</b> -Eigenschaft nicht anpassen. Wenn beispielsweise die <b>Brightness</b> -Eigenschaft anfänglich auf 0,9 festgelegt und 0,3 für das <paramref name="Increment" /> Argument angegeben wird, ist die resultierende Helligkeit 1,0, was die obere Grenze für die <b>Brightness</b> -Eigenschaft anstelle von 1,2 ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementContrast">
@@ -412,13 +387,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>erforderlich. Gibt an, wie viel den Wert der <b>Contrast</b> -Eigenschaft für das Bild zu ändern. Ein positiver Wert erhöht den Kontrast; ein negativer Wert verringert den Kontrast.</param>
-        <summary>Ändert den Kontrast des Bildes um den angegebenen Wert. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Contrast" /> Eigenschaft, um den absoluten Kontrast des Bildes festzulegen.</summary>
-        <remarks>
-          <para>Sie können den Kontrast des ein Bild über die oberen oder unteren Begrenzung für die <b>Contrast</b> -Eigenschaft nicht anpassen. Wenn Sie die <b>Contrast</b> -Eigenschaft anfangs auf 0,9 festgelegt ist, und geben Sie für 0,3 beispielsweise die <paramref name="Increment" /> -Argument werden Kontrastgrad 1.0, die obere Grenze für die <b>Contrast</b> -Eigenschaft nicht 1,2.</para>
-          <para />
-        </remarks>
+        <param name="Increment">Erforderlicher <b>Single</b>-Wert. Gibt an, wie viel den Wert der <b>Contrast</b> -Eigenschaft für das Bild zu ändern. Ein positiver Wert erhöht den Kontrast; ein negativer Wert verringert den Kontrast.</param>
+        <summary>Ändert den Kontrast des Bildes um den angegebenen Wert. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Contrast" /> die-Eigenschaft, um den absoluten Kontrast für das Bild festzulegen.</summary>
+        <remarks><para>Sie können den Kontrast des ein Bild über die oberen oder unteren Begrenzung für die <b>Contrast</b> -Eigenschaft nicht anpassen. Wenn beispielsweise die <b>Contrast</b> -Eigenschaft anfänglich auf 0,9 festgelegt ist und Sie 0,3 für das <paramref name="Increment" /> Argument angeben, ist die resultierende Kontraststufe 1,0, wobei es sich um die obere Grenze für die <b>Contrast</b> -Eigenschaft anstelle von 1,2 handelt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -477,11 +449,9 @@
       <Docs>
         <summary>Gibt die transparente Farbe für die angegebene Grafik als Rot-Grün-Blau-Wert (RGB) zurück oder legt sie fest. Gilt nur für Bitmaps.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Damit diese Eigenschaft wirksam wird, die <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparentBackground" /> -Eigenschaft muss auf <b>True</b>festgelegt werden.</para>
-          <para>, Wenn durch die transparenten Teile der Grafik zu den Objekten hinter der Grafik angezeigt werden soll, müssen Sie festlegen der <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> -Eigenschaft des des Bilds <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> Objekts auf <b>false festgelegt</b>. Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b>festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter dem Bild verdeckt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Damit diese Eigenschaft wirksam wird, muss die <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparentBackground" /> Eigenschaft auf <b>true</b>festgelegt werden.</para>
+          <para>Wenn Sie die transparenten Teile des Bilds bis hin zu den Objekten hinter dem Bild sehen möchten, müssen Sie die <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> Objekts "Picture" auf " <b>false</b>" festlegen. Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b> festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter der Grafik sind jedoch verdeckt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TransparentBackground">
@@ -510,14 +480,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> , wenn die Teile der Grafik, die durch eine transparente Farbe definiert sind, transparent angezeigt werden. Gilt nur für Bitmaps.</summary>
+        <summary><b>MsoTrue</b>, wenn die Teile des Bilds, für die eine transparente Farbe definiert ist, durchscheinend dargestellt werden. Gilt nur für Bitmaps.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparencyColor" /> Eigenschaft, um die transparente Farbe festzulegen. </para>
-          <para>, Wenn durch die transparenten Teile der Grafik zu den Objekten hinter der Grafik angezeigt werden soll, müssen Sie festlegen der <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> -Eigenschaft des des Bilds <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> Objekts auf <b>false festgelegt</b>. Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b>festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter dem Bild verdeckt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparencyColor" /> die-Eigenschaft, um die transparente Farbe festzulegen. </para>
+          <para>Wenn Sie die transparenten Teile des Bilds bis hin zu den Objekten hinter dem Bild sehen möchten, müssen Sie die <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> Objekts "Picture" auf " <b>false</b>" festlegen. Wenn Ihr Bild eine transparente Farbe aufweist und die <b>Visible</b> -Eigenschaft des <b>FillFormat</b> -Objekts auf <b>True</b> festgelegt ist, wird die Füllung des Bildes durch die transparente Farbe angezeigt werden, aber Objekte hinter der Grafik sind jedoch verdeckt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

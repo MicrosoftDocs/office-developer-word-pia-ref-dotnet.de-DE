@@ -1,13 +1,5 @@
 <Type Name="TableOfFigures" FullName="Microsoft.Office.Interop.Word.TableOfFigures">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d57be96f8ec7c6ed0a74dc51b351cce11593a3c0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669789" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableOfFigures" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac4ae4a8b24cb45b90c698437cafe71f03425bcd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146025" /></Metadata><TypeSignature Language="C#" Value="public interface TableOfFigures" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableOfFigures" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableOfFigures" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes Abbildungsverzeichnis in einem Dokument dar.</summary>
-    <remarks>
-      <para>Das <b>TableOfFigures</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> Auflistung. <b>TablesOfFigures</b> -Auflistung enthält alle Abbildungsverzeichnisse in einem Dokument.</para>
-      <para>Verwendung <b>TablesOfFigures</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>TableOfFigures</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des das Abbildungsverzeichnis im Dokument.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um einem Dokument ein Abbildungsverzeichnis hinzugefügt. Ein Abbildungsverzeichnis listet Abbildung Beschriftungen in der Reihenfolge, in der sie im Dokument angezeigt werden.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>TableOfFigures</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> Auflistung. Die <b>TablesOfFigures</b>-Auflistung enthält alle Abbildungsverzeichnisse in einem Dokument.</para>
+      <para>Verwenden <b></b>Sie TablesOfFigures<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>TableOfFigures</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Abbildungsverzeichnisses im Dokument dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um einem Dokument ein Abbildungsverzeichnis hinzuzufügen. Ein Abbildungsverzeichnis führt die Abbildungsbeschriftungen in der Reihenfolge auf, in der sie im Dokument angezeigt werden.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,13 +79,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Beschriftung, die die Elemente in einem Abbildungsverzeichnis enthalten sein angibt.</summary>
+        <summary>Gibt die Überschrift zurück, mit der die in ein Inhaltsverzeichnis einzuschließenden Elemente identifiziert werden, oder legt diese Überschrift fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Caption</b> -Eigenschaft entspricht dem Schalter \c für ein TOC-Feld.</para>
-          <para>, Um die Beschriftung des Anwendungsfensters in den Standardtext zu ändern, legen Sie diese Eigenschaft auf eine leere Zeichenfolge ("").</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>Caption</b> -Eigenschaft entspricht der \c-Option für ein TOC-Feld.</para>
+          <para>Legen Sie diese Eigenschaft auf eine leere Zeichenfolge ("") fest, um die Beschriftung des Anwendungsfensters in den Standardtext zu ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -123,11 +111,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -178,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> -Objekt, weitere zum Kompilieren ein Abbildungsverzeichnis (andere Formatvorlagen als die Formatvorlagen Überschrift 1 – Überschrift 9) verwendete Formatvorlagen darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> Objekt zurück, das zusätzliche Formatvorlagen darstellt, die zum Kompilieren eines Abbildungsverzeichnisses verwendet werden (andere Formatvorlagen als die Formatvorlage Überschrift 1 – Überschrift 9).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,7 +195,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, ob die Seitenzahlen in einer Tabelle Abbildungsverzeichnis beim Veröffentlichen im Web ausgeblendet werden sollen.</summary>
+        <summary>Gibt zurück oder legt fest, ob Seitenzahlen in einem Abbildungsverzeichnis beim Veröffentlichen im Internet ausgeblendet werden sollen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,8 +226,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Beschriftungskategorie und Beschriftungsnummer in ein Abbildungsverzeichnis enthalten sind.</summary>
+        <summary><b>True</b>, wenn die Beschriftungskategorie und Beschriftungsnummer in ein Abbildungsverzeichnis aufgenommen werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,8 +257,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> wenn Seitenzahlen in das Abbildungsverzeichnis enthalten sind.</summary>
+        <summary><b>True</b>, wenn Seitenzahlen in das Abbildungsverzeichnis aufgenommen werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,14 +288,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Überschriftenebene für ein Abbildungsverzeichnis.</summary>
+        <summary>Gibt die oberste Überschriftenebene für ein Abbildungsverzeichnis zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LowerHeadingLevel</b> -Eigenschaft entspricht dem Endwert mit dem Schalter \o für ein Feld (Inhaltsverzeichnis) verwendet.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" /> -Eigenschaft auf die Überschriftenebene festzulegen. Legen Sie beispielsweise zum Festlegen des TOC-Feld die Syntax {TOC \o "1-3"} <b>LowerHeadingLevel</b> -Eigenschaft auf 3 und die <b>UpperHeadingLevel</b> -Eigenschaft auf 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>LowerHeadingLevel</b> -Eigenschaft entspricht dem Endwert, der mit dem \o-Schalter für ein Inhaltsverzeichnisfeld verwendet wird.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" /> die-Eigenschaft, um die Start Überschriftenebene festzulegen. Um beispielsweise die TOC-Feldsyntax {TOC \o "1-3"} festzulegen, legen Sie die <b>LowerHeadingLevel</b> -Eigenschaft auf 3 und die <b>UpperHeadingLevel</b> -Eigenschaft auf 1 fest.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -365,12 +346,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" /> unter der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignPageNumbers">
@@ -399,8 +378,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> wenn Seitenzahlen am rechten Rand eines Abbildungsverzeichnisses ausgerichtet sind.</summary>
+        <summary><b>True</b> , wenn Seitenzahlen am rechten Rand in einem Abbildungsverzeichnis ausgerichtet sind.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,31 +409,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen das Zeichen zwischen Einträgen und den Seitenzahlen in einem Abbildungsverzeichnis.</summary>
+        <summary>Gibt das Zeichen zwischen den Einträgen und den Seitenzahlen in einem Abbildungsverzeichnis zurück oder legt dieses fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />Dies kann eine der folgenden <b>WdTabLeader</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />eine der folgenden <b>WdTabLeader</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdTabLeaderDashes </b>
+            <b>wdTabLeaderDashes</b>
           </para>
           <para>
-            <b>WdTabLeaderDots </b>
+            <b>wdTabLeaderDots</b>
           </para>
           <para>
-            <b>WdTabLeaderHeavy </b>
+            <b>wdTabLeaderHeavy</b>
           </para>
           <para>
-            <b>WdTabLeaderLines </b>
+            <b>wdTabLeaderLines</b>
           </para>
           <para>
-            <b>WdTabLeaderMiddleDot </b>
+            <b>wdTabLeaderMiddleDot</b>
           </para>
           <para>
-            <b>WdTabLeaderSpaces</b>
+            <b>wdTabLeaderSpaces</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableID">
@@ -484,13 +460,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer Kennzeichen aus einem Buchstaben, die zum Erstellen eines Abbildungsverzeichnisses aus TOC-Feldern verwendet wird.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines Bezeichners mit einem Buchstaben, der zum Erstellen eines Abbildungsverzeichnisses aus TOC-Feldern verwendet wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TableID</b> -Eigenschaft entspricht dem Schalter \f für ein TOC-Feld. "T" erstellt beispielsweise ein Inhaltsverzeichnis aus TOC-Feldern mithilfe der Verzeichnis-ID T.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>Tabellen</b> -Eigenschaft entspricht der Schalter \f-Option für ein TOC-Feld. Beispielsweise erstellt "t" ein Inhaltsverzeichnis aus TOC-Feldern mit dem Tabellenbezeichner t.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -514,12 +487,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aktualisiert die in das angegebene Abbildungsverzeichnis angezeigten Einträge.</summary>
-        <remarks>
-          <para>
-            <b>Hinweis</b>   Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TableOfFigures.UpdatePageNumbers" /> -Methode, um die Seitennummern von Elementen in einem Abbildungsverzeichnis zu aktualisieren.</para>
-          <para />
-        </remarks>
+        <summary>Aktualisiert die Einträge im angegebenen Abbildungsverzeichnis.</summary>
+        <remarks><para>
+            <b>Hinweis:</b>   Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TableOfFigures.UpdatePageNumbers" /> die-Methode, um die Seitenzahlen von Elementen in einem Abbildungsverzeichnis zu aktualisieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdatePageNumbers">
@@ -543,7 +514,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aktualisiert die Seitenzahlen für Elemente in der angegebenen Tabelle Abbildungsverzeichnis.</summary>
+        <summary>Aktualisiert die Seitenzahlen für Elemente im angegebenen Abbildungsverzeichnis.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,13 +544,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Überschriftenebene für ein Abbildungsverzeichnis.</summary>
+        <summary>Gibt die oberste Überschriftenebene für ein Abbildungsverzeichnis zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>UpperHeadingLevel</b> -Eigenschaft entspricht dem Startwert, der mit dem Schalter \o für ein Feld (Inhaltsverzeichnis) verwendet.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" /> Eigenschaft, um die Überschriftenebene festzulegen. Legen Sie beispielsweise zum Festlegen des TOC-Feld die Syntax {TOC \o "1-3"} <b>LowerHeadingLevel</b> -Eigenschaft auf 3 und die <b>UpperHeadingLevel</b> -Eigenschaft auf 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>UpperHeadingLevel</b> -Eigenschaft entspricht dem Startwert, der mit dem \o-Schalter für ein Inhaltsverzeichnisfeld verwendet wird.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" /> die-Eigenschaft, um die letzte Überschriftenebene festzulegen. Um beispielsweise die TOC-Feldsyntax {TOC \o "1-3"} festzulegen, legen Sie die <b>LowerHeadingLevel</b> -Eigenschaft auf 3 und die <b>UpperHeadingLevel</b> -Eigenschaft auf 1 fest.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseFields">
@@ -608,8 +577,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Tabelle der Inhalt TC Felder (Verzeichniseintrag) verwendet werden, um ein Abbildungsverzeichnis zu erstellen.</summary>
+        <summary><b>True</b>, wenn zum Erstellen eines Abbildungsverzeichnisses TC-Felder (Verzeichniseintrag) verwendet werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -640,8 +608,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Sie integrierte Formatvorlagen für Überschriften verwendet werden, um ein Abbildungsverzeichnis zu erstellen.</summary>
+        <summary><b>True</b>, wenn zum Erstellen eines Abbildungsverzeichnisses integrierte Überschriftformatvorlagen verwendet werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -672,7 +639,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, ob die Einträge in einem Abbildungsverzeichnis bei der Veröffentlichung im Web als Hyperlinks formatiert werden sollen.</summary>
+        <summary>Gibt zurück oder legt fest, ob Einträge in einem Abbildungsverzeichnis als Hyperlinks formatiert werden sollen, wenn Sie im Internet veröffentlicht werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

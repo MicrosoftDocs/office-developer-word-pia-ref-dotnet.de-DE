@@ -1,13 +1,5 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Word.DiagramNodeChildren">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4320acfa18b50f692a11a011ff3c369f44d39933" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669315" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e509f1a815f12770b760243945da953cde10fa51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147088" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodeChildren implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodeChildren&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <b>DiagramNode</b> -Objekten, die die untergeordneten Knoten in einem Diagramm darstellt.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> -Eigenschaft auf die Knoten in einer <b>DiagramNodeChildren</b> -Auflistung zurück. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> -Eigenschaft auf den ersten untergeordneten Knoten in einem Diagramm zuzugreifen.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> die-Eigenschaft, um die Knoten in einer <b>DiagramNodeChildren</b> -Auflistung zurückzugeben. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> die-Eigenschaft, um auf den ersten untergeordneten Knoten in einem Diagramm zuzugreifen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -60,9 +50,9 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Die Indexposition, an der den neue Diagrammknoten hinzugefügt: 0 hinzufügt, bevor Sie alle Knoten,-1 fügt nach allen Knoten sowie andere <paramref name="Index" /> Nummer wird nach diesem Knoten in der Auflistung hinzufügen.</param>
-        <param name="NodeType">Optionale <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Gibt den Knotentyp an.</param>
-        <summary>Fügt eine <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt, das eine Auflistung von untergeordneten Diagrammknoten.</summary>
+        <param name="Index">Optionales <b>Objekt</b>. Die Indexposition, an der der neue Diagrammknoten hinzugefügt werden soll: 0 fügt vor allen Knoten,-1, nach allen Knoten <paramref name="Index" /> hinzu, und jede andere Zahl wird nach diesem Knoten in der Auflistung hinzugefügt.</param>
+        <param name="NodeType">Optional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Gibt den Knotentyp an.</param>
+        <summary>Fügt einer <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Auflistung von untergeordneten Diagrammknoten ein Objekt hinzu.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,11 +138,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft beispielsweise die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt beispielsweise in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -178,12 +166,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> -Objekt, das den ersten untergeordneten Knoten eines übergeordneten Knotens darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt zurück, das den ersten untergeordneten Knoten eines übergeordneten Knotens darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> -Eigenschaft auf den letzten untergeordneten Knoten zuzugreifen. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> -Eigenschaft auf den übergeordneten Knoten in einem Diagramm zuzugreifen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> die-Eigenschaft, um auf den letzten untergeordneten Knoten zuzugreifen. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> die-Eigenschaft, um auf den übergeordneten Knoten in einem Diagramm zuzugreifen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -244,7 +230,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -273,12 +259,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> -Objekt, das den letzten untergeordneten Knoten eines übergeordneten Knotens darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Objekt zurück, das den letzten untergeordneten Knoten eines übergeordneten Knotens darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> -Eigenschaft auf den ersten untergeordneten Knoten in einem Diagramm zuzugreifen. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> -Eigenschaft auf den übergeordneten Knoten in einem Diagramm zuzugreifen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> die-Eigenschaft, um auf den ersten untergeordneten Knoten in einem Diagramm zuzugreifen. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> die-Eigenschaft, um auf den übergeordneten Knoten in einem Diagramm zuzugreifen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -330,11 +314,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt alle Formen im Hauptartikel, in einem Zeichenbereich oder in Kopf- und Fußzeilen eines Dokuments.</summary>
-        <remarks>
-          <para>Wählen Sie diese Methode nicht <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekte.</para>
-          <para />
-        </remarks>
+        <summary>Markiert alle Formen im Haupt Text, in einem Canvas-Bereich oder in Kopf-und Fußzeilen eines Dokuments.</summary>
+        <remarks><para>Diese Methode wählt keine <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekte aus.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

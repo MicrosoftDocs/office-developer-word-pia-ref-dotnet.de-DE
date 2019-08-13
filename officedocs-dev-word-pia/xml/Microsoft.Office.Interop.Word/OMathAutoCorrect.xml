@@ -1,13 +1,5 @@
 <Type Name="OMathAutoCorrect" FullName="Microsoft.Office.Interop.Word.OMathAutoCorrect">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="496371be8dfa743a25eebac4dfef38a8e285d3d1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669849" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathAutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0cc8c6beb49c151853fe8d7c4420fa2e287c5e7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144393" /></Metadata><TypeSignature Language="C#" Value="public interface OMathAutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathAutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathAutoCorrect" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt das mathematische AutoKorrektur-Feature in Microsoft Office Word. Verwenden Sie die AutoKorrektur-Einträge für den Zugriff der <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> Auflistung.</summary>
+    <summary>Stellt das Feature der mathematischen AutoKorrektur in Microsoft Office Word dar. Verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> Auflistung, um auf die AutoKorrektur-Einträge für Mathematik zuzugreifen.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,14 +74,10 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>, Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Diese Eigenschaft in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung verfügt über einen vierstelligen Erstellercode entworfen wurde. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden. </para>
+          <para>Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Entries">
@@ -117,10 +103,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMathAutoCorrectEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Auflistung der Formel AutoKorrektur-Einträge in die Formel AutoKorrektur gefunden. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" />
-        </value>
+        <summary>Gibt die Auflistung von formelauto Korrektur-Einträgen zurück, die im Feature der formelauto Korrektur gefunden wurden. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,10 +131,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMathRecognizedFunctions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Auflistung, die die erkannten Funktionen darstellt, die mit dem Feature Gleichung AutoKorrektur automatisch korrigiert werden. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />
-        </value>
+        <summary>Gibt die Auflistung zurück, die die erkannten Funktionen darstellt, die automatisch mit dem Feature für die Formel-AutoKorrektur korrigiert werden. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +159,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +190,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob Microsoft Office Word automatisch Zeichenfolgen in Formeln mit den entsprechenden mathematischen AutoKorrektur-Definitionen ersetzt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Zurückgeben oder Festlegen einer vom <b>Typ Boolean</b> , der darstellt, ob Microsoft Office Word automatisch Zeichenfolgen in Formeln durch die entsprechenden mathematischen AutoKorrektur-Definitionen ersetzt. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,10 +221,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob Microsoft Office Word mathematische AutoKorrektur-Regeln außerhalb von Formeln in einem Dokument verwendet. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom Typ Boolean</b> , der angibt, ob Microsoft Office Word mathematische AutoKorrektur-Regeln außerhalb von Formeln in einem Dokument verwendet. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

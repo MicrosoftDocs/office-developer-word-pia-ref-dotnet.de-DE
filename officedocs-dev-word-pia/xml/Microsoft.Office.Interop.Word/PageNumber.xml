@@ -1,13 +1,5 @@
 <Type Name="PageNumber" FullName="Microsoft.Office.Interop.Word.PageNumber">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84335aeefbe91fe9d5f4003bc39813a7196ba593" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669866" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageNumber" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b811b0b2c2b1792d369b2150ed58810310943396" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144213" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumber" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumber" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumber" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumber" />
@@ -26,14 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Seitenzahl in einer Kopf- oder Fußzeile.</summary>
-    <remarks>
-      <para>
-        <b>PageNumber</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Auflistung. Die <b>PageNumbers</b> -Auflistung enthält alle Seitenzahlen in einer einzelnen Kopf- oder Fußzeile.</para>
-      <para>Verwendung <b>PageNumbers</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>PageNumber</b> -Objekt zurückzugeben. In den meisten Fällen einer Kopf- oder Fußzeile enthält nur eine Seite ein, die Indexnummer 1.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> -Methode, um einer Kopf- oder Fußzeile eine Seitenzahl (ein PAGE-Feld) hinzufügen.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Seitenzahl in einer Kopfzeile oder Fußzeile dar.</summary>
+    <remarks><para>Das <b>PageNumber</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Auflistung. Die <b>PageNumbers</b>-Auflistung enthält alle Seitenzahlen einer einzelnen Kopf- oder Fußzeile.</para>
+      <para>Verwenden <b></b>Sie PageNumbers<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>PageNumber</b> -Objekt zurückzugeben. In den meisten Fällen enthält eine Kopf-oder Fußzeile nur eine Seitenzahl, die Indexnummer 1 ist.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> die-Methode, um einer Kopf-oder Fußzeile eine Seitenzahl (ein Seitenfeld) hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -62,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> -Konstante, die die Ausrichtung für die Seitenzahl darstellt.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> einer Konstanten, die die Ausrichtung für die Seitenzahl darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,11 +134,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -225,7 +212,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -279,11 +266,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
-        <remarks>
-          <para>Nach Verwendung dieser Methode können Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Markiert das angegebene Objekt.</summary>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

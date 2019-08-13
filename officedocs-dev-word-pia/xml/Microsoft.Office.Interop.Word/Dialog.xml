@@ -1,13 +1,5 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Word.Dialog">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48514fbfc024b02f9dcbf4a3b5c4070722ec2532" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669281" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="380f2c7cc87b01108dff60968ffecadad651a7bd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147081" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein integriertes Dialogfeld dar.</summary>
-    <remarks>
-      <para>
-        <b>Dialog</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> Auflistung. Die <b>Dialogs-</b> Auflistung enthält alle integrierten Dialogfeldern in Microsoft Word. Sie können nicht erstellt ein neues integrierte Dialogfeld oder der <b>Dialogs-</b> Auflistung hinzufügen.</para>
-      <para>Verwendung <b>Dialogs</b>(<paramref name="index" />), wobei <paramref name="index" /> ist ein <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> -Konstante, die das Dialogfeld zum Zurückgeben eines einzelnen <b>Dialogfeld</b> -Objekts identifiziert.</para>
-      <para>Die <b>WdWordDialog</b> -Konstanten werden aus dem Präfix "WdDialog" und den Namen des Menüs und des Dialogfelds gebildet. Beispielsweise die Konstante für das Dialogfeld Seite einrichten lautet <b>z. B. WdDialogFilePageSetup</b>, und die Konstante für das Dialogfeld neue lautet <b>WdDialogFileNew</b>.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>Dialog</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> Auflistung. Die <b>Dialogs</b> -Auflistung enthält alle integrierten Dialogfelder in Microsoft Word. Sie können kein neues, integriertes Dialogfeld erstellen oder der <b>Dialogs</b>-Auflistung hinzufügen.</para>
+      <para>Verwenden <b></b>von Dialogen<paramref name="index" />(), <paramref name="index" /> wobei es <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> sich um eine Konstante handelt, die das Dialogfeld identifiziert, um ein einzelnes <b>Dialog</b> -Objekt zurückzugeben.</para>
+      <para>Die <b>WdWordDialog</b>-Konstanten werden aus dem Präfix "wdDialog" und dem Namen des Menüs und des Dialogfelds gebildet. Die Konstante für das Dialogfeld Seite einrichten lautet z. B. <b>wdDialogFilePageSetup</b>, und die Konstante für das Dialogfeld Neu lautet <b>wdDialogFileNew</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,10 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Symbolleiste Steuerelement-Id für ein integriertes Microsoft Office Word-Dialogfeld zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Symbolleisten-Steuerelement-ID für ein integriertes Dialogfeld Microsoft Office Word zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,7 +104,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen der Prozedur, die das angegebene integrierte Dialogfeld angezeigt.</summary>
+        <summary>Gibt den Namen der Prozedur zurück, durch die das angegebene integrierte Dialogfeld angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,11 +134,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft beispielsweise die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt beispielsweise in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTab">
@@ -180,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWordDialogTab</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die aktive Registerkarte, wenn das angegebene Dialogfeld angezeigt wird.</summary>
+        <summary>Gibt die aktive Registerkarte zurück oder legt fest, welche Registerkarte aktiv sein soll, wenn das angegebene Dialogfeld angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,33 +192,31 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">Optionales- <b>Objekt</b>. Die Zeitdauer, die Word wartet, bevor das Dialogfeld automatisch geschlossen. Eine Einheit entspricht etwa 0,001 Sekunden. Gleichzeitige Systemaktivitäten erhöhen den effektive Zeitwert. Wenn dieses Argument ausgelassen wird, wird das Dialogfeld geschlossen, wenn der Benutzer geschlossen wird.</param>
-        <summary>Das angegebene integrierte Microsoft Word-Dialogfeld angezeigt, bis entweder vom Benutzer wird geschlossen, oder die angegebene Zeitspanne verstrichen ist. Gibt eine <b>ganze Zahl</b> , die angibt, welche Schaltfläche geklickt wurde, um das Dialogfeld zu schließen.</summary>
+        <param name="TimeOut">Optionales <b>Objekt</b>. Die Zeitspanne, die vergeht, bevor das Dialogfeld von Word automatisch geschlossen wird. Eine Einheit entspricht etwa 0,001 Sekunden. Durch mehrere gleichzeitige Systemaktivitäten erhöht sich möglicherweise der effektive Zeitwert. Wenn dieses Argument ausgelassen wird, wird das Dialogfeld erst vom Benutzer geschlossen.</param>
+        <summary>Zeigt das angegebene integrierte Dialogfeld Microsoft Word an, bis der Benutzer es geschlossen hat oder die angegebene Zeitspanne abgelaufen ist. Gibt eine <b>ganze Zahl</b> zurück, die angibt, auf welche Schaltfläche geklickt wurde, um das Dialogfeld zu schließen.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>Schaltfläche zum Schließen der.</description>
+              <description>Die Schaltfläche Schließen.</description>
             </item>
             <item>
               <description>-1</description>
-              <description>die OK-Schaltfläche.</description>
+              <description>Die Schaltfläche OK.</description>
             </item>
             <item>
-              <description>0 (null)</description>
-              <description>Schaltfläche Abbrechen der.</description>
+              <description>0 (Null)</description>
+              <description>Die Schaltfläche Abbrechen.</description>
             </item>
             <item>
-              <description> &gt; 0 (null)</description>
-              <description>eine Befehlsschaltfläche: 1 ist die erste Schaltfläche, 2 die zweite Schaltfläche usw..</description>
+              <description>&gt;0 (null)</description>
+              <description>Eine Befehlsschaltfläche: 1 ist die erste Schaltfläche, 2 die zweite usw.</description>
             </item>
           </list>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" /> Methode zum Anzeigen des angegebenen integrierten Word-Dialogfelds Feld, klicken Sie dann (wenn der Benutzer auf die Schaltfläche OK klickt) führen Sie die Aktionen, die vom Benutzer im Dialogfeld angegeben. Die <b>Display</b> -Methode andererseits, das angegebene integrierte Word-Dialogfeld angezeigt, aber keine Aktion ausführt, nachdem der Benutzer das Dialogfeld wird geschlossen. Aus diesem Grund sollten Sie entscheiden, die Methode, um wie folgt verwenden:</para>
-          <para>Verwenden Sie die <b>Display</b> -Methode, wenn die Aktionen der Benutzer im Dialogfeld dauert abgeschlossen sind, bevor der Benutzer das Dialogfeld - beispielsweise geschlossen, wenn der Benutzer einen Menü- oder durch anpasst verwenden das Dialogfeld "anpassen" (<b>WdDialogToolsCustomize</b>). Sie können auch die <b>Display</b> -Methode verwenden, sollten Sie die Aktionen, die durch den Benutzer angefordert ignorieren, wenn diese Aktionen normalerweise abgeschlossen werden, nachdem der Benutzer das Dialogfeld wird geschlossen.</para>
-          <para>Verwenden Sie die <b>Show</b> -Methode, wenn die Aktionen der Benutzer im Dialogfeld dauert normalerweise abgeschlossen sind, nachdem der Benutzer das Dialogfeld - beispielsweise geschlossen, wenn der Benutzer eine Datei zu öffnen, indem Sie das Dialogfeld Öffnen (<b>WdDialogFileOpen</b>) auswählt.</para>
-          <para />
-        </remarks>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" /> die-Methode, um das angegebene integrierte Wort Dialogfeld anzuzeigen, und führen Sie dann (wenn der Benutzer auf die Schaltfläche OK klickt) die vom Benutzer im Dialogfeld angegebenen Aktionen aus. Die <b>Display</b> -Methode zeigt hingegen das angegebene Dialogfeld integriertes Wort an, führt jedoch keine Aktion aus, nachdem der Benutzer das Dialogfeld geschlossen hat. Daher sollten Sie die zu verwendende Methode wie folgt auswählen:</para>
+          <para>Verwenden Sie die <b>Display</b> -Methode, wenn die Aktionen, die der Benutzer im Dialogfeld durchführt, abgeschlossen werden, bevor der Benutzer das Dialogfeld schließt-beispielsweise, wenn der Benutzer ein Menü oder eine Symbolleiste mithilfe des Dialogfelds anpassen (<b>wdDialogToolsCustomize</b>) anpasst. Sie können auch die <b>Display</b> -Methode verwenden, wenn Sie die vom Benutzer angeforderten Aktionen ignorieren möchten, wenn diese Aktionen normalerweise abgeschlossen werden, nachdem der Benutzer das Dialogfeld geschlossen hat.</para>
+          <para>Verwenden Sie die <b>Show</b> -Methode, wenn die Aktionen, die der Benutzer im Dialogfeld durchführt, normalerweise abgeschlossen werden, nachdem der Benutzer das Dialogfeld geschlossen hat-beispielsweise, wenn der Benutzer eine zu öffnende Datei mithilfe des Dialogfelds Öffnen (<b>wdDialogFileOpen</b>) auswählt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -311,28 +294,37 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">Optionales- <b>Objekt</b>. Die Zeitdauer, die Word wartet, bevor das Dialogfeld automatisch geschlossen. Eine Einheit entspricht etwa 0,001 Sekunden. Gleichzeitige Systemaktivitäten erhöhen den effektive Zeitwert. Wenn dieses Argument ausgelassen wird, wird das Dialogfeld geschlossen, wenn der Benutzer verwirft.</param>
-        <summary>Zeigt an, und führt Aktionen in der angegebenen integrierten Microsoft Word-Dialogfeld initiiert hat. Gibt eine <b>ganze Zahl</b> , die angibt, welche Schaltfläche geklickt wurde, um das Dialogfeld zu schließen.</summary>
+        <param name="TimeOut">Optionales <b>Objekt</b>. Die Zeitspanne, die vergeht, bevor das Dialogfeld von Word automatisch geschlossen wird. Eine Einheit entspricht etwa 0,001 Sekunden. Durch mehrere gleichzeitige Systemaktivitäten erhöht sich möglicherweise der effektive Zeitwert. Wenn dieses Argument ausgelassen wird, wird das Dialogfeld geschlossen, wenn es der Benutzer verwirft.</param>
+        <summary>Zeigt die Aktionen an, die im angegebenen integrierten Microsoft Word Dialogfeld initiiert wurden, und führt Sie aus. Gibt eine <b>ganze Zahl</b> zurück, die angibt, auf welche Schaltfläche geklickt wurde, um das Dialogfeld zu schließen.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>Die Schaltfläche <b>Schließen</b> .</description>
+              <description>Die Schaltfläche <b>Schließen</b>.</description>
             </item>
             <item>
               <description>-1</description>
-              <description>die Schaltfläche <b>OK</b> .</description>
+              <description>Die Schaltfläche <b>OK</b>.</description>
             </item>
             <item>
-              <description>0 (null)</description>
-              <description>die Schaltfläche <b>Abbrechen</b> .</description>
+              <description>0 (Null)</description>
+              <description>Die Schaltfläche <b>Abbrechen</b>.</description>
             </item>
             <item>
-              <description> &gt; 0 (null)</description>
-              <description>eine Befehlsschaltfläche: 1 ist die erste Schaltfläche, 2 die zweite Schaltfläche usw..</description>
+              <description>&gt;0 (null)</description>
+              <description>Eine Befehlsschaltfläche: 1 ist die erste Schaltfläche, 2 die zweite usw.</description>
             </item>
-          </list> Verwendung der <b>Anzeigen</b><para>-Methode zeigt das Dialogfeld zum angegebene integrierte Word Feld, klicken Sie dann (wenn der Benutzer auf die Schaltfläche <b>OK</b> klickt) führen Sie die Aktionen, die vom Benutzer im Dialogfeld angegeben. Die <see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> Methode, andererseits, das angegebene integrierte Word-Dialogfeld angezeigt, aber keine Aktion ausführt, nachdem der Benutzer das Dialogfeld wird geschlossen. Aus diesem Grund sollten Sie entscheiden, die Methode, um wie folgt verwenden:</para><list type="bullet"><item><para>Verwenden Sie die <b>Display</b> -Methode, wenn die Aktionen der Benutzer im Dialogfeld dauert abgeschlossen sind, bevor der Benutzer das Dialogfeld - beispielsweise geschlossen, wenn der Benutzer ein Menü anpasst oder die Symbolleiste mit dem Dialogfeld Anpassen (<b>WdDialogToolsCustomize</b>). Sie können auch die <b>Display</b> -Methode verwenden, sollten Sie die Aktionen, die durch den Benutzer angefordert ignorieren, wenn diese Aktionen normalerweise abgeschlossen werden, nachdem der Benutzer das Dialogfeld wird geschlossen.</para></item><item><para>Verwenden Sie die <b>Show</b> -Methode, wenn die Aktionen der Benutzer im Dialogfeld dauert normalerweise abgeschlossen sind, nachdem der Benutzer das Dialogfeld - beispielsweise geschlossen, wenn der Benutzer eine Datei zu öffnen, indem Sie das Dialogfeld Öffnen (<b>WdDialogFileOpen</b>) auswählt.</para></item></list><para /></remarks>
+          </list>
+          <para>Verwenden Sie die <b>Show</b> -Methode zeigt das angegebene integrierte Word-Dialogfeld an, und führen Sie dann (wenn der Benutzer auf die Schaltfläche <b>OK</b> klickt) die vom Benutzer im Dialogfeld angegebenen Aktionen aus. Die <see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> -Methode zeigt hingegen das angegebene Dialogfeld integriertes Wort an, führt jedoch keine Aktion aus, nachdem der Benutzer das Dialogfeld geschlossen hat. Daher sollten Sie die zu verwendende Methode wie folgt auswählen:</para>
+          <list type="bullet">
+            <item>
+              <para>Verwenden Sie die <b>Display</b> -Methode, wenn die Aktionen, die der Benutzer im Dialogfeld durchführt, abgeschlossen werden, bevor der Benutzer das Dialogfeld schließt-beispielsweise, wenn der Benutzer ein Menü oder eine Symbolleiste mithilfe des Dialogfelds anpassen (<b>wdDialogToolsCustomize</b>) anpasst. Sie können auch die <b>Display</b> -Methode verwenden, wenn Sie die vom Benutzer angeforderten Aktionen ignorieren möchten, wenn diese Aktionen normalerweise abgeschlossen werden, nachdem der Benutzer das Dialogfeld geschlossen hat.</para>
+            </item>
+            <item>
+              <para>Verwenden Sie die <b>Show</b> -Methode, wenn die Aktionen, die der Benutzer im Dialogfeld durchführt, normalerweise abgeschlossen werden, nachdem der Benutzer das Dialogfeld geschlossen hat-beispielsweise, wenn der Benutzer eine zu öffnende Datei mithilfe des Dialogfelds Öffnen (<b>wdDialogFileOpen</b>) auswählt.</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -358,7 +350,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWordDialog</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des integrierten Microsoft Word-Dialogfeld zurück.</summary>
+        <summary>Gibt den Typ des integrierten Microsoft Word-Dialogfelds zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

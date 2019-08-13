@@ -1,13 +1,5 @@
 <Type Name="Variable" FullName="Microsoft.Office.Interop.Word.Variable">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5a6d54bdd189749e8d6825c71826127afd6c461d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669673" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Variable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2a8fae352f5d719c8e9311fb04b65b7fefebfe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143769" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variable" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variable" />
@@ -26,17 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Variable, die als Teil eines Dokuments gespeichert. Dokumentvariablen werden verwendet, um Einstellungen für Makros zwischen Makro Sitzungen zu erhalten.</summary>
-    <remarks>
-      <para>Das <b>Variable</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Auflistung. Die <b>Variables</b> -Auflistung enthält alle Dokumentvariablen in einem Dokument oder einer Vorlage.</para>
-      <para>Use <b>Variablen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name der Variablen Dokument oder die Indexzahl darstellt, um ein einzelnes <b>Variable</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position der Dokumentvariablen in der <b>Variables</b> -Auflistung dar. Die letzte Variable, die <b>Variables</b> -Auflistung hinzugefügt wurde, ist Indexnummer 1. die-vorletzten Variable zur Auflistung hinzugefügt wird, Indexnummer 2 usw..</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> von der <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Auflistungsmethode, um eine Variable zu einem Dokument hinzuzufügen.</para>
-      <para>, Wenn Sie versuchen, eine Dokumentvariable mit einem Namen, der bereits in der <b>Variables</b> -Auflistung hinzuzufügen, tritt ein Fehler auf. Um diesen Fehler zu vermeiden, können Sie die Auflistung vor dem Hinzufügen der neuen Variables aufzählen.</para>
-      <para>Dokumentvariablen sind für den Benutzer unsichtbar, es sei denn, ein DOCVARIABLE-Feld, mit dem entsprechenden Variablennamen eingefügt wird.</para>
-      <para>Um eine Vorlage eine Dokumentvariable hinzuzufügen, öffnen Sie die Vorlage als Dokument mit der <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> -Methode.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Variable dar, die als Teil eines Dokuments abgelegt wird. Dokumentvariablen werden verwendet, um Makroeinstellungen zwischen Makrositzungen zu speichern.</summary>
+    <remarks><para>Das <b>Variable</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Auflistung. Die <b>Variables</b> -Auflistung enthält alle Dokumentvariablen in einem Dokument oder einer Vorlage.</para>
+      <para>Verwenden <b></b>Sie Variablen<paramref name="index" />(), <paramref name="index" /> wobei der Name der Dokumentvariablen oder die Indexnummer ist, um ein einzelnes <b>Variablen</b> Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position der Dokumentvariablen in der <b>Variables</b>-Auflistung dar. Die letzte zur <b>Variables</b>-Auflistung hinzugefügte Variable ist Indexnummer 1, die vorletzte hinzugefügte Variable ist Indexnummer 2 usw.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> die der <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Collection-Methode, um eine Variable zu einem Dokument hinzuzufügen.</para>
+      <para>Wenn Sie versuchen, eine Dokumentvariable mit einem Namen hinzuzufügen, der sich bereits in der <b>Variables</b>-Auflistung befindet, tritt ein Fehler auf. Dieser Fehler wird vermieden, wenn Sie die Auflistung aufzählen, bevor Sie neue Variablen hinzufügen.</para>
+      <para>Dokumentvariablen werden so lange für den Benutzer ausgeblendet, bis ein DOCVARIABLE-Feld mit dem geeigneten Namen für die Variable eingefügt wird.</para>
+      <para>Wenn Sie einer Vorlage eine Dokumentvariable hinzufügen möchten, öffnen Sie die Vorlage mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> -Methode als Dokument.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,11 +82,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -147,7 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +163,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +222,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Wert für die Dokumentvariable.</summary>
+        <summary>Gibt den Wert der Dokumentvariablen zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Word.ShapeNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb27a6ee4cc769c6d56e3162447fcc10ee349303" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670581" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35df8d05c8a08728b7df796ac68fa68a69de02c2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144001" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Word.ShapeNode" /> Objekte des angegebenen Freihandobjekts.</summary>
-    <remarks>
-      <para>Jedes <b>ShapeNode</b> -Objekt stellt entweder einen Knoten zwischen Abschnitten in einer Freihandform oder ein Kontrollpunkt für einen gekrümmten Abschnitt einer Freihandform dar. Sie können eine Freihandform erstellen, manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> und <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> Methoden.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" /> -Eigenschaft auf die <b>ShapeNodes</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> -Methode, um einen neuen Knoten erstellen und Hinzufügen der Kontaktobjekte zu den <b>ShapeNodes</b> -Auflistung.</para>
-      <para>Verwendung <b>Knoten</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Knotens, um ein einzelnes <b>ShapeNode</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Word.ShapeNode" /> Objekte in der angegebenen Freihandform.</summary>
+    <remarks><para>Jedes <b>ShapeNode</b> -Objekt stellt entweder einen Knoten zwischen Abschnitten in einer Freihandform oder ein Kontrollpunkt für einen gekrümmten Abschnitt einer Freihandform dar. Sie können eine Freihandform manuell oder mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> Methoden <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> and erstellen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" /> die-Eigenschaft, um die <b>ShapeNodes</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> die-Methode, um einen neuen Knoten zu erstellen und ihn der <b>ShapeNodes</b> -Auflistung hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Nodes (<paramref name="index" />) <paramref name="index" /> , wobei die Indexnummer des Knotens ist, um ein einzelnes <b>ShapeNode</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,11 +111,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -151,8 +139,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Die Anzahl der zu löschenden Formknotens.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Die Anzahl der zu löschenden Formknotens.</param>
         <summary>Löscht das angegebene Objekt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,18 +206,15 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Die Nummer des Formknotens, hinter dem ein neuer Knoten eingefügt werden soll.</param>
-        <param name="SegmentType">Erforderliche <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Die Art der Linie, die den eingefügten Knoten mit den benachbarten Knoten verbindet.</param>
-        <param name="EditingType">Erforderliche <see cref="T:Microsoft.Office.Core.MsoEditingType" />. Die Bearbeitungseigenschaft des eingefügten Knotens.</param>
-        <param name="X1">
-          <b>Single</b>erforderlich. Wenn die <paramref name="EditingType" /> des neuen Abschnitts <b>MsoEditingAuto</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum Endpunkt des neuen Abschnitts. Wenn die <paramref name="EditingType" /> des neuen Knotens <b>MsoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum ersten Kontrollpunkt für das neue Segment.</param>
-        <param name="Y1">
-          <b>Single</b>erforderlich. Wenn die <paramref name="EditingType" /> des neuen Abschnitts <b>MsoEditingAuto</b>ist, gibt dieses Argument den vertikalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum Endpunkt des neuen Abschnitts. Wenn die <paramref name="EditingType" /> des neuen Knotens <b>MsoEditingCorner</b>ist, gibt dieses Argument den vertikalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum ersten Kontrollpunkt für das neue Segment.</param>
-        <param name="X2">Optionaler <b>einzelnen</b>. Wenn die <paramref name="EditingType" /> des neuen Abschnitts <b>MsoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum zweiten Kontrollpunkt für das neue Segment. Wenn die <paramref name="EditingType" /> des neuen Segments <b>MsoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument.</param>
-        <param name="Y2">Optionaler <b>einzelnen</b>. Wenn die <paramref name="EditingType" /> des neuen Abschnitts <b>MsoEditingCorner</b>ist, gibt dieses Argument den vertikalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum zweiten Kontrollpunkt für das neue Segment. Wenn die <paramref name="EditingType" /> des neuen Segments <b>MsoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument.</param>
-        <param name="X3">Optionaler <b>einzelnen</b>. Wenn die <paramref name="EditingType" /> des neuen Abschnitts <b>MsoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum Endpunkt des neuen Abschnitts. Wenn die <paramref name="EditingType" /> des neuen Segments <b>MsoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument.</param>
-        <param name="Y3">Optionaler <b>einzelnen</b>. Wenn die <paramref name="EditingType" /> des neuen Abschnitts <b>MsoEditingCorner</b>ist, gibt dieses Argument den vertikalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum Endpunkt des neuen Abschnitts. Wenn die <paramref name="EditingType" /> des neuen Segments <b>MsoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Die Nummer des Formknotens, hinter dem ein neuer Knoten eingefügt werden soll.</param>
+        <param name="SegmentType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Die Art der Linie, die den eingefügten Knoten mit den benachbarten Knoten verbindet.</param>
+        <param name="EditingType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoEditingType" />. Die Bearbeitungseigenschaft des eingefügten Knotens.</param>
+        <param name="X1">Erforderlicher <b>Single</b>-Wert. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingAuto</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn der <paramref name="EditingType" /> neue Knoten <b>msoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum ersten Kontrollpunkt für das neue Segment an.</param>
+        <param name="Y1">Erforderlicher <b>Single</b>-Wert. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingAuto</b>ist, gibt dieses Argument den in Punkt gemessenen vertikalen Abstand von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn der <paramref name="EditingType" /> neue Knoten <b>msoEditingCorner</b>ist, gibt dieses Argument den in Punkt gemessenen vertikalen Abstand von der oberen linken Ecke des Dokuments zum ersten Kontrollpunkt für das neue Segment an.</param>
+        <param name="X2">Optional <b>Single</b>. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum zweiten Kontrollpunkt für das neue Segment an. Wenn die <paramref name="EditingType" /> des neuen Segments <b>msoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument an.</param>
+        <param name="Y2">Optional <b>Single</b>. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingCorner</b>ist, gibt dieses Argument den in Punkt gemessenen vertikalen Abstand von der oberen linken Ecke des Dokuments zum zweiten Kontrollpunkt für das neue Segment an. Wenn die <paramref name="EditingType" /> des neuen Segments <b>msoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument an.</param>
+        <param name="X3">Optional <b>Single</b>. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn die <paramref name="EditingType" /> des neuen Segments <b>msoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument an.</param>
+        <param name="Y3">Optional <b>Single</b>. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingCorner</b>ist, gibt dieses Argument den in Punkt gemessenen vertikalen Abstand von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn die <paramref name="EditingType" /> des neuen Segments <b>msoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument an.</param>
         <summary>Fügt einen Knoten in eine Freihandform ein.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +245,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -319,14 +303,11 @@
         <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Der Knoten, dessen Bearbeitungsart festgelegt werden soll.</param>
-        <param name="EditingType">Erforderliche <see cref="T:Microsoft.Office.Core.MsoEditingType" />. Die Bearbeitungseigenschaft des Scheitelpunkts.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Der Knoten, dessen Bearbeitungstyp festgelegt werden soll.</param>
+        <param name="EditingType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoEditingType" />. Die Bearbeitungseigenschaft des Scheitelpunkts.</param>
         <summary>Legt die Bearbeitungsart des angegebenen Knotens fest.</summary>
-        <remarks>
-          <para>Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, legt diese Methode die Bearbeitungsart des Knotens daneben, der zwei Abschnitte verbindet. Beachten Sie, dass je nach Bearbeitungsart kann diese Methode die Position benachbarter Knoten beeinflussen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, legt diese Methode die Bearbeitungsart des angrenzenden Knotens fest, der zwei Abschnitte verbindet. Beachten Sie, dass sich diese Methode je nach Bearbeitungstyp auf die Position benachbarter Knoten auswirken kann.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPosition">
@@ -354,17 +335,12 @@
         <Parameter Name="Y1" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Der Knoten, dessen Position festgelegt werden soll.</param>
-        <param name="X1">
-          <b>Single</b>erforderlich. Die Position des neuen Knotens (in Punkt), relativ zur oberen linken Ecke des Dokuments.</param>
-        <param name="Y1">
-          <b>Single</b>erforderlich. Die Position des neuen Knotens (in Punkt), relativ zur oberen linken Ecke des Dokuments.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Der Knoten, dessen Position festgelegt werden soll.</param>
+        <param name="X1">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) des neuen Knotens relativ zur linken, oberen Ecke des Dokuments.</param>
+        <param name="Y1">Erforderlicher <b>Single</b>-Wert. Die Position (in Punkt) des neuen Knotens relativ zur linken, oberen Ecke des Dokuments.</param>
         <summary>Legt die Position des angegebenen Knotens fest.</summary>
-        <remarks>
-          <para>Beachten Sie, dass je nach Bearbeitungsart des Knotens kann diese Methode die Position benachbarter Knoten beeinflussen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Beachten Sie, dass sich diese Methode abhängig vom Bearbeitungstyp des Knotens möglicherweise auf die Position benachbarter Knoten auswirkt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSegmentType">
@@ -391,14 +367,11 @@
         <Parameter Name="SegmentType" Type="Microsoft.Office.Core.MsoSegmentType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>erforderlich. Der Knoten, dessen Abschnittstyp festgelegt werden soll.</param>
-        <param name="SegmentType">Erforderliche <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Legt fest, ob das Segment gerade oder gekrümmt ist.</param>
+        <param name="Index">Erforderliche <b>ganze Zahl</b>. Der Knoten, dessen Segmenttyp festgelegt werden soll.</param>
+        <param name="SegmentType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Legt fest, ob das Segment gerade oder gekrümmt ist.</param>
         <summary>Legt den Segmenttyp des Abschnitts fest, der dem angegebenen Knoten folgt.</summary>
-        <remarks>
-          <para>Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, legt diese Methode den Abschnittstyp für diese Kurve. Beachten Sie, dass dies die Gesamtzahl der Knoten durch Einfügen oder löschen benachbarte Knoten beeinflussen kann.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der Knoten ein Kontrollpunkt für einen gekrümmten Abschnitt ist, legt diese Methode den Abschnittstyp für diese Kurve fest. Beachten Sie, dass dies die Gesamtzahl der Knoten beeinflussen könnte, weil möglicherweise benachbarte Knoten eingefügt oder gelöscht werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

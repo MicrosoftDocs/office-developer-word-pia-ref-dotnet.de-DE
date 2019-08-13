@@ -1,13 +1,5 @@
 <Type Name="HeadingStyles" FullName="Microsoft.Office.Interop.Word.HeadingStyles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ac08de01c0786e7b85ed6512cee7ebcc71040b6f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669741" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeadingStyles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8035dbeadf8f64cd8b07bd451f70eb58cd11b7a1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147984" /></Metadata><TypeSignature Language="C#" Value="public interface HeadingStyles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadingStyles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadingStyles" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadingStyles&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" /> -Objekten, die ein Abbildungsverzeichnis oder das Inhaltsverzeichnis kompiliert verwendeten Formatvorlagen darstellen.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>HeadingStyles</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Interop.Word.TablesOfContents" /> oder <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> Objekts, um der <b>HeadingStyles</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> -Methode der <b>HeadingStyles</b> -Auflistung eine Formatvorlage hinzugefügt.</para>
-      <para>Verwendung <b>HeadingStyles</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>HeadingStyle</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Formatvorlage in der <b>HeadingStyles</b> -Auflistung.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" /> Objekten, die die Formatvorlagen darstellen, die zum Kompilieren eines Abbildungs-oder Inhaltsverzeichnisses verwendet werden.</summary>
+    <remarks><para>Verwenden Sie die <b>HeadingStyles</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.TablesOfContents" /> des <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> oder-Objekts, um die <b>HeadingStyles</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> die-Methode, um der <b>HeadingStyles</b> -Auflistung eine Formatvorlage hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie HeadingStyles<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, <b></b> um ein einzelnes HeadStyle-Objekt zurückzugeben. Die Indexnummer stellt die Position der Formatvorlage in der <b>HeadingStyles</b> -Auflistung dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,11 +53,9 @@
         <Parameter Name="Level" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Style">
-          <b>Objekt</b>erforderlich. Die Formatvorlage, den, die Sie hinzufügen möchten. Sie können dieses Argument angeben, mit der Zeichenfolgennamen für die Formatvorlage oder ein <see cref="T:Microsoft.Office.Interop.Word.Style" /> Objekt.</param>
-        <param name="Level">
-          <b>Kurze</b>erforderlich. Eine Zahl, die die Ebene der Überschrift darstellt.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" /> -Objekt, das eine neue Formatvorlage für Überschriften darstellt, die zu einem Dokument hinzugefügt. Die neue Formatvorlage für Überschriften wird bei jeder Erstellung eines Inhalts- oder Abbildungsverzeichnisses mit eingeschlossen.</summary>
+        <param name="Style">Erforderliches <b>Objekt</b>. Die Formatvorlage, die hinzugefügt werden soll. Sie können dieses Argument angeben, indem Sie entweder den Zeichenfolgennamen für die Format <see cref="T:Microsoft.Office.Interop.Word.Style" /> Vorlage oder ein Objekt verwenden.</param>
+        <param name="Level"><b>Short</b>erforderlich. Eine Zahl, die die Ebene der Überschrift darstellt.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HeadingStyle" /> Objekt zurück, das eine neue Überschriftenformatvorlage darstellt, die einem Dokument hinzugefügt wurde. Die neue Formatvorlage für Überschriften wird bei jeder Erstellung eines Inhalts- oder Abbildungsverzeichnisses mit eingeschlossen.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,11 +141,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,7 +204,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

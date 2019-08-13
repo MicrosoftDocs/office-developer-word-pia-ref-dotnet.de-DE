@@ -1,13 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Word.SeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fdd1aa630560e78742fe57a7803702308e5da8a7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669176" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f6dd45f5fe33b8e5a1ece1fafb9e3ad6bbeab62c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144008" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Word.Series" /> -Objekte im angegebenen Diagramm oder Diagrammgruppe.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" /> -Methode zum Zurückgeben der <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> Auflistung.</para>
-      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" /> -Methode zum Erweitern einer vorhandenen Reihe.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Word.Series" /> Objekte im angegebenen Diagramm oder in der Diagrammgruppe.</summary>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" /> die-Methode, <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> um die Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" /> die-Methode, um eine vorhandene Datenreihe zu erweitern.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -66,7 +56,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Für die interne Verwendung reserviert.</summary>
-        <returns>Gibt <see cref="T:Microsoft.Office.Interop.Word.Series" />.</returns>
+        <returns>Gibt <see cref="T:Microsoft.Office.Interop.Word.Series" />zurück.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,18 +87,14 @@
       </Parameters>
       <Docs>
         <param name="Source">Die neuen Daten in Form einer Zeichenfolgendarstellung eines Bereichs, der in der Workbook -Eigenschaft des ChartData -Objekts für das Diagramm enthalten ist.</param>
-        <param name="Rowcol">Gibt an, ob die neuen Werte in den Zeilen oder Spalten des angegebenen Bereichs befinden.</param>
-        <param name="SeriesLabels">
-          <b>True,</b> Wenn die erste Zeile oder Spalte den Namen der Datenreihe enthält. <b>False,</b> Wenn die erste Zeile oder Spalte den ersten Datenpunkt der Datenreihe enthält. Wenn dieses Argument ausgelassen wird, versucht Microsoft Word die Position des Datenreihennamens aus dem Inhalt der ersten Zeile oder Spalte zu bestimmen. </param>
-        <param name="CategoryLabels">
-          <b>True,</b> Wenn die erste Zeile oder Spalte den Namen der Kategorie Etiketten enthält. <b>False,</b> Wenn die erste Zeile oder Spalte den ersten Datenpunkt der Datenreihe enthält. Wenn dieses Argument ausgelassen wird, versucht Microsoft Word den Speicherort des Bezeichnungsfelds Kategorie aus dem Inhalt der ersten Zeile oder Spalte zu bestimmen.</param>
-        <param name="Replace">Wenn <paramref name="CategoryLabels" /> ist <b>True</b> und <paramref name="Replace" /><b>True</b>ersetzen angegebenen Kategorien die Kategorien, die derzeit für die Datenreihe vorhanden ist. Wenn <paramref name="Replace" /> ist <b>"false"</b>, die vorhandenen Kategorien nicht ersetzt werden. Der Standardwert lautet <b>False</b>.</param>
+        <param name="Rowcol">Gibt an, ob die neuen Werte sich in den Zeilen oder Spalten des angegebenen Bereichs befinden.</param>
+        <param name="SeriesLabels"><b>True,</b> Wenn die erste Zeile oder Spalte den Namen der Datenreihe enthält. <b>False,</b> Wenn die erste Zeile oder Spalte den ersten Datenpunkt der Datenreihe enthält. Wenn dieses Argument ausgelassen wird, versucht Microsoft Word die Position des Datenreihennamens aus dem Inhalt der ersten Zeile oder Spalte zu bestimmen. </param>
+        <param name="CategoryLabels"><b>True</b>, wenn die erste Zeile oder Spalte den Namen der Kategoriebeschriftungen enthält. <b>False</b>, wenn die erste Zeile oder Spalte den ersten Datenpunkt der Datenreihe enthält. Wenn dieses Argument ausgelassen wird, versucht Microsoft Word, die Position der Kategorie-Beschriftung aus dem Inhalt der ersten Zeile oder Spalte zu bestimmen.</param>
+        <param name="Replace">Wenn <paramref name="CategoryLabels" /> ist <b>true</b> und <paramref name="Replace" /> <b>true</b>ist, ersetzen die angegebenen Kategorien die Kategorien, die derzeit für die Datenreihe vorhanden sind. Wenn <paramref name="Replace" /> " <b>false</b>" ist, werden die vorhandenen Kategorien nicht ersetzt. Der Standardwert ist <b>False</b>.</param>
         <summary>Fügt der Auflistung eine oder mehrere Datenreihen hinzu.</summary>
-        <returns>Ein <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> -Objekt, das die neue Datenreihe darstellt.</returns>
-        <remarks>
-          <para>Diese Methode gibt kein zurück, ein <see cref="T:Microsoft.Office.Interop.Word.Series" /> -Objekts wie im Objektbrowser angegeben.</para>
-          <para />
-        </remarks>
+        <returns>Ein <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> Objekt, das die neue Datenreihe darstellt.</returns>
+        <remarks><para>Diese Methode gibt kein <see cref="T:Microsoft.Office.Interop.Word.Series" /> Objekt zurück, wie im Objektkatalog angegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -134,9 +120,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Anwendung</b> (siehe oben)</value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Anwendung</b> (siehe oben)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,10 +148,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Integer</b> -Wert, der die Anzahl der Objekte in der Auflistung darstellt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt einen <b>ganzzahligen</b> Wert zurück, der die Anzahl der Objekte in der Auflistung darstellt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,14 +176,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -227,16 +206,13 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">Die neuen Daten, die hinzugefügt werden die <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> -Objekt, dargestellt als ein A1-Bezugssystems.</param>
-        <param name="Rowcol">Gibt an, ob die neuen Werte in den Zeilen oder Spalten des angegebenen Quellbereichs befinden. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten: <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" /> oder <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" />. Wenn Sie dieses Argument nicht angeben, wird in Microsoft Word versucht, die Position der Werte über die Größe und Ausrichtung des ausgewählten Bereichs oder über die Dimensionen des Arrays zu bestimmen.</param>
-        <param name="CategoryLabels">
-          <b>True</b>, wenn die erste Zeile oder Spalte enthalten den Namen der Kategorie Etiketten. <b>False</b>, wenn die erste Zeile oder Spalte enthält den ersten Datenpunkt der Datenreihe. Wenn dieses Argument ausgelassen wird, versucht Microsoft Word den Speicherort des Bezeichnungsfelds Kategorie aus dem Inhalt der ersten Zeile oder Spalte zu bestimmen.</param>
+        <param name="Source">Die neuen Daten, die dem <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> Objekt hinzugefügt werden sollen, als eine Bereichs Referenz im a1-Stil dargestellt.</param>
+        <param name="Rowcol">Gibt an, ob sich die neuen Werte in den Zeilen oder Spalten des angegebenen Quellbereichs befinden. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten sein: <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" /> oder. <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" /> Wenn Sie dieses Argument nicht angeben, wird in Microsoft Word versucht, die Position der Werte über die Größe und Ausrichtung des ausgewählten Bereichs oder über die Dimensionen des Arrays zu bestimmen.</param>
+        <param name="CategoryLabels"><b>True</b>, wenn die erste Zeile oder Spalte enthalten den Namen der Kategorie Etiketten. <b>False</b>, wenn die erste Zeile oder Spalte enthält den ersten Datenpunkt der Datenreihe. Wenn dieses Argument ausgelassen wird, versucht Microsoft Word, die Position der Kategorie-Beschriftung aus dem Inhalt der ersten Zeile oder Spalte zu bestimmen.</param>
         <summary>Fügt einer bestehenden Auflistung von Datenreihen neue Datenpunkte hinzu.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode steht für PivotChart-Berichte nicht.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode ist nicht für PivotChart-Berichte verfügbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -267,7 +243,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Gibt <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Gibt <see cref="T:System.Collections.IEnumerator" />zurück.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +275,7 @@
       <Docs>
         <param name="Index">Der Name oder die Indexnummer für das Objekt.</param>
         <summary>Gibt ein einzelnes Objekt aus einer Auflistung zurück.</summary>
-        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Series" />.</value>
+        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Series" />zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,11 +301,9 @@
       <Parameters />
       <Docs>
         <summary>Erstellt eine neue Datenreihe.</summary>
-        <returns>Ein <see cref="T:Microsoft.Office.Interop.Word.Series" /> -Objekt, das die neue Datenreihe darstellt.</returns>
-        <remarks>
-          <para>Diese Methode steht für PivotChart-Diagramme nicht.</para>
-          <para />
-        </remarks>
+        <returns>Ein <see cref="T:Microsoft.Office.Interop.Word.Series" /> Objekt, das die neue Datenreihe darstellt.</returns>
+        <remarks><para>Diese Methode steht für PivotChart-Diagramme nicht zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -356,9 +330,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

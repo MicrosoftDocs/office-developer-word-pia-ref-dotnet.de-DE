@@ -1,13 +1,5 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="42dcabef8b7b97589d5327b23896d8ea6d46375a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670083" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143987" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt einen Smarttag dar.</summary>
-    <remarks>
-      <para>Ein Smarttag-Typ ist ein einzelnes Element in einer Smarttag-Liste. Smarttag-Listen können mehrere Smarttag-Typen enthalten. Die Smarttag-Adressliste, die standardmäßig auf englischen Systemen installiert enthält beispielsweise ein Smarttag-Namenstyp, Straße Smarttagtyp und ein Smarttag-Typ City, nennen Sie ein Paar.</para>
+    <summary>Stellt einen Smarttag-Typ dar.</summary>
+    <remarks><para>Ein Smarttag-Typ ist ein einzelnes Element in einer Smarttag-Liste. Smarttag-Listen können mehrere Smarttag-Typen enthalten. So enthält z. B. die Smarttag-Liste Adresse, die auf englischen Systemen standardmäßig installiert wird, u. A. Smarttag-Typen für den Namen, die Straße und die Stadt.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />, und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich, dass jedes Element, das eine Komponente Smarttag erkennt ein <b>SmartTagType</b> -Objekt ist. "Stadt" in der Adresse Smarttag-Komponente ist beispielsweise ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttag-Typ City verfügt über verbundene <b>SmartTagRecognizer</b> -Objekten (der Teil der Smarttag-Komponente, die Smarttags vom Typ "Stadt" in Dokumenten erkennt) und <b>SmartTagAction</b> -Objekten (der Teil der Smarttag-Komponente, die bietet die Aktionen im Zusammenhang mit der bestimmten Smarttag-Typ, der Nachschlagen einer erkannten Stadt in Microsoft MapPoint auf MSN). Einfach ausgedrückt, ist die Kennzeichnung, die Aktionsbehandlungsroutine bereit und beide ist der Typ des Smarttags, deren Funktionsweise auf.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> -Methode, um einen bestimmten Smarttag-Typ in einer Auflistung von Smarttag-Typen zurückzugeben. Verwenden Sie dann die <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> -Eigenschaft auf alle Smarttag-Erkennung verknüpft ist mit einem angegebenen Typ des Smarttags zurückzugeben, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> Eigenschaft, um alle Smarttag-Aktionen mit einem angegebenen Typ des Smarttags zugeordnete zurückzugeben.</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich darauf, dass jedes Element, das eine Smarttag-Komponente erkennt, ein <b>SmartTagType</b> -Objekt ist. Beispielsweise ist "City" in der Smarttag-Adresskomponente ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttagtyp City enthält dann verwandte <b>SmartTagRecognizer</b> -Objekte (der Teil der Smarttag-Komponente, der Smarttags vom Typ "City" in Documents erkennt) <b></b> und Smarttags-Objekte (der Teil der Smarttag-Komponente, der die Aktionen im Zusammenhang mit dem bestimmten Smarttagtyp, der möglicherweise die Suche nach einer anerkannten Stadt in Microsoft MapPoint in MSN umfasst. Einfach ausgedrückt: das Erkennungsmodul führt die Benennung aus, der Aktionshandler bietet Endbenutzerfunktionen, und was bindet sie zusammen, ist der Typ des Smarttags, an dem Sie arbeiten.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> die-Methode, um einen bestimmten Smarttag-Typ in einer Auflistung von Smarttagtypen zurückzugeben. Verwenden Sie dann <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> die-Eigenschaft, um alle Smarttag-Erkennungsmodule zurückzugeben, die einem angegebenen Smarttagtyp zugeordnet sind <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> , und verwenden Sie die-Eigenschaft, um alle Smarttag-Aktionen zurückzugeben, die einem angegebenen Smarttag-Typ zugeordnet sind.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,11 +85,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -128,15 +116,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge</b> , die einen Anzeigenamen für einen Smarttag darstellt.</summary>
+        <summary>Gibt einen Wert vom Typ <b>String</b> zurück, der einen Anzeigenamen für einen Smarttagtyp darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Smart-Tag Typnamen, gemäß Definition in der <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> -Eigenschaft, als Uniform Resource Names (URNs) formatiert sind. Der angezeigte Name entfernt den URN und behält den Namen nach dem Nummernzeichen (#) bei. Beispielsweise gibt der Adresse Smarttag-Typ den folgenden URN für die <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> -Eigenschaft.</para>
-          <para>Urn: Schemas-Microsoft-Com:office:smarttags #address</para>
-          <para>Die <b>FriendlyName</b> -Eigenschaft entfernt alles bis einschließlich zum Nummernzeichen (#) und lässt die folgende <b>Zeichenfolge</b>:</para>
-          <para>Adresse</para>
-          <para />
-        </remarks>
+        <remarks><para>Smarttag-Typnamen, wie in der <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> -Eigenschaft definiert, werden als Uniform Resource Names (Urnen) formatiert. Der Anzeigename entfernt den URN und verlässt den Namen nach dem Pound (#)-Zeichen. Der Smarttag-Typ Address gibt beispielsweise den folgenden URN für die <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> Eigenschaft zurück.</para>
+          <para>urn: Schemas-Microsoft-com: Office: Smarttags # Address</para>
+          <para>Die <b>FriendlyName</b> -Eigenschaft entfernt alles bis einschließlich des Pound-Zeichens (#) und lässt die folgende <b>Zeichenfolge</b>:</para>
+          <para>address</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -227,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> -Auflistung, die die Auflistung aller für ein Smarttag verfügbarer Aktionen darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> Auflistung zurück, die die Auflistung von Aktionen darstellt, die für ein Smarttag verfügbar sind.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagRecognizers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> Auflistung für eine Anwendung.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> Auflistung für eine Anwendung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

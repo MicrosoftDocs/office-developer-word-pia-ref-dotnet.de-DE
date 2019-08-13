@@ -1,13 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Word.Window">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ef41ba1d1545160b80a5ea0214b97f73c4073af3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670696" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4e29decd5d2ab2a5ef57937db92371976360b243" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142696" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein Fenster dar.</summary>
-    <remarks>
-      <para>Viele sind, z. B. Bildlaufleisten und Lineale, eigentlich Eigenschaften des Fensters. Die <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.Windows" /> -Auflistung für die <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt enthält alle Fenster der Anwendung, während die <see cref="T:Microsoft.Office.Interop.Word.Windows" /> -Auflistung für die <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt enthält nur die Fenster, das das angegebene Dokument anzeigen.</para>
-      <para>Mithilfe von <b>Windows</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Fenstername oder die Indexnummer ist, zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekt.</para>
-      <para>Die Indexnummer ist die Anzahl der links neben dem Namen im Menü Fenster.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> Methode oder die <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> -Methode, um ein neues Fenster zum Hinzufügen der <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung.</para>
-      <para>Ein Doppelpunkt (:)) und eine Zahl angezeigt in der fensterbeschriftung, wenn mehrere Fenster für ein Dokument geöffnet ist.</para>
-      <para>, Wenn Sie die Ansicht zur Seitenansicht wechseln, wird ein neues Fenster erstellt. In diesem Fenster aus entfernt die <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung beim Schließen der Seitenansicht.</para>
-      <para />
-    </remarks>
+    <remarks><para>Viele Dokumentmerkmale (z. B. Bildlaufleisten und Lineale) sind Eigenschaften des Fensters. Das <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung für das <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt enthält alle Fenster in der Anwendung, während die <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung für das <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt nur die Fenster enthält, in denen das angegebene Dokument angezeigt wird.</para>
+      <para>Verwenden <b></b>Sie Windows<paramref name="index" />(), <paramref name="index" /> wobei der Fenster Name oder die Indexnummer ist, um ein einzelnes <see cref="T:Microsoft.Office.Interop.Word.Window" /> Objekt zurückzugeben.</para>
+      <para>Die Indexnummer steht links neben dem Namen des Fensters im Menü Fenster.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> die-Methode <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> oder die-Methode, um der <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung ein neues Fenster hinzuzufügen.</para>
+      <para>Wenn ein Dokument in mehreren Fenstern geöffnet ist, wird in der Fensterbeschriftung ein Doppelpunkt (:) und eine Zahl angezeigt.</para>
+      <para>Wenn Sie zur Seitenansicht wechseln, wird ein neues Fenster erstellt. Dieses Fenster wird aus der Auflistung <see cref="T:Microsoft.Office.Interop.Word.Windows" /> entfernt, wenn Sie die Seitenansicht schließen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -86,8 +76,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Fenster aktiv ist.</summary>
+        <summary><b>True</b>, wenn das angegebene Fenster aktiv ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,7 +104,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Pane" /> -Objekt, das den aktiven Ausschnitt für das angegebene Fenster darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Pane" /> Objekt zurück, das den aktiven Bereich für das angegebene Fenster darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +132,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,12 +163,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Beschriftungstext für das angegebene Dokument oder Anwendungsfenster.</summary>
+        <summary>Gibt den Beschriftungstext für das angegebene Dokument oder Anwendungsfenster zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um die Beschriftung des Anwendungsfensters in den Standardtext zu ändern, legen Sie diese Eigenschaft auf eine leere Zeichenfolge ("").</para>
-          <para />
-        </remarks>
+        <remarks><para>Legen Sie diese Eigenschaft auf eine leere Zeichenfolge ("") fest, um die Beschriftung des Anwendungsfensters in den Standardtext zu ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -205,8 +192,8 @@
         <Parameter Name="RouteDocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Optionales- <b>Objekt</b>. Gibt die Speichern-Aktion für das Dokument. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" /> Konstanten: <b>WdDoNotSaveChanges</b>, <b>WdPromptToSaveChanges</b>oder <b>WdSaveChanges</b>.</param>
-        <param name="RouteDocument">Optionales- <b>Objekt</b>. <b>True</b> , wenn das Dokument an den nächsten Empfänger weitergeleitet. Wenn das Dokument einen Verteiler vorhanden ist, wird dieses Argument ignoriert.</param>
+        <param name="SaveChanges">Optionales <b>Objekt</b>. Gibt die Speichern-Aktion für das Dokument an. Kann <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" /> eine der folgenden Konstanten sein: <b>wdDoNotSaveChanges veranschaulicht</b>, <b>wdPromptToSaveChanges</b>oder <b>wdSaveChanges</b>.</param>
+        <param name="RouteDocument">Optionales <b>Objekt</b>. <b>True</b>, wenn das Dokument an den nächsten Empfänger weitergeleitet werden soll. Wenn das Dokument nicht mit einer Verteilerliste versehen ist, wird dieses Argument ignoriert.</param>
         <summary>Schließt das angegebene Fenster.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,11 +223,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHorizontalScrollBar">
@@ -269,8 +254,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn eine horizontale Bildlaufleiste für das angegebene Fenster angezeigt wird.</summary>
+        <summary><b>True</b>, wenn für das angegebene Fenster eine horizontale Bildlaufleiste angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,8 +285,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die vertikale Bildlaufleiste auf der linken Seite des Dokumentfensters angezeigt wird.</summary>
+        <summary><b>True</b>, wenn die vertikale Bildlaufleiste am linken Rand des Dokumentfensters angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -333,8 +316,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das vertikale Lineal auf der rechten Seite des Dokumentfensters in der Drucklayoutansicht angezeigt wird.</summary>
+        <summary><b>True</b>, wenn das vertikale Lineal in der Drucklayoutansicht auf der rechten Seite des Dokumentfensters angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -365,16 +347,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn für das angegebene Fenster oder den Bereich Lineale angezeigt werden.</summary>
+        <summary><b>True</b> , wenn Lineale für das angegebene Fenster oder den angegebenen Bereich angezeigt werden.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>Die <b>DisplayRulers</b> -Eigenschaft entspricht dem Befehl Lineal im Menü Ansicht. </para>
           <para>
-            <b>DisplayRulers</b> -Eigenschaft entspricht dem Ruler-Befehl im Menü Ansicht. </para>
-          <para>
-            <b>Hinweis</b> Wenn <b>DisplayRulers</b><b>"false"</b>, die horizontale ist und vertikale Lineal werden nicht, unabhängig von der Einstellung angezeigt der <see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalRuler" /> -Eigenschaft.</para>
-          <para />
-        </remarks>
+            <b>Hinweis:</b>  Wenn <b>DisplayRulers</b> auf <b>false festgelegt</b>ist, werden die horizontalen und vertikalen Lineale unabhängig vom Status der <see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalRuler" /> Eigenschaft nicht angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayScreenTips">
@@ -403,8 +381,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Kommentare, Fußnoten und Hyperlinks als QuickInfo angezeigt werden. Text, der Kommentare enthält, wird hervorgehoben.</summary>
+        <summary><b>True</b>, wenn Kommentare, Fußnoten und Hyperlinks als QuickInfo angezeigt werden. Text, der Kommentare enthält, wird hervorgehoben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,14 +412,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn ein vertikales Lineal für das angegebene Fenster oder den Bereich angezeigt wird.</summary>
+        <summary><b>True</b> , wenn ein vertikales Lineal für das angegebene Fenster oder den angegebenen Bereich angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  Ein vertikales Lineal wird nur in der Drucklayoutansicht und nur, wenn die <see cref="P:Microsoft.Office.Interop.Word.Window.DisplayRulers" /> -Eigenschaft auf <b>True</b>festgelegt ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Hinweis:</b>  Ein vertikales Lineal wird nur in der Drucklayoutansicht und nur dann <see cref="P:Microsoft.Office.Interop.Word.Window.DisplayRulers" /> angezeigt, wenn die Eigenschaft auf <b>true</b>festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalScrollBar">
@@ -471,8 +445,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn für das angegebene Fenster eine vertikale Bildlaufleiste angezeigt wird.</summary>
+        <summary><b>True</b>, wenn für das angegebene Fenster eine vertikale Bildlaufleiste angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -500,7 +473,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt das angegebene Fenster zugeordnet.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück, das dem angegebenen Fenster zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -531,8 +504,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Dokumentstruktur angezeigt wird.</summary>
+        <summary><b>True</b>, wenn die Dokumentstruktur sichtbar ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,7 +541,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Breite der Dokumentstruktur als einen prozentualen Anteil der Breite des angegebenen Fensters.</summary>
+        <summary>Gibt die Breite der Dokumentstruktur als Prozentwert der Breite des angegebenen Fensters zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -600,13 +572,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die e-Mail-Kopfzeile Nachricht ist im Dokumentfenster sichtbar. Der Standardwert lautet <b>False</b>.</summary>
+        <summary><b>True</b>, wenn die Kopfzeile der E-Mail-Nachricht im Dokumentfenster sichtbar ist. Der Standardwert ist <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft hat keine Auswirkung, wenn das Dokument eine E-mail-Nachricht ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkung, wenn es sich bei dem Dokument nicht um eine E-Mail-Nachricht handelt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPoint">
@@ -636,21 +605,14 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ScreenPixelsLeft">
-          <b>Integer</b>erforderlich. Der Name der Variablen, an die der Wert für den linken Rand des Objekts von Microsoft Word zurückgeben werden soll.</param>
-        <param name="ScreenPixelsTop">
-          <b>Integer</b>erforderlich. Der Name der Variablen, an die der Wert für den oberen Rand des Objekts von Microsoft Word zurückgeben werden soll.</param>
-        <param name="ScreenPixelsWidth">
-          <b>Integer</b>erforderlich. Der Name der Variablen, an die der Wert für die Breite des Objekts von Microsoft Word zurückgeben werden soll.</param>
-        <param name="ScreenPixelsHeight">
-          <b>Integer</b>erforderlich. Der Name der Variablen, an die der Wert für die Höhe des Objekts von Microsoft Word zurückgeben werden soll.</param>
-        <param name="obj">
-          <b>Objekt</b>erforderlich. Eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt.</param>
+        <param name="ScreenPixelsLeft">Erforderliche <b>ganze Zahl</b>. Der Name der Variablen, an die der Wert für den linken Rand des Objekts von Microsoft Word zurückgeben werden soll.</param>
+        <param name="ScreenPixelsTop">Erforderliche <b>ganze Zahl</b>. Der Name der Variablen, an die der Wert für den oberen Rand des Objekts von Microsoft Word zurückgeben werden soll.</param>
+        <param name="ScreenPixelsWidth">Erforderliche <b>ganze Zahl</b>. Der Name der Variablen, an die der Wert für die Breite des Objekts von Microsoft Word zurückgeben werden soll.</param>
+        <param name="ScreenPixelsHeight">Erforderliche <b>ganze Zahl</b>. Der Name der Variablen, an die der Wert für die Höhe des Objekts von Microsoft Word zurückgeben werden soll.</param>
+        <param name="obj">Erforderliches <b>Objekt</b>. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt.</param>
         <summary>Gibt die Bildschirmkoordinaten des angegebenen Bereichs oder der angegebenen Form zurück.</summary>
-        <remarks>
-          <para>Wenn der gesamte Bereich oder die Form nicht auf dem Bildschirm angezeigt wird, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der gesamte Bereich oder die Form nicht auf dem Bildschirm angezeigt wird, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -679,13 +641,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Höhe des Fensters fest.</summary>
+        <summary>Gibt die Höhe des Fensters zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.UsableHeight" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekts, um die maximale Größe des Fensters zu bestimmen. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Window.WindowState" /> -Eigenschaft auf den Status des Fensters zu bestimmen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.UsableHeight" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Application" /> des Objekts, um die maximale Größe für das Fenster zu bestimmen. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Window.WindowState" /> die-Eigenschaft, um den Fensterzustand zu bestimmen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -714,7 +674,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die horizontalen Bildlaufposition als Prozentsatz der Dokumentbreite.</summary>
+        <summary>Gibt die horizontale Bildlaufposition als Prozentsatz der Dokumentbreite zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -742,7 +702,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> (<b>Int</b> in c#), der den Fensterhandle des angegebenen Fensters angibt. Schreibgeschützt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> (<b>int</b> in C#) zurück, die das Fensterhandle des angegebenen Fensters angibt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -773,43 +733,41 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdIMEMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Standardstartmodus für den japanischen Eingabemethoden-Editor (IME).</summary>
+        <summary>Gibt den Standardstartmodus des Eingabemethoden-Editors (IME) für Japanisch zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdIMEMode" />Dies kann eine der folgenden <b>WdIMEMode</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdIMEMode" />kann eine der folgenden <b>WdIMEMode</b> -Konstanten sein: </para>
+            <b>wdIMEModeAlpha</b> 
+            <b>–</b> Aktiviert den IME im lateinischen Modus mit halber Breite. </para>
           <para>
-            <b>WdIMEModeAlpha</b>
-            <b>–</b> aktiviert den IME im lateinischen Modus mit halber Breite.</para>
+            <b>wdIMEModeAlphaFull</b> 
+            <b>–</b> Aktiviert den IME im lateinischen Modus mit voller Breite. </para>
           <para>
-            <b>WdIMEModeAlphaFull</b>
-            <b>–</b> aktiviert den IME im lateinischen Modus mit voller Breite.</para>
+            <b>wdIMEModeHangul</b> 
+            <b>–</b> Aktiviert den IME im Hangul-Modus mit halber Breite. </para>
           <para>
-            <b>WdIMEModeHangul</b>
-            <b>–</b> aktiviert den IME im Modus mit halber Breite Hangul.</para>
+            <b>wdIMEModeHangulFull</b> 
+            <b>–</b> Aktiviert den IME im Hangul-Modus mit voller Breite. </para>
           <para>
-            <b>WdIMEModeHangulFull</b>
-            <b>–</b> aktiviert den IME im Modus Hangul mit voller Breite.</para>
+            <b>wdIMEModeHiragana</b> 
+            <b>–</b> Aktiviert den IME im Hiragana-Modus mit voller Breite. </para>
           <para>
-            <b>WdIMEModeHiragana</b>
-            <b>–</b> aktiviert den IME im hiraganamodus mit voller Breite.</para>
+            <b>wdIMEModeKatakana</b> 
+            <b>–</b> Aktiviert den IME im Katakana-Modus mit voller Breite. </para>
           <para>
-            <b>WdIMEModeKatakana</b>
-            <b>–</b> aktiviert den IME im Modus Katakana (breit).</para>
+            <b>wdIMEModeKatakanaHalf</b> 
+            <b>–</b> Aktiviert den IME im Katakana-Modus mit halber Breite. </para>
           <para>
-            <b>WdIMEModeKatakanaHalf</b>
-            <b>–</b> aktiviert den IME im Modus Katakana (schmal).</para>
+            <b>wdIMEModeNoControl</b> 
+            <b>–</b> Ändert den IME-Modus nicht. </para>
           <para>
-            <b>WdIMEModeNoControl</b>
-            <b>–</b> ändert den IME-Modus nicht.</para>
+            <b>wdIMEModeOff</b> 
+            <b>–</b> Deaktiviert den IME und aktiviert den lateinischen Texteintrag. </para>
           <para>
-            <b>WdIMEModeOff</b>
-            <b>–</b> deaktiviert den IME und aktiviert Eintrag für lateinischen Text.</para>
-          <para>
-            <b>WdIMEModeOn</b>
-            <b>–</b> aktiviert den IME.</para>
-          <para />
-        </remarks>
+            <b>wdIMEModeOn</b> 
+            <b>–</b> Aktiviert den IME.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -835,7 +793,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -865,18 +823,15 @@
         <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">Optionales- <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach unten verschoben werden soll.</param>
-        <param name="Up">Optionales- <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach oben verschoben werden soll.</param>
-        <param name="ToRight">Optionales- <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach rechts verschoben werden soll.</param>
-        <param name="ToLeft">Optionales- <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach links verschoben werden soll.</param>
+        <param name="Down">Optionales <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach unten verschoben werden soll.</param>
+        <param name="Up">Optionales <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach oben verschoben werden soll.</param>
+        <param name="ToRight">Optionales <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fensters nach rechts verschoben werden soll.</param>
+        <param name="ToLeft">Optionales <b>Objekt</b>. Die Anzahl der Bildschirme, um die der Fensterinhalt des Fenster nach links verschoben werden soll.</param>
         <summary>Verschiebt im Fenster oder Ausschnitt den Fensterinhalt um die angegebene Anzahl von Bildschirmen.</summary>
-        <remarks>
-          <para>
-            <b>LargeScroll</b> -Methode entspricht dem Klicken auf, unmittelbar vor oder unmittelbar nach dem Bildlauffeld auf der horizontalen und vertikalen Bildlaufleiste.</para>
-          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> sind beide angegeben, wird ein Bildlauf durch den Unterschied der Argumente. Beispielsweise wenn <paramref name="Down" /> ist 2 und <paramref name="Up" /> 4 ist, wird ein Bildlauf um zwei Bildschirme. In ähnlicher Weise Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> sind beide angegeben, wird ein Bildlauf durch den Unterschied der Argumente.</para>
-          <para>Jedes dieser Argumente kann auch eine negative Zahl sein. Wenn keine Argumente angegeben werden, wird das Fenster einen Bildschirm nach unten gerollt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>LargeScroll</b> -Methode entspricht dem Klicken auf unmittelbar vor oder unmittelbar hinter den Bild Lauf Feldern der horizontalen und vertikalen Bildlaufleisten.</para>
+          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> beide angegeben werden, wird das Fenster durch die Differenz der Argumente gescrollt. Wenn <paramref name="Down" /> beispielsweise 2 ist und <paramref name="Up" /> 4 ist, wird das Fenster zwei Bildschirme nach oben verschoben. Ebenso, wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> beide angegeben werden, wird das Fenster durch die Differenz der Argumente gescrollt.</para>
+          <para>Jedes dieser Argumente kann eine negative Zahl sein. Wenn keine Argumente angegeben werden, wird der Fensterinhalt um einen Bildschirm nach unten verschoben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -905,7 +860,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die horizontale Position des angegebenen Fensters, gemessen in Punkten darstellt.</summary>
+        <summary>Gibt einen Wert vom <b>Typ Integer</b> zurück, der die horizontale Position des angegebenen Fensters in Punkt darstellt, oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -933,12 +888,10 @@
       <Docs>
         <summary>Öffnet ein neues Fenster mit demselben Dokument wie das angegebene Fenster.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  Ein Doppelpunkt (:)) und eine Zahl angezeigt in der fensterbeschriftung, wenn mehrere Fenster für ein Dokument geöffnet ist.</para>
-          <para>Bei Verwendung die <b>NewWindow</b> -Methode ist mit der <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, ein neues Fenster für das aktive Fenster geöffnet wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Hinweis:</b>  Ein Doppelpunkt (:) und eine Zahl wird in der Fensterbeschriftung angezeigt, wenn mehr als ein Fenster für ein Dokument geöffnet ist.</para>
+          <para>Wenn die New <b>Window</b> -Methode zusammen mit dem <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt verwendet wird, wird ein neues Fenster für das aktive Fenster geöffnet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -992,14 +945,12 @@
         <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">Optionales- <b>Objekt</b>. Die Anzahl der Seiten an, um einen Bildlauf nach unten durchgeführt werden. Wenn dieses Argument ausgelassen wird, wird dieser Wert als 1 angenommen.</param>
-        <param name="Up">Optionales- <b>Objekt</b>. Die Anzahl der Seiten, um die der Fensterinhalt nach oben verschoben werden soll.</param>
+        <param name="Down">Optionales <b>Objekt</b>. Die Anzahl der Seiten, um die der Fensterinhalt nach unten verschoben werden soll. Wenn Sie dieses Argument nicht angeben, wird von dem Wert 1 ausgegangen.</param>
+        <param name="Up">Optionales <b>Objekt</b>. Die Anzahl der Seiten, um die der Fensterinhalt nach oben verschoben werden soll.</param>
         <summary>Führt bei dem angegebenen Bereich oder Fenster ein seitenweises Verschieben des Fensterinhalts durch.</summary>
-        <remarks>
-          <para>Die <b>PageScroll</b> -Methode ist nur verfügbar, wenn Sie in der Drucklayoutansicht oder der Weblayoutansicht befinden. Diese Methode wirkt sich nicht auf die Position der Einfügemarke.</para>
-          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> sind beide angegeben, wird ein Bildlauf durch den Unterschied der Argumente. Beispielsweise wenn <paramref name="Down" /> ist 2 und <paramref name="Up" /> 4 ist, wird der Fensterinhalt um zwei Seiten nach oben verschoben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>Page Scroll</b> -Methode ist nur verfügbar, wenn Sie sich in der Seitenlayoutansicht oder in der Ansicht "Weblayout" befinden. Diese Methode wirkt sich nicht auf die Position der Einfügemarke aus.</para>
+          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> beide angegeben werden, wird das Fenster durch die Differenz der Argumente gescrollt. Wenn <paramref name="Down" /> beispielsweise 2 ist und <paramref name="Up" /> 4 ist, wird das Fenster zwei Seiten nach oben verschoben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Panes">
@@ -1025,7 +976,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Panes" /> -Auflistung, die alle Fensterausschnitte für das angegebene Fenster darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Panes" /> Auflistung zurück, die alle Fensterbereiche für das angegebene Fenster darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1125,24 +1076,24 @@
         <Parameter Name="PrintZoomPaperHeight" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Background">Optionales- <b>Objekt</b>. Legen Sie auf <b>true fest</b> , um das Makro fortzusetzen, während Microsoft Word das Dokument gedruckt wird.</param>
-        <param name="Append">Optionales- <b>Objekt</b>. Festlegen auf <b>True</b> wird das angegebene Dokument zu dem Dateinamen angegeben durch Anfügen der <paramref name="OutputFileName" /> Argument. <b>False</b> , überschreiben den Inhalt der <paramref name="OutputFileName" />.</param>
-        <param name="Range">Optionales- <b>Objekt</b>. Die Seitenbereich. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" /> Konstante. <b>wdPrintAllDocument</b><b>wdPrintCurrentPage</b><b>wdPrintFromTo</b><b>wdPrintRangeOfPages</b><b>wdPrintSelection</b></param>
-        <param name="OutputFileName">Optionales- <b>Objekt</b>. Wenn <paramref name="PrintToFile" /> ist <b>True</b>, gibt dieses Argument der Pfad und Dateiname der Ausgabedatei.</param>
-        <param name="From">Optionales- <b>Objekt</b>. Die erste Seitenzahl beim <paramref name="Range" /> auf <b>WdPrintFromTo</b>festgelegt ist.</param>
-        <param name="To">Optionales- <b>Objekt</b>. Die letzte Seitenzahl beim <paramref name="Range" /> auf <b>WdPrintFromTo</b>festgelegt ist.</param>
-        <param name="Item">Optionales- <b>Objekt</b>. Das Element, das gedruckt werden sollen. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" /> Konstante. <b>wdPrintAutoTextEntries</b><b>wdPrintComments</b><b>wdPrintDocumentContent</b><b>wdPrintDocumentWithMarkup</b><b>wdPrintEnvelope</b><b>wdPrintKeyAssignments</b><b>wdPrintMarkup</b><b>wdPrintProperties</b><b>wdPrintStyles</b></param>
-        <param name="Copies">Optionales- <b>Objekt</b>. Die Anzahl der zu druckenden Exemplare.</param>
-        <param name="Pages">Optionales- <b>Objekt</b>. Die Seitenzahlen und Seitenbereiche gedruckt werden, durch Kommas getrennt. Beispiel: "2, 6 bis 10" druckt Seite 2 und Seiten 6 bis 10.</param>
-        <param name="PageType">Optionales- <b>Objekt</b>. Der Typ der Seiten gedruckt werden. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" /> Konstante. <b>wdPrintAllPages</b><b>wdPrintEvenPagesOnly</b><b>wdPrintOddPagesOnly</b></param>
-        <param name="PrintToFile">Optionales- <b>Objekt</b>. <b>True</b> , wenn Drucker-Anweisungen in eine Datei senden. Stellen Sie sicher, dass Sie geben Sie einen Dateinamen mit <paramref name="OutputFileName" />.</param>
-        <param name="Collate">Optionales- <b>Objekt</b>. Beim Drucken mehrerer Exemplare eines Dokuments, <b>True</b> alle Seiten des Dokuments gedruckt, bevor das nächste Exemplar gedruckt.</param>
-        <param name="ActivePrinterMacGX">Optionales- <b>Objekt</b>. Dieses Argument ist nur in Microsoft Office Macintosh Edition verfügbar. Weitere Informationen über dieses Argument finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</param>
-        <param name="ManualDuplexPrint">Optionales- <b>Objekt</b>. <b>True</b> , wenn ein zweiseitige Dokument auf einem Drucker ohne Duplexdruckmodul drucken. Wenn dieses Argument <b>True</b>ist, die <see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" /> und <see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" /> Eigenschaften werden ignoriert. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" /> und <see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" /> Eigenschaften steuern Sie die Ausgabe während des manuellen, zweiseitigen Druckvorgangs. Je nach ausgewählter oder installierter Sprachunterstützung, beispielsweise Deutsch (Standard), ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
-        <param name="PrintZoomColumn">Optionales- <b>Objekt</b>. Die Anzahl der Seiten, die Word horizontal auf einer Seite soll. 1, 2, 3 oder 4 kann sein. Verwenden Sie mit der <paramref name="PrintZoomRow" /> Argument für mehrere Seiten auf einem einzelnen Blatt gedruckt.</param>
-        <param name="PrintZoomRow">Optionales- <b>Objekt</b>. Die Anzahl der Seiten, die Word vertikal auf einer Seite soll. 1, 2 oder 4 kann sein. Verwenden Sie mit der <paramref name="PrintZoomColumn" /> Argument für mehrere Seiten auf einem einzelnen Blatt gedruckt.</param>
-        <param name="PrintZoomPaperWidth">Optionales- <b>Objekt</b>. Die Breite in Twips, auf die Word gedruckte Seiten skalieren soll (20 Twips = 1 Punkt; 72 Punkt = 1 Zoll = 2,54 cm).</param>
-        <param name="PrintZoomPaperHeight">Optionales- <b>Objekt</b>. Die Höhe in Twips, auf die Word gedruckte Seiten skalieren soll (20 Twips = 1 Punkt; 72 Punkt = 1 Zoll = 2,54 cm).</param>
+        <param name="Background">Optionales <b>Objekt</b>. <b>True</b>, wenn das Makro fortgesetzt werden soll, während das Dokument in Microsoft Word gedruckt wird.</param>
+        <param name="Append">Optionales <b>Objekt</b>. Legen Sie den Wert auf <b>true</b> fest, um das angegebene Dokument an den durch <paramref name="OutputFileName" /> das Argument angegebenen Dateinamen anzufügen. <b>False</b> , wenn der Inhalt von <paramref name="OutputFileName" />überschrieben werden soll.</param>
+        <param name="Range">Optionales <b>Objekt</b>. Der Seitenbereich. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" /> Konstante sein. <b>wdPrintAllDocument</b> <b>wdPrintCurrentPage</b> <b>wdPrintFromTo festgelegt</b> <b>wdPrintRangeOfPages</b> <b>wdPrintSelection</b></param>
+        <param name="OutputFileName">Optionales <b>Objekt</b>. Wenn <paramref name="PrintToFile" /> <b>true</b>ist, gibt dieses Argument den Pfad und den Dateinamen der Ausgabedatei an.</param>
+        <param name="From">Optionales <b>Objekt</b>. Die erste Seitenzahl, <paramref name="Range" /> wenn auf <b>wdPrintFromTo festgelegt</b>festgelegt ist.</param>
+        <param name="To">Optionales <b>Objekt</b>. Die letzte Seitenzahl, <paramref name="Range" /> wenn auf <b>wdPrintFromTo festgelegt</b>festgelegt ist.</param>
+        <param name="Item">Optionales <b>Objekt</b>. Das zu druckende Element. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" /> Konstante sein. <b>wdPrintAutoTextEntries</b> <b>wdPrintComments</b> <b>wdPrintDocumentContent</b> <b>wdPrintDocumentWithMarkup</b> <b>wdPrintEnvelope</b> <b>wdPrintKeyAssignments</b> <b>wdPrintMarkup</b> <b>wdPrintProperties</b> <b>wdPrintStyles</b></param>
+        <param name="Copies">Optionales <b>Objekt</b>. Die Anzahl der zu druckenden Exemplare.</param>
+        <param name="Pages">Optionales <b>Objekt</b>. Die zu druckenden Seitenzahlen und Druckbereiche, durch Kommas getrennt. Beispielsweise werden mit "2, 6-10" die Seite 2 und die Seiten 6 bis 10 gedruckt.</param>
+        <param name="PageType">Optionales <b>Objekt</b>. Der Typ der zu druckenden Seiten. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" /> Konstante sein. <b>wdPrintAllPages</b> <b>wdPrintEvenPagesOnly</b> <b>wdPrintOddPagesOnly</b></param>
+        <param name="PrintToFile">Optionales <b>Objekt</b>. <b>True</b>, um die Druckeranweisungen in eine Datei zu schreiben. Stellen Sie sicher, dass Sie einen Datei <paramref name="OutputFileName" />Namen mit angeben.</param>
+        <param name="Collate">Optionales <b>Objekt</b>. Beim Drucken mehrerer Exemplare eines Dokuments, <b>True</b> alle Seiten des Dokuments gedruckt, bevor das nächste Exemplar gedruckt.</param>
+        <param name="ActivePrinterMacGX">Optionales <b>Objekt</b>. Dieses Argument ist nur in der Microsoft Office Macintosh Edition verfügbar. Zusätzliche Informationen über dieses Argument erhalten Sie in der Sprachreferenzhilfe, die mit der Microsoft Office Macintosh Edition ausgeliefert wird.</param>
+        <param name="ManualDuplexPrint">Optionales <b>Objekt</b>. <b>TRUE</b> zum Drucken eines doppelseitigen Dokuments auf einem Drucker ohne Kit für Duplexdruck. Wenn dieses Argument auf <b>true</b>festgelegt <see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" /> ist <see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" /> , werden die Eigenschaften und ignoriert. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" /> die <see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" /> Eigenschaften und, um die Ausgabe während des manuellen Duplexdrucks zu steuern. Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) ist dieses Argument für Sie möglicherweise nicht verfügbar.</param>
+        <param name="PrintZoomColumn">Optionales <b>Objekt</b>. Die Anzahl der Seiten, die Word horizontal auf einer Seite anordnen soll. Möglich sind 1, 2, 3 oder 4. Verwenden Sie mit <paramref name="PrintZoomRow" /> dem Argument, um mehrere Seiten auf einem einzelnen Blatt zu drucken.</param>
+        <param name="PrintZoomRow">Optionales <b>Objekt</b>. Die Anzahl der Seiten, die Word vertikal auf einer Seite anordnen soll. Möglich sind 1, 2, 3 oder 4. Verwenden Sie mit <paramref name="PrintZoomColumn" /> dem Argument, um mehrere Seiten auf einem einzelnen Blatt zu drucken.</param>
+        <param name="PrintZoomPaperWidth">Optionales <b>Objekt</b>. Die Breite in Twips, auf die Word gedruckte Seiten skalieren soll (20 Twips = 1 Punkt; 72 Punkt = 1 Zoll = 2,54 cm).</param>
+        <param name="PrintZoomPaperHeight">Optionales <b>Objekt</b>. Die Höhe in Twips, auf die Word gedruckte Seiten skalieren soll (20 Twips = 1 Punkt; 72 Punkt = 1 Zoll = 2,54 cm).</param>
         <summary>Druckt das angegebene Dokument ganz oder teilweise.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1207,7 +1158,7 @@
         <param name="PrintZoomRow">To be added.</param>
         <param name="PrintZoomPaperWidth">To be added.</param>
         <param name="PrintZoomPaperHeight">To be added.</param>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1263,7 +1214,7 @@
         <param name="Collate">To be added.</param>
         <param name="ActivePrinterMacGX">To be added.</param>
         <param name="ManualDuplexPrint">To be added.</param>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1291,16 +1242,12 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">
-          <b>Integer</b>erforderlich. Der horizontale Abstand (in Pixeln) vom linken Rand des Fensters zu dem Punkt.</param>
-        <param name="y">
-          <b>Integer</b>erforderlich. Der vertikale Abstand (in Pixeln) vom oberen Rand des Fensters zu dem Punkt.</param>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das sich an der durch die Bildschirmpositionskoordinaten angegeben ist.</summary>
+        <param name="x">Erforderliche <b>ganze Zahl</b>. Der horizontale Abstand (in Pixeln) vom linken Rand des Fensters zu dem Punkt.</param>
+        <param name="y">Erforderliche <b>ganze Zahl</b>. Der vertikale Abstand (in Pixeln) vom oberen Rand des Fensters zu dem Punkt.</param>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt zurück, das sich an der durch das Bildschirm Positionskoordinaten paar angegebenen Stelle befindet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn kein Bereich und keine Form an den Koordinaten angegebenen Stelle befindet, gibt die Methode <b>Nothing zurück</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn sich an der mit den Koordinaten angegebenen Stelle kein Bereich und keine Form befindet, wird von der Methode <b>Nothing</b> zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -1326,14 +1273,11 @@
         <Parameter Name="Start" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="obj">
-          <b>Objekt</b>erforderlich. Eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt.</param>
-        <param name="Start">Optionaler <b>Boolean</b>-Wert. <b>True,</b> Wenn die obere Ecke des Bereichs oder der Form linke in der oberen linken Ecke des Dokumentfensters angezeigt wird. <b>False,</b> Wenn der unteren rechten Ecke des Bereichs oder der Form Maustaste an der unteren rechten Ecke des Dokumentfensters angezeigt wird. Der Standardwert ist <b>True</b>.</param>
+        <param name="obj">Erforderliches <b>Objekt</b>. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt.</param>
+        <param name="Start">Optionaler <b>Boolean</b>-Wert. <b>True</b> , wenn die obere linke Ecke des Bereichs oder der Form in der oberen linken Ecke des Dokumentfensters angezeigt wird. <b>False</b> , wenn die untere rechte Ecke des Bereichs oder der Form in der unteren rechten Ecke des Dokumentfensters angezeigt wird. Der Standardwert ist <b>True</b>.</param>
         <summary>Verschiebt den Fensterinhalt des Dokumentfensters, bis der angegebene Bereich bzw. die Form darin angezeigt wird.</summary>
-        <remarks>
-          <para>Wenn der Bereich oder die Form größer als das Dokumentfenster ist die <paramref name="Start" /> -Argument gibt den Teil des Bereichs oder Shape angezeigt wird oder zuerst den Fokus erhält. Diese Methode kann nicht mit der Gliederungsansicht verwendet werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der Bereich oder die Form größer als das Dokumentfenster ist, <paramref name="Start" /> gibt das Argument an, welcher Teil des Bereichs oder der Form angezeigt wird oder den anfänglichen Fokus erhält. Diese Methode kann nicht mit der Gliederungsansicht verwendet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -1359,7 +1303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Word.Selection" /> -Objekt, das einen ausgewählten Bereich oder die Einfügemarke darstellt.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekt zurück, das einen ausgewählten Bereich oder die Einfügemarke darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1386,10 +1330,8 @@
       <Parameters />
       <Docs>
         <summary>Legt den Fokus des angegebenen Dokumentfensters auf den Textkörper einer E-Mail-Nachricht fest.</summary>
-        <remarks>
-          <para>Wenn das Dokument eine E-mail-Nachricht ist, hat diese Methode keine Auswirkung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Dokument keine E-Mail-Nachricht ist, hat diese Methode keine Auswirkung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSourceDocuments">
@@ -1418,10 +1360,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdShowSourceDocuments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" /> Konstanten, die darstellt, wie Microsoft Office Word Quelldokumente nach einem Prozess vergleichen und Zusammenführen angezeigt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" />
-        </value>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" /> einer Konstanten, die darstellt, wie Microsoft Office Word Quelldokumente nach einem Vergleich und Merge-Prozess angezeigt. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1450,17 +1390,15 @@
         <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um der Fensterinhalt nach unten verschoben werden soll. "Linienende" entspricht der Entfernung einmaligem Klicken auf den nach unten zeigenden Pfeil der vertikalen Bildlaufleiste.</param>
-        <param name="Up">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um der Fensterinhalt nach oben. "Linienende" entspricht der Entfernung einmaligem Klicken auf den Pfeil nach oben Blättern der vertikalen Bildlaufleiste.</param>
-        <param name="ToRight">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um der Fensterinhalt nach rechts verschoben werden soll. "Linienende" entspricht der Entfernung einmaligem Klicken auf den Pfeil nach rechts zeigenden der horizontalen Bildlaufleiste.</param>
-        <param name="ToLeft">Optionales- <b>Objekt</b>. Die Anzahl der Zeilen, um der Fensterinhalt nach links verschoben werden soll. "Linienende" entspricht der Entfernung einmaligem Klicken auf den linken Bildlaufpfeil der horizontalen Bildlaufleiste.</param>
+        <param name="Down">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Fensterinhalt nach unten verschoben werden soll. Eine Zeile entspricht der Entfernung, um die der Fensterinhalt durch einmaliges Klicken auf den Bildlaufpfeil abwärts der vertikalen Bildlaufleiste verschoben wird.</param>
+        <param name="Up">Optionales <b>Objekt</b>. Die Anzahl der Zeilen, um die der Fensterinhalt nach oben verschoben werden soll. Eine Zeile entspricht der Entfernung, um die der Fensterinhalt durch einmaliges Klicken auf den Bildlaufpfeil aufwärts der vertikalen Bildlaufleiste verschoben wird.</param>
+        <param name="ToRight">Optionales <b>Objekt</b>. Die Anzahl der Spalten, um die der Fensterinhalt nach rechts verschoben werden soll. Eine Spalte entspricht der Entfernung, um die der Fensterinhalt durch einmaliges Klicken auf den Bildlaufpfeil nach rechts auf der horizontalen Bildlaufleiste verschoben wird.</param>
+        <param name="ToLeft">Optionales <b>Objekt</b>. Die Anzahl der Spalten, um die der Fensterinhalt nach links verschoben werden soll. Eine Spalte entspricht der Entfernung, um die der Fensterinhalt durch einmaliges Klicken auf den Bildlaufpfeil nach links auf der horizontalen Bildlaufleiste verschoben wird.</param>
         <summary>Verschiebt in einem Fenster oder einem Fensterbereich den Fensterinhalt um die angegebene Anzahl von Zeilen.</summary>
-        <remarks>
-          <para>Diese Methode gleicht dem Klicken auf die Bildlaufpfeile auf der horizontalen und vertikalen Bildlaufleiste.</para>
-          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> sind beide angegeben, wird ein Bildlauf durch den Unterschied der Argumente. Beispielsweise wenn <paramref name="Down" /> 3 und <paramref name="Up" /> 6 ist, wird der Fensterinhalt um drei Zeilen nach oben verschoben. In ähnlicher Weise Wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> sind beide angegeben, wird ein Bildlauf durch den Unterschied der Argumente.</para>
-          <para>Jedes dieser Argumente kann auch eine negative Zahl sein. Wenn keine Argumente angegeben werden, wird der Fensterinhalt nach unten um eine Zeile verschoben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gleicht dem Klicken auf die Bildlaufpfeile auf der horizontalen und der vertikalen Bildlaufleiste.</para>
+          <para>Wenn <paramref name="Down" /> und <paramref name="Up" /> beide angegeben werden, wird das Fenster durch die Differenz der Argumente gescrollt. Wenn <paramref name="Down" /> beispielsweise 3 ist und <paramref name="Up" /> 6 ist, wird das Fenster um drei Zeilen nach oben verschoben. Ebenso, wenn <paramref name="ToLeft" /> und <paramref name="ToRight" /> beide angegeben werden, wird das Fenster durch die Differenz der Argumente gescrollt.</para>
+          <para>Diese Argumente können auch negative Werte annehmen. Wenn keine Argumente angegeben werden, wird der Fensterinhalt um eine Zeile nach unten verschoben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -1489,8 +1427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Fenster in mehrere Bereiche geteilt ist.</summary>
+        <summary><b>True</b>, wenn das Fenster in mehrere Ausschnitte unterteilt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1521,12 +1458,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den vertikalen Prozentsatz für das angegebene Fenster geteilt.</summary>
+        <summary>Gibt den Prozentwert der vertikalen Teilung für das angegebene Fenster zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Zum Entfernen der Teilung legen Sie diese Eigenschaft auf 0 (null), oder legen Sie die <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> -Eigenschaft auf <b>false festgelegt</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie die Teilung entfernen möchten, legen Sie diese Eigenschaft auf NULL (0) <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> fest, oder legen Sie die Eigenschaft auf <b>false</b>fest.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StyleAreaWidth">
@@ -1555,12 +1490,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Breite der Formatvorlagenanzeige in Punkt.</summary>
+        <summary>Gibt die Breite der Formatvorlagenanzeige in Punkt zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <b>StyleAreaWidth</b> -Eigenschaft größer als 0 (null) ist, werden auf der linken Seite des Texts Formatvorlagennamen angezeigt. Die Formatvorlagenanzeige ist nicht in der Seitenlayoutansicht oder in der Weblayoutansicht sichtbar.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <b>StyleAreaWidth</b>-Eigenschaft größer als 0 (null) ist, werden links vom Text die Namen der Formatvorlagen angezeigt. Die Formatvorlagenanzeige ist in der Drucklayoutansicht und in der Weblayoutansicht nicht sichtbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Thumbnails">
@@ -1616,10 +1549,8 @@
       <Parameters />
       <Docs>
         <summary>Blendet das Menüband ein bzw. aus.</summary>
-        <remarks>
-          <para>Wenn das Menüband angezeigt wird, ist die <see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" /> -Methode ausgeblendet werden; Wenn das Menüband ausgeblendet ist, die <see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" /> Methode zeigt es.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Menüband sichtbar ist, wird <see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" /> es von der Methode ausgeblendet; Wenn das Menüband ausgeblendet ist, wird <see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" /> es von der Methode angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleShowAllReviewers">
@@ -1676,7 +1607,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die vertikale Position des angegebenen Fensters in Punkt.</summary>
+        <summary>Gibt die vertikale Position des angegebenen Fensters in Punkt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1704,19 +1635,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Fensters zurück.</summary>
+        <summary>Gibt den Fenstertyp zurück.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowType" />Dies kann eine der folgenden <b>WdWindowType</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowType" />kann eine der folgenden <b>WdWindowType</b> -Konstanten sein: </para>
-          <para>
-            <b>WdWindowTemplate </b>
+            <b>wdWindowTemplate</b>
           </para>
           <para>
-            <b>WdWindowDocument</b>
+            <b>wdWindowDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsableHeight">
@@ -1744,10 +1673,8 @@
       <Docs>
         <summary>Gibt die Höhe (in Punkt) des aktiven Arbeitsbereichs im angegebenen Dokumentfenster zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn der Arbeitsbereich im Dokumentfenster nicht sichtbar ist, gibt <b>UsableHeight</b> 1 zurück. Subtrahieren Sie, um festzustellen, die tatsächliche verfügbare Höhe, aus dem <b>UsableHeight</b> -Wert 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der Arbeitsbereich im Dokumentfenster nicht sichtbar ist, gibt <b>UsableHeight</b> 1 zurück. Die tatsächlich verfügbare Höhe ergibt sich aus dem Wert <b>UsableHeight</b> minus 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsableWidth">
@@ -1775,10 +1702,8 @@
       <Docs>
         <summary>Gibt die Breite (in Punkt) des aktiven Arbeitsbereichs im angegebenen Dokumentfenster zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn der Arbeitsbereich im Dokumentfenster nicht sichtbar ist, gibt <b>UsableWidth</b> 1 zurück. Subtrahieren Sie, um festzustellen, die tatsächliche verfügbare Höhe, aus dem <b>UsableWidth</b> -Wert 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der Arbeitsbereich im Dokumentfenster nicht sichtbar ist, gibt <b>UsableWidth</b> 1 zurück. Die tatsächlich verfügbare Höhe ergibt sich aus dem Wert <b>UsableWidth</b> minus 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -1807,7 +1732,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die vertikalen Bildlaufposition als Prozentsatz der Dokumentlänge.</summary>
+        <summary>Gibt die vertikale Bildlaufposition als Prozentsatz der Dokumentlänge zurück oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1835,7 +1760,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.View" /> -Objekt, das die Ansicht für das angegebene Fenster darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.View" /> Objekt zurück, das die Ansicht für das angegebene Fenster darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1866,13 +1791,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Objekt sichtbar ist.</summary>
+        <summary><b>True</b>, wenn das angegebene Objekt sichtbar ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für jedes Objekt gilt einige Methoden und Eigenschaften möglicherweise nicht verfügbar, wenn die <b>Visible</b> -Eigenschaft auf <b>false festgelegt</b>ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Für jedes Objekt gilt, dass einige Methoden und Eigenschaften möglicherweise nicht verfügbar sind, wenn die <b>Visible</b>-Eigenschaft auf <b>False</b> festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1901,7 +1823,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt sie fest.</summary>
+        <summary>Gibt die Breite des angegebenen Objekts (in Punkten) zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1929,12 +1851,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Nummer des Fensters im angegebenen Fenster angezeigte Dokument zurück. Wenn die Beschriftung des Fensters Sales.doc: "2" ist, gibt diese Eigenschaft beispielsweise die Zahl 2.</summary>
+        <summary>Gibt die Fensternummer des Dokuments zurück, das im angegebenen Fenster angezeigt wird. Wenn beispielsweise die Beschriftung des Fensters Sales.doc:2 lautet, gibt diese Eigenschaft die Nummer 2 zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Window.Index" /> -Eigenschaft zum Zurückgeben der Anzahl des angegebenen Fensters in der <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Window.Index" /> die-Eigenschaft, um die Nummer des angegebenen Fensters in <see cref="T:Microsoft.Office.Interop.Word.Windows" /> der Auflistung zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -1963,23 +1883,21 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Status des angegebenen Dokumentfensters oder Taskfensters fest.</summary>
+        <summary>Gibt den Status des angegebenen Dokumentfensters oder Taskfensters zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />Dies kann eine der folgenden <b>WdWindowState</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />kann eine der folgenden <b>WdWindowState</b> -Konstanten sein: </para>
-          <para>
-            <b>WdWindowStateMaximize </b>
+            <b>wdWindowStateMaximize</b>
           </para>
           <para>
-            <b>WdWindowStateNormal </b>
+            <b>wdWindowStateNormal</b>
           </para>
           <para>
-            <b>WdWindowStateMinimize </b>
+            <b>wdWindowStateMinimize</b>
           </para>
-          <para>die <b>WdWindowStateNormal</b> -Konstante gibt ein Fenster, das nicht maximiert ist oder minimiert. Der Zustand eines inaktiven Fensters kann nicht festgelegt werden. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Window.Activate" /> -Methode, um vor dem Festlegen des Fensterstatus ein Fenster aktivieren.</para>
-          <para />
-        </remarks>
+          <para>Die <b>wdWindowStateNormal</b>-Konstante gibt ein Fenster an, das nicht maximiert oder minimiert ist. Der Status eines inaktiven Fensters kann nicht festgelegt werden. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Window.Activate" /> die-Methode, um ein Fenster vor dem Festlegen des Fenster Status zu aktivieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

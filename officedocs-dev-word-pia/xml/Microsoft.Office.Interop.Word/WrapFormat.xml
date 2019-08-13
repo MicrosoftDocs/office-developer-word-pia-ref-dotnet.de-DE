@@ -1,13 +1,5 @@
 <Type Name="WrapFormat" FullName="Microsoft.Office.Interop.Word.WrapFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a78d91a19af227c5deade3b7e9b4ffa6ceab3ede" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669042" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WrapFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9d2134484e052c9659a96b0dd53bd285acaebe61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145434" /></Metadata><TypeSignature Language="C#" Value="public interface WrapFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WrapFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WrapFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface WrapFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt alle Eigenschaften für den Textumbruch um eine Form oder einen Formenbereich herum dar.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>WrapFormat</b> -Eigenschaft des eine <see cref="T:Microsoft.Office.Interop.Word.Shape" /> oder <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> -Objekt, das <b>WrapFormat</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie die <b>WrapFormat</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Shape" /> eines <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> oder-Objekts, um das <b>WrapFormat</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowOverlap">
@@ -59,12 +49,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob eine bestimmte Form andere Formen überlappen kann. Kann auf <b>True</b> oder <b>False</b>festgelegt werden.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob eine bestimmte Form andere Formen überlappen kann, oder legt diesen Wert fest. Kann auf <b>True</b> oder <b>False</b> festgelegt werden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Da HTML keine überlappenden Tabellen oder Formen unterstützt werden, wird <b>AllowOverlap</b> in der Weblayoutansicht ignoriert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Da in HTML keine überlappenden Tabellen oder Formen unterstützt werden, wird <b>AllowOverlap</b> in der Weblayoutansicht ignoriert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -90,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,11 +108,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceBottom">
@@ -153,12 +139,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem unteren Rand des textfreien Bereichs um die angegebene Form fest.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der unteren Kante des textfreien Bereichs zurück, der die angegebene Form umgibt, oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Größe und die Form der angegebenen Form, zusammen mit den Werten der der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> -Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Größe und Form der angegebenen Form, zusammen mit den Werten der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> -Eigenschaften des <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceLeft">
@@ -187,12 +171,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem linken Rand des textfreien Bereichs um die angegebene Form fest.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der linken Kante des textfreien Bereichs zurück, der die angegebene Form umgibt, oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Größe und die Form der angegebenen Form, zusammen mit den Werten der der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> -Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Größe und Form der angegebenen Form, zusammen mit den Werten der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> -Eigenschaften des <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceRight">
@@ -221,12 +203,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem rechten Rand des textfreien Bereichs um die angegebene Form fest.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der rechten Kante des textfreien Bereichs zurück, der die angegebene Form umgibt, oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Größe und die Form der angegebenen Form, zusammen mit den Werten der der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> -Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Größe und Form der angegebenen Form, zusammen mit den Werten der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> -Eigenschaften des <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceTop">
@@ -255,12 +235,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem oberen Rand des textfreien Bereichs um die angegebene Form fest.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der oberen Kante des textfreien Bereichs zurück, der die angegebene Form umgibt, oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Größe und die Form der angegebenen Form, zusammen mit den Werten der der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> Eigenschaften der <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> -Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Größe und Form der angegebenen Form, zusammen mit den Werten der <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> -Eigenschaften des <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> Objekts, bestimmen die Größe und Form dieses textfreien Bereichs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -317,12 +295,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWrapSideType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob der Dokumenttext auf beiden Seiten der angegebenen Form auf die linke oder rechte Seite nur oder klicken Sie am Rand der Form, die am weitesten vom Seitenrand umbrochen werden soll.</summary>
+        <summary>Gibt zurück oder legt einen Wert, der angibt, ob der Dokument Text auf beiden Seiten der angegebenen Form umbrochen werden soll, auf der linken oder rechten Seite oder auf der Seite der Form, die am weitesten vom Seitenrand entfernt ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn der Text nur eine Seite der Form umfließt, ist ein textfreier Bereich zwischen der anderen Seite der Form und dem Seitenrand.</para>
+        <remarks><para>Wenn der Text nur auf einer Seite des Shapes umbrochen wird, gibt es einen textfreien Bereich zwischen der anderen Seite des Shapes und dem Seitenrand.</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWrapSideType" /> kann eine der folgenden <b>WdWrapSideType</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWrapSideType" />Dies kann eine der folgenden <b>WdWrapSideType</b> -Konstanten sein: </para>
           <para>
             <b>wdWrapBoth</b>
           </para>
@@ -335,8 +312,7 @@
           <para>
             <b>wdWrapRight</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -365,31 +341,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWrapType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Umbruch für die angegebene Form zurück.</summary>
+        <summary>Gibt den Textflusstyp für die angegebene Form zurück.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWrapType" />Dies kann eine der folgenden <b>WdWrapType</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWrapType" />kann eine der folgenden <b>WdWrapType</b> -Konstanten sein: </para>
-          <para>
-            <b>WdWrapInline </b>
+            <b>wdWrapInline</b>
           </para>
           <para>
-            <b>WdWrapNone </b>
+            <b>wdWrapNone</b>
           </para>
           <para>
-            <b>WdWrapSquare </b>
+            <b>wdWrapSquare</b>
           </para>
           <para>
-            <b>wdWrapThrough weisen </b>
+            <b>wdWrapThrough</b>
           </para>
           <para>
-            <b>WdWrapTight </b>
+            <b>wdWrapTight</b>
           </para>
           <para>
-            <b>WdWrapTopBottom</b>
+            <b>wdWrapTopBottom</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

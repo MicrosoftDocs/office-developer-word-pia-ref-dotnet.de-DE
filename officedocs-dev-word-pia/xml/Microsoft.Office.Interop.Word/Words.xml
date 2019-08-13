@@ -1,13 +1,5 @@
 <Type Name="Words" FullName="Microsoft.Office.Interop.Word.Words">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d48de7da434ab165907e297c39bfe4ff1b969693" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669024" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d236676b440e6d795d3c1717b83df235a2ae0ef2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142654" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Words implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Words" />
   <TypeSignature Language="VB.NET" Value="Public Interface Words&#xA;Implements IEnumerable" />
@@ -30,12 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von Wörtern in einer Auswahl, einem Bereich oder einem Dokument.</summary>
-    <remarks>
-      <para>Jedes Element in der <b>Words</b> -Auflistung ist ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das ein Wort darstellt. Es gibt kein Objekt Word.</para>
-      <para>Die <b>Wörter</b> -Eigenschaft verwenden, um die <b>Wörter</b> -Objekt zurückzugeben.</para>
-      <para>
-        <b>Wörter</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein <b>Range</b> -Objekt zurückzugeben, das ein Wort darstellt. Die Indexnummer stellt die Position des Worts in der <b>Words</b> -Auflistung.</para> Das Element in die <b>Wörter</b><para>-Auflistung enthält sowohl das Wort als auch die Abstände nach dem Wort. Wenn die Auswahl befindet sich die Einfügemarke, und es unmittelbar von einem Leerzeichen gefolgt wird, bezieht sich Selection.Words(1) auf das Wort vor der Markierung ein. Wenn die Auswahl befindet sich die Einfügemarke und unmittelbar von einem Zeichen gefolgt wird, bezieht sich Selection.Words(1) auf das die Auswahl nachstehende Wort.</para><para>Der <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Zum zählen der Elemente in anderen Artikeln verwenden Sie die Auflistung mit der <b>Range</b> -Objekt. Darüber hinaus enthält die <b>Count</b> -Eigenschaft Interpunktion und Absatzmarken in der gesamten. Wenn Sie die Anzahl der tatsächlichen Wörter in einem Dokument benötigen, verwenden Sie das Dialogfeld Wörter zählen.</para><para>Der <b>Add</b> -Methode ist nicht verfügbar für die <b>Words</b> -Auflistung. Verwenden Sie stattdessen die <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> Methode oder die <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> -Methode, um ein <b>Range</b> -Objekt Text hinzugefügt.</para><para /></remarks>
+    <summary>Eine Auflistung mit Wörtern in einer Auswahl, einem Bereich oder Dokument.</summary>
+    <remarks><para>Jedes Element in der <b>Words</b> -Auflistung <see cref="T:Microsoft.Office.Interop.Word.Range" /> ist ein Objekt, das ein Wort darstellt. Es gibt kein Word-Objekt.</para>
+      <para>Mit der <b>Words</b>-Eigenschaft können Sie das <b>Words</b>-Objekt zurückgeben.</para>
+      <para>Verwenden <b></b>Sie Wörter<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein <b>Range</b> -Objekt zurückzugeben, das ein Wort darstellt. Die Indexnummer stellt die Position des Wortes in der Words-Auflistung dar. <b></b></para>
+      <para>Das Element in der <b>Words</b>-Auflistung enthält sowohl das Wort als auch die Abstände nach dem Wort. Wenn es sich bei der Markierung um die Einfügemarke handelt und unmittelbar ein Leerzeichen gefolgt wird, bezieht sich Selection. Words (1) auf das Wort vor der Auswahl. Wenn es sich bei der Markierung um die Einfügemarke handelt und unmittelbar ein Zeichen gefolgt wird, bezieht sich Selection. Words (1) auf das Wort, das der Auswahl folgt.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Zum Zählen der Elemente in anderen Artikeln verwenden Sie die Auflistung mit dem <b>Range</b> -Objekt. In der Summe der <b>Count</b> -Eigenschaft sind auch Satz- und Absatzzeichen enthalten. Wenn Sie die Anzahl der tatsächlichen Wörter in einem Dokument benötigen, verwenden Sie das Dialogfeld Wörter zählen.</para>
+      <para>Die <b>Add</b> -Methode steht für die <b>Words</b> -Auflistung nicht zur Verfügung. Verwenden Sie stattdessen die <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> -Methode oder <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> die-Methode, um einem <b>Range</b> -Objekt Text hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,11 +113,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -149,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das das erste Wort in einem Dokument, der Markierung oder der Bereich darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das das erste Wort in einem Dokument, einer Auswahl oder einem Bereich darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,7 +204,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -241,7 +233,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das das letzte Wort in einem Dokument, eine Auswahl oder ein Bereich darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das das letzte Wort in einem Dokument, einer Markierung oder einem Bereich darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

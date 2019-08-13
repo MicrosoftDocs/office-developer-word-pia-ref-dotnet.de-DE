@@ -1,13 +1,5 @@
 <Type Name="MailMergeField" FullName="Microsoft.Office.Interop.Word.MailMergeField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3826a46a79d1953bf36de88c393620df167dba62" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669046" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="740faaaa800da0c930fd0ad3e0101c4ed0cd4585" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144463" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeField" />
@@ -27,14 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes Seriendruckfeld in einem Dokument dar.</summary>
-    <remarks>
-      <para>Das <b>MailMergeDataField</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> Auflistung. Die <b>MailMergeDataFields</b> -Auflistung enthält alle Seriendruck seriendruckbezogenen Felder in einem Dokument.</para>
-      <para>Use <b>Feldern</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>MailMergeField</b> -Objekt zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> -Methode, um ein Seriendruckfeld <b>MailMergeFields</b> -Auflistung hinzugefügt.</para>
-      <para>
-        <b>MailMergeFields</b> -Auflistung verfügt über zusätzliche Methoden, z. B. <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> und <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, für das Hinzufügen von Feldern in Zusammenhang mit einem Seriendruckvorgang.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>MailMergeDataField</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> Auflistung. Die <b>MailMergeDataFields</b>-Auflistung enthält alle seriendruckbezogenen Felder eines Dokuments.</para>
+      <para>Verwenden <b></b>Sie Fields (<paramref name="index" />) <paramref name="index" /> , wobei es sich um die Indexnummer handelt <b></b> , um ein einzelnes MailMergeField-Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> die-Methode, um der <b>MailMergeFields</b> -Auflistung ein Seriendruckfeld hinzuzufügen.</para>
+      <para>Die <b>MailMergeFields</b> -Auflistung verfügt über zusätzliche Methoden, <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> wie <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />zum Beispiel und, zum Hinzufügen von Feldern im Zusammenhang mit einem Seriendruck Vorgang.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,12 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das eine Feldfunktion darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Code eines Felds darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Eine Feldfunktion ist, die anhand der Feldzeichen (<b>{}</b>), einschließlich der führende Leerzeichen und nachfolgende Leerzeichen eingeschlossen sind. Sie können eine Feldfunktion ohne Ändern der Ansicht aus Feldergebnissen zugreifen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Eine Feldfunktion ist die Gesamtheit der Zeichen, die durch Feldzeichen (<b>{ }</b>) eingeschlossen sind. Dazu zählen auch die führenden und nachstehenden Leerzeichen. Sie können auf eine Feldfunktion zugreifen, ohne die Ansicht der Feldergebnisse zu ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -149,11 +136,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -232,8 +217,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Feld gesperrt ist. Sie können die Ergebnisse von gesperrten Feldern nicht aktualisieren.</summary>
+        <summary><b>True</b>, wenn das angegebene Feld gesperrt ist. Sie können die Ergebnisse von gesperrten Feldern nicht aktualisieren.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,11 +327,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
-        <remarks>
-          <para>Nach Verwendung dieser Methode können Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Markiert das angegebene Objekt.</summary>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -375,10 +357,8 @@
       <Docs>
         <summary>Gibt den Feldtyp zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Type</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> Konstanten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>Type</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> Konstanten sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

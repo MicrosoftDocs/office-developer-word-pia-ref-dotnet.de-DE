@@ -1,13 +1,5 @@
 <Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82a4dc883d5b7257bb70e07ee869a0f2dba9b2f1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669854" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0bf61c2c56c0399c987bf635fa00d822963862c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146668" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekten, die benutzerdefinierten Tastenbelegungen im aktuellen Kontext darstellen. Benutzerdefinierte Tastenbelegungen werden im Dialogfeld Tastatur anpassen erstellt.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> -Eigenschaft auf die <b>KeyBindings</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode der <b>KeyBindings</b> -Auflistung ein <b>KeyBinding</b> -Objekt hinzu.</para>
-      <para>Verwendung <b>KeyBindings</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>KeyBinding</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> Objekten, die die benutzerdefinierten Tastenzuweisungen im aktuellen Kontext darstellen. Benutzerdefinierte Tastenbelegungen werden im Dialogfeld Tastatur anpassen erstellt.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> die-Eigenschaft, um die KeyBindings-Auflistung zurückzugeben. <b></b></para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> die-Methode, um der KeyBindings <b></b> -Auflistung ein KeyBinding-Objekt hinzuzufügen. <b></b></para>
+      <para>Verwenden <b></b>Sie KeyBindings<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um ein einzelnes <b>KeyBinding</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,68 +55,64 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. Die Kategorie der Tastenbelegung.</param>
-        <param name="Command">
-          <b>String</b> erforderlich. Der Befehl, der mithilfe der angegebenen Tastenkombination ausgeführt wird.</param>
-        <param name="KeyCode">
-          <b>Integer</b>erforderlich. Eine Taste, die Sie angeben, indem Sie mit einer der der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
-        <param name="KeyCode2">Optionales- <b>Objekt</b>. Eine zweite Taste, die Sie angeben, indem Sie eines der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
-        <param name="CommandParameter">Optionales- <b>Objekt</b>. Zusätzlicher Text, sofern zutreffend, erforderlich für den Befehl durch angegebenen <paramref name="Command" />. Weitere Informationen hierzu finden Sie unter "Hinweise" weiter unten.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt, das eine neue Tastenkombination für ein Makro, integrierten Befehl, Schriftart, AutoText-Eintrag, Formatvorlage oder Symbol darstellt.</summary>
+        <param name="KeyCategory">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. Die Kategorie der Tastenbelegung.</param>
+        <param name="Command"><b>String</b> erforderlich. Der Befehl, der mithilfe der angegebenen Tastenkombination ausgeführt wird.</param>
+        <param name="KeyCode">Erforderliche <b>ganze Zahl</b>. Eine Taste, die <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Sie mit einer der Konstanten angeben.</param>
+        <param name="KeyCode2">Optionales <b>Objekt</b>. Eine zweite Taste, die <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Sie mit einer der Konstanten angeben.</param>
+        <param name="CommandParameter">Optionales <b>Objekt</b>. Zusätzlicher Text, falls vorhanden, für den durch <paramref name="Command" />angegebenen Befehl erforderlich. Ausführliche Informationen finden Sie im Abschnitt "Hinweise" weiter unten.</param>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> Wert vom Typ Object zurück, der eine neue Tastenkombination für ein Makro, einen integrierten Befehl, eine Schriftart, einen AutoText-Eintrag, eine Formatvorlage oder ein Symbol darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode zum Erstellen der <paramref name="KeyCode" /> oder <paramref name="KeyCode2" /> Argument.</para>
-          <para>In der folgenden Tabelle, die linke Spalte enthält Befehle, die ein erforderlich ist, und die rechte Spalte wird beschrieben, was Sie tun müssen, um anzugeben, <paramref name="CommandParameter" /> für jeden der folgenden Befehle. (Die entsprechende Aktion im Dialogfeld Tastatur anpassen (Menü Extras) mit der Angabe <paramref name="CommandParameter" /> entspricht dem Auswählen eines Elements im Listenfeld, das angezeigt wird, wenn Sie einen der folgenden Befehle im Feld Befehle auswählen.)</para>
+        <remarks><para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode verwenden, um <paramref name="KeyCode" /> das <paramref name="KeyCode2" /> -oder-Argument zu erstellen.</para>
+          <para>In der folgenden Tabelle enthält die linke Spalte Befehle, die einen Befehlswert erfordern, und in der rechten Spalte wird beschrieben, was Sie zum angeben <paramref name="CommandParameter" /> für jeden dieser Befehle tun müssen. (Die entsprechende Aktion im Dialogfeld Tastatur anpassen (Menü Extras) zur Angabe <paramref name="CommandParameter" /> von gibt an, dass ein Element im Listenfeld ausgewählt wird, das angezeigt wird, wenn Sie einen der folgenden Befehle im Feld Befehle auswählen.)</para>
           <list type="table">
             <item>
               <description>
-                <b>Borders</b>, <b>Color</b>, oder <b>Schattierung</b></description>
-              <description>eine Zahl – als Text angegebene – entsprechend der Position der Einstellung im Listenfeld, die Werte enthalten, wobei 0 (null) das erste Element ist, 1 ist das zweite Element und so weiter</description>
+                <b>Borders</b>, <b>Color</b> oder <b>Shading</b></description>
+              <description>Eine als Text angegebene Zahl, die der Position der im Listenfeld ausgewählten Einstellung entspricht, die Werte enthält, wobei 0 (null) das erste Element, 1 das zweite Element usw. ist.</description>
             </item>
             <item>
               <description>
                 <b>Spalten</b>
               </description>
-              <description>eine Zahl zwischen 1 und 45 – als Text angegebene – entsprechend der Anzahl der Spalten, die Sie anwenden möchten</description>
+              <description>Eine Zahl zwischen 1 und 45 – als Text angegeben – entsprechend der Anzahl der Spalten, die Sie anwenden möchten.</description>
             </item>
             <item>
               <description>
-                <b>Schmal</b>
+                <b>Condensed</b>
               </description>
-              <description>Ein Textmaß zwischen 0,1 Punkt und 12,75 Punkt in 0,05-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll) angegebenen</description>
+              <description>Ein Textmaß zwischen 0,1 Punkt und 12,75 Punkt, das in 0,05-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll).</description>
             </item>
             <item>
               <description>
                 <b>Erweitert</b>
               </description>
-              <description>Ein Textmaß zwischen 0,1 Punkt und 12,75 Punkt, das in 0,05-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll)</description>
+              <description>Ein Textmaß zwischen 0,1 Punkt und 12,75 Punkt, das in 0,05-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll).</description>
             </item>
             <item>
               <description>
-                <b>FileOpenFile</b>
+                <b>Fileopendatei</b>
               </description>
-              <description> Der Pfad und Dateiname der Name der Datei geöffnet werden soll. Wenn der Pfad nicht angegeben ist, wird der aktuelle Ordner verwendet.</description>
+              <description>Der Pfad und Dateiname der zu öffnenden Datei. Wenn Sie keinen Pfad angeben, wird der aktuelle Ordner verwendet.</description>
             </item>
             <item>
               <description>
-                <b>Schriftgrad</b>
+                <b>Schriftgröße</b>
               </description>
-              <description>ein positives Textmaß, angegeben in 0,5-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll)</description>
+              <description>Ein positives Textmaß, das in 0,5-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll).</description>
             </item>
             <item>
               <description>
-                <b>Tieferstellen</b>, <b>erhöht</b></description>
-              <description>Ein Textmaß zwischen 1 Punkt und 64 Punkt, das in 0,5-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll)</description>
+                <b>Gesenkt</b>, <b>ausgelöst</b></description>
+              <description>Ein Textmaß zwischen 1 Punkt und 64 Punkt, das in 0,5-Punkt-Schritten angegeben wird (72 Punkt = 1 Zoll).</description>
             </item>
             <item>
               <description>
                 <b>Symbol</b>
               </description>
-              <description>eine Zeichenfolge, die durch Verkettung <b>einer Chr()-Anweisung</b> und der Name einer Schriftart Symbol erstellt (z. B. Chr(167) &amp; "Symbol")</description>
+              <description>Eine Zeichenfolge, die durch Verketten einer <b>Chr ()</b> -Anweisung und den Namen einer Symbolschriftart (beispielsweise Chr ( &amp; 167) "Symbol") erstellt wurde.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -152,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,10 +165,8 @@
       <Parameters />
       <Docs>
         <summary>Löscht alle benutzerdefinierten Tastenbelegungen und stellt die ursprünglichen Belegungen für Tastenkombinationen in Microsoft Word wieder her.</summary>
-        <remarks>
-          <para>Nach dem Anwenden der <b>ClearAll</b> -Methode, um die <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> -Objekts, die Tastenkombinationen in der angegebenen Vorlage oder das Dokument auf die Standardeinstellungen zurückgesetzt werden. Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> -Eigenschaft vor der Verwendung der <b>ClearAll</b> -Methode ein Dokument oder einer Vorlage Kontext an.</para>
-          <para />
-        </remarks>
+        <remarks><para>Nachdem Sie die <b>ClearAll</b> -Methode auf <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> das Objekt angewendet haben, werden die Tastenzuweisungen in der angegebenen Vorlage oder dem Dokument auf die Standardeinstellungen zurückgesetzt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> die-Eigenschaft, um einen Dokument-oder Vorlagen Kontext vor der Verwendung der <b>ClearAll</b> -Methode anzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -208,12 +192,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das den Speicherort der angegebenen Tastenkombination darstellt. Diese Eigenschaft kann Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Template" />, oder <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt.</summary>
+        <summary>Gibt ein Objekt zurück, das den Speicherort der angegebenen Schlüssel Bindung darstellt. Diese Eigenschaft kann ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> <see cref="T:Microsoft.Office.Interop.Word.Template" />-,-oder <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt zurückgeben.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Integrierte Tastenbelegungen (beispielsweise STRG + I für <b>Kursiv</b>) zurückgeben das <b>Application</b> -Objekt als Kontext aus. Alle Tastenbelegungen, die Sie hinzufügen werden ein <b>Dokument</b> oder einer <b>Vorlage</b> -Objekt zurückgegeben, je nach Kontext der Anpassung in Kraft bei der <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt hinzugefügt wurde.</para>
-          <para />
-        </remarks>
+        <remarks><para>Integrierte Tastenzuordnungen (z. B. STRG+UMSCHALT+K für <b>Kursiv</b>) geben das <b>Application</b>-Objekt als Kontext zurück. Bei allen von Ihnen hinzugefügten Tastenbindungen wird ein <b>Dokument</b> -oder <b>Vorlagen</b> Objekt zurückgegeben, je nach dem <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> beim Hinzufügen des Objekts gültigen Anpassungs Kontext.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -269,11 +251,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -334,7 +314,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -363,15 +343,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>Integer</b>erforderlich. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
-        <param name="KeyCode2">Optionales- <b>Objekt</b>. Eine zweite Taste, die Sie angeben, indem Sie eines der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt, das die angegebene benutzerdefinierte Tastenkombination darstellt. Wenn diese Tastenkombination nicht vorhanden ist, gibt diese Methode <b>Nothing</b> zurück.</summary>
+        <param name="KeyCode">Erforderliche <b>ganze Zahl</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <param name="KeyCode2">Optionales <b>Objekt</b>. Eine zweite Taste, die <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Sie mit einer der Konstanten angeben.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> Objekt zurück, das die angegebene benutzerdefinierte Tastenkombination darstellt. Wenn diese Tastenkombination nicht vorhanden ist, gibt diese Methode <b>Nothing</b> zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode zum Erstellen der <paramref name="KeyCode" /> oder <paramref name="KeyCode2" /> Argument.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode verwenden, um <paramref name="KeyCode" /> das <paramref name="KeyCode2" /> -oder-Argument zu erstellen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

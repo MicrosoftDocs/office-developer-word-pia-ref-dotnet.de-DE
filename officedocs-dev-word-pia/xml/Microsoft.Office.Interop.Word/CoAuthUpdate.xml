@@ -1,13 +1,5 @@
 <Type Name="CoAuthUpdate" FullName="Microsoft.Office.Interop.Word.CoAuthUpdate">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8afbe4cb2bb4043cbb3dcabbe8ea7903fb2ee981" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670334" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthUpdate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cb489ae56e777a8913181f8d5be2c8d09a728cb2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142229" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdate" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen Textbereich dar, der von einem Mitautor aktualisiert wurde.</summary>
-    <remarks>
-      <para>Wenn ein Dokument mit gemeinsame dokumenterstellung aktiviert gleichzeitig bearbeitet wird, sind von einem Mitautor vorgenommene Änderungen als Updates für andere Mitautoren verfügbar. Jede Änderung wird durch ein einzelnes <b>CoAuthUpdate</b> -Objekt dargestellt. Wenn einem Mitautor ihre Version des Dokuments speichert, werden diese co-Autor Version des Dokuments Änderungen durch andere Mitautoren zusammengeführt. Vor dem Zeitpunkt, wann der Mitautor eine Version des Dokuments gespeichert, Änderungen durch andere Mitautoren als Updates verfügbar sind.</para>
-      <para>Beispielsweise, wenn zwei Personen sind Bearbeiten eines Dokuments, die zunächst enthält einen einzigen Absatz mit dem Text "The brown Fox". Wenn der erste Mitautor den Satz zum Lesen von bearbeitet, "Franz erfolgt ein Sprung über das Protokoll" und dann speichert das Dokument, die Wörter "quick" und "über das Protokoll" zur Verfügung stehen der zweiten Mitautor wie 2 mit dem Dokument aktualisiert. Diese zwei Updates werden als zwei <b>CoAuthUpdate</b> -Objekten im Microsoft Word 2010-Objektmodell dargestellt. Wenn der zweite Mitautor des Dokuments speichert, werden die Updates von der ersten Mitautor in das Dokument zusammengeführt.</para>
-      <para />
-    </remarks>
+    <remarks><para>Wenn ein Dokument mit aktivierter Funktion für die gemeinsame Dokumenterstellung von mehreren Autoren gleichzeitig bearbeitet wird, stehen die von einem Mitautor vorgenommenen Änderungen für andere Mitautoren als Aktualisierungen zur Verfügung. Jede Änderung wird durch ein einzelnes <b>CoAuthUpdate</b>-Objekt dargestellt. Wenn ein Mitautor seine Version des Dokuments speichert, werden die von anderen Mitautoren vorgenommenen Änderungen mit der Dokumentversion dieses Mitautors zusammengeführt. Vor dem Zeitpunkt, zu dem der gemeinsame Autor eine Version des Dokuments speichert, sind Änderungen, die von anderen Mitverfassern vorgenommen wurden, als Updates verfügbar.</para>
+      <para>Beispiel: Zwei Personen bearbeiten ein Dokument, das anfänglich einen einzelnen Absatz mit dem Text "Der braune Fuchs" enthält. Wenn der erste Mitautor den Satz so bearbeitet, dass er "Der schnelle braune Fuchs springt über den Baumstamm" lautet und das Dokument dann speichert, stehen die Wörter "schnell" und "springt über den Baumstamm" für den zweiten Mitautor als zwei Aktualisierungen des Dokuments zur Verfügung. Diese beiden Updates werden im Microsoft Word 2010-Objektmodell als zwei <b>CoAuthUpdate</b> -Objekte dargestellt. Wenn der zweite Mitautor das Dokument speichert, werden die Aktualisierungen des ersten Mitautors in das Dokument eingefügt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,12 +47,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das die Microsoft Word Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt, das die Microsoft Word Anwendung darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -90,13 +78,11 @@
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</value>
-        <remarks>
-          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Word verfügt beispielsweise über den Erstellercode MSWD.</para>
+        <remarks><para>Schreibgeschützter <b>Long</b>-Wert. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Apple Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD.</para>
           <para>
-            <b>Vorsicht</b>:</para>
-          <para>Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para />
-        </remarks>
+            <b>Vorsicht</b>: </para>
+          <para>Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -122,8 +108,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> Objekt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> Objekt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> angegebenen Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,12 +136,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt ab, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

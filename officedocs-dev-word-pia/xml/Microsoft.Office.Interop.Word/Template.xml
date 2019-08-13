@@ -1,13 +1,5 @@
 <Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="534019c643dbd50c521e73ede295686eb260edbc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669424" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Template" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ab6c90166c80860b2142f0d365e15d418af64385" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143854" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
   <TypeSignature Language="VB.NET" Value="Public Interface Template" />
@@ -27,9 +19,26 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Dokumentvorlage dar.</summary>
-    <remarks>
-      <para>
-        <b>Template</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Templates" /> Auflistung. Die <b>Templates</b> -Auflistung enthält alle verfügbaren <b>Template</b> -Objekte.</para> Verwenden von <b>Vorlagen</b><para>(<paramref name="index" />), wobei <paramref name="index" /> ist der Vorlagenname oder die Indexzahl darstellt, um ein einzelnes <b>Template</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Vorlage in der <b>Templates</b> -Auflistung.</para><para>Der <b>Add</b> -Methode ist nicht verfügbar für der <b>Templates</b> -Auflistung. Sie können stattdessen eine Vorlage auf der <b>Templates</b> -Auflistung hinzufügen, indem jeder der folgenden Schritte:</para><list type="bullet"><item><para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.Documents" /> -Auflistung, um ein Dokument öffnen, basierend auf einer Vorlage oder eine Vorlage</para></item><item><para>mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />-Methode mit der <b>Documents</b> -Auflistung zum Öffnen eines neuen Dokuments basierend auf einer Vorlage</para></item><item><para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> -Auflistung, um eine globale Vorlage laden</para></item><item><para>verwenden die <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> -Eigenschaft mit der <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt, das eine Vorlage mit einem Dokument verbinden</para></item></list><para>verwenden die <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> Eigenschaft, um ein Template-Objekt zurückzugeben, das auf der Vorlage Normal.dot verweist. Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> Eigenschaft für das Zurückgeben der Vorlage mit dem angegebenen Dokument verbundenen.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> -Eigenschaft zum Zurückgeben oder Festlegen des Orts für Benutzer oder Arbeitsgruppen-Vorlagen (d. h., in den Ordner, in dem diese Vorlagen gespeichert werden sollen).</para><para /></remarks>
+    <remarks><para>Das <b>Template</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Templates" /> Auflistung. Die <b>Templates</b>-Auflistung enthält alle verfügbaren <b>Template</b>-Objekte.</para>
+      <para>Verwenden <b></b>Sie Vorlagen<paramref name="index" />(), <paramref name="index" /> wobei der Name der Vorlage oder die Indexnummer ist, um ein einzelnes <b>Template</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Vorlage in der <b>Templates</b>-Auflistung dar.</para>
+      <para>Die <b>Add</b>-Methode ist für die <b>Templates</b>-Auflistung nicht verfügbar. Sie haben stattdessen folgende Möglichkeiten, der <b>Templates</b>-Auflistung eine Vorlage hinzuzufügen:</para>
+      <list type="bullet">
+        <item>
+          <para>Verwenden der <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit <see cref="T:Microsoft.Office.Interop.Word.Documents" /> der Auflistung zum Öffnen eines Dokuments basierend auf einer Vorlage oder Vorlage</para>
+        </item>
+        <item>
+          <para>Verwenden der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit <b></b> der Documents-Auflistung zum Öffnen eines neuen Dokuments basierend auf einer Vorlage</para>
+        </item>
+        <item>
+          <para>Verwenden der <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode zusammen <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> mit der Auflistung zum Laden einer globalen Vorlage</para>
+        </item>
+        <item>
+          <para>Verwenden der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> -Eigenschaft mit <see cref="T:Microsoft.Office.Interop.Word.Document" /> dem-Objekt zum Anfügen einer Vorlage an ein Dokument</para>
+        </item>
+      </list>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> die-Eigenschaft, um ein Template-Objekt zurückzugeben, das auf die normale Vorlage verweist. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> die-Eigenschaft, um die dem angegebenen Dokument zugeordnete Vorlage zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> die-Eigenschaft, um den Speicherort der Benutzer-oder Arbeitsgruppenvorlagen (also des Ordners, in dem Sie diese Vorlagen speichern möchten) zurückzugeben oder festzulegen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> -Auflistung, die alle AutoText-Einträge in der angegebenen Dokumentvorlage darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> Auflistung zurück, die alle AutoText-Einträge in der angegebenen Vorlage darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,10 +123,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> -Auflistung, die die Auflistung von Bausteineinträgen in einer Vorlage darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
-        </value>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> Auflistung zurück, die die Auflistung der Baustein Einträge in einer Vorlage darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,10 +151,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> -Auflistung, die die Auflistung von Bausteintypen darstellt, die in einer Vorlage enthalten sind. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />
-        </value>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> Auflistung zurück, die die Auflistung von Bausteintypen darstellt, die in einer Vorlage enthalten sind. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,14 +179,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.DocumentProperties" /> -Auflistung, die alle integrierten Dokumenteigenschaften für das angegebene Dokument darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Core.DocumentProperties" /> Auflistung zurück, die alle integrierten Dokumenteigenschaften für das angegebene Dokument darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Core.DocumentProperty" /> verwenden Sie <b>BuiltinDocumentProperties</b>-Objekt, das eine bestimmte integrierte Dokumenteigenschaft darstellt (<paramref name="index" />), wobei <paramref name="index" /> ist ein <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> Konstante.</para>
-          <para>Wenn Microsoft Word nicht für eine der integrierten Dokumenteigenschaften kein Wert definieren beim Lesen der <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> -Eigenschaft für diese Dokumenteigenschaft einen Fehler generiert.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> -Eigenschaft auf die Auflistung benutzerdefinierter Dokumenteigenschaften zurückzugeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie ein einzelnes <see cref="T:Microsoft.Office.Core.DocumentProperty" /> Objekt zurückgeben möchten, das eine bestimmte integrierte Dokumenteigenschaft darstellt, verwenden<paramref name="index" />Sie <b>BuiltinDocumentProperties</b>( <paramref name="index" /> ), <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> wobei es sich um eine Konstante handelt.</para>
+          <para>Wenn Microsoft Word keinen Wert für eine der integrierten Dokumenteigenschaften definiert, wird beim Lesen der <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> Eigenschaft für diese Dokumenteigenschaft ein Fehler generiert.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> die-Eigenschaft, um die Auflistung benutzerdefinierter Dokumenteigenschaften zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -209,11 +212,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -239,12 +240,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.DocumentProperties" /> -Auflistung, die alle benutzerdefinierten Dokumenteigenschaften für das angegebene Dokument darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Core.DocumentProperties" /> Auflistung zurück, die alle benutzerdefinierten Dokumenteigenschaften für das angegebene Dokument darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> -Eigenschaft auf die Auflistung integrierter Dokumenteigenschaften zurückzugeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> die-Eigenschaft, um die Auflistung der integrierten Dokumenteigenschaften zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLanguage">
@@ -273,25 +272,23 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die ostasiatische Sprache für den Zeilenumbruch von Text im angegebenen Dokument oder Vorlage verwenden.</summary>
+        <summary>Gibt an oder legt fest, welche ostasiatische Sprache für den Zeilenumbruch von Text im angegebenen Dokument oder in der angegebenen Vorlage verwendet werden soll.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />Dies kann eine der folgenden <b>WdFarEastLineBreakLanguageID</b> -Konstanten sein:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />kann eine der folgenden <b>WdFarEastLineBreakLanguageID</b> -Konstanten sein:</para>
-          <para>
-            <b>WdLineBreakJapanese</b>
+            <b>wdLineBreakJapanese</b>
           </para>
           <para>
-            <b>WdLineBreakKorean</b>
+            <b>wdLineBreakKorean</b>
           </para>
           <para>
-            <b>WdLineBreakSimplifiedChinese</b>
+            <b>wdLineBreakSimplifiedChinese</b>
           </para>
           <para>
-            <b>WdLineBreakTraditionalChinese</b>
+            <b>wdLineBreakTraditionalChinese</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLevel">
@@ -320,12 +317,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Steuerungsebene des Zeilenumbruchs für das angegebene Dokument.</summary>
+        <summary>Gibt die Steuerungsebene des Zeilenumbruchs für das angegebene Dokument zurück oder legt diese Ebene fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
+        <remarks><para>Diese Eigenschaft wird ignoriert, wenn <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> die Eigenschaft auf <b>false</b>festgelegt ist.</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" /> kann eine der folgenden <b>WdFarEastLineBreakLevel</b> -Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />Dies kann eine der folgenden <b>WdFarEastLineBreakLevel</b> -Konstanten sein:</para>
           <para>
             <b>wdFarEastLineBreakLevelCustom</b>
           </para>
@@ -335,8 +331,7 @@
           <para>
             <b>wdFarEastLineBreakLevelStrict</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -362,12 +357,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen einer Vorlage, einschließlich der Laufwerk oder im Web an.</summary>
+        <summary>Gibt den Namen einer Vorlage einschließlich Laufwerk- oder Webpfad an.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Verwendung dieser Eigenschaft entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, und <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> Eigenschaften in Folge.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Verwendung dieser Eigenschaft entspricht der nacheinander <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />Verwendung <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />der Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> , und.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JustificationMode">
@@ -396,22 +389,20 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdJustificationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die zeichenabstandausrichtung für die angegebene Vorlage.</summary>
+        <summary>Gibt die Zeichenabstandausrichtung für die angegebene Vorlage zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />Dies kann eine der folgenden <b>WdJustificationMode</b> -Konstanten sein:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />kann eine der folgenden <b>WdJustificationMode</b> -Konstanten sein:</para>
-          <para>
-            <b>WdJustificationModeCompress</b>
+            <b>wdJustificationModeCompress</b>
           </para>
           <para>
-            <b>WdJustificationModeCompressKana</b>
+            <b>wdJustificationModeCompressKana</b>
           </para>
           <para>
-            <b>WdJustificationModeExpand</b>
+            <b>wdJustificationModeExpand</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KerningByAlgorithm">
@@ -440,8 +431,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Word halbbreite lateinische Zeichen und Interpunktionszeichen im angegebenen Dokument unterschnitten.</summary>
+        <summary><b>True</b>, falls halbbreite lateinische Zeichen und Interpunktionszeichen im angegebenen Dokument von Microsoft Word unterschnitten werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -472,13 +462,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Sprache für das angegebene Objekt.</summary>
+        <summary>Gibt die Sprache für das angegebene Objekt zurück oder legt die Sprache fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</para>
-          <para>Einige der <b>WdLanguageID</b> -Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten sein.</para>
+          <para>Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) stehen möglicherweise nicht alle <b>WdLanguageID</b>-Konstanten zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -507,13 +495,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen eine ostasiatische Sprache für das angegebene Objekt.</summary>
+        <summary>Gibt für das angegebene Objekt eine ostasiatische Sprache zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</para>
-          <para>Dies ist die empfohlene Option zum Zurückgeben oder Festlegen der Sprache des ostasiatischen Text in einem Dokument in eine ostasiatische Version von Microsoft Word erstellt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten sein.</para>
+          <para>Dies ist das empfohlene Verfahren für das Zurückgeben oder Festlegen einer ostasiatischen Sprache eines Dokuments, das in einer ostasiatischen Word-Version erstellt wurde.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -539,7 +525,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> -Auflistung, die alle in die Liste formatiert, für die angegebene Vorlage.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> Auflistung zurück, die alle Listenformate für die angegebene Vorlage darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,7 +553,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -598,7 +584,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Kinsoku-Zeichen, nach denen kein von Microsoft Word Zeilenumbruch, eine Linie.</summary>
+        <summary>Gibt die Kinsoku-Zeichen zurück oder legt Sie fest, nach denen Microsoft Word eine Textreihe nicht unterbrechen wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -629,7 +615,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt den Kinsoku-Zeichen, vor denen kein von Microsoft Word Zeilenumbruch, eine Linie.</summary>
+        <summary>Gibt die Kinsoku-Zeichen zurück oder legt Sie fest, vor denen Microsoft Word eine Textreihe nicht unterbrechen wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -660,8 +646,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Rechtschreib- und grammatikprüfung ignoriert auf dieser Vorlage basierende Dokumente.</summary>
+        <summary><b>True</b>, wenn die Rechtschreib- und Grammatikprüfung die auf dieser Vorlage basierenden Dokumente ignoriert.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -687,12 +672,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Öffnet die angegebene Vorlage als Dokument und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt.</summary>
+        <summary>Öffnet die angegebene Vorlage als Dokument und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Öffnen eine Vorlage als Dokument ermöglicht dem Benutzer den Inhalt der Vorlage bearbeiten. Dies kann erforderlich sein, wenn eine Eigenschaft oder Methode (die <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> z. B.-Eigenschaft) ist nicht verfügbar, aus der <see cref="T:Microsoft.Office.Interop.Word.Template" /> Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn eine Vorlage als Dokument geöffnet wird, kann der Benutzer den Inhalt der Vorlage bearbeiten. Dies kann erforderlich sein, wenn eine Eigenschaft oder Methode ( <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> beispielsweise die Eigenschaft) nicht über das <see cref="T:Microsoft.Office.Interop.Word.Template" /> Objekt verfügbar ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -748,12 +731,10 @@
       <Docs>
         <summary>Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nicht den Pfad ein nachfolgendes Zeichen enthalten, z. B. "C:\MSOffice" oder "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> -Eigenschaft auf den Dateinamen ohne Pfad und mit Zurückgeben der <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> -Eigenschaft auf den Dateinamen und den Pfad zusammen zurück.</para>
+        <remarks><para>Der Pfad enthält kein nachfolgendes Zeichen, beispielsweise "C:\MSOffice" oder "http://MyServer". Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> die-Eigenschaft, um den Dateinamen ohne den Pfad zurück <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> zugeben, und verwenden Sie die-Eigenschaft, um den Dateinamen und den Pfad zusammen zurückzugeben.</para>
           <para>
-            <b>Hinweis</b> Sie können <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl sie Schrägstriche (/) und der <b>PathSeparator</b> -Eigenschaft enthalten wird standardmäßig auf einen umgekehrten Schrägstrich (\).</para>
-          <para />
-        </remarks>
+            <b>Hinweis:</b>  Sie können die <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl Sie Schrägstriche (/) enthalten und die <b>PathSeparator</b> -Eigenschaft\)standardmäßig einen umgekehrten Schrägstrich (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -777,11 +758,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Speichert das angegebene Dokument oder einer Vorlage.</summary>
-        <remarks>
-          <para>Wenn das Dokument oder die Vorlage noch nicht gespeichert wurde, fordert das Dialogfeld Speichern unter den Benutzer für einen Dateinamen ein.</para>
-          <para />
-        </remarks>
+        <summary>Speichert das angegebene Dokument oder die angegebene Vorlage.</summary>
+        <remarks><para>Wenn das Dokument oder die Vorlage noch nicht gespeichert wurde, wird der Benutzer im Dialogfeld Speichern unter aufgefordert, einen Dateinamen einzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -810,8 +789,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Dokument oder die Vorlage seit dem letzten Speichern geändert hat. <b>False,</b> Wenn Microsoft Word wird der Benutzer aufgefordert, die Änderungen zu speichern, wenn das Dokument geschlossen wird.</summary>
+        <summary><b>True</b> , wenn das angegebene Dokument oder die Vorlage seit dem letzten Speichern nicht geändert wurde. <b>False</b>, wenn beim Schließen des Dokuments von Microsoft Office Word eine Aufforderung zum Speichern der Änderungen angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -839,22 +817,20 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTemplateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Vorlagentyp.</summary>
+        <summary>Gibt den Typ der Vorlage zurück.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />Dies kann eine der folgenden <b>WdTemplateType</b> -Konstanten sein:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />kann eine der folgenden <b>WdTemplateType</b> -Konstanten sein:</para>
-          <para>
-            <b>WdAttachedTemplate</b>
+            <b>wdAttachedTemplate</b>
           </para>
           <para>
-            <b>WdGlobalTemplate</b>
+            <b>wdGlobalTemplate</b>
           </para>
           <para>
-            <b>WdNormalTemplate</b>
+            <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VBProject">
@@ -882,11 +858,9 @@
       <Docs>
         <summary>Gibt das <b>VBProject</b>-Objekt für die angegebene Vorlage zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie diese Eigenschaft für den Zugriff auf Codemodule und Benutzerformulare.</para>
-          <para>, Um das <b>VBProject</b> -Objekt im Objektbrowser anzuzeigen, Sie müssen auswählen das Microsoft Visual Basic für Applikationen-Erweiterung Kontrollkästchen im Dialogfeld Verweise (Menü Extras) im Visual Basic-Editor.</para>
-          <para />
-        </remarks>
+        <remarks><para>Mit dieser Eigenschaft erhalten Sie Zugriff auf Codemodule und Benutzerformulare.</para>
+          <para>Um das <b>VBProject</b> -Objekt im Objektbrowser anzuzeigen, müssen Sie im Visual Basic-Editor im Dialogfeld Verweise (Menü Extras) das Kontrollkästchen für die Erweiterbarkeit von Anwendungen Microsoft Visual Basic aktivieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

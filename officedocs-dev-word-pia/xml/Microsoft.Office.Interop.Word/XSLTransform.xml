@@ -1,13 +1,5 @@
 <Type Name="XSLTransform" FullName="Microsoft.Office.Interop.Word.XSLTransform">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afe73d6a3b568590a9d71b5f56818207a8810b5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670635" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XSLTransform" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="324dfb612385ddd52c1fa1790b0f5a2a602515b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145401" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransform" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTransform" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XSLTransform" />
   <TypeSignature Language="VB.NET" Value="Public Interface XSLTransform" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine einzelne registrierte XSLT (Extensible Stylesheet Language Transformation) dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> -Auflistung, um eine einzelne XSLT zur Liste der XSL-Transformationen für ein Schema verfügbar hinzuzufügen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> -Auflistung, um ein einzelnes <b>XSLTransform</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> der Auflistung, um eine einzelne XSLT zur Liste der XSLTs hinzuzufügen, die für ein Schema verfügbar sind.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> der Auflistung, um ein einzelnes <b>XslTransform</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alias">
@@ -63,9 +53,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">
-          <b>true,</b> den Alias in den Registrierungsschlüssel HKEY_LOCAL_MACHINE speichern. <b>false</b> , den Alias in den Registrierungsschlüssel HKEY_CURRENT_USER zu speichern. Verwenden Sie diesen Parameter nur zum Festlegen der <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  Eigenschaftswert nicht zum Abrufen der <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  Eigenschaftswert.</param>
-        <summary>Gibt eine <b>Zeichenfolge</b> , die den Anzeigenamen für das angegebene Objekt darstellt.</summary>
+        <param name="AllUsers"><b>true</b> , wenn der Alias im Registrierungsschlüssel HKEY_LOCAL_MACHINE gespeichert werden soll; <b>false</b> , wenn der Alias im Registrierungsschlüssel HKEY_CURRENT_USER gespeichert werden soll. Verwenden Sie diesen Parameter nur, um <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  den Eigenschaftswert festzulegen, <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  nicht um den Eigenschaftswert abzurufen.</param>
+        <summary>Gibt einen Wert vom <b>Typ String</b> zurück, der den Anzeigenamen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,11 +112,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -178,7 +165,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert mit der GUID, die auf das aktuelle <b>XSLTransform</b> -Objekt zugewiesen.</summary>
+        <summary>Gibt einen Wert zurück, der die GUID enthält, die dem aktuellen <b>XslTransform</b> -Objekt zugewiesen ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,8 +199,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True,</b> Wenn alle Benutzer Zugriff auf das angegebene Objekt vorhanden sind.</param>
-        <summary>Gibt zurück oder legt den Speicherort der angegebenen Transformation.</summary>
+        <param name="AllUsers">Optionaler <b>Boolean</b>-Wert. <b>True</b> , wenn alle Benutzer Zugriff auf das angegebene Objekt haben.</param>
+        <summary>Gibt den Speicherort der angegebenen Transformation zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

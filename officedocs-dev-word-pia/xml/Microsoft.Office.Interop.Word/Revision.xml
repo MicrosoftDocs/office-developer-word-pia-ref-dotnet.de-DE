@@ -1,13 +1,5 @@
 <Type Name="Revision" FullName="Microsoft.Office.Interop.Word.Revision">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19a4a8beaa52c27421cb617ffa9da73b2b75908e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669066" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Revision" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f8799ae269a5dff96f44f56fb3d688f17d795494" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144036" /></Metadata><TypeSignature Language="C#" Value="public interface Revision" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revision" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revision" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revision" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Änderung mit einer überarbeitungsmarkierung gekennzeichnet.</summary>
-    <remarks>
-      <para>Das <b>Revision</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Revisions" /> Auflistung. <b>Revisions</b> -Auflistung enthält alle überarbeitungsmarkierungen in einem Bereich oder Dokument.</para>
-      <para>Verwendung <b>Überarbeitungen</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Revision</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Überarbeitung im Bereich oder im Dokument.</para>
-      <para>Der <b>Add</b> -Methode ist nicht verfügbar für die <b>Revisions</b> -Auflistung. <b>Revision</b> -Objekte werden hinzugefügt, wenn der Versionsvergleich deaktiviert ist. Legen Sie die <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> -Eigenschaft auf <b>true fest,</b> um Überarbeitungen am Dokumenttext verfolgen.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Änderung dar, die mit einer Überarbeitungsmarkierung gekennzeichnet ist.</summary>
+    <remarks><para>Das <b>Revision</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Revisions" /> Auflistung. Die <b>Revisions</b>-Auflistung enthält alle Überarbeitungsmarkierung in einem Bereich oder Dokument.</para>
+      <para>Verwenden <b></b>Sie Revisions<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>Revision</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Überarbeitung im Bereich oder im Dokument dar.</para>
+      <para>Die <b>Add</b>-Methode ist für die <b>Revisions</b>-Auflistung nicht verfügbar. <b>Revision</b>-Objekte werden hinzugefügt, wenn Nachverfolgen von Änderungen aktiviert ist. Legen Sie <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> die-Eigenschaft auf <b>true</b> fest, um die Überarbeitung des Dokumenttexts nachzuverfolgen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -56,7 +46,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Die angegebene Überarbeitung akzeptiert. Die überarbeitungsmarkierungen werden entfernt, und die Änderung wird in das Dokument eingefügt.</summary>
+        <summary>Akzeptiert die angegebene nachverfolgte Änderung. Die Überarbeitungsmarkierungen werden entfernt, und die Änderung wird in das Dokument übernommen.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +101,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des Benutzers, der die angegebene Überarbeitung vorgenommen hat.</summary>
+        <summary>Gibt den Namen des Benutzers zurück, von dem die angegebene Überarbeitung vorgenommen wurde.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,14 +129,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Cells" /> -Auflistung, die die Tabellenzellen darstellt, die mit überarbeitungsmarkierungen gekennzeichnet wurden. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Cells" />
-        </value>
-        <remarks>
-          <para>Informationen zum Zurückgeben eines einzelnen Elements einer Auflistung finden Sie unter <a href="HV10056838">Zurückgeben eines Objekts aus einer Auflistung</a></para>
-          <para />
-        </remarks>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Cells" /> Auflistung zurück, die die Tabellenzellen darstellt, die mit Überarbeitungsmarkierungen markiert wurden. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Cells" /></value>
+        <remarks><para>Informationen zum Zurückgeben eines einzelnen Elements einer Auflistung finden Sie unter <a href="HV10056838">zurückgeben eines Objekts aus einer Auflistung</a> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -174,11 +160,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -204,7 +188,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Das Datum und die Uhrzeit, die die Überarbeitung vorgenommen wurde.</summary>
+        <summary>Das Datum und die Uhrzeit der Überarbeitung.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,7 +216,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge</b> zur Darstellung einer Beschreibung der Formatierung nachverfolgt wird in einer Revision geändert.</summary>
+        <summary>Gibt einen <b>String</b>-Wert zurück, der eine Beschreibung der verfolgten Formatierungsänderungen in einer Überarbeitung repräsentiert.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,7 +244,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,10 +272,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das einen Bereich von Text darstellt, die von einer Stelle an eine andere in einem Dokument mit aktivierter Überarbeitung verschoben wurde. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das einen Textbereich darstellt, der in einem Dokument mit nachverfolgten Änderungen von einem Ort an einen anderen verschoben wurde. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,12 +328,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <b>Range</b> -Methode des eine <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie unter der <b>Range</b> - <see cref="T:Microsoft.Office.Interop.Word.Document" /> Methode <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> eines oder-Objekts.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reject">
@@ -376,11 +356,9 @@
       <Parameters />
       <Docs>
         <summary>Lehnt die angegebene Überarbeitung ab. Die Überarbeitungsmarkierungen werden entfernt, wobei der Originaltext erhalten bleibt.</summary>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  Formatänderungen können nicht abgelehnt werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Hinweis:</b>  Formatierungsänderungen können nicht zurückgewiesen werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -406,7 +384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Style" /> -Objekt, die mit dem aktuellen Verfasser Überarbeitungen verknüpfte Formatvorlage darstellt.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Style" /> Wert vom Typ Object zurück, der die Formatvorlage darstellt, die dem aktuellen Autor für Überarbeitungen zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,9 +414,8 @@
       <Docs>
         <summary>Gibt den Typ der Überarbeitung zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />kann eine der folgenden Konstanten <b>WdRevisionType</b> .</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />Dies kann eine der folgenden <b>WdRevisionType</b> -Konstanten sein:</para>
           <para>
             <b>wdNoRevision</b>
           </para>
@@ -481,8 +458,7 @@
           <para>
             <b>wdRevisionTableProperty</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

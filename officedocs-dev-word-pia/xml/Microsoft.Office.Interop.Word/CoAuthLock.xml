@@ -1,13 +1,5 @@
 <Type Name="CoAuthLock" FullName="Microsoft.Office.Interop.Word.CoAuthLock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60e38fdacba2a46adfe9f5062c855a6e94317926" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670705" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthLock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6aaadd2e6d6106e1de5d69cd13baf0beed987346" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142236" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthLock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthLock" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthLock" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Sperre innerhalb des Dokuments. <b>CoAuthLock</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> Auflistung.</summary>
-    <remarks>
-      <para>Schreibgeschützt. Verwenden Sie <b>sperrt</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein <b>CoAuthLock</b> -Objekt zurückzugeben. Wenn Sie ein <b>CoAuthLock</b> -Objekt hinzufügen möchten, verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> -Enumeration, die den Typ der Sperre angeben.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine Sperre im Dokument dar. Das <b>CoAuthLock</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> Auflistung.</summary>
+    <remarks><para>Schreibgeschützt. Verwenden <b></b>Sie locks (<paramref name="index" />) <paramref name="index" /> , wobei es sich um die Indexnummer handelt, um ein <b>CoAuthLock</b> -Objekt zurückzugeben. Wenn Sie ein <b>CoAuthLock</b> -Objekt hinzufügen <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> , verwenden Sie die-Enumeration, um den Typ der Sperre anzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,12 +46,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das die Microsoft Word Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" />-Objekt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -88,11 +76,9 @@
       </ReturnValue>
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
-        <value>Gibt an, die Anwendung, in der das angegebene Objekt erstellt wurde.</value>
-        <remarks>
-          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Word den Erstellercode MSWD.</para>
-          <para />
-        </remarks>
+        <value>Gibt die Anwendung an, in der das angegebene Objekt erstellt wurde.</value>
+        <remarks><para>Schreibgeschützter <b>Long</b>-Wert. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Apple Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderFooter">
@@ -118,13 +104,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab, ob die Sperre der Kopfzeile Fußzeile Sperre für das Dokument ist.</summary>
-        <value>
-          <b>true,</b> Wenn die Sperre der Kopfzeile Fußzeile Sperre für das Dokument ist. anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ab, ob die Sperre die Kopf-Fußzeilen Sperre für das Dokument ist.</summary>
+        <value><b>true</b> , wenn die Sperre die Kopf-Fußzeilen Sperre für das Dokument ist, andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -150,8 +133,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen der <b>Mitautor</b> , die angegebene Sperre besitzt.</summary>
-        <value>Die <b>Mitautor</b> , die angegebene Sperre besitzt.</value>
+        <summary>Ruft den <b>Mitverfasser</b> ab, der die angegebene Sperre besitzt.</summary>
+        <value>Der <b>Mitverfasser</b> , der die angegebene Sperre besitzt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +161,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> Objekt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> Objekt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> angegebenen Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,12 +189,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt ab, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -237,8 +218,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> -Konstante, die den Sperrtyp angibt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> -Konstante, die den Sperrtyp angibt.</value>
+        <summary>Ruft eine <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> Konstante ab, die den Sperrtyp angibt.</summary>
+        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> Konstante, die den Sperrtyp angibt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,10 +245,8 @@
       <Parameters />
       <Docs>
         <summary>Hebt die angegebene Sperre auf.</summary>
-        <remarks>
-          <para>Diese Methode hebt die angegebene Sperre, auch wenn es zu einem anderen als den aktuellen Benutzer gehört.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode hebt die Sperre der angegebenen Sperre auf, auch wenn Sie einem anderen Benutzer als der aktuellen gehört.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

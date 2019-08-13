@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntries" FullName="Microsoft.Office.Interop.Word.AutoTextEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a31d1e907d820a2005c896aa46cf04f2089738e1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670533" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="616542cb10e6c23af21a1d1d91f287e037699d61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146276" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntries&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> -Objekten, die die AutoText-Einträge in einer Vorlage darstellen.</summary>
-    <remarks>
-      <para>Die <b>AutoTextEntries</b> -Auflistung enthält alle Einträge auf der Registerkarte AutoText im Dialogfeld AutoKorrektur (Menü Extras).</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> -Eigenschaft auf die <b>AutoTextEntries</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> -Methode, um einen AutoText-Eintrag der <b>AutoTextEntries</b> -Auflistung hinzufügen.</para>
-      <para>Verwendung <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des AutoText-Eintrag oder die Indexnummer ist, zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> Objekt. Die Rechtschreibung (jedoch nicht unbedingt die Groß-/Kleinschreibung) des Namens, müssen exakt übereinstimmen, wie er auf der Registerkarte AutoText im Dialogfeld AutoKorrektur angezeigt wird.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> Objekten, die die AutoText-Einträge in einer Vorlage darstellen.</summary>
+    <remarks><para>Die <b>AutoTextEntries</b> -Auflistung enthält alle Einträge, die auf der Registerkarte AutoText im Dialogfeld AutoKorrektur (Menü Extras) aufgeführt sind.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> die-Eigenschaft, um die <b>AutoTextEntries</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> die-Methode, um der <b>AutoTextEntries</b> -Auflistung einen AutoText-Eintrag hinzuzufügen.</para>
+      <para>Verwenden <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />Sie<paramref name="index" />(), <paramref name="index" /> wobei der Name des AutoText-Eintrags oder die Indexnummer verwendet <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> wird, um ein einzelnes Objekt zurückzugeben. Sie müssen genau mit der Rechtschreibung (aber nicht unbedingt der Groß-/Kleinschreibung) des Namens übereinstimmen, wie er auf der Registerkarte AutoText im Dialogfeld AutoKorrektur angezeigt wird.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,9 +53,9 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">Ein Textbereich, die werden immer eingefügt <paramref name="Name" /> eingegeben wird.</param>
+        <param name="Name">Ein Textbereich, der bei jeder <paramref name="Name" /> Typisierung eingefügt wird.</param>
         <param name="Range">Der Text, der bei der Eingabe einen AutoText-Eintrag auslöst.</param>
-        <summary>Fügt einen AutoText-Eintrag der Liste der verfügbaren AutoText-Einträge.</summary>
+        <summary>Fügt der Liste der verfügbaren AutoText-Einträge einen AutoText-Eintrag hinzu.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,12 +83,10 @@
       </Parameters>
       <Docs>
         <param name="Range">Der Bereich, der gelöscht und an die Auflistung angehängt wird.</param>
-        <summary>Löscht den angegebenen Bereich und fügt den Inhalt des Bereichs der Auflistung (ein integrierter AutoText-Eintrag) hinzu.</summary>
+        <summary>Löscht den angegebenen Bereich und nimmt den Inhalt des Bereichs in die Auflistung auf (einen integrierten AutoText-Eintrag).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Die <b>AppendToSpike</b> -Methode gilt nur für die <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> -Auflistung in der Dokumentvorlage Normal.dot.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>AppendToSpike</b> -Methode ist nur für die <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> Auflistung in der Vorlage Normal gültig.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -124,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,13 +168,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -247,7 +233,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Der Name des einzelnen Objekts zurückgegeben werden soll.</param>
+        <param name="Index">Der Name des einzelnen zurückzugebenden Objekts.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -276,7 +262,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="TwoInitialCapsExceptions" FullName="Microsoft.Office.Interop.Word.TwoInitialCapsExceptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8798d3c2076c5fc12e6077d4164506de8188b4f9" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669669" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TwoInitialCapsExceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a91e8ac3387946739e0fa53381c0ac08f3c077e6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143750" /></Metadata><TypeSignature Language="C#" Value="public interface TwoInitialCapsExceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TwoInitialCapsExceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface TwoInitialCapsExceptions&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsException" /> Objekte, die alle Elemente darstellen, die auf der Registerkarte WOrtanfang groß im Dialogfeld AutoKorrektur-Ausnahmen im Feld nicht korrigieren.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsExceptions" /> -Eigenschaft auf die <b>TwoInitialCapsExceptions</b> -Auflistung zurückzugeben.</para>
-      <para>Wenn das <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" /> -Eigenschaft ist <b>True</b>, werden automatisch Wörter in die Liste der Ausnahmen für Anfangsbuchstaben hinzugefügt. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions.Add(System.String)" /> -Methode, um ein Element der <b>TwoInitialCapsExceptions</b> -Auflistung hinzufügen.</para>
-      <para>Verwendung <b>TwoInitialCapsExceptions</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Anfangsbuchstaben Name oder die Indexzahl darstellt, um ein einzelnes <b>TwoInitialCapsException</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Anfangsbuchstaben in der <b>TwoInitialCapsExceptions</b> -Auflistung.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsException" /> Objekten, die alle Elemente darstellen, die im Dialogfeld AutoKorrektur-Ausnahmen im Feld nicht korrigieren auf der Registerkarte Initial CAps aufgeführt sind.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsExceptions" /> die-Eigenschaft, um die <b>TwoInitialCapsExceptions</b> -Auflistung zurückzugeben.</para>
+      <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" /> Eigenschaft auf <b>true</b>festgelegt ist, werden Wörter automatisch der Liste der anfänglichen Hauptkapital Ausnahmen hinzugefügt. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions.Add(System.String)" /> die-Methode, um der <b>TwoInitialCapsExceptions</b> -Auflistung ein Element hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie TwoInitialCapsExceptions<paramref name="index" />(), <paramref name="index" /> wobei der anfängliche Cap-Name oder die Indexnummer ist, um ein einzelnes <b>TwoInitialCapsException</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position der Ausnahme für große Anfangsbuchstaben in der <b>TwoInitialCapsExceptions</b>-Auflistung dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,14 +53,11 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> erforderlich. Die Abkürzung, die Sie nicht, dass Microsoft Word so konfiguriert, führen die mit einem Großbuchstaben möchten.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" /> -Objekt, das eine neue der Liste der AutoKorrektur-Ausnahmen hinzugefügte Ausnahme darstellt.</summary>
+        <param name="Name"><b>String</b> erforderlich. Die Abkürzung, die Microsoft Word nicht mit einem Großbuchstaben gefolgt werden soll.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" /> Objekt zurück, das eine neue Ausnahme darstellt, die der Liste der AutoKorrektur-Ausnahmen hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" /> -Eigenschaft ist <b>True</b>, werden automatisch Wörter in die Liste der Ausnahmen für Anfangsbuchstaben hinzugefügt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.TwoInitialCapsAutoAdd" /> Eigenschaft auf <b>true</b>festgelegt ist, werden Wörter automatisch der Liste der anfänglichen Hauptkapital Ausnahmen hinzugefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,11 +141,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

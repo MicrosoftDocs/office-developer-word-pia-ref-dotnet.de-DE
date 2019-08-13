@@ -1,13 +1,5 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Word.Style">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f00a0a687c5ad4964390a068d041ec8490b3eecf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670098" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Style" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="74f93bf5a3bfe99659200d0b7c65cb0b82d3670e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146115" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Style" />
   <TypeSignature Language="VB.NET" Value="Public Interface Style" />
@@ -27,15 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine einzelne integrierte oder benutzerdefinierte Formatvorlage.</summary>
-    <remarks>
-      <para>Das <b>Style</b> -Objekt enthält Formatattribute (Schriftart, Schriftschnitt, Absatzabstand usw.) als Eigenschaften des <b>Style</b> -Objekts. Das <b>Style</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Styles" /> Auflistung. Die <b>Styles</b> -Auflistung enthält alle Formatvorlagen im angegebenen Dokument.</para>
-      <para>
-        <b>Formatvorlagen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name der Formatvorlage, eine <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> -Konstante oder eine Indexzahl darstellt, um ein einzelnes <b>Style</b> -Objekt zurückzugeben. Sie müssen exakt übereinstimmen, die Rechtschreibung und die Abstände zwischen den Namen der Formatvorlage, aber nicht unbedingt die Groß-/Kleinschreibung.</para>
-      <para>Die Indexnummer der Formatvorlage stellt die Position der Formatvorlage in der alphabetisch sortierte Liste der Formatvorlagennamen.</para>
-      <para>Um eine Formatvorlage auf einen Bereich, Absatz oder mehrere Absätze anzuwenden, legen Sie die <b>Style</b> -Eigenschaft auf einen Formatvorlagennamen für die benutzerdefinierte oder integrierte.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> -Methode, um die Formatvorlagen zwischen Dokumenten und Vorlagen zu kopieren. Verwendung der <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> -Methode zum Aktualisieren der Formatvorlagen im aktiven Dokument mit die Definitionen der Formatvorlagen in der verbundenen Dokumentvorlage übereinstimmen. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> -Methode, um eine Vorlage als Dokument öffnen, sodass Sie Formatvorlagen in der Dokumentvorlage ändern können.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>Style</b> -Objekt enthält Formatvorlagenattribute (Schriftart, Schriftschnitt, Absatzabstand usw.) als Eigenschaften des <b>Style</b> -Objekts. Das <b>Style</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Styles" /> Auflistung. Die <b>Styles</b> -Auflistung enthält alle Formatvorlagen im angegebenen Dokument.</para>
+      <para>Verwenden <b>Sie Formatvorlagen</b><paramref name="index" />() <paramref name="index" /> , wobei der Name der Format <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Vorlage, eine Konstante oder eine Indexnummer ist, um ein einzelnes <b>Style</b> -Objekt zurückzugeben. Sie müssen die Rechtschreibung und die Abstände zwischen den Namen der Formatvorlage, aber nicht unbedingt die Groß-/Kleinschreibung exakt übereinstimmen.</para>
+      <para>Die Indexnummer der Formatvorlage stellt die Position der Formatvorlage in der alphabetisch sortierten Liste der Formatvorlagennamen dar.</para>
+      <para>Wenn Sie eine Formatvorlage auf einen Bereich, einen Absatz oder mehrere Absätze anwenden möchten, legen Sie die <b>Style</b> -Eigenschaft auf einen benutzerdefinierten oder integrierten Formatvorlagennamen fest.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> die-Methode, um Formatvorlagen zwischen Dokumenten und Vorlagen zu kopieren. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> die-Methode, um die Formatvorlagen im aktiven Dokument so zu aktualisieren, dass Sie den Formatvorlagendefinitionen in der angefügten Vorlage entsprechen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> die-Methode, um eine Vorlage als Dokument zu öffnen, sodass Sie die Vorlagenformat Vorlagen ändern können.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,13 +81,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Formatvorlage automatisch neu definiert wird basierend auf der Auswahl. <b>False,</b> Wenn Microsoft Word vor dem Neudefinieren der Formatvorlage auf Grundlage der Auswahl zur Bestätigung aufgefordert werden. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn die Formatvorlage automatisch auf der Basis der Auswahl neu definiert wird. <b>False</b> , wenn Microsoft Word zur Bestätigung auffordert, bevor die Formatvorlage basierend auf der Auswahl neu definiert wird. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Eine Formatvorlage kann neu definiert werden, wenn sie eine Auswahl, die dieselbe Formatvorlage angewendet wird jedoch eine andere manuelle Formatierung besitzt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Eine Formatvorlage kann neu definiert werden, wenn sie einer Auswahl zugewiesen wird, die dieselbe Formatvorlage, jedoch eine andere manuelle Formatierung aufweist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseStyle">
@@ -127,12 +113,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen eine vorhandene Formatvorlage, auf der Sie die Formatierung einer anderen Formatvorlage basieren können. Lese-Schreib- <b>Objekt</b>.</summary>
+        <summary>Gibt eine vorhandene Formatvorlage zurück, auf der die Formatierung einer anderen Formatvorlage basieren kann, oder legt sie fest. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft festlegen, geben entweder den lokalen Namen der Basisformatvorlage, eine ganze Zahl oder eine <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> -Konstante oder ein Objekt, das die Basisformatvorlage darstellt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um diese Eigenschaft festzulegen, geben Sie entweder den lokalen Namen der Basisformatvorlage, eine ganze <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Zahl oder eine Konstante oder ein Objekt an, das die Basisformatvorlage darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -161,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Borders" /> -Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung zurück, die alle Rahmen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,13 +173,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Objekt eine der integrierten Formatvorlagen oder Beschriftungskategorien in Microsoft Word ist. Schreibgeschützter <b>Boolean</b>-Wert.</summary>
+        <summary><b>True</b> , wenn das angegebene Objekt eine der integrierten Formatvorlagen oder Beschriftungs Beschriftungen in Microsoft Word ist. Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können integrierte Formatvorlagen in allen Sprachen angeben, mit der <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Konstanten oder innerhalb einer Sprache mithilfe der Formatvorlagenname für die Sprachversion von Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können integrierte Formatvorlagen in allen Sprachen angeben, indem Sie die <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Konstanten oder in einer Sprache verwenden, indem Sie den Formatvorlagennamen für die Sprachversion von Microsoft Word verwenden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -221,13 +202,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -278,12 +257,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Beschreibung der angegebenen Formatvorlage zurück. Schreibgeschützter Wert vom Typ <b>String</b>.</summary>
+        <summary>Gibt die Beschreibung der angegebenen Formatvorlage zurück. Schreibgeschützte <b>Zeichenfolge</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Eine typische Beschreibung für die Formatvorlage Überschrift 2 kann z. B., "Standard + Schriftart: Arial, 12 pt, fett, kursiv, Abstand vor 12 pt nach 3 pt, KeepWithNext, Stufe 2."</para>
-          <para />
-        </remarks>
+        <remarks><para>Beispielsweise kann eine typische Beschreibung für die Formatvorlage Überschrift 2 "Normal + Schriftart: Arial, 12 pt, Fett, kursiv, Leerzeichen vor 12 pt nach 3 PT, KeepWithNext, Ebene 2 sein."</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -312,12 +289,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.Font" /> -Objekt, das die zeichenformatierung des angegebenen Objekts darstellt. Lese-/Schreibzugriff <b>Schriftart</b>.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> Objekt zurück, das die Zeichenformatierung des angegebenen Objekts darstellt, oder legt dieses fest. <b>Font</b>-Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Geben Sie zum Festlegen dieser Eigenschaft einen Ausdruck, der ein <b>Font</b> -Objekt zurückgibt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Geben Sie zum Festlegen dieser Eigenschaft einen Ausdruck an, der ein <b>Font</b>-Objekt zurückgibt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -343,7 +318,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Frame" /> -Objekt, das den Frame-Formatierung für die angegebene Formatvorlage darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Frame" /> Wert vom Typ Object zurück, der die Rahmenformatierung für die angegebene Formatvorlage darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,13 +383,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn es sich bei der angegebenen Formatvorlage um eine integrierte Formatvorlage handelt, die modifiziert oder im Dokument zugewiesen wurde, oder wenn dies eine neue Formatvorlage ist, die im Dokument erstellt wurde. Schreibgeschützter <b>Boolean</b>.</summary>
+        <summary><b>True</b>, wenn es sich bei der angegebenen Formatvorlage um eine integrierte Formatvorlage handelt, die modifiziert oder im Dokument zugewiesen wurde, oder wenn dies eine neue Formatvorlage ist, die im Dokument erstellt wurde. Schreibgeschützter <b>boolescher</b> Wert.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt nicht unbedingt an, ob die Formatvorlage derzeit auf Text im Dokument angewendet wird. Wenn Text, der mit der Formatvorlage formatiert wurde gelöscht wird, bleibt die <b>InUse</b> -Eigenschaft der Formatvorlage <b>"true"</b>. Bei integrierten Formatvorlagen, die im Dokument noch nie verwendet wurden, gibt diese Eigenschaft <b>False</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt nicht unbedingt an, ob die Formatvorlage derzeit auf Text im Dokument angewendet wird. Die <b>InUse</b>-Eigenschaft der Formatvorlage bleibt beispielsweise auf <b>True</b> festgelegt, wenn der Text gelöscht wird, der mit der Formatvorlage formatiert wurde. Bei integrierten Formatvorlagen, die niemals im Dokument verwendet wurden, gibt diese Eigenschaft <b>False</b> zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -443,13 +415,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Sprache für das angegebene Objekt. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die Sprache für das angegebene Objekt zurück oder legt die Sprache fest. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstante.</para>
-          <para>Einige der <b>WdLanguageID</b> -Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstante sein.</para>
+          <para>Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) stehen möglicherweise nicht alle <b>WdLanguageID</b>-Konstanten zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -478,13 +448,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen eine ostasiatische Sprache für das angegebene Objekt.</summary>
+        <summary>Gibt für das angegebene Objekt eine ostasiatische Sprache zurück oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstante.</para>
-          <para>Dies ist die empfohlene Option zum Zurückgeben oder Festlegen der Sprache des ostasiatischen Text in einem Dokument in eine ostasiatische Version von Microsoft Word erstellt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstante sein.</para>
+          <para>Dies ist das empfohlene Verfahren für das Zurückgeben oder Festlegen einer ostasiatischen Sprache eines Dokuments, das in einer ostasiatischen Word-Version erstellt wurde.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Linked">
@@ -511,14 +479,10 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob es sich bei einer Formatvorlage um eine verknüpfte Formatvorlage handelt, die sowohl für die Absatz- als auch die Zeichenformatierung verwendet werden kann, oder legt diesen Wert fest. Schreibgeschützt.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>
-            <b>True</b> gibt an, dass die Option Formatvorlagentyp im Dialogfeld Formatvorlage ändern auf verknüpft (Absatz und Zeichen)"festgelegt ist.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>
+            <b>True</b> gibt an, dass die Option Formatvorlagentyp im Dialogfeldformat Vorlage ändern auf verknüpft (Absatz und Zeichen) festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkStyle">
@@ -547,12 +511,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest, oder gibt ein <b>Objekt</b> , das eine Verknüpfung zwischen einem Absatz und einer Zeichenformatvorlage repräsentiert. Lese-/Schreibzugriff.</summary>
+        <summary>Legt fest oder gibt einen Wert vom Typ <b>Object</b> zurück, der eine Verknüpfung zwischen einem Absatz und einem Zeichenformat darstellt. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn eine Zeichenformatvorlage und eine Absatz-Formatvorlage miteinander verknüpft, übernehmen die beiden Vorlagen die gleiche zeichenformatierung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Werden eine Zeichenformatvorlage und eine Absatz-Formatvorlage miteinander verknüpft, übernehmen die beiden Vorlagen die gleiche Zeichenformatierung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkToListTemplate">
@@ -577,8 +539,8 @@
         <Parameter Name="ListLevelNumber" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt. Die Listenvorlage, mit der die Formatvorlage verknüpft werden soll.</param>
-        <param name="ListLevelNumber">Optionales- <b>Objekt</b>. Eine ganze Zahl, entspricht die Listenebene, der die Formatvorlage verknüpft werden soll. Wenn dieses Argument ausgelassen wird, wird die Ebene der Formatvorlage verwendet.</param>
+        <param name="ListTemplate">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt. Die Listenvorlage, mit der die Formatvorlage verknüpft werden soll.</param>
+        <param name="ListLevelNumber">Optionales <b>Objekt</b>. Eine ganze Zahl, die der Listenebene entspricht, mit der die Formatvorlage verknüpft wird. Wenn dieses Argument ausgelassen wird, wird die Ebene der Formatvorlage verwendet.</param>
         <summary>Verknüpft die angegebene Formatvorlage mit einer Listenvorlage, damit die Formatierung in der Formatvorlage Listen zugewiesen werden kann.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -606,7 +568,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Listenebene für die angegebene Formatvorlage zurück. Schreibgeschützter <b>Integer</b>-Wert.</summary>
+        <summary>Gibt die Listenebene für die angegebene Formatvorlage zurück. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -634,13 +596,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> -Objekt, das die listenformatierung für das angegebene darstellt <see cref="T:Microsoft.Office.Interop.Word.Style" /> Objekt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt zurück, das die Listenformatierung für das <see cref="T:Microsoft.Office.Interop.Word.Style" /> angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Eine Listenvorlage enthält die gesamte Formatierung, die eine bestimmte Liste definiert. Jede der sieben Formate (None ausgeschlossen) finden Sie auf den Registerkarten in Aufzählungszeichen und Nummerierung im Dialogfeld (Menü "Format") entspricht einer Listenvorlage. Dokumente und Vorlagen können auch enthalten Sammlungen von Listenvorlagen.</para>
-          <para>, Wenn der erste Absatz im Bereich des <b>ListFormat</b> -Objekts nicht als Liste formatiert ist, gibt die <b>ListTemplate</b> -Eigenschaft <b>Nothing zurück</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Eine Listenvorlage enthält die gesamte Formatierung, die eine bestimmte Liste definiert. Jedes der sieben Formate (Ohne ausgenommen), die Sie jeweils auf jeder Registerkarte im Dialogfeld Nummerierung und Aufzählungszeichen (im Menü Format) finden, entspricht einer Listenvorlage. Dokumente und Vorlagen können ebenfalls Auflistungen mit Listenvorlagen enthalten.</para>
+          <para>Ist der erste Absatz im Bereich für das <b>ListFormat</b>-Objekt nicht als Liste formatiert, gibt die <b>ListTemplate</b>-Eigenschaft <b>Nothing</b> zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -669,8 +629,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die angegebene Formatvorlage gesperrt ist.</summary>
+        <summary><b>True</b> , wenn die angegebene Formatvorlage gesperrt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -701,12 +660,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen einer integrierten Formatvorlage in der Sprache des Benutzers zurück. Wert vom Typ <b>String</b> mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt den Namen einer integrierten Formatvorlage in der Sprache des Benutzers zurück. <b>Zeichenfolge</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Durch Festlegen dieser Eigenschaft wird eine benutzerdefinierte Formatvorlage umbenannt oder einen Alias zu einer integrierten Formatvorlage hinzugefügt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Durch Festlegen dieser Eigenschaft wird eine benutzerdefinierte Formatvorlage umbenannt oder ein Alias zu einer integrierten Formatvorlage hinzugefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextParagraphStyle">
@@ -735,12 +692,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgegeben oder festgelegt, dass die Formatvorlage automatisch auf einen neuen Absatz eingefügt, nachdem ein Absatz mit der angegebenen Formatvorlage formatiert angewendet werden soll. Lese-Schreib- <b>Objekt</b>.</summary>
+        <summary>Gibt die Formatvorlage zurück, die automatisch auf einen neuen Absatz angewendet werden soll, der nach einem mit der angegebenen Formatvorlage formatierten Absatz eingefügt wird, oder legt diese fest. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft festlegen, geben entweder den lokalen Namen der nächsten Formatvorlage, eine ganze Zahl oder eine <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> -Konstante oder ein Objekt, das die nächste Formatvorlage darstellt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um diese Eigenschaft festzulegen, geben Sie entweder den lokalen Namen der nächsten Formatvorlage, eine ganze <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Zahl oder eine Konstante oder ein Objekt an, das die nächste Formatvorlage darstellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -769,8 +724,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Rechtschreib- und grammatikprüfung ignoriert Text mit dieser Formatvorlage formatiert. Lese-/Schreibzugriff <b>Integer</b>.</summary>
+        <summary><b>True</b>, wenn die Rechtschreib- und Grammatikprüfung mit dieser Formatvorlage formatierten Text ignoriert. <b>Ganze Zahl</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -801,8 +755,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn Abstände zwischen Absätzen, die mit derselben Formatvorlage formatiert sind, in Microsoft Word entfernt werden sollen. <b>Boolean</b> mit Lese-/Schreibzugriff.</summary>
+        <summary><b>True</b>, wenn Abstände zwischen Absätzen, die mit derselben Formatvorlage formatiert sind, in Microsoft Word entfernt werden sollen. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -833,7 +786,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> -Objekt, das die Absatz Einstellungen für die angegebene Formatvorlage darstellt. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> Wert vom Typ Object zurück, der die Absatzeinstellungen für die angegebene Formatvorlage darstellt, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -892,10 +845,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die Priorität für die Sortierung von Formatvorlagen im Aufgabenbereich Formatvorlagen darstellt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Priorität für das Sortieren von Formatvorlagen im Aufgabenbereich Formatvorlagen darstellt, oder legt diese fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -925,10 +876,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob die Formatvorlage einer vorhandenen Schnellformatvorlage entspricht. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Gibt einen booleschen <b>Wert</b> zurück, der angibt, ob die Formatvorlage einer verfügbaren Schnellformatvorlage entspricht, oder legt diesen fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -955,7 +904,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt, das auf die Formatierung der Schattierung des angegebenen Objekts verweist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -983,7 +932,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TableStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> Objekt, das Eigenschaften, die einer Tabelle mithilfe einer Tabellenformatvorlage zugewiesen werden können.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> Objekt zurück, das Eigenschaften darstellt, die mithilfe einer Tabellenformatvorlage auf eine Tabelle angewendet werden können.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1011,25 +960,23 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStyleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Formatvorlagentyp zurück. Read-only <see cref="T:Microsoft.Office.Interop.Word.Style" />.</summary>
+        <summary>Gibt den Typ der Formatvorlage zurück. Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.Style" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>WdStyleType</b> kann eine der folgenden Konstanten sein:</para>
           <para>
-            <b>WdStyleTypeCharacter</b>
+            <b>wdStyleTypeCharacter</b>
           </para>
           <para>
-            <b>WdStyleTypeList</b>
+            <b>wdStyleTypeList</b>
           </para>
           <para>
-            <b>WdStyleTypeParagraph</b>
+            <b>wdStyleTypeParagraph</b>
           </para>
           <para>
-            <b>WdStyleTypeTable</b>
+            <b>wdStyleTypeTable</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhideWhenUsed">
@@ -1058,8 +1005,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legen Sie <b>True</b> , deaktivieren Sie die <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> Eigenschaft, wenn dieses Format verwendet wird.</summary>
-        <value>Boolean</value>
+        <summary>Legen Sie <b>true</b> fest, <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> um die Eigenschaft zu löschen, wenn diese Formatvorlage verwendet wird.</summary>
+        <value>Boolesch</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

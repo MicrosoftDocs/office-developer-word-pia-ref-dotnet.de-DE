@@ -1,13 +1,5 @@
 <Type Name="InlineShape" FullName="Microsoft.Office.Interop.Word.InlineShape">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="66e249dbce92dbea7c1d72c74e1758b2d5b3cece" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669639" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface InlineShape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9f81e89e789a82e62997f9c7555c77ad9c26269d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146682" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShape" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShape" />
@@ -26,15 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein Objekt in der Textebene eines Dokuments.</summary>
-    <remarks>
-      <para>Eine Inlineform kann nur ein Bild, ein OLE-Objekt oder ein ActiveX-Steuerelement. <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekte werden wie Zeichen behandelt und innerhalb einer Textzeile positioniert werden. Die <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> -Auflistung enthält alle Formen in einem Dokument, einem Bereich oder einer Auswahl.</para>
-      <para>Verwendung <b>InlineShapes</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexnummer ist, zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt. Inlineformen haben keine Namen.</para>
+    <summary>Stellt ein Objekt in der Textebene eines Dokuments dar.</summary>
+    <remarks><para>Bei einer Inlineform kann es sich lediglich um ein Bild, ein OLE-Objekt oder ein ActiveX-Steuerelement handeln. <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />Objekte werden wie Zeichen behandelt und als Zeichen in einer Textzeile positioniert. Das <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung enthält alle Formen in einem Dokument, einem Bereich oder einer Auswahl.</para>
+      <para>Verwenden <b></b>Sie InlineShapes<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> um ein einzelnes Objekt zurückzugeben. Inline-Shapes haben keine Namen.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekte sind an einen Textbereich verankert, aber nicht verankert werden und können an einer beliebigen Stelle auf der Seite positioniert werden. Sie können die <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> Methode und die <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> Methoden für die Konvertierung von Shapes von einem Typ zu einem anderen. Sie können nur Bilder, OLE-Objekte und ActiveX-Steuerelemente in Inlineformen konvertiert. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> -Eigenschaft auf den Typ der Inlineform zurückzugeben: Bild, verknüpftes Bild, eingebettetes OLE-Objekt, verknüpftes OLE-Objekt oder ActiveX-Steuerelement.</para>
-      <para>Beim Öffnen eines Dokuments in einer früheren Version von Microsoft Word erstellt wurde, werden Bilder in Inlineformen konvertiert.</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />Objekte werden in einem Textbereich verankert, sind jedoch frei verschiebbar und können an beliebiger Stelle auf der Seite positioniert werden. Sie können die <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> -Methode und die <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> Methoden verwenden, um Formen von einem Typ in einen anderen zu konvertieren. Nur Bilder, OLE-Objekte und ActiveX-Steuerelemente können in Inlineformen konvertiert werden. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> die-Eigenschaft, um den Typ der Inlineform zurückzugeben: Bild, verknüpfte Grafik, eingebettetes OLE-Objekt, verknüpftes OLE-Objekt oder ActiveX-Steuerelement.</para>
+      <para>Wenn Sie ein Dokument öffnen, das in einer früheren Version von Microsoft Word erstellt wurde, werden Bilder in Inlineformen konvertiert.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -91,7 +81,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den alternativen Text einer Form auf einer Webseite zugeordnet.</summary>
+        <summary>Gibt den alternativen Text zurück, der einer Form in einer Webpräsentation zugeordnet ist, oder legt den Text fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +171,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Borders" /> -Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung zurück, die alle Rahmen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,9 +200,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt ein Diagramm in der Auflistung von Inlineformen in einem Dokument zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Chart" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,12 +225,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Eine Inlineform in eine frei bewegliche Form konvertiert und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die neue Form darstellt.</summary>
+        <summary>Konvertiert eine Inlineform in eine frei schwebende Form und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt zurück, das die neue Form darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Sie müssen Anwenden der <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> -Methode, um eine <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> -Objekt mindestens einmal, bevor Sie die <b>ConvertToShape</b> -Methode verwenden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie müssen die <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> Methode mindestens einmal auf <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> ein Objekt anwenden, bevor Sie die <b>ConvertToShape</b> -Methode verwenden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -270,11 +256,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -356,12 +340,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Field" /> -Objekt, das der angegebenen Form zugeordnete Feld darstellt.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Field" /> Wert vom Typs Object zurück, der das der angegebenen Form zugeordnete Feld darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.Fields" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.Fields" /> die-Eigenschaft, <see cref="T:Microsoft.Office.Interop.Word.Fields" /> um die Auflistung zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -387,7 +369,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> -Objekt, das der Füllung Formateigenschaften für die angegebene Form enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> Objekt zurück, das Füll Formatierungseigenschaften für die angegebene Form enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,10 +397,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Formateigenschaften für einen Leuchteffekt zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />
-        </value>
+        <summary>Gibt die Formatierungseigenschaften für einen Leuchteffekt zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,10 +425,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Formen, die für eine Inlineform zusammengefasst sind. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />
-        </value>
+        <summary>Gibt die Shapes zurück, die für eine Inlineform zusammen gruppiert sind. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,15 +453,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn es sich bei der angegebenen Form um ein Diagramm handelt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gibt immer <b>False</b> für OLE-Diagramme zurück. Verwenden Sie für OLE-Diagramme InlineShape.OLEFormat.ProgID, und überprüfen Sie die folgenden möglichen Werte: "Excel.Chart. 8", "MSGraph.Chart. 8", "Excel.Sheet. 8", "Excel.Chart. 5", "MSGraph.Chart.5" oder "Excel.Sheet.5".</para>
-          <para />
-        </remarks>
+        <summary><b>True</b>, wenn es sich bei der angegebenen Form um ein Diagramm handelt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
+        <remarks><para>Diese Eigenschaft gibt immer <b>false</b> für OLE-Diagramme zurück. Verwenden Sie für OLE-Diagramme InlineShape. OLEFormat. ProgID, und überprüfen Sie die folgenden möglichen Werte: "Excel. Chart. 8", "MSGraph. Chart. 8", "Excel. Sheet. 8", "Excel. Chart. 5", "MSGraph. Chart. 5" oder "Excel. Sheet. 5".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasSmartArt">
@@ -509,12 +482,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft <b>True</b> ab, wenn ein SmartArt-Diagramm auf der Form vorhanden ist.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Core.MsoTriState" /> Objekt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft <b>true</b> ab, wenn ein SmartArt-Diagramm auf dem Shape vorhanden ist.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Core.MsoTriState" />-Objekt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -543,7 +514,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Höhe für die angegebene Inlineform.</summary>
+        <summary>Gibt die Höhe der angegebenen Inlineform zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -571,7 +542,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HorizontalLineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> -Objekt, das die Formatierung für den angegebenen horizontale Zeile enthält <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> Objekt zurück, das die horizontale Formatierung für das angegebene <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -599,12 +570,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> -Objekt, das den mit dem angegebenen verknüpften Hyperlink darstellt <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> Wert vom Typs Object zurück, der den dem <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> angegebenen Objekt zugeordneten Hyperlink darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn keine mit der angegebenen Form verknüpften Hyperlink vorhanden ist, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der angegebenen Form kein Hyperlink zugeordnet ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPictureBullet">
@@ -630,13 +599,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt ist ein Aufzählungszeichen.</summary>
+        <summary>Bestimmt, ob <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> ein Objekt ein Bildaufzählungszeichen ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>true,</b> um anzugeben, dass ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt ist ein Bildaufzählungszeichen.</para>
-          <para>Zwar Bildaufzählungszeichen als Inlineformen angesehen, suchen Sie ein Dokument <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung wird keine Aufzählungszeichen zurückgegeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, um anzugeben <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> , dass ein Objekt ein Bildaufzählungszeichen ist.</para>
+          <para>Obwohl Bildaufzählungszeichen als Inline-Shapes betrachtet werden, <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> werden durch das Durchsuchen der Sammlung eines Dokuments keine Bildaufzählungszeichen zurückgegeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -662,12 +629,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> -Objekt, das Zeile Formateigenschaften für die angegebene Form enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> Objekt zurück, das Linienformatierungseigenschaften für die angegebene Form enthält.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bei einer Linie stellt das <b>LineFormat</b> -Objekt die Linie selbst dar; für eine Form mit einem Rahmen stellt das <b>LineFormat</b> -Objekt den Rahmen dar.</para>
-          <para />
-        </remarks>
+        <remarks><para>Für eine-Reihe stellt das <b>LineFormat</b> -Objekt die-Reihe selbst dar; für eine Form mit einem Rahmen stellt das <b>LineFormat</b> -Objekt den Rahmen dar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkFormat">
@@ -693,7 +658,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> -Objekt, das die Verknüpfungsoptionen des angegebenen stellt <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> , das in eine Datei verknüpft ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> Objekt zurück, das die Verknüpfungsoptionen des <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> angegebenen Objekts darstellt, das mit einer Datei verknüpft ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -726,10 +691,9 @@
       <Docs>
         <summary>Legt fest, ob die angegebene Form bei der Änderung ihrer Größe die Ausgangsproportionen beibehält.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>MsoTrue</b> , wenn die angegebene Form ihre ursprünglichen Proportionen beibehält, wenn Sie und <b>MsoFalse</b> Größe ändern, wenn Sie die Höhe und Breite der Form unabhängig voneinander ändern können, wenn Sie darauf verweisen Größe</para>
+        <remarks><para>Diese Eigenschaft gibt <b>msoTrue</b> zurück, wenn die angegebene Form ihre ursprünglichen Proportionen beibehält, wenn Sie die Größe ändern, und <b>msoFalse</b> , wenn Sie die Höhe und Breite der Form unabhängig voneinander ändern können, wenn Sie die Größe verändern.</para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" /> kann eine der folgenden Konstanten sein:</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Dies kann eine der folgenden Konstanten sein: </para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -745,8 +709,7 @@
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OLEFormat">
@@ -772,7 +735,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> -Objekt, das die OLE-Merkmale (mit Ausnahme der Verknüpfung) für die angegebene stellt <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> Wert vom Datentyp Object zurück, der die OLE-Merkmale (außer Verknüpfung <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />) für das angegebene darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -862,7 +825,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> -Objekt, das Formateigenschaften für das angegebene Objekt enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> Objekt zurück, das Bild Formatierungseigenschaften für das angegebene Objekt enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -890,12 +853,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> unter der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reflection">
@@ -921,10 +882,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Spiegelungsformat für ein Shape zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />
-        </value>
+        <summary>Gibt die Spiegelungs Formatierung für eine Form zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -979,7 +938,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Skaliert die Höhe der angegebenen Inlineform relativ zu ihrer ursprünglichen Größe.</summary>
+        <summary>Skaliert die Höhe der angegebenen Inlineform relativ zur Originalgröße.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1010,7 +969,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Skaliert die Breite der angegebenen Inlineform relativ zu ihrer ursprünglichen Größe.</summary>
+        <summary>Skaliert die Breite der angegebenen Inlineform relativ zur Originalgröße.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1038,12 +997,10 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.Script" /> -Objekt, das einen Code- oder Skriptblock auf der angegebenen Webseite darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.Script" /> Objekt zurück, das einen Skript-oder Code Block auf der angegebenen Webseite darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die Seite kein Skript enthält, erfolgt keine Rückgabe.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die Seite kein Skript enthält, erfolgt keine Rückgabe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1067,11 +1024,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
-        <remarks>
-          <para>Nach Verwendung dieser Methode können Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Markiert das angegebene Objekt.</summary>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1097,10 +1052,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die schattierungsformatierung für die angegebene Form zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />
-        </value>
+        <summary>Gibt die Schattenformatierung für die angegebene Form zurück. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1127,12 +1080,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Core.SmartArt" /> -Objekt, das eine Möglichkeit zum Arbeiten mit der SmartArt bietet zugeordnete die angegebene Inlineform.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Core.SmartArt" /> -Objekt, das eine Möglichkeit zum Arbeiten mit der SmartArt bietet zugeordnete die angegebene Inlineform.</value>
-        <remarks>
-          <para>Schreibgeschützt. Diese Eigenschaft bietet einen Einstiegspunkt für die Interaktion mit einer SmartArt-Grafik, die der Inlineform zugeordnet.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Core.SmartArt" /> Objekt ab, das eine Möglichkeit zum Arbeiten mit der SmartArt-Methode bereitstellt, die der angegebenen Inlineform zugeordnet ist.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Core.SmartArt" /> Objekt, das eine Möglichkeit zum Arbeiten mit der SmartArt-Methode bereitstellt, die der angegebenen Inlineform zugeordnet ist.</value>
+        <remarks><para>Schreibgeschützt. Diese Eigenschaft bietet einen Einstiegspfad für die Interaktion mit einer SmartArt-Grafik, die der Inlineform zugeordnet ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftEdge">
@@ -1159,9 +1110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das Format für weiche Kanten für eine Form zurück. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1191,7 +1140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> -Objekt, das Text Auswirkungen Formateigenschaften für die angegebene Form enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> Objekt zurück, das Texteffekt-Formatierungseigenschaften für die angegebene Form enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1222,12 +1171,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen eines Werts, das einen Titel für die angegebene Inlineform enthält.</summary>
-        <value>Einen Titel für die angegebene Inlineform.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff. Verwenden Sie diese Eigenschaft, um einen Titel ein alternativer Text für eine Inlineform bereitzustellen. Diese Eigenschaft wird das Textfeld Titel auf den Bereich Alternativtext im Dialogfeld Shape formatieren in Microsoft Word 2010 Titeltext hinzugefügt.</para>
-          <para />
-        </remarks>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der einen Titel für die angegebene Inlineform enthält.</summary>
+        <value>Ein Titel für die angegebene Inlineform.</value>
+        <remarks><para>Lese-/Schreibzugriff. Verwenden Sie diese Eigenschaft, um einen alternativen Text Titel für eine Inlineform bereitzustellen. Diese Eigenschaft fügt dem Textfeld Titel im Textbereich alt des Dialogfelds Format Form in Microsoft Word 2010 Text hinzu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1255,9 +1202,8 @@
       <Docs>
         <summary>Gibt den Typ der Inlineform zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdInlineShapeType" /> kann eine der folgenden Konstanten sein.</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdInlineShapeType" />Dies kann eine der folgenden Konstanten sein: </para>
           <para>
             <b>wdInlineShapeEmbeddedOLEObject</b>
           </para>
@@ -1291,8 +1237,7 @@
           <para>
             <b>wdInlineShapeScriptAnchor</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1321,7 +1266,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt sie fest.</summary>
+        <summary>Gibt die Breite des angegebenen Objekts (in Punkten) zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

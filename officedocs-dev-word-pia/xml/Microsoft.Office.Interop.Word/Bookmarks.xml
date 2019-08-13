@@ -1,13 +1,5 @@
 <Type Name="Bookmarks" FullName="Microsoft.Office.Interop.Word.Bookmarks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="559e2005557e5b0811ba9d6921064eb66efff775" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669615" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="164f4a022f0e0f2ed1514f8a343f3dcbfd3f7cef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146332" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmarks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmarks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmarks&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> -Objekten, die die Textmarken in der angegebenen Auswahl, einem Bereich oder einem Dokument darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> Eigenschaft, um die <b>Bookmarks</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> -Methode, um eine Textmarke für einen Bereich in einem Dokument festzulegen.</para>
-      <para>Use <b>Lesezeichen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name der Textmarke oder die Indexzahl darstellt, um ein einzelnes <b>Bookmark</b> -Objekt zurückzugeben. Sie müssen exakt übereinstimmen, die Rechtschreibung (jedoch nicht unbedingt die Groß-/Kleinschreibung) von der Name der Textmarke.</para>
-      <para>Die Indexnummer stellt die Position der Textmarke in die <see cref="T:Microsoft.Office.Interop.Word.Selection" /> oder <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Für die <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekts, der die Indexnummer stellt die Position der Textmarke in die alphabetische Liste der Textmarken im Dialogfeld Textmarken (klicken Sie auf Name, um die Liste der Textmarken alphabetisch sortieren). </para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> Eigenschaft wirkt sich auf die Anzahl der Elemente in der <b>Bookmarks</b> -Auflistung. Wenn <b>ShowHidden</b> auf <b>True</b>festgelegt ist, sind in der <b>Bookmarks</b> -Auflistung ausgeblendete Textmarken enthalten.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekten, die die Textmarken in der angegebenen Auswahl, im Bereich oder im Dokument darstellen.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> die-Eigenschaft, um die <b>Bookmarks</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> die-Methode, um eine Textmarke für einen Bereich in einem Dokument festzulegen.</para>
+      <para>Verwenden <b></b>Sie Bookmarks (<paramref name="index" />) <paramref name="index" /> , wobei es sich um den Namen oder die Indexnummer der Textmarke handelt, um ein einzelnes <b>Bookmark</b> -Objekt zurückzugeben. Halten Sie sich genau an die Schreibweise des Textmarkennamens (Groß-/Kleinschreibung spielt keine Rolle).</para>
+      <para>Die Indexnummer stellt die Position der Textmarke im Objekt <see cref="T:Microsoft.Office.Interop.Word.Selection" /> oder <see cref="T:Microsoft.Office.Interop.Word.Range" /> dar. Für das <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt stellt die Indexnummer die Position der Textmarke in der alphabetischen Liste der Lesezeichen im Dialogfeldtext Marken dar (Klicken Sie auf Name, um die Liste der Lesezeichen alphabetisch zu sortieren). </para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> -Eigenschaft wirkt sich auf die Anzahl der <b></b> Elemente in der Bookmarks-Auflistung aus. Wenn <b>ShowHidden</b> auf <b>True</b> festgelegt ist, enthält die <b>Bookmarks</b>-Auflistung ausgeblendete Textmarken.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,8 +56,8 @@
       <Docs>
         <param name="Name">Der Name der Textmarke. Der Name darf nur aus einem Wort bestehen.</param>
         <param name="Range">Der Textbereich, der durch die Textmarke markiert wird. Die Textmarke kann auf einen reduzierten Bereich (die Einfügemarke) festgelegt werden.</param>
-        <summary>Fügt eine Textmarke, die einem Bereich.</summary>
-        <returns>Ein <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> -Objekt, die auf den Bereich hinzugefügte Textmarke darstellt.</returns>
+        <summary>Fügt einem Bereich eine Textmarke hinzu.</summary>
+        <returns>Ein <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objekt, das die dem Bereich hinzugefügte Textmarke darstellt.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,13 +140,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSorting">
@@ -185,12 +173,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBookmarkSortBy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Sortieroption für die Namen von Textmarken im Dialogfeld Textmarke (Menü "Einfügen") angezeigt.</summary>
+        <summary>Gibt die Sortieroption der im Dialogfeld Textmarke (Menü Einfügen) angezeigten Textmarkennamen zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft wirkt sich nicht auf die Reihenfolge der Bookmark-Objekte in der <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> Auflistung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft wirkt sich nicht auf die Reihenfolge von Bookmark <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> -Objekten in der Auflistung aus.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -217,9 +203,8 @@
       </Parameters>
       <Docs>
         <param name="Name">Ein Textmarkenname.</param>
-        <summary>Bestimmt, ob die angegebene Textmarke vorhanden ist.</summary>
-        <returns>
-          <b>True,</b> Wenn die angegebene Textmarke vorhanden ist, <b>False,</b> Wenn nicht.</returns>
+        <summary>Ermittelt, ob die angegebene Textmarke vorhanden ist.</summary>
+        <returns><b>True</b> , wenn die angegebene Textmarke vorhanden ist, <b>false</b> , wenn dies nicht der Fall ist.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +266,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Der Name des einzelnen Objekts zurückgegeben werden soll.</param>
+        <param name="Index">Der Name des einzelnen zurückzugebenden Objekts.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -310,7 +295,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,13 +326,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, der angibt, ob ausgeblendete Textmarken enthält die <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> Auflistung.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob ausgeblendete Lesezeichen in <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> der Auflistung enthalten sind, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Steuert diese Eigenschaft auch, ob ausgeblendete Textmarken im Dialogfeld Textmarke (Menü Einfügen) aufgeführt sind.</para>
-          <para>Ausgeblendete Textmarken werden automatisch eingefügt, wenn Querverweise in das Dokument eingefügt werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft steuert auch, ob ausgeblendete Lesezeichen im Dialogfeld "Textmarken" (Menü "Einfügen") aufgelistet werden.</para>
+          <para>Ausgeblendete Textmarken werden automatisch beim Einfügen von Querverweisen in ein Dokument eingefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

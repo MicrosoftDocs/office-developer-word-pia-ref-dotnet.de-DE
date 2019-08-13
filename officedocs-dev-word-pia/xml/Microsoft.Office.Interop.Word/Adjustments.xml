@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Word.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="04d00f5197d85b4aee3912704a4c99c46098e504" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669620" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f71474edc1a4cdff5dca9567b6a826b678d59ad6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144652" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments" />
@@ -26,29 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enthält eine Auflistung von Anpassungswerten für das angegebene AutoShape- oder WordArt-Objekt.</summary>
-    <remarks>
-      <para>Jeder Wert stellt eine Möglichkeit dar, die einem UserForm angepasst werden kann. Da einige Anpassungsziehpunkte auf zwei Arten angepasst werden können – beispielsweise einige können angepasst werden horizontal und vertikal – eine Form mehr Anpassungswerte als Anpassungsziehpunkte besitzen aufweisen kann. Ein Shape kann bis zu acht Korrekturen aufweisen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> Eigenschaft, um ein <b>Adjustments</b> -Objekt zurückzugeben. Verwenden Sie <b>Adjustments</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Anpassungswert Indexzahl darstellt, um einen einzelnen Wert zurückzugeben.</para>
-      <para>Verschiedene Formen unterschiedliche Anzahl von Korrekturwerten haben, verschiedene Arten der Korrekturen ändern die Geometrie eines Shapes auf verschiedene Arten und verschiedene Arten von Anpassungen sind unterschiedliche gültige Wertebereiche.</para>
-      <para>Jeder veränderbaren Form hat eine andere Menge von Anpassungen, die beste Möglichkeit, die das Verhalten der Anpassung Vergewissern Sie sich für ein bestimmtes Shape ist eine Instanz der Form, manuell erstellen Anpassungen vornehmen, mit der Makrorekorder aktiviert, und überprüfen Sie dann die aufgezeichneten Code.</para>
-      <para>In der folgenden Tabelle sind die Bereiche der gültigen Anpassungswerte für unterschiedliche Arten von Anpassungen zusammengefasst. In den meisten Fällen, wenn Sie einen Wert angeben, die außerhalb des gültigen Werte ist der nächste gültige Wert zugewiesen wird die Anpassung.</para>
+    <summary>Enthält eine Auflistung der Anpassungswerte für das angegebene AutoShape- oder WordArt-Objekt.</summary>
+    <remarks><para>Jeder Anpassungswert stellt eine Art dar, in der ein Anpassungsziehpunkt angepasst werden kann. Da einige Anpassungsziehpunkte auf zwei Arten angepasst werden können (z. B. können einige Ziehpunkte horizontal und vertikal angepasst werden), kann eine Form mehr Anpassungswerte als Anpassungsziehpunkte besitzen. Eine Form kann bis zu acht Korrekturen aufweisen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> die-Eigenschaft, um ein <b>Adjustments</b> -Objekt zurückzugeben. Verwenden <b></b>Sie Adjustments (<paramref name="index" />) <paramref name="index" /> , wobei die Indexnummer des Anpassungs Werts ist, um einen einzelnen Anpassungswert zurückzugeben.</para>
+      <para>Für die einzelnen Formen gibt es unterschiedlich viele Anpassungswerte. Unterschiedliche Anpassungen ändern die Geometrie einer Form auf verschiedene Art. Außerdem sind die gültigen Wertebereiche für die einzelnen Anpassungen unterschiedlich.</para>
+      <para>Da alle anpassbaren Formen über unterschiedliche Anpassungsgruppen verfügen, überprüfen Sie das Verhalten der Anpassungen einer bestimmten Form am Besten, indem Sie manuell eine Instanz der Form erstellen, die Anpassungen bei aktivierter Makroaufzeichnung vornehmen und anschließend den aufgezeichneten Code überprüfen.</para>
+      <para>In der folgenden Tabelle finden Sie eine Zusammenfassung der gültigen Anpassungswerte für die unterschiedlichen Anpassungstypen. Wenn Sie einen Wert außerhalb des gültigen Wertebereichs angeben, wird der Anpassung in den meisten Fällen der nächste gültige Wert zugewiesen.</para>
       <list type="table">
         <item>
           <description>Linear (horizontal oder vertikal)</description>
-          <description>im Allgemeinen der Wert 0,0 den linken oder oberen Rand der Form darstellt, und der Wert 1,0 den rechten oder unteren Begrenzung der Form dar. Gültige Werte entsprechen gültigen Korrekturen, die Sie mit dem Shape manuell vornehmen können. Angenommen, wenn Sie nur eine Anpassung halb über die Form manuell ziehen können, sein der Höchstwert für die entsprechende Anpassung 0,5. Für Formen wie Legenden, wobei die Werte 0,0 und 1,0 die Grenzen des durch die Anfangs- und Endpunkte der Legendenlinie definierten Rechtecks darstellen, Zahlen und Zahlen größer als negative 1.0 sind gültige Werte.</description>
+          <description>Generally the value 0.0 represents the left or top edge of the shape and the value 1.0 represents the right or bottom edge of the shape. Valid values correspond to valid adjustments you can make to the shape manually. For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5. For shapes such as callouts, where the values 0.0 and 1.0 represent the limits of the rectangle defined by the starting and ending points of the callout line, negative numbers and numbers greater than 1.0 are valid values.</description>
         </item>
-        <description>Radial</description>
-        <description>ein Wert von 1.0 
-        <item>entspricht der Breite der Form. Der Höchstwert ist 0,5 bzw. die Hälfte der Form. 
-        </item></description>
+        <item>
+          <description>Radial</description>
+          <description>Ein Anpassungswert von 1,0 entspricht der Breite der Form. Der Maximalwert beträgt 0,5 oder die halbe Breite der Form.</description>
+        </item>
         <item>
           <description>Winkel</description>
-          <description>Werte werden in Grad angegeben. Wenn Sie einen Wert außerhalb des Bereichs angeben – 180 bis 180, es werden normalisiert werden, um innerhalb dieses Bereichs liegen.</description>
+          <description>Werte werden in Grad angegeben. Wenn Sie einen Wert außerhalb des Bereichs angeben – 180 bis 180, wird er normalisiert, sodass er innerhalb dieses Bereichs liegt.</description>
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -74,7 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +92,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert zurück, der die Anzahl der Elemente in der angegebenen <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> Auflistung.</summary>
+        <summary>Gibt einen Wert zurück, der die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> angegebenen Auflistung angibt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,13 +120,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft beispielsweise die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Zusätzliche Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt beispielsweise in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe, die in Microsoft Office Macintosh Edition enthalten ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -169,13 +157,11 @@
       </Parameters>
       <Docs>
         <param name="Index">Die Indexnummer der Anpassung.</param>
-        <summary>Zurückgeben oder festlegen den angegebenen Wert.</summary>
+        <summary>Gibt den angegebenen Anpassungswert zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für lineare Korrekturen, ein Wert von 0,0 entspricht in der Regel auf der linken oder oberen Begrenzung der Form und einen Wert von 1.0 im Allgemeinen entspricht den rechten oder unteren Rand des Shapes. Adjustments können jedoch über Shape Grenzen für einige Shapes übergeben. Bei radial Korrekturen bezieht sich ein Wert von 1.0 auf die Breite der Form. Für Winkel Anpassungen ist der Anpassungswert in Grad angegeben. Die <b>Item</b> -Eigenschaft gilt nur für Formen, die Anpassungen aufweisen.</para>
-          <para>AutoFormen und WordArt-Objekte wurden bis zu acht Korrekturen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei linearen Korrekturen ein Wert von 0,0 entspricht im Allgemeinen den linken oder oberen Rand des Shapes, und ein Wert von 1.0 im Allgemeinen entspricht den rechten oder unteren Begrenzung der Form. Adjustments können jedoch über Shape Grenzen für einige Shapes übergeben. Bei radial Korrekturen bezieht sich ein Wert von 1.0 auf die Breite der Form. Für Winkel Anpassungen ist der Anpassungswert in Grad angegeben. Die <b>Item</b> -Eigenschaft gilt nur für Formen, die Anpassungen aufweisen.</para>
+          <para>AutoFormen und WordArt-Objekte haben bis zu acht Anpassungen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -201,7 +187,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das das übergeordnete Objekt des angegebenen repräsentiert <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> Auflistung.</summary>
+        <summary>Gibt einen Wert vom Object zurück, der das übergeordnete Objekt der angegebenen <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

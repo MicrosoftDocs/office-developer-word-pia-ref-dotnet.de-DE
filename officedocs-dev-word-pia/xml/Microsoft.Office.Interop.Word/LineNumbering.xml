@@ -1,13 +1,5 @@
 <Type Name="LineNumbering" FullName="Microsoft.Office.Interop.Word.LineNumbering">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19268d70b2273750e89a9e9736b6fb7e0290ed9f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669626" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LineNumbering" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="447ca72d9089f4505bd8a5cea8ccb95ec880c18c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146570" /></Metadata><TypeSignature Language="C#" Value="public interface LineNumbering" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LineNumbering" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LineNumbering" />
   <TypeSignature Language="VB.NET" Value="Public Interface LineNumbering" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Zeilennummern am linken Rand oder jeweils links der Spalten im Zeitungsstil dar.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> Eigenschaft, um das <b>LineNumbering</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> die-Eigenschaft, um das <b>LineNumbering</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -59,8 +49,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> wenn Zeilennummern für das angegebene Dokument, Abschnitt oder Abschnitte aktiv ist.</summary>
+        <summary><b>True</b>, wenn die Zeilennummerierung für das angegebene Dokument, den Abschnitt oder die Abschnitte aktiviert ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,13 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der numerische Wert für die Erhöhung für Zeilennummern. Wenn die <b>CountBy</b> -Eigenschaft auf 5 festgelegt ist, wird jeder fünften Zeile beispielsweise die Zeilennummer angezeigt.</summary>
+        <summary>Gibt zurück, neben jeder wievielten Zeile eine Zeilennummer angezeigt wird, oder legt dies fest. Wenn beispielsweise die <b>CountBy</b> -Eigenschaft auf 5 festgelegt ist, wird in jeder fünften-Reihe die Nummer der Reihe angezeigt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Zeilennummern werden nur angezeigt, in der Drucklayoutansicht und Druckvorschau.</para>
-          <para>Dieser Eigenschaft hat keine Auswirkung, es sei denn, die <see cref="P:Microsoft.Office.Interop.Word.LineNumbering.Active" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> Objekts auf <b>True</b>festgelegt ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Zeilennummern werden nur in der Drucklayoutansicht und der Seitenansicht angezeigt.</para>
+          <para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.LineNumbering.Active" /> die Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> Objekts auf <b>true</b>festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,11 +140,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromText">
@@ -186,7 +171,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Abstand (in Punkt) zwischen dem rechten Rand des Zeilennummern und dem linken Rand des Dokuments Texts.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen der rechten Kante von Zeilennummern und der linken Kante des Dokumenttexts zurück oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,12 +230,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen das Möglichkeit Zeilennummern ausgeführt wird – d. h., ob sie am Anfang einer neuen Seite oder eines Abschnitts über beginnt oder kontinuierlich ausgeführt wird.</summary>
+        <summary>Gibt zurück oder legt fest, wie die Nummerierung der Leitungen ausgeführt wird, d. h., ob Sie am Anfang einer neuen Seite oder eines Abschnitts beginnt oder kontinuierlich ausgeführt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie müssen in der Drucklayoutansicht Zeilennummern finden Sie unter sein.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Zeilennummerierung ist nur in der Drucklayoutansicht sichtbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartingNumber">
@@ -279,12 +262,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Zeilennummer der ersten.</summary>
+        <summary>Gibt die Anfangszeilennummer an oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie müssen in der Drucklayoutansicht Zeilennummern finden Sie unter sein.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Zeilennummerierung ist nur in der Drucklayoutansicht sichtbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

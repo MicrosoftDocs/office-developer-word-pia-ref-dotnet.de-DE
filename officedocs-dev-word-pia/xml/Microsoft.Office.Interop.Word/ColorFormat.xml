@@ -1,13 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Word.ColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dcf4bb34b09a1742a595fe81e3cf40a11a84fc5b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670024" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="009c7bf5816a06a2dbe1390b58db24c3e4dfd954" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147195" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat" />
@@ -27,8 +19,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Farbe eines einfarbigen Objekts oder die Vordergrund- bzw. Hintergrundfarbe eines Objekts mit Farbverlauf oder gemusterter Füllung dar.</summary>
-    <remarks>
-      <para>Verwenden Sie eine der Eigenschaften aufgeführt, in der folgenden Tabelle, um ein <b>ColorFormat</b> -Objekt zurückzugeben.</para>
+    <remarks><para>Verwenden Sie eine der in der folgenden Tabelle aufgeführten Eigenschaften, um ein <b>ColorFormat</b> -Objekt zurückzugeben.</para>
       <list type="table">
         <item>
           <description>
@@ -36,7 +27,8 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.FillFormat" />
-          </description>Hintergrundfüllfarbe (bei schattierter oder strukturierter Füllung)
+          </description>
+          <description>Füllfarbe für den Hintergrund (bei einer schattierten oder gemusterten Füllung)</description>
         </item>
         <item>
           <description>
@@ -45,7 +37,7 @@
           <description>
             <b>FillFormat</b>
           </description>
-          <description>Vordergrundfüllfarbe Farbe (oder einfach die Füllfarbe für eine einfarbige Füllung)</description>
+          <description>Vordergrundfüllfarbe (oder einfach die Füllfarbe für eine einfarbige Füllung)</description>
         </item>
         <item>
           <description>
@@ -53,7 +45,8 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.LineFormat" />
-          </description>Hintergrund Linienfarbe (verwendet bei einer gemusterten Linie)
+          </description>
+          <description>Linienfarbe für den Hintergrund (bei einer gemusterten Linie)</description>
         </item>
         <item>
           <description>
@@ -62,7 +55,7 @@
           <description>
             <b>LineFormat</b>
           </description>
-          <description>Vordergrund Linie Farbe (oder nur die Linienfarbe für eine einfarbige Linie)</description>
+          <description>Linienfarbe für den Vordergrund (oder nur die Linienfarbe für eine einfarbige Linie)</description>
         </item>
         <item>
           <description>
@@ -70,7 +63,8 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />
-          </description>Shadow Farbe
+          </description>
+          <description>Schattenfarbe</description>
         </item>
         <item>
           <description>
@@ -78,12 +72,12 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />
-          </description>Farbe der Seiten eines projizierten Objekts
+          </description>
+          <description>Farbe der Seiten eines projizierten Objekts</description>
         </item>
       </list>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ColorFormat.RGB" /> -Eigenschaft auf eine Farbe auf einen expliziten Rot-Grün-Blau-Wert festzulegen.</para>
-      <para />
-    </remarks>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ColorFormat.RGB" /> die-Eigenschaft, um eine Farbe auf einen expliziten Rot-Grün-Blau-Wert festzulegen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -109,7 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das die schwarze Komponente einer CMYK-Farbe darstellt.</summary>
+        <summary>Gibt einen Wert zurück, der die schwarze Komponente einer CMYK-Farbe darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,12 +171,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die Helligkeit einer Farbe für die angegebene Form an.</summary>
-        <value>Die Helligkeit einer Farbe der angegebenen Form.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff. Sie geben eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für diese Eigenschaft, 0 (null) ist neutral.</para>
-          <para />
-        </remarks>
+        <summary>Ruft die Helligkeit einer angegebenen Formen Farbe ab.</summary>
+        <value>Die Helligkeit einer angegebenen Formen Farbe.</value>
+        <remarks><para>Lese-/Schreibzugriff. Sie können eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für diese Eigenschaft eingeben, wobei 0 (null) neutral ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -208,13 +200,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cyan">
@@ -249,7 +239,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das die Zyan-Komponente einer CMYK-Farbe darstellt.</summary>
+        <summary>Gibt einen Wert zurück, der die Cyan-Komponente einer CMYK-Farbe darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,8 +279,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Anzahl der Druckfarbe.</param>
-        <summary>Zurückgeben oder festlegen ein Werts, das der Sättigungsgrad für eine angegebene Druckfarbe darstellt.</summary>
+        <param name="Index">Die Nummer der Freihandeingabe.</param>
+        <summary>Gibt einen Wert zurück, der den Sättigungsgrad für eine angegebene Druckfarbe darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,7 +317,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das die Magenta-Komponente einer CMYK-Farbe darstellt.</summary>
+        <summary>Gibt einen Wert zurück, der die Magenta-Komponente einer CMYK-Farbe darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -364,7 +354,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -395,10 +385,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdThemeColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Designfarbe für einen farbenformat. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdThemeColorIndex" />
-        </value>
+        <summary>Gibt die Design Farbe für ein Farbformat zurück oder legt Sie fest. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdThemeColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,7 +422,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das beim Erstellen von Trennung Platten für Professioneller Druck gibt die angegebene Form nicht auf die Trennung Platten gedruckt wird, in dem die Druckfarbe Ebene der Form auf 0 (null) festgelegt ist.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines Werts, der angibt, dass beim Erstellen von Trennzeichen für den kommerziellen Druck die angegebene Form nicht auf den Trennzeichen gedruckt wird, in denen die Druckfarben Ebene der Form auf 0 (null) festgelegt ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,7 +518,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das die Farbe des zugewiesenen Farbschemas darstellt, die mit dem angegebenen Objekt zugeordnet ist.</summary>
+        <summary>Gibt einen Wert zurück, der die Farbe im angewendeten Farbschema darstellt, das dem angegebenen Objekt zugeordnet ist, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -564,10 +552,10 @@
         <Parameter Name="Black" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Cyan">Ein Wert, der die die Farbe Zyan-Komponente darstellt. Einen beliebigen Wert zwischen 0 und 255 kann sein.</param>
-        <param name="Magenta">Ein Wert, der die Magenta-Komponente der Farbe darstellt. Einen beliebigen Wert zwischen 0 und 255 kann sein.</param>
-        <param name="Yellow">Ein Wert, der die die Farbe gelbe-Komponente darstellt. Einen beliebigen Wert zwischen 0 und 255 kann sein.</param>
-        <param name="Black">Ein Wert, der die schwarze-Komponente der Farbe darstellt. Einen beliebigen Wert zwischen 0 und 255 kann sein.</param>
+        <param name="Cyan">Ein Wert, der die Cyan-Komponente der Farbe darstellt. Kann ein beliebiger Wert zwischen 0 und 255 sein.</param>
+        <param name="Magenta">Ein Wert, der die Magenta-Komponente der Farbe darstellt. Kann ein beliebiger Wert zwischen 0 und 255 sein.</param>
+        <param name="Yellow">Ein Wert, der die Gelbe Komponente der Farbe darstellt. Kann ein beliebiger Wert zwischen 0 und 255 sein.</param>
+        <param name="Black">Ein Wert, der die schwarze Komponente der Farbe darstellt. Kann ein beliebiger Wert zwischen 0 und 255 sein.</param>
         <summary>Legt einen Zyan-Magenta-Gelb-Schwarz-Farbwert (CMYK) fest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -598,12 +586,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das das aufhellen bzw. Abdunkeln der Farbe einer angegebenen Form darstellt.</summary>
+        <summary>Gibt einen Wert zurück, der das Aufhellen oder verdunkeln der Farbe einer angegebenen Form darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für die <b>TintAndShade</b> -Eigenschaft 0 (null) neutral eingeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können eine Zahl zwischen-1 (am dunkelsten) und 1 (am hellsten) für die <b>TintAndShade</b> -Eigenschaft 0 (null) neutral eingeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -629,7 +615,7 @@
         <ReturnType>Microsoft.Office.Core.MsoColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Farbtyp der Form zurück.</summary>
+        <summary>Gibt den Typ der Form Farbe zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -666,7 +652,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das die Gelb-Komponente einer CMYK-Farbe darstellt.</summary>
+        <summary>Gibt einen Wert zurück, der die Gelbe Komponente einer CMYK-Farbe darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

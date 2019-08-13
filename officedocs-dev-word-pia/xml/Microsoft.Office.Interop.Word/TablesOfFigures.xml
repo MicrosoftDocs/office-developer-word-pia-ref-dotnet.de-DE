@@ -1,13 +1,5 @@
 <Type Name="TablesOfFigures" FullName="Microsoft.Office.Interop.Word.TablesOfFigures">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fe1e1f21bffd98afe08b6b1953eec4af668b2331" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669890" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a47dc8aab96b5338c26c58900de20ee909636d5e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146010" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfFigures implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfFigures&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> -Objekten, die die Abbildungsverzeichnisse in einem Dokument darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfFigures" /> -Eigenschaft auf die <b>TablesOfFigures</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um einem Dokument ein Abbildungsverzeichnis hinzugefügt. Ein Abbildungsverzeichnis listet Abbildung Beschriftungen in der Reihenfolge, in der sie im Dokument angezeigt werden.</para>
-      <para>Verwendung <b>TablesOfFigures</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>TableOfFigures</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des das Abbildungsverzeichnis im Dokument.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> Objekten, die die Abbildungstabellen in einem Dokument darstellen.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfFigures" /> die-Eigenschaft, um die <b>TablesOfFigures</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um einem Dokument ein Abbildungsverzeichnis hinzuzufügen. Ein Abbildungsverzeichnis führt die Abbildungsbeschriftungen in der Reihenfolge auf, in der sie im Dokument angezeigt werden.</para>
+      <para>Verwenden <b></b>Sie TablesOfFigures<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>TableOfFigures</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Abbildungsverzeichnisses im Dokument dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -72,20 +62,20 @@
         <Parameter Name="HidePageNumbersInWeb" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem das Abbildungsverzeichnis angezeigt werden soll.</param>
-        <param name="Caption">Optionales- <b>Objekt</b>. Die Beschriftung, die die Elemente angibt, die Sie in das Abbildungsverzeichnis einschließen möchten. Entspricht dem Schalter \c für ein Feld (Inhaltsverzeichnis). Der Standardwert ist "Abbildung".</param>
-        <param name="IncludeLabel">Optionales- <b>Objekt</b>. <b>True</b> , wenn die Beschriftungskategorie und Beschriftungsnummer in das Abbildungsverzeichnis aufzunehmen. Der Standardwert ist <b>True</b>.</param>
-        <param name="UseHeadingStyles">Optionales- <b>Objekt</b>. <b>True,</b> um integrierte Formatvorlagen für Überschriften verwenden, um das Abbildungsverzeichnis zu erstellen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="UpperHeadingLevel">Optionales- <b>Objekt</b>. Start-Überschriftenebene für das Abbildungsverzeichnis, wenn <paramref name="UseHeadingStyles" /> auf <b>True</b>festgelegt ist. Entspricht dem Startwert, der mit dem Schalter \o für ein Feld (Inhaltsverzeichnis) verwendet. Der Standardwert ist 1.</param>
-        <param name="LowerHeadingLevel">Optionales- <b>Objekt</b>. Die unterste Überschriftenebene für das Abbildungsverzeichnis, wenn <paramref name="UseHeadingStyles" /> auf <b>True</b>festgelegt ist. Entspricht dem Endwert mit dem Schalter \o für ein Feld (Inhaltsverzeichnis) verwendet. Der Standardwert ist 9.</param>
-        <param name="UseFields">Optionales- <b>Objekt</b>. <b>True</b> , wenn Felder der Tabelle der Inhalt Eintrag (TRADITIONELL) verwenden, um das Abbildungsverzeichnis zu erstellen. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um Einträge zu markieren, in das Abbildungsverzeichnis enthalten sein sollen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="TableID">Optionales- <b>Objekt</b>. Ein Kennzeichen aus einem Buchstaben, die zum Erstellen eines Abbildungsverzeichnisses aus der Tabelle der Inhalt TC Felder (Verzeichniseintrag) verwendet wird. Entspricht dem Schalter \f für ein Feld (Inhaltsverzeichnis). Beispielsweise erstellt "i" ein Abbildungsverzeichnis für eine Illustration.</param>
-        <param name="RightAlignPageNumbers">Optionales- <b>Objekt</b>. <b>True,</b> auszurichten Seitenzahlen am rechten Rand in der Tabelle Abbildungsverzeichnis. Der Standardwert ist <b>True</b>.</param>
-        <param name="IncludePageNumbers">Optionales- <b>Objekt</b>. <b>True,</b> wenn Seitenzahlen in das Abbildungsverzeichnis enthalten sind. Der Standardwert ist <b>True</b>.</param>
-        <param name="AddedStyles">Optionales- <b>Objekt</b>. Der Name der Zeichenfolge für weitere zum Kompilieren des Abbildungsverzeichnisses verwendete Formatvorlagen (andere Formatvorlagen als die Formatvorlagen für Überschriften 1-9).</param>
-        <param name="UseHyperlinks">Optionales- <b>Objekt</b>. <b>True,</b> wenn Einträge in einem Abbildungsverzeichnis bei der Veröffentlichung im Web als Hyperlinks formatiert werden sollen. Der Standardwert ist <b>True</b>.</param>
-        <param name="HidePageNumbersInWeb">Optionales- <b>Objekt</b>. <b>True,</b> Wenn die Seitenzahlen in einem Abbildungsverzeichnis sollen bei der Veröffentlichung im Web ausgeblendet werden. Der Standardwert ist <b>True</b>.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> -Objekt, das ein Abbildungsverzeichnis hinzugefügt, die zu einem Dokument darstellt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem das Abbildungsverzeichnis angezeigt werden soll.</param>
+        <param name="Caption">Optionales <b>Objekt</b>. Die Beschriftung, welche die Elemente identifiziert, die in das Abbildungsverzeichnis aufgenommen werden sollen. Entspricht dem Schalter \c in einem TOC-Feld (Inhaltsverzeichnis). Der Standardwert lautet Abbildung.</param>
+        <param name="IncludeLabel">Optionales <b>Objekt</b>. <b>True</b>, um die Beschriftungskategorie und Beschriftungsnummer in das Abbildungsverzeichnis aufzunehmen. Der Standardwert ist <b>True</b>.</param>
+        <param name="UseHeadingStyles">Optionales <b>Objekt</b>. <b>True</b>, um zum Erstellen des Abbildungsverzeichnisses integrierte Formatvorlagen für Überschriften zu verwenden. Der Standardwert ist <b>False</b>.</param>
+        <param name="UpperHeadingLevel">Optionales <b>Objekt</b>. Die Start Überschriften Ebene für das Abbildungsverzeichnis, <paramref name="UseHeadingStyles" /> wenn auf <b>true</b>festgelegt ist. Entspricht dem Startwert, der mit dem Schalter \o für ein TOC-Feld (Table of Contents, Inhaltsverzeichnis) verwendet wird. Der Standardwert ist 1.</param>
+        <param name="LowerHeadingLevel">Optionales <b>Objekt</b>. Die letzte Überschriftenebene für das Abbildungsverzeichnis, <paramref name="UseHeadingStyles" /> wenn auf <b>true</b>festgelegt ist. Entspricht dem Endwert, der mit dem Schalter \o für ein TOC-Feld (Table of Contents, Inhaltsverzeichnis) verwendet wird. Der Standardwert ist 9.</param>
+        <param name="UseFields">Optionales <b>Objekt</b>. <b>True</b>, um zum Erstellen des Abbildungsverzeichnisses TC-Felder (Inhaltsverzeichniseintrag) zu verwenden. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode zum Markieren von Einträgen, die Sie in das Abbildungsverzeichnis einschließen möchten. Der Standardwert ist <b>False</b>.</param>
+        <param name="TableID">Optionales <b>Objekt</b>. Eine aus einem einzelnen Buchstaben bestehende ID, die zum Erstellen eines Abbildungsverzeichnisses aus TC-Feldern (Inhaltsverzeichniseintrag) verwendet wird. Entspricht dem Schalter \f in einem TOC-Feld (Table of Contents, Inhaltsverzeichnis). Beispielsweise erstellt i ein Abbildungsverzeichnis für eine Illustration.</param>
+        <param name="RightAlignPageNumbers">Optionales <b>Objekt</b>. <b>True</b>, um Seitenzahlen im Abbildungsverzeichnis am rechten Rand auszurichten. Der Standardwert ist <b>True</b>.</param>
+        <param name="IncludePageNumbers">Optionales <b>Objekt</b>. <b>True</b>, wenn Seitenzahlen in das Abbildungsverzeichnis aufgenommen werden. Der Standardwert ist <b>True</b>.</param>
+        <param name="AddedStyles">Optionales <b>Objekt</b>. Der Name der Zeichenfolge für weitere zum Kompilieren des Abbildungsverzeichnisses verwendete Formatvorlagen (andere Formatvorlagen als die Formatvorlagen für Überschriften 1-9).</param>
+        <param name="UseHyperlinks">Optionales <b>Objekt</b>. <b>True</b>, wenn Einträge im Abbildungsverzeichnis als Hyperlinks formatiert werden sollen, sobald das Verzeichnis im Web veröffentlicht wird. Der Standardwert ist <b>True</b>.</param>
+        <param name="HidePageNumbersInWeb">Optionales <b>Objekt</b>. <b>True</b>, wenn die Seitenzahlen eines Abbildungsverzeichnisses bei Veröffentlichung im Web ausgeblendet werden sollen. Der Standardwert ist <b>True</b>.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> Objekt zurück, das ein Abbildungsverzeichnis darstellt, das einem Dokument hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -163,7 +153,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,11 +211,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -254,31 +242,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTofFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Formatierung für die Abbildungsverzeichnisse im angegebenen Dokument.</summary>
+        <summary>Gibt die Formatierung für die Abbildungsverzeichnisse im angegebenen Dokument zurück oder legt diese Formatierung fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTofFormat" />Dies kann eine der folgenden <b>WdTofFormat</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTofFormat" />eine der folgenden <b>WdTofFormat</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdTOFCentered </b>
+            <b>wdTOFCentered</b>
           </para>
           <para>
-            <b>WdTOFDistinctive </b>
+            <b>wdTOFDistinctive</b>
           </para>
           <para>
-            <b>WdTOFSimple </b>
+            <b>wdTOFSimple</b>
           </para>
           <para>
-            <b>WdTOFClassic </b>
+            <b>wdTOFClassic</b>
           </para>
           <para>
-            <b>WdTOFFormal </b>
+            <b>wdTOFFormal</b>
           </para>
           <para>
-            <b>WdTOFTemplate</b>
+            <b>wdTOFTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -339,7 +325,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -370,12 +356,12 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des Eintrags. Das TC-Feld wird eingefügt, nach dem <paramref name="Range" />.</param>
-        <param name="Entry">Optionales- <b>Objekt</b>. Der Text, der in der Inhalts- oder Abbildungsverzeichnis angezeigt wird. Um einen Untereintrag anzugeben, geben Sie die Hauptfenster und den Untereintragstext, getrennt durch einen Doppelpunkt (:)) (beispielsweise "Einführung: das Produkt").</param>
-        <param name="EntryAutoText">Optionales- <b>Objekt</b>. Der Name des AutoText-Eintrag, der Text für den Index, Abbildungsverzeichnis oder das Inhaltsverzeichnis enthält (<paramref name="Entry" /> wird ignoriert).</param>
-        <param name="TableID">Optionales- <b>Objekt</b>. Eine aus einem einzelnen Buchstaben bestehende ID für das Element des Abbildungs- oder Inhaltsverzeichnisses (z. B. "I" für eine "Illustration").</param>
-        <param name="Level">Optionales- <b>Objekt</b>. Eine Ebene für den Eintrag im Inhalts- oder Abbildungsverzeichnis.</param>
-        <summary>Fügt ein Feld (Verzeichniseintrag) TC nach dem angegebenen Bereich ein. Die Methode gibt eine <see cref="T:Microsoft.Office.Interop.Word.Field" /> -Objekt, das TC-Feld darstellt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Die Position des Eintrags. Das TC-Feld wird nach <paramref name="Range" />eingefügt.</param>
+        <param name="Entry">Optionales <b>Objekt</b>. Der Text, der im Inhaltsverzeichnis oder Abbildungsverzeichnis erscheint. Zur Kennzeichnung eines Untereintrags fügen Sie den Haupteintragstext und den Untereintragstext durch einen Doppelpunkt getrennt (:) ein (zum Beispiel "Einführung: Das Produkt").</param>
+        <param name="EntryAutoText">Optionales <b>Objekt</b>. Der Name des AutoText-Eintrags, der Text für den Index, das Abbildungsverzeichnis oder das<paramref name="Entry" /> Inhaltsverzeichnis enthält (wird ignoriert).</param>
+        <param name="TableID">Optionales <b>Objekt</b>. Eine aus einem einzelnen Buchstaben bestehende ID für das Element des Abbildungs- oder Inhaltsverzeichnisses (z. B. "I" für eine "Illustration").</param>
+        <param name="Level">Optionales <b>Objekt</b>. Eine Ebene für den Eintrag im Inhalts- oder Abbildungsverzeichnis.</param>
+        <summary>Fügt ein TC-Feld nach dem angegebenen Bereich ein. Die-Methode gibt <see cref="T:Microsoft.Office.Interop.Word.Field" /> ein-Objekt zurück, das das TC-Feld darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

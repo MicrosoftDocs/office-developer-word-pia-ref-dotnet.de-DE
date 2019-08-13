@@ -1,13 +1,5 @@
 <Type Name="SpellingSuggestion" FullName="Microsoft.Office.Interop.Word.SpellingSuggestion">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5fe2c90e77f52f8bb71fe5c38cbf1f360709dd6e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669973" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SpellingSuggestion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3413abdc0c5278bcc151a8955fa3d96176ddd8d3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143952" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingSuggestion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SpellingSuggestion" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingSuggestion" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine einzelne Rechtschreibvorschlag für eine falsch geschriebenen Wort.</summary>
-    <remarks>
-      <para>Das <b>SpellingSuggestion</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" /> Auflistung. Die <b>SpellingSuggestions</b> -Auflistung enthält alle Vorschläge für ein bestimmtes Wort oder für das erste Wort im angegebenen Bereich.</para>
-      <para>Verwendung <b>SpellingSuggestions</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>SpellingSuggestion</b> -Objekt zurückzugeben.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> -Eigenschaft des <b>SpellingSuggestions</b> -Objekts gibt 0 (null) zurück, wenn das Wort richtig geschrieben wurde oder es keine Vorschläge gibt.</para>
-      <para />
-    </remarks>
+    <summary>Stellt einen einzelnen Vorschlag der Rechtschreibprüfung für ein falsch geschriebenes Wort dar.</summary>
+    <remarks><para>Das <b>SpellingSuggestion</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" /> Auflistung. Die <b>SpellingSuggestions</b>-Auflistung enthält alle Vorschläge für ein bestimmtes Wort oder für das erste Wort in einem angegebenen Bereich.</para>
+      <para>Verwenden <b></b>Sie SpellingSuggestions<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>SpellingSuggestion</b> -Objekt zurückzugeben.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> -Eigenschaft für das <b>SpellingSuggestions</b> -Objekt gibt 0 (null) zurück, wenn das Wort richtig geschrieben ist oder keine Vorschläge vorhanden sind.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -118,7 +106,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

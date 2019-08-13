@@ -1,13 +1,5 @@
 <Type Name="Rows" FullName="Microsoft.Office.Interop.Word.Rows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c032ac142ab5f86099a7cac58f78d136a83ef5c6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669081" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Rows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="692ba17be6d8254b9f6cc3026ef3363c48d90ec8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144043" /></Metadata><TypeSignature Language="C#" Value="public interface Rows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Rows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Rows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Rows&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Row" /> -Objekten, die die Tabellenzeilen in der angegebenen Auswahl, einem Bereich oder einer Tabelle darstellen.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Rows</b> -Eigenschaft, um der <b>Rows</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" /> -Methode, um eine Tabelle eine Zeile hinzuzufügen.</para>
-      <para>Verwendung <b>Zeilen</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein einzelnes <b>Row</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Zeile in der Auswahl, einem Bereich oder einer Tabelle.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Row" /> Objekten, die die Tabellenzeilen in der angegebenen Auswahl, dem Bereich oder der Tabelle darstellen.</summary>
+    <remarks><para>Verwenden Sie die <b>Rows</b>-Eigenschaft zum Zurückgeben der <b>Rows</b>-Auflistung.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" /> die-Methode, um einer Tabelle eine Zeile hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Zeilen<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um ein einzelnes <b>Row</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Zeile in der Auswahl, im Bereich oder in der Tabelle dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,8 +51,8 @@
         <Parameter Name="BeforeRow" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeRow">Optionales- <b>Objekt</b>. Ein <b>Row</b> -Objekt, das die Zeile darstellt, die unmittelbar unterhalb der neuen Zeile angezeigt wird.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Row" /> -Objekt, das eine Zeile darstellt, die einer Tabelle hinzugefügt.</summary>
+        <param name="BeforeRow">Optionales <b>Objekt</b>. Ein <b>Row</b>-Objekt, das die Zeile darstellt, die unmittelbar unterhalb der neuen Zeile angezeigt wird.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Row" /> Objekt zurück, das eine Zeile darstellt, die einer Tabelle hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,22 +83,20 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" /> -Konstante, die die Ausrichtung für die angegebenen Zeilen darstellt.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" /> einer Konstanten, die die Ausrichtung für die angegebenen Zeilen darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>WdRowAlignment</b> kann eine der folgenden Konstanten sein:</para>
           <para>
-            <b>WdAlignRowLeft</b>
+            <b>wdAlignRowLeft</b>
           </para>
           <para>
-            <b>WdAlignRowCenter</b>
+            <b>wdAlignRowCenter</b>
           </para>
           <para>
-            <b>WdAlignRowRight</b>
+            <b>wdAlignRowRight</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowBreakAcrossPages">
@@ -137,13 +125,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ermitteln Sie, ob der Text in eine Tabelle oder mehrere Zeilen zulässig ist, über einen Seitenumbruch aufgeteilt.</summary>
+        <summary>Bestimmen Sie, ob der Text in einer Tabellenzeile oder in Zeilen in einem Seitenumbruch aufgeteilt werden darf.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn der Text in eine Tabelle oder mehrere Zeilen zulässig ist, über einen Seitenumbruch, und <b>False</b> Wenn nicht aufgeteilt.</para>
-          <para>Der Rückgabewert kann <b>True</b>, <b>False</b> oder <b>wdUndefined zurück</b> (nur einige des angegebenen Texts darf abgetrennt werden).</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn der Text in einer Tabellenzeile oder Zeilen auf einen Seitenumbruch aufgeteilt werden darf, und <b>false</b> , wenn nicht.</para>
+          <para>Der Rückgabewert kann " <b>true</b>", " <b>false</b> " oder " <b>wdUndefined</b> " sein (nur ein Teil des angegebenen Texts darf geteilt werden).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowOverlap">
@@ -174,13 +160,11 @@
       <Docs>
         <summary>Gibt einen Wert zurück, der angibt, ob die angegebenen Zeilen andere Zeilen überlappen können, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>wdUndefined zurück</b> , wenn die angegebenen Zeilen sowohl überlappende als auch nicht überlappende Zeilen enthalten.</para>
-          <para>Kann der Wert der Eigenschaft auf <b>True</b> oder <b>False</b>festgelegt werden.</para>
-          <para>Einstellung <b>AllowOverlap</b> auf <b>True</b> festgelegt <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> auf <b>true fest</b>. Festlegen von <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> auf <b>false festgelegt</b> , wird auch <b>AllowOverlap</b> auf <b>false festgelegt</b>.</para>
-          <para>, Da HTML keine überlappenden Tabellen oder Formen unterstützt, wird <b>AllowOverlap</b> in der Weblayoutansicht ignoriert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>wdUndefined</b> zurück, wenn die angegebenen Zeilen sowohl überlappende Zeilen als auch nicht überlappende Zeilen enthalten.</para>
+          <para>Der Wert der Eigenschaft kann entweder auf <b>true</b> oder <b>false</b>festgelegt werden.</para>
+          <para>Das Festlegen von <b>AllowOverlap</b> auf <b>true</b> wird auch auf <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> <b>true</b>festgelegt. Bei <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> Einstellung auf <b>false</b> wird <b>AllowOverlap</b> ebenfalls auf <b>false</b>festgelegt.</para>
+          <para>Da in HTML keine überlappenden Tabellen oder Formen unterstützt werden, wird <b>AllowOverlap</b> in der Weblayoutansicht ignoriert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -206,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +221,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Borders" /> -Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung zurück, die alle Rahmen für das angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,14 +249,12 @@
         <Parameter Name="NestedTables" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Separator">Optionales- <b>Objekt</b>. Das Zeichen, das die umgewandelten Spalten begrenzt (Absatzmarken begrenzen die umgewandelten Zeilen). Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> Konstanten:<b>WdSeparateByCommas</b><b>WdSeparateByDefaultListSeparator</b><b>WdSeparateByParagraphs</b><b>WdSeparateByTabs</b> (Standardwert)</param>
-        <param name="NestedTables">Optionales- <b>Objekt</b>. <b>True,</b> Wenn geschachtelte Tabellen in Text konvertiert werden. Dieses Argument wird ignoriert, wenn <paramref name="Separator" /> ist nicht <b>WdSeparateByParagraphs</b>. Der Standardwert ist <b>True</b>.</param>
-        <summary>Wandelt eine Tabelle in Text um und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den mit Trennzeichen versehenen Text darstellt.</summary>
+        <param name="Separator">Optionales <b>Objekt</b>. Das Zeichen, das die umgewandelten Spalten begrenzt (Absatzmarken begrenzen die umgewandelten Zeilen). Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> Konstanten sein:<b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b><b>wdSeparateByTabs</b> (Standard)</param>
+        <param name="NestedTables">Optionales <b>Objekt</b>. <b>True</b>, wenn geschachtelte Tabellen in Text umgewandelt werden. Dieses Argument wird ignoriert, <paramref name="Separator" /> wenn es sich nicht um <b>wdSeparateByParagraphs</b>. Der Standardwert ist <b>True</b>.</param>
+        <summary>Wandelt eine Tabelle in Text um und gibt <see cref="T:Microsoft.Office.Interop.Word.Range" /> ein Objekt zurück, das den durch Trennzeichen getrennten Text darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Beim Anwenden der <b>ConvertToText</b> -Methode, um ein <see cref="T:Microsoft.Office.Interop.Word.Table" /> -Objekts, das Objekt wird gelöscht. Um einen Verweis auf den konvertierten Inhalt der Tabelle zu gewährleisten, weisen Sie die <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt, das von der <b>ConvertToText</b> -Methode zurückgegeben wird, in eine neue Objektvariable.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie die <b>ConvertToText</b> -Methode auf ein <see cref="T:Microsoft.Office.Interop.Word.Table" /> Objekt anwenden, wird das Objekt gelöscht. Wenn Sie einen Verweis auf den konvertierten Inhalt der Tabelle beibehalten möchten, müssen Sie <see cref="T:Microsoft.Office.Interop.Word.Range" /> das von der <b>ConvertToText</b> -Methode zurückgegebene Objekt einer neuen Objektvariablen zuweisen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToTextOld">
@@ -359,11 +341,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -417,12 +397,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem unteren Rand der angegebenen Tabelle.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der unteren Kante der angegebenen Tabelle zurück oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft keine Wirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> ist <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> Sie auf <b>false festgelegt</b>ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceLeft">
@@ -451,12 +429,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem linken Rand der angegebenen Tabelle fest.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der linken Kante der angegebenen Tabelle zurück oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft keine Wirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> ist <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> Sie auf <b>false festgelegt</b>ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceRight">
@@ -485,12 +461,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem rechten Rand der angegebenen Tabelle.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der rechten Kante der angegebenen Tabelle zurück oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft keine Wirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> ist <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> Sie auf <b>false festgelegt</b>ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceTop">
@@ -519,12 +493,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen dem Dokumenttext und dem oberen Rand der angegebenen Tabelle fest.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen dem Dokumenttext und der oberen Kante der angegebenen Tabelle zurück oder legt diesen Abstand fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft keine Wirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> ist <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> Sie auf <b>false festgelegt</b>ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistributeHeight">
@@ -548,7 +520,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Passt die Höhe der angegebenen Zeilen an, sodass sie gleich sind.</summary>
+        <summary>Passt die Höhe der angegebenen Zeilen so an, dass Sie gleich sind.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,7 +547,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Row" /> -Objekt, das das erste Element in der <see cref="T:Microsoft.Office.Interop.Word.Rows" /> Auflistung.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Row" /> Objekt zurück, das das erste Element in <see cref="T:Microsoft.Office.Interop.Word.Rows" /> der Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,14 +610,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ermitteln Sie, ob die angegebene Zeile oder Zeilen als Tabellenüberschrift formatiert sind.</summary>
+        <summary>Ermitteln Sie, ob die angegebenen Zeilen als Tabellenüberschrift formatiert sind.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt true, wenn die angegebene Zeile oder Zeilen einer Tabelle Überschrift und false, wenn nicht formatiert werden.</para>
-          <para>Zeilen formatiert als Tabellenüberschriften wiederholt werden, wenn eine Tabelle mehr als eine Seite umfasst.</para>
-          <para>In dieser Eigenschaft kann festgelegt werden, um Werte sind <b>True</b>, <b>False</b> und <b>WdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt true zurück, wenn die angegebenen Zeilen oder Zeilen als Tabellenüberschrift formatiert sind, und false, wenn dies nicht der Fall ist.</para>
+          <para>Als Tabellenüberschriften formatierte Zeilen werden wiederholt, wenn eine Tabelle mindestens zwei Seiten umfasst.</para>
+          <para>Diese Eigenschaft kann auf die Werte <b>true</b>, <b>false</b> und <b>wdUndefined</b>festgelegt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -674,12 +644,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Höhe der angegebenen Zeile oder Zeilen in einer Tabelle fest.</summary>
+        <summary>Gibt die Höhe der angegebenen Zeile oder Zeilen in einer Tabelle zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.Rows.HeightRule" /> -Eigenschaft der angegebenen Zeilen <b>WdRowHeightAuto</b>ist, gibt <b>Height</b><b>wdUndefined zurück</b>; Festlegen der <b>Height</b> -Eigenschaft wird <b>HeightRule</b> auf <b>wdRowHeightAtLeast festgelegt</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.Rows.HeightRule" /> Eigenschaft der angegebenen Zeilen <b>wdRowHeightAuto</b>ist, gibt <b>height</b> <b>wdUndefined</b>; durch Festlegen der <b>height</b> -Eigenschaft wird <b>HeightRule</b> auf <b>wdRowHeightAtLeast festgelegt</b>festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -708,11 +676,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowHeightRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Regel zum Bestimmen der Höhe für die angegebenen Zeilen.</summary>
+        <summary>Gibt die Regel zum Bestimmen der Höhe der angegebenen Zeilen zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" /> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />Dies kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>wdRowHeightAtLeast festgelegt</b>
           </para>
@@ -722,8 +689,7 @@
           <para>
             <b>wdRowHeightAuto</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPosition">
@@ -752,13 +718,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den horizontalen Abstand zwischen dem Rand der Zeilen und das Element von angegebenen der <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeHorizontalPosition" /> Eigenschaft.</summary>
+        <summary>Gibt den horizontalen Abstand zwischen dem Zeilenrand und dem von der <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeHorizontalPosition" /> Eigenschaft angegebenen Element zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>HorizonalPosition</b> -Eigenschaft kann eine Zahl, die eine Maßeinheit in Punkt angibt, oder kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdTablePosition" /> Konstanten: <b>WdTableLeft</b>, <b>WdTableRight</b>, <b>WdTableCenter</b>, <b>WdTableInside</b>oder <b> WdTableOutside</b>.</para>
-          <para>Diese Eigenschaft keine Wirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> ist <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei <b>der HorizonalPosition</b> -Eigenschaft kann es sich um eine Zahl handeln, die eine Maßeinheit in Punkt angibt, oder <see cref="T:Microsoft.Office.Interop.Word.WdTablePosition" /> es kann eine der folgenden Konstanten sein: <b>wdTableLeft</b>, <b>wdTableRight</b>, <b>wdTableCenter</b>, <b>wdTableInside</b>oder <b> wdTableOutside</b>.</para>
+          <para>Diese Eigenschaft hat keine Auswirkung, wenn <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> Sie auf <b>false festgelegt</b>ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -787,7 +751,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -816,7 +780,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das letzte Element in der <see cref="T:Microsoft.Office.Interop.Word.Rows" /> -Auflistung als ein <see cref="T:Microsoft.Office.Interop.Word.Row" /> Objekt.</summary>
+        <summary>Gibt das letzte Element in der <see cref="T:Microsoft.Office.Interop.Word.Rows" /> Auflistung als <see cref="T:Microsoft.Office.Interop.Word.Row" /> Objekt zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -847,7 +811,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>einzelnen</b> , die den Wert der linke Einzug (in Punkt) darstellt, für die angegebenen Tabellenzeilen.</summary>
+        <summary>Gibt einen Wert vom Typ <b>Single</b> zurück, der den linken Einzugswert (in Punkten) für die angegebenen Tabellenzeilen darstellt, oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -877,10 +841,8 @@
       <Docs>
         <summary>Gibt die Schachtelungsebene der angegebenen Zeilen zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die äußerste Tabelle hat eine Verschachtelungsebene 1. Die Schachtelungsebene der einzelnen nacheinander geschachtelte Tabelle ist eine höher ist als der vorherigen Tabelle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die äußerste Tabelle liegt auf Verschachtelungsbene 1. Die Verschachtelungsebene jeder folgenden geschachtelten Tabelle liegt um 1 höher als die der vorhergehenden Tabelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -937,11 +899,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, worauf sich die horizontale Position einer Gruppe von Zeilen bezieht.</summary>
+        <summary>Gibt an, wie die horizontale Position einer Gruppe von Zeilen relativ ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition" /> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition" />Dies kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>wdRelativeHorizontalPositionCharacter</b>
           </para>
@@ -954,8 +915,7 @@
           <para>
             <b>wdRelativeHorizontalPositionPage</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeVerticalPosition">
@@ -984,11 +944,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, worauf sich die vertikale Position einer Gruppe von Zeilen bezieht.</summary>
+        <summary>Gibt an, wie die vertikale Position einer Gruppe von Zeilen relativ ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalPosition" /> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalPosition" />Dies kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>wdRelativeVerticalPositionLine</b>
           </para>
@@ -1001,8 +960,7 @@
           <para>
             <b>wdRelativeVerticalPositionParagraph</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1026,11 +984,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
-        <remarks>
-          <para>Nach Verwendung dieser Methode können Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Markiert das angegebene Objekt.</summary>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHeight">
@@ -1057,9 +1013,8 @@
         <Parameter Name="HeightRule" Type="Microsoft.Office.Interop.Word.WdRowHeightRule" />
       </Parameters>
       <Docs>
-        <param name="RowHeight">
-          <b>Single</b>erforderlich. Die Höhe der Zeile oder Zeilen in Punkt.</param>
-        <param name="HeightRule">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />. Die Regel zum Festlegen der Höhe für die angegebenen Zeilen. Kann eine der folgenden <b>WdRowHeightRule</b> -Konstanten sein: <b>wdRowHeightAtLeast festgelegt</b><b>WdRowHeightExactly</b><b>WdRowHeightAuto</b></param>
+        <param name="RowHeight">Erforderlicher <b>Single</b>-Wert. Die Höhe der Zeile oder Zeilen in Punkt.</param>
+        <param name="HeightRule">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />. Die Regel zum Festlegen der Höhe für die angegebenen Zeilen. Kann eine der folgenden <b>WdRowHeightRule</b> -Konstanten sein: <b>wdRowHeightAtLeast festgelegt</b><b>wdRowHeightExactly</b><b>wdRowHeightAuto</b></param>
         <summary>Legt die Höhe von Tabellenzeilen fest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1088,14 +1043,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="LeftIndent">
-          <b>Single</b>erforderlich. Der Abstand (in Punkt) zwischen dem aktuellen linken Rand der angegebenen Zeile und dem gewünschten linken Rand.</param>
-        <param name="RulerStyle">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />. Steuert, wie Microsoft Word die Tabelle anpasst, wenn der linke Einzug geändert wird. Kann eine der folgenden <b>WdRulerStyle</b> -Konstanten sein: <b>WdAdjustNone</b> – passt den linken Rand der Zeile oder Zeilen, die Breite aller Spalten nach links oder rechts Zeile(n) beibehalten. Dies ist der Standardwert. <b>WdAdjustSameWidth</b> – passt den linken Rand der ersten Spalte die Position des rechten Rands der Tabelle durch die Breite aller Zellen in der angegebenen Zeile oder Zeilen auf denselben Wert festlegen. <b>WdAdjustFirstColumn</b> – passt den linken Rand nur die erste Spalte die Positionen der anderen Spalten und dem rechten Rand der Tabelle beibehalten. <b>WdAdjustProportional</b> – passt den linken Rand der ersten Spalte die Position des rechten Rands der Tabelle die Breite aller Zellen in der angegebenen Zeile oder Zeilen proportional angepasst.</param>
+        <param name="LeftIndent">Erforderlicher <b>Single</b>-Wert. Der Abstand (in Punkt) zwischen dem aktuellen linken Rand der angegebenen Zeile und dem gewünschten linken Rand.</param>
+        <param name="RulerStyle">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />. Steuert die Art und Weise, in der die Tabelle Microsoft Word angepasst wird, wenn der linke Einzug geändert wird. Kann eine der folgenden <b>WdRulerStyle</b> -Konstanten sein: <b>wdAdjustNone</b> – passt den linken Rand von Zeilen oder Zeilen an, wobei die Breite aller Spalten beibehalten wird, indem Sie nach links oder rechts verschoben werden. Dies ist der Standardwert. <b>wdAdjustSameWidth</b> – passt den linken Rand der ersten Spalte an, wobei die Position des rechten Tabellen Rands beibehalten wird, indem die Breite aller Zellen in der angegebenen Zeile oder den gleichen Zeilen auf denselben Wert festgelegt wird. <b>wdAdjustFirstColumn</b> – passt den linken Rand der ersten Spalte nur an, wobei die Position der anderen Spalten und der rechte Tabellenrand beibehalten wird. <b>wdAdjustProportional</b> – passt den linken Rand der ersten Spalte an und bewahrt die Position des rechten Tabellen Rands, indem die Breite aller Zellen in den angegebenen Zeilen proportional angepasst wird.</param>
         <summary>Legt den Einzug für eine oder mehrere Zeilen in einer Tabelle fest.</summary>
-        <remarks>
-          <para>Das oben beschriebene Verhalten von <b>WdRulerStyle</b> gilt für Tabellen linksbündig ausgerichtet. Verhalten von <b>WdRulerStyle nicht</b> für zentrierten und rechtsbündigen Tabellen kann unerwartete sein. in diesen Fällen sollte die <b>SetLeftIndent</b> -Methode mit Vorsicht verwendet werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das oben beschriebene <b>WdRulerStyle</b> -Verhalten gilt für Links ausgerichtete Tabellen. Das <b>WdRulerStyle</b> -Verhalten für zentrierte und rechtsbündige Tabellen kann unerwartet sein; in diesen Fällen sollte die <b>SetLeftIndent</b> -Methode mit Bedacht verwendet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -1121,7 +1073,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt, das auf die Formatierung der Schattierung des angegebenen Objekts verweist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1152,7 +1104,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Abstand (in Punkt) zwischen Text in benachbarten Spalten in der angegebenen Zeile oder Zeilen.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen Text in benachbarten Spalten der angegebenen Zeile oder Zeilen zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1183,20 +1135,18 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTableDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Richtung in Microsoft Word sortiert der die Zellen in der angegebenen Tabelle oder Zeile.</summary>
+        <summary>Gibt die Richtung zurück, in der die Zellen in der angegebenen Tabelle oder Zeile von Microsoft Word sortiert werden, oder legt diese fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" /> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" />Dies kann eine der folgenden Konstanten sein:</para>
           <para>
             <b>wdTableDirectionLtr</b>
           </para>
           <para>
             <b>wdTableDirectionRtl</b>
           </para>
-          <para>Wenn die <b>TableDirection</b> -Eigenschaft auf <b>WdTableDirectionLtr</b>festgelegt ist, werden die markierten Zeilen die erste Spalte ganz außen links angeordnet. Wenn die <b>TableDirection</b> -Eigenschaft auf <b>WdTableDirectionRtl</b>festgelegt ist, werden die markierten Zeilen die erste Spalte ganz außen angeordnet.</para>
-          <para />
-        </remarks>
+          <para>Wenn die <b>TableDirection</b>-Eigenschaft auf <b>wdTableDirectionLtr</b> festgelegt ist, werden die markierten Zeilen so angeordnet, dass sich die erste Spalte ganz außen links befindet. Wenn die <b>TableDirection</b>-Eigenschaft auf <b>wdTableDirectionRtl</b> festgelegt ist, werden die markierten Zeilen so angeordnet, dass sich die erste Spalte ganz außen rechts befindet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalPosition">
@@ -1225,12 +1175,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den vertikalen Abstand zwischen dem Rand der Zeilen und das Element von angegebenen der <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeVerticalPosition" /> Eigenschaft.</summary>
+        <summary>Gibt den vertikalen Abstand zwischen dem Zeilenrand und dem von der <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeVerticalPosition" /> Eigenschaft angegebenen Element zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Rückgabewert kann eine Zahl, die eine Maßeinheit in Punkt angibt, oder kann eine beliebige gültige <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> Konstante.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei dem Rückgabewert kann es sich um eine Zahl handeln, die eine Maßeinheit in Punkt angibt oder <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> eine beliebige gültige Konstante sein kann.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapAroundText">
@@ -1259,14 +1207,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob Text um die angegebenen Zeilen umbrochen werden soll.</summary>
+        <summary>Bestimmt, ob der Text um die angegebenen Zeilen umbrochen werden soll.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Gibt <b>wdUndefined zurück</b> , wenn nur für einige der angegebenen Zeilen Zeilenumbruchs aktiviert ist.</para>
-          <para>Die-Eigenschaft kann auf <b>True</b> oder <b>False</b>festgelegt werden.</para>
-          <para>Festlegen der <b>WrapAroundText</b> -Eigenschaft auf <b>false festgelegt</b> , wird auch die <see cref="P:Microsoft.Office.Interop.Word.Rows.AllowOverlap" /> -Eigenschaft auf <b>false festgelegt</b>. Die <b>AllowOverlap</b> -Eigenschaft auf <b>True</b> festlegen, wird die <b>WrapAroundText</b> -Eigenschaft auch auf <b>True</b>festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Gibt <b>wdUndefined</b> zurück, wenn der Umbruch nur für einige der angegebenen Zeilen aktiviert ist.</para>
+          <para>Die Eigenschaft kann auf <b>true</b> oder <b>false</b>festgelegt werden.</para>
+          <para>Durch Festlegen der <b>WrapAroundText</b> -Eigenschaft auf <b>false</b> wird <see cref="P:Microsoft.Office.Interop.Word.Rows.AllowOverlap" /> auch die-Eigenschaft auf <b>false</b>festgelegt. Wird die <b>AllowOverlap</b>-Eigenschaft auf <b>True</b> festgelegt, wird die <b>WrapAroundText</b>-Eigenschaft ebenfalls auf <b>True</b> festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

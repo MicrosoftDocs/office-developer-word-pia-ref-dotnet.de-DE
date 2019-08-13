@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2da20928e13bb46286ad0de367984baa39c54808" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670673" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow PvWindow, int CloseReason, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d540bdcf50e7d23cbce5ad054d121597300aa736" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144736" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow PvWindow, int CloseReason, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(PvWindow As ProtectedViewWindow, CloseReason As Integer, ByRef Cancel As Boolean)" />
@@ -37,10 +29,9 @@
   </ReturnValue>
   <Docs>
     <param name="PvWindow">Das geschützte Ansichtsfenster, das geschlossen wird.</param>
-    <param name="CloseReason">Eine Konstante in der <see cref="T:Microsoft.Office.Interop.Word.WdProtectedViewCloseReason" /> Enumeration, die den Grund des geschützten Ansichtsfensters angibt geschlossen wird.</param>
-    <param name="Cancel">
-      <b>false,</b> Wenn das Ereignis auftritt. Wenn die Ereignisprozedur dieses Argument auf <b>true</b>festgelegt wird, wird das Fenster beim Beenden der Prozedur nicht geschlossen. AnmerkungWenn das <b>ProtectedViewWindowsBeforeClose</b> -Ereignis wird aufgerufen, als Teil der <see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Edit(System.Object@,System.Object@,System.Object@)" /> -Methode festlegen <paramref name="Cancel" /> auf <b>"true"</b> ergibt keine Aktion.</param>
-    <summary>Eine <b>Stellvertretung</b> Typ verwendet, um das Hinzufügen eines ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.ProtectedViewWindowBeforeClose" /> Ereignis. <b>ProtectedViewWindowBeforeClose</b> -Ereignis tritt auf, unmittelbar bevor ein Fenster mit geschützter Ansicht oder ein Dokument in einem geschützten Ansichtsfenster geschlossen wird.</summary>
+    <param name="CloseReason">Eine Konstante in der <see cref="T:Microsoft.Office.Interop.Word.WdProtectedViewCloseReason" /> Aufzählung, die den Grund für das Schließen des Fensters "geschützte Ansicht" angibt.</param>
+    <param name="Cancel"><b>false</b> , wenn das Ereignis auftritt. Wenn die Ereignisprozedur dieses Argument auf <b>true</b>festgelegt wird, wird das Fenster nicht geschlossen, wenn die Prozedur abgeschlossen ist. AnmerkungWenn das <b>ProtectedViewWindowsBeforeClose</b> <see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Edit(System.Object@,System.Object@,System.Object@)" /> -Ereignis als Teil der Methode aufgerufen wird, wird <paramref name="Cancel" /> durch Festlegen auf <b>true</b> keine Aktion generiert.</param>
+    <summary>Ein <b>Delegattyp</b> , der zum Hinzufügen eines Ereignishandlers für das <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.ProtectedViewWindowBeforeClose" /> Ereignis verwendet wird. Das <b>ProtectedViewWindowBeforeClose</b> -Ereignis tritt unmittelbar vor dem Schließen eines Fensters mit geschützter Ansicht oder eines Dokuments in einem Fenster mit geschützter Ansicht auf.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

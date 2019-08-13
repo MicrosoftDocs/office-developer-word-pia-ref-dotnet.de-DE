@@ -1,13 +1,5 @@
 <Type Name="Subdocument" FullName="Microsoft.Office.Interop.Word.Subdocument">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="474871ab0e9bcec0803236bb55c332236b2e7d60" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669420" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocument" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c62a47b9e81261c6e830b9e0cc33dec363fa4210" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146073" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocument" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocument" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocument" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocument" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein Filialdokument in einem Dokument oder Bereich an.</summary>
-    <remarks>
-      <para>Das <b>Subdocument</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> Auflistung. <b>Subdocuments</b> -Auflistung enthält alle Filialdokumente in einem Bereich oder Dokument.</para>
-      <para>Verwendung <b>Filialdokumente</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Subdocument</b> -Objekt zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> oder <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> -Methode, um ein Filialdokument zu einem Dokument hinzugefügt.</para>
-      <para />
-    </remarks>
+    <summary>Stellt ein Filialdokument in einem Dokument oder Bereich dar.</summary>
+    <remarks><para>Das <b>Subdocument</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> Auflistung. Die <b></b> Subdocuments-Auflistung enthält alle Filialdokumente in einem Bereich oder Dokument.</para>
+      <para>Verwenden <b></b>Sie Subdocuments<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes SubDocument-Objekt zurückzugeben. <b></b></para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> oder-Methode, um ein Filialdokument zu einem Dokument hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -143,8 +131,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene Filialdokument in einer Datei gespeichert wurde.</summary>
+        <summary><b>True</b>, wenn das angegebene Filialdokument in einer Datei gespeichert wurde.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +159,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Überschriftenebene des Filialdokuments zu erstellen.</summary>
+        <summary>Gibt die Überschriftenebene zurück, mit der das Filialdokument erstellt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +218,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,7 +244,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Öffnet das angegebene Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt, das das geöffnete Objekt darstellt.</summary>
+        <summary>Öffnet das angegebene Objekt. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück, das das geöffnete Objekt darstellt.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,12 +302,10 @@
       <Docs>
         <summary>Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nicht den Pfad ein nachfolgendes Zeichen enthalten, z. B. "C:\MSOffice" oder "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" /> -Eigenschaft auf den Dateinamen ohne den Pfad zurück</para>
+        <remarks><para>Der Pfad enthält kein nachfolgendes Zeichen, beispielsweise "C:\MSOffice" oder "http://MyServer". Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" /> die-Eigenschaft, um den Dateinamen ohne den Pfad zurückzugeben.</para>
           <para>
-            <b>Hinweis</b> Sie können <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl sie Schrägstriche (/) und der <b>PathSeparator</b> -Eigenschaft enthalten wird standardmäßig auf einen umgekehrten Schrägstrich (\).</para>
-          <para />
-        </remarks>
+            <b>Hinweis:</b>  Sie können die <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl Sie Schrägstriche (/) enthalten und die <b>PathSeparator</b> -Eigenschaft\)standardmäßig einen umgekehrten Schrägstrich (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -346,12 +331,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <b>Range</b> -Methode des eine <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie unter der <b>Range</b> - <see cref="T:Microsoft.Office.Interop.Word.Document" /> Methode <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> eines oder-Objekts.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -376,12 +359,10 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, der bei Teilung des Filialdokuments zu einem separaten Dokument wird.</param>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, der bei Teilung des Filialdokuments zu einem separaten Dokument wird.</param>
         <summary>Teilt ein vorhandenes Filialdokument in Zentraldokument- oder Gliederungsansicht in zwei Filialdokumente auf derselben Ebene auf.</summary>
-        <remarks>
-          <para>Die Abteilung ist am Anfang des angegebenen Bereichs. Wenn das aktive Dokument in Zentraldokument oder Gliederungsansicht ist nicht oder der Bereich nicht am Anfang eines Absatzes in einem Filialdokument ist, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Teilung erfolgt am Anfang des angegebenen Bereichs. Wenn sich das aktive Dokument nicht in einer Hauptdokument-oder Gliederungsansicht befindet oder wenn sich der Bereich nicht am Anfang eines Absatzes in einem Filialdokument befindet, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

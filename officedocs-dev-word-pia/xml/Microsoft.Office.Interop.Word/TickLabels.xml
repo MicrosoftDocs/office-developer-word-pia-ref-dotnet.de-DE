@@ -1,13 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Word.TickLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b1c2c7fc3292641641494659a356494a0e138bf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670586" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f6662574427978805ce85168409794e1affd85c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143812" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -27,14 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Teilstrichbeschriftungen dar, die Teilstrichen auf einer Diagrammachse zugeordnet sind.</summary>
-    <remarks>
-      <para>Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Teilstrich Bezeichnung darstellt. Sie müssen alle teilstrichbeschriftungen zurückgeben, als Einheit</para>
-      <para>Teilstrichen Beschriftungstext der Rubrikenachse stammen aus den Namen der zugeordneten Kategorie im Diagramm. Der Default Teilstrichen Beschriftungstext der Rubrikenachse ist die Zahl, die die Position der Kategorie relativ zum linken Ende der Achse angibt. Ohne Beschriftung so ändern Sie die Anzahl der Teilstrich markiert zwischen teilstrichbeschriftungen, müssen Sie ändern die <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> -Eigenschaft für die Rubrikenachse.</para>
-      <para>Teilstrich Text im Bezeichnungsfeld wird für die Größenachse berechnet wird basierend auf den <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />, <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />, und <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> Eigenschaften der Größenachse. Um der Text im Bezeichnungsfeld Teilstrich Wert für die Größenachse zu ändern, müssen Sie Werte für diese Eigenschaften des maßgeblichen ändern.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" /> Eigenschaft, um das <b>TickLabels</b> -Objekt zurückzugeben. Im folgenden Beispiel wird das Zahlenformat für die teilstrichbeschriftungen auf der Größenachse des ersten Diagramms im aktiven Dokument festgelegt.</para>
+    <remarks><para>Dieses Objekt ist keine Auflistung. Es gibt kein Objekt, das eine einzelne Teilstrichbeschriftung darstellt. Sie müssen alle Teilstrichbeschriftungen als Einheit zurückgeben.</para>
+      <para>Den Text für die Teilstrichbeschriftungen auf der Rubrikenachse liefert der Name der jeweiligen Rubrik im Diagramm. Standardmäßig werden die Teilstriche der Rubrikenachse jeweils mit der Nummer beschriftet, die die Position der Rubrik relativ zum linken Ende der Achse angibt. Wenn Sie die Anzahl der nicht beschrifteten Teilstriche zwischen Teilstrichbeschriftungen ändern möchten, müssen Sie <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> die Eigenschaft für die Rubrikenachse ändern.</para>
+      <para>Der Text der Teilstrichbeschriftung für die Größenachse wird basierend auf den <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> Eigenschaften der Größenachse berechnet. Sie müssen die Werte dieser Eigenschaften ändern, wenn Sie den Teilstrichbeschriftungstext für die Größenachse ändern möchten.</para>
+      <para> </para></remarks>
+    <example><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" /> die-Eigenschaft, um das <b>TickLabels</b> -Objekt zurückzugeben. Im folgenden Beispiel wird das Zahlenformat für die teilstrichbeschriftungen auf der Größenachse des ersten Diagramms im aktiven Dokument festgelegt.</para>
       <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -1059,8 +1048,7 @@
 
 
 
-End With&lt;/span&gt;</code>
-    </example>
+End With&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -1117,11 +1105,10 @@ End With&lt;/span&gt;</code>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Dieses Beispiel zeigt eine Meldung an, welcher Anwendung das Objekt MyObject erstellt wurde.</para>
+        <example><para>Im folgenden Beispiel wird eine Meldung angezeigt, die angibt, mit welcher Anwendung das Objekt myObject erstellt wurde.</para>
           <code>&lt;span class="label"&gt;Set myObject = ActiveDocument 
 
 
@@ -1380,8 +1367,7 @@ End With&lt;/span&gt;</code>
 
 If myObject.&lt;/span&gt;
 &lt;i&gt;Application&lt;/i&gt;
-&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="AutoScaleFont">
@@ -1417,7 +1403,7 @@ If myObject.&lt;/span&gt;
       </ReturnValue>
       <Docs>
         <summary>Für die interne Verwendung reserviert.</summary>
-        <value>Gibt <see cref="T:System.Object" />.</value>
+        <value>Gibt <see cref="T:System.Object" />zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1446,10 +1432,8 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Read-only <b>lang</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1529,7 +1513,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> -Objekt, das die Schriftart des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1559,7 +1543,7 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
 
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1590,12 +1574,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest, ob eine Achse mit mehreren Ebenen ist.  <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Legt fest, ob eine Achse mehrstufig ist.  <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Standardwert für diese Eigenschaft ist <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der Standardwert für diese Eigenschaft ist <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1654,10 +1636,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Docs>
         <summary>Gibt einen <b>String</b>-Wert zurück, der den Formatierungscode für das Objekt darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <b>NumberFormat</b> und <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" /> Eigenschaften.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der Formatierungscode ist dieselbe Zeichenfolge wie die Option Formatierungscode im Dialogfeld Zellen formatieren. Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatcode <b></b> als die <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" /> NumberFormat und Eigenschaften.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -1686,12 +1666,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das Zahlenformat (so, dass das Zahlenformat in die Beschriftungen ändert, wenn es in den Zellen ändert) an die Zellen verknüpft ist. Lese-/Schreibzugriff <b>vom Typ Boolean</b>.</summary>
+        <summary><b>True,</b> Wenn das Zahlenformat (so, dass das Zahlenformat in die Beschriftungen ändert, wenn es in den Zellen ändert) an die Zellen verknüpft ist. Lese-/Schreibzugriff <b>vom Typ Boolean</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>In diesem Beispiel wird das Zahlenformat für teilstrichbeschriftungen mit den entsprechenden Zellen für die Größenachse des ersten Diagramms im aktiven Dokument verknüpft.</para>
+        <example><para>In diesem Beispiel wird das Zahlenformat für Teilstrichbeschriftungen mit seinen Zellen für die Größenachse des ersten Diagramms im aktiven Dokument verknüpft.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -2206,8 +2184,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
 
         .Chart.Axes(xlValue).TickLabels.&lt;/span&gt;
 &lt;i&gt;NumberFormatLinked&lt;/i&gt;
-&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -2236,12 +2213,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein <b>Variant</b> -Werts, das den Formatierungscode des Objekts als Zeichenfolge in der Sprache des Benutzers darstellt.</summary>
+        <summary>Gibt einen <b>Variant</b>-Wert zurück, der den Formatierungscode des Objekts als Zeichenfolge in der Sprache des Benutzers darstellt, oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatierungscode als die <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" /> und <b>NumberFormatLocal</b> -Eigenschaften.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>Format</b> -Funktion verwendet andere Zeichenfolgen im Formatcode <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" /> als die Eigenschaften und <b>NumberFormatLocal</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -2272,12 +2247,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Docs>
         <summary>Gibt einen <b>Long</b>-Wert zurück, der den Abstand zwischen den Beschriftungsebenen und den Abstand zwischen der ersten Ebene und der Achsenlinie darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Standardabstand ist 100 Prozent, die den Standardabstand zwischen der Beschriftung und der Achsenlinie darstellt. Der Wert kann einen ganzzahligen Prozentwert von 0 bis 1000, relativ zum Schriftgrad der Achsenbeschriftung entsprechen.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>In diesem Beispiel wird der Beschriftungsabstand der Rubrikenachse des ersten Diagramms im aktiven Dokument auf das Doppelte der aktuellen Einstellung festgelegt, wenn der Versatz kleiner als 500 ist.</para>
+        <remarks><para>Der Standardabstand beträgt 100 Prozent und stellt den Standardabstand zwischen den Achsenbeschriftungen und der Achsenlinie dar. Der Wert kann eine ganze Prozentzahl zwischen 0 und 1000 darstellen, relativ zur Schriftgröße der Achsenbeschriftung.</para>
+          <para> </para></remarks>
+        <example><para>In diesem Beispiel wird der Beschriftungsabstand der Rubrikenachse für das erste Diagramm im aktiven Dokument auf das Doppelte der aktuellen Einstellung festgelegt, wenn der Offset kleiner als 500 ist.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -3052,8 +3024,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
 &lt;i&gt;Offset&lt;/i&gt;
 &lt;span class="label"&gt;= .&lt;/span&gt;
 &lt;i&gt;Offset&lt;/i&gt;
-&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -3082,12 +3053,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlTickLabelOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <b>Long</b>-Wert zurück, der die Textausrichtung darstellt, oder legt diesen fest.</summary>
+        <summary>Gibt einen <b>Long</b>-Wert zurück, der die Textausrichtung darstellt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft kann eine Ganzzahl zwischen – 90 und 90 Grad oder eine der entsprechen den <see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" /> Konstanten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Der Wert dieser Eigenschaft kann ein ganzzahliger Wert von – 90 bis 90 Grad oder eine der <see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" /> Konstanten sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -3144,7 +3113,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen eines <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> -Konstante, die leserichtung für das angegebene Objekt darstellt. <b>Long</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> Konstante zurück, die die Leserichtung für das angegebene Objekt darstellt, oder legt diese fest. <b>Long</b> mit Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

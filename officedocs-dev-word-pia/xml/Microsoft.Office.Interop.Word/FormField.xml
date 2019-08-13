@@ -1,13 +1,5 @@
 <Type Name="FormField" FullName="Microsoft.Office.Interop.Word.FormField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="137dfb21b0a9bdd9ac870c9196378e48d20ab52e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669974" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4de4cb33d6d8353de0dcfc472045a254de650268" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146815" /></Metadata><TypeSignature Language="C#" Value="public interface FormField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FormField" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormField" />
@@ -26,16 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein einzelnes Formular dar.</summary>
-    <remarks>
-      <para>
-        <b>FormField</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung.</para>
-      <para>Verwendung <b>FormFields</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine Textmarkenname oder die Indexzahl darstellt, um ein einzelnes <b>FormField</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Formularfelds in der Auswahl, einem Bereich oder einem Dokument.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> -Methode mit dem <b>FormFields</b> -Objekt zum Hinzufügen eines Formularfelds.</para>
-      <para>Verwenden die <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />, <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, und <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> Eigenschaften mit dem <b>FormField</b> -Objekt zurückgeben der <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, und <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> Objekte.</para>
-      <para />
-    </remarks>
+    <summary>Stellt ein einzelnes Formularfeld dar.</summary>
+    <remarks><para>Das <b>FormField</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung.</para>
+      <para>Verwenden <b></b>Sie FormFields<paramref name="index" />(), <paramref name="index" /> wobei ein Textmarke-Name oder eine Indexnummer ist, <b></b> um ein einzelnes FormField-Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Formularfelds in der Auswahl, im Bereich oder im Dokument dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> die-Methode mit dem <b>FormFields</b> -Objekt, um ein Formularfeld hinzuzufügen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />die <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />-, <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> -und- <b></b> Eigenschaften mit dem FormField- <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />Objekt <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, um <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> die-,-und-Objekte zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,13 +81,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die Verweise auf das angegebene Formularfeld automatisch aktualisiert werden, sobald das Feld verlassen wird.</summary>
+        <summary>Bestimmt, ob Verweise auf das angegebene Formularfeld automatisch aktualisiert werden, wenn das Feld beendet wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Gibt diese Eigenschaft <b>true,</b> Falls Verweise auf das angegebene Formularfeld automatisch aktualisiert werden, wenn das Feld beendet wird, und <b>False</b> Wenn nicht. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Ein REF-Feld kann Verweis auf den Inhalt eines Formularfelds verwendet werden. Zum Beispiel {REF Teilergebnis} das Formularfeld der Teilergebnis Textmarke verweist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn Verweise auf das angegebene Formularfeld automatisch aktualisiert werden, wenn das Feld beendet wird, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Ein REF-Feld kann als Verweis auf den Inhalt eines Formularfelds verwendet werden. Zum Beispiel verweist {REF Zwischensumme} auf das Formularfeld, das durch die Textmarke Zwischensumme gekennzeichnet ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckBox">
@@ -124,12 +111,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CheckBox</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> -Objekt, das ein Kontrollkästchen-Formularfeld darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> Objekt zurück, das ein Kontrollkästchen-Formularfeld darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <b>CheckBox</b> -Eigenschaft zugewiesen ist ein <see cref="T:Microsoft.Office.Interop.Word.FormField" /> -Objekt, das ein Kontrollkästchen-Formularfeld die-Eigenschaft ist nicht kein Fehler, aber die <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" /> -Eigenschaft des zurückgegebenen Objekts ist <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <b>CheckBox</b> -Eigenschaft auf ein <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekt angewendet wird, bei dem es sich nicht um ein Kontrollkästchen-Formularfeld handelt <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" /> , schlägt die Eigenschaft nicht fehl, aber die Eigenschaft für das zurückgegebene Objekt ist <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -182,11 +167,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -262,12 +245,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DropDown</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> -Objekt, das ein Dropdown-Formularfeld darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> Objekt zurück, das ein Dropdown-Formularfeld darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <b>DropDown</b> -Eigenschaft zugewiesen ist ein <see cref="T:Microsoft.Office.Interop.Word.FormField" /> -Objekt, das ein Dropdown-Formularfeld dar, die Eigenschaft ist nicht kein Fehler, aber die <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" /> -Eigenschaft des zurückgegebenen Objekts ist <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <b>Dropdown</b> -Eigenschaft auf ein <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekt angewendet wird, bei dem es sich nicht um ein Dropdown-Formularfeld handelt, schlägt <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" /> die Eigenschaft nicht fehl, die Eigenschaft für das zurückgegebene Objekt wird jedoch auf <b>false festgelegt</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -298,11 +279,9 @@
       <Docs>
         <summary>Bestimmt, ob ein Formularfeld aktiviert ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Gibt diese Eigenschaft <b>true,</b> Wenn ein Formularfeld aktiviert ist, und <b>False</b> Wenn nicht. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Wenn ein Formularfeld aktiviert ist, dessen Inhalt geändert werden können, wie das Formular ausgefüllt ist</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn ein Formularfeld aktiviert ist, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Der Inhalt eines aktivierten Formularfelds kann beim Ausfüllen des Formulars geändert werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EntryMacro">
@@ -331,12 +310,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen eines Makroname Eintrag für das angegebene Formularfeld (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, oder <see cref="T:Microsoft.Office.Interop.Word.TextInput" />).</summary>
+        <summary>Gibt einen Eintrags Makronamen für das angegebene Formularfeld zurück oder<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />legt <see cref="T:Microsoft.Office.Interop.Word.DropDown" />ihn fest <see cref="T:Microsoft.Office.Interop.Word.TextInput" />(, oder).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Eingabe-Makro ausgeführt, wenn das Formularfeld den Fokus erhält.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Eingabe-Makro wird bei Aktivierung des Formularfelds ausgeführt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExitMacro">
@@ -365,12 +342,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer Exit Makroname für das angegebene Formularfeld (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, oder <see cref="T:Microsoft.Office.Interop.Word.TextInput" />).</summary>
+        <summary>Gibt einen Exit-Makronamen für das angegebene Formularfeld zurück oder<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />legt <see cref="T:Microsoft.Office.Interop.Word.DropDown" />ihn fest <see cref="T:Microsoft.Office.Interop.Word.TextInput" />(,, oder).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das Exit-Makro ausgeführt wird, wenn das Formularfeld den Fokus verliert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Makro zum Schließen wird aufgerufen, wenn das Formularfeld den Fokus verliert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -399,12 +374,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Text, der in einem Meldungsfeld angezeigt wird, wenn das Formularfeld den Fokus hat und der Benutzer F1 drückt.</summary>
+        <summary>Gibt den Text zurück, der in einem Meldungsfeld angezeigt wird, wenn sich der Cursor im Formularfeld befindet und der Benutzer die F1-TASTE drückt, oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" /> -Eigenschaft auf <b>True</b>festgelegt ist, <b>HelpText</b> gibt den Wert der Textzeichenfolge. Wenn <b>OwnHelp</b> auf <b>False</b>festgelegt ist, gibt <b>HelpText</b> den Namen eines AutoText-Eintrags, der Hilfetext für das Formularfeld enthält.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" /> Eigenschaft auf <b>true</b>festgelegt ist, gibt <b>HelpText</b> den Textzeichenfolgenwert an. Wenn <b>OwnHelp</b> auf <b>False</b> festgelegt ist, gibt <b>HelpText</b> den Namen eines AutoText-Eintrags an, der Hilfetext für das Formularfeld enthält.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -433,7 +406,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -492,12 +465,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Quelle des Texts, der in einem Meldungsfeld angezeigt wird, wenn ein Formularfeld den Fokus hat und der Benutzer F1 drückt.</summary>
+        <summary>Legt die Quelle des Texts fest, der in einem Meldungsfeld angezeigt wird, wenn ein Formularfeld den Fokus hat oder der Benutzer die F1-TASTE drückt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn <b>True</b>, die vom angegebenen Text der <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" /> -Eigenschaft wird angezeigt. Bei <b>"false"</b>, der Text im AutoText-Eintrag durch die <b>HelpText</b> -Eigenschaft angegebene angezeigt wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei <b>true</b>wird der durch die <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" /> -Eigenschaft angegebene Text angezeigt. Bei <b>False</b> wird der im AutoText-Eintrag durch die <b>HelpText</b>-Eigenschaft angegebene Text angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OwnStatus">
@@ -526,12 +497,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Quelle des Texts, der angezeigt wird, in der Statusleiste angezeigt, wenn ein Formularfeld den Fokus hat.</summary>
+        <summary>Legt die Quelle des Texts fest, der bei einem Formularfeld, das den Fokus hat, in der Statusleiste angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die Eigenschaft <b>True</b>zurückgibt, wird der Text angegeben, durch die <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" /> -Eigenschaft wird angezeigt, und die <b>StatusText</b> -Eigenschaft wird angezeigt, wenn von <b>"false"</b>, den Text des AutoText-Eintrags angegeben. Legen Sie den Eigenschaftswert auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die Eigenschaft <b>true</b>zurückgibt, wird der von der <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" /> Eigenschaft angegebene Text angezeigt, und wenn <b>false</b>, wird der Text des durch die <b>Statustext</b> -Eigenschaft angegebenen AutoText-Eintrags angezeigt. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -613,12 +582,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> unter der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -647,12 +614,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> unter der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -676,11 +641,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
-        <remarks>
-          <para>Nach Verwendung dieser Methode können Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Markiert das angegebene Objekt.</summary>
+        <remarks><para>Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusText">
@@ -709,12 +672,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Text, der angezeigt wird, in der Statusleiste angezeigt, wenn ein Formularfeld den Fokus hat.</summary>
+        <summary>Gibt den Text zurück, der in der Statusleiste angezeigt wird, wenn ein Formularfeld den Fokus hat, oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" /> -Eigenschaft auf <b>True</b>festgelegt ist, die <b>StatusText</b> -Eigenschaft gibt den Text in der Statusleiste. Wenn die <b>OwnStatus</b> -Eigenschaft auf <b>False</b>festgelegt ist, gibt die <b>StatusText</b> -Eigenschaft den Namen eines AutoText-Eintrags, der Text in der Statusleiste für das Formularfeld enthält.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" /> Eigenschaft auf <b>true</b>festgelegt ist, gibt die <b>Statustext</b> -Eigenschaft den Text der Statusleiste an. Wenn die <b>OwnStatus</b>-Eigenschaft auf <b>False</b> festgelegt ist, gibt die <b>StatusText</b>-Eigenschaft den Namen eines AutoText-Eintrags an, der den Statusleistentext für das Formularfeld enthält.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextInput">
@@ -740,13 +701,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextInput</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> -Objekt, das ein Textformularfeld repräsentiert.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> Objekt zurück, das ein Textformularfeld darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die <b>TextInput</b> -Eigenschaft auf ein <b>FormField</b> -Objekt, die ein Dropdown-Formularfeld ist angewendet wird, die Eigenschaft kein Fehler, aber die <see cref="P:Microsoft.Office.Interop.Word.TextInput.Valid" /> -Eigenschaft des zurückgegebenen Objekts ist <b>False</b>.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.FormField.Result" /> -Eigenschaft mit dem <b>FormField</b> -Objekt zurückgeben oder Festlegen des Inhalts einer <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> -Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <b>TextInput</b> -Eigenschaft auf ein <b>FormField</b> -Objekt angewendet wird, bei dem es sich nicht um ein Dropdown-Formularfeld handelt, <see cref="P:Microsoft.Office.Interop.Word.TextInput.Valid" /> schlägt die Eigenschaft nicht fehl, aber die Eigenschaft für das zurückgegebene Objekt ist <b>false</b>.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.Result" /> die-Eigenschaft mit dem <b>FormField</b> -Objekt, um den Inhalt eines <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> Objekts zurückzugeben oder festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

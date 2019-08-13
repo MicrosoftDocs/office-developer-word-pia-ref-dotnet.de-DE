@@ -1,13 +1,5 @@
 <Type Name="SmartTagRecognizer" FullName="Microsoft.Office.Interop.Word.SmartTagRecognizer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1596270bff23eea1f59ab9bdc76d1e9433b328f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669041" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f6682dbac9852e24913ff87211561eae8bef090" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143980" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagRecognizer" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Installierte Komponenten, die Text mit Typinformationen bezeichnen darstellt.</summary>
-    <remarks>
-      <para>Die Adresse (auf Englisch) Smarttag-Komponente enthält Prüfer für Straße, Ort, Bundesland und Postleitzahl für andere verwandte Elemente. Wenn ein Benutzer eine installierte Komponente per Code oder mithilfe der Registerkarte Smarttags im Dialogfeld AutoKorrektur aktiviert, versieht Microsoft Word den Text, der diese Elemente in einem Dokument entspricht.</para>
+    <summary>Stellt installierte Komponenten dar, die Text mit Typinformationen bezeichnen.</summary>
+    <remarks><para>Die Smarttag-Komponente Address (English) enthält Erkennungsmodule für Street, City, State und Postleitzahl, unter anderem Adressen bezogene Elemente. Wenn ein Benutzer eine installierte Komponente entweder über Code oder mithilfe der Registerkarte Smarttags im Dialogfeld automatisch korrigieren aktiviert, Microsoft Word den Text, der diese Elemente in einem Dokument entspricht, beschriften.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />, und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich, dass jedes Element, das eine Komponente Smarttag erkennt ein <b>SmartTagType</b> -Objekt ist. "Stadt" in der Adresse Smarttag-Komponente ist beispielsweise ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttag-Typ City verfügt über verbundene <b>SmartTagRecognizer</b> -Objekten (der Teil der Smarttag-Komponente, die Smarttags vom Typ "Stadt" in Dokumenten erkennt) und <b>SmartTagAction</b> -Objekte (der Teil der Smarttag-Komponente, die Aktionen bereitstellt im Zusammenhang mit der bestimmten Smarttag-Typ, der Nachschlagen einer erkannten Stadt in Microsoft MapPoint auf MSN). Einfach ausgedrückt, ist die Kennzeichnung, die Aktionsbehandlungsroutine bereit und beide ist der Typ des Smarttags, deren Funktionsweise auf.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> -Auflistung, um ein einzelnes <b>SmartTagRecognizer</b> -Objekt zurückzugeben. Nachdem ein <b>SmartTagRecognizer</b> -Objekt zurückgegeben wurde, können Sie bestimmen, ob Smarttag-Erkennung für die Anwendung aktiviert sind.</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich darauf, dass jedes Element, das eine Smarttag-Komponente erkennt, ein <b>SmartTagType</b> -Objekt ist. Beispielsweise ist "City" in der Smarttag-Adresskomponente ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttagtyp City enthält verwandte <b>SmartTagRecognizer</b> -Objekte (den Teil der Smarttag-Komponente, der Smarttags vom Typ "City" in Documents erkennt) und <b>Smarttag</b> Action-Objekte (der Teil der Smarttag-Komponente, der die Aktionen bereitstellt. im Zusammenhang mit dem bestimmten Smarttagtyp, der möglicherweise die Suche nach einer anerkannten Stadt in Microsoft MapPoint unter MSN umfasst). Einfach ausgedrückt: das Erkennungsmodul führt die Benennung aus, der Aktionshandler bietet Endbenutzerfunktionen, und was bindet sie zusammen, ist der Typ des Smarttags, an dem Sie arbeiten.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> der Auflistung, um ein einzelnes <b>SmartTagRecognizer</b> -Objekt zurückzugeben. Nachdem ein <b>SmartTagRecognizer</b> -Objekt zurückgegeben wurde, können Sie bestimmen, ob Smarttag-Erkennungsmodule für die Anwendung aktiviert sind.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +83,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Beschriftung, die die angegebene Smarttag-Erkennung identifiziert.</summary>
+        <summary>Gibt die Bezeichnung zurück, die das angegebene Smarttag-Erkennungsmodul identifiziert.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,11 +116,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -165,8 +153,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn ein-Erkennung Smarttag aktiviert ist.</summary>
+        <summary><b>True</b> , wenn ein Smarttag-Erkennungsmodul aktiviert ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,7 +184,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den vollständigen Namen der ein <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" /> -Objekt, einschließlich des Pfads.</summary>
+        <summary>Gibt den vollständigen Namen eines <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" /> Objekts an, einschließlich des Pfads.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,12 +246,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die programmkennung (ProgID) für das angegebene Objekt.</summary>
+        <summary>Ruft den programmgesteuerten Bezeichner (ProgID) für das angegebene Objekt ab.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Dynamischem Datenaustausch (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie nach Möglichkeit eine sicherere Alternative zu DDE.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

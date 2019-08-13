@@ -1,13 +1,5 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Word.ChartColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2cbca0bca2527cc63516d8972ee2ec068238e367" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670515" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="55a04dd1372bae2f5242c5656e5564517b5a2549" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142278" /></Metadata><TypeSignature Language="C#" Value="public interface ChartColorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartColorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartColorFormat" />
@@ -27,8 +19,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Farbe eines einfarbigen Objekts oder die Vordergrund- bzw. Hintergrundfarbe eines Objekts mit Farbverlauf oder gemusterter Füllung dar.</summary>
-    <remarks>
-      <para>Verwenden Sie eine der Eigenschaften aufgeführt, in der folgenden Tabelle zurückgegeben eine <see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" /> -Objekt.</para>
+    <remarks><para>Verwenden Sie eine der in der folgenden Tabelle aufgeführten Eigenschaften, um ein <see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" /> Objekt zurückzugeben.</para>
       <list type="table">
         <item>
           <description>
@@ -36,7 +27,8 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-          </description>Hintergrundfüllfarbe (bei schattierter oder strukturierter Füllung)
+          </description>
+          <description>Füllfarbe für den Hintergrund (bei einer schattierten oder gemusterten Füllung)</description>
         </item>
         <item>
           <description>
@@ -44,11 +36,11 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-          </description>Vordergrund Füllung Farbe (oder nur die Farbe einer einfarbigen Füllung)
+          </description>
+          <description>Vordergrundfüllfarbe (oder nur die Farbe einer einfarbigen Füllung)</description>
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -105,10 +97,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt um die Anwendung dieses Objekts zurückzugeben). Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Wenn Sie mit einem Objektbezeichner verwendet wird, gibt diese <see cref="T:Microsoft.Office.Interop.Word._Application" /> Eigenschaft ein Objekt zurück, das den Ersteller des angegebenen Objekts darstellt (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben). Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,13 +126,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD".  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -169,9 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,10 +182,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die den Rot-Grün-Blau-Wert der angegebenen Farbe darstellt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die den Rot-Grün-Blau-Wert der angegebenen Farbe darstellt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,10 +213,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Index einer Farbe in der aktuellen Farbschema fest.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt den Index einer Farbe im aktuellen Farbschema zurück oder legt diesen fest.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,12 +241,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>ganzzahligen</b> Wert dar, der die Farbe formatieren geben.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gibt eine der folgenden <see cref="T:Microsoft.Office.Core.MsoColorType" /> Enumeration-Werte:</para>
+        <summary>Gibt einen <b>ganzzahligen</b> Wert zurück, der den Farb Formattyp darstellt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Diese Eigenschaft gibt einen der folgenden <see cref="T:Microsoft.Office.Core.MsoColorType" /> Aufzählungswerte zurück:</para>
           <list type="bullet">
             <item>
               <para>
@@ -279,8 +256,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

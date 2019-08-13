@@ -1,13 +1,5 @@
 <Type Name="StoryRanges" FullName="Microsoft.Office.Interop.Word.StoryRanges">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8d88da35103c95cabcdd68d3af81c9af0d429c7d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669303" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StoryRanges : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b1737872c1ea38c8e74f55ed04f58b48e1c4b7f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143959" /></Metadata><TypeSignature Language="C#" Value="public interface StoryRanges : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StoryRanges implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StoryRanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface StoryRanges&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekten, die Artikel in einem Dokument darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.StoryRanges" /> -Eigenschaft auf die <b>StoryRanges</b> -Auflistung zurückzugeben.</para>
-      <para>Der <b>Add</b> -Methode ist nicht verfügbar für die <b>StoryRanges</b> -Auflistung. Die Anzahl der Artikel in der <b>StoryRanges</b> -Auflistung ist endlich.</para>
-      <para>Verwendung <b>StoryRanges</b>(<paramref name="index" />), wobei <paramref name="index" /> ist ein <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" /> -Konstante enthält, um einen einzelnen Textabschnitt als <b>Range</b> -Objekt zurückzugeben.</para>
-      <para>, Wenn Sie versuchen, einen Textabschnitt zurückzugeben, die in das angegebene Dokument nicht verfügbar ist, tritt ein Fehler auf.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Range.NextStoryRange" /> -Eigenschaft auf alle Textabschnitte in einem Dokument durchlaufen.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekten, die Textabschnitte in einem Dokument darstellen.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.StoryRanges" /> die-Eigenschaft, um die <b>StoryRanges</b> -Auflistung zurückzugeben.</para>
+      <para>Die <b>Add</b> -Methode ist für die <b>StoryRanges</b> -Auflistung nicht verfügbar. Die Anzahl der Artikel in der <b>StoryRanges</b> -Auflistung ist endlich.</para>
+      <para>Verwenden <b></b>Sie StoryRanges<paramref name="index" />(), <paramref name="index" /> wobei eine <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" /> Konstante ist, um einen einzelnen Textabschnitt als <b>Range</b> -Objekt zurückzugeben.</para>
+      <para>Wenn Sie versuchen, einen Text zurückzugeben, der im angegebenen Dokument nicht verfügbar ist, tritt ein Fehler auf.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Range.NextStoryRange" /> die-Eigenschaft, um alle Textabschnitte in einem Dokument zu durchlaufen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,11 +112,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -187,8 +175,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdStoryType" />
       </Parameters>
       <Docs>
-        <param name="Index">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" />. Die angegebene Textabschnittsart. Eine der folgenden <b>WdStoryType</b> -Konstanten kann sein. <b>wdCommentsStory</b><b>wdEndnotesStory</b><b>wdEvenPagesFooterStory</b><b>wdEvenPagesHeaderStory</b><b>wdFirstPageFooterStory</b><b>wdFirstPageHeaderStory</b><b>wdFootnotesStory</b><b>wdMainTextStory</b><b>wdPrimaryFooterStory</b><b>wdPrimaryHeaderStory</b><b>wdTextFrameStory</b></param>
-        <summary>Gibt einen einzelnen Textabschnitt eines Bereichs oder einer Auswahl als ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt.</summary>
+        <param name="Index">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" />. Die angegebene Textabschnittsart. Dies kann eine der folgenden <b>WdStoryType</b> -Konstanten sein: <b>wdCommentsStory</b> <b>wdEndnotesStory</b> <b>wdEvenPagesFooterStory</b> <b>wdEvenPagesHeaderStory</b> <b>wdFirstPageFooterStory</b> <b>wdFirstPageHeaderStory</b> <b>wdFootnotesStory</b> <b>wdMainTextStory</b> <b>wdPrimaryFooterStory</b> <b>wdPrimaryHeaderStory</b> <b>wdTextFrameStory</b></param>
+        <summary>Gibt einen einzelnen Textabschnitt eines Bereichs oder einer Auswahl als <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

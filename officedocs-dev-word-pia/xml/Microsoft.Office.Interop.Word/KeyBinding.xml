@@ -1,13 +1,5 @@
 <Type Name="KeyBinding" FullName="Microsoft.Office.Interop.Word.KeyBinding">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc64b4fc8db5345fc3e67c15c1eeed23c8027af5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670360" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBinding" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="df71ed001e9153c7b8aaaebf2ea2bd7c4f797a38" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147949" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBinding" />
@@ -26,14 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine benutzerdefinierte Tastenbelegung im aktuellen Kontext.</summary>
-    <remarks>
-      <para>
-        <b>KeyBinding</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Auflistung. Benutzerdefinierte Tastenbelegungen werden im Dialogfeld Tastatur anpassen erstellt.</para>
-      <para>Verwendung <b>KeyBindings</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>KeyBinding</b> -Objekt zurückzugeben.</para>
-      <para>Können Sie auch die <see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" /> Eigenschaft und die <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" /> Methode, um ein <b>KeyBinding</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine benutzerdefinierte Tastenbelegung im aktuellen Kontext dar.</summary>
+    <remarks><para>Das <b>KeyBinding</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Auflistung. Benutzerdefinierte Tastenbelegungen werden im Dialogfeld Tastatur anpassen erstellt.</para>
+      <para>Verwenden <b></b>Sie KeyBindings<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um ein einzelnes <b>KeyBinding</b> -Objekt zurückzugeben.</para>
+      <para>Sie können auch die <see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" /> -Eigenschaft und die <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" /> -Methode verwenden, um ein KeyBinding-Objekt zurückzugeben. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Entfernt die Tastenkombination aus der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Auflistung und setzt einen integrierten Befehl auf seine Standardtastenbelegung zurück.</summary>
+        <summary>Entfernt die Schlüssel Bindung aus der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Auflistung und setzt einen integrierten Befehl auf die Standardtasten Belegung zurück.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +101,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Befehl an der angegebenen Tastenkombination zugewiesen.</summary>
+        <summary>Gibt den Befehl zurück, der einer bestimmten Tastenkombination zugewiesen ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,12 +129,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Befehlsparameter der angegebenen Tastenkombination zugewiesen.</summary>
+        <summary>Gibt den Befehlsparameter zurück, welcher der angegebenen Tastenkombination zugewiesen ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen zu Befehlen, die Parameter finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Objekt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" /> -Eigenschaft auf den Namen des Befehls, welcher der angegebenen Tastenkombination zugewiesen zurückzugeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zu Befehlen, die Parameter übernehmen, finden <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> Sie unter der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> -Methode des Objekts. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" /> die-Eigenschaft, um den Befehlsnamen zurückzugeben, der der angegebenen Tastenkombination zugewiesen ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -171,12 +158,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das den Speicherort der angegebenen Tastenkombination darstellt. Diese Eigenschaft kann Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Template" />, oder <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt.</summary>
+        <summary>Gibt ein Objekt zurück, das den Speicherort der angegebenen Schlüssel Bindung darstellt. Diese Eigenschaft kann ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> <see cref="T:Microsoft.Office.Interop.Word.Template" />-,-oder <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt zurückgeben.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Integrierte Tastenbelegungen (beispielsweise STRG + I für <b>Kursiv</b>) zurückgeben das <b>Application</b> -Objekt als Kontext aus. Alle Tastenbelegungen, die Sie hinzufügen werden ein <b>Dokument</b> oder einer <b>Vorlage</b> -Objekt zurückgegeben, je nach Kontext der Anpassung in Kraft bei der <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt hinzugefügt wurde.</para>
-          <para />
-        </remarks>
+        <remarks><para>Integrierte Tastenzuordnungen (z. B. STRG+UMSCHALT+K für <b>Kursiv</b>) geben das <b>Application</b>-Objekt als Kontext zurück. Bei allen von Ihnen hinzugefügten Tastenbindungen wird ein <b>Dokument</b> -oder <b>Vorlagen</b> Objekt zurückgegeben, je nach dem <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> beim Hinzufügen des Objekts gültigen Anpassungs Kontext.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -204,11 +189,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -232,12 +215,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Entfernt die angegebene Tastenkombination, wenn sie einen Befehl derzeit zugewiesen wurde.</summary>
-        <remarks>
-          <para>, Nachdem Sie diese Methode verwenden, die Tastenkombination hat keine Auswirkung. Mit dieser Methode entspricht dem Klicken auf die Schaltfläche entfernen im Dialogfeld Tastatur anpassen (Menü Extras).</para>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" /> -Methode mit einem <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt, das einen integrierten Befehl auf seine Standardtastenbelegung zurückzusetzen. Sie müssen nicht zu entfernen oder ein <b>KeyBinding</b> -Objekt erneut, bevor Sie ihn an anderer Stelle hinzufügen.</para>
-          <para />
-        </remarks>
+        <summary>Entfernt die angegebene Tastenkombination, wenn Sie derzeit einem Befehl zugewiesen ist.</summary>
+        <remarks><para>Nach der Verwendung dieser Methode hat die Tastenkombination keine Auswirkungen mehr. Die Verwendung dieser Methode entspricht dem Klicken auf die Schaltfläche Entfernen im Dialogfeld Tastatur anpassen (Menü Extras).</para>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> mit einem-Objekt, um einen integrierten Befehl auf die Standardtasten Belegung zurückzusetzen. Es ist nicht nötig, ein <b>KeyBinding</b>-Objekt zu entfernen oder erneut anzubinden, bevor Sie es an anderer Stelle hinzufügen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -288,7 +269,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdKeyCategory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Elements, das der angegebenen Tastenkombination zugewiesen sind.</summary>
+        <summary>Gibt den Elementtyp zurück, der einer bestimmten Tastenkombination zugewiesen wurde.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,12 +297,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine eindeutige Nummer für den ersten Schlüssel in der angegebenen Tastenkombination zurück.</summary>
+        <summary>Gibt eine eindeutige Nummer für die erste Taste in der angegebenen Tastenkombination zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie erstellen diese Nummern mithilfe der <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode, wenn Sie mithilfe von Tastenbelegungen Hinzufügen der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie erstellen diese Nummer mithilfe der <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode beim Hinzufügen von Tastenkombinationen mithilfe der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode des <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Objekts.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyCode2">
@@ -347,7 +326,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine eindeutige Nummer für den zweiten Schlüssel in der angegebenen Tastenkombination zurück.</summary>
+        <summary>Gibt eine eindeutige Nummer für die zweite Taste in der angegebenen Tastenkombination zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,13 +410,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die angegebene Tastenbelegung im Dialogfeld Tastatur anpassen nicht geändert werden kann (klicken Sie im Menü Extras auf Anpassen klicken, und klicken Sie dann auf die Schaltfläche Tastatur).</summary>
+        <summary><b>True</b> , wenn Sie die angegebene Tasten Bindung nicht im Dialogfeld Tastatur anpassen ändern können (Klicken Sie im Menü Extras auf anpassen, und klicken Sie dann auf die Schaltfläche Tastatur).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode des der <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> -Objekt, eine Tastenkombination unabhängig von den geschützten Status hinzugefügt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> des-Objekts, um eine Schlüssel Bindung unabhängig vom geschützten Status hinzuzufügen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rebind">
@@ -464,10 +440,9 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. Die Tastenkategorie der angegebenen Tastenkombination.</param>
-        <param name="Command">
-          <b>String</b> erforderlich. Der Name des angegebenen Befehls.</param>
-        <param name="CommandParameter">Optionales- <b>Objekt</b>. Zusätzlicher Text, sofern zutreffend, erforderlich für den Befehl durch angegebenen <paramref name="Command" />. Informationen zu Werten für dieses Argument finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode für die <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Objekt.</param>
+        <param name="KeyCategory">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. Die Tastenkategorie der angegebenen Tastenkombination.</param>
+        <param name="Command"><b>String</b> erforderlich. Der Name des angegebenen Befehls.</param>
+        <param name="CommandParameter">Optionales <b>Objekt</b>. Zusätzlicher Text, falls vorhanden, für den durch <paramref name="Command" />angegebenen Befehl erforderlich. Informationen zu Werten für dieses Argument finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode für <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> das Objekt.</param>
         <summary>Ändert den Befehl, der einer angegebenen Tastenkombination zugewiesen ist.</summary>
         <remarks>To be added.</remarks>
       </Docs>

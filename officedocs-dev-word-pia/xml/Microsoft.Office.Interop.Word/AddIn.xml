@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eca0625fe8de93d38c8fe893e6a66c3f0bf7b440" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669054" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144673" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes installiertes oder nicht installiertes Add-In dar.</summary>
-    <remarks>
-      <para>Das <b>AddIn</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> Auflistung. Die <b>AddIns</b> -Auflistung enthält alle Add-Ins in Microsoft Word, unabhängig davon, ob sie gegenwärtig geladen sind verfügbar. Die <b>AddIns</b> -Auflistung enthält die globalen Vorlagen oder Word-add-in-Bibliotheken (WLLs), die im Dialogfeld Vorlagen und Add-Ins (Menü Extras) angezeigt.</para>
-      <para>Verwendung <b>-Add-Ins</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Add-in-Name oder die Indexzahl darstellt, um ein einzelnes <b>AddIn</b> -Objekt zurückzugeben. Die Rechtschreibung (aber nicht unbedingt die Groß-/Kleinschreibung) des Namens, müssen exakt übereinstimmen, wie er im Dialogfeld Vorlagen und Add-Ins angezeigt wird.</para>
-      <para>Die Indexnummer stellt die Position des Add-Ins in der Liste der Add-Ins im Dialogfeld Vorlagen und Add-Ins.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode, um ein Add-in zur Liste der verfügbaren Add-Ins hinzu und installieren es (optional) mit der <paramref name="Install" /> Argument.</para>
-      <para>Verwenden, um ein Add-in aus der Liste der verfügbaren Add-Ins zu installieren, die <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> -Eigenschaft.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> Eigenschaft, um zu bestimmen, ob ein <b>AddIn</b> -Objekt eine Vorlage oder eine WLL handelt.</para>
-      <para />
-    </remarks>
+    <remarks><para>Das <b>AddIn</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> Auflistung. Die <b>AddIns</b> -Auflistung enthält alle Add-Ins, die für Microsoft Word verfügbar sind, unabhängig davon, ob Sie derzeit geladen sind oder nicht. Die <b>AddIns</b> -Auflistung enthält globale Vorlagen oder Word-Add-in-Bibliotheken (WLLs), die im Dialogfeldvorlagen und Add-Ins (Menü Extras) angezeigt werden.</para>
+      <para>Verwenden <b></b>Sie AddIns<paramref name="index" />(), <paramref name="index" /> wobei es sich um den Add-in-Namen oder die Indexnummer handelt, um ein einzelnes <b>AddIn</b> -Objekt zurückzugeben. Sie müssen genau mit der Rechtschreibung (aber nicht unbedingt der Groß-/Kleinschreibung) des Namens übereinstimmen, wie er im Dialogfeldvorlagen und Add-Ins angezeigt wird.</para>
+      <para>Die Indexnummer stellt die Position des Add-Ins in der Liste dar, die im Dialogfeld Vorlagen und Add-Ins angezeigt wird.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> die-Methode, um ein Add-in zur Liste der verfügbaren Add-Ins hinzuzufügen und (optional <paramref name="Install" /> ) mit dem Argument zu installieren.</para>
+      <para>Um ein Add-in zu installieren, das in der Liste der verfügbaren Add- <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> ins angezeigt wird, verwenden Sie die-Eigenschaft.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> die-Eigenschaft, um zu bestimmen, ob ein <b>AddIn</b> -Objekt eine Vorlage oder eine wll ist.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das den Ersteller des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,12 +79,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert zurück, der angibt, ob beim Starten von Microsoft Word automatisch das angegebene Add-In geladen wird.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob das angegebene Add-in beim Starten von Microsoft Word automatisch geladen wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Add-Ins im Ordner Autostart im Word-Programmordner gespeichert werden automatisch geladen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Add-ins, die sich im Startordner von Word befinden, werden automatisch geladen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Compiled">
@@ -120,12 +108,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert zurück, der angibt, ob das angegebene Add-in ein Microsoft Word Add-in-Bibliothek (WLL wird).</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob das angegebene Add-in eine Microsoft Word-Add-in-Bibliothek (WLL) ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Add-in keine WLL ist, ist es eine Vorlage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Add-in kein wll ist, handelt es sich um eine Vorlage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -151,13 +137,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -208,7 +192,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Position eines Elements in einer <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> Auflistung.</summary>
+        <summary>Gibt einen Wert zurück, der die Position eines Elements in einer <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,13 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, der <b>True</b> , wenn das angegebene Add-In installiert ist (geladen).</summary>
+        <summary>Gibt einen Wert zurück, der <b>true</b> angibt, wenn das angegebene Add-in installiert (geladen) ist, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>-Add-ins, die geladen werden im Dialogfeld Vorlagen und Add-Ins (Menü Extras) ausgewählt sind.</para>
-          <para>Deinstalliert-add-ins in enthalten sind die <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> Auflistung. Um eine Vorlage oder WLL aus der <b>AddIns</b> -Auflistung entfernen möchten, wenden die <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> -Methode, um die <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> Objekt (der Name-Add-in wird im Dialogfeld Vorlagen und Add-Ins entfernt). Um alle Vorlagen und WLLs entfernen möchten, wenden Sie die <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> -Methode, um die <b>AddIns</b> -Auflistung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Geladene Add-Ins werden im Dialogfeld Vorlagen und Add-Ins (Menü Extras) ausgewählt.</para>
+          <para>Deinstallierte Add-Ins sind in der <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> Auflistung enthalten. Wenn Sie eine Vorlage oder WLL aus der <b>AddIns</b> -Auflistung entfernen möchten <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> , wenden Sie <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> die-Methode auf das Objekt an (der Add-in-Name wird aus dem Dialogfeldvorlagen und Add-Ins entfernt). Wenn Sie alle Vorlagen und WLLs entladen möchten, <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> wenden Sie die-Methode auf die <b>AddIns</b> -Auflistung an.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -271,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, den Namen des angegebenen <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> Objekt.</summary>
+        <summary>Gibt einen Wert zurück, der den Namen des angegebenen <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> Objekts angibt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der das übergeordnete Objekt des angegebenen repräsentiert <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> Objekt.</summary>
+        <summary>Gibt einen Wert zurück, der das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> des angegebenen Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,12 +309,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, die auf das angegebene URL <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> Objekt.</summary>
+        <summary>Gibt einen Wert zurück, der die URL des angegebenen <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> Objekts angibt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ein Zeichen für einen Schrägstrich Pfadangabe nicht – beispielsweise "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> -Eigenschaft einen Schrägstrich hinzufügen Zeichen, obwohl standardmäßig die <b>PathSeparator</b> -Eigenschaft auf einen umgekehrten Schrägstrich (\).</para>
-          <para />
-        </remarks>
+        <remarks><para>Der Pfad enthält kein nachgestelltes Schrägstrichzeichen (beispielsweise "http://MyServer"). Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> die-Eigenschaft, um ein nachgestelltes Schrägstrichzeichen hinzuzufügen, obwohl die <b>PathSeparator</b> -Eigenschaft standardmäßig einen umgekehrten Schrägstrich (\).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Word.ProtectedViewWindow">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a0b10fae72100482f87072b069313a91b2fb8237" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669069" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4e9a73a1e5de8d6f70be3b028707aba12dd7e7a1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147725" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindow" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindow" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein geschütztes Ansichtsfenster dar.</summary>
-    <remarks>
-      <para>In einem Fenster geschützte Ansicht angezeigte Dokumente können nicht bearbeitet werden und dürfen aktiven Inhalte ausführen wie Makros und datenverbindungen.</para>
-      <para />
-    </remarks>
+    <remarks><para>Dokumente, die in einem geschützten Ansichtsfenster angezeigt werden, können nicht bearbeitet werden und sind vom aktiven Inhalt wie Makros und Datenverbindungen eingeschränkt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -81,13 +71,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab, ob das angegebene geschützte Ansichtsfenster aktiv ist.</summary>
-        <value>
-          <b>true,</b> Wenn das angegebene Ansicht-Fenster geschützte ist aktiv. anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Boolean-Wert.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ab, ob das angegebene geschützte Ansicht-Fenster aktiv ist.</summary>
+        <value><b>true</b> , wenn das angegebene geschützte Ansicht-Fenster aktiv ist; andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Boolean-Wert mit Lesezugriff.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -113,12 +100,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Word-Anwendung darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt ab, das die Microsoft Word Anwendung darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt, das die Word-Anwendung darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -147,12 +132,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen des Titeltextes, die in der Titelleiste des Dokuments angezeigt wird, oder geschützte Ansicht-Fenster.</summary>
-        <value>Der Beschriftungstext, der in der Titelleiste des Dokuments oder der Fenster mit geschützter Ansicht angezeigt wird.</value>
-        <remarks>
-          <para>String-Wert mit Lese-/Schreibzugriff. Um die Beschriftung des geschützten Ansichtsfensters in den Standardtext zu ändern, legen Sie diese Eigenschaft auf eine leere Zeichenfolge ("").</para>
-          <para />
-        </remarks>
+        <summary>Dient zum Abrufen oder Festlegen des Titeltexts, der in der Titelleiste des Fensters Dokument oder geschützte Ansicht angezeigt wird.</summary>
+        <value>Der Beschriftungstext, der in der Titelleiste des Fensters Dokument oder geschützte Ansicht angezeigt wird.</value>
+        <remarks><para>Zeichenfolge mit Lese-/Schreibzugriff. Legen Sie diese Eigenschaft auf eine leere Zeichenfolge ("") fest, um die Beschriftung des geschützten Ansichtsfensters in den Standardtext zu ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -205,10 +188,8 @@
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>Eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</value>
-        <remarks>
-          <para>Nur-Lese- <b>long</b>. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf einem Apple Macintosh, verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Word den Erstellercode MSWD.</para>
-          <para />
-        </remarks>
+        <remarks><para>Schreibgeschützter <b>Long</b>-Wert. Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Apple Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -234,12 +215,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen einer <see cref="T:Microsoft.Office.Interop.Word.Document" /> das Fenster mit geschützter Ansicht zugeordnete-Objekt.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.Document" /> das Fenster mit geschützter Ansicht zugeordnete-Objekt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt ab, das dem Fenster geschützte Ansicht zugeordnet ist.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt, das dem Fenster geschützte Ansicht zugeordnet ist.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -270,11 +249,9 @@
         <param name="WritePasswordDocument">Das zum Speichern von Änderungen am Dokument erforderliche Kennwort.</param>
         <param name="WritePasswordTemplate">Das Kennwort zum Speichern von Änderungen an der Vorlage.</param>
         <summary>Öffnet das angegebene geschützte Ansichtsfenster zur Bearbeitung.</summary>
-        <returns>Eine <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt.</returns>
-        <remarks>
-          <para>Vermeiden der Verwendung von hartcodierte Kennwörter in Clientanwendungen. Wenn in einer Prozedur ein Kennwort erforderlich ist, fordern Sie das Kennwort des Benutzers, in einer Variablen zu speichern Sie und dann in der Code verwenden Sie die Variable.</para>
-          <para />
-        </remarks>
+        <returns>Ein <see cref="T:Microsoft.Office.Interop.Word.Document" />-Objekt.</returns>
+        <remarks><para>Vermeiden Sie die Verwendung hartcodierter Kennwörter in Anwendungen. Wenn ein Kennwort in einer Prozedur erforderlich ist, fordern Sie das Kennwort des Benutzers an, speichern Sie es in einer Variablen, und verwenden Sie dann die Variable im Code.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -304,11 +281,9 @@
       </ReturnValue>
       <Docs>
         <summary>Dient zum Abrufen oder Festlegen der Höhe des Fensters geschützte Ansicht.</summary>
-        <value>Die Höhe des Fensters geschützte Ansicht.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff <b>lang</b>. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwenden Sie die UsableHeight-Eigenschaft des <b>Application</b> -Objekts bestimmen Sie die maximale Größe für das Fenster. Verwenden Sie die <b>WindowState</b> -Eigenschaft, um den Status des Fensters zu bestimmen.</para>
-          <para />
-        </remarks>
+        <value>Die Höhe des Fensters mit geschützter Ansicht.</value>
+        <remarks><para><b>Lange</b>Lese-/Schreibzugriff. Sie können diese Eigenschaft nicht festlegen, wenn das Fenster maximiert oder minimiert ist. Verwenden Sie die UsableHeight-Eigenschaft des <b>Application</b> -Objekts, um die maximale Größe für das Fenster zu bestimmen. Verwenden Sie die <b>WindowState</b>-Eigenschaft, um den Fensterzustand zu ermitteln.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -334,8 +309,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Position eines Elements in einer Auflistung darstellt.</summary>
-        <value>Gibt <see cref="T:System.Int32" />.</value>
+        <summary>Gibt einen Wert zurück, der die Position eines Elements in einer Auflistung darstellt.</summary>
+        <value>Gibt <see cref="T:System.Int32" />zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,12 +340,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen eines Werts, die in Punkt, der die horizontale Position des Fensters angegebenen geschützte Ansicht darstellt.</summary>
-        <value>Die horizontale Position des angegebenen geschützte Ansichtsfensters in Punkt.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff.</para>
-          <para />
-        </remarks>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts in Punkt, der die horizontale Position des angegebenen geschützten Ansichtsfensters darstellt.</summary>
+        <value>Die horizontale Position des angegebenen geschützten Ansichtsfensters in Punkt.</value>
+        <remarks><para>Lese-/Schreibzugriff.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -396,8 +369,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> Objekt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das übergeordnete Objekt des angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> Objekt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> des angegebenen Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> angegebenen Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,12 +397,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Namen der Quelldatei für das angegebene geschützte Ansichtsfenster.</summary>
+        <summary>Ruft den Namen der Quelldatei für das angegebene geschützte Ansicht-Fenster ab.</summary>
         <value>Der Name der Quelldatei für das angegebene geschützte Ansichtsfenster.</value>
-        <remarks>
-          <para>Nur-Lese-Zeichenfolge. Diese Eigenschaft gibt nicht den Pfad für die Quelldatei zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Schreibgeschützter String-Wert. Diese Eigenschaft gibt nicht den Pfad für die Quelldatei zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourcePath">
@@ -455,12 +426,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft den Pfad der Quelldatei für das angegebene geschützte Ansichtsfenster.</summary>
+        <summary>Ruft den Pfad der Quelldatei für das angegebene geschützte Ansicht-Fenster ab.</summary>
         <value>Der Pfad der Quelldatei für das angegebene geschützte Ansichtsfenster.</value>
-        <remarks>
-          <para>Nur-Lese-Zeichenfolge. Der Pfad enthält kein nachfolgendes Zeichen (z. B. "C:\MSOffice"). Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.SourceName" /> -Eigenschaft auf den Dateinamen ohne den Pfad zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Schreibgeschützter String-Wert. Der Pfad enthält kein schließendes Zeichen (z. B. "C:\MSOffice"). Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.SourceName" /> die-Eigenschaft, um den Dateinamen ohne den Pfad zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleRibbon">
@@ -485,10 +454,8 @@
       <Parameters />
       <Docs>
         <summary>Blendet das Menüband ein bzw. aus.</summary>
-        <remarks>
-          <para>Wenn das Menüband angezeigt wird, werden Sie durch diese Methode ausgeblendet; Wenn das Menüband ausgeblendet ist, zeigt diese Methode es aus.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Menüband sichtbar ist, wird es von dieser Methode ausgeblendet. Wenn das Menüband ausgeblendet ist, wird es von dieser Methode angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -517,12 +484,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen der vertikalen Position, in Punkt, der das angegebene geschützte Ansichtsfenster.</summary>
-        <value>Die vertikale Position in Punkt, der das angegebene geschützte Ansichtsfenster.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff <b>lang</b>.</para>
-          <para />
-        </remarks>
+        <summary>Ruft die vertikale Position des angegebenen geschützten Ansichtsfensters in Punkt ab oder legt Sie fest.</summary>
+        <value>Die vertikale Position des angegebenen geschützten Ansichtsfensters in Punkt.</value>
+        <remarks><para><b>Lange</b>Lese-/Schreibzugriff.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -552,12 +517,9 @@
       </ReturnValue>
       <Docs>
         <summary>Ruft ab oder legt fest, ob das angegebene geschützte Ansicht-Fenster sichtbar ist.</summary>
-        <value>
-          <b>true,</b> Wenn das angegebene Ansicht-Fenster geschützte ist sichtbar; anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Boolean-Wert mit Lese-/Schreibzugriff.</para>
-          <para />
-        </remarks>
+        <value><b>true</b> , wenn das angegebene geschützte Ansicht-Fenster sichtbar ist; andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Boolean-Wert mit Lese-/Schreibzugriff.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -586,12 +548,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen der Breite in Punkt, der das angegebene geschützte Ansichtsfenster.</summary>
-        <value>Die Breite in Punkt, der das angegebene geschützte Ansichtsfenster.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff <b>lang</b>.</para>
-          <para />
-        </remarks>
+        <summary>Ruft die Breite des angegebenen geschützten Ansichtsfensters in Punkt ab oder legt Sie fest.</summary>
+        <value>Die Breite des angegebenen geschützten Ansichtsfensters in Punkt.</value>
+        <remarks><para><b>Lange</b>Lese-/Schreibzugriff.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -620,12 +580,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen des Status des angegebenen geschützten Ansichtsfenster.</summary>
-        <value>Der Zustand des angegebenen geschützte Ansicht-Fenster.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff. Die <b>WdWindowStateNormal</b> -Konstante kennzeichnet ein Fenster, das nicht maximiert oder minimiert ist. Der Zustand eines inaktiven Fensters kann nicht festgelegt werden. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Activate" /> -Methode, um vor dem Festlegen des Fensterstatus ein Fenster aktivieren.</para>
-          <para />
-        </remarks>
+        <summary>Dient zum Abrufen oder Festlegen des Status des angegebenen geschützten Ansichtsfensters.</summary>
+        <value>Der Status des angegebenen geschützten Ansichtsfensters.</value>
+        <remarks><para>Lese-/Schreibzugriff. Die <b>wdWindowStateNormal</b>-Konstante gibt ein Fenster an, das nicht maximiert oder minimiert ist. Der Status eines inaktiven Fensters kann nicht festgelegt werden. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Activate" /> die-Methode, um ein Fenster vor dem Festlegen des Fenster Status zu aktivieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

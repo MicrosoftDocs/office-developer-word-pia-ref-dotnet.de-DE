@@ -1,13 +1,5 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Word.Chart">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="616cb136ed9c6470acdef04821482823dc95523f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670590" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Chart" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b01d3cd03a0e6d162566e25b45eaa2b405ccb58a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147305" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart" />
@@ -27,22 +19,22 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein Diagramm in einer Dokumentation dar.</summary>
-    <remarks>
-      <para>Die folgenden Eigenschaften und Methoden zum Zurückgeben eines <b>Chart</b> -Objekts werden im Beispielabschnitt beschrieben:</para>
-      <para />
+    <remarks><para>Die folgenden Eigenschaften und Methoden für das Zurückgeben eines <b>Chart</b>-Objekts werden im Beispielabschnitt beschrieben:</para>
+      <para> </para>
       <list type="bullet">
         <item>
-          <para>-
-            <b>Diagramm</b></para>
-        </item>,
-        <item><para><b>AddChart</b> -Methode</para></item></list>
-      <para />
-      <para />
-    </remarks>
-    <example>
-      <para>Die <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> -Auflistung enthält ein Objekt für jede Inlineform, einschließlich der Diagramme, die in einem Dokument. Verwenden Sie <b>InlineShapes</b>(<paramref name="Index" />), wobei <paramref name="Index" /> ist die Indexnummer des Inlineform, um ein einzelnes <b>InlineShape</b> -Objekt zurückzugeben. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> Eigenschaft, um zu bestimmen, ob das <b>InlineShape</b> -Objekt stellt ein Diagramm dar. Wenn die <b>HasChart</b> -Eigenschaft auf <b>True</b>festgelegt ist, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> Eigenschaft, um ein <b>Chart</b> -Objekt zurückzugeben.</para>
-      <para>Können Sie auch die <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> Eigenschaft, um zu bestimmen, ob das <b>InlineShape</b> -Objekt stellt ein Diagramm dar. Wenn die <b>Type</b> -Eigenschaft auf <b>WdInlineShapeChart</b>festgelegt ist, stellt die Inlineform ein Diagramms.</para>
-    </example>
+          <para>
+            <b>Chart</b> -Eigenschaft</para>
+        </item>
+        <item>
+          <para>
+            <b>AddChart</b> -Methode</para>
+        </item>
+      </list>
+      <para> </para>
+      <para> </para></remarks>
+    <example><para>Die <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung enthält ein Objekt für jede Inlineform, einschließlich Diagrammen, in einem Dokument. Verwenden <b></b>Sie InlineShapes<paramref name="Index" />(), <paramref name="Index" /> wobei es sich um die Indexnummer einer Inlineform handelt, um ein einzelnes InlineShape-Objekt zurückzugeben. <b></b> Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> die-Eigenschaft, um zu bestimmen, ob das InlineShape-Objekt ein Diagramm darstellt. <b></b> Wenn die <b>HasChart</b> -Eigenschaft auf <b>true</b>festgelegt ist, <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> verwenden Sie die-Eigenschaft, um ein <b>Chart</b> -Objekt zurückzugeben.</para>
+      <para>Sie können auch die <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> -Eigenschaft verwenden, um zu bestimmen, ob das InlineShape-Objekt ein Diagramm darstellt. <b></b> Ist die <b>Type</b>-Eigenschaft auf <b>WdInlineShapeChart</b> gesetzt, stellt die Inlineform ein Diagramm dar.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -68,10 +60,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,13 +88,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Zeichenfolge</b> der Dateiname für eine Diagrammvorlage erforderlich.</param>
+        <param name="FileName">Erforderliche <b>Zeichenfolge</b> der Name der Datei für eine Diagrammvorlage.</param>
         <summary>Weist einem Diagramm einen Standarddiagrammtyp oder einen benutzerdefinierten Diagrammtyp zu.</summary>
-        <remarks>
-          <para>Diese Methode unterstützt das Annehmen von Konstanten für systemeigene oder Verbunddiagramme nicht.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode unterstützt das Annehmen von Konstanten für systemeigene oder Verbunddiagramme nicht.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyCustomType">
@@ -133,9 +120,8 @@
         <Parameter Name="TypeName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChartType">Erforderliche <see cref="T:Microsoft.Office.Core.XlChartType" /> einen Standarddiagrammtyp</param>
-        <param name="TypeName">
-          <b>Objekt</b> A Standarddiagrammtyp erforderlich</param>
+        <param name="ChartType">Erforderlicher <see cref="T:Microsoft.Office.Core.XlChartType" /> Standarddiagrammtyp</param>
+        <param name="TypeName">Erforderliches <b>Objekt</b> ein Standarddiagrammtyp</param>
         <summary>Weist einem Diagramm einen Standarddiagrammtyp oder einen benutzerdefinierten Diagrammtyp zu.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,48 +160,45 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> den Typ der anzuwendenden Datenbeschriftung.</param>
+        <param name="Type">Der <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> Typ der anzuwendenden Datenbeschriftung ist erforderlich.</param>
         <param name="LegendKey">Mit  <b>True</b> wird das Legendensymbol neben dem Datenpunkt angezeigt. Der Standardwert ist <b>False</b>.</param>
-        <param name="AutoText">
-          <b>True,</b> Wenn das Objekt automatisch basierend auf dem Inhalt angemessenen Text generiert.</param>
-        <param name="HasLeaderLines">Für die <see cref="T:Microsoft.Office.Interop.Word.Chart" /> und <see cref="T:Microsoft.Office.Interop.Word.Series" /> Objekte, <b>true,</b> Wenn die Datenreihe Führungslinien aufweist.</param>
+        <param name="AutoText"><b>True,</b> Wenn das Objekt automatisch basierend auf dem Inhalt angemessenen Text generiert.</param>
+        <param name="HasLeaderLines">True für <see cref="T:Microsoft.Office.Interop.Word.Chart" /> die <see cref="T:Microsoft.Office.Interop.Word.Series" /> und- <b></b> Objekte, wenn die Datenreihe Führungslinien aufweist.</param>
         <param name="ShowSeriesName">Übergeben Sie einen booleschen Wert, um den Datenreihennamen für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="ShowCategoryName">Übergeben Sie einen booleschen Wert, um den Rubrikennamen für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="ShowValue">Übergeben Sie einen booleschen Wert, um den Wert für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
-        <param name="ShowPercentage">Ein boolescher Wert zum Aktivieren oder deaktivieren den Prozentsatz für die Datenbeschriftung.</param>
+        <param name="ShowPercentage">ein boolescher Wert, um den Prozentsatz für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="ShowBubbleSize">Übergeben Sie einen booleschen Wert, um die Blasengröße für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="Separator">Das Trennzeichen für die Datenbeschriftung</param>
         <summary>Wendet auf alle Reihen in einem Diagramm Datenbeschriftungen an.</summary>
-        <remarks>
-          <para>Die folgende Tabelle zeigt die <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> Argumente, die an übergeben werden können die <paramref name="Type" /> -Parameter des ein <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> -Methode.</para>
+        <remarks><para>In der folgenden Tabelle sind <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> die Argumente dargestellt, die an den <paramref name="Type" /> Parameter einer <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode übergeben werden können.</para>
           <list type="table">
             <item>
               <description>
-                <b>XlDataLabelsShowBubbleSizes</b>. Die Blasengröße für die Datenbeschriftung.</description>
+                <b>xlDataLabelsShowBubbleSizes</b>. Die Blasengröße für die Datenbeschriftung.</description>
             </item>
             <item>
               <description>
-                <b>XlDataLabelsShowLabelAndPercent</b>.  Prozentsatz der Summe und Kategorie für den Datenpunkt. Nur für Kreis- und Ringdiagrammen verfügbar.</description>
+                <b>xlDataLabelsShowLabelAndPercent</b>.  Prozentsatz der Summe und Rubrikenbeschriftung für den Datenpunkt. Nur für Kreis- und Ringdiagramme verfügbar.</description>
             </item>
             <item>
               <description>
-                <b>XlDataLabelsShowPercent</b>. Prozentsatz der Summe. Nur für Kreis- und Ringdiagrammen verfügbar.</description>
+                <b>xlDataLabelsShowPercent</b>. Prozentsatz der Summe. Nur für Kreis- und Ringdiagramme verfügbar.</description>
             </item>
             <item>
               <description>
-                <b>XlDataLabelsShowLabel</b>. Kategorie für den Datenpunkt.</description>
+                <b>xlDataLabelsShowLabel</b>. Rubrik für den Datenpunkt.</description>
             </item>
             <item>
               <description>
-                <b>XlDataLabelsShowNone</b>. Keine datenbeschriftungen.</description>
+                <b>xlDataLabelsShowNone</b>. Keine Datenbeschriftungen.</description>
             </item>
             <item>
               <description>
-                <b>XlDataLabelsShowValue</b>. Standard. Wert für den Punkt (wird angenommen, wenn dieses Argument nicht angegeben ist).</description>
+                <b>xlDataLabelsShowValue</b>. Standard. Wert für den Datenpunkt (wird angenommen, wenn dieses Argument nicht angegeben wird).</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyLayout">
@@ -241,15 +224,11 @@
         <Parameter Name="ChartType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Layout">
-          <b>Ganze Zahl</b> Gibt den Typ des Layouts.  Der Layouttyp wird mit einer Zahl zwischen 1 und 10 angegeben.</param>
-        <param name="ChartType">
-          <b>Objekt</b> mit einer <b>XlChartType</b> -Konstante, die den Typ des Diagramms darstellt.</param>
+        <param name="Layout"><b>Ganze Zahl</b> Gibt den Typ des Layouts an.  Der Layouttyp wird mit einer Zahl zwischen 1 und 10 angegeben.</param>
+        <param name="ChartType"><b>Objekt</b> , das eine <b>XlChartType</b> -Konstante, die den Typ des Diagramms darstellt enthält.</param>
         <summary>Wendet die im Band angezeigten Layouts an.</summary>
-        <remarks>
-          <para>Wenn Sie ein Layout für den aktuellen Diagrammtyp verwenden, wird eine Zahl zwischen 1 und 10 auf den Diagrammtyp angewendet.  Sie können das Layout eines Diagrammtyps auch auf einen anderen Diagrammtyp anwenden.  Beispielsweise können Sie die Layouts anwenden, die von einem Liniendiagramm auf ein Säulendiagramm verfügbar sind.  Das Layout fügt nur Diagrammelemente, die für den jeweiligen Diagrammtyp verfügbar sind.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie ein Layout für den aktuellen Diagrammtyp verwenden, wird eine Zahl zwischen 1 und 10 auf den Diagrammtyp angewendet.  Sie können das Layout eines Diagrammtyps auch auf einen anderen Diagrammtyp anwenden.  Beispielsweise können Sie die Layouts, die für ein Liniendiagramm verfügbar sind, auf ein Säulendiagramm anwenden.  Das Layout fügt nur Diagrammelemente hinzu, die für den jeweiligen Diagrammtyp verfügbar sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Area3DGroup">
@@ -281,10 +260,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Flächendiagrammgruppe in einem 3D-Diagramm zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>Gibt die Bereichsdiagramm Gruppe in einem 3D-Diagramm zurück.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,11 +293,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales <b>Objekt</b> die Diagrammgruppennummer.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine einzelne Flächendiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Flächendiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b> die Diagrammgruppen Nummer.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das entweder eine einzelne Bereichsdiagramm Gruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Flächendiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,13 +325,9 @@
         <Parameter Name="Format" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Gallery">
-          <b>Integer</b>
-        </param>
-        <param name="Format">
-          <b>Objekt</b>
-        </param>
-        <summary>Diese API unterstützt die Visual Studio-Tools für Office-Infrastruktur und ist nicht für die direkte Verwendung in Ihrem Code verwendet werden.</summary>
+        <param name="Gallery"><b>Integer</b></param>
+        <param name="Format"><b>Objekt</b></param>
+        <summary>Diese API unterstützt die Visual Studio-Tools für Office-Infrastruktur und ist nicht für die direkte Verwendung im Code vorgesehen.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,10 +363,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Skaliert ein 3D-Diagramm, sodass sich seine Größe entsprechende 2D-Diagramm annähert. Die <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> -Eigenschaft muss <b>True</b>sein. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True,</b> Wenn Microsoft Word ein 3-d-Diagramm skaliert, sodass sich seine Größe entsprechende 2D-Diagramm annähert. anderenfalls <b>False</b>.</value>
+        <summary>Skaliert ein 3D-Diagramm so, dass es der Größe des äquivalenten 2D-Diagramms näher kommt. Die <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> -Eigenschaft muss <b>true</b>sein. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolescher Wert</b> 
+          <b>True</b> , wenn Microsoft Word ein 3D-Diagramm so skaliert, dass es näher an der Größe des äquivalenten 2D-Diagramms liegt; andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,13 +395,10 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Word.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <b>Objekt</b> gibt die Achse zurückzugebenden erforderlich. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> Konstanten: <b>XlValue</b>, <b>XlCategory</b>oder <b>XlSeriesAxis</b> (<b>XlSeriesAxis</b> gilt nur für 3D-Diagramme).</param>
-        <param name="AxisGroup">Optionale <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> gibt die Achsengruppe an. Wenn dieses Argument ausgelassen wird, wird die primäre Gruppe verwendet. 3D-Diagramme haben nur eine Achsengruppe.</param>
-        <summary>Ruft ein Objekt, das entweder eine einzelne Achse oder eine Auflistung der Achsen im Diagramm darstellt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Type">Required- <b>Objekt</b> gibt die zurückzugebende Achse an. Kann eine <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> der folgenden Konstanten sein: <b>xlValue</b>, <b>xlCategory</b>oder <b>xlSeriesAxis</b> (<b>xlSeriesAxis</b> ist nur für 3D-Diagramme gültig).</param>
+        <param name="AxisGroup">Optional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> gibt die Gruppe Axis an. Wenn dieses Argument ausgelassen wird, wird die primäre Gruppe verwendet. 3D-Diagramme verfügen nur über eine Achsengruppe.</param>
+        <summary>Ruft ein Objekt ab, das entweder eine einzelne Achse oder eine Auflistung von Achsen im Diagramm darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,10 +425,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Walls" /> -Objekt, das dem Benutzer ermöglicht, die Back Wand eines 3D-Diagramms individuell formatieren. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Walls" /> Objekt zurück, mit dem der Benutzer die Hintergrund Wand eines 3D-Diagramms einzeln formatieren kann. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,9 +460,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Balkendiagrammgruppe in einem 3D-Diagramm zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -529,11 +492,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b> gibt die Diagrammgruppe an.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine einzelne Balkendiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Balkendiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b> gibt die Diagrammgruppe an.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das entweder eine einzelne Balkendiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Balkendiagramm Gruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,9 +525,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Form zurück, die für jede Datenreihe in einem 3D-Balken- oder -Säulendiagramm verwendet wird, oder legt diese Form fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,7 +555,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlCategoryLabelLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen eines <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> -Konstante, die Ebene der Quelle-Beschriftungsebenen für das Diagramm angibt. Lese-/Schreibzugriff.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> einer Konstanten, die die Quellebene der Diagrammkategorie Bezeichnungen angibt. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -627,10 +586,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> -Objekt, das die vollständige Diagrammfläche des Diagramms darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartArea" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> Objekt zurück, das den vollständigen Diagrammbereich für das Diagramm darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -660,12 +617,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine ganze Zahl, die das Farbschema für das Diagramm darstellt. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt eine ganze Zahl zurück oder legt sie fest, die das Farbschema für das Diagramm darstellt. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diagramm Farbschemas werden von 1 bis 17 nummeriert; die Einstellung dieser Eigenschaft entspricht der Farbschemas auf den Katalog Farben ändern auf die Registerkarte Diagramm-Tools – Entwurf des Menübands angezeigt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diagramm Farbschemata werden von 1 bis 17 nummeriert; die Einstellung dieser Eigenschaft entspricht den Farbschemas, die im Katalog Farben ändern auf der Registerkarte Diagramm Tools-Entwurfs Menü angezeigt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartData">
@@ -692,9 +647,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt Informationen zu den verknüpften oder eingebetteten Daten zurück, die dem Diagramm zugeordnet sind. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartData" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartData" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -727,11 +680,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Anzahl der Diagrammgruppen. Wenn angegeben, ein einzelnes <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> -Objekt wird zurückgegeben. Wenn Length angegeben, eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> -Objekt zurückgegeben wird, enthält eine Auflistung von jeder <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> -Objekt für das Diagramm.</param>
+        <param name="Index">Die Anzahl der Diagrammgruppen. Wenn angegeben, wird ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> einzelnes Objekt zurückgegeben. Wird kein Wert angegeben <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> , wird ein Objekt zurückgegeben, das eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Auflistung aller Objekte für dieses Diagramm enthält.</param>
         <summary>Gibt ein Objekt zurück, das entweder eine einzelne Diagrammgruppe oder eine Auflistung aller Diagrammgruppen im Diagramm darstellt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -761,14 +712,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen des Diagrammformats für das Diagramm. Lese-Schreib- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Sie können zum Festlegen des Diagrammformats eine Zahl zwischen 1 und 48 verwenden.</para>
-          <para />
-        </remarks>
+        <summary>Gibt die Diagrammformatvorlage für das Diagramm zurück, oder legt diese fest. <b>Object</b> -Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Sie können zum Festlegen des Diagrammformats eine Zahl zwischen 1 und 48 verwenden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartTitle">
@@ -797,14 +744,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartTitle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> -Objekt, das den Titel des angegebenen Diagramms darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />
-        </value>
-        <remarks>
-          <para>Die <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> -Objekt ist nicht vorhanden und kann nicht verwendet werden, es sei denn, die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> -Eigenschaft des Diagramms ist <b>True</b>.</para>
-          <para />
-        </remarks>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt zurück, das den Titel des angegebenen Diagramms darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /></value>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt ist nicht vorhanden und kann nur verwendet werden <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> , wenn die Eigenschaft für das Diagramm auf <b>true</b>festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -834,13 +777,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt den Diagrammtyp zurück oder legt ihn fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>XlChartType</b>
-        </value>
-        <remarks>
-          <para>Einige Diagrammtypen sind für PivotChart-Berichte nicht.</para>
-          <para />
-        </remarks>
+        <value><b>XlChartType</b></value>
+        <remarks><para>Einige Diagrammtypen sind für PivotChart-Berichte nicht verfügbar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartWizard">
@@ -879,21 +818,19 @@
       </Parameters>
       <Docs>
         <param name="Source">Optionales <b>Objekt</b> der Bereich, der die Quelldaten für das neue Diagramm enthält. Wenn Sie dieses Argument nicht angeben, wird das aktive Diagrammblatt oder das ausgewählte Diagramm des aktiven Arbeitsblatts von Microsoft Word bearbeitet.</param>
-        <param name="Gallery">Optional- <b>Objekt</b> enthält eine der Konstanten der <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> , die den Diagrammtyp angibt.</param>
-        <param name="Format">Optionales <b>Objekt</b> die Option Anzahl für die integrierten AutoFormate. Dabei kann es sich um eine Zahl von 1 bis 10 handeln, je nach Katalogtyp. Wenn dieses Argument nicht angegeben ist, wählt Microsoft Word einen Standardwert basierend auf den Katalog und der Datenquelle.</param>
-        <param name="PlotBy">Optionales- <b>Objekt</b> gibt an, ob die Daten für jede Reihe in Zeilen oder Spalten. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten: <b>XlRows</b> oder <b>XlColumns</b>.</param>
-        <param name="CategoryLabels">Optionales- <b>Objekt</b> enthält eine <b>ganze Zahl</b> , gibt die Anzahl von Zeilen oder Spalten innerhalb des Bereichs für die Datenquelle, die rubrikenbeschriftungen enthalten. Zulässige Werte reichen von 0 (null) über die maximale Anzahl der entsprechenden Kategorien oder Reihen minus 1.</param>
-        <param name="SeriesLabels">Optionales- <b>Objekt</b> enthält eine <b>ganze Zahl</b> , gibt die Anzahl von Zeilen oder Spalten innerhalb des Bereichs für die Datenquelle, die Beschriftung der Datenreihe enthalten. Zulässige Werte reichen von 0 (null) über die maximale Anzahl der entsprechenden Kategorien oder Reihen minus 1.</param>
-        <param name="HasLegend">Optionales- <b>Objekt</b> festlegen auf <b>True</b> wird eine Legende.</param>
-        <param name="Title">Optional- <b>Objekts</b> den Text des Diagrammtitels.</param>
-        <param name="CategoryTitle">Optionales <b>Objekt</b> der Titeltext der Rubrikenachse.</param>
-        <param name="ValueTitle">Optional- <b>Objekts</b> den Text für die Größenachse.</param>
-        <param name="ExtraTitle">Optionales <b>Objekt</b> der Titel der Reihenachse für 3D-Diagramme oder der zweite Titel der Reihenachse für 2D-Diagramme.</param>
-        <summary>Ändert die Eigenschaften für ein bestimmtes Diagramm. Ermöglicht die schnelle Formatierung eines Diagramms, ohne jede einzelne Eigenschaft festzulegen. Diese Methode ist nicht interaktiv, und es wird nur die angegebenen Eigenschaften geändert.</summary>
-        <remarks>
-          <para>Wenn <paramref name="Source" /> ausgelassen wird und der Auswahl nicht um ein Diagramm im aktiven Dokument, schlägt diese Methode fehl und ein Fehler auftritt.</para>
-          <para />
-        </remarks>
+        <param name="Gallery">Das optionale <b>Objekt</b> enthält eine der Konstanten zur <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> Angabe des Diagrammtyps.</param>
+        <param name="Format">Optionales <b>Objekt</b> die Optionsnummer für die integrierten AutoFormate. Dabei kann es sich um eine Zahl von 1 bis 10 handeln, je nach Katalogtyp. Wenn dieses Argument ausgelassen wird, wählt Microsoft Word auf der Grundlage des Katalogtyps und der Datenquelle einen Standardwert aus.</param>
+        <param name="PlotBy">Optionales <b>Objekt</b> gibt an, ob sich die Daten für jede Reihe in Zeilen oder Spalten befinden. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten sein: <b>xlRows</b> oder <b>xlColumns</b>.</param>
+        <param name="CategoryLabels">Das optionale <b>Objekt</b> enthält eine <b>ganze Zahl</b> , die die Anzahl der Zeilen oder Spalten innerhalb des Quellbereichs angibt, die Kategorien Bezeichnungen enthalten. Zulässige Werte liegen im Bereich von Null bis zu dem Wert, der um eins kleiner ist als die maximale Anzahl von entsprechenden Rubriken oder Reihen.</param>
+        <param name="SeriesLabels">Das optionale <b>Objekt</b> enthält eine <b>ganze Zahl</b> , die die Anzahl der Zeilen oder Spalten innerhalb des Quellbereichs angibt, die Datenreihenbeschriftungen enthalten. Zulässige Werte liegen im Bereich von Null bis zu dem Wert, der um eins kleiner ist als die maximale Anzahl von entsprechenden Rubriken oder Reihen.</param>
+        <param name="HasLegend">Optionales <b>Objekt</b> , das auf <b>true</b> festgelegt ist, um eine Legende einzubeziehen.</param>
+        <param name="Title">Optionales <b>Objekt</b> der Diagrammtitel Text.</param>
+        <param name="CategoryTitle">Optionales <b>Objekt</b> der Beschriftungstext der Rubrikenachse.</param>
+        <param name="ValueTitle">Optionales <b>Objekt</b> der Wertachsen Titel Text.</param>
+        <param name="ExtraTitle">Optionales <b>Objekt</b> der Titel der Datenreihe in 3D-Diagrammen oder der Titel der zweiten Größenachse für 2D-Diagramme.</param>
+        <summary>Ändert die Eigenschaften für ein bestimmtes Diagramm. Ermöglicht die schnelle Formatierung eines Diagramms, ohne jede einzelne Eigenschaft festzulegen. Diese Methode ist nicht interaktiv und ändert nur die angegebenen Eigenschaften.</summary>
+        <remarks><para>Wenn <paramref name="Source" /> nicht angegeben wird und die Auswahl kein Diagramm im aktiven Dokument ist, schlägt diese Methode fehl, und es tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchColorStyle">
@@ -917,11 +854,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Löscht alle Farben im angegebenen Diagramm, die nicht die Farbe Formatvorlage von im Diagramm folgen.</summary>
-        <remarks>
-          <para>Verwenden Sie diese Methode, um alle Formatierung auf die Farbe Formatvorlage dem Diagramm Diagramm Farbe zurückzusetzen.</para>
-          <para />
-        </remarks>
+        <summary>Löscht alle Farben im angegebenen Diagramm, die nicht der auf das Diagramm angewendeten Farbformatvorlage entsprechen.</summary>
+        <remarks><para>Verwenden Sie diese Methode, um alle Diagramm Farbformatierungen auf die auf das Diagramm angewendete Farb Vorlage zurückzusetzen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchStyle">
@@ -946,10 +881,8 @@
       <Parameters />
       <Docs>
         <summary>Deaktiviert die Formatierung der Diagrammelemente und legt die automatische Formatierung fest.</summary>
-        <remarks>
-          <para>Verwenden Sie diese Methode, um auf automatische Formatierung der Diagrammelemente zurückzusetzen.    Wenn Sie diese Methode in einem Diagramm verwenden, werden alle Formatierungen im Bereich (einschließlich Außerkraftsetzungen) zurückgesetzt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Mit dieser Methode können Sie die Formatierung der Diagrammelemente auf automatische Formatierung zurücksetzen.    Wenn Sie diese Methode für ein Diagramm anwenden, werden alle Formatierungen (auch Überschreibungen) zurückgesetzt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column3DGroup">
@@ -982,9 +915,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Säulendiagrammgruppe in einem 3D-Diagramm zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1016,11 +947,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Gibt die Diagrammgruppe an.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine einzelne Säulendiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Säulendiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b>. Legt die Diagrammgruppe fest.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das entweder eine einzelne Säulendiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Säulendiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1050,9 +979,9 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Wird für dieses Objekt nicht unterstützt.</param>
-        <param name="After">Wird für dieses Objekt nicht unterstützt.</param>
-        <summary>Wird für dieses Objekt nicht unterstützt.</summary>
+        <param name="Before">Für dieses Objekt nicht unterstützt.</param>
+        <param name="After">Für dieses Objekt nicht unterstützt.</param>
+        <summary>Für dieses Objekt nicht unterstützt.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1083,9 +1012,9 @@
         <Parameter Name="Size" Type="Microsoft.Office.Interop.Word.XlPictureAppearance" />
       </Parameters>
       <Docs>
-        <param name="Appearance">Optionale <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> gibt an, wie das Bild kopiert werden soll. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />.</param>
-        <param name="Format">Optionale <see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" /> das Format des Bilds. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />.</param>
-        <param name="Size">Optionale <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> die Größe des kopierten Bilds, wenn das Objekt ein Diagramm in einem Diagrammblatt (nicht in einem Arbeitsblatt eingebettet) ist. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />.</param>
+        <param name="Appearance">Optional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> gibt an, wie das Bild kopiert werden soll. Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />.</param>
+        <param name="Format">Optional <see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" /> das Format des Bilds. Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />.</param>
+        <param name="Size">Optional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> die Größe des kopierten Bilds, wenn es sich bei dem Objekt um ein Diagramm auf einem Diagrammblatt (nicht eingebettet in ein Arbeitsblatt) handelt. Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />.</param>
         <summary>Kopiert das ausgewählte Objekt als Bild in die Zwischenablage.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1120,8 +1049,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Ecken eines 3D-Diagramms zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Corners" />Ecken</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Corners" />Ecken</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1149,13 +1077,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" zurück.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTable">
@@ -1181,10 +1105,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> -Objekt, das die Diagrammdatentabelle darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataTable" />
-        </value>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> Wert vom Datentyp Object zurück, der die Diagrammdatentabelle darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataTable" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1213,9 +1135,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1280,13 +1200,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Tiefe eines 3D-Diagramms als Prozentsatz der Diagrammbreite (zwischen 20 und 2000 Prozent) zurück oder legt sie fest. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayBlanksAs">
@@ -1321,10 +1237,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDisplayBlanksAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, wie leere Zellen in einem Diagramm gezeichnet werden. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /> Konstanten. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />
-        </value>
+        <summary>Gibt die Art der Darstellung für leere Zellen in einem Diagramm zurück, oder legt diese fest. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /> Konstanten sein. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1356,11 +1270,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b>. Gibt die Diagrammgruppe an.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine einzelne Ringdiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Ringdiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b>. Legt die Diagrammgruppe fest.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das entweder eine einzelne Ringdiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Ringdiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1396,16 +1308,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Erhöhung von die 3D-Diagrammansicht in Grad. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Die Erhöhung Diagramm ist die Höhe, an der Sie das Diagramm in Grad anzeigen. Der Standardwert ist 15 für die meisten Diagrammtypen. Der Wert dieser Eigenschaft muss zwischen-90 und 90 3D-Diagramme Leiste, in dem sie zwischen 0 und 44 muss.</para>
+        <summary>Gibt die Betrachtungshöhe für 3D-Diagramme in Grad zurück oder legt sie fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Die Betrachtungshöhe eines Diagramms ist die Perspektive oder der Winkel in Grad, aus dem das Diagramm gesehen wird. Die Voreinstellung für die meisten Diagrammtypen ist 15 Grad. Der Wert dieser Eigenschaft muss zwischen -90 und 90 liegen. Für 3D-Balkendiagramme muss der Wert zwischen 0 und 44 liegen.</para>
           <para>
             <b>Hinweis</b>: Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -1432,14 +1340,11 @@
         <Parameter Name="Interactive" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Zeichenfolge</b> der Name der exportierten Datei erforderlich.</param>
-        <param name="FilterName">Optionaler <b>Objekt</b> der sprachenunabhängige Name des Grafikfilters, wie er in der Registrierung erscheint.</param>
-        <param name="Interactive">Optional <b>Objekt</b><b>True</b> , wenn das Dialogfeld anzuzeigen, die die Filter-spezifischen Optionen enthält. Wenn dieses Argument auf <b>False</b>festgelegt ist, verwendet Microsoft Word die Standardwerte für den Filter ein. Der Standardwert lautet <b>False</b>.</param>
-        <summary>Exportiert das Diagramm in einem Grafikformat. Diese Methode gibt einen <b>Boolean</b> -Wert zurück, der angibt, ob der Export erfolgreich war.</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
+        <param name="FileName">Erforderliche <b>Zeichenfolge</b> der Name der exportierten Datei.</param>
+        <param name="FilterName">Optionales <b>Objekt</b> der sprachunabhängige Name des Grafikfilters, wie er in der Registrierung angezeigt wird.</param>
+        <param name="Interactive">Optionales <b>Objekt</b><b>true</b> , um das Dialogfeld anzuzeigen, das die filterspezifischen Optionen enthält. Wenn dieses Argument auf <b>false festgelegt</b>ist, verwendet Microsoft Word die Standardwerte für den Filter. Der Standardwert ist <b>False</b>.</param>
+        <summary>Exportiert das Diagramm in einem Grafikformat. Diese Methode gibt einen <b>booleschen</b> Wert zurück, der angibt, ob der Export erfolgreich war.</summary>
+        <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1469,10 +1374,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Floor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Floor" /> -Objekt, das die Bodenfläche eines 3D-Diagramms darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Floor" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Floor" /> Objekt zurück, das den Boden des 3D-Diagramms darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Floor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1501,8 +1404,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Indexnummer in der Series-Auflistung der Datenreihe zurückgegeben.</param>
-        <summary>Gibt die Auflistung aller Datenreihen im angegebenen Diagramm oder die angegebene Datenreihe zurück.</summary>
+        <param name="Index">Die Indexnummer in der Series-Auflistung der zurückzugebenden Datenreihe.</param>
+        <summary>Gibt die Auflistung aller Datenreihen im angegebenen Diagramm oder der angegebenen Datenreihe zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1539,15 +1442,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Abstand zwischen den Datenreihen in einem 3D-Diagramm als einen prozentualen Anteil der Markierungsbreite. Der Wert dieser Eigenschaft muss zwischen 0 und 500 liegen. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>
+        <summary>Gibt den Zwischenraum zwischen den Datenreihen in einem 3D-Diagramm als Prozentwert der Markierungsbreite (zwischen 0 und 500) zurück oder legt ihn fest. Long Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>
             <b>Hinweis</b>: Diese Eigenschaft gilt nur für 3D-Diagramme.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChartElement">
@@ -1577,17 +1476,13 @@
         <Parameter Name="Arg2" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="x">Die X-Koordinate des Diagrammelements <b>Integer</b> erforderlich.</param>
-        <param name="y">Die Y-Koordinate des Diagrammelements <b>Integer</b> erforderlich.</param>
-        <param name="ElementID">
-          <b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses Argument den <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> Wert des Diagrammelements an den angegebenen Koordinaten. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
-        <param name="Arg1">
-          <b>Ganze Zahl</b> Klicken Sie nach Beendigung die Methode enthält dieses Argument Informationen in Bezug auf das Diagrammelement an. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
-        <param name="Arg2">
-          <b>Ganze Zahl</b> Klicken Sie nach Beendigung die Methode enthält dieses Argument Informationen in Bezug auf das Diagrammelement an. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
-        <summary>Gibt Informationen zu dem Diagrammelement an angegebenen X- und Y-Koordinaten. Diese Methode ist insofern ungewöhnlich, als dass Sie nur Werte für die ersten beiden Argumente angeben. Microsoft Word füllt die anderen Argumente, und diese Werte sollten bei der Beendigung der Methode mithilfe Ihres Codes geprüft werden.</summary>
-        <remarks>
-          <para>Der Wert der <paramref name="ElementID" /> nach Beendigung die Methode bestimmt, ob <paramref name="Arg1" /> und <paramref name="Arg2" /> Informationen enthalten, wie in der folgenden Tabelle dargestellt.</para>
+        <param name="x">Required <b>Integer</b> die X-Koordinate des Chart-Elements.</param>
+        <param name="y">Required <b>Integer</b> die Y-Koordinate des Chart-Elements.</param>
+        <param name="ElementID"><b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> Argument den Wert des Chart-Elements an den angegebenen Koordinaten. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
+        <param name="Arg1"><b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses Argumentinformationen im Zusammenhang mit dem Chart-Element. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
+        <param name="Arg2"><b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses Argumentinformationen im Zusammenhang mit dem Chart-Element. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
+        <summary>Gibt Informationen zum Diagrammelement an der angegebenen X-und Y-Koordinate zurück. Diese Methode ist insofern ungewöhnlich, als dass Sie nur Werte für die ersten beiden Argumente angeben. Microsoft Word füllt die anderen Argumente, und diese Werte sollten bei der Beendigung der Methode mithilfe Ihres Codes geprüft werden.</summary>
+        <remarks><para>Der Wert von <paramref name="ElementID" /> , nachdem die Methode zurückgibt <paramref name="Arg1" /> , <paramref name="Arg2" /> bestimmt, ob und enthält alle Informationen, wie in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <description>
@@ -1635,7 +1530,7 @@
               </description>
               <description>32</description>
               <description>DropZoneType</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1643,7 +1538,7 @@
               </description>
               <description>31</description>
               <description>DropZoneType</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1651,7 +1546,7 @@
               </description>
               <description>20</description>
               <description>GroupIndex</description>
-              <description>keine</description>
+              <description>None</description>
             </item>
             <item>
               <description>
@@ -1659,7 +1554,7 @@
               </description>
               <description>26</description>
               <description>GroupIndex</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1667,7 +1562,7 @@
               </description>
               <description>25</description>
               <description>GroupIndex</description>
-              <description>keine</description>
+              <description>None</description>
             </item>
             <item>
               <description>
@@ -1675,7 +1570,7 @@
               </description>
               <description>27</description>
               <description>GroupIndex</description>
-              <description>keine</description>
+              <description>None</description>
             </item>
             <item>
               <description>
@@ -1683,38 +1578,38 @@
               </description>
               <description>22</description>
               <description>GroupIndex</description>
-              <description>keine</description>
+              <description>None</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlUpBars" />
               </description>
-              <description> 18</description>
+              <description>18</description>
               <description>GroupIndex</description>
-              <description>keine</description>
+              <description>None</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartArea" />
               </description>
               <description>2</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" />
               </description>
               <description>4</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlCorners" />
               </description>
               <description>6</description>
-              <description>None</description>
+              <description>Keine</description>
               <description>Keine</description>
             </item>
             <item>
@@ -1722,56 +1617,56 @@
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" />
               </description>
               <description>7</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlFloor" />
               </description>
               <description>23</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLeaderLines" />
               </description>
               <description>29</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegend" />
               </description>
               <description>24</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlNothing" />
               </description>
               <description>28</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPlotArea" />
               </description>
               <description>19</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" />
               </description>
               <description>5</description>
-              <description>keine</description>
-              <description>keine</description>
+              <description>Keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1787,7 +1682,7 @@
               </description>
               <description>9</description>
               <description>SeriesIndex</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1795,7 +1690,7 @@
               </description>
               <description>12</description>
               <description>SeriesIndex</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1803,7 +1698,7 @@
               </description>
               <description>13</description>
               <description>SeriesIndex</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1819,7 +1714,7 @@
               </description>
               <description>14</description>
               <description>ShapeIndex</description>
-              <description>keine</description>
+              <description>Keines</description>
             </item>
             <item>
               <description>
@@ -1833,9 +1728,9 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" />
               </description>
-              <description>10</description>
+              <description>10 </description>
               <description>SeriesIndex</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
             <item>
               <description>
@@ -1843,46 +1738,45 @@
               </description>
               <description>11</description>
               <description>SeriesIndex</description>
-              <description>keine</description>
+              <description>Keine</description>
             </item>
           </list>
-          <para>Die folgende Tabelle beschreibt die Bedeutung des <paramref name="Arg1" /> und <paramref name="Arg2" /> nach Beendigung die Methode.</para>
+          <para>In der folgenden Tabelle wird die Bedeutung <paramref name="Arg1" /> von <paramref name="Arg2" /> und nach der Rückgabe der Methode beschrieben.</para>
           <list type="table">
             <item>
               <description>AxisIndex</description>
-              <description>Gibt an, ob die Achse Primär oder sekundär ist. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> Konstanten: <b>XlPrimary</b> oder <b>XlSecondary</b>.</description>
+              <description>Gibt an, ob die Achse Primär oder sekundär ist. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> Konstanten sein: <b>xlPrimary</b> oder <b>xlSecondary</b>.</description>
             </item>
             <item>
               <description>AxisType</description>
-              <description>Gibt den Typ der Achse an. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> Konstanten: <b>XlCategory</b>, <b>XlSeriesAxis</b>oder <b>XlValue</b>.</description>
+              <description>Gibt den Typ der Achse an. Kann <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> eine der folgenden Konstanten sein: <b>xlCategory</b>, <b>xlSeriesAxis</b>oder <b>xlValue</b>.</description>
             </item>
             <item>
               <description>DropZoneType</description>
-              <description>Gibt den Typ der Dropzone: Spalte, Daten, Seite oder Zeilenfeld. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> Konstanten: <b>XlColumnField</b>, <b>XlDataField</b>, <b>XlPageField</b>oder <b>XlRowField</b>. Die Spalten-als auch die Feld-Konstanten geben an die Datenreihe und die Kategorie.</description>
+              <description>Gibt den Typ der Dropzone: Spalte, Daten, Seite oder Zeilenfeld. Kann eine <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> der folgenden Konstanten sein: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>oder <b>xlRowField</b>. Die Spalten-als auch die Feld-Konstanten geben die Datenreihe und die Kategorie an.</description>
             </item>
             <item>
               <description>GroupIndex</description>
-              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> -Auflistung für eine bestimmte Diagrammgruppe.</description>
+              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung für eine bestimmte Diagrammgruppe an.</description>
             </item>
             <item>
               <description>PointIndex</description>
-              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Points" /> -Auflistung für einen bestimmten Punkt in einer Datenreihe. Der Wert – 1 gibt an, dass alle Datenpunkte ausgewählt sind.</description>
+              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Points" /> Auflistung für einen bestimmten Punkt innerhalb einer Datenreihe an. Ein Wert von  - 1 bedeutet, dass alle Datenpunkte markiert sind.</description>
             </item>
             <item>
               <description>SeriesIndex</description>
-              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Series" /> Auflistung einer bestimmten Datenreihe.</description>
+              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Series" /> Auflistung für eine bestimmte Datenreihe an.</description>
             </item>
             <item>
               <description>ShapeIndex</description>
-              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> -Auflistung für ein bestimmtes Shape.</description>
+              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung für eine bestimmte Form an.</description>
             </item>
             <item>
               <description>TrendlineIndex</description>
-              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> -Auflistung einer bestimmten Trendlinie in einer Datenreihe.</description>
+              <description>Gibt den Offset innerhalb der <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> Auflistung für eine bestimmte Trendlinie innerhalb einer Datenreihe an.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAxis">
@@ -1921,18 +1815,13 @@
         <Parameter Name="Index2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index1">
-          <b>Objekt</b> den Typ der Achse erforderlich. Datenreihe - Achsen gelten nur für 3D-Diagramme. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> Konstanten.</param>
-        <param name="Index2">Optionales <b>Objekt</b> die Achsengruppe. 3D-Diagramme haben nur einen Satz von Achsen. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> Konstanten.</param>
+        <param name="Index1">Erforderliches <b>Objekt</b> der Typ der Achse. Datenreihe - Achsen gelten nur für 3D-Diagramme. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> Konstanten sein.</param>
+        <param name="Index2">Optionales <b>Objekt</b> die Axis-Gruppe. 3D-Diagramme haben nur einen Satz von Achsen. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> Konstanten sein.</param>
         <summary>Gibt zurück oder legt fest, welche Achsen im Diagramm vorhanden sind. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Geben Sie einen Wert für mindestens einen der Parameter beim Festlegen dieser Eigenschaft.</para>
-          <para>Microsoft Word möglicherweise Achsen erstellt oder gelöscht, wenn Sie den Diagrammtyp ändern oder die <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> -Eigenschaft.</para>
-          <para />
-        </remarks>
+        <value><b>Objekt</b></value>
+        <remarks><para>Wenn Sie diese Eigenschaft festlegen, müssen Sie für mindestens einen Parameter einen Wert eingeben.</para>
+          <para>Microsoft Word möglicherweise Achsen erstellen oder löschen, wenn Sie den Diagrammtyp <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> oder die Eigenschaft ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataTable">
@@ -1961,10 +1850,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen eines Werts, der angibt, ob die <see cref="T:Microsoft.Office.Interop.Word.Chart" /> über eine Datentabelle verfügt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True,</b> Wenn das Diagramm eine Datentabelle besitzt. Andernfalls<b>"false"</b></value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der <see cref="T:Microsoft.Office.Interop.Word.Chart" /> angibt, ob das eine Datentabelle enthält. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolescher Wert</b> 
+          <b>True</b> , wenn das Diagramm eine Datentabelle enthält. Andernfalls<b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2031,10 +1919,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt <b>True</b> zurück, wenn das Diagramm eine Legende verfügt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Gibt <b>true</b> zurück, wenn das Diagramm eine Legende enthält. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2070,13 +1956,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die PivotChart-Steuerelemente im angegebenen PivotChart-Bericht angezeigt werden</summary>
-        <value>
-          <b>Boolean</b> Bei einem Standarddiagramm gibt diese Eigenschaft immer <b>False</b> zurückgibt und kann nicht festgelegt werden.</value>
-        <remarks>
-          <para>Der Standardwert ist <b>"true"</b></para>
-          <para />
-        </remarks>
+        <summary>Bestimmt, ob die PivotChart-Steuerelemente im angegebenen PivotChart-Bericht angezeigt werden.</summary>
+        <value><b>Boolescher Wert</b> Für ein reguläres Diagramm gibt diese Eigenschaft immer <b>false</b> zurück und kann nicht festgelegt werden.</value>
+        <remarks><para>Der Standardwert ist <b>True</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasTitle">
@@ -2111,15 +1994,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn die Achse eine sichtbare Beschriftung oder das Diagramm einen sichtbaren Titel aufweist. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Ein Diagrammtitel wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b>, wenn die Achse eine sichtbare Beschriftung oder das Diagramm einen sichtbaren Titel aufweist. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Ein Diagrammtitel wird durch ein <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt dargestellt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightPercent">
@@ -2154,10 +2032,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Höhe eines 3D-Diagramms als Prozentsatz der Breite des Diagramms (zwischen 5 und 500 Prozent). Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Höhe eines 3D-Diagramms als Prozentsatz der Breite des Diagramms zurück (zwischen 5 und 500 Prozent) oder legt diese Höhe fest. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2187,10 +2063,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Legend</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Legend" /> -Objekt, das die Legende für das Diagramm darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Legend" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Legend" /> Objekt zurück, das die Legende für das Diagramm darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Legend" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2223,10 +2097,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Liniendiagrammgruppe in einem 3D-Diagramm zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>Gibt die Leinen Diagrammgruppe in einem 3D-Diagramm zurück.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2258,11 +2130,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b> gibt die Diagrammgruppe an.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine einzelne Liniendiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Liniendiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b> gibt die Diagrammgruppe an.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das eine einzelne einzeilige Diagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Leinen Diagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2290,9 +2160,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2321,7 +2189,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Gibt die Diagramminformationen an, die eingefügt werden, wenn sich ein Diagramm in der Zwischenablage befindet. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /><b>XlPasteFormats</b>, <b>XlPasteFormulas</b>oder <b>XlPasteAll</b>. Der Standardwert lautet <b>XlPasteAll</b>. Wenn Daten als ein Diagramm in der Zwischenablage vorhanden ist, kann dieses Argument nicht verwendet werden. Einfügen</param>
+        <param name="Type">Gibt die Diagramminformationen an, die eingefügt werden, wenn sich ein Diagramm in der Zwischenablage befindet. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> <b>xlPasteFormats</b>, <b>xlPasteFormulas</b>oder <b>xlPasteAll</b>sein. Der Standardwert lautet <b>xlPasteAll</b>. Wenn es andere Daten als ein Diagramm in der Zwischenablage gibt, kann dieses Argument nicht verwendet werden. Einfügen</param>
         <summary>Fügt Diagrammdaten aus der Zwischenablage in das angegebene Diagramm ein.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2358,14 +2226,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen <b>einen Ganzzahlwert, der die Perspektive für die 3D-Diagrammansicht darstellt</b> .</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft muss zwischen 0 und 100. Diese Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> -Eigenschaft auf <b>True</b>festgelegt ist.</para>
-          <para />
-        </remarks>
+        <summary>Gibt einen ganzzahligen <b></b> Wert zurück, der die Perspektive für die 3D-Diagrammansicht darstellt, oder legt diesen fest.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Der Wert dieser Eigenschaft muss zwischen 0 und 100. Diese Eigenschaft wird ignoriert, wenn <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> die Eigenschaft auf <b>true</b>festgelegt ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pie3DGroup">
@@ -2398,9 +2262,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Kreisdiagrammgruppe in einem 3D-Diagramm zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2432,11 +2294,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b> gibt die Diagrammgruppe an.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine einzelne Kreisdiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Kreisdiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b> gibt die Diagrammgruppe an.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das entweder eine einzelne Kreisdiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Kreisdiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2463,8 +2323,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wird für dieses Objekt nicht unterstützt.</summary>
-        <value>Gibt <see cref="T:System.Object" />.</value>
+        <summary>Für dieses Objekt nicht unterstützt.</summary>
+        <value>Gibt <see cref="T:System.Object" />zurück.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2494,10 +2354,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.PlotArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> -Objekt, das die Zeichnungsfläche eines Diagramms darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.PlotArea" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> Objekt zurück, das die Zeichnungsfläche eines Diagramms darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.PlotArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2527,14 +2385,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, wie die Spalten und Zeilen als Datenreihen im Diagramm verwendet werden. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten: <b>XlColumns</b> oder <b>XlRows</b>. Lese-/Schreibzugriff.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />
-        </value>
-        <remarks>
-          <para>Für PivotChart-Berichten ist diese Eigenschaft ist schreibgeschützt und gibt immer <b>XlColumns</b>zurück.</para>
-          <para />
-        </remarks>
+        <summary>Gibt zurück, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden, oder legt dies fest. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten sein: <b>xlColumns</b> oder <b>xlRows</b>. Lese-/Schreibzugriff.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /></value>
+        <remarks><para>Für PivotChart-Berichten ist diese Eigenschaft ist schreibgeschützt und gibt immer <b>XlColumns</b> zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotVisibleOnly">
@@ -2569,10 +2423,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen eines Werts, das angibt, ob nur sichtbare Zellen gezeichnet werden. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True,</b> Wenn nur sichtbare Zellen gezeichnet werden. <b>False,</b> Wenn sichtbare und ausgeblendete Zellen gezeichnet werden.</value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der angibt, ob nur sichtbare Zellen geplottet werden. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolescher Wert</b> 
+          <b>True</b> , wenn nur sichtbare Zellen geplottet werden. <b>False,</b> Wenn sichtbare und ausgeblendete Zellen gezeichnet werden.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2604,11 +2457,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b> gibt die Diagrammgruppe an.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine einzelne Netzdiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Netzdiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b> gibt die Diagrammgruppe an.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das entweder eine einzelne Radardiagramm Gruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Radardiagramm Gruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Sammlung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2669,15 +2520,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Diagrammachsen im rechten Winkel, unabhängig von der Drehung oder Elevation sind. Gilt nur für 3D-Linien-,, Spalte und Balkendiagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Wenn diese Eigenschaft auf <b>True</b>festgelegt ist die <see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" /> -Eigenschaft wird ignoriert.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b>, wenn die Diagrammachsen im rechten Winkel zueinander stehen, unabhängig von der Drehung oder der Betrachtungshöhe des Diagramms. Nur für 3D-Linien-, Säulen- und Balkendiagramme gültig. Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Wenn diese Eigenschaft auf <b>true</b>festgelegt ist, <see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" /> wird die Eigenschaft ignoriert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -2712,14 +2558,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Drehung der 3D-Diagrammansicht (die Drehung der Zeichnungsfläche um die z-Achse in Grad). Der Wert dieser Eigenschaft muss zwischen 0 und 360, außer für 3D-Diagramme Leiste, in dem der Wert von 0 bis 44 liegen. Der Standardwert ist 20. Gilt nur für 3D-Diagramme. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
-        <remarks>
-          <para>Drehungen werden stets auf die nächste ganze Zahl gerundet.</para>
-          <para />
-        </remarks>
+        <summary>Gibt die Drehung der 3D-Diagrammansicht (die Drehung der Zeichnungsfläche um die z-Achse in Grad) zurück oder legt Sie fest. Der Wert dieser Eigenschaft muss zwischen 0 und 360 liegen, mit Ausnahme von 3D-Balkendiagrammen, bei denen der Wert zwischen 0 und 44 liegen muss. Der Standardwert ist 20. Gilt nur für 3D-Diagramme. Lese-/Schreibzugriff.</summary>
+        <value><b>Objekt</b></value>
+        <remarks><para>Drehungen werden stets auf die nächste ganze Zahl gerundet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveChartTemplate">
@@ -2745,13 +2587,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Zeichenfolge</b> den Namen der Diagrammvorlage erforderlich.</param>
+        <param name="FileName">Erforderliche <b>Zeichenfolge</b> der Name der Diagrammvorlage.</param>
         <summary>Speichert eine benutzerdefinierte Diagrammvorlage in der Liste der verfügbaren Diagrammvorlagen.</summary>
-        <remarks>
-          <para>Diese Methode speichert standardmäßig das aktive Diagramm zu Diagramm Vorlage-Verzeichnis des Benutzers.  Wenn ein UNC- oder URL angegeben ist, wird das Diagramm stattdessen am angegebenen Speicherort gespeichert werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode speichert standardmäßig das aktive Diagramm im Diagrammvorlagenverzeichnis des Benutzers. Wenn ein UNC oder eine URL angegeben wird, wird das Diagramm stattdessen am angegebenen Speicherort gespeichert. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2779,11 +2618,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">(nur für Blätter verwendet). Optional <b>Objekt</b><b>True</b> , wenn die aktuelle Auswahl mit dem angegebenen Objekt ersetzt. <b>False</b>, wenn die aktuelle Markierung erweitert bereits ausgewählte Objekte und das angegebene Objekt.</param>
+        <param name="Replace">(wird nur für Blätter verwendet). Optionales <b>Objekt</b><b>true</b> , um die aktuelle Auswahl durch das angegebene Objekt zu ersetzen. <b>False</b>, wenn die aktuelle Markierung erweitert bereits ausgewählte Objekte und das angegebene Objekt.</param>
         <summary>Markiert das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2812,12 +2649,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objekt</b> erforderlich, der Name oder die Nummer der Datenreihe.</param>
-        <summary>Gibt ein <b>Objekt</b> , das alle Datenreihen im Diagramm darstellt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Required- <b>Objekt</b> der Name oder die Nummer der Datenreihe.</param>
+        <summary>Gibt ein <b>Objekt</b> zurück, das alle Datenreihen im Diagramm darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2847,7 +2681,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSeriesNameLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen eines <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> -Konstante, die Ebene der Quelle den Namen der Datenreihe gibt. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> Konstante zurück, die die Quellebene der Datenreihennamen angibt, oder legt diese fest. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2875,8 +2709,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Zeichenfolge</b> der Name der Grafikdatei erforderlich.</param>
+        <param name="FileName">Erforderliche <b>Zeichenfolge</b> der Name der Grafikdatei.</param>
         <summary>Legt die Hintergrundgrafik für ein Diagramm fest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2904,8 +2737,8 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Erforderlich.  <b>Objekt</b> Gibt den Namen der Standarddiagrammvorlage, die beim Erstellen neuer Diagramme verwendet werden.  Dieser Name kann auf den Namen der eine benutzerdefinierte Diagrammvorlage festgelegt werden, in den Katalog oder einem speziellen <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> Konstante, <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />, um eine integrierte Diagrammvorlage anzugeben.</param>
-        <summary>Gibt den Namen der Diagrammvorlage an, der Microsoft Word beim Erstellen neuer Diagramme verwendet.</summary>
+        <param name="Name">Erforderlich. <b>Objekt</b> Gibt den Namen der Standarddiagrammvorlage an, die beim Erstellen neuer Diagramme verwendet wird.  Dieser Name kann entweder auf den Namen einer benutzerdefinierten Diagrammvorlage im Katalog oder auf eine spezielle <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> Konstante <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />festgelegt werden, um eine integrierte Diagrammvorlage anzugeben.</param>
+        <summary>Gibt den Namen der Diagrammvorlage an, die Microsoft Word beim Erstellen neuer Diagramme verwendet.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2932,28 +2765,26 @@
         <Parameter Name="Element" Type="Microsoft.Office.Core.MsoChartElementType" />
       </Parameters>
       <Docs>
-        <param name="Element">Erforderliche <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> gibt den Diagrammelementtyp an.</param>
+        <param name="Element">Required <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> gibt den Typ des Diagrammelements an.</param>
         <summary>Legt Diagrammelemente in einem Diagramm. Lese-/Schreibzugriff.</summary>
-        <remarks>
-          <para>Bei Diagrammen entsprechen die folgenden Befehle auf der Registerkarte Layout auf die <see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" /> Methode:</para>
+        <remarks><para>Bei Diagrammen entsprechen die folgenden Befehle auf der Registerkarte Layout der <see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" /> Methode:</para>
           <list type="bullet">
             <item>
-              <para>Alles in der Gruppe Beschriftungen.</para>
+              <para>Alles in der Gruppe Beschriftungen</para>
             </item>
             <item>
-              <para>Alles in der Gruppe Achsen.</para>
+              <para>Alles in der Gruppe Achsen</para>
             </item>
             <item>
-              <para>Alles in der Gruppe Analyse.</para>
+              <para>Alles in der Gruppe Analyse</para>
             </item>
             <item>
-              <para>Schaltflächen PlotArea, Diagrammwand und Diagrammboden.</para>
+              <para>Die Schaltflächen Zeichnungsfläche, Diagrammwand und Diagrammboden</para>
             </item>
           </list>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> ist eine Enumeration von Konstanten, die auf alle oben genannten Befehle verweisen.</para>
-          <para />
-        </remarks>
+            <see cref="T:Microsoft.Office.Core.MsoChartElementType" />ist eine Enumeration von Konstanten, die auf alle oben genannten Befehle verweist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSourceData">
@@ -2979,10 +2810,9 @@
         <Parameter Name="PlotBy" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Zeichenfolge</b> , die Adresse des Diagrammdatenbereichs, der die Quelldaten enthält erforderlich.</param>
-        <param name="PlotBy">Optionale <b>Objekt</b> gibt die, wie die Daten gezeichnet werden. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten: <b>XlColumns</b> oder <b>XlRows</b>.</param>
-        <summary>Legt den Quelldatenbereich für das <see cref="T:Microsoft.Office.Interop.Word.Chart" />.</summary>
+        <param name="Source">Erforderliche <b>Zeichenfolge</b> die Adresse des Diagrammdatenbereichs, der die Quelldaten enthält.</param>
+        <param name="PlotBy">Optionales <b>Objekt</b> gibt an, wie die Daten geplottet werden sollen. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten sein: <b>xlColumns</b> oder <b>xlRows</b>.</param>
+        <summary>Legt den Quelldatenbereich für die <see cref="T:Microsoft.Office.Interop.Word.Chart" />fest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3009,10 +2839,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> -Auflistung, die alle Formen auf dem Diagrammblatt darstellt. Schreibgeschützt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung zurück, die alle Formen im Diagrammblatt darstellt. Schreibgeschützt.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3043,8 +2871,7 @@
       </ReturnValue>
       <Docs>
         <summary>Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</summary>
-        <value>
-          <b>true,</b> Wenn alle Schaltflächen auf einer PivotChart Feld angezeigt werden sollen; anderenfalls <b>false</b>.</value>
+        <value><b>true</b> , wenn alle Feldschaltflächen in einem PivotTable-Diagramm angezeigt werden sollen; andernfalls false. andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3105,14 +2932,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt fest, ob für die datenbeschriftungen angezeigt, wenn der Wert größer als der maximale Wert für die Größenachse ist.  Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Wenn Sie die Größenachse in einer Weise ändern, dass die Größe der Datenpunkte kleiner geworden ist, können Sie diese Eigenschaft verwenden, um festzulegen, ob für die datenbeschriftungen angezeigt. Diese Eigenschaft betrifft nur 2D-Diagramme.</para>
-          <para />
-        </remarks>
+        <summary>Gibt zurück oder legt fest, ob die Datenbeschriftungen angezeigt werden sollen, wenn der Wert größer als der Maximalwert auf der Größenachse ist.  Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Wenn Sie die Größenachse so ändern, dass Sie kleiner als die Größe der Datenpunkte wurde, können Sie diese Eigenschaft verwenden, um festzulegen, ob die Datenbeschriftungen angezeigt werden sollen. Diese Eigenschaft kann nur auf 2D-Diagramme angewendet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendFieldButtons">
@@ -3142,8 +2965,7 @@
       </ReturnValue>
       <Docs>
         <summary>Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</summary>
-        <value>
-          <b>true,</b> Wenn Legende Feld in einer PivotChart Schaltflächen angezeigt werden sollen; anderenfalls <b>false</b>.</value>
+        <value><b>true</b> , wenn legendenfeld Schaltflächen auf einem PivotChart angezeigt werden sollen; andernfalls false. andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3173,9 +2995,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dieses Objekt, Member oder -Enumeration ist veraltet und ist nicht für die direkte Verwendung in Ihrem Code verwendet werden.</summary>
-        <value>
-          <b>true,</b> Wenn das Filterfeld den Schaltflächen auf PivotChart angezeigt werden sollen; anderenfalls <b>false</b>.</value>
+        <summary>Dieses Objekt, dieses Element oder diese Aufzählung ist veraltet und ist nicht für die Verwendung in Ihrem Code vorgesehen..</summary>
+        <value><b>true</b> , wenn die Schaltflächen Berichtsfilterfeld in einem PivotChart angezeigt werden sollen; andernfalls false. andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3205,9 +3026,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dieses Objekt, Member oder -Enumeration ist veraltet und ist nicht für die direkte Verwendung in Ihrem Code verwendet werden.</summary>
-        <value>
-          <b>true,</b> Wenn das Wertefeld in einer Pivotchart Schaltflächen angezeigt werden sollen; anderenfalls <b>false</b>.</value>
+        <summary>Dieses Objekt, dieses Element oder diese Aufzählung ist veraltet und ist nicht für die Verwendung in Ihrem Code vorgesehen..</summary>
+        <value><b>true</b> , wenn die Wert Feldschaltflächen in einem PivotChart angezeigt werden sollen; andernfalls false. andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3234,10 +3054,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Walls" /> -Objekt, das dem Benutzer ermöglicht, das die seitliche Wand eines 3D-Diagramms individuell formatieren.  Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Walls" /> Objekt zurück, mit dem der Benutzer die Seitenwand eines 3D-Diagramms einzeln formatieren kann.  Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3279,10 +3097,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Diese API unterstützt die Visual Studio-Tools für Office-Infrastruktur und ist nicht für die direkte Verwendung in Ihrem Code verwendet werden.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Diese API unterstützt die Visual Studio-Tools für Office-Infrastruktur und ist nicht für die direkte Verwendung im Code vorgesehen.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3315,10 +3131,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Fläche Diagrammgruppe eines 3D-Diagramms zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>Gibt die DGM-Diagrammgruppe eines 3D-Diagramms zurück.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3361,9 +3175,7 @@
       </ReturnValue>
       <Docs>
         <summary>Für die interne Verwendung reserviert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3393,10 +3205,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Walls" /> -Objekt, das die Wände eines 3D-Diagramms darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Walls" /> Objekt zurück, das die Wände des 3D-Diagramms darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3428,11 +3238,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optionales- <b>Objekt</b> gibt die Diagrammgruppe an.</param>
-        <summary>Gibt in einem 2D-Diagramm ein Objekt, das darstellt zurück, das eine Diagrammgruppe einzelne Punkt (XY) (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung der Punkt (XY)-Diagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung).</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <param name="Index">Optionales <b>Objekt</b> gibt die Diagrammgruppe an.</param>
+        <summary>Gibt in einem 2D-Diagramm ein Objekt zurück, das entweder eine einzelne Punktdiagrammgruppe (ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt) oder eine Auflistung von Punktdiagrammgruppen (eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> Auflistung) darstellt.</summary>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

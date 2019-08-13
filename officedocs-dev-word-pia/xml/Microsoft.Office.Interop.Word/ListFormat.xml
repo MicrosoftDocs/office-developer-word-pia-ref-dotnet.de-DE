@@ -1,13 +1,5 @@
 <Type Name="ListFormat" FullName="Microsoft.Office.Interop.Word.ListFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bedc659e05e0c224f2395785ec902aa8914376ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669747" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae3a6e1fbf76ffb21d88db92775f307cfb0ece9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146577" /></Metadata><TypeSignature Language="C#" Value="public interface ListFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListFormat" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Attribute der Listenformatierung dar, die den Absätzen in einem Bereich zugewiesen werden können.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> zurückzugebende Eigenschaft der <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekt für einen Bereich.</para>
-      <para>Eine einfache Möglichkeit zum Anwenden der listenformatierung ist die Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />, und <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> Methoden, die, jeweils die erste Listenformat (None ausgeschlossen) auf den einzelnen Registerkarten im Aufzählungszeichen entsprechen im Dialogfeld Nummerierung und.</para>
-      <para>, Um ein anderes Format als das Standardformat anwenden möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> -Methode, die können Sie das Listenformat (Listenvorlage) angeben, gelten sollen.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" /> oder <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" /> Eigenschaft, um die Liste oder Listenvorlage aus dem ersten Absatz im angegebenen Bereich zurückzugeben.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das die listenformatierung verfügbaren Eigenschaften und Methoden für den angegebenen Bereich zugreifen.</para>
-      <para>Jedoch, wenn bereits eine Liste definiert, die in Ihrem Dokument vorhanden ist, können Sie aufrufen ein List-Objekt mithilfe der <see cref="P:Microsoft.Office.Interop.Word._Document.Lists" /> -Eigenschaft.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> die-Eigenschaft, <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> um das Objekt für einen Bereich zurückzugeben.</para>
+      <para>Eine einfache Möglichkeit zum Anwenden von Listenformatierungen ist die <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />Verwendung <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />der, <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> -und-Methoden, die jeweils dem ersten Listenformat (ohne None) auf jeder Registerkarte im Dialogfeld Nummerierung und Aufzählungszeichen entsprechen.</para>
+      <para>Um ein anderes Format als das Standardformat anzuwenden, verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> die-Methode, mit der Sie das Listenformat (Listenvorlage) angeben können, das Sie anwenden möchten.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" /> die <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" /> oder-Eigenschaft, um die Listen-oder Listenvorlage aus dem ersten Absatz im angegebenen Bereich zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Range" /> eines Objekts, um auf die Listenformatierungseigenschaften und-Methoden zuzugreifen, die für den angegebenen Bereich verfügbar sind.</para>
+      <para>Wenn in Ihrem Dokument jedoch bereits eine Liste definiert ist, können Sie mithilfe der <see cref="P:Microsoft.Office.Interop.Word._Document.Lists" /> -Eigenschaft auf ein List-Objekt zugreifen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,8 +78,8 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DefaultListBehavior">Optionales- <b>Objekt</b>. Festlegen eines Werts, das angibt, ob Microsoft Word neue weborientierte Formatierung zur besseren Listenanzeige verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (Verwendung mit Microsoft Word 97 kompatible Formatierung) oder <b>wdWord9ListBehavior</b> (Verwendung weborientierte Formatierung). Aus Gründen der Kompatibilität die Standardkonstante <b>wdWord8ListBehavior</b>ist, aber in neue Verfahren, die Sie <b>wdWord9ListBehavior</b> verwenden sollten, um verbesserte weborientierte Formatierung in Bezug auf Einzüge und mit mehreren Ebenen nutzen, sind.</param>
-        <summary>Fügt Aufzählungszeichen und die Formatierung auf die Absätze im Bereich für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt. Wurden die Absätze bereits mit Aufzählungszeichen formatiert, entfernt diese Methode die Aufzählungszeichen und die Formatierung.</summary>
+        <param name="DefaultListBehavior">Optionales <b>Objekt</b>. Legt einen Wert fest, der angibt, ob Microsoft Word für eine bessere Listenanzeige die neue weborientierte Formatierung verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (verwenden Sie die Formatierung, die mit Microsoft Word 97) oder <b>wdWord9ListBehavior</b> kompatibel ist (verwenden Sie die weborientierte Formatierung). Aus Kompatibilitätsgründen ist die Standardkonstante <b>wdWord8ListBehavior</b>, in neuen Prozeduren sollten Sie jedoch <b>wdWord9ListBehavior</b> verwenden, um die verbesserte weborientierte Formatierung in Bezug auf einrückungs-und Multilevel-Listen zu nutzen.</param>
+        <summary>Fügt den Absätzen im Bereich des angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekts Aufzählungszeichen und Formatierungen hinzu. Wurden die Absätze bereits mit Aufzählungszeichen formatiert, entfernt diese Methode die Aufzählungszeichen und die Formatierung.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,11 +135,11 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt. Die anzuwendende Listenvorlage.</param>
-        <param name="ContinuePreviousList">Optionales- <b>Objekt</b>. <b>True</b>, wenn die Nummerierung der vorherigen Liste fortgesetzt werden soll. <b>False</b>, wenn mit einer neuen Liste begonnen werden soll.</param>
-        <param name="ApplyTo">Optionales- <b>Objekt</b>. Der Teil der Liste die Listenvorlage auf angewendet werden soll. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> Konstanten: <b>WdListApplyToSelection</b>, <b>WdListApplyToWholeList</b>oder <b>WdListApplyToThisPointForward</b>.</param>
-        <param name="DefaultListBehavior">Optionales- <b>Objekt</b>. Festlegen eines Werts, das angibt, ob Microsoft Word neue weborientierte Formatierung zur besseren Listenanzeige verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (Verwendung mit Microsoft Word 97 kompatible Formatierung) oder <b>wdWord9ListBehavior</b> (Verwendung weborientierte Formatierung). Aus Gründen der Kompatibilität die Standardkonstante <b>wdWord8ListBehavior</b>ist, aber in neue Verfahren, die Sie <b>wdWord9ListBehavior</b> verwenden sollten, um verbesserte weborientierte Formatierung in Bezug auf Einzüge und mit mehreren Ebenen nutzen, sind.</param>
-        <summary>Wendet eine Reihe von listenformatierungsmerkmalen auf das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</summary>
+        <param name="ListTemplate">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt. Die anzuwendende Listenvorlage.</param>
+        <param name="ContinuePreviousList">Optionales <b>Objekt</b>. <b>True</b>, wenn die Nummerierung der vorherigen Liste fortgesetzt werden soll. <b>False</b>, wenn mit einer neuen Liste begonnen werden soll.</param>
+        <param name="ApplyTo">Optionales <b>Objekt</b>. Der Teil der Liste, auf den die Listenvorlage angewendet werden soll. Kann <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> eine der folgenden Konstanten sein: <b>wdListApplyToSelection</b>, <b>wdListApplyToWholeList</b>oder <b>wdListApplyToThisPointForward</b>.</param>
+        <param name="DefaultListBehavior">Optionales <b>Objekt</b>. Legt einen Wert fest, der angibt, ob Microsoft Word für eine bessere Listenanzeige die neue weborientierte Formatierung verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (verwenden Sie die Formatierung, die mit Microsoft Word 97) oder <b>wdWord9ListBehavior</b> kompatibel ist (verwenden Sie die weborientierte Formatierung). Aus Kompatibilitätsgründen ist die Standardkonstante <b>wdWord8ListBehavior</b>, in neuen Prozeduren sollten Sie jedoch <b>wdWord9ListBehavior</b> verwenden, um die verbesserte weborientierte Formatierung in Bezug auf einrückungs-und Multilevel-Listen zu nutzen.</param>
+        <summary>Wendet eine Reihe von Eigenschaften für die Listenformatierung auf das <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> angegebene Objekt an.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,10 +202,9 @@
       </Parameters>
       <Docs>
         <param name="ListTemplate">Die anzuwendende Listenvorlage.</param>
-        <param name="ContinuePreviousList">
-          <b>True</b>, wenn die Nummerierung der vorherigen Liste fortgesetzt werden soll. <b>False</b>, wenn mit einer neuen Liste begonnen werden soll.</param>
-        <param name="ApplyTo">Der Teil der Liste die Listenvorlage auf angewendet werden soll. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> Konstanten: <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" />, <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" />, oder <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" />.</param>
-        <param name="DefaultListBehavior">Festlegen eines Werts, das angibt, ob Microsoft Word neue weborientierte Formatierung zur besseren Listenanzeige verwendet. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> Konstanten: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (mit Microsoft Word 97 kompatible Formatierung wird verwendet) oder <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (weborientierte Formatierung verwenden). Aus Gründen der Kompatibilität wird die Standardkonstante <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, aber in neue Verfahren Sie verwenden <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> verbesserte weborientierte Formatierung mit nutzen Hinsicht Einzüge und mit mehreren Ebenen enthält.</param>
+        <param name="ContinuePreviousList"><b>True</b>, wenn die Nummerierung der vorherigen Liste fortgesetzt werden soll. <b>False</b>, wenn mit einer neuen Liste begonnen werden soll.</param>
+        <param name="ApplyTo">Der Teil der Liste, auf den die Listenvorlage angewendet werden soll. Kann <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> eine der folgenden Konstanten sein: <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" />, <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" />, oder. <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" /></param>
+        <param name="DefaultListBehavior">Legt einen Wert fest, der angibt, ob Microsoft Word für eine bessere Listenanzeige die neue weborientierte Formatierung verwendet. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> Konstanten sein: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (verwenden Sie die Formatierung, die mit Microsoft Word 97 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> kompatibel ist) oder (verwenden Sie die weborientierte Formatierung). Aus Kompatibilitätsgründen ist <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />die Standardkonstante, aber in neuen Prozeduren sollten <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> Sie die Vorteile einer verbesserten weborientierten Formatierung in Bezug auf Einrückung und Multilevel-Listen nutzen.</param>
         <param name="ApplyLevel">Die Ebene, auf die die Listenvorlage angewendet wird</param>
         <summary>Wendet eine Reihe von Listenformatierungsmerkmalen an, optional für eine angegebene Ebene.</summary>
         <remarks>To be added.</remarks>
@@ -243,8 +232,8 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DefaultListBehavior">Optionales- <b>Objekt</b>. Festlegen eines Werts, das angibt, ob Microsoft Word neue weborientierte Formatierung zur besseren Listenanzeige verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (Verwendung mit Microsoft Word 97 kompatible Formatierung) oder <b>wdWord9ListBehavior</b> (Verwendung weborientierte Formatierung). Aus Gründen der Kompatibilität die Standardkonstante <b>wdWord8ListBehavior</b>ist, aber in neue Verfahren, die Sie <b>wdWord9ListBehavior</b> verwenden sollten, um verbesserte weborientierte Formatierung in Bezug auf Einzüge und mit mehreren Ebenen nutzen, sind.</param>
-        <summary>Fügt die Standardeinstellung Nummerierungsschemas für die Absätze im Bereich für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt. Wurden die Absätze bereits als nummerierte Liste formatiert, entfernt diese Methode die Nummerierung und die Formatierung.</summary>
+        <param name="DefaultListBehavior">Optionales <b>Objekt</b>. Legt einen Wert fest, der angibt, ob Microsoft Word für eine bessere Listenanzeige die neue weborientierte Formatierung verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (verwenden Sie die Formatierung, die mit Microsoft Word 97) oder <b>wdWord9ListBehavior</b> kompatibel ist (verwenden Sie die weborientierte Formatierung). Aus Kompatibilitätsgründen ist die Standardkonstante <b>wdWord8ListBehavior</b>, in neuen Prozeduren sollten Sie jedoch <b>wdWord9ListBehavior</b> verwenden, um die verbesserte weborientierte Formatierung in Bezug auf einrückungs-und Multilevel-Listen zu nutzen.</param>
+        <summary>Fügt das Standardnummern Schema zu den Absätzen im Bereich des angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekts hinzu. Wurden die Absätze bereits als nummerierte Liste formatiert, entfernt diese Methode die Nummerierung und die Formatierung.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,12 +287,10 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DefaultListBehavior">Optionales- <b>Objekt</b>. Festlegen eines Werts, das angibt, ob Microsoft Word neue weborientierte Formatierung zur besseren Listenanzeige verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (Verwendung mit Microsoft Word 97 kompatible Formatierung) oder <b>wdWord9ListBehavior</b> (Verwendung weborientierte Formatierung). Aus Gründen der Kompatibilität die Standardkonstante <b>wdWord8ListBehavior</b>ist, aber in neue Verfahren, die Sie <b>wdWord9ListBehavior</b> verwenden sollten, um verbesserte weborientierte Formatierung in Bezug auf Einzüge und mit mehreren Ebenen nutzen, sind.</param>
-        <summary>Die Absätze im angegebenen Bereich der Gliederung Standard-Nummerierungsschema hinzugefügt <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt. Wurden die Absätze bereits als eine Gliederung formatiert, entfernt diese Methode die Nummerierung und die Formatierung.</summary>
-        <remarks>
-          <para>Diese Methode entfernt keine integrierte Formatvorlagen für Überschriften, die auf Absätze angewendet wurden.</para>
-          <para />
-        </remarks>
+        <param name="DefaultListBehavior">Optionales <b>Objekt</b>. Legt einen Wert fest, der angibt, ob Microsoft Word für eine bessere Listenanzeige die neue weborientierte Formatierung verwendet. Kann eine der folgenden Konstanten sein: <b>wdWord8ListBehavior</b> (verwenden Sie die Formatierung, die mit Microsoft Word 97) oder <b>wdWord9ListBehavior</b> kompatibel ist (verwenden Sie die weborientierte Formatierung). Aus Kompatibilitätsgründen ist die Standardkonstante <b>wdWord8ListBehavior</b>, in neuen Prozeduren sollten Sie jedoch <b>wdWord9ListBehavior</b> verwenden, um die verbesserte weborientierte Formatierung in Bezug auf einrückungs-und Multilevel-Listen zu nutzen.</param>
+        <summary>Fügt dem Absatz im Bereich für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt das Standardschema für die Gliederungsnummerierung hinzu. Wurden die Absätze bereits als Gliederung formatiert, entfernt diese Methode die Nummerierung und die Formatierung.</summary>
+        <remarks><para>Diese Methode entfernt keine integrierten Formatvorlagen für Überschriften, die auf Absätze angewendet wurden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyOutlineNumberDefaultOld">
@@ -356,13 +343,11 @@
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt. Eine Listenvorlage, die auf vorherige Absätze im Dokument angewendet wurde.</param>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> Konstante (<b>WdContinueDisabled</b>, <b>WdResetList</b>oder <b>WdContinueList</b>), der angibt, ob die Formatierung der vorherigen Liste fortgeführt werden kann.</summary>
+        <param name="ListTemplate">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt. Eine Listenvorlage, die auf vorherige Absätze im Dokument angewendet wurde.</param>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> Konstante (<b>wdContinueDisabled</b>, <b>wdResetList</b>oder <b>wdContinueList</b>) zurück, die angibt, ob die Formatierung der vorherigen Liste fortgesetzt werden kann.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt den Status der Liste fortführen und neu starten, Nummerierung Optionen in die Aufzählungszeichen und Nummerierung im Dialogfeld für das angegebene Listenformat zurück. Um die Einstellungen dieser Optionen ändern, legen Sie die <paramref name="ContinuePreviousList" /> -Argument der der <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt den Status der Optionen Liste fortführen und Neu nummerieren im Dialogfeld Nummerierung und Aufzählungszeichen für das angegebene Listenformat zurück. Um die Einstellungen dieser Optionen zu ändern, legen Sie <paramref name="ContinuePreviousList" /> das Argument der <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> Methode fest.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertNumbersToText">
@@ -387,15 +372,12 @@
         <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">Optionales- <b>Objekt</b>. Der Typ der zu konvertierenden Zahl. Kann die <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> Konstanten.</param>
+        <param name="NumberType">Optionales <b>Objekt</b>. Der Typ der zu konvertierenden Zahl. Kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> Konstanten sein.</param>
         <summary>Ändert die Listennummern und LISTNUM-Felder im angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt in Text.</summary>
-        <remarks>
-          <para>Es gibt zwei Arten von Zahlen: vorgegebene Nummern (<b>WdNumberParagraph</b>), denen Sie Absätzen hinzufügen können, indem Sie im Dialogfeld; Nummerierung und Aufzählungszeichen eine Vorlage auswählen und LISTNUM-Felder (<b>WdNumberListNum</b>), denen Sie mehr als eine Anzahl pro Absatz hinzufügen können.</para>
-          <para>
-            <b>ConvertNumbersToText</b> -Methode ist nützlich, wenn Sie mit einem Dokument in einer anderen Anwendung arbeiten möchten, und dieser Anwendung nicht, listenformatierung oder LISTNUM-Felder erkennt.</para>
-          <para>Listennummern in Text konvertiert wurde, Sie können nicht mehr bearbeitet werden in einer Liste.</para>
-          <para />
-        </remarks>
+        <remarks><para>Es gibt zwei Arten von Zahlen: vordefinierte Nummern (<b>wdNumberParagraph</b>), die Sie zu Absätzen hinzufügen können, indem Sie eine Vorlage im Dialogfeld Nummerierung und Aufzählungszeichen auswählen. und LISTNUM-Felder (<b>wdNumberListNum</b>), mit denen Sie mehr als eine Zahl pro Absatz hinzufügen können.</para>
+          <para>Die <b>ConvertNumbersToText</b> -Methode ist hilfreich, wenn Sie mit einem Dokument in einer anderen Anwendung arbeiten möchten und diese Anwendung keine Listenformatierungen oder LISTNUM-Felder erkennt.</para>
+          <para>Nachdem Sie Listennummern in Text konvertiert haben, können Sie Sie nicht mehr in einer Liste bearbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CountNumberedItems">
@@ -421,15 +403,13 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">Optionales- <b>Objekt</b>. Der Typ der zu zählenden Zahlen. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> Konstanten: <b>WdNumberParagraph</b>, <b>WdNumberListNum</b>oder <b>WdNumberAllNumbers</b>. Der Standardwert ist <b>WdNumberAllNumbers</b>.</param>
-        <param name="Level">Optionales- <b>Objekt</b>. Eine Zahl, die die Nummerierung Ebene entspricht, die Sie zählen möchten. Wenn dieses Argument ausgelassen wird, werden alle Ebenen gezählt.</param>
+        <param name="NumberType">Optionales <b>Objekt</b>. Der Typ der zu zählenden Nummern. Kann <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> eine der folgenden Konstanten sein: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>oder <b>wdNumberAllNumbers</b>. Der Standardwert ist <b>wdNumberAllNumbers</b>.</param>
+        <param name="Level">Optionales <b>Objekt</b>. Eine Zahl, die der zu zählenden Nummerierungsebene entspricht. Wenn dieses Argument ausgelassen wird, werden alle Ebenen gezählt.</param>
         <summary>Gibt die Anzahl der Aufzählungs- oder Nummerierungszeichen und LISTNUM-Felder im angegebenen <b>ListFormat</b>-Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Aufzählungspunkte werden gezählt, wenn entweder <b>WdNumberParagraph</b> oder <b>WdNumberAllNumbers</b> (Standard) für angegeben wird <paramref name="NumberType" />.</para>
-          <para>Es gibt zwei Arten von Zahlen: voreingestellten Nummern (<b>WdNumberParagraph</b>), mit denen Sie Absätzen hinzufügen können, indem Sie im Dialogfeld; Nummerierung und Aufzählungszeichen eine Vorlage auswählen und LISTNUM-Felder (<b>WdNumberListNum</b>), die Ihnen ermöglichen, mehrere hinzufügen Anzahl pro Absatz.</para>
-          <para />
-        </remarks>
+        <remarks><para>Aufzählungselemente werden gezählt, wenn entweder <b>wdNumberParagraph</b> oder <b>wdNumberAllNumbers</b> (der Standardwert) <paramref name="NumberType" />für angegeben ist.</para>
+          <para>Es gibt zwei Arten von Zahlen: vordefinierte Nummern (<b>wdNumberParagraph</b>), die Sie zu Absätzen hinzufügen können, indem Sie eine Vorlage im Dialogfeld Nummerierung und Aufzählungszeichen auswählen. und LISTNUM-Felder (<b>wdNumberListNum</b>), mit denen Sie mehr als eine Zahl pro Absatz hinzufügen können.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -457,11 +437,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -487,12 +465,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.List</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.List" /> -Objekt, das die erste formatierte Liste im angegebenen darstellt <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.List" /> Objekt zurück, das die erste formatierte Liste darstellt, <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> die im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Der erste Absatz im Bereich des <b>ListFormat</b> -Objekts nicht als Liste formatiert ist, gibt die <b>List</b> -Eigenschaft Nothing zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der erste Absatz im Bereich des <b>ListFormat</b>-Objekts nicht als Liste formatiert ist, erfolgt durch die <b>List</b>-Eigenschaft keine Rückgabe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndent">
@@ -516,7 +492,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Erhöht die Listenebene der Absätze im Bereich für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekts in Schritten von einer Ebene.</summary>
+        <summary>Erhöht die Listenebene der Absätze im Bereich für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt in Schritten von einer Ebene.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,7 +522,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Listenebene für den ersten Absatz im angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</summary>
+        <summary>Gibt die Listenebene für den ersten Absatz im angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -572,7 +548,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reduziert die Listenebene der Absätze im Bereich für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekts in Schritten von einer Ebene.</summary>
+        <summary>Verringert die Listenebene der Absätze im Bereich für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt in Schritten von einer Ebene.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,7 +575,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt, das als Aufzählungszeichen in einer Liste mit Bildaufzählungszeichen verwendete Bild darstellt.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt zurück, das das Bild darstellt, das als Aufzählungszeichen in einer Bild Aufzählungsliste verwendet wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -627,13 +603,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>Zeichenfolge</b> , die die Darstellung des Wertes des ersten Absatzes im Bereich für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt. Der zweite Absatz in einer alphabetischen Liste würde beispielsweise b zurückgeben.</summary>
+        <summary>Gibt eine <b>Zeichenfolge</b> , die die Darstellung des Listenwerts des ersten Absatzes im Bereich für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt darstellt. Beispielsweise würde der zweite Absatz in einer alphabetischen Liste B zurückgeben.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für eine Liste mit Aufzählungszeichen müssen Sie die korrekte Schriftart verwenden, um die Zeichenfolge zu sehen. Die meisten Aufzählungszeichen verwenden die Schriftarten Symbol oder Wingdings.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" /> -Eigenschaft auf den numerischen Wert des Absatzes zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Für eine Aufzählung müssen Sie die richtige Schriftart anwenden, damit die Zeichenfolge angezeigt wird. Die meisten Aufzählungszeichen verwenden die Schriftarten Symbol oder Wingdings.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" /> die-Eigenschaft, um den numerischen Wert des Absatzes zurückzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplate">
@@ -659,13 +633,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> -Objekt, das die listenformatierung für das angegebene darstellt <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> Objekt zurück, das die Listenformatierung für das <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> angegebene Objekt darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Eine Listenvorlage enthält die gesamte Formatierung, die eine bestimmte Liste definiert. Jede der sieben Formate (None ausgeschlossen) finden Sie auf den Registerkarten in Aufzählungszeichen und Nummerierung im Dialogfeld (Menü "Format") entspricht einer Listenvorlage. Dokumente und Vorlagen können auch enthalten Sammlungen von Listenvorlagen.</para>
-          <para>, Wenn der erste Absatz im Bereich des <b>ListFormat</b> -Objekts nicht als Liste formatiert ist, gibt die <b>ListTemplate</b> -Eigenschaft <b>Nothing zurück</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Eine Listenvorlage enthält die gesamte Formatierung, die eine bestimmte Liste definiert. Jedes der sieben Formate (Ohne ausgenommen), die Sie jeweils auf jeder Registerkarte im Dialogfeld Nummerierung und Aufzählungszeichen (im Menü Format) finden, entspricht einer Listenvorlage. Dokumente und Vorlagen können ebenfalls Auflistungen mit Listenvorlagen enthalten.</para>
+          <para>Ist der erste Absatz im Bereich für das <b>ListFormat</b>-Objekt nicht als Liste formatiert, gibt die <b>ListTemplate</b>-Eigenschaft <b>Nothing</b> zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListType">
@@ -691,12 +663,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Listentypen, die enthalten sind im Bereich für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</summary>
+        <summary>Gibt den Typ der Listen zurück, die im Bereich für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt enthalten sind.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>ListType</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdListType" /> Konstanten. <b>WdListListNumOnly</b> -Konstante bezieht sich auf LISTNUM-Felder, die Felder, die in den Text eines Absatzes hinzugefügt werden können.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>ListType</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdListType" /> Konstanten sein. Die <b>wdListListNumOnly</b>-Konstante bezieht sich auf LISTNUM-Felder. Das sind Felder, die in den Text eines Absatzes eingefügt werden können.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListValue">
@@ -722,15 +692,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den numerischen Wert des ersten Absatzes im Bereich für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt. Beispielsweise würde die <b>ListValue</b> -Eigenschaft dem zweiten Absatz in einer alphabetische Liste 2 zurückgeben.</summary>
+        <summary>Gibt den numerischen Wert des ersten Absatzes im Bereich für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt zurück. Beispielsweise würde die <b>ListValue</b> -Eigenschaft, die auf den zweiten Absatz in einer alphabetischen Liste angewendet wird, 2 zurückgeben.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" /> Eigenschaft, um eine Zeichenfolge zurückzugeben, die den Listenwert darstellt.</para>
-          <para>Wenn das <b>ListFormat</b> -Objekt auf eine Aufzählung bezieht, gibt die <b>ListValue</b> -Eigenschaft 1 zurück.</para>
-          <para>, Wenn das <b>ListFormat</b> -Objekt auf eine Gliederung angewendet wird, gibt die <b>ListValue</b> -Eigenschaft den numerischen Wert des ersten Absatzes, wie er in der Reihenfolge der Absätze auf derselben Ebene auftritt. Beispielsweise, wenn der erste Absatz für ein angegebenes <b>ListFormat</b> -Objekt "a. 2 nummeriert, <b>ListValue</b> würde zurückgegeben 2.</para>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" /> die-Eigenschaft, um eine Zeichenfolge zurückzugeben, die den Listenwert darstellt.</para>
+          <para>Wenn das <b>ListFormat</b> -Objekt auf eine Aufzählungsliste angewendet <b></b> wird, gibt die ListValue-Eigenschaft den Wert 1 zurück.</para>
+          <para>Wenn das <b>ListFormat</b> -Objekt auf eine Liste mit Gliederungsnummern angewendet <b></b> wird, gibt die ListValue-Eigenschaft den numerischen Wert des ersten Absatzes zurück, der in der Abfolge von Absätzen auf derselben Ebene auftritt. Wenn beispielsweise der erste Absatz für ein angegebenes <b>ListFormat</b> -Objekt mit "a. 2" nummeriert wurde, gibt der <b>ListValue</b> 2 zurück.</para>
           <para>Diese Eigenschaft gibt nicht den Wert für ein LISTNUM-Feld zurück.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -783,12 +751,10 @@
         <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">Optionale <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />. Der zu entfernende Zahlentyp.</param>
-        <summary>Entfernt Zahlen oder Aufzählungszeichen aus dem angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</summary>
-        <remarks>
-          <para>Wenn diese Methode angewendet wird, um ein <see cref="T:Microsoft.Office.Interop.Word.List" /> -Objekts, Zahlen nur von Absätzen in der angegebenen Liste übersprungen überlappende Zahlen aus anderen Listen entfernt. Wenn diese Methode auf das <b>ListFormat</b> -Objekt für einen Textbereich angewendet wird, werden alle Zahlen aus allen Listen im Bereich entfernt.</para>
-          <para />
-        </remarks>
+        <param name="NumberType">Optional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />. Der zu entfernende Zahlentyp.</param>
+        <summary>Entfernt Zahlen oder Aufzählungszeichen aus <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> dem angegebenen Objekt.</summary>
+        <remarks><para>Wenn diese Methode auf ein <see cref="T:Microsoft.Office.Interop.Word.List" /> Objekt angewendet wird, werden nur Zahlen aus Absätzen in der angegebenen Liste entfernt, wobei alle Interleaved-Nummern aus anderen Listen übersprungen werden. Wenn diese Methode auf das <b>ListFormat</b> -Objekt für einen Textbereich angewendet wird, werden alle Zahlen aus allen Listen im Bereich entfernt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SingleList">
@@ -814,8 +780,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekt nur eine Liste enthält.</summary>
+        <summary><b>True</b> , wenn das <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> angegebene Objekt nur eine Liste enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -843,8 +808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die gesamte <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekt dieselbe Listenvorlage verwendet.</summary>
+        <summary><b>True</b> , wenn das <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> gesamte Objekt dieselbe Listenvorlage verwendet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

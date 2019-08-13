@@ -1,14 +1,5 @@
 <Type Name="_Global" FullName="Microsoft.Office.Interop.Word._Global">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="97dfc9ba551e678188886c5d83bb455dc809f189" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669084" />
-    <Meta Name="localization_priority" Value="Normal" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Global" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="97dfc9ba551e678188886c5d83bb455dc809f189" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34141977" /></Metadata><TypeSignature Language="C#" Value="public interface _Global" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Global" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._Global" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Global" />
@@ -27,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Dies ist eine primäre Schnittstelle in einem COM-Co-Klasse, die von verwaltetem Code für die Interoperabilität mit den entsprechenden COM-Objekt erforderlich ist. Verwenden Sie diese primäre Schnittstelle nur, wenn die Methode, den, die Sie verwenden möchten, den gleichen Namen wie die COM-Objekt gemeinsam verwendet. In diesem Fall dieser Schnittstelle zum Aufrufen der Methode umgewandelt, und in die neuesten Ereignisschnittstelle für die Verbindung an das Ereignis umgewandelt. Verwenden Sie andernfalls die .NET-Schnittstelle, die von der COM-Co-Klasse Zugriff auf Methoden, Eigenschaften und Ereignisse das COM-Objekt abgeleitet ist. Weitere Informationen über das COM-Objekt finden Sie unter <see cref="T:Microsoft.Office.Interop.Word.Global" />.</summary>
+    <summary>Hierbei handelt es sich um eine primäre Schnittstelle in einer COM-CoClass, die von verwaltetem Code benötigt wird, um Interoperabilität mit dem entsprechenden COM-Objekt sicherzustellen. Verwenden Sie diese primäre Schnittstelle nur, wenn die Methode, die Sie verwenden möchten, den gleichen Namen aufweist wie ein Ereignis des COM-Objekts; casten Sie in diesem Fall zu dieser Schnittstelle, um die Methode aufzurufen, und casten Sie zur aktuellen Ereignisschnittstelle, um eine Verbindung zum Ereignis herzustellen. Verwenden Sie andernfalls die von der COM-CoClass abgeleitete .NET-Schnittstelle, um auf Methoden, Eigenschaften und Ereignisse des COM-Objekts zuzugreifen. Weitere Informationen zum COM-Objekt finden Sie unter <see cref="T:Microsoft.Office.Interop.Word.Global" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt, das das aktive Dokument (das Dokument mit dem Fokus) darstellt. Wenn geöffnet sind keine Dokumente, tritt ein Fehler auf.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück, das das aktive Dokument (das Dokument mit dem Fokus) darstellt. Wenn geöffnet sind keine Dokumente, tritt ein Fehler auf.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +76,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Namen des aktiven Druckers fest.</summary>
+        <summary>Gibt den Namen des aktiven Druckers zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,12 +104,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProtectedViewWindow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> -Objekt, das aktive geschützte Ansichtsfenster (das geschützte Ansicht-Fenster mit dem Fokus) darstellt.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> Objekt.</value>
-        <remarks>
-          <para>Schreibgeschützt. Wenn keine Fenster geöffnet sind, wird die Verwendung dieser Eigenschaft einen Fehler.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> Objekt ab, das das aktive geschützte Ansichtsfenster darstellt (das geschützte Ansichtsfenster mit dem Fokus).</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />-Objekt.</value>
+        <remarks><para>Schreibgeschützt. Wenn keine Fenster geöffnet sind, wird beim Verwenden dieser Eigenschaft ein Fehler generiert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveWindow">
@@ -144,12 +133,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekt, das aktive Fenster (das Fenster mit dem Fokus) darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Window" /> Objekt zurück, das das aktive Fenster (das Fenster mit dem Fokus) darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn es sind keine Fenster geöffnet, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn keine Fenster geöffnet sind, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIns">
@@ -175,12 +162,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.AddIns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> -Auflistung, die alle verfügbaren Add-Ins darstellt, unabhängig davon, ob sie gegenwärtig geladen sind.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> Auflistung zurück, die alle verfügbaren Add-Ins darstellt, unabhängig davon, ob Sie derzeit geladen sind.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>AddIns</b> -Auflistung enthält die globalen Vorlagen und Microsoft Word-add-in-Bibliotheken (WLLs), die im Dialogfeld Vorlagen und Add-Ins (Menü Extras) aufgelistet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>AddIns</b> -Auflistung enthält die globalen Vorlagen und Microsoft Word-Add-in-Bibliotheken (WLLs), die im Dialogfeldvorlagen und Add-Ins (Menü Extras) aufgeführt sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AnswerWizard">
@@ -209,7 +194,7 @@
         <ReturnType>Microsoft.Office.Core.AnswerWizard</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.AnswerWizard" /> -Objekt, das die Dateien für die Suchmaschine der Onlinehilfe befinden.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.AnswerWizard" /> Objekt zurück, das die Dateien enthält, die von der Suchmaschine für die Online Hilfe verwendet werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +253,7 @@
         <ReturnType>Microsoft.Office.Core.Assistant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.Assistant" /> -Objekt, das den Microsoft Office-Assistenten darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.Assistant" /> Objekt zurück, das den Microsoft Office-Assistenten darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,7 +281,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCaptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> -Auflistung, die Beschriftungen darstellt, die automatisch beim hinzugefügt werden, Elemente wie Tabellen und Grafiken werden in ein Dokument eingefügt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> Auflistung zurück, die die Beschriftungen darstellt, die automatisch hinzugefügt werden, wenn Elemente wie Tabellen und Bilder in ein Dokument eingefügt werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,7 +309,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" /> -Objekt, das die aktuellen AutoKorrektur-Optionen, Einträge und Ausnahmen enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" /> Objekt zurück, das die aktuellen AutoKorrektur-Optionen,-Einträge und-Ausnahmen enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,7 +337,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" /> -Objekt, das automatisch an e-mail-Nachrichten vorgenommene Korrekturen repräsentiert.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" /> Objekt zurück, das automatische Korrekturen darstellt, die an e-Mail-Nachrichten vorgenommen wurden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,10 +367,10 @@
         <Parameter Name="Arg4" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Arg1">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdKey" />. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
-        <param name="Arg2">Optional <b>WdKey</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
-        <param name="Arg3">Optional <b>WdKey</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
-        <param name="Arg4">Optional <b>WdKey</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <param name="Arg1">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdKey" />. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <param name="Arg2">Optionale <b>WdKey</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <param name="Arg3">Optionale <b>WdKey</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <param name="Arg4">Optionale <b>WdKey</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
         <summary>Gibt für die angegebene Tastenkombination eine eindeutige Zahl zurück.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -414,7 +399,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CaptionLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> Auflistung, die die verfügbaren Beschriftungskategorien darstellen.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> Auflistung zurück, die alle verfügbaren Beschriftungs Beschriftungen darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -442,14 +427,11 @@
         <Parameter Name="Centimeters" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Centimeters">
-          <b>Single</b>erforderlich. Der Zentimeterwert, der in Punkt konvertiert werden soll.</param>
+        <param name="Centimeters">Erforderlicher <b>Single</b>-Wert. Der Zentimeterwert, der in Punkt konvertiert werden soll.</param>
         <summary>Wandelt eine Maßangabe von Zentimeter in Punkt (1 cm = 28,35 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Eigenschaft gibt die konvertierte Größe als <b>einzelne</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeFileOpenDirectory">
@@ -475,14 +457,11 @@
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b> erforderlich. Der Pfad zu dem Ordner, in dem Word nach Dokumenten sucht.</param>
-        <summary>Legt den Ordner, in dem Microsoft Word nach Dokumenten sucht.</summary>
-        <remarks>
-          <para>Inhalte des angegebenen Ordners aufgelisteten das nächste Mal das Dialogfeld Öffnen (Menü Datei) angezeigt wird.</para>
-          <para>Sucht Word den angegebenen Ordner nach Dokumenten, bis der Benutzer den Ordner im Dialogfeld Öffnen oder die aktuelle Word-Sitzung beendet ändert. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> -Eigenschaft den Standardordner für Dokumente in jeder Word-Sitzung geändert.</para>
-          <para />
-        </remarks>
+        <param name="Path"><b>String</b> erforderlich. Der Pfad zu dem Ordner, in dem Word nach Dokumenten sucht.</param>
+        <summary>Legt den Ordner fest, in dem Microsoft Word nach Dokumenten sucht.</summary>
+        <remarks><para>Der Inhalt des angegebenen Ordners wird beim nächsten Anzeigen des Dialogfelds Öffnen (im Menü Datei) aufgeführt.</para>
+          <para>Der angegebene Ordner wird von Word nach Dokumenten durchsucht, bis der Benutzer den Ordner im Dialogfeld Öffnen ändert oder die Word-Sitzung beendet wird. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> die-Eigenschaft, um den Standardordner für Dokumente in jeder Word-Sitzung zu ändern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckSpelling">
@@ -519,26 +498,23 @@
         <Parameter Name="CustomDictionary10" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Word">
-          <b>String</b> erforderlich. Der Text, der auf Rechtschreibfehler überprüft werden soll.</param>
-        <param name="CustomDictionary">Optionales- <b>Objekt</b>. Ein Ausdruck, der gibt eine <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt oder der Dateiname des Benutzerwörterbuchs.</param>
-        <param name="IgnoreUppercase">Optionales- <b>Objekt</b>. <b>True,</b> Wenn die Groß-und Kleinschreibung ignoriert wird. Wenn dieses Argument ausgelassen wird, den aktuellen Wert der <see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" /> -Eigenschaft verwendet wird.</param>
-        <param name="MainDictionary">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname des Hauptwörterbuchs.</param>
-        <param name="CustomDictionary2">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs. Sie können bis zu neun zusätzliche Wörterbücher angeben.</param>
-        <param name="CustomDictionary3">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary4">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary5">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary6">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary7">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary8">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary9">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary10">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <summary>Eine Zeichenfolge auf Rechtschreibfehler überprüft.</summary>
+        <param name="Word"><b>String</b> erforderlich. Der Text, der auf Rechtschreibfehler überprüft werden soll.</param>
+        <param name="CustomDictionary">Optionales <b>Objekt</b>. Entweder ein Ausdruck, der ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt oder den Dateinamen des Benutzerwörterbuchs zurückgibt.</param>
+        <param name="IgnoreUppercase">Optionales <b>Objekt</b>. <b>True</b>, wenn Groß-/Kleinschreibung ignoriert wird. Wenn dieses Argument ausgelassen wird, wird der aktuelle Wert der <see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" /> Eigenschaft verwendet.</param>
+        <param name="MainDictionary">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname des Hauptwörterbuchs.</param>
+        <param name="CustomDictionary2">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs. Sie können bis zu neun zusätzliche Wörterbücher angeben.</param>
+        <param name="CustomDictionary3">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary4">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary5">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary6">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary7">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary8">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary9">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary10">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <summary>Überprüft eine Zeichenfolge auf Rechtschreibfehler.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn die Zeichenfolge hat keine Rechtschreibfehler und <b>False</b> , wenn dies der Fall ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die Zeichenfolge keine Rechtschreibfehler enthält, und <b>false</b> , wenn dies der Fall ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CleanString">
@@ -563,53 +539,50 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">
-          <b>String</b> erforderlich. Die Quellzeichenfolge.</param>
-        <summary>Nicht druckbare Zeichen (Zeichencodes 1-29) und spezielle Microsoft Word-Zeichen aus der angegebenen Zeichenfolge entfernt oder ersetzt sie durch Leerzeichen (Zeichencode 32).</summary>
+        <param name="String"><b>String</b> erforderlich. Die Quellzeichenfolge.</param>
+        <summary>Entfernt nicht druckbare Zeichen (Zeichencodes 1 – 29) und spezielle Microsoft Word Zeichen aus der angegebenen Zeichenfolge oder ändert Sie in Leerzeichen (Zeichencode 32).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Eigenschaft gibt das Ergebnis als <b>Zeichenfolge</b>zurück.</para>
-          <para>Die folgenden Zeichen werden in dieser Tabelle beschriebenen konvertiert.</para>
+        <remarks><para>Diese Eigenschaft gibt das Ergebnis als <b>Zeichenfolge</b>zurück.</para>
+          <para>Die folgenden Zeichen werden entsprechend der Beschreibung in der Tabelle umgewandelt.</para>
           <list type="table">
             <item>
-              <description>7 (Signalton)</description>
-              <description>entfernt, wenn das Zeichen 13 (Absatz) vorangestellt und anschließend in Zeichen 9 (Tabulator) umgewandelt.</description>
+              <description>7 (Warnton)</description>
+              <description>Wird, sofern nicht das Zeichen 13 (Absatz) voransteht, entfernt und anschließend in Zeichen 9 (Tabulator) umgewandelt.</description>
             </item>
             <item>
               <description>10 (Zeilenvorschub)</description>
-              <description>in Zeichen 13 (Absatz) konvertiert werden, es sei denn, Zeichen 13 vorangestellt, und klicken Sie dann entfernt.</description>
+              <description>Wird, sofern nicht das Zeichen 13 voransteht, in Zeichen 13 (Absatz) umgewandelt und anschließend entfernt.</description>
             </item>
             <item>
               <description>13 (Absatz)</description>
-              <description>Unchanged.</description>
+              <description>Unverändert.</description>
             </item>
             <item>
               <description>31 (bedingter Trennstrich)</description>
-              <description>entfernt.</description>
+              <description>Entfernt.</description>
             </item>
             <item>
               <description>160 (geschütztes Leerzeichen)</description>
-              <description>in Zeichen 32 (Leerzeichen) konvertiert.</description>
+              <description>In Zeichen 32 (Leerzeichen) konvertiert.</description>
             </item>
             <item>
               <description>172 (bedingter Trennstrich)</description>
-              <description>entfernt.</description>
+              <description>Entfernt.</description>
             </item>
             <item>
               <description>176 (geschütztes Leerzeichen)</description>
-              <description>in Zeichen 32 (Leerzeichen) konvertiert.</description>
+              <description>In Zeichen 32 (Leerzeichen) konvertiert.</description>
             </item>
             <item>
               <description>182 (Absatzmarke)</description>
-              <description>entfernt.</description>
+              <description>Entfernt.</description>
             </item>
             <item>
               <description>183 (Aufzählungszeichen)</description>
-              <description>in Zeichen 32 (Leerzeichen) konvertiert.</description>
+              <description>In Zeichen 32 (Leerzeichen) konvertiert.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandBars">
@@ -635,12 +608,10 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.CommandBars" /> -Auflistung, die die Menüzeile und alle Symbolleisten in Microsoft Word darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Core.CommandBars" /> Auflistung zurück, die die Menüleiste und alle Symbolleisten in Microsoft Word darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Global.CustomizationContext" /> -Eigenschaft auf den Kontext der Vorlage oder das Dokument vor dem Zugriff auf die <b>CommandBars</b> -Auflistung festzulegen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Global.CustomizationContext" /> die-Eigenschaft, um die Vorlage oder den Dokumentkontext vor dem Zugriff auf die <b>CommandBars</b> -Auflistung festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -668,11 +639,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDictionaries">
@@ -698,7 +667,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionaries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> -Objekt, das die Auflistung der aktiven Benutzerwörterbücher darstellt. Aktive Benutzerwörterbücher sind in einem Kontrollkästchen im Dialogfeld Benutzerwörterbücher mit einem Häkchen markiert.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> Objekt zurück, das die Auflistung aktiver Benutzerwörterbücher darstellt. Aktive Benutzerwörterbücher sind in einem Kontrollkästchen im Dialogfeld Benutzerwörterbücher mit einem Häkchen markiert.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -729,12 +698,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.Template" /> oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt, das darstellt, die Vorlage oder das Dokument in der Änderungen an Menüleisten, Symbolleisten und Tastenbelegungen gespeichert sind.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.Template" /> einer <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder eines Objekts, das die Vorlage oder das Dokument darstellt, in dem Änderungen an Menüleisten, Symbolleisten und Tastenkombinationen gespeichert werden.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Entspricht dem Wert der im Feld auf der Registerkarte Befehle im Dialogfeld Anpassen (Menü Extras) speichern.</para>
-          <para />
-        </remarks>
+        <remarks><para>Entspricht dem Wert im Feld Speichern in auf der Registerkarte Befehle im Dialogfeld Anpassen (Menü Extras).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEExecute">
@@ -761,15 +728,11 @@
         <Parameter Name="Command" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>Integer</b>erforderlich. Die zurückgegebene Kanalnummer der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode.</param>
-        <param name="Command">
-          <b>String</b> erforderlich. Ein Befehl oder eine Reihe von Befehlen, die von der empfangenden Anwendung (DDE-Server) erkannt werden. Wenn die empfangende Anwendung den angegebenen Befehl durchführen kann, tritt ein Fehler auf.</param>
+        <param name="Channel">Erforderliche <b>ganze Zahl</b>. Die von der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode zurückgegebene Kanalnummer.</param>
+        <param name="Command"><b>String</b> erforderlich. Ein Befehl oder eine Reihe von Befehlen, die von der empfangenden Anwendung erkannt werden (der DDE-Server). Wenn die empfangende Anwendung den angegebenen Befehl nicht ausführen kann, tritt ein Fehler auf.</param>
         <summary>Sendet einen Befehl oder eine Befehlsfolge durch den angegebenen DDE-Kanal (DDE = Dynamic Data Exchange/Dynamischer Datenaustausch) an eine Anwendung.</summary>
-        <remarks>
-          <para>Dynamischem Datenaustausch (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie nach Möglichkeit eine sicherere Alternative zu DDE.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEInitiate">
@@ -796,17 +759,13 @@
         <Parameter Name="Topic" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="App">
-          <b>String</b> erforderlich. Der Name der Anwendung.</param>
-        <param name="Topic">
-          <b>String</b> erforderlich. Der Name der DDE-Themas – beispielsweise den Namen eines geöffneten Dokuments – von der Anwendung, der Sie einen Kanal öffnen, erkannt.</param>
+        <param name="App"><b>String</b> erforderlich. Der Name der Anwendung.</param>
+        <param name="Topic"><b>String</b> erforderlich. Der Name eines DDE-Themas (beispielsweise der Name eines geöffneten Dokuments), das von der Anwendung erkannt wird, in der Sie einen Kanal öffnen.</param>
         <summary>Öffnet einen DDE-Kanal (DDE = Dynamic Data Exchange/Dynamischer Datenaustausch) zu einer anderen Anwendung und gibt die Kanalnummer zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Dynamic Data Exchange (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich eine sicherere Alternative zu DDE.</para>
-          <para>, Wenn es erfolgreich ist, gibt die <b>DDEInitiate</b> -Methode die Anzahl der geöffneten Kanals zurück. Alle nachfolgenden DDE-Funktionen verwenden diese Nummer zum Angeben des Kanals.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para>Wenn es erfolgreich ist, gibt die <b>DDEInitiate</b> -Methode die Nummer des geöffneten Kanals zurück. Alle nachfolgenden DDE-Funktionen verwenden diese Nummer zum Angeben des Kanals.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEPoke">
@@ -834,18 +793,13 @@
         <Parameter Name="Data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>Integer</b>erforderlich. Die zurückgegebene Kanalnummer der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode.</param>
-        <param name="Item">
-          <b>String</b> erforderlich. Das Element innerhalb eines DDE-Themas, an das die angegebenen Daten gesendet werden sollen.</param>
-        <param name="Data">
-          <b>String</b> erforderlich. Die Daten, die an die empfangende Anwendung (DDE-Server) gesendet werden sollen.</param>
+        <param name="Channel">Erforderliche <b>ganze Zahl</b>. Die von der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode zurückgegebene Kanalnummer.</param>
+        <param name="Item"><b>String</b> erforderlich. Das Element innerhalb eines DDE-Themas, an das die angegebenen Daten gesendet werden sollen.</param>
+        <param name="Data"><b>String</b> erforderlich. Die Daten, die an die empfangende Anwendung (DDE-Server) gesendet werden sollen.</param>
         <summary>Verwendet einen geöffneten DDE-Kanal (DDE = Dynamic Data Exchange/Dynamischer Datenaustausch) zum Senden von Daten an eine Anwendung.</summary>
-        <remarks>
-          <para>Dynamic Data Exchange (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich eine sicherere Alternative zu DDE.</para>
-          <para>Wenn die <b>DDEPoke</b> -Methode nicht erfolgreich ist, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para>Wenn die <b>DDEPoke</b>-Methode nicht erfolgreich ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDERequest">
@@ -872,19 +826,16 @@
         <Parameter Name="Item" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>Integer</b>erforderlich. Die zurückgegebene Kanalnummer der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode.</param>
-        <param name="Item">
-          <b>String</b> erforderlich. Das Element, das angefordert werden soll.</param>
+        <param name="Channel">Erforderliche <b>ganze Zahl</b>. Die von der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode zurückgegebene Kanalnummer.</param>
+        <param name="Item"><b>String</b> erforderlich. Das Element, das angefordert wird.</param>
         <summary>Verwendet einen geöffneten DDE-Kanal (DDE = Dynamic Data Exchange/Dynamischer Datenaustausch), um Informationen von der empfangenden Anwendung anzufordern, und gibt die Informationen als Zeichenfolge zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Dynamic Data Exchange (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich eine sicherere Alternative zu DDE.</para>
-          <para>, Wenn Sie Daten aus dem Thema in der Serveranwendung anfordern, müssen Sie das Element in dem Thema angeben, dessen Inhalt Sie anfordern. In Microsoft Excel, z. B. Zellen zulässige Elemente und verweisen auf sie entweder das Format "R1C1" oder benannte Verweise.</para>
-          <para>Microsoft Excel und andere Anwendungen, die DDE unterstützen erkennen ein Themas mit dem Namen "System". Drei standard-Elemente im Thema "System" werden in der folgenden Tabelle beschrieben. Beachten Sie, dass Sie eine Liste der anderen Elemente im Thema "System" abrufen können, indem Sie mit dem Element <b>"SysItems" verwenden</b> .</para>
+        <remarks><para>Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para>Wenn Sie Informationen aus dem Thema in der Serveranwendung anfordern, müssen Sie das Element in diesem Thema angeben, dessen Inhalte Sie anfordern. In Microsoft Excel sind z. B. Zellen zulässige Elemente, und Sie verweisen auf sie, indem Sie entweder das Format "R1C1" oder benannte Verweise verwenden.</para>
+          <para>Microsoft Excel und andere Anwendungen, die DDE unterstützen, erkennen ein Thema namens "System". Drei Standard-Elemente im Thema "System" werden in der folgenden Tabelle beschrieben. Beachten Sie, dass Sie mithilfe des Elements SysItems eine Liste der anderen Elemente im System <b></b> Thema abrufen können.</para>
           <list type="table">
             <item>
-              <description>"SysItems" verwenden</description>
+              <description>SysItems</description>
               <description>Gibt eine Liste aller Elemente im Thema "System" zurück.</description>
             </item>
             <item>
@@ -893,11 +844,10 @@
             </item>
             <item>
               <description>Formate</description>
-              <description>Gibt eine Liste aller Zwischenablage-Formate, die von Microsoft Word unterstützt werden.</description>
+              <description>Gibt eine Liste aller Zwischenablageformate zurück, die von Microsoft Word unterstützt werden.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDETerminate">
@@ -923,13 +873,10 @@
         <Parameter Name="Channel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>Integer</b>erforderlich. Die zurückgegebene Kanalnummer der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode.</param>
-        <summary>Schließt den angegebenen DDE-Kanal (DDE = Dynamic Data Exchange/Dynamischer Datenaustausch) zu einer anderen Anwendung.</summary>
-        <remarks>
-          <para>Dynamischem Datenaustausch (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie nach Möglichkeit eine sicherere Alternative zu DDE.</para>
-          <para />
-        </remarks>
+        <param name="Channel">Erforderliche <b>ganze Zahl</b>. Die von der <see cref="M:Microsoft.Office.Interop.Word._Global.DDEInitiate(System.String,System.String)" /> Methode zurückgegebene Kanalnummer.</param>
+        <summary>Schließt den angegebenen DDE-Kanal zu einer anderen Anwendung.</summary>
+        <remarks><para>Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDETerminateAll">
@@ -953,13 +900,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Schließt alle dynamic Data exchange (DDE) Kanäle von Microsoft Word geöffnet.</summary>
-        <remarks>
-          <para>Diese Methode wird nicht geschlossen Kanäle von Clientanwendungen in Word geöffnet. Mit dieser Methode ist identisch mit der <see cref="M:Microsoft.Office.Interop.Word._Global.DDETerminate(System.Int32)" /> -Methode für jeden geöffneten Kanal.</para>
-          <para>Dynamic Data Exchange (DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich eine sicherere Alternative zu DDE.</para>
-          <para>, Wenn Sie Code unterbrechen, das einen DDE-Kanal geöffnet wird, können Sie versehentlich ein Kanal geöffnet bleibt. Geöffnete Kanäle werden nicht automatisch geschlossen, wenn ein Makro oder beendet, und die einzelnen Kanal verwendet Systemressourcen öffnen. Aus diesem Grund ist es ratsam, diese Methode verwenden, wenn beim Debuggen von Code, das einen oder mehrere DDE-Kanäle geöffnet wird.</para>
-          <para />
-        </remarks>
+        <summary>Schließt alle DDE-Kanäle (Dynamic Data Exchange), die von Microsoft Word geöffnet wurden.</summary>
+        <remarks><para>Diese Methode schließt keine Kanäle, die von Clientanwendungen für Word geöffnet wurden. Die Verwendung dieser Methode entspricht der Verwendung der <see cref="M:Microsoft.Office.Interop.Word._Global.DDETerminate(System.Int32)" /> -Methode für jeden geöffneten Kanal.</para>
+          <para>Dynamischer Datenaustausch (Dynamic Data Exchange, DDE) ist eine ältere Technologie, die nicht sicher ist. Verwenden Sie, wenn möglich, eine sicherere Alternative zu DDE.</para>
+          <para>Wenn Sie Code unterbrechen, der einen DDE-Kanal öffnet, können Sie versehentlich einen Kanal geöffnet lassen. Geöffnete Kanäle werden beim Ende eines Makros oder Programms nicht automatisch geschlossen, und für jeden geöffneten Kanal werden Systemressourcen verwendet. Aus diesem Grund empfiehlt es sich, diese Methode beim Debuggen von Code zu verwenden, mit dem ein oder mehrere DDE-Kanäle geöffnet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dialogs">
@@ -985,7 +930,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dialogs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> -Auflistung, die alle integrierte Dialogfeld Dialogfelder in Microsoft Word.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> Auflistung zurück, die alle integrierten Dialogfelder in Microsoft Word darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1013,7 +958,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Documents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Documents" /> -Auflistung, die alle geöffneten Dokumente darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Documents" /> Auflistung zurück, die alle geöffneten Dokumente darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1041,7 +986,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FileConverters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> -Auflistung, die alle verfügbaren Dateikonverter für Microsoft Word darstellt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> Auflistung zurück, die alle für Microsoft Word verfügbaren Dateikonverter darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1073,15 +1018,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>Integer</b>erforderlich. Eine Taste, die Sie angeben, indem Sie mit einer der der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
-        <param name="KeyCode2">Optionales- <b>Objekt</b>. Eine zweite Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> -Objekt, das die angegebene Tastenkombination darstellt.</summary>
+        <param name="KeyCode">Erforderliche <b>ganze Zahl</b>. Eine Taste, die <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Sie mit einer der Konstanten angeben.</param>
+        <param name="KeyCode2">Optionales <b>Objekt</b>. Eine zweite Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> Objekt zurück, das die angegebene Tastenkombination darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode zum Erstellen der <paramref name="KeyCode" /> oder <paramref name="KeyCode2" /> Argument.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode verwenden, um <paramref name="KeyCode" /> das <paramref name="KeyCode2" /> -oder-Argument zu erstellen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontNames">
@@ -1107,7 +1049,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> -Objekt, das die Namen aller verfügbaren Schriftarten enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> Objekt zurück, das die Namen aller verfügbaren Schriftarten enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1147,27 +1089,24 @@
         <Parameter Name="CustomDictionary10" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Word">
-          <b>String</b> erforderlich. Das Wort, das auf Rechtschreibfehler überprüft werden soll.</param>
-        <param name="CustomDictionary">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b> -Objekt oder der Dateiname des Benutzerwörterbuchs zurückgibt.</param>
-        <param name="IgnoreUppercase">Optionales- <b>Objekt</b>. <b>True</b> , wenn Wörter in Großbuchstaben ignoriert werden sollen. Wenn dieses Argument ausgelassen wird, den aktuellen Wert der <see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" /> -Eigenschaft verwendet wird.</param>
-        <param name="MainDictionary">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname des Hauptwörterbuchs. Wenn Sie ein Hauptwörterbuch nicht angeben, verwendet Microsoft Word dem Hauptwörterbuch stammen, die die Sprache Formatierung der entspricht <paramref name="Word" /> oder des ersten Worts im Bereich.</param>
-        <param name="SuggestionMode">Optionales- <b>Objekt</b>. Gibt an, wie, die Word Rechtschreibvorschläge vorgenommen. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" /> Konstanten. Der Standardwert ist <b>WdSpellword</b>.</param>
-        <param name="CustomDictionary2">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs. Sie können bis zu neun zusätzliche Wörterbücher angeben.</param>
-        <param name="CustomDictionary3">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary4">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary5">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary6">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary7">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary8">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary9">Optionales- <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
-        <param name="CustomDictionary10">Optionales- <b>Objekt</b>. Ein Ausdruck, der gibt eine <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> -Objekt oder der Dateiname eines zusätzlichen Benutzerwörterbuchs. Sie können bis zu neun zusätzliche Wörterbücher angeben.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" /> -Auflistung, die als Ersetzung für ein bestimmtes Wort vorgeschlagen Wörter darstellt.</summary>
+        <param name="Word"><b>String</b> erforderlich. Das Wort, das auf Rechtschreibfehler überprüft werden soll.</param>
+        <param name="CustomDictionary">Optionales <b>Objekt</b>. Entweder ein Ausdruck, der ein <b>Dictionary</b> -Objekt oder den Dateinamen des Benutzerwörterbuchs zurückgibt.</param>
+        <param name="IgnoreUppercase">Optionales <b>Objekt</b>. <b>True</b>, wenn Wörter in Großbuchstaben ignoriert werden sollen. Wenn dieses Argument ausgelassen wird, wird der aktuelle Wert der <see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" /> Eigenschaft verwendet.</param>
+        <param name="MainDictionary">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname des Hauptwörterbuchs. Wenn Sie kein Hauptwörterbuch angeben, verwendet Microsoft Word das Hauptwörterbuch, das der Sprachformatierung <paramref name="Word" /> oder dem ersten Wort im Bereich entspricht.</param>
+        <param name="SuggestionMode">Optionales <b>Objekt</b>. Gibt an, wie Rechtschreibvorschläge in Word vorgenommen werden. Dies kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" /> Konstanten sein: Der Standardwert ist <b>WdSpellword</b>.</param>
+        <param name="CustomDictionary2">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs. Sie können bis zu neun zusätzliche Wörterbücher angeben.</param>
+        <param name="CustomDictionary3">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary4">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary5">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary6">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary7">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary8">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary9">Optionales <b>Objekt</b>. Ein Ausdruck, der ein <b>Dictionary</b>-Objekt zurückgibt, oder der Dateiname eines zusätzlichen Benutzerwörterbuchs.</param>
+        <param name="CustomDictionary10">Optionales <b>Objekt</b>. Entweder ein Ausdruck, der ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt oder den Dateinamen eines zusätzlichen Benutzerwörterbuchs zurückgibt. Sie können bis zu neun zusätzliche Wörterbücher angeben.</param>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" /> Auflistung zurück, die die Wörter darstellt, die als Rechtschreibkorrektur für ein bestimmtes Wort vorgeschlagen werden.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn das Wort richtig geschrieben wurde die <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> -Eigenschaft des <b>SpellingSuggestions</b> -Objekts 0 (null) zurückgegeben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Wort richtig geschrieben ist, gibt die <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> Eigenschaft des <b>SpellingSuggestions</b> -Objekts 0 (null) zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulHanjaDictionaries">
@@ -1193,12 +1132,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> -Auflistung, die alle aktiven benutzerdefinierten Konvertierungswörterbücher repräsentiert.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> Auflistung zurück, die alle aktiven benutzerdefinierten Konvertierungswörterbücher darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Mit einem Kontrollkästchen im Dialogfeld Benutzerwörterbücher aktiven benutzerdefinierten Konvertierungswörterbücher gekennzeichnet sind (klicken Sie im Menü Extras auf Optionen und anschließend auf die Rechtschreibung &amp; Grammatik Registerkarte, und klicken Sie dann auf die Schaltfläche Benutzerwörterbücher).</para>
-          <para />
-        </remarks>
+        <remarks><para>Aktive benutzerdefinierte Konvertierungswörterbücher werden im Dialogfeld Benutzerwörterbücher mit einem Häkchen versehen (Klicken Sie im Menü Extras auf Optionen, klicken Sie dann &amp; auf die Registerkarte Rechtschreib Grammatik, und klicken Sie dann auf die Schaltfläche Benutzerwörterbücher).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -1224,13 +1161,10 @@
         <Parameter Name="HelpType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="HelpType">
-          <b>Objekt</b>erforderlich. Die Online Hilfethemas oder Hilfefensters. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdHelpType" /> Konstante.</param>
+        <param name="HelpType">Erforderliches <b>Objekt</b>. Das Onlinehilfethema oder -fenster. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdHelpType" /> Konstante sein.</param>
         <summary>Zeigt Informationen zur Onlinehilfe an.</summary>
-        <remarks>
-          <para>Einige der <b>WdHelpType</b> -Konstanten haben möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise).</para>
-          <para />
-        </remarks>
+        <remarks><para>Einige der <b>WdHelpType</b> -Konstanten stehen Ihnen möglicherweise nicht zur Verfügung, abhängig von der Sprachunterstützung (beispielsweise US-Englisch), die Sie ausgewählt oder installiert haben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InchesToPoints">
@@ -1256,14 +1190,11 @@
         <Parameter Name="Inches" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Inches">
-          <b>Single</b>erforderlich. Der Zollwert, der in Punkt konvertiert werden soll.</param>
+        <param name="Inches">Erforderlicher <b>Single</b>-Wert. Der Zollwert, der in Punkt konvertiert werden soll.</param>
         <summary>Wandelt eine Maßangabe von Zoll in Punkt (1 Zoll = 72 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsObjectValid">
@@ -1292,14 +1223,11 @@
         <Parameter Name="Object" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Object">
-          <b>Objekt</b>erforderlich. Eine Variable, die auf ein Objekt verweist.</param>
-        <summary>Bestimmt, ob die angegebene Variable, die ein Objekt verweist, gültig ist.</summary>
+        <param name="Object">Erforderliches <b>Objekt</b>. Eine Variable, die auf ein Objekt verweist.</param>
+        <summary>Bestimmt, ob die angegebene Variable, die auf ein Objekt verweist, gültig ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>true,</b> Wenn die angegebene Variable, die ein Objekt verweist, gültig ist, und <b>False</b> , wenn das Objekt, die durch die Variable gelöscht wurde.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die angegebene Variable, die auf ein Objekt verweist, gültig ist, und <b>false</b> , wenn das Objekt, auf das die Variable verweist, gelöscht wurde.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSandboxed">
@@ -1325,13 +1253,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab, ob das Anwendungsfenster ein Fenster mit geschützter Ansicht ist.</summary>
-        <value>
-          <b>true,</b> Wenn das Anwendungsfenster ein Fenster mit geschützter Ansicht ist; anderenfalls <b>false</b>.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ab, ob das Anwendungsfenster ein geschütztes Ansichtsfenster ist.</summary>
+        <value><b>true</b> , wenn das Anwendungsfenster ein geschützte Ansicht-Fenster ist; andernfalls false. andernfalls <b>false</b>.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyBindings">
@@ -1357,7 +1282,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.KeyBindings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> zurück angepasst Tastenbelegungen, die einem Tastencode, einer Tastenkategorie und einem Befehl enthalten.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Auflistung zurück, die angepasste Tastenzuweisungen darstellt, die einen Tastencode, eine Schlüsselkategorie und einen Befehl enthalten.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1390,11 +1315,10 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. Die Kategorie der Tastenkombination.</param>
-        <param name="Command">
-          <b>String</b> erforderlich. Der Name des Befehls.</param>
-        <param name="CommandParameter">Optionales- <b>Objekt</b>. Zusätzlicher Text, sofern zutreffend, erforderlich für den Befehl durch angegebenen <paramref name="Command" />. Weitere Informationen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode für die <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> Objekt.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeysBoundTo" /> -Objekt, das alle Tastenkombinationen für das angegebene Element darstellt.</summary>
+        <param name="KeyCategory">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. Die Kategorie der Tastenkombination.</param>
+        <param name="Command"><b>String</b> erforderlich. Der Name des Befehls.</param>
+        <param name="CommandParameter">Optionales <b>Objekt</b>. Zusätzlicher Text, falls vorhanden, für den durch <paramref name="Command" />angegebenen Befehl erforderlich. Weitere Informationen finden Sie unter der <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> -Methode für <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> das Objekt.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.KeysBoundTo" /> Objekt zurück, das alle Tastenkombinationen darstellt, die dem angegebenen Element zugewiesen sind.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1422,15 +1346,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>Integer</b>erforderlich. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
-        <param name="KeyCode2">Optionales- <b>Objekt</b>. Eine zweite Taste, die Sie angeben, indem Sie eines der <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Konstanten.</param>
+        <param name="KeyCode">Erforderliche <b>ganze Zahl</b>. Eine Taste, die Sie mit einer der <b>WdKey</b>-Konstanten angeben.</param>
+        <param name="KeyCode2">Optionales <b>Objekt</b>. Eine zweite Taste, die <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> Sie mit einer der Konstanten angeben.</param>
         <summary>Gibt die Zeichenfolge der Tastenkombination bestimmter Tasten zurück (z. B. STRG+UMSCHALT+A).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode zum Erstellen der <paramref name="KeyCode" /> oder <paramref name="KeyCode2" /> Argument.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können die <see cref="M:Microsoft.Office.Interop.Word._Global.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> -Methode verwenden, um <paramref name="KeyCode" /> das <paramref name="KeyCode2" /> -oder-Argument zu erstellen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LandscapeFontNames">
@@ -1456,7 +1377,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> -Objekt, das die Namen aller verfügbaren Querformatschriftarten enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> Objekt zurück, das die Namen aller verfügbaren Querformat Schriftarten enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1484,12 +1405,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Languages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Languages" /> -Auflistung, die für die korrekturhilfen darstellt, die in das Dialogfeld Sprache aufgelistet.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Languages" /> Auflistung zurück, die die im Dialogfeld Sprache aufgeführten Korrektursprachen darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Zugriff auf das Dialogfeld Sprache im Menü Extras, klicken Sie auf Sprache, und klicken Sie dann auf Sprache festlegen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Klicken Sie im Menü Extras auf Sprache, und klicken Sie dann auf Sprache festlegen, um auf das Dialogfeld Sprache zuzugreifen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageSettings">
@@ -1515,7 +1434,7 @@
         <ReturnType>Microsoft.Office.Core.LanguageSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.LanguageSettings" /> -Objekt, das Informationen über die spracheinstellungen in Microsoft Word enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.LanguageSettings" /> Objekt zurück, das Informationen über die Spracheinstellungen in Microsoft Word enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1543,14 +1462,11 @@
         <Parameter Name="Lines" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Lines">
-          <b>Single</b>erforderlich. Der Zeilenwert, der in Punkt konvertiert werden soll.</param>
+        <param name="Lines">Erforderlicher <b>Single</b>-Wert. Der Zeilenwert, der in Punkt konvertiert werden soll.</param>
         <summary>Wandelt eine Maßangabe von Zeilen in Punkt (1 Zeile = 12 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListGalleries">
@@ -1576,12 +1492,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListGalleries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> Auflistung, darstellt, die drei, Kataloge für Listenvorlagen aufgelistet: <b>mit Aufzählungszeichen</b>, <b>Nummerierung</b>und <b>Gliederung</b>.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> Auflistung zurück, die die drei Listenvorlagenkataloge <b></b>darstellt: Aufzählung, <b>Nummerierung</b>und <b>Gliederung</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Jeder Katalog entspricht einer Registerkarte Aufzählungszeichen und befindet sich im Dialogfeld Nummerierung im Menü "Format".</para>
-          <para />
-        </remarks>
+        <remarks><para>Jeder Katalog entspricht einer Registerkarte im Dialogfeld Nummerierung und Aufzählungszeichen, die sich im Menü Format befindet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MacroContainer">
@@ -1607,7 +1521,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Template" /> oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt, das darstellt, die Vorlage oder das Dokument, in dem das Modul, die ausgeführte Prozedur enthält, gespeichert ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Template" /> oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt zurück, das die Vorlage oder das Dokument darstellt, in der das Modul gespeichert wird, das die laufende Prozedur enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1635,14 +1549,11 @@
         <Parameter Name="Millimeters" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Millimeters">
-          <b>Single</b>erforderlich. Der Millimeterwert, der in Punkt konvertiert werden soll.</param>
-        <summary>Wandelt eine Maßangabe von Millimeter in Punkt (1 mm = 2,85 Punkt).</summary>
+        <param name="Millimeters">Erforderlicher <b>Single</b>-Wert. Der Millimeterwert, der in Punkt konvertiert werden soll.</param>
+        <summary>Konvertiert eine Maßeinheit von Millimeter in Punkt (1 mm = 2,85 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1668,7 +1579,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1696,11 +1607,9 @@
       <Docs>
         <summary>Öffnet ein neues Fenster mit demselben Dokument wie das angegebene Fenster.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt eine <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekt.</para>
-          <para>Ein Doppelpunkt (:)) und eine Zahl angezeigt in der fensterbeschriftung, wenn mehrere Fenster für ein Dokument geöffnet ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt ein <see cref="T:Microsoft.Office.Interop.Word.Window" /> -Objekt zurück.</para>
+          <para>Wenn ein Dokument in mehreren Fenstern geöffnet ist, wird in der Fensterbeschriftung ein Doppelpunkt (:) und eine Zahl angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NormalTemplate">
@@ -1726,7 +1635,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Template</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Template" /> -Objekt, das die Dokumentvorlage Normal.dot darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Template" /> Objekt zurück, das die Vorlage Normal darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1754,7 +1663,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Options</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Options" /> -Objekt, das Anwendungseinstellungen in Microsoft Word darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Options" /> Objekt zurück, das Anwendungseinstellungen in Microsoft Word darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1810,14 +1719,11 @@
         <Parameter Name="Picas" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Picas">
-          <b>Single</b>erforderlich. Der Picawert, der in Punkt konvertiert werden soll.</param>
+        <param name="Picas">Erforderlicher <b>Single</b>-Wert. Der Picawert, der in Punkt konvertiert werden soll.</param>
         <summary>Wandelt eine Maßangabe von Pica in Punkt (1 Pica = 12 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PixelsToPoints">
@@ -1843,15 +1749,12 @@
         <Parameter Name="fVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Pixels">
-          <b>Single</b>erforderlich. Der Pixelwert, der in Punkt konvertiert werden soll.</param>
-        <param name="fVertical">Optionales- <b>Objekt</b>. <b>True</b> für die Änderung vertikaler Pixel, <b>False</b> für die Änderung horizontaler Pixel.</param>
-        <summary>Wandelt eine Maßangabe von Pixel in Punkt.</summary>
+        <param name="Pixels">Erforderlicher <b>Single</b>-Wert. Der Pixelwert, der in Punkt konvertiert werden soll.</param>
+        <param name="fVertical">Optionales <b>Objekt</b>. <b>True</b> für die Änderung vertikaler Pixel, <b>False</b> für die Änderung horizontaler Pixel.</param>
+        <summary>Ändert eine Maßeinheit von Pixel in Punkt.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToCentimeters">
@@ -1877,14 +1780,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Single</b>erforderlich. Das in Punkt angegebene Maß.</param>
-        <summary>Wandelt eine Maßangabe von Punkt in Zentimeter (1 Zentimeter = 28,35 Punkt).</summary>
+        <param name="Points">Erforderlicher <b>Single</b>-Wert. Das in Punkt angegebene Maß.</param>
+        <summary>Konvertiert ein Maß von Punkt in Zentimeter (1 Zentimeter = 28,35 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToInches">
@@ -1910,14 +1810,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Single</b>erforderlich. Das in Punkt angegebene Maß.</param>
-        <summary>Wandelt eine Maßangabe von Punkt in Zoll (1 Zoll = 72 Punkt).</summary>
+        <param name="Points">Erforderlicher <b>Single</b>-Wert. Das in Punkt angegebene Maß.</param>
+        <summary>Konvertiert ein Maß von Punkt in Zoll (1 Zoll = 72 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToLines">
@@ -1943,14 +1840,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Single</b>erforderlich. Das in Punkt angegebene Maß.</param>
+        <param name="Points">Erforderlicher <b>Single</b>-Wert. Das in Punkt angegebene Maß.</param>
         <summary>Wandelt eine Maßangabe von Punkt in Zeilen (1 Zeile = 12 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToMillimeters">
@@ -1976,14 +1870,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Single</b>erforderlich. Das in Punkt angegebene Maß.</param>
-        <summary>Wandelt eine Maßangabe von Punkt in Millimeter (1 Millimeter = 2,835 Punkt).</summary>
+        <param name="Points">Erforderlicher <b>Single</b>-Wert. Das in Punkt angegebene Maß.</param>
+        <summary>Konvertiert eine Maßeinheit von Punkt in Millimeter (1 Millimeter = 2,835 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Eigenschaft gibt die konvertierte Größe als <b>einzelne</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToPicas">
@@ -2009,14 +1900,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Single</b>erforderlich. Das in Punkt angegebene Maß.</param>
+        <param name="Points">Erforderlicher <b>Single</b>-Wert. Das in Punkt angegebene Maß.</param>
         <summary>Wandelt eine Maßangabe von Punkt in Pica (1 Pica = 12 Punkt).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToPixels">
@@ -2042,15 +1930,12 @@
         <Parameter Name="fVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Single</b>erforderlich. Der Punktwert, der in Pixel konvertiert werden soll.</param>
-        <param name="fVertical">Optionales- <b>Objekt</b>. <b>True</b>, wenn das Ergebnis in vertikalen Pixeln zurückgegeben werden soll; <b>False</b>, wenn das Ergebnis in horizontalen Pixeln zurückgegeben werden soll.</param>
-        <summary>Wandelt eine Maßangabe von Punkt in Pixel.</summary>
+        <param name="Points">Erforderlicher <b>Single</b>-Wert. Der Punktwert, der in Pixel konvertiert werden soll.</param>
+        <param name="fVertical">Optionales <b>Objekt</b>. <b>True</b>, wenn das Ergebnis in vertikalen Pixeln zurückgegeben werden soll; <b>False</b>, wenn das Ergebnis in horizontalen Pixeln zurückgegeben werden soll.</param>
+        <summary>Ändert eine Maßeinheit von Punkt in Pixel.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das konvertierte Maß als <b>einzelne</b>zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt die konvertierte Maßeinheit als <b>Single</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PortraitFontNames">
@@ -2076,7 +1961,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> -Objekt, das die Namen aller verfügbaren Hochformatschriftarten enthält.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FontNames" /> Objekt zurück, das die Namen aller verfügbaren Hochformat Schriftarten enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2107,12 +1992,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die aktuelle Ansicht die Seitenansicht ist.</summary>
+        <summary>Bestimmt, ob die Druckvorschau die aktuelle Ansicht ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn die aktuelle Ansicht, und <b>False,</b> Wenn nicht die Seitenansicht ist. Geben Sie <b>True</b> oder <b>False</b> , um zu aktivieren oder deaktivieren Sie die Funktionalität.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die Seitenansicht die aktuelle Ansicht ist, und <b>false</b> , wenn dies nicht der Fall ist. Geben Sie <b>true</b> oder <b>false</b> an, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectedViewWindows">
@@ -2138,12 +2021,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProtectedViewWindows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> -Objekt, das die geöffneten geschützte Ansicht-Fenster darstellt.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> Objekt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> Objekt ab, das die geöffneten Fenster mit geschützter Ansicht darstellt.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />-Objekt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecentFiles">
@@ -2169,7 +2050,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.RecentFiles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> -Auflistung, die die zuletzt stellt Zugriff auf Dateien.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> Auflistung zurück, die die zuletzt geöffneten Dateien darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2196,14 +2077,12 @@
         <Parameter Name="Times" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Times">Optionales- <b>Objekt</b>. Die Anzahl der gewünschten Wiederholungen des letzten Befehls.</param>
-        <summary>Wiederholt die letzte Bearbeitungsaktion ein oder mehrere Male.</summary>
+        <param name="Times">Optionales <b>Objekt</b>. Die Anzahl der gewünschten Wiederholungen des letzten Befehls.</param>
+        <summary>Wiederholt die jeweils zuletzt ausgeführte Bearbeitungsaktion mindestens ein Mal.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt <b>True</b> zurück, wenn die Befehle erfolgreich wiederholt wurden.</para>
-          <para>Mit dieser Methode entspricht der Verwendung des Befehls Wiederholen im Menü Bearbeiten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt <b>true</b> zurück, wenn die Befehle erfolgreich wiederholt wurden.</para>
+          <para>Die Verwendung dieser Methode entspricht der Verwendung des Befehls Wiederholen im Menü Bearbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -2229,7 +2108,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die <see cref="T:Microsoft.Office.Interop.Word.Selection" /> -Objekt, das einen ausgewählten Bereich oder die Einfügemarke darstellt.</summary>
+        <summary>Gibt das <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekt zurück, das einen ausgewählten Bereich oder die Einfügemarke darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2262,10 +2141,8 @@
       <Docs>
         <summary>Bestimmt, ob das Visual Basic-Editor-Fenster sichtbar ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>true,</b> Wenn das Visual Basic-Editor-Fenster sichtbar ist, und <b>False</b> Wenn nicht. Geben Sie <b>True</b> oder <b>False</b> , zum Aktivieren oder deaktivieren die Sichtbarkeit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn das Visual Basic-Editor-Fenster sichtbar ist, und <b>false</b> , wenn dies nicht der Fall ist. Geben Sie <b>true</b> oder <b>false</b> an, um die Sichtbarkeit zu aktivieren oder zu deaktivieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusBar">
@@ -2291,7 +2168,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Den angegebenen Text in der Statusleiste angezeigt.</summary>
+        <summary>Zeigt den angegebenen Text in der Statusleiste an.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2323,10 +2200,9 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Word">
-          <b>String</b> erforderlich. Das angegebene Wort oder der Ausdruck.</param>
-        <param name="LanguageID">Optionales- <b>Objekt</b>. Die Sprache für die Thesaurus verwendet. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten (obwohl einige der oben aufgeführten Konstanten möglicherweise nicht verfügbar, je nach der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben).</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> -Objekt, das Informationen aus dem Thesaurus über Synonyme, Antonyme oder ähnliche Begriffe und Ausdrücke für das angegebene Wort oder den Ausdruck enthält.</summary>
+        <param name="Word"><b>String</b> erforderlich. Das angegebene Wort oder der Ausdruck.</param>
+        <param name="LanguageID">Optionales <b>Objekt</b>. Die für den Thesaurus verwendete Sprache. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten sein (obwohl einige der aufgeführten Konstanten möglicherweise nicht verfügbar sind, je nach Sprachunterstützung (beispielsweise US-Englisch), die Sie ausgewählt oder installiert haben).</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> Objekt zurück, das Informationen aus dem Thesaurus für Synonyme, Antonyme oder verwandte Wörter und Ausdrücke für das angegebene Wort oder den Ausdruck enthält.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2354,7 +2230,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.System</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.System" /> -Objekt, das zum Zurückgeben von Informationen und Ausführen von Aufgaben im Zusammenhang mit dem System verwendet werden kann.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.System" /> Objekt zurück, das zum Zurückgeben systembezogener Informationen und zum Ausführen systembezogener Aufgaben verwendet werden kann.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2382,7 +2258,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> -Auflistung, die alle Anwendungen darstellt, die ausgeführt werden.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> Auflistung zurück, die alle ausgeführten Anwendungen darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2410,7 +2286,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Templates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Templates" /> -Auflistung, die alle verfügbaren Dokumentvorlagen repräsentiert – globale Vorlagen sowie die geöffneten Dokumenten angehängt sind.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Templates" /> Auflistung zurück, die alle verfügbaren Vorlagen darstellt – globale Vorlagen sowie die an geöffnete Dokumente angefügten.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2438,7 +2314,7 @@
         <ReturnType>Microsoft.Vbe.Interop.VBE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="P:Microsoft.Office.Interop.Word._Application.VBE" /> -Objekt, das den Visual Basic-Editor darstellt.</summary>
+        <summary>Gibt ein <see cref="P:Microsoft.Office.Interop.Word._Application.VBE" /> Objekt zurück, das den Visual Basic-Editor darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2466,7 +2342,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Windows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Windows" /> -Auflistung, die alle Dokumentfenster darstellt. Die Auflistung entspricht der Fensternamen, die am unteren Rand des Menüs Fenster angezeigt werden.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Windows" /> Auflistung zurück, die alle Dokumentfenster darstellt. Die Auflistung entspricht den Fensternamen, die am unteren Rand des Menüs Fenster angezeigt werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2494,13 +2370,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt <b>ein Automatisierungsobjekt (Word.Basic), die Methoden für die WordBasic-Anweisungen und verfügbaren Funktionen in Microsoft Word, Version 6.0 und Word für Windows 95 enthält</b> .</summary>
+        <summary>Gibt ein <b>Automatisierungs</b> Objekt (Word. Basic) zurück, das Methoden für alle WordBasic-Anweisungen und-Funktionen enthält, die in Microsoft Word Version 6,0 und Word für Windows 95 verfügbar sind.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>In Word 2000 und höher, wenn Sie eine Word 6.0 oder Word für Windows 95-Vorlage, die WordBasic-Makros enthält öffnen, die Makros werden automatisch konvertiert in Visual Basic-Module. Jede WordBasic-Anweisung und im Makro-Funktion wird in die entsprechende Methode Word.Basic konvertiert.</para>
-          <para>Informationen über WordBasic-Anweisungen und Funktionen finden Sie unter WordBasic-Hilfe in Word 6.0 oder Word für Windows 95.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie eine Dokumentvorlage für Word 6.0 oder Word für Windows 95 mit WordBasic-Makros unter Word 2000 öffnen, werden die Makros automatisch in Visual Basic-Module konvertiert. Alle WordBasic-Anweisungen und -Funktionen im Makro werden in die entsprechenden Word.Basic-Methoden konvertiert.</para>
+          <para>Informationen zu WordBasic-Anweisungen und -Funktionen finden Sie in der WordBasic-Hilfe in Word 6.0 oder Word für Windows 95.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

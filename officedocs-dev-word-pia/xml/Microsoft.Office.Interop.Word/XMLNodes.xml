@@ -1,13 +1,5 @@
 <Type Name="XMLNodes" FullName="Microsoft.Office.Interop.Word.XMLNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca593505e7b34c3c76616e23b1644ee18df222d3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670478" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb0a31f85f85e8cdffe7c844d4d494ab8d5858b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142626" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNodes&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> -Objekten, die die Knoten in der Strukturansicht im Aufgabenbereich XML-Struktur darstellt, das die Elemente angibt, die ein Benutzer auf ein Dokument angewendet wurde.</summary>
-    <remarks>
-      <para>Jeder Knoten in der Strukturansicht ist eine Instanz der ein <b>XMLNode</b> -Objekt. Die Hierarchie in der Strukturansicht gibt an, ob ein Knoten untergeordnete Knoten enthält.</para>
-      <para>Können Sie eine <b>XMLNodes</b> -Auflistung für eine Auswahl, einem Bereich oder das gesamte Dokument zurück. Die Reihenfolge der <b>XMLNode</b> -Objekte in der <b>XMLNodes</b> -Auflistung entspricht der Reihenfolge, in der ihre Start- oder Endtags innerhalb der angegebenen Auswahl, einem Bereich oder einem Dokument angezeigt werden.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> -Eigenschaft der <b>XMLNodes</b> -Auflistung, um ein einzelnes <b>XMLNode</b> -Objekt zurückzugeben. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> -Methode, um sicherzustellen, dass ein XML-Element gültig gemäß den angewendeten Schemas ist und dass alle erforderlichen untergeordneten Elemente vorhanden sind und in der richtigen Reihenfolge. Nachdem Sie die <b>Validate</b> -Methode ausführen, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> Eigenschaft zu überprüfen, ob ein Element gültig ist und die <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> Eigenschaft eine Meldung angezeigt, an den Benutzer, was der Benutzer, damit den XML-Code im Dokument stellen muss entsprechen dem XML-Schema R egeln.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> -Methode, um eine Auswahl, einem Bereich oder das Dokument ein XML-Element hinzugefügt.</para>
-      <para>, Da XML die Groß-/Kleinschreibung beachtet wird, das XML-Element als eingegeben haben, der <paramref name="Name" /> -Parameter der <b>Add</b> -Methode, wie es im Schema in verwiesen wird eingegeben werden die <paramref name="Namespace" /> Parameter.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Objekten, die die Knoten in der Strukturansicht des Aufgabenbereichs XML-Struktur darstellt, der die Elemente angibt, die ein Benutzer auf ein Dokument angewendet hat.</summary>
+    <remarks><para>Jeder Knoten in der Strukturansicht ist eine Instanz eines <b>XMLNode</b>-Objekts. Die Hierarchie in der Strukturansicht zeigt an, ob ein Knoten untergeordnete Knoten enthält.</para>
+      <para>Sie können eine XMLNodes-Auflistung für eine Auswahl, einen Bereich oder das gesamte Dokument zurückgeben. <b></b> Die Reihenfolge, in der die <b>XMLNode</b>-Objekte in der <b>XMLNodes</b>-Auflistung angezeigt werden, entspricht der Reihenfolge, in der ihre Start- oder Endtags innerhalb der angegebenen Auswahl, des Bereichs oder des Dokuments enthalten sind.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> die-Eigenschaft der XMLNodes-Auflistung, um ein einzelnes <b>XmlNode</b> -Objekt zurückzugeben. <b></b> Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> die-Methode, um zu überprüfen, ob ein XML-Element gemäß den angewendeten Schemas gültig ist und dass alle erforderlichen untergeordneten Elemente vorhanden sind und in der erforderlichen Reihenfolge sind. Nachdem Sie die <b>Validate</b> -Methode ausgeführt haben, <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> verwenden Sie die-Eigenschaft, um zu überprüfen <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> , ob ein Element gültig ist, und die-Eigenschaft, um dem Benutzer eine Meldung darüber anzuzeigen, was der Benutzer beheben muss, damit die XML im Dokument mit den XML-Schema Regeln übereinstimmt.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> die-Methode, um ein XML-Element zu einer Auswahl, einem Bereich oder dem Dokument hinzuzufügen.</para>
+      <para>Da bei XML die Groß-/Kleinschreibung beachtet wird, muss das im- <paramref name="Name" /> Parameter der <b>Add</b> -Methode eingegebene XML-Element exakt so eingegeben werden, wie es in dem <paramref name="Namespace" /> im Parameter referenzierten Schema angezeigt wird.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -99,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,11 +147,9 @@
       <Docs>
         <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -222,7 +210,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

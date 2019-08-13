@@ -1,13 +1,5 @@
 <Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a21d5c2632a3938485eff78ac0f2f1d8a922befc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669304" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddd1247b7607cf6fdec9c86653bd6de16fa1156f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143917" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> -Objekten, die die Filialdokumente in einem Bereich oder einem Dokument darstellen.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Subdocuments</b> -Eigenschaft des eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekts, um die <b>Subdocuments</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> oder <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> -Methode, um ein Filialdokument zu einem Dokument hinzugefügt.</para>
-      <para>Verwendung <b>Filialdokumente</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Subdocument</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> Objekten, die die Filialdokumente in einem Bereich oder Dokument darstellen.</summary>
+    <remarks><para>Verwenden Sie <b></b> die Subdocuments-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Range" /> eines <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder-Objekts, um die Subdocuments-Auflistung zurückzugeben. <b></b></para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> oder-Methode, um ein Filialdokument zu einem Dokument hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Subdocuments<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes SubDocument-Objekt zurückzugeben. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddFromFile">
@@ -68,22 +58,19 @@
         <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objekt</b>erforderlich. Der Dateiname des Filialdokuments, das in das Zentraldokument eingefügt werden soll.</param>
-        <param name="ConfirmConversions">Optionales- <b>Objekt</b>. <b>True,</b> um die dateikonvertierung im Dialogfeld Datei konvertieren zu bestätigen, wenn die Datei nicht im Microsoft Word-Format vorliegt.</param>
-        <param name="ReadOnly">Optionales- <b>Objekt</b>. <b>True</b>, um das Filialdokument als schreibgeschütztes Dokument einzufügen.</param>
-        <param name="PasswordDocument">Optionales- <b>Objekt</b>. Das Kennwort zum Öffnen des Filialdokuments, sofern es mit Kennwortschutz versehen ist.</param>
-        <param name="PasswordTemplate">Optionales- <b>Objekt</b>. Das Kennwort zum Öffnen einer mit dem Filialdokument verbundenen Vorlage (sofern diese mit Kennwortschutz versehen ist).</param>
-        <param name="Revert">Optionales- <b>Objekt</b>. Steuert, was geschieht, wenn <paramref name="Name" /> ist der Dateiname eines geöffneten Dokuments. <b>True</b> , wenn die gespeicherte Version des Filialdokuments einzufügen. <b>False</b> , wenn die geöffnete Version des Filialdokuments, legen Sie die deshalb nicht gespeicherte Änderungen enthalten kann.</param>
-        <param name="WritePasswordDocument">Optionales- <b>Objekt</b>. Das Kennwort zum Speichern von Änderungen in einem Dokument, wenn ist schreibgeschützt.</param>
-        <param name="WritePasswordTemplate">Optionales- <b>Objekt</b>. Das Kennwort zum Speichern von Änderungen an der Vorlage, die mit dem Filialdokument verbundenen Vorlage ist schreibgeschützt.</param>
-        <summary>Fügt das angegebene Filialdokument in das Zentraldokument am Anfang der Auswahl und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> Objekt.</summary>
+        <param name="Name">Erforderliches <b>Objekt</b>. Der Dateiname des Filialdokuments, das in das Zentraldokument eingefügt werden soll.</param>
+        <param name="ConfirmConversions">Optionales <b>Objekt</b>. <b>True</b> , um die Dateikonvertierung im Dialogfeld Datei konvertieren zu bestätigen, wenn sich die Datei nicht im Microsoft Word Format befindet.</param>
+        <param name="ReadOnly">Optionales <b>Objekt</b>. <b>True</b>, um das Filialdokument als schreibgeschütztes Dokument einzufügen.</param>
+        <param name="PasswordDocument">Optionales <b>Objekt</b>. Das Kennwort, das zum Öffnen des Filialdokuments erforderlich ist, wenn es kennwortgeschützt ist.</param>
+        <param name="PasswordTemplate">Optionales <b>Objekt</b>. Das Kennwort zum Öffnen einer mit dem Filialdokument verbundenen Vorlage (sofern diese mit Kennwortschutz versehen ist).</param>
+        <param name="Revert">Optionales <b>Objekt</b>. Steuert, was geschieht <paramref name="Name" /> , wenn es sich um den Dateinamen eines geöffneten Dokuments handelt. <b>True</b>, um die gespeicherte Version des Filialdokuments einzufügen. <b>False</b>, um die geöffnete Version des Filialdokuments einzufügen, welches möglicherweise nicht gespeicherte Änderungen enthält.</param>
+        <param name="WritePasswordDocument">Optionales <b>Objekt</b>. Das Kennwort, das zum Speichern von Änderungen an der Dokumentdatei erforderlich ist, wenn es schreibgeschützt ist.</param>
+        <param name="WritePasswordTemplate">Optionales <b>Objekt</b>. Das Kennwort, das zum Speichern von Änderungen an der Vorlage erforderlich ist, die an das Filialdokument angefügt ist, wenn die Vorlage schreibgeschützt ist.</param>
+        <summary>Das angegebene Filialdokument wird dem Hauptdokument am Anfang der Auswahl hinzugefügt und ein <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> Objekt zurückgegeben.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  Wenn die aktive Ansicht nicht Gliederungsansicht oder die Zentraldokument-Ansicht ist, tritt ein Fehler auf.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Hinweis:</b>  Wenn die aktive Ansicht weder eine Gliederungsansicht noch eine Masterdokumentansicht ist, tritt ein Fehler auf.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFromRange">
@@ -108,14 +95,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Das <b>Range</b> -Objekt verwendet, um ein oder mehrere Filialdokumente zu erstellen.</param>
-        <summary>Erstellt mindestens ein Filialdokument aus dem Text im angegebenen Bereich und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> Objekt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Das <b>Range</b> -Objekt, mit dem mindestens ein Filialdokument erstellt wird.</param>
+        <summary>Erstellt mindestens ein Filialdokument aus dem Text im angegebenen Bereich und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> Objekt zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  Der Bereich muss mit einem integrierten Überschriftenebene (z. B. Überschrift 1) beginnen. Filialdokumente werden an jedem Absatz mit demselben Überschriftsformat am Anfang des Bereichs erstellt. Filialdokumentdateien gespeichert werden, wenn das Zentraldokument gespeichert wird und automatisch mit Text aus der ersten Zeile in der Datei benannt.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Hinweis:</b>  Der Bereich muss mit einer der integrierten Formatvorlagen auf Überschriftenebene beginnen (beispielsweise Überschrift 1). Filialdokumente werden an jedem Absatz mit dem Überschriftsformat erstellt, das am Anfang des Bereichs verwendet wird. Filialdokumente werden zusammen mit dem Zentraldokument gespeichert und automatisch mit Text aus der ersten Zeile der Datei benannt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -141,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,11 +184,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -257,8 +240,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Filialdokumente im angegebenen Dokument erweitert werden.</summary>
+        <summary><b>True</b>, wenn Filialdokumente im angegebenen Dokument erweitert werden.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,7 +303,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -350,8 +332,8 @@
         <Parameter Name="LastSubdocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FirstSubdocument">Optionales- <b>Objekt</b>. Der Pfad- und Dateiname des Originaldokuments, in dem Überarbeitungen zusammengeführt werden sollen.</param>
-        <param name="LastSubdocument">Optionales- <b>Objekt</b>. Das letzte Filialdokument in einem Bereich von Filialdokumenten, die zusammengeführt werden sollen.</param>
+        <param name="FirstSubdocument">Optionales <b>Objekt</b>. Der Pfad- und Dateiname des Originaldokuments, in dem Überarbeitungen zusammengeführt werden sollen.</param>
+        <param name="LastSubdocument">Optionales <b>Objekt</b>. Das letzte Filialdokument in einem Bereich von Filialdokumenten, die zusammengeführt werden sollen.</param>
         <summary>Verbindet die angegebenen Filialdokumente eines Zentraldokuments zu einem einzigen Filialdokument.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,12 +387,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wählt das angegebene Objekt aus.</summary>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  Verwenden Sie nach Verwendung dieser Methode können Sie die <b>Selection</b> -Eigenschaft, um mit den ausgewählten Elementen arbeiten.</para>
-          <para />
-        </remarks>
+        <summary>Markiert das angegebene Objekt.</summary>
+        <remarks><para>
+            <b>Hinweis:</b>  Nachdem Sie diese Methode verwendet haben, verwenden Sie die <b>Selection</b> -Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

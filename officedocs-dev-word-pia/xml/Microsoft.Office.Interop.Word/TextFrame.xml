@@ -1,13 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43a95d54648a4f84b9738139489698d0d40d0080" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669202" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc205fa2eb96a394cd184a865635344805cf9be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143819" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -26,11 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt den Textrahmen in einem <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt. Enthält den Text im Textrahmen sowie die Eigenschaften, die die Ränder und die Ausrichtung des Textrahmens steuern.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> Eigenschaft, um das <b>TextFrame</b> -Objekt für eine Form zurückzugeben. Die <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> -Eigenschaft gibt eine <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Textbereich innerhalb des angegebenen Textrahmens darstellt.</para>
-      <b>Hinweis</b> einige Shapes nicht unterstützen 
-      <para>angefügt Text (Zeilen, Freihandformen, Bilder und OLE-Objekte, beispielsweise). Wenn Sie versuchen, Eigenschaften zum Steuern von Text in einem Textrahmen für diese Objekte festzulegen oder zurückzugeben, tritt ein Fehler auf.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> Eigenschaft, um zu bestimmen, ob der Textrahmen Text enthält.</para><para>Textrahmen können miteinander verknüpft werden, damit der Text aus dem Textrahmen einer Form in den Textrahmen einer anderen Form fließt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> und <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> Eigenschaften Textrahmen verknüpfen.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> zurückzugebende Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den gesamten Artikel, die darstellt zwischen fließt verknüpfte Textrahmen.</para><para /></remarks>
+    <summary>Stellt den Textrahmen in einem <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt dar. Enthält den Text im Textrahmen sowie die Eigenschaften, die die Ränder und die Ausrichtung des Textrahmens steuern.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> die-Eigenschaft, um das TextFrame-Objekt für eine Form zurückzugeben. <b></b> Die <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> -Eigenschaft gibt <see cref="T:Microsoft.Office.Interop.Word.Range" /> ein Objekt zurück, das den Textbereich innerhalb des angegebenen Textrahmens darstellt.</para>
+      <para>
+        <b>Hinweis:</b>  Einige Formen unterstützen keinen angefügten Text (beispielsweise Linien, Freihandobjekte, Bilder und OLE-Objekte). Wenn Sie versuchen, Eigenschaften zum Steuern von Text in Textrahmen für diese Objekte festzulegen oder zurückzugeben, tritt ein Fehler auf.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> die-Eigenschaft, um zu bestimmen, ob der Textrahmen Text enthält.</para>
+      <para>Textrahmen können miteinander verknüpft werden, sodass der Text aus dem Textrahmen der einen Form in den Textrahmen einer anderen Form fließt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> die <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> Eigenschaften und, um Textrahmen zu verknüpfen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> die-Eigenschaft, <see cref="T:Microsoft.Office.Interop.Word.Range" /> um ein Objekt zurückzugeben, das die gesamte Geschichte darstellt, die zwischen verknüpften Textrahmen fließt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +82,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die angibt, ob die Größe eines Textrahmens automatisch angepasst wird.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom Typ Integer</b> , der angibt, ob ein Textrahmen automatisch angepasst wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,10 +109,8 @@
       <Parameters />
       <Docs>
         <summary>Hebt die Textfeldverknüpfung für den angegebenen Textrahmen auf, wenn eine solche Verknüpfung vorhanden ist.</summary>
-        <remarks>
-          <para>Durch Anwenden dieser Methode mit einer Form in der Mitte eine Kette von Formen mit verknüpften Textrahmen unterbricht die Kette zwei Sätze von verknüpften Shapes. Des gesamten Texts, bleibt jedoch in der ersten Datenreihe des verknüpften Shapes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie diese Methode auf eine Form in der Mitte einer Kette von Formen mit verknüpften Textrahmen anwenden, wird diese Kette unterbrochen und es verbleiben zwei Gruppen verknüpfter Formen. Der gesamte Text bleibt jedoch in der ersten Gruppe verknüpfter Formen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -143,12 +136,10 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft die <see cref="T:Microsoft.Office.Core.TextColumn2" /> -Objekt, das die Spalten des angegebenen Textrahmens darstellt.</summary>
-        <value>Die <see cref="T:Microsoft.Office.Core.TextColumn2" /> -Objekt, das die Spalten des angegebenen Textrahmens darstellt.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft das <see cref="T:Microsoft.Office.Core.TextColumn2" /> Objekt ab, das die Spalten des angegebenen Textrahmens darstellt.</summary>
+        <value>Das <see cref="T:Microsoft.Office.Core.TextColumn2" /> Objekt, das die Spalten des angegebenen Textrahmens darstellt.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingRange">
@@ -174,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den gesamten Artikel in einer Reihe von Shapes mit verknüpften Textrahmen darstellt, zu der der angegebene Textrahmen gehört.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den gesamten Textabschnitt in einer Reihe von Formen mit verknüpften Textrahmen darstellt, zu denen der angegebene Textrahmen gehört.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,11 +195,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -259,8 +248,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die angegebene Form mit Text verknüpft ist.</summary>
+        <summary><b>True</b>, wenn der angegebenen Form Text zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,12 +279,10 @@
         <ReturnType>Microsoft.Office.Core.MsoHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt die horizontale Ausrichtung von Text in einem Textrahmen.</summary>
+        <summary>Ruft die horizontale Ausrichtung von Text in einem Textrahmen ab oder legt Sie fest.</summary>
         <value>Die horizontale Ausrichtung von Text in einem Textrahmen.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -480,12 +466,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt fest, ob der Text im Textrahmen nicht gedreht werden sollte, wenn die Form gedreht wird.</summary>
-        <value>Eine <see cref="T:Microsoft.Office.Core.MsoTriState" /> Objekt.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoTriState" />. Nur die <b>MsoTriState</b> -Konstanten <b>MsoFalse</b> und <b>MsoTrue</b> können verwendet werden, um diese Eigenschaft festzulegen.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ab oder legt fest, ob der Text im Textrahmen nicht gedreht werden soll, wenn das Shape gedreht wird.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Core.MsoTriState" />-Objekt.</value>
+        <remarks><para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoTriState" />. Zum Festlegen dieser Eigenschaft können nur die <b>MsoTriState</b>-Konstanten <b>msoFalse</b> und <b>msoTrue</b> verwendet werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -514,36 +498,34 @@
         <ReturnType>Microsoft.Office.Core.MsoTextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Ausrichtung des Texts innerhalb des Rahmens.</summary>
+        <summary>Gibt die Ausrichtung von Text, der sich in einem Frame befindet, zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />Dies kann eine der folgenden <b>MsoTextOrientation</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />Dies kann eine der folgenden <b>MsoTextOrientation</b> -Konstanten sein. </para>
-          <para>
-            <b>MsoTextOrientationDownward </b>
+            <b>msoTextOrientationDownward</b>
           </para>
           <para>
-            <b>"msoTextOrientationHorizontal" </b>
+            <b>msoTextOrientationHorizontal</b>
           </para>
           <para>
-            <b>MsoTextOrientationHorizontalRotatedFarEast </b>
+            <b>msoTextOrientationHorizontalRotatedFarEast</b>
           </para>
           <para>
-            <b>MsoTextOrientationMixed </b>
+            <b>msoTextOrientationMixed</b>
           </para>
           <para>
-            <b>MsoTextOrientationUpward</b>
+            <b>msoTextOrientationUpward</b>
           </para>
           <para>
-            <b> MsoTextOrientationVertical </b>
+            <b>msoTextOrientationVertical</b>
           </para>
           <para>
-            <b>"msoTextOrientationVerticalFarEast"</b>
+            <b>msoTextOrientationVerticalFarEast</b>
           </para>
-          <para>einige der oben aufgeführten Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para>Können Sie die Ausrichtung für einen Textrahmen oder einem Bereich oder einer Auswahl, die in einem Textrahmen erfolgt zufällig festlegen. Informationen zu den Unterschieden zwischen einem Textrahmen und einem Textfeld finden Sie unter der <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> -Objekt.</para>
-          <para />
-        </remarks>
+          <para>Einige der oben aufgeführten Konstanten sind möglicherweise nicht verfügbar. Dies hängt von der ausgewählten oder installierten Sprachunterstützung ab (z. B. Deutsch).</para>
+          <para>Sie können die Ausrichtung für einen Textrahmen, einen Bereich oder eine Auswahl so festlegen, dass sie innerhalb eines Textrahmens erscheinen. Informationen zum Unterschied zwischen einem Textrahmen und einem Textfeld finden Sie unter dem <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> -Objekt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Overflowing">
@@ -569,8 +551,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der Text innerhalb des angegebenen Textrahmens vollständig in den Frame passt nicht.</summary>
+        <summary><b>True</b>, wenn der Text innerhalb des angegebenen Textframes nicht vollständig in den Frame passt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -598,7 +579,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt, das die übergeordnete Form des Textrahmens darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt zurück, das die übergeordnete Form des Textrahmens darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -629,10 +610,9 @@
         <ReturnType>Microsoft.Office.Core.MsoPathFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ab oder legt den Pfadtyp für den angegebenen Textrahmen fest.</summary>
+        <summary>Dient zum Abrufen oder Festlegen des Pfad Typs für den angegebenen Textrahmen.</summary>
         <value>Der Pfadtyp für den angegebenen Textrahmen.</value>
-        <remarks>
-          <para>Der Wert dieser Eigenschaft kann eine der folgenden <see cref="T:Microsoft.Offic.Core.MsoPathType" /> Konstanten:</para>
+        <remarks><para>Der Wert dieser Eigenschaft kann eine der folgenden <see cref="T:Microsoft.Offic.Core.MsoPathType" /> Konstanten sein:</para>
           <list type="bullet">
             <item>
               <para>
@@ -656,17 +636,16 @@
             </item>
             <item>
               <para>
-                <b>MsoPathTypeMixed</b>
+                <b>msoPathTypeMixed</b>
               </para>
             </item>
             <item>
               <para>
-                <b>MsoPathTypeNone</b>
+                <b>msoPathTypeNone</b>
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -723,7 +702,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Text im angegebenen Textrahmen darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Text im angegebenen Textrahmen darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -751,12 +730,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> -Objekt, das 3D-Effekt Formateigenschaften für den angegebenen Textrahmen enthält.</summary>
-        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> -Objekt, das 3D-Effekt Formateigenschaften für den angegebenen Textrahmen enthält.</value>
-        <remarks>
-          <para>Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> Objekt ab, das 3D-Effekt Formatierungseigenschaften für den angegebenen Textrahmen enthält.</summary>
+        <value>Ein <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> Objekt, das 3D-Effekt Formatierungseigenschaften für den angegebenen Textrahmen enthält.</value>
+        <remarks><para>Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidLinkTarget">
@@ -782,13 +759,11 @@
         <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
       </Parameters>
       <Docs>
-        <param name="TargetTextFrame">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> Objekt. Der Zieltextrahmen, zu dem Sie den angegebenen Textrahmen verknüpfen möchten.</param>
+        <param name="TargetTextFrame">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> Objekt. Der Zieltextrahmen, mit dem Sie den angegebenen Textrahmen verknüpfen möchten.</param>
         <summary>Bestimmt, ob der Textrahmen einer Form in den Textrahmen einer anderen Form verknüpft werden kann.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Die <b>TextFrame</b> -Eigenschaft gibt <b>True</b> zurück, wenn <paramref name="TargetTextFrame" /> ein gültiges Ziel. Es gibt <b>False</b> zurück, wenn <paramref name="TargetTextFrame" /> bereits Text enthält oder bereits verknüpft ist oder wenn die Form nicht unterstützt zugeordneten Text.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>TextFrame</b> -Eigenschaft gibt <b>true</b> zurück, wenn <paramref name="TargetTextFrame" /> es sich um ein gültiges Ziel handelt. Es gibt <b>false</b> zurück <paramref name="TargetTextFrame" /> , wenn bereits Text enthält oder bereits verknüpft ist, oder wenn die Form keinen angefügten Text unterstützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAnchor">
@@ -817,10 +792,8 @@
         <ReturnType>Microsoft.Office.Core.MsoVerticalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen eine <b>MsoVerticalAnchor</b> -Konstanten, die die vertikale Ausrichtung des Texts innerhalb einer Form darstellt. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>MsoVerticalAnchor</b>
-        </value>
+        <summary>Gibt eine <b>MsoVerticalAnchor</b> -Konstante zurück, die die vertikale Ausrichtung des Texts in einer Form darstellt, oder legt diese fest. Lese-/Schreibzugriff.</summary>
+        <value><b>MsoVerticalAnchor</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -850,12 +823,10 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder das Verzerrungsformat (wie der Text verzogen ist) für den angegebenen Textrahmen festgelegt.</summary>
-        <value>Das Verzerrungsformat (wie der Text verzogen ist) für den angegebenen Textrahmen.</value>
-        <remarks>
-          <para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
-          <para />
-        </remarks>
+        <summary>Dient zum Abrufen oder Festlegen des Verzerrungs Formats (wie der Text verzerrt ist) für den angegebenen Textrahmen.</summary>
+        <value>Das Verzerrungs Format (wie der Text verzerrt wird) für den angegebenen Textrahmen.</value>
+        <remarks><para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -884,14 +855,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Word westlichen Text in der Mitte eines Worts in der angegebenen Absätze oder Textrahmen umbrochen wird.</summary>
+        <summary><b>True</b>, falls lateinischer Text in der Mitte des Worts in den angegebenen Absätzen oder Textrahmen von Microsoft Word umgebrochen wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>WordWrap</b> -Eigenschaft gibt <b>wdUndefined zurück</b> , wenn sie nur für einige der angegebenen Absätze oder Textrahmen auf <b>True</b> festgelegt ist.</para>
-          <para>Diese Verwendung möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Eigenschaft "Zeilen <b>Umbruch</b> " gibt <b>wdUndefined</b> zurück, wenn Sie für nur einige der angegebenen Absätze oder Textrahmen auf " <b>true</b> " festgelegt ist.</para>
+          <para>Diese Verwendung steht Ihnen möglicherweise nicht zur Verfügung, abhängig von der Sprachunterstützung (beispielsweise US-Englisch), die Sie ausgewählt oder installiert haben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

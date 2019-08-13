@@ -1,13 +1,5 @@
 <Type Name="SpellingSuggestions" FullName="Microsoft.Office.Interop.Word.SpellingSuggestions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c30fd4820009953509a43ffbb37abf5462125885" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670224" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4cee29ad3d8de668efc42731bf2fa1ab75a7b415" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146094" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingSuggestions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingSuggestions&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" /> -Objekten, die die Vorschläge für ein bestimmtes Wort oder für das erste Wort im angegebenen Bereich darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <b>GetSpellingSuggestions</b> -Methode des eine <see cref="T:Microsoft.Office.Interop.Word.Application" /> oder <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um die <b>SpellingSuggestions</b> -Auflistung zurückzugeben. Die <b>SpellingSuggestions</b> -Methode, wenn Sie auf das <b>Application</b> -Objekt angewendet wird, muss das Wort überprüft werden soll angegeben. Wenn die <b>GetSpellingSuggestions</b> -Methode auf einen Bereich angewendet wird, wird das erste Wort im Bereich überprüft.</para>
-      <para>Können nicht Sie Vorschläge oder Remove Vorschläge aus der Auflistung der Rechtschreibvorschläge hinzufügen. Rechtschreibvorschläge Hauptfenster und den Benutzerwörterbüchern abgeleitet sind.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" /> Objekten, die alle Vorschläge für ein angegebenes Wort oder für das erste Wort im angegebenen Bereich darstellen.</summary>
+    <remarks><para>Verwenden Sie die <b>GetSpellingSuggestions</b> -Methode <see cref="T:Microsoft.Office.Interop.Word.Application" /> eines <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder-Objekts, um die <b>SpellingSuggestions</b> -Auflistung zurückzugeben. Wenn die <b>SpellingSuggestions</b>-Methode einem <b>Application</b>-Objekt zugewiesen wird, muss das zu überprüfende Wort angegeben werden. Wenn die <b>GetSpellingSuggestions</b>-Methode einem Bereich zugewiesen wird, erfolgt eine Überprüfung des ersten Worts im Bereich.</para>
+      <para>Es ist nicht möglich, Vorschläge aus der Auflistung der Rechtschreibvorschläge zu entfernen oder in sie aufzunehmen. Vorschläge zur Rechtschreibung werden dem Standardwörterbuch und den Benutzerwörterbüchern entnommen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,11 +109,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -184,7 +172,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -243,9 +231,8 @@
       <Docs>
         <summary>Gibt die Art des Rechtschreibfehlers zurück.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSpellingErrorType" />kann eine der folgenden Konstanten <b>WdSpellingErrorType</b> .</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSpellingErrorType" />Dies kann eine der folgenden <b>WdSpellingErrorType</b> -Konstanten sein:</para>
           <para>
             <b>wdSpellingCapitalization</b>
           </para>
@@ -255,9 +242,8 @@
           <para>
             <b>wdSpellingNotInDictionary</b>
           </para>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um eine Auflistung von Wörtern, die als Ersetzung vorgeschlagen zurückzugeben. Wenn ein Wort falsch geschrieben ist, die <see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode gibt <b>True</b>zurück.</para>
-          <para />
-        </remarks>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um eine Sammlung von Wörtern zurückzugeben, die als Rechtschreib Ersatz vorgeschlagen werden. Wenn ein Wort falsch geschrieben wird, gibt die <see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Methode <b>true</b>zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

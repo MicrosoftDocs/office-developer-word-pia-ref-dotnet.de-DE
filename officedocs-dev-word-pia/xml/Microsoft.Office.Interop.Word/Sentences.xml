@@ -1,13 +1,5 @@
 <Type Name="Sentences" FullName="Microsoft.Office.Interop.Word.Sentences">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f1ebc46195bb79e4bf8899f5ce4a33bf16c62d2b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669059" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Sentences : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b9c8f2df0c924a72bb12132f74fa03d11816de86" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144050" /></Metadata><TypeSignature Language="C#" Value="public interface Sentences : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sentences implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Sentences" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sentences&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekten, die alle Sätze in einer Auswahl, einem Bereich oder einem Dokument darstellen. Es ist kein Sentence-Objekt.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Sentences</b> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" /> , oder <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekts, um die <b>Sentences</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung <b>Sätze</b>(<paramref name="index" />), wobei <paramref name="index" /> die Indexzahl darstellt, um ein <b>Range</b> -Objekt zurückzugeben, das einen Satz darstellt. Die Indexnummer stellt die Position eines Satzes in der <b>Sentences</b> -Auflistung.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Sentences.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Gezählt werden Elemente in anderen Textabschnitten verwenden Sie die Auflistung mit der <b>Range</b> -Objekt.</para>
-      <para>Der <b>Add</b> -Methode ist nicht verfügbar für die <b>Sentences</b> -Auflistung. Verwenden Sie stattdessen die <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> oder <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> Methode, um ein <b>Range</b> -Objekt einen Satz hinzuzufügen.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekten, die alle Sätze in einer Auswahl, einem Bereich oder einem Dokument darstellen. Es gibt kein Sentence-Objekt.</summary>
+    <remarks><para>Verwenden Sie <b></b> die Sentences- <see cref="T:Microsoft.Office.Interop.Word.Selection" />Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Range" /> eines, <see cref="T:Microsoft.Office.Interop.Word.Document" /> -oder-Objekts, um die <b>Sentences</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden <b></b>Sie Sätze<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um ein <b>Range</b> -Objekt zurückzugeben, das einen Satz darstellt. Die Indexnummer stellt die Position eines Satzes in der <b>Sentences</b> -Auflistung dar.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Sentences.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Verwenden Sie zum Zählen der Elemente in anderen Artikeln die Auflistung mit dem <b>Range</b> -Objekt.</para>
+      <para>Die <b>Add</b>-Methode ist für die <b>Sentences</b>-Auflistung nicht verfügbar. Verwenden Sie stattdessen die <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> oder <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> -Methode, um einem <b>Range</b> -Objekt einen Satz hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,11 +111,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden. </para>
-          <para>Der <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden. </para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -151,7 +139,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den ersten Satz, Wort oder Zeichen in einem Dokument, Markierung oder der Bereich darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den ersten Satz, das Wort oder das Zeichen in einem Dokument, einer Auswahl oder einem Bereich darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,7 +202,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -243,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das das letzte Zeichen, die Wort oder den Satz in einem Dokument, eine Auswahl oder ein Bereich darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das das letzte Zeichen, Wort oder den letzten Satz in einem Dokument, einer Auswahl oder einem Bereich darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

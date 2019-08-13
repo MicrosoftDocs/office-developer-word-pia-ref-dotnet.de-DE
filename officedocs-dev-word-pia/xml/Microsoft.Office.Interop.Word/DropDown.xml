@@ -1,13 +1,5 @@
 <Type Name="DropDown" FullName="Microsoft.Office.Interop.Word.DropDown">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1aa9b15f2b37ab9a12aa1f385ead515fc2994b0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669317" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DropDown" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="657342fc0405fbd6f204e36ef3b45bfddf99d76e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144575" /></Metadata><TypeSignature Language="C#" Value="public interface DropDown" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropDown" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropDown" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropDown" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein Dropdown-Formularfeld dar, das eine Liste von Elementen in einem Formular enthält.</summary>
-    <remarks>
-      <para>Verwenden Sie <b>FormFields</b>(<paramref name="index" />), wobei Index die Indexnummer oder der Name der Textmarke Dropdown-Formularfeld ist, zur Rückgabe eines einzelnen zugeordnet ist <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekt. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> -Eigenschaft mit dem <b>FormField</b> -Objekt um ein <b>DropDown</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Formularfelds in der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> -Methode mit der <b>FormFields</b> -Auflistung, das ein Dropdown-Formularfeld hinzuzufügen.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden <b></b>Sie FormFields<paramref name="index" />(), wobei Index die Indexnummer oder der Name der Textmarke ist, der dem Dropdown-Formularfeld zugeordnet ist, <see cref="T:Microsoft.Office.Interop.Word.FormField" /> um ein einzelnes Objekt zurückzugeben. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> die-Eigenschaft mit dem <b>FormField</b> -Objekt, um ein <b>Dropdown</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Formularfelds in der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> die-Methode zusammen mit der <b>FormFields</b> -Auflistung, um ein Dropdown-Formularfeld hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -121,12 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen das Dropdown-Standardelement.</summary>
+        <summary>Gibt das standardmäßige Dropdownelement zurück oder legt es fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Das erste Element in einem Dropdown-Formularfeld ist 1, das zweite Element 2 und So weiter.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das erste Element in einem Dropdown-Formularfeld ist 1, das zweite 2 usw.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListEntries">
@@ -152,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> -Auflistung, die alle Elemente in einer <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> Objekt.</summary>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> Auflistung zurück, die alle Elemente in einem <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> Objekt darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,13 +194,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob der angegebene Formularfeld ein gültiges Kontrollkästchen-Formularfeld handelt.</summary>
+        <summary>Bestimmt, ob das angegebene Formularfeldobjekt ein gültiges Kontrollkästchen-Formularfeld ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn das angegebene Formular Field-Objekt ist, ein gültiges Kontrollkästchen-Formularfeld, und <b>False</b> Wenn nicht.</para>
-          <para>Für die <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, und <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> -Objekten verwenden die <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Interop.Word.FormField" /> -Objekt, das den Typ des Formularfelds (<b>WdFieldFormCheckBox</b>, <b>WdFieldFormDropDown</b>oder <b>WdFieldFormTextInput</b>) vor bestimmen Anwenden der <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />, <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, oder <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> Eigenschaft. Diese Vorsichtsmaßnahme wird sichergestellt, dass das <b>FormField</b> -Objekt dem erwarteten Typ ist.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn das angegebene Formularfeldobjekt ein gültiges Kontrollkästchen-Formularfeld ist, und <b>false</b> , wenn dies nicht der Fall ist.</para>
+          <para>Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />für <see cref="T:Microsoft.Office.Interop.Word.DropDown" />die, <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> -und-Objekte <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.FormField" /> des-Objekts, um den Typ des Formularfelds (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>oder <b>wdFieldFormTextInput</b>) vor der Anwendung zu bestimmen. <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />die <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />-,-oder <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> -Eigenschaft. Durch diese Vorsichts <b></b> Maßnahme wird sichergestellt, dass das FormField-Objekt der erwartete Typ ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -243,7 +227,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Anzahl des ausgewählten Elements in einem Dropdown-Formularfeld.</summary>
+        <summary>Gibt die Nummer des ausgewählten Elements in einem Dropdown-Formularfeld zurück oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

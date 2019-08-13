@@ -1,13 +1,5 @@
 <Type Name="System" FullName="Microsoft.Office.Interop.Word.System">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="93f16faece022e960122bec04316f252825147e5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670583" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface System" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ed58d5c3d2752ce883fdb2461eb9995959a5ba2c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143910" /></Metadata><TypeSignature Language="C#" Value="public interface System" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract System" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.System" />
   <TypeSignature Language="VB.NET" Value="Public Interface System" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Enthält Informationen über das Computersystem.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.System" /> -Eigenschaft auf das <b>System</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.System" /> die-Eigenschaft, um das <b>System</b> -Objekt zurückzugeben.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +74,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sie haben Hilfe zu einem Schlüsselwort nur auf dem Macintosh verwendet wird. Informationen zu diesem Schlüsselwort finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</summary>
+        <summary>Sie haben Hilfe zu einem Schlüsselwort angefordert, das nur auf dem Macintosh verwendet wird. Weitere Informationen zu diesem Schlüsselwort finden Sie in der Sprachverzeichnishilfe zu Microsoft Office Macintosh Edition.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,17 +103,14 @@
         <Parameter Name="Password" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b> erforderlich. Der Pfad für das Netzlaufwerk (z. B. "\\Project\Info").</param>
-        <param name="Drive">Optionales- <b>Objekt</b>. Eine Zahl, die den Brief, den Sie möchten das Netzlaufwerk zuweisen, wobei 0 (null) den ersten verfügbaren Laufwerkbuchstaben entspricht entspricht, entspricht die zweite usw. 1. Wenn dieses Argument ausgelassen wird, wird der nächste verfügbare Buchstabe verwendet.</param>
-        <param name="Password">Optionales- <b>Objekt</b>. Das Kennwort, wenn das Netzlaufwerk mit Kennwortschutz versehen ist.</param>
+        <param name="Path"><b>String</b> erforderlich. Der Pfad für das Netzlaufwerk (beispielsweise "\\Project\Info").</param>
+        <param name="Drive">Optionales <b>Objekt</b>. Eine Zahl, die dem Buchstaben entspricht, der dem Netzlaufwerk zugewiesen werden soll, wobei 0 (null) dem ersten verfügbaren Laufwerkbuchstaben entspricht, 1 dem zweiten usw. Wenn dieses Argument nicht angegeben wird, wird der nächste verfügbare Buchstabe verwendet.</param>
+        <param name="Password">Optionales <b>Objekt</b>. Das Kennwort, wenn das Netzlaufwerk mit Kennwortschutz versehen ist.</param>
         <summary>Stellt eine Verbindung zu einem Netzlaufwerk her.</summary>
-        <remarks>
-          <para>
-            <b>Sicherheit</b>   hartcodierte Kennwörter in der Anwendung verwenden. Wenn in einer Prozedur ein Kennwort erforderlich ist, fordern Sie das Kennwort des Benutzers, in einer Variablen zu speichern, und klicken Sie dann die Variable in Ihrem Code verwenden.</para>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" /> -Eigenschaft mit <b>der Konstanten wdDialogConnect zum Anzeigen im Dialogfeld Verbindung zum Netzlaufwerk</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Sicherheit</b>   vermeiden Sie die Verwendung hartcodierter Kennwörter in Ihren Anwendungen. Fordern Sie das Kennwort vom Benutzer an, speichern Sie es in einer Variablen, und verwenden Sie die Variable dann im Code, falls ein Kennwort in einer Prozedur benötigt wird.</para>
+          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" /> die-Eigenschaft mit der <b>wdDialogConnect</b> -Konstante, um das Dialogfeld mit dem Netzwerklaufwerk verbinden anzuzeigen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Country">
@@ -180,46 +167,45 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCountry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Bezeichnung Land/Region des Systems zurück.</summary>
+        <summary>Gibt die Landes-/Regionsbezeichnung des Systems zurück.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdCountry" />Dies kann eine der folgenden <b>WdCountry</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdCountry" />eine der folgenden <b>WdCountry</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdArgentina </b>
+            <b>wdArgentina</b>
           </para>
           <para>
-            <b>WdCanada </b>
+            <b>wdCanada</b>
           </para>
           <para>
-            <b>WdChina </b>
+            <b>wdChina</b>
           </para>
           <para>
-            <b>WdFinland </b>
+            <b>wdFinland</b>
           </para>
           <para>
-            <b>WdGermany </b>
+            <b>wdGermany</b>
           </para>
           <para>
-            <b>WdItaly </b>
+            <b>wdItaly</b>
           </para>
           <para>
-            <b>WdKorea </b>
+            <b>wdKorea</b>
           </para>
           <para>
-            <b>WdMexico </b>
+            <b>wdMexico</b>
           </para>
           <para>
-            <b>WdNorway </b>
+            <b>wdNorway</b>
           </para>
           <para>
-            <b>WdSpain </b>
+            <b>wdSpain</b>
           </para>
           <para>
-            <b>WdTaiwan </b>
+            <b>wdTaiwan</b>
           </para>
           <para>
-            <b>WdUS</b>
+            <b>wdUS</b>
           </para>
           <para>
             <b>wdBrazil</b>
@@ -257,8 +243,7 @@
           <para>
             <b>wdVenezuela</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -286,11 +271,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -319,7 +302,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Status (die Form) des Zeigers. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdCursorType" /> Konstanten: <b>WdCursorIBeam</b>, <b>WdCursorNormal</b>, <b>WdCursorNorthwestArrow</b>oder <b>WdCursorWait</b>.</summary>
+        <summary>Gibt den Status (die Form) des Zeigers zurück oder legt ihn fest. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdCursorType" /> der folgenden Konstanten sein: <b>wdCursorIBeam</b>, <b>wdCursorNormal</b>, <b>wdCursorNorthwestArrow</b>oder <b>wdCursorWait</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,13 +330,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den verfügbaren Speicherplatz für das aktuelle Laufwerk in Bytes zurück.</summary>
+        <summary>Gibt den verfügbaren Speicherplatz für das aktuelle Laufwerk in Byte an.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Hinweis</b>  1024 Bytes in einem KB und 1.048.576 Bytes Megabyte sind vorhanden. Der maximale Rückgabewert für die <b>FreeDiskSpace</b> -Eigenschaft beträgt 2.147.483.647. Aus diesem Grund, auch wenn 4 GB freier Speicherplatz vorhanden ist, gibt es 2147483647.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Hinweis:</b>  Es gibt 1024 Bytes in a Kilobyte und 1.048.576 Bytes in einem Megabyte. Der maximale Rückgabewert für die <b>FreeDiskSpace</b>-Eigenschaft beträgt 2.147.483.647. Daher gibt es auch dann 2147483647, wenn Sie über vier Gigabyte freien Speicherplatz verfügen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalResolution">
@@ -379,7 +360,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die horizontale Auflösung in Pixel.</summary>
+        <summary>Gibt die horizontale Bildschirmauflösung in Pixel zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -407,7 +388,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die festgelegte Sprache der Systemsoftware zurück.</summary>
+        <summary>Gibt die Sprachzuweisung der Systemsoftware zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,7 +416,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sie haben Hilfe zu einem Schlüsselwort nur auf dem Macintosh verwendet wird. Informationen zu diesem Schlüsselwort finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</summary>
+        <summary>Sie haben Hilfe zu einem Schlüsselwort angefordert, das nur auf dem Macintosh verwendet wird. Weitere Informationen zu diesem Schlüsselwort finden Sie in der Sprachverzeichnishilfe zu Microsoft Office Macintosh Edition.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -463,8 +444,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn ein mathematischer Koprozessor im System installiert ist.</summary>
+        <summary><b>True</b>, wenn ein mathematischer Koprozessor im System installiert wurde.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -490,7 +470,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Startet das Microsoft-Systeminfo Anwendung, wenn er nicht ausgeführt wird, oder wechselt zu dieser sofern es bereits ausgeführt wird.</summary>
+        <summary>Startet die Microsoft-System informationsanwendung, wenn Sie nicht ausgeführt wird, oder wechselt zu dieser, wenn Sie bereits ausgeführt wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,7 +497,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des aktuellen Betriebssystems (beispielsweise "Windows" oder "Windows NT") zurück.</summary>
+        <summary>Gibt den Namen des aktuellen Betriebssystems zurück (zum Beispiel Windows oder Windows NT).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -581,18 +561,13 @@
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> erforderlich. Der Dateiname für die Einstellungsdatei. Ist kein Pfad angegeben, wird davon ausgegangen, dass der Windows-Ordner.</param>
-        <param name="Section">
-          <b>String</b> erforderlich. Der Name des Abschnitts in der Initialisierungsdatei, enthält <paramref name="Key" />. In einer Windows-Einstellungsdatei wird den Namen des Abschnitts in Klammern vor dem zugehörigen Schlüssel (verwenden Sie nicht die Klammern mit <paramref name="Section" />). Wenn Sie den Wert eines Eintrags aus der Windows-Registrierung zurückgeben <paramref name="Section" /> sollte der vollständige Pfad zum Unterschlüssel sein, einschließlich der Unterstruktur (z. B. "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word\Options) sein.</param>
-        <param name="Key">
-          <b>String</b> erforderlich. Die registrierungsschlüsseleinstellung oder den Wert des Registrierungseintrags, die Sie abrufen möchten. Der Name des Schlüssels wird in einer Windows-Einstellungsdatei ein Gleichheitszeichen (=) und die Einstellung folgen. Wenn Sie den Wert eines Eintrags aus der Windows-Registrierung zurückgeben <paramref name="Key" /> sollte der Namen eines Eintrags im Unterschlüssel durch angegebenen <paramref name="Section" /> (beispielsweise "STARTUP-PATH").</param>
-        <summary>Zurückgeben oder festlegen eine Zeichenfolge in einer Initialisierungsdatei oder der Windows-Registrierung.</summary>
+        <param name="FileName"><b>String</b> erforderlich. Der Name für die Initialisierungsdatei. Wenn kein Pfad angegeben ist, wird der Windows-Ordner angenommen.</param>
+        <param name="Section"><b>String</b> erforderlich. Der Name des Abschnitts in der Einstellungsdatei, die enthält <paramref name="Key" />. In einer Windows-Einstellungsdatei wird der Abschnittsname zwischen Klammern vor den zugeordneten Schlüsseln angezeigt (schließen Sie die <paramref name="Section" />Klammern nicht mit ein). Wenn Sie den Wert eines Eintrags aus der Windows-Registrierung zurückgeben <paramref name="Section" /> , sollte der vollständige Pfad zum Unterschlüssel sein, einschließlich der Unterstruktur (beispielsweise "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word\Options").</param>
+        <param name="Key"><b>String</b> erforderlich. Die Schlüsseleinstellung oder der Wert des Eintrags der Registrierungsdatenbank, den Sie abrufen möchten. In einer Windows-Initialisierungsdatei folgen auf den Schlüsselnamen ein Gleichheitszeichen (=) und die Einstellung. Wenn Sie den Wert eines Eintrags aus der Windows-Registrierung zurückgeben <paramref name="Key" /> , sollte der Name eines Eintrags im Unterschlüssel angegeben werden <paramref name="Section" /> (beispielsweise "Startup-Path").</param>
+        <summary>Zurückgeben oder Festlegen einer Zeichenfolge in einer Einstellungsdatei oder der Windows-Registrierung.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sie können Code schreiben, die eine Einstellungsdatei zum Speichern und Abrufen von Einstellungen verwendet. Beispielsweise können Sie den Namen des aktiven Dokuments beim Beenden von Word, damit es automatisch das nächste Mal geöffnet werden kann Starten von Microsoft Word speichern. Eine Initialisierungsdatei ist eine Textdatei mit Informationen, wie die Informationen in der Windows 3.x-Datei WIN. INI-Datei.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können Code schreiben, der eine Einstellungsdatei zum Speichern und Abrufen von Einstellungen verwendet. Sie können beispielsweise den Namen des aktiven Dokuments speichern, wenn Sie Word beenden, damit es beim nächsten Start von Microsoft Word automatisch erneut geöffnet werden kann. Eine Einstellungsdatei ist eine Textdatei mit Informationen, die wie die Informationen in der Windows 3.x-Datei WIN.INI angeordnet sind.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessorType">
@@ -621,7 +596,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Prozessors, die das System (beispielsweise i486) verwendet wird.</summary>
+        <summary>Gibt den Typ des Prozessors zurück, den das System verwendet (beispielsweise i486).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -656,11 +631,9 @@
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Section">
-          <b>String</b> erforderlich. Ein Unterschlüssel unterhalb des Unterschlüssels "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word" in der Windows-Registrierung.</param>
-        <param name="Key">
-          <b>String</b> erforderlich. Der Name des Eintrags im Unterschlüssel durch angegebenen <paramref name="Section" /> (beispielsweise "BackgroundPrint" im Unterschlüssel Options).</param>
-        <summary>Gibt zurück oder legt den Wert für einen Eintrag in der Windows-Registrierung unter dem folgenden Unterschlüssel: HKEY_CURRENT_USER\Software\Microsoft\Office\version\Word.</summary>
+        <param name="Section"><b>String</b> erforderlich. Ein subkey unterhalb des Unterschlüssels "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word" in der Windows-Registrierung.</param>
+        <param name="Key"><b>String</b> erforderlich. Der Name des Eintrags im Unterschlüssel, der <paramref name="Section" /> durch angegeben wird (beispielsweise "BackgroundPrint" im Unterschlüssel "Options").</param>
+        <summary>Gibt den Wert eines Eintrags in der Windows-Registrierungsdatenbank unter dem folgenden Unterschlüssel HKEY_CURRENT_USER\Software\Microsoft\Office\version\Word zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -688,7 +661,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sie haben Hilfe zu einem Schlüsselwort nur auf dem Macintosh verwendet wird. Informationen zu diesem Schlüsselwort finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</summary>
+        <summary>Sie haben Hilfe zu einem Schlüsselwort angefordert, das nur auf dem Macintosh verwendet wird. Weitere Informationen zu diesem Schlüsselwort finden Sie in der Sprachverzeichnishilfe zu Microsoft Office Macintosh Edition.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -744,7 +717,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die vertikale Auflösung in Pixel.</summary>
+        <summary>Gibt die vertikale Bildschirmauflösung in Pixel zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

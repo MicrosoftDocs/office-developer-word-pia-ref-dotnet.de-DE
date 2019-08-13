@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Word.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5c4bc9e1f8c1df339fe6ea64518ce507e0f8afe" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669177" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ec49e7fe750928cbb025ed46930bedb2516ad95e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143994" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine einzelne Aktion für ein Smarttag dar.</summary>
-    <remarks>
-      <para>Smarttag-Aktionen sind Prozesse, die in Smarttags programmiert sind, mit die Benutzer bestimmte Funktionen im Zusammenhang mit dem Smarttag ausführen können. Beispielsweise eine Aktion für ein Smarttag auf eine Website zuzugreifen, während eine andere Aktion Kontaktinformationen in Microsoft Outlook eingefügt werden kann, während er sich noch eine andere Zuordnung und treibende erfahren Sie, wie anzeigt.</para>
-      <para>Smarttag-Aktionen beziehen sich auch für Aktionen, die in smart Documents integriert und für die Steuerelemente im Aufgabenbereich Dokumentaktionen. Angenommen, haben Sie ein Textbox-Steuerelement angezeigt wird, klicken Sie im Aufgabenbereich für ein SmartDocument, die eine Aktion ausgeführt wird, wenn ein Benutzer den Inhalt des Textfelds ändert.</para>
+    <remarks><para>Smarttag-Aktionen sind Prozesse, die in Smarttags programmiert werden, mit denen Benutzer bestimmte Funktionen im Zusammenhang mit dem Smarttag ausführen können. Beispielsweise kann eine Aktion für ein Smarttag für den Zugriff auf eine Website sein, während eine andere Aktion Kontaktinformationen in Microsoft Outlook einfügt, während ein weiteres eine Karte und eine Anfahrtsbeschreibung anzeigt.</para>
+      <para>Smarttag-Aktionen beziehen sich auch auf Aktionen, die in Smart Documents und in die Steuerelemente im Aufgabenbereich Dokumentaktionen integriert sind. Beispielsweise kann ein TextBox-Steuerelement im Aufgabenbereich für ein Smart Document angezeigt werden, das eine Aktion ausführt, wenn ein Benutzer den Inhalt des Textfelds ändert.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <b>SmartTagAction</b>und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich jedes Element, das eine Komponente Smarttag erkannt wird, ein <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekt. "Stadt" in der Adresse Smarttag-Komponente ist beispielsweise ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttag-Typ City verfügt über verbundene <b>SmartTagRecognizer</b> -Objekten (der Teil der Smarttag-Komponente, die Smarttags vom Typ "Stadt" in Dokumenten erkennt) und <b>SmartTagAction</b> -Objekte (der Teil der Smarttag-Komponente, die Aktionen bereitstellt im Zusammenhang mit der bestimmten Smarttag-Typ, der Nachschlagen einer erkannten Stadt in Microsoft MapPoint auf MSN). Einfach ausgedrückt, ist die Kennzeichnung, die Aktionsbehandlungsroutine bereit und beide ist der Typ des Smarttags, deren Funktionsweise auf.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" /> -Methode, um ein einzelnes <b>SmartTagAction</b> -Objekt aus Zurückgeben einer <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> Auflistung.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> -Eigenschaft bestimmt den Typ des Steuerelements mit einem <b>SmartTagAction</b> -Objekt verknüpften.</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <b>Smarttags</b>und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich darauf, dass jedes Element, das eine Smarttag-Komponente erkennt, <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> ein Objekt ist. Beispielsweise ist "City" in der Smarttag-Adresskomponente ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttagtyp City enthält verwandte <b>SmartTagRecognizer</b> -Objekte (den Teil der Smarttag-Komponente, der Smarttags vom Typ "City" in Documents erkennt) und <b>Smarttag</b> Action-Objekte (der Teil der Smarttag-Komponente, der die Aktionen bereitstellt. im Zusammenhang mit dem bestimmten Smarttagtyp, der möglicherweise die Suche nach einer anerkannten Stadt in Microsoft MapPoint unter MSN umfasst). Einfach ausgedrückt: das Erkennungsmodul führt die Benennung aus, der Aktionshandler bietet Endbenutzerfunktionen, und was bindet sie zusammen, ist der Typ des Smarttags, an dem Sie arbeiten.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" /> die-Methode, um ein einzelnes <b>Smarttag</b> -Objekt <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> aus einer Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> die-Eigenschaft, um den Typ des Steuerelements zu bestimmen, das einem <b>Smarttag</b> -Objekt zugeordnet ist.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveXControl">
@@ -64,12 +54,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> , das ein im Aufgabenbereich Dokumentaktionen angezeigten ActiveX-Steuerelement darstellt.</summary>
+        <summary>Gibt ein <b>Objekt</b> zurück, das ein ActiveX-Steuerelement darstellt, das im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Weitere Informationen zu SmartDocuments finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network-Website (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -98,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,13 +123,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob ein Kontrollkästchen in einem SmartDocument aktiviert ist.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom Typ Boolean</b> , der angibt, ob ein Kontrollkästchen in einem intelligenten Dokument ausgewählt ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>true,</b> Wenn das Kontrollkästchen markiert ist, und <b>False</b> zurück, falls es deaktiviert ist.</para>
-          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn das aktivierte Kontrollkästchen markiert ist, und <b>false</b> , wenn es gelöscht wird.</para>
+          <para>Weitere Informationen zu SmartDocuments finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network-Website (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -172,11 +158,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -203,7 +187,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Führt die angegebene Smarttag-Aktion.</summary>
+        <summary>Führt die angegebene Smarttag-Aktion aus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,13 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob das angegebene Dokumentfragment-Steuerelement erweitert oder reduziert im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom Typ Boolean</b> , der angibt, ob das angegebene Dokument Fragment-Steuerelement im Aufgabenbereich Dokumentaktionen erweitert oder reduziert wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>true,</b> um anzugeben, dass das Steuerelement erweitert wird, und <b>False,</b> um anzugeben, dass das Steuerelement reduziert ist.</para>
-          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, um anzugeben, dass das Steuerelement erweitert wird, und <b>false</b> , um anzugeben, dass das Steuerelement reduziert ist.</para>
+          <para>Weitere Informationen zu SmartDocuments finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network-Website (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandHelp">
@@ -280,13 +262,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>vom Typ Boolean</b> , der angibt, ob das angegebene SmartDocument-Hilfetext-Steuerelement erweitert oder reduziert im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines <b>Werts vom Typ Boolean</b> , der angibt, ob das angegebene Hilfe Text-Steuerelement für Smart Document im Aufgabenbereich Dokumentaktionen erweitert oder reduziert wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> an, dass das Steuerelement ist erweitert, und <b>False</b> an, dass das Steuerelement wird reduziert.</para>
-          <para>Weitere Informationen zu smart Documents finden Sie in der Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, um anzugeben, dass das Steuerelement erweitert wird, und <b>false</b> , um anzugeben, dass das Steuerelement reduziert ist.</para>
+          <para>Weitere Informationen zu SmartDocuments finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network-Website (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSelection">
@@ -321,12 +301,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die Indexnummer des ausgewählten Elements in einem SmartDocument-Listenfeldsteuerelement repräsentiert.</summary>
+        <summary>Zurückgeben oder Festlegen einer <b>ganzen Zahl</b> , die die Indexnummer des ausgewählten Elements in einem Smart Document-Listenfeld-Steuerelement darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Weitere Informationen zu SmartDocuments finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network-Website (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -417,7 +395,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert <b>vom Typ Boolean</b> , der angibt, ob ein SmartDocument-Steuerelement momentan im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
+        <summary>Gibt einen <b>Wert vom Typ Boolean</b> , der angibt, ob ein Smart Document-Steuerelement derzeit im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,12 +432,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die die Indexnummer des ausgewählten Elements in einer Gruppe von Optionsfeldsteuerelementen in einem smart Document darstellt.</summary>
+        <summary>Zurückgeben oder Festlegen einer <b>ganzen Zahl</b> , die die Indexnummer des ausgewählten Elements in einer Gruppe von Optionsfeld-Steuerelementen in einem Smart Document darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Weitere Informationen zu SmartDocuments finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network-Website (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextboxText">
@@ -494,12 +470,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>Zeichenfolge</b> , die den Text in einem SmartDocument Textbox-Steuerelement darstellt.</summary>
+        <summary>Zurückgeben oder Festlegen einer <b>Zeichenfolge</b> , die den Text in einem Smart Document-TextBox-Steuerelement darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Weitere Informationen zu smart Documents finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Weitere Informationen zu SmartDocuments finden Sie im Smart Document Software Development Kit auf der Microsoft Developer Network-Website (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -528,11 +502,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSmartTagControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> , die den Typ des im Aufgabenbereich Dokumentaktionen angezeigten SmartDocument-Steuerelement darstellt.</summary>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> zurück, der den Typ des intelligenten Dokument Steuerelements darstellt, das im Aufgabenbereich Dokumentaktionen angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> kann eine der folgenden Konstanten sein:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />Dies kann eine der folgenden Konstanten sein: </para>
           <para>
             <b>wdControlActiveX</b>
           </para>
@@ -581,8 +554,7 @@
           <para>
             <b>wdControlTextbox</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

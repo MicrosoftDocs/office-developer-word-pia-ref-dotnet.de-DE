@@ -1,13 +1,5 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Word.Border">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="61a9e103fed3395528d8e87f68453123f0ee4180" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669271" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bdd51dcf5bee087b8afe2a4b3e9384bb47359ecc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146325" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
@@ -27,14 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Stellt den Rahmen eines Objekts dar.</summary>
-    <remarks>
+    <remarks><para>Das <b>Border</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung.</para>
+      <para>Verwenden <b></b>Sie Rahmen<paramref name="index" />(), <paramref name="index" /> wobei der Rahmen identifiziert wird, um ein einzelnes <b>Border</b> -Objekt zurückzugeben. <paramref name="Index" />kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> folgenden Konstanten sein: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>oder <b> wdBorderVertical</b>. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> die-Eigenschaft, um eine Rahmenlinie auf ein <b>Border</b> -Objekt anzuwenden.</para>
       <para>
-        <b>Border</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung.</para>
-      <para>Verwendung <b>Rahmen</b>(<paramref name="index" />), wobei <paramref name="index" /> identifiziert den Rahmen, um ein einzelnes <b>Border</b> -Objekt zurückzugeben. <paramref name="Index" /> kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> Konstanten: <b>WdBorderBottom</b>, <b>WdBorderDiagonalDown</b>, <b>WdBorderDiagonalUp</b>, <b>WdBorderHorizontal</b>, <b>WdBorderLeft</b>, <b>WdBorderRight</b>, <b> WdBorderTop</b>, oder <b>WdBorderVertical</b>. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> -Eigenschaft auf ein <b>Border</b> -Objekt eine Rahmenlinie gilt.</para>
-      <para>
-        <b>Border</b> -Objekten können nicht der <b>Borders</b> -Auflistung hinzugefügt werden. Die Anzahl der Elemente in der <b>Borders</b> -Auflistung ist begrenzt und variiert je nach den Typ des Objekts. Beispielsweise eine Tabelle enthält sechs Elemente in der <b>Borders</b> -Auflistung, die ein Absatz vier.</para>
-      <para />
-    </remarks>
+        <b>Border</b> -Objekte können nicht zur <b>Borders</b> -Auflistung hinzugefügt werden. Die Anzahl der Elemente in der <b>Borders</b>-Auflistung ist begrenzt und richtet sich nach dem Objekttyp. Die <b>Borders</b>-Auflistung für Tabellen enthält z. B. sechs Elemente, die für Absätze aber nur vier.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageBorderArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den grafischen Seitenrahmen Entwurf für ein Dokument.</summary>
+        <summary>Gibt das Design eines grafischen Seitenrahmens für ein Dokument zurück oder legt es fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,7 +111,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Breite (in Punkt) des angegebenen grafischen Seitenrahmen.</summary>
+        <summary>Gibt die Breite (in Punkt) des angegebenen grafischen Seitenrahmens zurück oder legt sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,12 +142,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die 24-Bit-Farbe für das angegebene <see cref="T:Microsoft.Office.Interop.Word.Border" /> Objekt.</summary>
+        <summary>Gibt die 24-Bit-Farbe für das angegebene <see cref="T:Microsoft.Office.Interop.Word.Border" /> Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Kann eine beliebige gültige <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> -Konstante oder ein Wert, der von Visual Basic RGB-Funktion zurückgegeben wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>Kann eine beliebige gültige <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> Konstante oder ein von Visual Basic RGB-Funktion zurückgegebener Wert sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndex">
@@ -187,7 +174,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Farbe für das angegebene Border-Objekt fest.</summary>
+        <summary>Gibt die Farbe für das angegebene Border-Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,13 +202,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Inside">
@@ -247,7 +232,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Rahmen, die auf das angegebene Objekt angewendet werden kann.</summary>
+        <summary>Gibt einen Innenrahmen zurück, der auf das angegebene Objekt angewendet werden kann.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,14 +263,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Rahmenlinienart für das angegebene Objekt.</summary>
+        <summary>Gibt die Rahmenart für das angegebene Objekt zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Festlegen der <b>LineStyle</b> -Eigenschaft für ein Bereich, der auf einzelne Zeichen oder Wörter bezieht eine zeichenumrandung zugewiesen gilt.</para>
-          <para>Festlegen der <b>LineStyle</b> -Eigenschaft für einen Absatz oder einen Bereich von Absätzen einen Absatzrahmen angewendet. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> -Eigenschaft auf einen Rahmen zwischen aufeinander folgenden Absätze anwenden möchten.</para>
-          <para>Durch Festlegen der <b>LineStyle</b> -Eigenschaft für ein Abschnitt einen Seitenrahmen um die Seiten im Abschnitt gilt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie die <b>LineStyle</b>-Eigenschaft für einen Bereich festlegen, der sich auf einzelne Zeichen oder Wörter bezieht, wird eine Zeichenumrandung zugewiesen.</para>
+          <para>Durch Festlegen der <b>LineStyle</b>-Eigenschaft für einen oder mehrere Absätze wird ein Absatzrahmen zugewiesen. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> die-Eigenschaft, um einen Rahmen zwischen aufeinander folgenden Absätzen anzuwenden.</para>
+          <para>Wenn Sie die <b>LineStyle</b>-Eigenschaft für einen Abschnitt festlegen, wird ein Seitenrahmen um die Seiten im Abschnitt gezogen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineWidth">
@@ -314,13 +297,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Breite des Rahmens eines Objekts.</summary>
+        <summary>Gibt die Linienstärke des Rahmens eines Objekts zurück oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> -Konstante oder <b>wdUndefined zurück</b> , wenn das Objekt keine Rahmen oder mit mehr als einer Linienstärke Rahmen.</para>
-          <para>, Wenn die angegebene Linienstärke für die Linienart des Rahmens vorhanden ist, generiert diese Eigenschaft einen Fehler. Um festzustellen, die die Linienstärke für eine bestimmte Linienart verfügbar, finden Sie unter Rahmen und Schattierung im Dialogfeld (Menü "Format").</para>
-          <para />
-        </remarks>
+        <remarks><para>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> Konstante oder <b>wdUndefined</b> , wenn das Objekt entweder keine Rahmen oder hat Rahmen mit mehr als eine Linienbreite.</para>
+          <para>Wenn die angegebene Linienstärke für die Linienart des Rahmens nicht verfügbar ist, wird ein Fehler generiert. Wenn Sie die für eine bestimmte Linienart verfügbaren Linienstärken ermitteln möchten, sehen Sie im Dialogfeld Rahmen und Schattierung (im Menü Format) nach.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -346,7 +327,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -377,7 +358,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, der angibt, wenn das angegebene <see cref="T:Microsoft.Office.Interop.Word.Border" /> Objekt ist sichtbar.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob das <see cref="T:Microsoft.Office.Interop.Word.Border" /> angegebene Objekt sichtbar ist, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

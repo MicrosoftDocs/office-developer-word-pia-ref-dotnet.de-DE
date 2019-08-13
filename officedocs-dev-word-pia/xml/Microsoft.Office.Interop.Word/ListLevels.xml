@@ -1,13 +1,5 @@
 <Type Name="ListLevels" FullName="Microsoft.Office.Interop.Word.ListLevels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="345ec8cf35045c8f363788631d6ef1e1f1353dda" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669847" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09f3bd00422a681e4357da47dfe50d934788f98e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144491" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevels" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevels&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> -Objekten, die alle Listenebenen einer Listenvorlage, entweder die einzige Ebene für eine Aufzählung oder einer nummerierten Liste oder eine der neun Ebenen einer nummerierten Liste darstellt.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" /> -Eigenschaft auf die <b>ListLevels</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung <b>ListLevels</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine Zahl von 1 bis 9, um ein einzelnes <b>ListLevel</b> -Objekt zurückzugeben.</para>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekten, die alle Listenebenen einer Listenvorlage darstellt, entweder die einzige Ebene für eine Aufzählungs-oder nummerierte Liste oder eine der neun Ebenen einer nummerierten Gliederungsliste.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" /> die-Eigenschaft, um die <b>ListLevels</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden <b></b>Sie ListLevels<paramref name="index" />(), <paramref name="index" /> wobei eine Zahl zwischen 1 und 9 ist, um ein einzelnes <b>ListLevel</b> -Objekt zurückzugeben.</para>
       <para>
-        <b>Hinweis</b>: eine Listenvorlage können keine neue Ebenen hinzugefügt.</para>
-      <para>Angewendet einer Listenebene, bestimmen Sie zunächst den Bereich oder die Liste, und klicken Sie dann die <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> Methode. Jede Registerkarte am Anfang des Absatzes wird in eine Listenebene übersetzt. Beispielsweise wird ein Absatz, der mit drei Registerkarten einen Listenabsatz mit drei Ebenen werden, nachdem die <b>ApplyListTemplate</b> -Methode verwendet wird.</para>
-      <para />
-    </remarks>
+        <b>Hinweis</b>: Sie können einer Listenvorlage keine neuen Ebenen hinzufügen.</para>
+      <para>Um eine Listenebene anzuwenden, identifizieren Sie zuerst den Bereich oder die Liste, und verwenden <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> Sie dann die-Methode. Jeder Tabstopp am Anfang eines Absatzes wird in eine Listenebene übersetzt. Aus einem Absatz, der z. B. mit drei Tabstopps beginnt, wird nach Verwendung der <b>ApplyListTemplate</b>-Methode eine Liste mit drei Ebenen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,11 +112,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -187,7 +175,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

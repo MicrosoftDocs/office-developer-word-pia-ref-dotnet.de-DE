@@ -1,13 +1,5 @@
 <Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40804d3d1c4f0bf8f247c8b34546720ff5855ffd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669062" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bba67b72f79c6b6f79e34d7a683261fcb43b7fc0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144498" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine einzelne Listenebene, die einzige Ebene für eine Aufzählung oder einer nummerierten Liste oder eine der neun Ebenen einer Gliederung eingefügt.</summary>
-    <remarks>
-      <para>Das <b>ListLevel</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> Auflistung.</para>
-      <para>Verwendung <b>ListLevels</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine Zahl von 1 bis 9, um ein einzelnes <b>ListLevel</b> -Objekt zurückzugeben.</para>
-      <para>Das <b>ListLevel</b> -Objekt erhalten Sie Zugriff auf die Formateigenschaften für die angegebene Listenebene, wie die <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, und <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> Eigenschaften.</para>
-      <para>Angewendet einer Listenebene, bestimmen Sie zunächst den Bereich oder die Liste, und klicken Sie dann die <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> Methode. Jede Registerkarte am Anfang des Absatzes wird in eine Listenebene übersetzt. Beispielsweise wird ein Absatz, der mit drei Registerkarten einen Listenabsatz mit drei Ebenen werden, nachdem die <b>ApplyListTemplate</b> -Methode verwendet wird.</para>
-      <para />
-    </remarks>
+    <summary>Stellt eine einzelne Listenebene dar, entweder die einzige Ebene für eine Aufzählungs-oder nummerierte Liste oder eine der neun Ebenen einer nummerierten Gliederungsliste.</summary>
+    <remarks><para>Das <b>ListLevel</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> Auflistung.</para>
+      <para>Verwenden <b></b>Sie ListLevels<paramref name="index" />(), <paramref name="index" /> wobei eine Zahl zwischen 1 und 9 ist, um ein einzelnes <b>ListLevel</b> -Objekt zurückzugeben.</para>
+      <para>Mit <b>dem ListLevel</b> -Objekt können Sie auf alle Formatierungseigenschaften für die angegebene Listenebene zugreifen, Beispiels <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />Weise <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />auf <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />die <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />,, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> ,, und.</para>
+      <para>Um eine Listenebene anzuwenden, identifizieren Sie zuerst den Bereich oder die Liste, und verwenden <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> Sie dann die-Methode. Jeder Tabstopp am Anfang eines Absatzes wird in eine Listenebene übersetzt. Aus einem Absatz, der z. B. mit drei Tabstopps beginnt, wird nach Verwendung der <b>ApplyListTemplate</b>-Methode eine Liste mit drei Ebenen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> -Konstante, die die Ausrichtung für die Listenebene der Listenvorlage darstellt.</summary>
+        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> einer Konstanten, die die Ausrichtung für die Listenebene der Listenvorlage darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,8 +108,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> erforderlich. Der Pfad und der Dateiname der Bilddatei.</param>
+        <param name="FileName"><b>String</b> erforderlich. Der Pfad und der Dateiname der Bilddatei.</param>
         <summary>Formatiert einen Absatz oder einen Bereich von Absätzen mit einem Bildaufzählungszeichen.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -150,11 +139,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -183,12 +170,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.Font" /> -Objekt, das die zeichenformatierung des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> Objekt zurück, das die Zeichenformatierung des angegebenen Objekts darstellt, oder legt dieses fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Geben Sie zum Festlegen dieser Eigenschaft einen Ausdruck, der ein <b>Font</b> -Objekt zurückgibt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Geben Sie zum Festlegen dieser Eigenschaft einen Ausdruck an, der ein <b>Font</b>-Objekt zurückgibt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -214,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,7 +230,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Namen der Formatvorlage, die auf das angegebene verknüpft hat <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt.</summary>
+        <summary>Gibt den Namen der Formatvorlage zurück, die mit dem angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt verknüpft ist, oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,13 +261,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt an, oder das Zahlenformat für die angegebene Listenebene festgelegt.</summary>
+        <summary>Gibt das Zahlenformat für die angegebene Listenebene zurück oder legt es fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die Prozentzeichen (%) gefolgt von einer beliebigen Anzahl von 1 bis 9 repräsentiert das Zahlenformat der entsprechende Listenebene an. Angenommen, Sie möchten das Format für die erste Ebene "Artikel i," "Artikel II" und usw., die Zeichenfolge für die <b>NumberFormat</b> -Eigenschaft wäre "Artikel ' %1 '" und die <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> Eigenschaft würde auf <b>WdListNumberStyleUpperCaseRoman</b>fest.</para>
-          <para>Wurde die <b>NumberStyle</b> -Eigenschaft auf <b>WdListNumberStyleBullet</b>festgelegt ist, kann die Zeichenfolge für die <b>NumberFormat</b> -Eigenschaft nur ein Zeichen enthalten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Prozentzeichen (%) gefolgt von einer beliebigen Zahl von 1 bis 9 steht für die Zahlenformatvorlage auf der jeweiligen Listenebene. Wenn Sie beispielsweise möchten, dass das Format für die erste Ebene "Artikel I", "" Artikel II "usw. lautet, lautet die Zeichenfolge für die <b>NumberFormat</b> -Eigenschaft" Artikel% 1 ", und <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> die Eigenschaft würde auf <b>wdListNumberStyleUpperCaseRoman</b>festgelegt.</para>
+          <para>Wurde die <b>NumberStyle</b>-Eigenschaft auf <b>wdListNumberStyleBullet</b> festgelegt, darf die Zeichenfolge für die <b>NumberFormat</b>-Eigenschaft nur ein Zeichen enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberPosition">
@@ -311,12 +294,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Position (in Punkt) der Nummer oder des Aufzählungszeichens für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt.</summary>
+        <summary>Gibt die Position (in Punkt) der Zahl oder des Aufzählungszeichens für <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> das angegebene Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für alle Listenebenen können Sie festlegen, die Position der die Anzahl oder Aufzählungszeichen, die Position des Tabulators und die Position des Texts, der umbrochen wird.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können die Position der Nummer oder des Aufzählungszeichens, die Position des Tabulators und die Position des Texts, der umbrochen wird, für alle Listenebenen festlegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberStyle">
@@ -345,12 +326,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt das Zahlenformat für die <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt.</summary>
+        <summary>Gibt den Zahlenstil für das <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>NumberStyle</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> Konstanten. Einige der folgenden Konstanten haben möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>NumberStyle</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> Konstanten sein. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -404,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -Objekt, das ein Aufzählungszeichen repräsentiert.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Objekt zurück, das ein Bildaufzählungszeichen darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,12 +414,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Legt fest oder gibt die Listenebene, die vorhanden sein muss, bevor die angegebene Listenebene die Nummerierung bei 1. <b>False,</b> Wenn die Nummerierung bei jedem Vorkommen die Listenebene fortlaufend fortgesetzt wird angezeigt.</summary>
+        <summary>Gibt die Listenebene zurück, die erreicht werden muss, bevor bei der angegebenen Listenebene mit dem Nummerierungsvorgang wieder bei 1 begonnen wird, oder legt diese fest. <b>False</b> , wenn die Nummerierung jedes Mal fortgesetzt wird, wenn die Listenebene angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Mithilfe dieses Features können Listen, um überlappen, Verwalten von numerischen Sequenz. Eine Liste die <b>ResetOnHigher</b> -Eigenschaft kann nicht festgelegt werden, auf einen Wert größer als oder gleich seinem Index in der <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> Auflistung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dieses Feature erlaubt Überlappungen von Listen unter Wahrung der numerischen Abfolge. Sie können die <b>ResetOnHigher</b> -Eigenschaft einer Listenebene nicht auf einen Wert festlegen, der größer oder gleich dem Index in <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> der Auflistung ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetOnHigherOld">
@@ -506,7 +483,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt oder die Startnummer für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt.</summary>
+        <summary>Gibt die Startnummer für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,7 +514,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Position des Tabstopps für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt.</summary>
+        <summary>Gibt die Tabstoppposition für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -568,7 +545,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Position (in Punkt) der zweiten Zeile umbrechen von Text für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt.</summary>
+        <summary>Gibt die Position (in Punkt) für die zweite Zeilenumbruch Text für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt diese fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -599,13 +576,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTrailingCharacter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen das Zeichen nach der Nummer für die angegebene Listenebene eingefügt.</summary>
+        <summary>Gibt das Zeichen zurück, das nach der Nummer der angegebenen Listenebene eingefügt ist, oder legt dieses Zeichen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TrailingCharacter</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" /> Konstanten.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>TrailingCharacter</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" /> Konstanten sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

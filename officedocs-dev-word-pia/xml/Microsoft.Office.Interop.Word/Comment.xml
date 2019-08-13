@@ -1,13 +1,5 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Word.Comment">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fda4beac7d470cea977cadf0e9685141efef399b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669284" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6adea5e853e9646a801465cf9cca29730ebb1600" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146171" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Comment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comment" />
@@ -27,8 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen einzelnen Kommentar dar.</summary>
-    <remarks>
-      <para>Das <b>Comment</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Comments" /> Auflistung. Die <b>Comments</b> -Auflistung enthält Kommentare in einer Auswahl, einem Bereich oder einer Dokument.</para> Verwenden Sie <b>Kommentare</b><para>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Comment</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Kommentars in der angegebenen Auswahl, einem Bereich oder einem Dokument.</para><para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> -Methode, um dem angegebenen Bereich einen Kommentar hinzuzufügen.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Comment.Reference" /> -Eigenschaft auf den angegebenen Kommentar zugeordnet zurückzugeben. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> -Eigenschaft auf den mit dem angegebenen Kommentar verknüpften Text zurückzugeben.</para><para /></remarks>
+    <remarks><para>Das <b>comment</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Comments" /> Auflistung. Die <b>Comments</b>-Auflistung enthält Kommentare einer Auswahl, eines Bereichs oder eines Dokuments.</para>
+      <para>Verwenden <b></b>Sie Kommentare<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um ein einzelnes <b>comment</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Kommentars in der angegebenen Auswahl, dem angegebenen Bereich oder dem angegebenen Dokument dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> die-Methode, um einen Kommentar im angegebenen Bereich hinzuzufügen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Comment.Reference" /> die-Eigenschaft, um die Referenzmarke zurückzugeben, die dem angegebenen Kommentar zugeordnet ist. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> die-Eigenschaft, um den Text zurückzugeben, der dem angegebenen Kommentar zugeordnet ist.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Ancestor">
@@ -54,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Für Kommentare, die Antworten auf vorhandene Kommentare sind, gibt die übergeordnete <b>Comment</b> -Objekt zurück. für neue Kommentare (auf oberster Ebene) gibt <b>Nothing</b> (ein Nullverweis (Nothing in Visual Basic) .in c#) schreibgeschützt.</summary>
+        <summary>Für Kommentare, die Antworten auf vorhandene Kommentare sind, wird das übergeordnete <b>comment</b> -Objekt zurückgegeben. gibt bei neuen Kommentaren auf oberster Ebene <b>Nothing</b> zurück (NULL-Verweis (Nothing in Visual Basic). in C# schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +142,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> -Objekt, das den Autor der dem angegebenen Kommentar darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> Objekt zurück, das den Autor des angegebenen Kommentars darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,11 +172,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -207,7 +200,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Datum und die Uhrzeit, zu der der Kommentar eingegeben wurde.</summary>
+        <summary>Gibt das Datum und die Uhrzeit der Eingabe des Kommentars zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Löscht den angegebenen Kommentar und alle Antworten zugeordneten.</summary>
+        <summary>Löscht den angegebenen Kommentar und alle ihm zugeordneten Antworten.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +284,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <b>Boolean</b> (<b>Bool</b> in c#), deren Wert <b>true</b> ist, wenn es sich bei der angegebene Kommentar geschlossenen gekennzeichnet wurde. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt einen booleschen <b></b> Wert (<b>bool</b> in C#) zurück oder legt ihn fest, dessen Wert <b>true</b> ist, wenn der angegebene Kommentar geschlossen markiert wurde. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,7 +310,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Wird den angegebenen Kommentar zur Bearbeitung geöffnet.</summary>
+        <summary>Öffnet den angegebenen Kommentar zur Bearbeitung.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,7 +337,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,12 +402,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert <b>vom Typ Boolean</b> , der angibt, ob es sich bei ein Kommentar um einen handschriftlichen Kommentar handelt.</summary>
+        <summary>Gibt einen <b>Wert vom Typ Boolean</b> , der angibt, ob ein Kommentar ein handschriftlicher Kommentar ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für Kommentare, die Antworten auf vorhandene Kommentare sind, gibt die übergeordnete <b>Comment</b> -Objekt zurück. für neue Kommentare (auf oberster Ebene) gibt <b>Nothing</b> (ein Nullverweis (Nothing in Visual Basic) in c#). Schreibgeschützt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Für Kommentare, die Antworten auf vorhandene Kommentare sind, wird das übergeordnete <b>comment</b> -Objekt zurückgegeben. gibt bei neuen Kommentaren auf oberster Ebene <b>Nothing</b> zurück (NULL-Verweis (Nothing in Visual Basic) in C#). Schreibgeschützt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -468,12 +459,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> unter der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reference">
@@ -499,7 +488,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das ein Fußnoten-, Endnoten- oder Kommentarzeichen Verweis darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das eine Fußnote, eine Endnote oder ein Kommentar Referenzzeichen darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,8 +516,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Comments" /> Auflistung von <b>Comment</b> -Objekten, die dem angegebenen Kommentar untergeordnet sind. Schreibgeschützt.</summary>
-        <value>Aufrufen der <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> -Methode für die zurückgegebene Auflistung von Antworten Fügt eine neue Antwort, es sei denn, die aus einer Antwort auf eine Antwort auf die Auflistung zugegriffen wurde. Die <see cref="P:Microsoft.Office.Interop.Word.Comments.ShowBy" /> Eigenschaft funktioniert nicht, wenn für das <b>Comments</b> -Auflistung die <b>Antworten</b> -Eigenschaft zurückgegebene aufgerufen.</value>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Comments" /> Auflistung von <b>comment</b> -Objekten zurück, bei denen es sich um untergeordnete Elemente des angegebenen Kommentars handelt. Schreibgeschützt.</summary>
+        <value>Durch Aufrufen <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> der Methode für die zurückgegebene Auflistung von Antworten wird eine neue Antwort hinzugefügt, es sei denn, auf die Auflistung wurde über eine Antwort auf eine Antwort zugegriffen. Die <see cref="P:Microsoft.Office.Interop.Word.Comments.ShowBy" /> Eigenschaft schlägt fehl, wenn Sie für die <b>comments</b> -Auflistung <b></b> von der replies-Eigenschaft zurückgegeben wird.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -555,7 +544,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Textbereich durch den angegebenen Kommentar markiert darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Textbereich darstellt, der mit dem angegebenen Kommentar markiert ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Broadcast" FullName="Microsoft.Office.Interop.Word.Broadcast">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="98d790daa433768bcb289537f5925f957d798e48" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670021" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Broadcast" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0d509697e025a0a6da57a59ccf0c2e2d3d1b050a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146213" /></Metadata><TypeSignature Language="C#" Value="public interface Broadcast" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Broadcast" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Broadcast" />
   <TypeSignature Language="VB.NET" Value="Public Interface Broadcast" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt eine Windows Live-Übertragung Dienst broadcast-Sitzung.</summary>
+    <summary>Stellt eine Broadcast Sitzung des Windows Live Broadcast-Diensts dar.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,13 +46,11 @@
         <Parameter Name="notesWacUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="notesUrl">Gibt die URL an, in dem die freigegebenen Besprechungsnotizen für die Teilnehmer mit der OneNote-rich-Client gespeichert werden.</param>
-        <param name="notesWacUrl">Gibt die URL an, in dem die freigegebenen Besprechungsnotizen für die Teilnehmer mit der OneNote-Onlineclient gespeichert werden.</param>
-        <summary>Fügt der freigegebenen Besprechungsnotizen für die angegebene Übertragung, die an die Teilnehmer verfügbar sind, die OneNote 2013-rich-Client oder Web app verwenden.</summary>
-        <remarks>
-          <para>Wenn Sie keine Zeichenfolge für eine der beiden Parameter übergeben, gibt die <b>AddMeetingNotes</b> -Methode den Fehler Ungültiger Parameter. Wenn aus irgendeinem Grund Methodenaufruf ein Fehler auftritt, wird von Word einen generischen broadcast-Fehler zurückgegeben.</para>
-          <para />
-        </remarks>
+        <param name="notesUrl">Gibt die URL an, an der die freigegebenen Besprechungsnotizen gespeichert werden, für Teilnehmer, die den OneNote-Rich-Client verwenden.</param>
+        <param name="notesWacUrl">Gibt die URL an, an der die freigegebenen Besprechungsnotizen für Teilnehmer mit dem OneNote Online-Client gespeichert werden.</param>
+        <summary>Fügt freigegebene Besprechungsnotizen für die angegebene Übertragung hinzu, die den Teilnehmern zur Verfügung stehen, die entweder OneNote 2013 Rich-Client oder eine Webanwendung verwenden.</summary>
+        <remarks><para>Wenn Sie eine Zeichenfolge für einen der beiden Parameter nicht übergeben, gibt die <b>AddMeetingNotes</b> -Methode einen ungültigen Parameterfehler zurück. Wenn der Methodenaufruf aus irgendeinem Grund fehlschlägt, gibt Word einen generischen Broadcast Fehler zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -86,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,12 +104,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn eine Übertragung ausgeführt wird, gibt eine <b>Zeichenfolge</b> (<b>String</b> in c#), die die URL der Verknüpfung Attendee darstellt. Schreibgeschützt.</summary>
+        <summary>Wenn eine Übertragung ausgeführt wird, wird eine <b>Zeichenfolge</b> (<b>Zeichenfolge</b> in C#) zurückgegeben, die die URL der Teilnehmer Verknüpfung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn eine Übertragung nicht aktiv ist, gibt <b>AttendeeUrl</b> eine leere Zeichenfolge zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn eine Übertragung nicht ausgeführt wird, gibt <b>AttendeeUrl</b> eine leere Zeichenfolge zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Capabilities">
@@ -145,36 +133,34 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>UInteger</b> (<b>Uint</b> in c#), die die Funktionen von der angegebenen Übertragung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen <b>UInteger</b> (<b>uint</b> in C#) zurück, der die Funktionen der angegebenen Übertragung darstellt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Funktionen</b> -Eigenschaft kann die folgenden Werte zurückgeben:</para>
+        <remarks><para>Die <b>Capabilities</b> -Eigenschaft kann die folgenden Werte zurückgeben:</para>
           <list type="table">
             <item>
               <description>
                 <b>MSOBroadcastCapFileSizeLimited</b>
               </description>
               <description>1</description>
-              <description>Dateigröße beschränkt</description>
+              <description>Dateigröße ist limitiert</description>
             </item>
             <item>
               <description>
                 <b>MSOBroadcastCapSupportsMeetingNotes</b>
               </description>
               <description>2</description>
-              <description>unterstützt Besprechungsnotizen</description>
+              <description>Unterstützt Besprechungsnotizen</description>
             </item>
             <item>
               <description>
                 <b>MSOBroadcastCapSupportsUpdateDoc</b>
               </description>
               <description>4</description>
-              <description>unterstützt Dokument aktualisieren</description>
+              <description>Unterstützt die Dokumentaktualisierung</description>
             </item>
           </list>
-          <para>zurückgegebenen Werte sind entweder Microsoft Office 2013 entsprechen oder Übertragen von Microsoft Office 2010 Präsentation Service-Funktionen.</para>
-          <para />
-        </remarks>
+          <para>Die zurückgegebenen Werte entsprechen entweder Microsoft Office 2013 oder Microsoft Office 2010 Broadcast-Präsentations Dienstfunktionen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -198,12 +184,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Beendet die angegebene broadcast-Sitzung.</summary>
-        <remarks>
-          <para>Aufrufen der <b>End</b> -Methode beendet die broadcast-Sitzung ohne Bestätigung für den Benutzer anzuzeigen. Wird den Wert der <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> auf eine leere Zeichenfolge.</para>
-          <para>Wenn das Dokument nicht gesendet wird, gibt die Methode Laufzeitfehler 4702.</para>
-          <para />
-        </remarks>
+        <summary>Beendet die angegebene Broadcast Sitzung.</summary>
+        <remarks><para>Durch Aufrufen der <b>End</b> -Methode wird die Übertragungssitzung beendet, ohne dass dem Benutzer eine Bestätigungsaufforderung angezeigt wird. Außerdem wird der Wert der <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> auf eine leere Zeichenfolge festgelegt.</para>
+          <para>Wenn das Dokument nicht übertragen wird, gibt die Methode den Laufzeitfehler 4702 zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -229,7 +213,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> , das das übergeordnete Objekt des angegebenen repräsentiert <b>Broadcast</b> -Objekt</summary>
+        <summary>Gibt ein <b>Objekt</b> zurück, das das übergeordnete Objekt des angegebenen <b>Broadcast</b> -Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,10 +240,8 @@
       <Parameters />
       <Docs>
         <summary>Hält die angegebene Übertragung an.</summary>
-        <remarks>
-          <para>Wenn die angegebene Übertragung nicht aktiv ist, gibt <b>Pause</b> Laufzeitfehler 4702 zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die angegebene Übertragung nicht ausgeführt wird, gibt <b>Pause</b> den Laufzeitfehler 4702 zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresenterServiceUrl">
@@ -285,12 +267,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn eine Übertragung ausgeführt wird, gibt eine <b>Zeichenfolge</b> (<b>String</b> in c#), die die URL des Diensts Referent hosting der Übertragung darstellt. Schreibgeschützt.</summary>
+        <summary>Wenn eine Übertragung ausgeführt wird, wird eine <b>Zeichenfolge</b> (<b>Zeichenfolge</b> in C#) zurückgegeben, die die URL des Referenten Diensts darstellt, der die Übertragung hostet. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn eine Übertragung nicht aktiv ist, gibt <b>PresenterServiceUrl</b> eine leere Zeichenfolge zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn eine Übertragung nicht ausgeführt wird, gibt <b>PresenterServiceUrl</b> eine leere Zeichenfolge zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -314,11 +294,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Die angegebene Übertragung fortgesetzt.</summary>
-        <remarks>
-          <para>Die <b>Resume</b> -Methode gibt einen Fehler zurück (#4700) Wenn das Dokument DRM geschützt ist, wird bereits, übertragen (#4698), wird an alle (#4702) nicht, übertragen oder miteinander in Konflikt stehende bearbeitet wurde (befindet sich im Zusammenführen-Modus #4701).</para>
-          <para />
-        </remarks>
+        <summary>Setzt die angegebene Übertragung fort.</summary>
+        <remarks><para>Die <b>Resume</b> -Methode gibt einen Fehler (#4700) zurück, wenn das Dokument DRM-geschützt ist, bereits übertragen wird (#4698), überhaupt nicht (#4702) gesendet wird oder widersprüchliche Bearbeitungen aufweist (im zusammenführungsmodus, #4701).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -344,12 +322,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn eine Übertragung ausgeführt wird, gibt eine <b>Zeichenfolge</b> (<b>String</b> in c#), der die ID der Sitzung angibt. Schreibgeschützt.</summary>
+        <summary>Wenn eine Übertragung ausgeführt wird, wird eine <b>Zeichenfolge</b> (<b>Zeichenfolge</b> in C#) zurückgegeben, die die ID der Sitzung angibt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn eine Übertragung nicht aktiv ist, gibt <b>SessionID</b> eine leere Zeichenfolge zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn eine Übertragung nicht ausgeführt wird, gibt <b>SessionID</b> eine leere Zeichenfolge zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -375,13 +351,11 @@
         <Parameter Name="serverUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serverUrl">Die URL des broadcast-Servers.</param>
-        <summary>Die angegebene broadcast-Sitzung initiiert.</summary>
-        <remarks>
-          <para>Aufrufen der <b>Start</b> -Methode richtet den Server authentifiziert den Benutzer und die Präsentation hochgeladen.</para>
-          <para>, Wenn der Wert für <paramref name="serverUrl" /> hat ungültige Formatierung, <b>Starten Sie</b> gibt einen Fehler "Ungültiger Parameter". Darüber hinaus die Methode gibt ein Fehler Wenn das Dokument DRM geschützt, wird, bereits übertragen, miteinander in Konflikt stehende bearbeitet wurde (befindet sich im Zusammenführen-Modus).</para>
-          <para />
-        </remarks>
+        <param name="serverUrl">Die URL des Übertragungs Servers.</param>
+        <summary>Initiiert die angegebene Übertragungssitzung.</summary>
+        <remarks><para>Durch Aufrufen der <b>Start</b> -Methode wird der Server eingerichtet, der Benutzer authentifiziert und die Präsentation hoch lädt.</para>
+          <para>Wenn der übergebene Wert ungültige <paramref name="serverUrl" /> Formatierung aufweist, gibt <b>Start</b> den Fehler "Ungültiger Parameter" zurück. Darüber hinaus gibt die Methode einen Fehler zurück, wenn das Dokument DRM-geschützt ist, bereits gesendet wird oder widersprüchliche Bearbeitungen aufweist (im zusammenführungsmodus).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -407,13 +381,12 @@
         <ReturnType>Microsoft.Office.Core.MsoBroadcastState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>MSOBroadcastState</b> -Konstante, die den aktuellen Status des broadcast beschreibt. Schreibgeschützt.</summary>
+        <summary>Gibt eine <b>MSOBroadcastState</b> -Konstante zurück, die den aktuellen Übertragungszustand beschreibt. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>State</b> -Eigenschaft kann eine der folgenden drei Zustände zurückgeben:</para>
+        <remarks><para>Die <b>State</b> -Eigenschaft kann einen der folgenden drei Zustände zurückgeben:</para>
           <list type="bullet">
             <item>
-              <para>kein Broadcast (0)</para>
+              <para>Keine Übertragung (0)</para>
             </item>
             <item>
               <para>Übertragung gestartet (1)</para>
@@ -422,8 +395,7 @@
               <para>Übertragung angehalten (2)</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

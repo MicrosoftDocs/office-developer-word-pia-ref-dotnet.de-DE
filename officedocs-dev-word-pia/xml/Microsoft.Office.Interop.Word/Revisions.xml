@@ -1,13 +1,5 @@
 <Type Name="Revisions" FullName="Microsoft.Office.Interop.Word.Revisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05758c729b81dbb4be141a7989f2b0e4ff125db8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669875" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dcf957961a05e06b776741ff11ebc85cce0581a2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147662" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revisions&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Revision" /> -Objekten, die Änderungen darstellen, die mit überarbeitungsmarkierungen in einem Bereich oder Dokument markiert.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Überarbeitungen</b> -Eigenschaft des eine <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um die <b>Revisions</b> -Auflistung zurückzugeben.</para>
-      <para>Der <b>Add</b> -Methode ist nicht verfügbar für die <b>Revisions</b> -Auflistung. <b>Revision</b> -Objekte werden hinzugefügt, wenn der Versionsvergleich deaktiviert ist. Legen Sie die <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> -Eigenschaft auf <b>true fest,</b> um Überarbeitungen am Dokumenttext verfolgen.</para>
-      <para>Verwendung <b>Überarbeitungen</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>Revision</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Überarbeitung im Bereich oder im Dokument.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Gezählt werden Elemente in anderen Textabschnitten verwenden Sie die Auflistung mit der <b>Range</b> -Objekt.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Revision" /> Objekten, die die Änderungen darstellen, die mit Überarbeitungsmarkierungen in einem Bereich oder Dokument markiert sind.</summary>
+    <remarks><para>Verwenden Sie die rerevisions-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Document" /> eines <see cref="T:Microsoft.Office.Interop.Word.Range" /> oder-Objekts, <b></b> um die reversions-Auflistung zurückzugeben. <b></b></para>
+      <para>Die <b>Add</b>-Methode ist für die <b>Revisions</b>-Auflistung nicht verfügbar. <b>Revision</b>-Objekte werden hinzugefügt, wenn Nachverfolgen von Änderungen aktiviert ist. Legen Sie <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> die-Eigenschaft auf <b>true</b> fest, um die Überarbeitung des Dokumenttexts nachzuverfolgen.</para>
+      <para>Verwenden <b></b>Sie Revisions<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>Revision</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Überarbeitung im Bereich oder im Dokument dar.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Verwenden Sie zum Zählen der Elemente in anderen Artikeln die Auflistung mit dem <b>Range</b> -Objekt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptAll">
@@ -61,11 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Nimmt alle Überarbeitungen in einem Dokument oder Bereich an. Die überarbeitungsmarkierungen werden entfernt, und die Änderungen in das Dokument aufgenommen werden.</summary>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> -Methode, um alle Überarbeitungen in einem Dokument akzeptieren.</para>
-          <para />
-        </remarks>
+        <summary>Akzeptiert alle nachverfolgten Änderungen in einem Dokument oder Bereich. Die Überarbeitungsmarkierungen werden entfernt, und die Änderungen werden in das Dokument übernommen.</summary>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> die-Methode, um alle Überarbeitungen in einem Dokument zu akzeptieren.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -91,12 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Visual Basic <b>CreateObject</b> und <b>GetObject</b> -Funktion können Sie zugreifen auf ein OLE-Automatisierungsobjekt aus einer Visual Basic für Applikationen-Projekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Mithilfe der Visual Basic-Funktionen <b>CreateObject</b> und <b>GetObject</b> können Sie aus Projekten in Visual Basic für Applikationen heraus auf ein OLE-Automatisierungsobjekt zugreifen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -152,11 +138,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +201,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -272,11 +256,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lehnt alle Überarbeitungen in einem Bereich. Die überarbeitungsmarkierungen werden entfernt, Originaltexts erhalten bleibt.</summary>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" /> -Methode, um alle Überarbeitungen in einem Dokument abzulehnen. Formatänderungen können nicht abgelehnt werden.</para>
-          <para />
-        </remarks>
+        <summary>Lehnt alle nachverfolgten Änderungen in einem Bereich ab. Die Überarbeitungsmarkierungen werden entfernt, wobei der Originaltext erhalten bleibt.</summary>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" /> die-Methode, um alle Überarbeitungen in einem Dokument abzulehnen. Formatänderungen können nicht abgelehnt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

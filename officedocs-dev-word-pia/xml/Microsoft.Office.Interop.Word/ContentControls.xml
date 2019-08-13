@@ -1,13 +1,5 @@
 <Type Name="ContentControls" FullName="Microsoft.Office.Interop.Word.ContentControls">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2a6fe745ee4c6ef85a6a96c2f41f77a80cbd76ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670260" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3cda051fb250a0a8e28df389d60e93ae84593df0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147160" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControls implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControls" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControls&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Objekte.  Inhaltssteuerelemente sind begrenzt und potenziell mit der Bezeichnung Bereiche in einem Dokument, das als Container für bestimmte Arten von Inhalten dienen. Einzelne Inhaltssteuerelemente können Inhalt wie Daten, Listen oder Absätze mit formatierten Text enthalten.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> -Methode, um ein neues Inhaltssteuerelement zu erstellen, und fügen Sie es in einem Dokument.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> -Methode, um ein bestimmtes Inhaltssteuerelement in der Auflistung zuzugreifen. Verwendung der <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Objekt einzelne Inhaltssteuerelemente entwickelt. Weitere Informationen finden Sie unter <a href="HV10107832">Arbeiten mit Inhaltssteuerelementen</a></para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Objekten.  Inhaltssteuerelemente sind gebundene und möglicherweise mit Beschriftungen versehene Bereiche in einem Dokument, die als Container für bestimmte Typen von Inhalt dienen. Einzelne Inhaltssteuerelemente können Inhalt wie Daten, Listen oder Absätze mit formatiertem Text enthalten.</summary>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> die-Methode, um ein neues Inhaltssteuerelement zu erstellen und es in ein Dokument einzufügen.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> die-Methode, um auf ein bestimmtes Inhaltssteuerelement in der Auflistung zuzugreifen. Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> das-Objekt, um mit einzelnen Inhaltssteuerelementen zu arbeiten. Weitere Informationen finden Sie unter <a href="HV10107832">Arbeiten mit Inhaltssteuerelementen</a> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,16 +51,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Gibt den Typ des Inhaltssteuerelements in das aktive Dokument eingefügt. Wenn Length angegeben, fügt Microsoft Office Word ein Rich-Text-Inhaltssteuerelement an.</param>
+        <param name="Type">Gibt den Typ des in das aktive Dokument einzufügenden Inhaltssteuerelements an. Wenn nicht angegeben, fügt Microsoft Office Word ein Rich-Text-Inhaltssteuerelement ein.</param>
         <param name="Range">Gibt an, an welcher Stelle im aktiven Dokument das Inhaltssteuerelement platziert werden soll. Wenn es weggelassen wird, wird von Word das Inhaltssteuerelement an die Position der Einfügemarke platziert oder die aktuelle Markierung ersetzt.</param>
-        <summary>Fügt ein neues Inhaltssteuerelement vom Typ angegeben, in das aktive Dokument und gibt ein <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> -Objekt, das das neue Inhaltssteuerelement darstellt.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </returns>
-        <remarks>
-          <para>Sie können Inhaltssteuerelemente nur in Rich-Text-Inhaltssteuerelemente Baustein Gallery-Inhaltssteuerelemente und Gruppen-Inhaltsteuerelemente schachteln.  Wenn die Einfügemarke oder die aktuelle Auswahl in einem Inhaltssteuerelement eines anderen Typs ist, löst diese Methode einen Fehler.  In diesem Fall können entweder die Einfügemarke oder verwenden Sie die <paramref name="Range" /> Parameter zum Angeben eines Speicherorts innerhalb des Dokuments.</para>
-          <para />
-        </remarks>
+        <summary>Fügt ein neues Inhaltssteuerelement des angegebenen Typs in das aktive Dokument ein und gibt ein <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Objekt zurück, das das neue Inhaltssteuerelement darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></returns>
+        <remarks><para>Sie können Inhaltssteuerelemente nur in Rich-Text-, Bausteinkatalog- und Gruppen-Inhaltssteuerelementen verschachteln.  Wenn sich die Einfügemarke oder aktuelle Markierung in einem Inhaltssteuerelement eines anderen Typs befindet, löst diese Methode einen Fehler aus.  In diesem Fall können Sie entweder die Einfügemarke oder den <paramref name="Range" /> -Parameter verwenden, um eine Position innerhalb des Dokuments anzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,10 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,10 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,16 +138,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <summary>Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -227,10 +205,8 @@
       </Parameters>
       <Docs>
         <param name="Index">Gibt die zurückzugebende Ordnungsposition des Inhaltssteuerelements an.</param>
-        <summary>Gibt das angegebene Inhaltssteuerelement in der Auflistung der Inhaltssteuerelemente in einem Dokument zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
+        <summary>Gibt das angegebene Inhaltssteuerelement in der Auflistung von Inhaltssteuerelementen in einem Dokument zurück.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,10 +233,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> des Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

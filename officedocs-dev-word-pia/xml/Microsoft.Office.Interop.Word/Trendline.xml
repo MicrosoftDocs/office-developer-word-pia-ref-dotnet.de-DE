@@ -1,13 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Word.Trendline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b82db86a793f5b37594ba6a159598dc18ac5a7e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670180" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="daa5f65be508f63497b12aec2cbb8833c613a49e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143784" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -27,15 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Stellt eine Trendlinie in einem Diagramm dar.</summary>
-    <remarks>
-      <para>Eine Trendlinie zeigt den Trend oder die Richtung der Daten in einer Datenreihe. Die <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> -Auflistung enthält alle dem <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> -Objekte für eine einzelne Datenreihe.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Verwendung <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> (<paramref name="Index" />), wobei <paramref name="Index" /> ist die Indexnummer der Trendlinie zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> -Objekt.</para>
-      <para>Die Indexnummer gibt die Reihenfolge an, in der die Trendlinien zur Datenreihe hinzugefügt wurden. Trendlines(1) ist die erste zu den Reihen hinzugefügte Trendlinie dar und Trendlines(Trendlines.Count) ist als letzte Datenreihe hinzugefügt.</para>
-      <para>Das folgende Beispiel ändert den Typ der Trendlinie der ersten Datenreihe des ersten Diagramms im aktiven Dokument. In diesem Beispiel schlägt fehl, wenn die Datenreihe keine Trendlinie aufweist,.</para>
-    </example>
+    <remarks><para>Eine Trendlinie zeigt den Trend oder die Richtung der Daten in einer Datenreihe. Das <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> Auflistung enthält alle <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> Objekte für eine einzelne Datenreihe.</para>
+      <para> </para></remarks>
+    <example><para>Verwenden <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> Sie<paramref name="Index" />(), <paramref name="Index" /> wobei die Indexnummer der Trendlinie ist, um <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> ein einzelnes Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Reihenfolge dar, in der die Trendlinien zur Datenreihe hinzugefügt wurden. Trendlines(1) stellt die erste zur Datenreihe hinzugefügte Trendlinie dar, und Trendlines(Trendlines.Count) ist die zuletzt hinzugefügte Trendlinie.</para>
+      <para>Im folgenden Beispiel wird der Trendlinientyp der ersten Datenreihe des ersten Diagramms im aktiven Dokument geändert. Wenn die Reihe keine Trendlinie besitzt, kann dieses Beispiel nicht ausgeführt werden.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,9 +49,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn ohne einen Objektbezeichner verwendet wird, gibt diese Eigenschaft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
-        <value>
-          <b>Anwendung</b> (siehe oben)</value>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <value><b>Anwendung</b> (siehe oben)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), die die sich eine Trendlinie zurück erstreckt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +118,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), die die sich eine Trendlinie zurück erstreckt. Lese-/Schreibzugriff <b>Double</b>.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,10 +145,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> -Objekt, das den Rahmen des Objekts darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Objekt zurück, das den Rahmen des Objekts darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +172,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht die Formatierung des Objekts.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,14 +199,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b>-Wert.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
-          <para />
-        </remarks>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -253,14 +228,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> -Objekt, das die Beschriftung stellt zugeordnete der Trendlinie. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
-        <remarks>
-          <para>Datenbeschriftungen für eine Trendlinie aktivieren, Sie müssen, die <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" /> -Eigenschaft auf <b>True</b>.</para>
-          <para />
-        </remarks>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> Wert vom Datentyp Object zurück, der die der Trendlinie zugeordnete Datenbeschriftung darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
+        <remarks><para>Zum Aktivieren von Datenbeschriftungen für eine Trendlinie müssen Sie die <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" /> Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" /> -Eigenschaft auf <b>true</b>festlegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -285,9 +256,7 @@
       <Parameters />
       <Docs>
         <summary>Löscht das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,11 +286,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn die Gleichung der Trendlinie im Diagramm angezeigt wird (in derselben Datenbeschriftung wie das Bestimmtheitsmaß). Wird diese Eigenschaft auf <b>True</b> festgelegt, so werden automatisch auch die Datenbeschriftungen angezeigt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b>, wenn die Gleichung der Trendlinie im Diagramm angezeigt wird (in derselben Datenbeschriftung wie das Bestimmtheitsmaß). Wird diese Eigenschaft auf <b>True</b> festgelegt, so werden automatisch auch die Datenbeschriftungen angezeigt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,11 +317,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn das Bestimmtheitsmaß der Trendlinie im Diagramm angezeigt wird (in derselben Datenbeschriftung wie die Formel). Wird diese Eigenschaft auf <b>True</b> gesetzt, so werden automatisch auch die Datenbeschriftungen angezeigt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b>, wenn das Bestimmtheitsmaß der Trendlinie im Diagramm angezeigt wird (in derselben Datenbeschriftung wie die Gleichung). Wird diese Eigenschaft auf <b>True</b> festgelegt, so werden automatisch auch die Datenbeschriftungen angezeigt. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,10 +346,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,9 +384,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), die die sich eine Trendlinie vorwärts erstreckt.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,10 +414,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), die die sich eine Trendlinie vorwärts erstreckt. Lese-/Schreibzugriff <b>Double</b>.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Gibt zurück oder legt die Anzahl der Perioden (oder Einheiten in einem Punkt (XY)-Diagramm), die die sich eine Trendlinie vorwärts erstreckt. <b>Doppelter</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,8 +443,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt die Indexnummer des Objekts in einer Auflistung ähnlicher Objekte zurück.</summary>
-        <value>
-          <b>Ganze Zahl</b>.</value>
+        <value><b>Integer</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,13 +474,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt den Punkt zurück, auf dem die Trendlinie die Größenachse schneidet, oder legt ihn fest. <b>Double</b> -Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Durch Festlegen dieser Eigenschaft wird die <see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" /> -Eigenschaft auf <b>false festgelegt</b>.</para>
-          <para />
-        </remarks>
+        <value><b>Double</b></value>
+        <remarks><para>Durch Festlegen dieser Eigenschaft wird <see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" /> die Eigenschaft auf <b>false</b>festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -553,15 +505,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>, wenn der Schnittpunkt der Trendlinie mit der Größenachse automatisch von der Regression bestimmt wird. <b>Boolean</b> -Wert mit Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Festlegen der <see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" /> -Eigenschaft wird diese Eigenschaft auf <b>false festgelegt</b>.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b>, wenn der Schnittpunkt der Trendlinie mit der Größenachse automatisch von der Regression bestimmt wird. <b>Boolean</b> -Wert mit Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Durch Festlegen <see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" /> der Eigenschaft wird diese Eigenschaft auf <b>false</b>festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -591,9 +538,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>String</b>-Wert zurück, der den Namen des Objekt darstellt, oder legt diesen Wert fest.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,15 +568,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Word automatisch den Namen der Trendlinie bestimmt. Lese-/Schreibzugriff <b>vom Typ Boolean</b>.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True,</b> Wenn Microsoft Word automatisch den Namen der Trendlinie bestimmt. Lese-/Schreibzugriff <b>vom Typ Boolean</b>.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>In diesem Beispiel wird Microsoft Word so konfiguriert, der Name des ersten Diagramms im aktiven Dokument eine Trendlinie automatisch ermitteln. Das Beispiel sollte auf ein 2-D-Säulendiagramm ausgeführt werden, das eine einzelne Datenreihe mit einer Trendlinie enthält.</para>
-        </example>
+        <example><para>In diesem Beispiel wird Microsoft Word so festgelegt, dass der Name für die Trendlinie eins des ersten Diagramms im aktiven Dokument automatisch bestimmt wird. Das Beispiel sollte für ein 2D-Säulendiagramm ausgeführt werden, das eine einzige Datenreihe mit einer Trendlinie enthält.</para></example>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -660,10 +600,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen <b>einen Ganzzahlwert, der Ordnung der Trendlinien (eine ganze Zahl größer als 1) stellt</b> bei der Trendlinie <see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" /> ist <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Dient zum Zurückgeben oder Festlegen eines Werts vom <b>Typ Integer</b> , der die Trendlinien Reihenfolge (eine ganze Zahl größer als 1) darstellt, wenn sich die Trendlinie befindet. <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" /> <see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" /></summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -691,9 +629,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Gibt das übergeordnete Element für das angegebene Objekt zurück. Read-only- <b>Objekt</b>.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,10 +659,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Zeitraum für die Trendlinie gleitenden Durchschnitt. Ein Wert zwischen 2 und 255 kann sein. Lese-/Schreibzugriff <b>Integer</b>.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt bei Trendlinien für gleitenden Durchschnitt die Perioden der Trendlinie zurück oder legt sie fest. Kann ein Wert zwischen 2 und 255 sein. <b>Ganze Zahl</b> mit Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -752,9 +686,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Markiert das Objekt.</summary>
-        <returns>
-          <b>Objekt</b>
-        </returns>
+        <returns><b>Objekt</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -784,10 +716,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlTrendlineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> Wert, der den Typ der Trendlinie darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />
-        </value>
+        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> Wert zurück, der den Typ der Trendlinie darstellt, oder legt diesen fest.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

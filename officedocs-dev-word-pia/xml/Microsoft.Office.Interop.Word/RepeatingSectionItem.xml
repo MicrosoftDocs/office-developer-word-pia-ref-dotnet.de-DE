@@ -1,13 +1,5 @@
 <Type Name="RepeatingSectionItem" FullName="Microsoft.Office.Interop.Word.RepeatingSectionItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e951aef451ef7f40156f1704b3da559404614c0f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669871" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a9f459112b2a15f59477147b596dc386a138bb6a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144100" /></Metadata><TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RepeatingSectionItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RepeatingSectionItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface RepeatingSectionItem" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein wiederholten Abschnitt-Element in einem Inhaltssteuerelement dar.</summary>
+    <summary>Stellt ein wiederholtes Abschnittselement in einem Inhaltssteuerelement dar.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Word-Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,14 +73,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Nur-Lese- <b>Ganzzahl</b> (<b>Int</b> in c#).</summary>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützter <b>Integer</b> -Wert (<b>int</b> in C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Office Macintosh Edition.</para>
+        <remarks><para>Wenn das Objekt in Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Word den Ersteller-Code MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe, die in Office Macintosh Edition enthalten ist.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <b>wdCreatorCode</b>dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -139,11 +129,9 @@
       <Docs>
         <summary>Fügt ein wiederholtes Abschnittselement nach dem angegebenen Element hinzu und gibt das neue Element zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Können Sie diese Methode aufrufen, auf Wiederholter Abschnitt nur Element von Inhaltssteuerelementen.</para>
-          <para>Wenn das <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> -Eigenschaft auf <b>False</b>festgelegt ist, gibt diese Methode einen Fehler zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können diese Methode nur für wiederholte Abschnittselement-Inhaltssteuerelemente aufrufen.</para>
+          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> Eigenschaft auf <b>false</b>festgelegt ist, gibt diese Methode einen Fehler zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItemBefore">
@@ -169,11 +157,9 @@
       <Docs>
         <summary>Fügt ein wiederholtes Abschnittselement vor dem angegebenen Element hinzu und gibt das neue Element zurück.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Können Sie diese Methode aufrufen, auf Wiederholter Abschnitt nur Element von Inhaltssteuerelementen.</para>
-          <para>Wenn das <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> -Eigenschaft auf <b>False</b>festgelegt ist, gibt diese Methode einen Fehler zurück.</para>
-          <para />
-        </remarks>
+        <remarks><para>Sie können diese Methode nur für wiederholte Abschnittselement-Inhaltssteuerelemente aufrufen.</para>
+          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> Eigenschaft auf <b>false</b>festgelegt ist, gibt diese Methode einen Fehler zurück.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -199,7 +185,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <b>Objekt</b> , das das übergeordnete Objekt des angegebenen <b>RepeatingSectionItem</b> -Objekts darstellt.</summary>
+        <summary>Gibt einen Wert vom <b>Object</b> zurück, der das übergeordnete Objekt des angegebenen <b>RepeatingSectionItem</b> -Objekts darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Bereich des angegebenen wiederholten Abschnitt Elements, ausgenommen die Start- und Endtags zurück. Schreibgeschützt.</summary>
+        <summary>Gibt den Bereich des angegebenen wiederholten Abschnittselements ohne Start- und Ende-Tags zurück. Schreibgeschützt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

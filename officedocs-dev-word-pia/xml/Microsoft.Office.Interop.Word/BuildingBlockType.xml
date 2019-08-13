@@ -1,13 +1,5 @@
 <Type Name="BuildingBlockType" FullName="Microsoft.Office.Interop.Word.BuildingBlockType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f2365b8a7364baba0b764d8d527d7c87519b569d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670556" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlockType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e98fe9144c59325006f66bdcbaa3a460c1f43761" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146192" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlockType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlockType" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt einen Typ des Bausteins an. Jede <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> Auflistung.</summary>
-    <remarks>
-      <para>Microsoft Office Word verwendet Typen und Kategorien zum Anordnen von Bausteinen. Jeder Bausteintyp wird durch dargestellt eine <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> Konstante. Verwendung der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" /> Eigenschaft auf die Kategorien für einen bestimmten Bausteintyp. Weitere Informationen zu Bausteinen finden Sie unter <a href="HV10120827">Arbeiten mit Bausteinen</a></para>
-      <para />
-    </remarks>
+    <summary>Stellt einen Typ von Baustein dar. Jedes <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> Auflistung.</summary>
+    <remarks><para>Microsoft Office Word verwendet Typen und Kategorien zum Organisieren von Bausteinen. Jeder Bausteintyp wird durch eine <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> Konstante dargestellt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" /> die-Eigenschaft, um auf Kategorien für einen bestimmten Bausteintyp zuzugreifen. Weitere Informationen zum Erstellen von Bausteinen finden Sie unter <a href="HV10120827">Working with Building Blocks</a> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +74,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Categories</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine Auflistung, die die Kategorien für einen Baustein darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Categories" />
-        </value>
+        <summary>Gibt eine Auflistung zurück, die die Kategorien eines Bausteintyps darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Categories" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,14 +103,10 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>, Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Diese Eigenschaft in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung verfügt über einen vierstelligen Erstellercode entworfen wurde. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden. </para>
+          <para>Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -150,10 +132,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <b>ganze Zahl</b> , die die Position eines Elements in einer Auflistung darstellt. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt eine <b>ganze Zahl</b> zurück, die die Position eines Elements in einer Auflistung darstellt. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +160,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den lokalisierten Namen des eines Bausteintyps zurück. Schreibgeschützt.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>Gibt den lokalisierten Namen eines Building Block-Typs zurück. Schreibgeschützt.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +188,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> des angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

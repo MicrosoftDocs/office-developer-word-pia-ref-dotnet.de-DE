@@ -1,13 +1,5 @@
 <Type Name="TableOfAuthorities" FullName="Microsoft.Office.Interop.Word.TableOfAuthorities">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4e825c703b3e4cc6dffdec314dcfbc3e937efc35" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669180" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableOfAuthorities" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9fae6c30ceb2af52ffb36c1e3cbed81fcdb745e5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143896" /></Metadata><TypeSignature Language="C#" Value="public interface TableOfAuthorities" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableOfAuthorities" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableOfAuthorities" />
@@ -26,16 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt ein einzelnes Rechtsgrundlagenverzeichnis in einem Dokument (ein TOA-Feld).</summary>
-    <remarks>
+    <summary>Stellt ein einzelnes Rechtsgrundlagenverzeichnis in einem Dokument dar (ein TOA-Feld).</summary>
+    <remarks><para>Das <b>TableOfAuthorities</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> Auflistung. Die <b>TablesOfAuthorities</b>-Auflistung enthält alle Rechtsgrundlagenverzeichnisse in einem Dokument.</para>
+      <para>Verwenden <b></b>Sie TablesOfAuthorities<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>TableOfAuthorities</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Rechtsgrundlagenverzeichnis im Dokument dar.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um einem Dokument ein Autoritäts Verzeichnis hinzuzufügen.</para>
       <para>
-        <b>TableOfAuthorities</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> Auflistung. <b>TablesOfAuthorities</b> -Auflistung enthält alle Rechtsgrundlagenverzeichnisse in einem Dokument.</para>
-      <para>Verwendung <b>TablesOfAuthorities</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>TableOfAuthorities</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Rechtsgrundlagenverzeichnis im Dokument.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um einem Dokument ein Rechtsgrundlagenverzeichnis hinzufügen.</para>
-      <para>
-        <b>Hinweis</b> ein Rechtsgrundlagenverzeichnis wird aus TA-Feld (Rechtsgrundlagenverzeichnis) Felder in einem Dokument erstellt. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> -Methode, um Einträge, die in einem Rechtsgrundlagenverzeichnis enthalten sein sollen.</para>
-      <para />
-    </remarks>
+        <b>Hinweis:</b>  Ein Rechtsgrundlagenverzeichnis wird aus Ta (Tabelle of Authorities Entry)-Feldern in einem Dokument erstellt. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> die-Methode, um Zitate zu markieren, die in einem Rechtsgrundlagenverzeichnis enthalten sein sollen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,12 +81,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Name der Textmarke aus dem Einträge erfasst werden sollen.</summary>
+        <summary>Gibt den Namen der Textmarke zurück, aus der Einträge für das Rechtsgrundlagenverzeichnis gesammelt werden, oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Bookmark</b> -Eigenschaft entspricht dem Schalter \b in einem TOA (Rechtsgrundlagenverzeichnis) Feld.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>Bookmark</b> -Eigenschaft entspricht der Option \b für ein Toa-Feld (Rechtsgrundlagenverzeichnis).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -126,15 +113,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Kategorie der Einträge in einem Rechtsgrundlagenverzeichnis enthalten sein.</summary>
+        <summary>Gibt die Kategorie der Einträge zurück, die in ein Rechtsgrundlagenverzeichnis aufgenommen werden sollen, oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>Die <b>Category</b> -Eigenschaft entspricht der \c-Option für ein Toa-Feld. Die Werte 1 bis 16 entsprechen den Elementen in der Liste Kategorie auf der Registerkarte Rechtsgrundlagenverzeichnis im Dialogfeld Index und Tabellen.</para>
           <para>
-            <b>Category</b> -Eigenschaft entspricht dem Schalter \c für ein TOC-Feld. Werte 1 bis 16 entsprechen den Elementen in der Liste Kategorie auf der Registerkarte Rechtsgrundlagenverzeichnis im Dialogfeld Index und Verzeichnisse.</para>
-          <para>
-            <b>Hinweis</b> die Zahl 0 (null), die für alle Kategorien entspricht, kann nicht mit dieser Eigenschaft verwendet werden. Sie können jedoch 0 verwenden, um alle Kategorien angeben, wenn Sie ein Rechtsgrundlagenverzeichnis einfügen.</para>
-          <para />
-        </remarks>
+            <b>Hinweis:</b>  Die Zahl 0 (null), die allen Kategorien entspricht, kann mit dieser Eigenschaft nicht verwendet werden. Sie können jedoch 0 verwenden, um alle Kategorien anzugeben, wenn Sie ein Rechtsgrundlagenverzeichnis einfügen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -162,11 +146,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -220,14 +202,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Zeichen (bis zu fünf), die eine Tabelle mit den Eintrag für das Rechtsgrundlagenverzeichnis und Seitenzahl getrennt.</summary>
+        <summary>Gibt die Zeichen (bis zu fünf) zurück, die zwischen die Einträge in einem Rechtsgrundlagenverzeichnis und die entsprechenden Seitenzahlen gesetzt werden, oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Standardtrennlinie Eintrag ist ein Tabstoppzeichen mit Punkt als Füllzeichen.</para>
-          <para>
-            <b>EntrySeparator</b> -Eigenschaft entspricht dem Schalter \e für ein Feld (Rechtsgrundlagenverzeichnis) TOA.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Standardeintrags Trennzeichen ist ein Tabstoppzeichen mit einer punktierten Führungslinie.</para>
+          <para>Die <b>EntrySeparator</b> -Eigenschaft entspricht der \e-Option für ein Toa-Feld (Autoritäts Verzeichnis).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeCategoryHeader">
@@ -256,14 +235,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn der name der Kategorie für eine Gruppe von Einträgen im Rechtsgrundlagenverzeichnis angezeigt wird.</summary>
+        <summary><b>True</b>, wenn der Kategoriename für eine Gruppe von Einträgen im Rechtsgrundlagenverzeichnis angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>IncludeCategoryHeader</b> -Eigenschaft entspricht dem Schalter \h für eine Tabelle von Behörden (TOA-Feld).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>IncludeCategoryHeader</b> -Eigenschaft entspricht der \h-Option für ein Feld für ein Autoritäts Verzeichnis (Toa).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeSequenceName">
@@ -292,13 +267,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen den Sequenz (SEQ) Feldbezeichner für ein Rechtsgrundlagenverzeichnis.</summary>
+        <summary>Gibt das Erkennungszeichen des SEQ-Felds für ein Rechtsgrundlagenverzeichnis zurück oder legt es fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>IncludeSequenceName</b> -Eigenschaft entspricht dem Schalter \s für eine Tabelle von Behörden (TOA-Feld).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>IncludeSequenceName</b> -Eigenschaft entspricht der \s-Option für ein Feld für ein Autoritäts Verzeichnis (Toa).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepEntryFormatting">
@@ -327,14 +299,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Formatierung der Einträge für das Rechtsgrundlagenverzeichnis auf die Einträge in das angegebene Rechtsgrundlagenverzeichnis angewendet wird.</summary>
+        <summary><b>True</b>, wenn die Formatierung der Einträge für das Rechtsgrundlagenverzeichnis auf die Einträge im angegebenen Verzeichnis übertragen wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>KeepEntryFormatting</b> -Eigenschaft entspricht dem Schalter \f für eine Tabelle von Behörden (TOA-Feld).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>KeepEntryFormatting</b> -Eigenschaft entspricht der Schalter \f-Option für ein Feld für ein Autoritäts Verzeichnis (Toa).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumberSeparator">
@@ -363,14 +331,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Die Zeichen (bis zu fünf), mit die einzelne Seitenverweise in einem Rechtsgrundlagenverzeichnis getrennt zurückgegeben Sätzen.</summary>
+        <summary>Gibt die Zeichen (bis zu 5) zurück, mit denen einzelne Seitenverweise in einem Rechtsgrundlagenverzeichnis getrennt werden, oder legt sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Zahl Seite der Standardtrennlinie handelt, ein Komma und ein Leerzeichen.</para>
-          <para>
-            <b>PageNumberSeparator</b> -Eigenschaft entspricht dem Schalter \l für eine Tabelle von Behörden (TOA-Feld).</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Standardtrennzeichen für Seitennummern ist ein Komma und ein Leerzeichen.</para>
+          <para>Die <b>PageNumber Separator</b> -Eigenschaft entspricht der \l-Option für ein Feld für ein Autoritäts Verzeichnis (Toa).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageRangeSeparator">
@@ -399,14 +364,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Zeichen (bis zu fünf), die einen Bereich von Seiten in einem Rechtsgrundlagenverzeichnis getrennt.</summary>
+        <summary>Gibt die Zeichen (bis zu 5) zurück, die im Rechtsgrundlagenverzeichnis die erste und letzte Seite in jedem Seitenbereich trennen.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Standard Seitenbereiche ist ein Gedankenstrich.</para>
-          <para>
-            <b>PageRangeSeparator</b> -Eigenschaft entspricht dem Schalter \g für eine Tabelle von Behörden (TOA-Feld).</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Standardtrennzeichen für Seitenbereiche ist ein en-Strich.</para>
+          <para>Die <b>PageRangeSeparator</b> -Eigenschaft entspricht der \G-Option für ein Feld für ein Autoritäts Verzeichnis (Toa).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -463,13 +425,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn fünf oder mehr Seitenverweise zur gleichen Rechtsgrundlage durch "Passim." ersetzt werden</summary>
+        <summary><b>True</b>, wenn 5 oder mehr Verweise auf Seiten in derselben Rechtsgrundlage durch "Passim" ersetzt werden sollen.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>Passim</b> -Eigenschaft entspricht dem Schalter \p für eine Tabelle von Behörden (TOA-Feld).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>passim</b> -Eigenschaft entspricht der \p-Option für ein Feld für ein Autoritäts Verzeichnis (Toa).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -495,12 +454,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="P:Microsoft.Office.Interop.Word.TableOfAuthorities.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
+        <summary>Gibt ein <see cref="P:Microsoft.Office.Interop.Word.TableOfAuthorities.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Informationen darüber, wie einen Bereich aus einem Dokument oder ein Formbereich aus einer Auflistung von Formen finden Sie unter der <see cref="P:Microsoft.Office.Interop.Word.TableOfAuthorities.Range" /> Methode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="P:Microsoft.Office.Interop.Word.TableOfAuthorities.Range" /> unter der-Methode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -529,13 +486,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen die Zeichen (bis zu fünf) zwischen der Sequenznummer und die Seitenzahl.</summary>
+        <summary>Gibt die Zeichen (bis zu fünf) zwischen der Sequenznummer und der Seitenzahl zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ein Bindestrich (-) ist des Standardtrennzeichens.</para>
-          <para>Die <b>Separator</b> -Eigenschaft entspricht dem Schalter \d für eine Tabelle von Behörden (TOA-Feld).</para>
-          <para />
-        </remarks>
+        <remarks><para>Ein Bindestrich (-) ist das standardmäßige Trennzeichen.</para>
+          <para>Die <b>Separator</b> -Eigenschaft entspricht der \d-Option für ein Feld für ein Autoritäts Verzeichnis (Toa).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabLeader">
@@ -564,31 +519,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen das Zeichen zwischen Einträgen und den Seitenzahlen in einem Rechtsgrundlagenverzeichnis.</summary>
+        <summary>Gibt das Zeichen zwischen den Einträgen und den Seitenzahlen in einem Rechtsgrundlagenverzeichnis zurück oder legt dieses fest.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />Dies kann eine der folgenden <b>WdTabLeader</b> -Konstanten sein: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />eine der folgenden <b>WdTabLeader</b> -Konstanten kann sein. </para>
-          <para>
-            <b>WdTabLeaderDashes </b>
+            <b>wdTabLeaderDashes</b>
           </para>
           <para>
-            <b>WdTabLeaderDots </b>
+            <b>wdTabLeaderDots</b>
           </para>
           <para>
-            <b>WdTabLeaderHeavy </b>
+            <b>wdTabLeaderHeavy</b>
           </para>
           <para>
-            <b>WdTabLeaderLines </b>
+            <b>wdTabLeaderLines</b>
           </para>
           <para>
-            <b>WdTabLeaderMiddleDot </b>
+            <b>wdTabLeaderMiddleDot</b>
           </para>
           <para>
-            <b>WdTabLeaderSpaces</b>
+            <b>wdTabLeaderSpaces</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -612,7 +565,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aktualisiert die in das angegebene Rechtsgrundlagenverzeichnis angezeigten Einträge.</summary>
+        <summary>Aktualisiert die im angegebenen Rechtsgrundlagenverzeichnis angezeigten Einträge.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

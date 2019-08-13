@@ -1,13 +1,5 @@
 <Type Name="Bibliography" FullName="Microsoft.Office.Interop.Word.Bibliography">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8cc6801a489e0b3acf0509f8400e33174873485c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669275" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bibliography" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="036a097987b0b8447132cbca8a45c0b2489acd6f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146290" /></Metadata><TypeSignature Language="C#" Value="public interface Bibliography" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bibliography" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bibliography" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bibliography" />
@@ -26,12 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die Liste der verfügbaren Quellen dar, die dem Dokument (in der aktuellen Liste) zugeordnet ist, oder die Liste der Quellen, die in der Anwendung (in der Masterliste) verfügbar ist.
-</summary>
-    <remarks>
-      <para>Literaturverzeichnisse bestehen aus Quellen.  Siehe auch die <see cref="T:Microsoft.Office.Interop.Word.Source" /> Objekt und die <see cref="T:Microsoft.Office.Interop.Word.Sources" /> Auflistung. Weitere Informationen finden Sie unter <a href="HV10118297">Arbeiten mit Bausteinen</a></para>
-      <para />
-    </remarks>
+    <summary>Stellt die Liste der verfügbaren Quellen dar, die dem Dokument (in der aktuellen Liste) zugeordnet ist, oder die Liste der Quellen, die in der Anwendung (in der Masterliste) verfügbar ist.</summary>
+    <remarks><para>Literaturverzeichnisse bestehen aus Quellen.  Siehe auch das <see cref="T:Microsoft.Office.Interop.Word.Source" /> Objekt und die <see cref="T:Microsoft.Office.Interop.Word.Sources" /> Auflistung. Weitere Informationen finden Sie unter <a href="HV10118297">Working with Building Blocks</a> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,14 +77,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Name der Formatvorlage, die für ein Literaturverzeichnis verwendet. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Weitere Informationen finden Sie unter <a href="HV10118297">Arbeiten mit Bausteinen</a></para>
-          <para />
-        </remarks>
+        <summary>Gibt den Namen des aktiven Formats an, das für ein Literaturverzeichnis verwendet werden soll, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Weitere Informationen finden Sie unter <a href="HV10118297">Working with Building Blocks</a> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -123,16 +106,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <summary>Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateUniqueTag">
@@ -156,14 +135,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generiert ein eindeutiges Kennungstag für eine Literaturverzeichnisquelle und gibt das Tag zurück.</summary>
-        <returns>
-          <b>String</b>
-        </returns>
-        <remarks>
-          <para>Weitere Informationen finden Sie unter <a href="HV10118297">Arbeiten mit Bausteinen</a></para>
-          <para />
-        </remarks>
+        <summary>Generiert ein eindeutiges ID-Tag für eine Literatur Quellen Quelle und gibt das-Tag zurück.</summary>
+        <returns><b>String</b></returns>
+        <remarks><para>Weitere Informationen finden Sie unter <a href="HV10118297">Working with Building Blocks</a> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -189,10 +164,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Bibliography" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.Bibliography" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,10 +192,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Sources</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Sources" /> -Auflistung, die alle in einem Literaturverzeichnis enthaltenen Quellen darstellt. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Sources" />
-        </value>
+        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.Sources" /> Auflistung zurück, die alle in einem Literaturverzeichnis enthaltenen Quellen darstellt. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Sources" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

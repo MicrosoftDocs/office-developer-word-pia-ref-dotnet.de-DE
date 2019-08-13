@@ -1,13 +1,5 @@
 <Type Name="PageNumbers" FullName="Microsoft.Office.Interop.Word.PageNumbers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="adb56d4e750693d1d8699cecc33bae23d2bf773c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669636" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a31fe618fee1b2b001540181189751da6020270b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144217" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumbers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumbers" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumbers&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> -Objekten, die die Seitenzahlen in einer einzelnen Kopf- oder Fußzeile darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /> -Eigenschaft auf die <b>PageNumbers</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> -Methode zum Hinzufügen von Seitenzahlen zu einer Kopf- oder Fußzeile.</para>
-      <para>Zum Hinzufügen oder in einem Dokument mit mehreren Abschnitten Seitenzahlen ändern, ändern Sie die Seitenzahlen in jedem Abschnitt oder legen Sie die <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> -Eigenschaft auf <b>True</b>.</para>
-      <para>Verwendung <b>PageNumbers</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>PageNumber</b> -Objekt zurückzugeben. In den meisten Fällen einer Kopf- oder Fußzeile enthält nur eine Seite ein, die Indexnummer 1.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> Objekten, die die Seitenzahlen in einer einzelnen Kopf-oder Fußzeile darstellen.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /> die-Eigenschaft, um die <b>PageNumbers</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> die-Methode, um einer Kopf-oder Fußzeile Seitenzahlen hinzuzufügen.</para>
+      <para>Wenn Sie Seitenzahlen in einem Dokument mit mehreren Abschnitten Hinzufügen oder ändern möchten, ändern Sie die Seitenzahlen in jedem <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> Abschnitt, oder legen Sie die Eigenschaft auf <b>true</b>fest.</para>
+      <para>Verwenden <b></b>Sie PageNumbers<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>PageNumber</b> -Objekt zurückzugeben. In den meisten Fällen enthält eine Kopf-oder Fußzeile nur eine Seitenzahl, die Indexnummer 1 ist.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,14 +53,12 @@
         <Parameter Name="FirstPage" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="PageNumberAlignment">Optionales- <b>Objekt</b>. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> Konstante.</param>
-        <param name="FirstPage">Optionales- <b>Objekt</b>. <b>False</b> , wenn die Kopf- und Fußzeile der ersten Seite von der Kopf- und Fußzeilen aller nachfolgenden Seiten im Dokument abweicht. Wenn <paramref name="FirstPage" /> festgelegt ist auf <b>false festgelegt</b>, nicht der ersten Seite eine Seitenzahl hinzugefügt. Wenn dieses Argument ausgelassen wird, wird die Einstellung gesteuert, durch die <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> Eigenschaft.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> -Objekt zurück, stellt die Zahlen in einer Kopf- oder Fußzeile in einem Abschnitt hinzugefügt Seite.</summary>
+        <param name="PageNumberAlignment">Optionales <b>Objekt</b>. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> Konstante sein.</param>
+        <param name="FirstPage">Optionales <b>Objekt</b>. <b>False</b>, wenn die Kopf- und Fußzeile der ersten Seite anders gestaltet werden soll als die Kopf- und Fußzeilen aller nachfolgenden Seiten im Dokument. Wenn <paramref name="FirstPage" /> auf <b>false</b>festgelegt ist, wird der ersten Seite keine Seitenzahl hinzugefügt. Wenn dieses Argument ausgelassen wird, wird die Einstellung durch die <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> -Eigenschaft gesteuert.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> Objekt zurück, das Seitenzahlen darstellt, die einer Kopf-oder Fußzeile in einem Abschnitt hinzugefügt werden.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> -Eigenschaft für die <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> Objekts auf <b>True</b>festgelegt ist, die Seitenzahlen weiterhin fortlaufend von einem Abschnitt zum nächsten im gesamten Dokument.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> Eigenschaft für das <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> Objekt auf <b>true</b>festgelegt ist, werden die Seitenzahlen sequenziell von einem Abschnitt zum nächsten im Dokument fortgesetzt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,12 +115,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSeparatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt das Trennzeichen zwischen der Kapitelnummer und die Seitenzahl, verwendet. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" /> Konstanten.</summary>
+        <summary>Gibt das Trennzeichen, das zwischen der Kapitelnummer und der Seitenzahl verwendet wird, zurück oder legt dieses fest. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" /> Konstanten sein.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bevor Sie Seitenzahlen, die Seitenzahlen erstellen können, benötigen die Überschriften in Dokumenten Gliederungsformat anwendet, verwendet Formatvorlagen aus der Aufzählungszeichen und Nummerierung im Dialogfeld ein. Verwenden Sie die <b>ApplyListTemplate</b> -Methode des programmgesteuert hierzu die <see cref="T:Microsoft.Office.Interop.Word.List" /> oder <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bevor Sie Seitenzahlen erstellen können, die Kapitelnummern enthalten, muss den Dokumentüberschriften ein Gliederungsformat mit Nummerierung zugewiesen worden sein, das Formatvorlagen aus dem Dialogfeld Nummerierung und Aufzählungszeichen verwendet. Verwenden Sie dazu die <b>ApplyListTemplate</b> -Methode des <see cref="T:Microsoft.Office.Interop.Word.List" /> oder <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekts, um dies programmgesteuert durchführen zu können.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -188,11 +174,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoubleQuote">
@@ -221,13 +205,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn Microsoft Word den angegebenen einschließt <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> -Objekts in doppelte Anführungszeichen (").</summary>
+        <summary><b>True</b> , wenn Microsoft Word das angegebene <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Objekt in doppelte Anführungszeichen (") einschließt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn Word Seitenzahlen standardmäßig in Anführungszeichen setzen festlegen möchten, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" /> Eigenschaft.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie festlegen möchten, dass Word standardmäßig Seitenzahlen in doppelte Anführungszeichen <see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" /> einschließt, verwenden Sie die-Eigenschaft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -288,12 +269,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt die Formatvorlage für Überschriften Ebene, die die Titel der Kapitel im Dokument angewendet wird. Eine Zahl zwischen 0 (null) bis 8, entspricht die Überschriftenebenen 1 bis 9 kann sein.</summary>
+        <summary>Gibt die Formatvorlage der Überschriftenebene zurück, die den Kapitelüberschriften im Dokument zugewiesen wurde, oder legt sie fest. Kann eine Zahl zwischen 0 (null) und 8 sein, die den Überschriftenebenen 1 bis 9 entspricht.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bevor Sie Seitenzahlen, die Seitenzahlen erstellen können, benötigen die Überschriften in Dokumenten Gliederungsformat anwendet, verwendet Formatvorlagen aus der Aufzählungszeichen und Nummerierung im Dialogfeld ein. Verwenden Sie die <b>ApplyListTemplate</b> -Methode des programmgesteuert hierzu die <see cref="T:Microsoft.Office.Interop.Word.List" /> oder <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bevor Sie Seitenzahlen erstellen können, die Kapitelnummern enthalten, muss den Dokumentüberschriften ein Gliederungsformat mit Nummerierung zugewiesen worden sein, das Formatvorlagen aus dem Dialogfeld Nummerierung und Aufzählungszeichen verwendet. Verwenden Sie dazu die <b>ApplyListTemplate</b> -Methode des <see cref="T:Microsoft.Office.Interop.Word.List" /> oder <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekts, um dies programmgesteuert durchführen zu können.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeChapterNumber">
@@ -322,8 +301,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn eine Kapitelnummer mit Seitennummern oder einer Beschriftungskategorie einbezogen wird.</summary>
+        <summary><b>True</b>, wenn eine Kapitelnummer mit Seitennummern oder einer Beschriftungskategorie einbezogen wird.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,7 +332,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -386,12 +364,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt das Zahlenformat für die <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Objekt.</summary>
+        <summary>Gibt den Zahlenstil für das <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Objekt zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Die <b>NumberStyle</b> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" /> Konstanten. Einige der folgenden Konstanten haben möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise).</para>
-          <para />
-        </remarks>
+        <remarks><para>Die <b>NumberStyle</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" /> Konstanten sein. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -448,13 +424,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Seitennummerierung wieder mit 1 am Anfang des angegebenen Abschnitts beginnt.</summary>
+        <summary><b>True</b> , wenn die Seitennummerierung am Anfang des angegebenen Abschnitts erneut mit 1 beginnt.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn auf <b>False</b>festgelegt, die <b>RestartNumberingAtSection</b> -Eigenschaft überschreiben der <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" /> Eigenschaft, sodass die Seitennummerierung nach dem vorherigen Abschnitt fortgesetzt werden kann.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei Festlegung auf " <b>false</b>" wird die <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" /> Eigenschaft von der <b>RestartNumberingAtSection</b> -Eigenschaft so außer Kraft gesetzt, dass die Seitennummerierung im vorherigen Abschnitt fortgesetzt werden kann.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFirstPageNumber">
@@ -483,13 +456,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True,</b> Wenn die Seitenzahl auf der ersten Seite im Abschnitt angezeigt wird.</summary>
+        <summary><b>True</b>, wenn auf der ersten Seite des Abschnitts die Seitenzahl angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Durch Festlegen dieser Eigenschaft auf <b>true festgelegt,</b> wird automatisch hinzugefügt Seitenzahlen zu einem Abschnitt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Ist diese Eigenschaft auf <b>True</b> festgelegt, werden einem Abschnitt automatisch Seitenzahlen hinzugefügt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartingNumber">
@@ -518,13 +488,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder Festlegen der Startnummer Notiz, Zeilennummer oder Seitenzahl.</summary>
+        <summary>Zurückgeben oder Festlegen der Start Notizen Nummer, die Nummer oder die Seitenzahl.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Müssen Sie in der Drucklayoutansicht Zeilennummern finden Sie unter sein.</para>
-          <para>, Wenn Sie auf Seitenzahlen angewendet, diese Eigenschaft gibt, oder legt die Startnummer für die Seite für den angegebenen <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> Objekt. Diese Nummer kann nicht sichtbar oder auf der ersten Seite, abhängig von der Einstellung der <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" /> Eigenschaft. Die <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" /> -Eigenschaft auf <b>False</b>festgelegt, wird die <b>StartingNumber</b> -Eigenschaft, sodass die Seitennummerierung nach dem vorherigen Abschnitt fortgesetzt werden kann.</para>
-          <para />
-        </remarks>
+        <remarks><para>Die Zeilennummerierung ist nur in der Drucklayoutansicht sichtbar.</para>
+          <para>Wenn diese Eigenschaft auf Seitenzahlen angewendet wird, wird die erste Seitenzahl für das angegebene <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> Objekt zurückgegeben oder festgelegt. Diese Nummer ist je nach Einstellung der <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" /> Eigenschaft möglicherweise auf der ersten Seite sichtbar. Wenn <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" /> die Eigenschaft auf <b>false</b>festgelegt ist, wird die <b>StartingNumber</b> -Eigenschaft außer Kraft gesetzt, sodass die Seitennummerierung im vorherigen Abschnitt fortgesetzt werden kann.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="OMathBreak" FullName="Microsoft.Office.Interop.Word.OMathBreak">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="96fbf4be2ae6f37230c5a1372390ad57dcdc916d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669038" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathBreak" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2318a4e9569169149996c3017245f0c65122ef61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144379" /></Metadata><TypeSignature Language="C#" Value="public interface OMathBreak" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathBreak" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathBreak" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathBreak" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt Zeilenumbrüche einzelne in einer Formel.  Jede <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> Auflistung.</summary>
+    <summary>Stellt einzelne Zeilenumbrüche in einer Formel dar.  Jedes <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> Auflistung.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,10 +48,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurück oder legt eine <b>ganze Zahl</b> , die den Operator in einer Zeile darstellt, dem Microsoft Office Word fortlaufende Zeilen in einer Formel ausgerichtet. Lese-/Schreibzugriff.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Zurückgeben oder Festlegen einer <b>ganzen Zahl</b> , die den Operator in einer Zeile darstellt, an die Microsoft Office Wort aufeinanderfolgende Zeilen in einer Formel richtet. Lese-/Schreibzugriff.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +76,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,16 +105,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde die <see cref="P:Microsoft.Office.Interop.Word.OMathBreak.Creator" /> -Eigenschaft gibt die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" zurück. Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Diese Eigenschaft in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung verfügt über einen vierstelligen Erstellercode entworfen wurde. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.OMathBreak.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden. </para>
+          <para>Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>:</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -150,7 +134,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Löscht den angegebenen Zeilenumbruch.</summary>
+        <summary>Löscht den angegebenen Positions Umbruch.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +161,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,10 +189,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist. Schreibgeschützt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist. Schreibgeschützt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

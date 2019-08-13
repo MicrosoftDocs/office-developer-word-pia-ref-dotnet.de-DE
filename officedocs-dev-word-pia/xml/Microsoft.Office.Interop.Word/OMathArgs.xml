@@ -1,13 +1,5 @@
 <Type Name="OMathArgs" FullName="Microsoft.Office.Interop.Word.OMathArgs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9cb9fb0ddbeaaed3135da719c1d25bf94d0cc716" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669487" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathArgs" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d53926b22241062e6717fb428f4fc2cb5b5959f6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147851" /></Metadata><TypeSignature Language="C#" Value="public interface OMathArgs" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathArgs" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathArgs" />
@@ -52,11 +44,9 @@
         <Parameter Name="BeforeArg" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeArg">(Optional) - <b>Objekt</b>. Ein vorhandenes Argument, vor dem das neue Argument hinzugefügt wird.</param>
-        <summary>Fügt ein Argument in eine Formel mit einer Variablen Anzahl von Argumenten (<see cref="T:Microsoft.Office.Interop.Word.OMathDelim" /> und <see cref="T:Microsoft.Office.Interop.Word.OMathEqArray" /> Objekte)</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </returns>
+        <param name="BeforeArg">Optional - <b>Objekt</b>. Ein vorhandenes Argument, vor dem das neue Argument hinzugefügt wird.</param>
+        <summary>Fügt ein Argument in eine Formel mit einer Variablen Anzahl von<see cref="T:Microsoft.Office.Interop.Word.OMathDelim" /> Argumenten <see cref="T:Microsoft.Office.Interop.Word.OMathEqArray" /> (und Objekten) ein.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMath" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +73,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +101,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.OMathArgs" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.OMathArgs" /> Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,16 +130,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Diese Eigenschaft in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung verfügt über einen vierstelligen Erstellercode entworfen wurde. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden. </para>
+          <para>Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>:</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -179,11 +161,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">(Erforderlich) Eine <b>ganze Zahl</b> , die die Ordnungsposition des Objekts innerhalb der Auflistung angibt.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.OMath" /> -Objekt, das das angegebene Element in der Auflistung darstellt.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </returns>
+        <param name="Index">Erforderlich Eine <b>ganze Zahl</b> , die die Ordnungsposition des Objekts in der Auflistung angibt.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.OMath" /> Objekt zurück, das das angegebene Element in der Auflistung darstellt.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMath" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +190,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.OMathArgs" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.OMathArgs" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

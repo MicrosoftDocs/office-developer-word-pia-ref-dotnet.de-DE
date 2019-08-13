@@ -1,13 +1,5 @@
 <Type Name="XMLNamespaces" FullName="Microsoft.Office.Interop.Word.XMLNamespaces">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a28377e4aa15237bf9fa30770fff97380ef9bf73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669047" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9eb0ff72d7f177eb7bd98e5edbe17f3467652a3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142633" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespaces&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> -Objekten, die die gesamte Auflistung der Schemas in der Schemabibliothek repräsentiert.</summary>
-    <remarks>
-      <para>In Microsoft Word, können Sie von der Registerkarte XML-Schema im Dialogfeld Vorlagen und Add-Ins der Schemabibliothek zugreifen. Der Schemabibliothek darstellt, auf dem Computer eines Benutzers, die ein Benutzer auf ein Word-Dokument angewendet hat oder die ein Benutzer über das Dialogfeld Schemabibliothek explizit zur Schemabibliothek hinzugefügt hat, installierten Schemas.</para>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> -Eigenschaft des <b>XMLNamespaces</b> -Auflistung, um ein einzelnes <b>XMLNameSpace</b> -Objekt zurückzugeben. Der Indexwert der <b>Item</b> -Eigenschaft kann eine <b>ganze Zahl</b>, die die Position des Schemas in der Schemabibliothek angezeigt wird, oder eine <b>Zeichenfolge</b>, die den Namen des Schemas darstellt, wie Sie mithilfe von zurückgegeben werden die <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> (die Eigenschaft TargetNamespace-Einstellung im Schema definiert).</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> Objekten, die die gesamte Auflistung von Schemas in der Schema Bibliothek darstellt.</summary>
+    <remarks><para>In Microsoft Word können Sie auf der Registerkarte XML-Schema im Dialogfeldvorlagen und Add-Ins auf die Schemabibliothek zugreifen. Die Schemabibliothek stellt Schemas dar, die auf dem Computer eines Benutzers installiert sind, den ein Benutzer auf ein Word-Dokument angewendet hat oder den ein Benutzer der Schemabibliothek explizit mithilfe des Dialogfelds Schemabibliothek hinzugefügt hat.</para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> die-Eigenschaft der <b>XmlNamespaces</b> -Auflistung, um ein einzelnes XmlNamespace-Objekt zurückzugeben. <b></b> Der Indexwert der <b>Item</b> -Eigenschaft kann entweder eine <b>ganze Zahl</b>sein, die die Position des Schemas in der Schemabibliothek angibt, oder eine <b>Zeichenfolge</b>, die den Namen des Schemas darstellt, der mit der <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> Eigenschaft zurückgegeben wird (der Wert Im Schema definierte TargetNamespace-Einstellung).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,12 +53,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b> erforderlich. Der Pfad und Dateiname des Schemas. Dies kann ein lokaler Dateipfad, ein Netzwerkpfad oder eine IP-Adresse sein.</param>
-        <param name="NamespaceURI">Optionale <b>Zeichenfolge</b>. Der Namespace Uniform Resource Indicator gemäß dem Schema. Die <paramref name="NamespaceURI" /> Parameter wird Groß-/Kleinschreibung und muss genau wie im Schema angegeben geschrieben werden.</param>
-        <param name="Alias">Optionale <b>Zeichenfolge</b>. Der Name des Schemas, der auf der Registerkarte Schemas im Dialogfeld Vorlagen und Add-Ins angezeigt wird.</param>
-        <param name="InstallForAllUsers">Optionaler <b>Boolean</b>-Wert. <b>True,</b> Wenn alle Benutzer, die an einem Computer anmelden zugreifen und Sie verwenden das neue Schema. Der Standardwert ist <b>False</b>.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> -Objekt, das ein Schema darstellt, das zur Schemabibliothek hinzugefügt und für Benutzer in Microsoft Word verfügbar gemacht wird.</summary>
+        <param name="Path"><b>String</b> erforderlich. Der Pfad und der Dateiname des Schemas. Hierbei kann es sich um einen lokalen Dateipfad, einen Netzwerkpfad oder eine Internetadresse handeln.</param>
+        <param name="NamespaceURI">Optionaler <b>String</b>-Wert. Der Namespace Uniform Resource Indicator, der im Schema angegeben ist. Bei <paramref name="NamespaceURI" /> dem Parameter wird die Groß-/Kleinschreibung beachtet und muss genau so geschrieben werden, wie in Schema angegeben.</param>
+        <param name="Alias">Optionaler <b>String</b>-Wert. Der Name des Schemas, der auf der Registerkarte Schemas im Dialogfeld Vorlagen und Add-Ins angezeigt wird.</param>
+        <param name="InstallForAllUsers">Optionaler <b>Boolean</b>-Wert. <b>True</b>, wenn alle Benutzer, die sich an einem Computer anmelden, auf das neue Schema zugreifen und es verwenden können. Der Standardwert ist <b>False</b>.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> Objekt zurück, das ein Schema darstellt, das der Schemabibliothek hinzugefügt und Benutzern in Microsoft Word zur Verfügung gestellt wird.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,11 +143,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,14 +203,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b> erforderlich. Der Pfad und der Dateiname des XML-Erweiterungspakets.</param>
-        <param name="InstallForAllUsers">Optionaler <b>Boolean</b>-Wert. <b>True,</b> wird das XML-Erweiterungspaket installiert und für alle Benutzer auf einem Computer zur Verfügung. <b>False</b> steht das XML-Erweiterungspaket nur dem aktuellen Benutzer zur Verfügung. Standard ist <b>False</b>.</param>
+        <param name="Path"><b>String</b> erforderlich. Der Pfad und der Dateiname des XML-Erweiterungspakets.</param>
+        <param name="InstallForAllUsers">Optionaler <b>Boolean</b>-Wert. Beim Wert <b>True</b> wird das XML-Erweiterungspaket installiert und für alle Benutzer eines Computers verfügbar gemacht. Beim Wert <b>False</b> wird das XML-Erweiterungspaket nur für den aktuellen Benutzer verfügbar gemacht. Der Standardwert ist <b>False</b>.</param>
         <summary>Installiert das angegebene XML-Erweiterungspaket auf dem Computer des Benutzers und macht so eine XML-SmartDocument-Lösung für einen oder mehrere Benutzer verfügbar.</summary>
-        <remarks>
-          <para>Aus Sicherheitsgründen installieren nicht Sie ein unsigniertes Manifest. Weitere Informationen zu Manifesten finden Sie unter der Smart Document Software Development Kit (SDK) auf der Microsoft Developer Network (MSDN)-Website.</para>
-          <para />
-        </remarks>
+        <remarks><para>Aus Sicherheitsgründen können Sie kein unsigniertes Manifest installieren. Weitere Informationen zu Manifesten finden Sie im Smart Document Software Development Kit (SDK) auf der Microsoft Developer Network (MSDN)-Website.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -252,7 +236,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

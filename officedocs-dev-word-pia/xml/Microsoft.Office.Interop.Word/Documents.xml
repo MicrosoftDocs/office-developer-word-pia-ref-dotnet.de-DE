@@ -1,13 +1,5 @@
 <Type Name="Documents" FullName="Microsoft.Office.Interop.Word.Documents">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a41822aae7b9dcff67293b6f07a8d78b06540706" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670664" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Documents : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="73789cb6aa429bd79064a70ab357d1ecc3ad8ae5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146929" /></Metadata><TypeSignature Language="C#" Value="public interface Documents : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Documents implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Documents" />
   <TypeSignature Language="VB.NET" Value="Public Interface Documents&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung aller der <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekte, die derzeit in Word geöffnet.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> Eigenschaft, um die <b>Documents</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um ein neues, leeres Dokument erstellt und der <b>Documents</b> -Auflistung hinzugefügt.</para>
-      <para>Verwenden Sie die <b>Open</b> -Methode zum Öffnen einer Datei.</para>
-      <para>Verwendung <b>Dokumente</b>(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Dokuments oder die Indexzahl darstellt, um ein einzelnes <b>Document</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Dokuments in der <b>Documents</b> -Auflistung.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekte, die derzeit in Word geöffnet sind.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> die-Eigenschaft, um die <b>Documents</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um ein neues leeres Dokument zu erstellen und es zur <b>Documents</b> -Auflistung hinzuzufügen.</para>
+      <para>Verwenden Sie die <b>Open</b> -Methode, um eine Datei zu öffnen.</para>
+      <para>Verwenden <b></b>Sie Documents (<paramref name="index" />) <paramref name="index" /> , wobei es sich um den Dokumentnamen oder die Indexnummer handelt, um ein einzelnes <b>Document</b> -Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Dokuments in der <b>Documents</b>-Auflistung dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,11 +56,11 @@
         <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Template">Optionales- <b>Objekt</b>. Der Name der Vorlage für das neue Dokument verwendet werden soll. Wenn dieses Argument ausgelassen wird, wird die Dokumentvorlage Normal.dot verwendet.</param>
-        <param name="NewTemplate">Optionales- <b>Objekt</b>. <b>True</b> , wenn das Dokument als Vorlage zu öffnen. Der Standardwert lautet <b>False</b>.</param>
-        <param name="DocumentType">Optionales- <b>Objekt</b>. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdNewDocumentType" /> Konstanten: <b>WdNewBlankDocument</b>, <b>WdNewEmailMessage</b>, <b>WdNewFrameset</b>oder <b>WdNewWebPage</b>. Die Standardkonstante ist <b>WdNewBlankDocument</b>.</param>
-        <param name="Visible">Optionales- <b>Objekt</b>. <b>True</b> , wenn das Dokument in einem sichtbaren Fenster geöffnet. Wenn dieser Wert auf <b>False</b>festgelegt ist, wird Microsoft Word öffnet das Dokument, legt jedoch die <see cref="P:Microsoft.Office.Interop.Word.Window.Visible" /> -Eigenschaft des Dokumentfensters auf <b>false festgelegt</b>. Der Standardwert ist <b>True</b>.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> -Objekt, das ein neues, leeres Dokument zur Auflistung der geöffneten Dokumente hinzugefügt.</summary>
+        <param name="Template">Optionales <b>Objekt</b>. Der Name der Vorlage, die für das neue Dokument verwendet werden soll. Wenn dieses Argument ausgelassen wird, wird die Vorlage "Normal" verwendet.</param>
+        <param name="NewTemplate">Optionales <b>Objekt</b>. Bei dem Wert <b>True</b> wird das Dokument als eine Vorlage geöffnet. Der Standardwert ist <b>False</b>.</param>
+        <param name="DocumentType">Optionales <b>Objekt</b>. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdNewDocumentType" /> der folgenden Konstanten sein: <b>wdNewBlankDocument</b>, <b>wdNewEmailMessage</b>, <b>wdNewFrameset</b>oder <b>wdNewWebPage</b>. Die standardmäßige Konstante ist <b>wdNewBlankDocument</b>.</param>
+        <param name="Visible">Optionales <b>Objekt</b>. Bei dem Wert <b>True</b> wird das Dokument in einem sichtbaren Fenster geöffnet. Wenn dieser Wert <b>false</b>ist, öffnet Microsoft Word das Dokument, legt jedoch <see cref="P:Microsoft.Office.Interop.Word.Window.Visible" /> die Eigenschaft des Dokumentfensters auf <b>false</b>fest. Der Standardwert ist <b>True</b>.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück, das ein neues, leeres Dokument darstellt, das der Auflistung geöffneter Dokumente hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,14 +94,10 @@
         <param name="PostURL">Die URL, die beim Hinzufügen von Beiträgen zum Blog verwendet wird.</param>
         <param name="BlogName">Ein Anzeigename für den Blog zur Verwendung in Word.</param>
         <param name="PostID">Die Kennung für einen vorhandenen Beitrag, mit dem das mithilfe der <b>AddBlogDocument</b>-Methode erstellte Dokument ausgefüllt wird.</param>
-        <summary>Gibt ein Objekt, das ein neues Blogdokument darstellt, das Microsoft Office Word in der durch die ersten drei Parameter beschriebenen Konto veröffentlicht.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word._Document" />
-        </returns>
-        <remarks>
-          <para>Diese Methode ein neues Dokument erstellt, und es auch das angegebene Blog-Konto mit Word registriert, wenn sie noch nicht registriert ist. Darüber hinaus Wenn die <paramref name="PostID" /> Parameter angegeben ist, wird das neue Dokument mit dem Inhalt des Beitrags durch den Wert des angegebenen gefüllt ist die <paramref name="PostID" /> -Parameter von der Website des Anbieters.</para>
-          <para />
-        </remarks>
+        <summary>Gibt ein Objekt zurück, das ein neues Blog Dokument darstellt, das Microsoft Office Word in dem durch die ersten drei Parameter beschriebenen Konto veröffentlicht.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word._Document" /></returns>
+        <remarks><para>Mithilfe dieser Methode wird ein Dokument erstellt und auch der angegebene Blog bei Word registriert, wenn er noch nicht registriert ist. Wenn der <paramref name="PostID" /> Parameter angegeben wird, wird darüber hinaus das neue Dokument mit dem Inhalt des Beitrags aufgefüllt, der durch den Wert des <paramref name="PostID" /> Parameters von der Website des Anbieters angegeben wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOld">
@@ -170,7 +156,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,15 +184,12 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> erforderlich. Serverpfad und Name des Dokuments.</param>
-        <summary>Bestimmt, ob Microsoft Word ein angegebenes Dokument von einem Server Auschecken kann. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
+        <param name="FileName"><b>String</b> erforderlich. Serverpfad und Name des Dokuments.</param>
+        <summary>Bestimmt, ob Microsoft Word ein angegebenes Dokument von einem Server Auschecken können. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt <b>True</b> zurück, wenn Microsoft Word ein angegebenes Dokument auf einem Server und <b>False,</b> Wenn nicht auschecken kann.</para>
-          <para>, Um die in Word integrierten Zusammenarbeitsfunktionen genutzt werden können, müssen Dokumente auf einem Microsoft SharePoint-Portalserver gespeichert werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt <b>true</b> zurück, wenn Microsoft Word ein angegebenes Dokument von einem Server Auschecken kann, und <b>false</b> , wenn dies nicht der Fall ist.</para>
+          <para>Damit die Vorteile der in Word integrierten Zusammenarbeitsfunktionen genutzt werden können, müssen Dokumente auf einem Microsoft SharePoint-Portalserver gespeichert werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckOut">
@@ -232,8 +215,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> erforderlich. Der Name der auszucheckenden Datei.</param>
+        <param name="FileName"><b>String</b> erforderlich. Der Name der auszucheckenden Datei.</param>
         <summary>Kopiert ein angegebenes Dokument zur Bearbeitung von einem Server auf einen lokalen Computer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,10 +244,10 @@
         <Parameter Name="RouteDocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Optionales- <b>Objekt</b>. Gibt die Speichern-Aktion für das Dokument. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" /> Konstanten: <b>WdDoNotSaveChanges</b>, <b>WdPromptToSaveChanges</b>oder <b>WdSaveChanges</b>.</param>
-        <param name="OriginalFormat">Optionales- <b>Objekt</b>. Gibt das Format für das Dokument. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" /> Konstanten: <b>WdOriginalDocumentFormat</b>, <b>WdPromptUser</b>oder <b>WdWordDocument</b>.</param>
-        <param name="RouteDocument">Optionales- <b>Objekt</b>. <b>True</b> , wenn das Dokument an den nächsten Empfänger weitergeleitet. Wenn das Dokument einen Verteiler vorhanden ist, wird dieses Argument ignoriert.</param>
-        <summary>Schließt das angegebene Dokument oder Dokumenten.</summary>
+        <param name="SaveChanges">Optionales <b>Objekt</b>. Gibt die Speichern-Aktion für das Dokument an. Kann <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" /> eine der folgenden Konstanten sein: <b>wdDoNotSaveChanges veranschaulicht</b>, <b>wdPromptToSaveChanges</b>oder <b>wdSaveChanges</b>.</param>
+        <param name="OriginalFormat">Optionales <b>Objekt</b>. Gibt das Speicherformat für das Dokument an. Kann <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" /> eine der folgenden Konstanten sein: <b>wdoriginaldocumentformatwdpromptuser</b>, <b>wdPromptUser</b>oder <b>wdWordDocument</b>.</param>
+        <param name="RouteDocument">Optionales <b>Objekt</b>. <b>True</b>, wenn das Dokument an den nächsten Empfänger weitergeleitet werden soll. Wenn das Dokument nicht mit einer Verteilerliste versehen ist, wird dieses Argument ignoriert.</param>
+        <summary>Schließt das angegebene Dokument oder die angegebenen Dokumente.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,11 +304,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -387,7 +367,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -430,29 +410,26 @@
         <Parameter Name="XMLTransform" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Objekt</b>erforderlich. Der Name des Dokuments (Pfade werden akzeptiert).</param>
-        <param name="ConfirmConversions">Optionales- <b>Objekt</b>. <b>True</b>, um das Dialogfeld Datei konvertieren anzuzeigen, wenn die Datei nicht im Microsoft Word-Format vorliegt.</param>
-        <param name="ReadOnly">Optionales- <b>Objekt</b>. <b>True</b> , wenn das Dokument mit Schreibschutz zu öffnen. <b>Hinweis</b>   Dieses Argument wird nicht überschrieben empfohlene Einstellung für ein gespeichertes Dokument schreibgeschützt. Angenommen, wenn ein Dokument mit Schreibschutz-gespeichert wurde eingeschaltet empfohlen, das Argument <b>ReadOnly</b> auf <b>False</b> festlegen, wird nicht die Datei mit Lese-/Schreibzugriff geöffnet werden verursacht.</param>
-        <param name="AddToRecentFiles">Optionales- <b>Objekt</b>. <b>True</b>, wenn der Dateiname in die Liste der zuletzt verwendeten Dateien im unteren Teil des Menüs Datei aufgenommen werden soll.</param>
-        <param name="PasswordDocument">Optionales- <b>Objekt</b>. Das Kennwort zum Öffnen des Dokuments.</param>
-        <param name="PasswordTemplate">Optionales- <b>Objekt</b>. Das Kennwort zum Öffnen der Vorlage.</param>
-        <param name="Revert">Optionales- <b>Objekt</b>. Steuert, was geschieht, wenn <paramref name="FileName" /> ist der Name eines geöffneten Dokuments. <b>True</b> , wenn die geöffneten Dokument nicht gespeicherten Änderungen zu verwerfen und öffnen Sie die Datei erneut. <b>False</b> , wenn das geöffnete Dokument aktiviert.</param>
-        <param name="WritePasswordDocument">Optionales- <b>Objekt</b>. Das zum Speichern von Änderungen am Dokument erforderliche Kennwort.</param>
-        <param name="WritePasswordTemplate">Optionales- <b>Objekt</b>. Das Kennwort zum Speichern von Änderungen an der Vorlage.</param>
-        <param name="Format">Optionales- <b>Objekt</b>. Der Dateikonverter zum Öffnen des Dokuments verwendet werden. Kann ein <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> Konstante. Um ein externes Dateiformat angeben, gelten die <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> -Eigenschaft auf eine <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> -Objekt, das den Wert für dieses Argument zu ermitteln.</param>
-        <param name="Encoding">Optionales- <b>Objekt</b>. Das Dokument Codierung (Codepage oder Zeichensatz) von Microsoft Word beim Anzeigen des gespeicherten Dokuments verwendet. Kann eine beliebige gültige <see cref="T:Microsoft.Office.Core.MsoEncoding" /> Konstante. Der Standardwert ist die Codepage des Systems.</param>
-        <param name="Visible">Optionales- <b>Objekt</b>. <b>True,</b> Wenn das Dokument in einem sichtbaren Fenster geöffnet wird. Der Standardwert ist <b>True</b>.</param>
-        <param name="OpenAndRepair">Optionales- <b>Objekt</b>. <b>True</b>, um das Dokument zu reparieren und so dessen Beschädigung zu vermeiden</param>
-        <param name="DocumentDirection">Optionale <b>-Objekt.</b> Kann ein <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> Konstante.</param>
-        <param name="NoEncodingDialog">Optionales- <b>Objekt</b>. <b>True</b> , überspringen Sie das Dialogfeld Codierung anzuzeigen, die Word angezeigt, wenn der Text-Codierung nicht erkannt werden kann. Der Standardwert lautet <b>False</b>.</param>
-        <param name="XMLTransform">Optionales- <b>Objekt</b>. Gibt die zu verwendende Transformierung an</param>
-        <summary>Öffnet das angegebene Dokument und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Documents" /> Auflistung.</summary>
+        <param name="FileName">Erforderliches <b>Objekt</b>. Der Name des Dokuments (Pfade werden akzeptiert).</param>
+        <param name="ConfirmConversions">Optionales <b>Objekt</b>. <b>True</b>, um das Dialogfeld Datei konvertieren anzuzeigen, wenn die Datei nicht im Microsoft Word-Format vorliegt.</param>
+        <param name="ReadOnly">Optionales <b>Objekt</b>. <b>True</b> , wenn das Dokument schreibgeschützt geöffnet werden soll. <b>Hinweis:</b>   Mit diesem Argument wird die schreibgeschützte Einstellung für ein gespeichertes Dokument nicht außer Kraft gesetzt. Wenn beispielsweise ein Dokument mit Read-Only Recommended gespeichert wurde, wird durch Festlegen des <b>ReadOnly</b> -Arguments auf <b>false</b> die Datei nicht als Lese-/Schreibzugriff geöffnet.</param>
+        <param name="AddToRecentFiles">Optionales <b>Objekt</b>. <b>True</b>, wenn der Dateiname in die Liste der zuletzt verwendeten Dateien im unteren Teil des Menüs Datei aufgenommen werden soll.</param>
+        <param name="PasswordDocument">Optionales <b>Objekt</b>. Das Kennwort zum Öffnen des Dokuments.</param>
+        <param name="PasswordTemplate">Optionales <b>Objekt</b>. Das Kennwort zum Öffnen der Vorlage.</param>
+        <param name="Revert">Optionales <b>Objekt</b>. Steuert, was geschieht <paramref name="FileName" /> , wenn es sich um den Namen eines geöffneten Dokuments handelt. <b>True</b>, um alle nicht gespeicherten Änderungen am geöffneten Dokument zu verwerfen und die Datei erneut zu öffnen. <b>False</b>, um das geöffnete Dokument zu aktivieren.</param>
+        <param name="WritePasswordDocument">Optionales <b>Objekt</b>. Das zum Speichern von Änderungen am Dokument erforderliche Kennwort.</param>
+        <param name="WritePasswordTemplate">Optionales <b>Objekt</b>. Das Kennwort zum Speichern von Änderungen an der Vorlage.</param>
+        <param name="Format">Optionales <b>Objekt</b>. Das zum Öffnen des Dokuments zu verwendende Dateikonvertierungsprogramm. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> Konstante sein. Um ein externes Dateiformat anzugeben, wenden Sie <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> die Eigenschaft auf <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> ein Objekt an, um den Wert zu bestimmen, der mit diesem Argument verwendet werden soll.</param>
+        <param name="Encoding">Optionales <b>Objekt</b>. Die bei der Anzeige des gespeicherten Dokuments von Microsoft Word zu verwendende Dokumentcodierung (Codepage oder Zeichensatz). Kann eine beliebige gültige <see cref="T:Microsoft.Office.Core.MsoEncoding" /> Konstante sein. Der Standardwert ist die Codepage des Systems.</param>
+        <param name="Visible">Optionales <b>Objekt</b>. <b>True</b>, wenn das Dokument in einem sichtbaren Fenster geöffnet wird. Der Standardwert ist <b>True</b>.</param>
+        <param name="OpenAndRepair">Optionales <b>Objekt</b>. <b>True</b>, um das Dokument zu reparieren und so dessen Beschädigung zu vermeiden</param>
+        <param name="DocumentDirection">Optionales <b>Objekt.</b> Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> Konstante sein.</param>
+        <param name="NoEncodingDialog">Optionales <b>Objekt</b>. <b>True</b>, um die Anzeige des Dialogfelds "Codierung" zu übergehen, das in Word angezeigt wird, wenn die Textcodierung nicht erkannt wird. Der Standardwert ist <b>False</b>.</param>
+        <param name="XMLTransform">Optionales <b>Objekt</b>. Gibt die zu verwendende Transformierung an</param>
+        <summary>Öffnet das angegebene Dokument und fügt es der <see cref="T:Microsoft.Office.Interop.Word.Documents" /> Auflistung hinzu.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Vermeiden der Verwendung von hartcodierte Kennwörter in der Anwendung. Wenn in einer Prozedur ein Kennwort erforderlich ist, fordern Sie das Kennwort des Benutzers, in einer Variablen zu speichern Sie, und klicken Sie dann verwenden Sie die Variable in Ihrem Code.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vermeiden Sie das Verwenden von hartcodierten Kennwörtern in Anwendungen. Fordern Sie das Kennwort vom Benutzer an, speichern Sie es in einer Variablen, und verwenden Sie dann die Variable im Code, falls ein Kennwort in einer Prozedur benötigt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Open2000">
@@ -503,7 +480,7 @@
         <param name="Format">To be added.</param>
         <param name="Encoding">To be added.</param>
         <param name="Visible">To be added.</param>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -562,7 +539,7 @@
         <param name="OpenAndRepair">To be added.</param>
         <param name="DocumentDirection">To be added.</param>
         <param name="NoEncodingDialog">To be added.</param>
-        <summary>Für die interne Verwendung reserviert.</summary>
+        <summary>Für interne Zwecke vorbehalten.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -605,31 +582,23 @@
       </Parameters>
       <Docs>
         <param name="FileName">Der Name des Dokuments (Pfade werden akzeptiert).</param>
-        <param name="ConfirmConversions">
-          <b>True</b>, um das Dialogfeld Datei konvertieren anzuzeigen, wenn die Datei nicht im Microsoft Word-Format vorliegt.</param>
-        <param name="ReadOnly">
-          <b>True</b> , wenn das Dokument mit Schreibschutz zu öffnen. Dieses Argument wird nicht überschrieben empfohlene Einstellung für ein gespeichertes Dokument schreibgeschützt. Beispielsweise, wenn ein Dokument mit Schreibschutz-gespeichert wurde empfohlen eingeschaltet, Festlegen der <paramref name="ReadOnly" /> Argument auf <b>false festgelegt</b> , wird nicht die Datei mit Lese-/Schreibzugriff geöffnet werden soll.</param>
-        <param name="AddToRecentFiles">
-          <b>True</b>, wenn der Dateiname in die Liste der zuletzt verwendeten Dateien im unteren Teil des Menüs Datei aufgenommen werden soll.</param>
+        <param name="ConfirmConversions"><b>True</b>, um das Dialogfeld Datei konvertieren anzuzeigen, wenn die Datei nicht im Microsoft Word-Format vorliegt.</param>
+        <param name="ReadOnly"><b>True</b>, um das Dokument schreibgeschützt zu öffnen. Mit diesem Argument wird die Einstellung Schreibschutz empfehlen für gespeicherte Dokumente nicht überschrieben. Wenn beispielsweise ein Dokument mit Read-Only Recommended gespeichert wurde, wird durch Festlegen des <paramref name="ReadOnly" /> Arguments auf <b>false</b> die Datei nicht als Lese-/Schreibzugriff geöffnet.</param>
+        <param name="AddToRecentFiles"><b>True</b>, wenn der Dateiname in die Liste der zuletzt verwendeten Dateien im unteren Teil des Menüs Datei aufgenommen werden soll.</param>
         <param name="PasswordDocument">Das Kennwort zum Öffnen des Dokuments.</param>
         <param name="PasswordTemplate">Das Kennwort zum Öffnen der Vorlage.</param>
-        <param name="Revert">Steuert, was geschieht, wenn <paramref name="FileName" /> ist der Name eines geöffneten Dokuments. <b>True</b> , wenn die geöffneten Dokument nicht gespeicherten Änderungen zu verwerfen und öffnen Sie die Datei erneut. <b>False</b> , wenn das geöffnete Dokument aktiviert.</param>
+        <param name="Revert">Steuert, was geschieht <paramref name="FileName" /> , wenn es sich um den Namen eines geöffneten Dokuments handelt. <b>True</b>, um alle nicht gespeicherten Änderungen am geöffneten Dokument zu verwerfen und die Datei erneut zu öffnen. <b>False</b>, um das geöffnete Dokument zu aktivieren.</param>
         <param name="WritePasswordDocument">Das zum Speichern von Änderungen am Dokument erforderliche Kennwort.</param>
         <param name="WritePasswordTemplate">Das Kennwort zum Speichern von Änderungen an der Vorlage.</param>
-        <param name="Format">Der Dateikonverter zum Öffnen des Dokuments verwendet werden. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> Konstanten. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Word.WdOpenFormat.wdOpenFormatAuto" />.</param>
-        <param name="Encoding">Das Dokument Codierung (Codepage oder Zeichensatz) von Microsoft Word beim Anzeigen des gespeicherten Dokuments verwendet. Kann eine beliebige gültige <see cref="T:Microsoft.Office.Core.MsoEncoding" /> -Enumerationswert ab. Der Standardwert ist die Codepage des Systems.</param>
-        <param name="Visible">
-          <b>True</b>, wenn das Dokument in einem sichtbaren Fenster geöffnet wird. Der Standardwert ist <b>True</b>.</param>
-        <param name="OpenAndRepair">
-          <b>True</b>, um das Dokument zu reparieren und so dessen Beschädigung zu vermeiden</param>
-        <param name="DocumentDirection">Gibt den horizontalen Textfluss in einem Dokument an. Kann eine beliebige gültige <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> Konstante. Der Standardwert lautet <see cref="F:Microsoft.Office.Interop.Word.WdDocumentDirection.wdLeftToRight" />.</param>
-        <param name="NoEncodingDialog">
-          <b>True</b>, um die Anzeige des Dialogfelds "Codierung" zu übergehen, das in Word angezeigt wird, wenn die Textcodierung nicht erkannt wird. Der Standardwert ist <b>False</b>.</param>
+        <param name="Format">Das zum Öffnen des Dokuments zu verwendende Dateikonvertierungsprogramm. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> Konstanten sein. Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Word.WdOpenFormat.wdOpenFormatAuto" />.</param>
+        <param name="Encoding">Die bei der Anzeige des gespeicherten Dokuments von Microsoft Word zu verwendende Dokumentcodierung (Codepage oder Zeichensatz). Kann ein beliebiger gültiger <see cref="T:Microsoft.Office.Core.MsoEncoding" /> Aufzählungswert sein. Der Standardwert ist die Codepage des Systems.</param>
+        <param name="Visible"><b>True</b>, wenn das Dokument in einem sichtbaren Fenster geöffnet wird. Der Standardwert ist <b>True</b>.</param>
+        <param name="OpenAndRepair"><b>True</b>, um das Dokument zu reparieren und so dessen Beschädigung zu vermeiden</param>
+        <param name="DocumentDirection">Bestimmt den horizontalen Textfluss in einem Dokument. Kann eine beliebige gültige <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> Konstante sein. Der Standardwert ist <see cref="F:Microsoft.Office.Interop.Word.WdDocumentDirection.wdLeftToRight" />.</param>
+        <param name="NoEncodingDialog"><b>True</b>, um die Anzeige des Dialogfelds "Codierung" zu übergehen, das in Word angezeigt wird, wenn die Textcodierung nicht erkannt wird. Der Standardwert ist <b>False</b>.</param>
         <param name="XMLTransform">Gibt die zu verwendende Transformierung an</param>
-        <summary>Öffnet das angegebene Dokument und fügt es an die <see cref="T:Microsoft.Office.Interop.Word.Documents" /> Auflistung.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word._Document" />
-        </returns>
+        <summary>Öffnet das angegebene Dokument und fügt es der <see cref="T:Microsoft.Office.Interop.Word.Documents" /> Auflistung hinzu.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word._Document" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -733,13 +702,11 @@
         <Parameter Name="OriginalFormat" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NoPrompt">Optionales- <b>Objekt</b>. <b>True</b> , wenn Microsoft Word automatisch speichern alle Dokumente. <b>False</b> , wenn den Benutzer aufgefordert, jedes Dokument zu speichern, die seit dem letzten Speichern geändert.</param>
-        <param name="OriginalFormat">Optionales- <b>Objekt</b>. Gibt an, wie die Dokumente gespeichert werden sollen. Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" />Konstanten.</param>
+        <param name="NoPrompt">Optionales <b>Objekt</b>. <b>True</b> , wenn Microsoft Word alle Dokumente automatisch speichern möchten; <b>False</b> , wenn Word den Benutzer auffordern soll, jedes Dokument zu speichern, das seit dem letzten Speichern geändert wurde.</param>
+        <param name="OriginalFormat">Optionales <b>Objekt</b>. Gibt an, wie die Dokumente gespeichert werden. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" />Konstanten sein.</param>
         <summary>Speichert alle Dokumente in der <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> Auflistung.</summary>
-        <remarks>
-          <para>Wenn ein Dokument noch nicht gespeichert wurde, fordert das Dialogfeld Speichern unter den Benutzer für einen Dateinamen ein.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn ein Dokument noch nicht gespeichert wurde, wird der Benutzer im Dialogfeld Speichern unter aufgefordert, einen Dateinamen einzugeben.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

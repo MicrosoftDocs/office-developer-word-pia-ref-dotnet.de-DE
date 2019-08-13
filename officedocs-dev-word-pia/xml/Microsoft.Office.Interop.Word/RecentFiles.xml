@@ -1,13 +1,5 @@
 <Type Name="RecentFiles" FullName="Microsoft.Office.Interop.Word.RecentFiles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="68c5a0e1fbcd245eba8883440686f818351a23f1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670153" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dbecbe85386c489b7ea85c8fdd7d013d03d7c878" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144113" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFiles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RecentFiles" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFiles&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.RecentFile" /> -Objekten, die die Dateien darstellt, die zuletzt verwendet wurden. Am unteren Rand des Menüs Datei werden die Elemente in der <b>RecentFiles</b> -Auflistung angezeigt.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.RecentFiles" /> Eigenschaft, um der <b>RecentFiles</b> -Auflistung zurückzugeben.</para>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.RecentFile" /> Objekten, die die zuletzt verwendeten Dateien darstellt. Die Elemente in der <b>RecentFiles</b> -Auflistung werden am unteren Rand des Menüs Datei angezeigt.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.RecentFiles" /> die-Eigenschaft, um die <b>RecentFiles</b> -Auflistung zurückzugeben.</para>
       <para>Verwenden Sie die Add-Methode, um der <b>RecentFiles</b> -Auflistung eine Datei hinzuzufügen.</para>
-      <para>Verwendung <b>RecentFiles</b>(<paramref name="index" />), wobei <paramref name="index" /> wird die Indexzahl darstellt, um ein einzelnes <b>RecentFile</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Datei im Menü Datei.</para>
-      <para>Der <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> und <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Methoden umfassen eine <paramref name="AddToRecentFiles" /> Argument, das steuert, ob eine Datei Liste der zuletzt verwendeten Dateien hinzugefügt wird, wenn die Datei geöffnet oder gespeichert wird.</para>
-      <para />
-    </remarks>
+      <para>Verwenden <b></b>Sie RecentFiles<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, <b></b> um ein einzelnes recentdatei-Objekt zurückzugeben. Die Indexnummer stellt die Position der Datei im Menü Datei dar.</para>
+      <para>Die <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Methoden <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> und enthalten ein <paramref name="AddToRecentFiles" /> Argument, das steuert, ob eine Datei zur Liste der zuletzt verwendeten Dateien hinzugefügt wird, wenn die Datei geöffnet oder gespeichert wird.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,10 +53,9 @@
         <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>Objekt</b>erforderlich. Das Dokument hinzuzufügende zur Liste der zuletzt verwendeten Dateien. Sie können dieses Argument angeben, mit der Zeichenfolgename für das Dokument oder eine <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt.</param>
-        <param name="ReadOnly">Optionales- <b>Objekt</b>. <b>True</b>, wenn das Dokument mit einem Schreibschutz versehen werden soll.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.RecentFile" /> -Objekt, das eine Datei zur Liste der zuletzt hinzugefügten stellt verwendete Dateien.</summary>
+        <param name="Document">Erforderliches <b>Objekt</b>. Das Dokument, das Sie der Liste der zuletzt verwendeten Dateien hinzufügen möchten. Sie können dieses Argument angeben, indem Sie entweder den Zeichenfolgennamen für das Dokument <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder ein Objekt verwenden.</param>
+        <param name="ReadOnly">Optionales <b>Objekt</b>. <b>True</b>, wenn das Dokument mit einem Schreibschutz versehen werden soll.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.RecentFile" /> Objekt zurück, das eine Datei darstellt, die der Liste der zuletzt verwendeten Dateien hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,11 +141,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +204,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -249,7 +236,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt die maximale Anzahl der zuletzt geöffneten Dateien, die angezeigt werden, können Sie im Menü Datei. Eine Zahl zwischen 0 (null) bis 9 kann sein.</summary>
+        <summary>Gibt die maximale Anzahl der zuletzt geöffneten Dateien zurück, die im Menü Datei angezeigt werden können, oder legt sie fest. Dies kann eine Zahl von 0 (null) bis 9 sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

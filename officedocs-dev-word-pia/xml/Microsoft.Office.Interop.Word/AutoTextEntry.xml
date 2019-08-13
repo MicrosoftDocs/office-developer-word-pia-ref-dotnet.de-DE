@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntry" FullName="Microsoft.Office.Interop.Word.AutoTextEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ec70f5beca361e5203612870f616a3ba39891001" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670689" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0b55f0ca8e547da196123bbcdcfdca77303d0dfb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146283" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntry" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt einen einzelnen AutoText-Eintrag.</summary>
-    <remarks>
-      <para>Das <b>AutoTextEntry</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> Auflistung. Die <b>AutoTextEntries</b> -Auflistung enthält alle AutoText-Einträge in der angegebenen Vorlage. Die Einträge werden auf der Registerkarte AutoText im Dialogfeld AutoKorrektur (Menü Extras) aufgelistet.</para>
-      <para>Verwendung <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des AutoText-Eintrag oder die Indexzahl darstellt, um ein einzelnes <b>AutoTextEntry</b> -Objekt zurückzugeben. Die Rechtschreibung (jedoch nicht unbedingt die Groß-/Kleinschreibung) des Namens, müssen exakt übereinstimmen, wie er auf der Registerkarte AutoText im Dialogfeld AutoKorrektur angezeigt wird.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> -Methode, um ein <b>AutoTextEntry</b> -Objekt zur <b>AutoTextEntries</b> -Auflistung hinzufügen.</para>
-      <para />
-    </remarks>
+    <summary>Stellt einen einzelnen AutoText-Eintrag dar.</summary>
+    <remarks><para>Das <b>AutoTextEntry</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> Auflistung. Die <b>AutoTextEntries</b>-Auflistung enthält alle AutoText-Einträge in der angegebenen Vorlage. Die Einträge werden auf der Registerkarte AutoText im Dialogfeld AutoKorrektur (Menü Extras) aufgeführt.</para>
+      <para>Verwenden <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />Sie<paramref name="index" />(), <paramref name="index" /> wobei der Name des AutoText-Eintrags oder die Indexnummer verwendet wird, um ein einzelnes <b>AutoTextEntry</b> -Objekt zurückzugeben. Sie müssen genau mit der Rechtschreibung (aber nicht unbedingt der Groß-/Kleinschreibung) des Namens übereinstimmen, wie er auf der Registerkarte AutoText im Dialogfeld AutoKorrektur angezeigt wird.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> die-Methode, um der <b>AutoTextEntries</b> -Auflistung ein <b>AutoTextEntry</b> -Objekt hinzuzufügen.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,13 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -143,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Position eines Elements in einer Auflistung darstellt.</summary>
+        <summary>Gibt einen Wert zurück, der die Position eines Elements in einer Auflistung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,13 +160,11 @@
       </Parameters>
       <Docs>
         <param name="Where">Die Stelle, an der der AutoText-Eintrag eingefügt werden soll.</param>
-        <param name="RichText">Ob den AutoText-Eintrag mit seiner ursprünglichen Formatierung eingefügt werden soll.</param>
-        <summary>Fügt den AutoText-Eintrag im angegebenen Bereich ein.</summary>
+        <param name="RichText">Gibt an, ob der AutoText-Eintrag mit seiner ursprünglichen Formatierung eingefügt werden soll.</param>
+        <summary>Fügt im angegebenen Bereich den AutoText-Eintrag ein.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Wenn Sie nicht den Bereich ersetzen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" /> Methode, bevor Sie diese Methode verwenden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie den Bereich nicht ersetzen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" /> -Methode, bevor Sie diese Methode verwenden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -207,7 +193,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</summary>
+        <summary>Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,7 +221,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,7 +249,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen der Formatvorlage auf der angegebenen AutoText-Eintrag angewendet.</summary>
+        <summary>Gibt den Namen der Formatvorlage zurück, die dem angegebenen AutoText-Eintrag zugewiesen wurde.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,12 +280,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück oder legt den Wert des AutoText-Eintrags.</summary>
+        <summary>Gibt den Wert des AutoText-Eintrags zurück oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Für <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> -Objekte, die <b>Value</b> -Eigenschaft gibt nur die ersten 255 Zeichen des Objektwerts zurück. Festlegen der <b>Value</b> -Eigenschaft auf einen Wert von mehr als 255 Zeichen generiert einen Fehler.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> Objekten gibt die <b>value</b> -Eigenschaft nur die ersten 255 Zeichen des Werts des Objekts zurück. Wenn Sie die <b>value</b> -Eigenschaft auf einen Wert festlegen, der länger als 255 Zeichen ist, wird ein Fehler generiert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

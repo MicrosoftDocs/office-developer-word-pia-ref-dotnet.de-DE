@@ -1,13 +1,5 @@
 <Type Name="ContentControlListEntries" FullName="Microsoft.Office.Interop.Word.ContentControlListEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a961b46486a0ec821d76f588800bb27c7ac81740" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669724" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2a65daa51ebf37c0bb3b93d5a9f9094e1b8a6931" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147284" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntries&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Die <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> -Auflistung enthält <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> Inhaltssteuerelement-Objekten, die die Elemente in einem Dropdown-Listenfeld oder einem Kombinationsfeld Feld darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> -Methode, um einen Eintrag im Feld ein Dropdown-Listenfeld oder einem Kombinationsfeld hinzuzufügen. </para>
-      <para>Verwenden die <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> Methode oder die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> -Eigenschaft des ein <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> -Objekt, das ein einzelnes Listenelement in einer Auflistung zuzugreifen.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> -Methode, um alle Elemente aus einem Dropdown-Listenfeld oder einem Kombinationsfeld entfernen. Im folgende Beispiel werden alle Elemente aus dem ersten Inhaltssteuerelement im aktiven Dokument gelöscht.</para>
-      <para />
-    </remarks>
+    <summary>Die <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> Auflistung enthält <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> Objekte, die die Elemente in einem Dropdownlisten-oder Kombinationsfeld-Inhaltssteuerelement darstellen.</summary>
+    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> die-Methode, um ein Element zu einer Dropdownliste oder einem Kombinationsfeld hinzuzufügen. </para>
+      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> die-Methode <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> oder die- <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Eigenschaft eines Objekts, um auf ein einzelnes Listenelement in einer Auflistung zuzugreifen. </para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> die-Methode, um alle Elemente aus einer Dropdownliste oder einem Kombinationsfeld zu entfernen. Im folgenden Beispiel werden alle Elemente aus dem ersten Inhaltssteuerelement im aktiven Dokument gelöscht.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,17 +53,13 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Text">Gibt den Anzeigetext für das Listenelement an. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> -Eigenschaft für ein <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> Objekt.</param>
-        <param name="Value">Gibt den Wert des Listenelements.  Entspricht der <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> -Eigenschaft für ein <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> Objekt. Wenn Length angegeben, die <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> -Eigenschaft ist gleich der <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> Eigenschaft.</param>
+        <param name="Text">Gibt den Anzeigetext für den Listeneintrag an. Entspricht der <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> -Eigenschaft für ein <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> Objekt.</param>
+        <param name="Value">Gibt den Wert des Listeneintrags an.  Entspricht der <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> -Eigenschaft für ein <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> Objekt. Wenn kein Wert angegeben <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> ist, ist die Eigenschaft <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> gleich der-Eigenschaft.</param>
         <param name="Index">Gibt die Ordnungsposition des neuen Elements in der Liste an. Wenn ein Element an der angegebenen Position vorhanden ist, wird das angegebene Element in der Liste nach unten verschoben. Wird es weggelassen, dann wird das neue Element am Ende der Liste hinzugefügt.</param>
-        <summary>Fügt ein neues Listenelement in ein Dropdown-Listenfeld oder einem Kombinationsfeld-Inhaltssteuerelement und liefert eine <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> Objekt.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
-        </returns>
-        <remarks>
-          <para>Listeneinträge müssen eindeutige Anzeigenamen aufweisen.  Versucht, ein Listenelement hinzuzufügen, die bereits vorhanden ist, löst einen Laufzeitfehler aus.</para>
-          <para />
-        </remarks>
+        <summary>Fügt einem Dropdownlisten-oder Kombinationsfeld-Inhaltssteuerelement ein neues Listenelement hinzu und <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> gibt ein Objekt zurück.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></returns>
+        <remarks><para>Listeneinträge müssen eindeutige Anzeigenamen aufweisen.  Bei dem Versuch, ein bereits vorhandenes Listenelement hinzuzufügen, wird ein Laufzeitfehler angezeigt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -99,10 +85,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +111,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-		Löscht alle Elemente aus dem Dropdownlisten- oder Kombinationsfeld-Inhaltssteuerelement.</summary>
+        <summary>Löscht alle Elemente aus dem Dropdownlisten- oder Kombinationsfeld-Inhaltssteuerelement.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,10 +138,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> Auflistung. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Gibt die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> Auflistung zurück. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,16 +166,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde. Schreibgeschützt.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+        <summary>Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde. Schreibgeschützt.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -257,9 +234,7 @@
       <Docs>
         <param name="Index">Gibt die Ordnungsposition des Objekts in der Auflistung zurück.</param>
         <summary>Gibt das angegebene Element in der Auflistung zurück.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,10 +261,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> Objekt.</summary>
-        <value>
-          <b>Objekt</b>
-        </value>
+        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> angegebenen Objekts zurück.</summary>
+        <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

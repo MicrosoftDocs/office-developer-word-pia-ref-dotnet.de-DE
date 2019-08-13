@@ -1,13 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Word.CalloutFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c04c571668cd9e557fbce92649a5a632d6c743de" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669458" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalloutFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e225a3d98b4c368d5c9c0b464dfefb3fd25e89a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147324" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enthält Eigenschaften und Methoden, die für Legenden mit Linien gelten.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> Eigenschaft, um ein <b>CalloutFormat</b> -Objekt zurückzugeben.</para>
-      <para />
-    </remarks>
+    <summary>Enthält Eigenschaften und Methoden, die Legenden mit Linien zugewiesen werden.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> die-Eigenschaft, um ein <b>CalloutFormat</b> -Objekt zurückzugeben. </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accent">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob eine vertikale Markierungsleiste den Legendentext von der Legendenlinie trennt.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob eine vertikale Akzentleiste den Legendentext von der Legendenzeile trennt, oder legt diesen Wert fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,13 +80,11 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutAngleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das den Winkel der Legendenlinie angibt.</summary>
+        <summary>Gibt einen Wert zurück, der den Winkel der Legendenposition angibt, oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn die Legendenlinie mehr als eine Linienabschnitts enthält, wird diese Eigenschaft gibt oder wird der Winkel des Segments, das ist die am weitesten Textfeld der Legende.</para>
-          <para>Wenn Sie den Wert dieser Eigenschaft auf einen anderen Wert als <b>MsoCalloutAngleAutomatic</b>festlegen, behält die Legendenlinie einen festen Winkel bei, wenn Sie die Legende ziehen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Enthält die Legendenlinie mehrere Linienabschnitte, gibt diese Eigenschaft den Winkel des Abschnitts zurück, der am weitesten vom Legendentextfeld entfernt ist, oder legt diesen Winkel fest.</para>
+          <para>Wenn Sie den Wert dieser Eigenschaft auf einen anderen Wert als <b>MsoCalloutAngleAutomatic</b> festlegen, behält die Legendenlinie einen festen Winkel bei, wenn Sie die Legende ziehen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +110,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,13 +147,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob die Stelle, wo die Legendenlinie am Legendentextfeld ansetzt, ändert, je nachdem, ob der Ursprung der Legendenlinie (wohin die Legende zeigt) links oder rechts vom Textfeld Legende.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines Werts, der angibt, ob sich die Position, an der die Legendenlinie dem Legendentextfeld zugeordnet wird, in Abhängigkeit davon ändert, ob sich der Ursprung der Legendenlinie (auf die die Legende zeigt) Links oder rechts vom Legendentextfeld befindet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn der Wert dieser Eigenschaft auf <b>True</b>festgelegt ist, wird der Wert (der vertikale Abstand vom Rand des Legendentextfelds an der Stelle, wo die Legendenlinie) gemessen vom oberen Rand der im Textfeld wird das Textfeld rechts vom Ursprung , und des Textfelds gemessen, wenn das Textfeld links vom Ursprung befindet. Wenn der Wert dieser Eigenschaft auf <b>False</b>festgelegt ist, wird der Wert von im oberen Bereich des Textfelds, unabhängig von den relativen Positionen im Textfeld und Ursprung gemessen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> -Methode, um den Wert festzulegen, und Verwenden der <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> -Eigenschaft auf den Drop-Wert zurück.</para>
-          <para>Durch Festlegen dieser Eigenschaft wirkt sich auf eine Legende nur dann, wenn sie einen explizit festgelegten Wert drop – d. h., wenn der Wert der der <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /><b>-Eigenschaft ist</b>. In der Standardeinstellung Legenden explizit festgelegt haben Drop Werte Wenn sie erstellt werden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der Wert dieser Eigenschaft auf <b>true</b>festgelegt ist, wird der Wert (der vertikale Abstand zwischen dem Rand des Legendentextfelds und der Stelle, an der die Legendenlinie angefügt wird) vom oberen Rand des Textfelds gemessen, wenn sich das Textfeld rechts vom Ursprung befindet. und wird am unteren Rand des Textfelds gemessen, wenn sich das Textfeld links vom Ursprung befindet. Besitzt diese Eigenschaft den Wert <b>False</b>False, wird der Ansatzwert immer von der Oberkante des Textfelds gemessen, unabhängig davon wie Textfeld und Ursprung zueinander liegen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> die-Methode, um den Drop-Wert fest <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> zulegen, und verwenden Sie die-Eigenschaft, um den Wert zurückzugeben.</para>
+          <para>Das Festlegen dieser Eigenschaft wirkt sich nur dann auf eine Legende aus, wenn Sie einen explizit festgelegten Drop-Wert <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> aufweist, also, wenn der Wert der Eigenschaft <b>msoCalloutDropCustom</b>ist. Beim Erstellen von Legenden werden diesen standardmäßig explizit festgelegte Ansatzwerte zugewiesen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoLength">
@@ -191,12 +177,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der angibt, ob die Länge der Legendenlinie automatisch festgelegt.</summary>
+        <summary>Gibt einen Wert zurück, der angibt, ob die Länge der Legenden Leiste automatisch festgelegt werden soll.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> -Methode, um diese Eigenschaft auf <b>MsoTrue</b>festlegen, und verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> -Methode, um diese Eigenschaft auf <b>MsoFalse</b>festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> die-Methode, um diese Eigenschaft auf <b>msoTrue</b>festzulegen <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> , und verwenden Sie die-Methode, um diese Eigenschaft auf <b>msoFalse</b>festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticLength">
@@ -223,12 +207,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gibt an, dass der erste Abschnitt der Legendenlinie (der mit dem Textlegendenfeld verbundene Abschnitt) automatisch skaliert wird, wenn die Legende verschoben wird.</summary>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> Methode, um anzugeben, dass das erste Segment der Legendenlinie die feste Länge beibehält, die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> Eigenschaft, wenn die Legende verschoben wird. Gilt nur für Legenden, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
-          <para>Anwenden dieser Methode wird die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> -Eigenschaft auf <b>True</b>.</para>
-          <para />
-        </remarks>
+        <summary>Gibt an, dass das erste Segment der Legendenlinie (das Segment, das Text am Legendentextfeld ansetzt) automatisch skaliert wird, wenn die Legende verschoben wird.</summary>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> die-Methode, um anzugeben, dass das erste Segment der Legendenlinie die feste Länge behält <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> , die von der-Eigenschaft zurückgegeben wird, wenn die Legende verschoben wird. Diese Eigenschaft kann nur für Legenden angewendet werden, deren Linien aus mehr als einem Segment bestehen (Linien der Typen <b>msoCalloutThree</b> und <b>msoCalloutFour</b>).</para>
+          <para>Durch Anwenden dieser Methode wird <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> die Eigenschaft auf <b>true</b>festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -257,7 +239,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob der Text in der angegebenen Legende von einem Rahmen umgeben ist.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen eines Werts, der angibt, ob der Text in der angegebenen Legende von einem Rahmen umgeben ist.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,13 +267,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <summary>Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDrop">
@@ -319,11 +299,9 @@
       <Docs>
         <param name="Drop">Der Abstand in Punkten.</param>
         <summary>Legt den vertikalen Abstand (in Punkt) vom Rand des Textbereichs und der Stelle, an die Legendenlinie mit dem Textfeld verbunden.</summary>
-        <remarks>
-          <para>Dieser Abstand wird vom oberen des Textfelds gemessen, es sei denn, die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> -Eigenschaft auf <b>True</b> festgelegt ist und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, die die Legende zeigt), in dem Fall der Abstand vom unteren gemessen wird des Textfelds.</para>
-          <para>Wenn das <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> -Methode zuvor zum Festlegen des Ansatzes für die angegebene Legende, rufen Sie die <b>PresetDrop</b> -Methode erneut mit dem <b>MsoCalloutDropCustom</b> -Argument vor der Nutzung der <b>CustomDrop</b> -Methode, sodass das benutzerdefinierte Einstellung drop verwendet wurde wirksam.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dieser Abstand wird vom oberen Rand des Textfelds gemessen, es <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> sei denn, die Eigenschaft ist auf <b>true</b> festgelegt, und das Textfeld befindet sich links vom Ursprung der Legendenlinie (die Stelle, auf die die Legende zeigt), in welchem Fall der Abstand von unten gemessen wird. des Textfeldes.</para>
+          <para>Wenn die <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> Methode zuvor zum Festlegen des Abfalls für die angegebene Legende verwendet wurde, rufen Sie die <b>PresetDrop</b> -Methode erneut mit dem <b>msoCalloutDropCustom</b> -Argument auf, bevor Sie die <b>CustomDrop</b> -Methode verwenden, sodass die benutzerdefinierte Ablage Einstellung Effekt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLength">
@@ -350,12 +328,10 @@
       </Parameters>
       <Docs>
         <param name="Length">Die in Punkten gemessene Länge des ersten Legendensegments.</param>
-        <summary>Gibt an, dass der erste Abschnitt der Legendenlinie (der mit dem Textlegendenfeld verbundene Abschnitt) eine feste Länge beibehält, wenn die Legende verschoben wird.</summary>
-        <remarks>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> -Methode, um anzugeben, dass das erste Segment der Legendenlinie automatisch skaliert wird, wenn die Legende verschoben wird. Gilt nur für Legenden, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
-          <para>Anwenden dieser Methode wird die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> -Eigenschaft auf <b>False</b> festgelegt und die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> Eigenschaft auf den angegebenen Wert für die <paramref name="Length" /> Argument.</para>
-          <para />
-        </remarks>
+        <summary>Legt fest, dass der erste Abschnitt der Legendenlinie (der Abschnitt, der dem Textfeld der Legende zugeordnet ist) eine feste Länge beibehält, wenn die Legende verschoben wird.</summary>
+        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> die-Methode, um anzugeben, dass das erste Segment der Legenden Achse automatisch skaliert wird, wenn die Legende verschoben wird. Diese Eigenschaft kann nur für Legenden angewendet werden, deren Linien aus mehr als einem Segment bestehen (Linien der Typen <b>msoCalloutThree</b> und <b>msoCalloutFour</b>).</para>
+          <para>Durch Anwenden dieser Methode wird <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> die Eigenschaft auf <b>false</b> festgelegt <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> , und die Eigenschaft wird auf den <paramref name="Length" /> für das Argument angegebenen Wert festgelegt.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -383,12 +359,10 @@
       <Docs>
         <summary>Bei Legenden mit einem explizit festgelegten Ansatzwert gibt diese Eigenschaft den vertikalen Abstand (in Punkt) zwischen dem Rand des umgebenden Felds für den Text und der Position zurück, an der die Legendenlinie mit dem Textfeld verbunden ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Dieser Abstand wird vom oberen des Textfelds gemessen, es sei denn, die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> -Eigenschaft auf <b>True</b> festgelegt ist und das Textfeld befindet sich links vom Ursprung der Legendenlinie (der Stelle, die die Legende zeigt), in dem Fall der Abstand vom unteren gemessen wird des Textfelds.</para>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> -Methode, um den Wert dieser Eigenschaft festzulegen.</para>
-          <para>Der Wert dieser Eigenschaft gibt die Position der die Legendenlinie mit dem Textfeld exakt nur dann, wenn die Legende einen explizit festgelegten Wert drop – d. h., wenn der Wert der der <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /><b>-Eigenschaft ist</b>. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> -Methode mit dem Argument <b>msoCalloutCustomDrop legen</b> die <b>DropType</b> -Eigenschaft auf <b>MsoCalloutDropCustom</b>festgelegt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dieser Abstand wird vom oberen Rand des Textfelds gemessen, es <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> sei denn, die Eigenschaft ist auf <b>true</b> festgelegt, und das Textfeld befindet sich links vom Ursprung der Legendenlinie (die Stelle, auf die die Legende zeigt), in welchem Fall der Abstand von unten gemessen wird. des Textfeldes.</para>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> die-Methode, um den Wert dieser Eigenschaft festzulegen.</para>
+          <para>Der Wert dieser Eigenschaft gibt die Position der Legendenzeile-Anlage zum Textfeld nur dann genau wieder, wenn die Legende einen explizit festgelegten dropwert aufweist, also, wenn der <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> Wert der Eigenschaft <b>msoCalloutDropCustom</b>ist. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> die-Methode mit einem <b>msoCalloutCustomDrop</b> -Argument, um die <b>DropType</b> -Eigenschaft auf <b>msoCalloutDropCustom</b>festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropType">
@@ -416,11 +390,9 @@
       <Docs>
         <summary>Gibt einen Wert zurück, der die Position angibt, an der die Legendenlinie mit dem Legendentextfeld verbunden ist.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn der Legendentyp Drop <b>MsoCalloutDropCustom</b>, die Werte von der <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> und <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> Eigenschaften und die relativen Positionen des Legendentextfelds und der Legendenlinie (der Stelle, die die Legende zeigt) werden verwendet, um zu bestimmen, wo die Legende mit dem Textfeld verbunden.</para>
-          <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> -Methode, um den Wert dieser Eigenschaft festzulegen.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn der Spaltentyp <b>msoCalloutDropCustom</b>ist, werden die Werte der Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> and <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> sowie die relativen Positionen des Legendentextfelds und des Legendenlinie Ursprung (die Stelle, an der die Legende zeigt) verwendet, um zu bestimmen, wo die Legende Zeile wird an das Textfeld angefügt.</para>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> die-Methode, um den Wert dieser Eigenschaft festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Gap">
@@ -449,7 +421,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das angibt, den horizontalen Abstand (in Punkt) zwischen dem Ende der Legendenlinie und den Text umgebenden Feld.</summary>
+        <summary>Gibt einen Wert zurück, der den horizontalen Abstand (in Punkt) zwischen dem Ende der Legendenlinie und dem Text Begrenzungsfeld angibt, oder legt diesen fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -477,13 +449,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> -Eigenschaft der angegebenen Legende auf <b>False</b>festgelegt ist, die <b>Length</b> -Eigenschaft gibt die Länge (in Punkt) des ersten Abschnitts der Legendenlinie (das Segment, das am Legendentextfeld ansetzt Text) zurück.</summary>
+        <summary>Wenn die <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> Eigenschaft der angegebenen Legende auf " <b>false</b>" festgelegt ist, gibt die <b>length</b> -Eigenschaft die Länge (in Punkt) des ersten Segments der Legendenzeile (das Segment, das mit dem Text Beschriftungsfeld verbunden ist).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Gilt nur für Legenden, deren Linien aus mehr als einem Segment (Typen <b>MsoCalloutThree</b> und <b>MsoCalloutFour</b>) bestehen.</para>
-          <para>Verwenden die <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> -Methode zum Festlegen des Werts dieser Eigenschaft für die <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> -Objekt.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft kann nur für Legenden angewendet werden, deren Linien aus mehr als einem Segment bestehen (Linien der Typen <b>msoCalloutThree</b> und <b>msoCalloutFour</b>).</para>
+          <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> die-Methode, um den Wert dieser Eigenschaft für <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> das Objekt festzulegen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -509,7 +479,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des angegebenen Objekts zurück.</summary>
+        <summary>Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,12 +507,10 @@
         <Parameter Name="DropType" Type="Microsoft.Office.Core.MsoCalloutDropType" />
       </Parameters>
       <Docs>
-        <param name="DropType">Die Ausgangsposition der Legendenlinie relativ zu dem den Text umgebenden Feld.</param>
+        <param name="DropType">Die Anfangsposition der Legendenlinie relativ zu dem Begrenzungsfeld des Texts.</param>
         <summary>Gibt an, ob die Legendenlinie im Legendentextfeld oben, unten oder in der Mitte angesetzt wird, oder ob sie an einen Punkt in einem bestimmten Abstand vom oberen oder unteren Rand des Textfelds positioniert wird.</summary>
-        <remarks>
-          <para>Wenn Sie <b>MsoCalloutDropCustom</b> für angeben der <paramref name="DropType" /> -Parameter, der Werte von der <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> und <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> Eigenschaften und die relativen Positionen des Legendentextfelds und der Legendenlinie (der Stelle, die die Legende zeigt) werden verwendet, um zu bestimmen in die Legendenlinie mit dem Textfeld verbunden.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn Sie <b>msoCalloutDropCustom</b> für den <paramref name="DropType" /> Parameter angeben, werden die Werte der <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> and sowie die relativen Positionen des Legendentextfelds und des Legendenlinie Ursprung (die Stelle, an der die Legende zeigt) verwendet, um zu bestimmen wobei die Legendenzeile an das Textfeld angefügt wird.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -571,7 +539,7 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen ein Werts, das den Legendentyp angibt.</summary>
+        <summary>Zurückgeben oder Festlegen eines Werts, der den Legendentyp angibt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
