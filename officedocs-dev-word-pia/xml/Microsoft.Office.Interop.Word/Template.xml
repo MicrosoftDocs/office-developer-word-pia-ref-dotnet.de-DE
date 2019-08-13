@@ -1,13 +1,5 @@
 <Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="534019c643dbd50c521e73ede295686eb260edbc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669424" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Template" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ab6c90166c80860b2142f0d365e15d418af64385" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143854" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
   <TypeSignature Language="VB.NET" Value="Public Interface Template" />
@@ -26,41 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="6a75d-101">Stellt eine Dokumentvorlage dar.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="6a75d-101">Represents a document template.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="6a75d-102">
-        <para>
-          <b>Template</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.Templates" /> Auflistung. Die <b>Templates</b> -Auflistung enthält alle verfügbaren <b>Template</b> -Objekte.</para> Verwenden von <b>Vorlagen</b><para>(<paramref name="index" />), wobei <paramref name="index" /> ist der Vorlagenname oder die Indexzahl darstellt, um ein einzelnes <b>Template</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position der Vorlage in der <b>Templates</b> -Auflistung.</para><para>Der <b>Add</b> -Methode ist nicht verfügbar für der <b>Templates</b> -Auflistung. Sie können stattdessen eine Vorlage auf der <b>Templates</b> -Auflistung hinzufügen, indem jeder der folgenden Schritte:</para><list type="bullet"><item><para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.Documents" /> -Auflistung, um ein Dokument öffnen, basierend auf einer Vorlage oder eine Vorlage</para></item><item><para>mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />-Methode mit der <b>Documents</b> -Auflistung zum Öffnen eines neuen Dokuments basierend auf einer Vorlage</para></item><item><para>verwenden die <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode mit der <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> -Auflistung, um eine globale Vorlage laden</para></item><item><para>verwenden die <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> -Eigenschaft mit der <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt, das eine Vorlage mit einem Dokument verbinden</para></item></list><para>verwenden die <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> Eigenschaft, um ein Template-Objekt zurückzugeben, das auf der Vorlage Normal.dot verweist. Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> Eigenschaft für das Zurückgeben der Vorlage mit dem angegebenen Dokument verbundenen.</para><para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> -Eigenschaft zum Zurückgeben oder Festlegen des Orts für Benutzer oder Arbeitsgruppen-Vorlagen (d. h., in den Ordner, in dem diese Vorlagen gespeichert werden sollen).</para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="6a75d-102">
-          <para>The <b>Template</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Templates" /> collection. The <b>Templates</b> collection includes all the available <b>Template</b> objects.</para>
-          <para>Use <b>Templates</b>(<paramref name="index" />), where <paramref name="index" /> is the template name or the index number, to return a single <b>Template</b> object. The index number represents the position of the template in the <b>Templates</b> collection.</para>
-          <para>The <b>Add</b> method isn't available for the <b>Templates</b> collection. Instead, you can add a template to the <b>Templates</b> collection by doing any of the following:</para>
-          <list type="bullet">
-            <item>
-              <para>Using the <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection to open a document based on a template or a template</para>
-            </item>
-            <item>
-              <para>Using the <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> method with the <b>Documents</b> collection to open a new document based on a template</para>
-            </item>
-            <item>
-              <para>Using the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection to load a global template</para>
-            </item>
-            <item>
-              <para>Using the <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> property with the <see cref="T:Microsoft.Office.Interop.Word.Document" /> object to attach a template to a document</para>
-            </item>
-          </list>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> property to return a template object that refers to the Normal template. Use the <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> property to return the template attached to the specified document.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> property to return or set the location of user or workgroup templates (that is, the folder where you want to store these templates).</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="5542a-101">Stellt eine Dokumentvorlage dar.</span><span class="sxs-lookup"><span data-stu-id="5542a-101">Represents a document template.</span></span></summary>
+    <remarks><para><span data-ttu-id="5542a-102">Das <b>Template</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Templates" /> Auflistung.</span><span class="sxs-lookup"><span data-stu-id="5542a-102">The <b>Template</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Templates" /> collection.</span></span> <span data-ttu-id="5542a-103">Die <b>Templates</b>-Auflistung enthält alle verfügbaren <b>Template</b>-Objekte.</span><span class="sxs-lookup"><span data-stu-id="5542a-103">The <b>Templates</b> collection includes all the available <b>Template</b> objects.</span></span></para>
+      <para><span data-ttu-id="5542a-104">Verwenden <b></b>Sie Vorlagen<paramref name="index" />(), <paramref name="index" /> wobei der Name der Vorlage oder die Indexnummer ist, um ein einzelnes <b>Template</b> -Objekt zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="5542a-104">Use <b>Templates</b>(<paramref name="index" />), where <paramref name="index" /> is the template name or the index number, to return a single <b>Template</b> object.</span></span> <span data-ttu-id="5542a-105">Die Indexnummer stellt die Position der Vorlage in der <b>Templates</b>-Auflistung dar.</span><span class="sxs-lookup"><span data-stu-id="5542a-105">The index number represents the position of the template in the <b>Templates</b> collection.</span></span></para>
+      <para><span data-ttu-id="5542a-106">Die <b>Add</b>-Methode ist für die <b>Templates</b>-Auflistung nicht verfügbar.</span><span class="sxs-lookup"><span data-stu-id="5542a-106">The <b>Add</b> method isn't available for the <b>Templates</b> collection.</span></span> <span data-ttu-id="5542a-107">Sie haben stattdessen folgende Möglichkeiten, der <b>Templates</b>-Auflistung eine Vorlage hinzuzufügen:</span><span class="sxs-lookup"><span data-stu-id="5542a-107">Instead, you can add a template to the <b>Templates</b> collection by doing any of the following:</span></span></para>
+      <list type="bullet">
+        <item>
+          <para><span data-ttu-id="5542a-108">Verwenden der <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit <see cref="T:Microsoft.Office.Interop.Word.Documents" /> der Auflistung zum Öffnen eines Dokuments basierend auf einer Vorlage oder Vorlage</span><span class="sxs-lookup"><span data-stu-id="5542a-108">Using the <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection to open a document based on a template or a template</span></span></para>
+        </item>
+        <item>
+          <para><span data-ttu-id="5542a-109">Verwenden der <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode mit <b></b> der Documents-Auflistung zum Öffnen eines neuen Dokuments basierend auf einer Vorlage</span><span class="sxs-lookup"><span data-stu-id="5542a-109">Using the <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> method with the <b>Documents</b> collection to open a new document based on a template</span></span></para>
+        </item>
+        <item>
+          <para><span data-ttu-id="5542a-110">Verwenden der <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> -Methode zusammen <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> mit der Auflistung zum Laden einer globalen Vorlage</span><span class="sxs-lookup"><span data-stu-id="5542a-110">Using the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection to load a global template</span></span></para>
+        </item>
+        <item>
+          <para><span data-ttu-id="5542a-111">Verwenden der <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> -Eigenschaft mit <see cref="T:Microsoft.Office.Interop.Word.Document" /> dem-Objekt zum Anfügen einer Vorlage an ein Dokument</span><span class="sxs-lookup"><span data-stu-id="5542a-111">Using the <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> property with the <see cref="T:Microsoft.Office.Interop.Word.Document" /> object to attach a template to a document</span></span></para>
+        </item>
+      </list>
+      <para><span data-ttu-id="5542a-112">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> die-Eigenschaft, um ein Template-Objekt zurückzugeben, das auf die normale Vorlage verweist.</span><span class="sxs-lookup"><span data-stu-id="5542a-112">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> property to return a template object that refers to the Normal template.</span></span> <span data-ttu-id="5542a-113">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> die-Eigenschaft, um die dem angegebenen Dokument zugeordnete Vorlage zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="5542a-113">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> property to return the template attached to the specified document.</span></span></para>
+      <para><span data-ttu-id="5542a-114">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> die-Eigenschaft, um den Speicherort der Benutzer-oder Arbeitsgruppenvorlagen (also des Ordners, in dem Sie diese Vorlagen speichern möchten) zurückzugeben oder festzulegen.</span><span class="sxs-lookup"><span data-stu-id="5542a-114">Use the <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> property to return or set the location of user or workgroup templates (that is, the folder where you want to store these templates).</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -86,12 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-103">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-115">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,12 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-104">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> -Auflistung, die alle AutoText-Einträge in der angegebenen Dokumentvorlage darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-104">Returns a <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> collection that represents all the AutoText entries in the specified template.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-116">Gibt eine <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> Auflistung zurück, die alle AutoText-Einträge in der angegebenen Vorlage darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> collection that represents all the AutoText entries in the specified template.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,19 +123,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-105">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> -Auflistung, die die Auflistung von Bausteineinträgen in einer Vorlage darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-105">Returns a  <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collection that represents the collection of building block entries in a template.</span>
-          </span>
-          <span data-ttu-id="6a75d-106">Schreibgeschützt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-106">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
-        </value>
+        <summary><span data-ttu-id="5542a-117">Gibt eine <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> Auflistung zurück, die die Auflistung der Baustein Einträge in einer Vorlage darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-117">Returns a  <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collection that represents the collection of building block entries in a template.</span></span> <span data-ttu-id="5542a-118">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="5542a-118">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,19 +151,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-107">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> -Auflistung, die die Auflistung von Bausteintypen darstellt, die in einer Vorlage enthalten sind.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-107">Returns a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection that represents the collection of building block types that are contained in a template.</span>
-          </span>
-          <span data-ttu-id="6a75d-108">Schreibgeschützt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-108">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />
-        </value>
+        <summary><span data-ttu-id="5542a-119">Gibt eine <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> Auflistung zurück, die die Auflistung von Bausteintypen darstellt, die in einer Vorlage enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="5542a-119">Returns a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection that represents the collection of building block types that are contained in a template.</span></span> <span data-ttu-id="5542a-120">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="5542a-120">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,29 +179,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-109">Gibt ein <see cref="T:Microsoft.Office.Core.DocumentProperties" /> -Auflistung, die alle integrierten Dokumenteigenschaften für das angegebene Dokument darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-109">Returns a <see cref="T:Microsoft.Office.Core.DocumentProperties" /> collection that represents all the built-in document properties for the specified document.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-121">Gibt eine <see cref="T:Microsoft.Office.Core.DocumentProperties" /> Auflistung zurück, die alle integrierten Dokumenteigenschaften für das angegebene Dokument darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-121">Returns a <see cref="T:Microsoft.Office.Core.DocumentProperties" /> collection that represents all the built-in document properties for the specified document.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-110">
-            <para>Zur Rückgabe eines einzelnen <see cref="T:Microsoft.Office.Core.DocumentProperty" /> verwenden Sie <b>BuiltinDocumentProperties</b>-Objekt, das eine bestimmte integrierte Dokumenteigenschaft darstellt (<paramref name="index" />), wobei <paramref name="index" /> ist ein <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> Konstante.</para>
-            <para>Wenn Microsoft Word nicht für eine der integrierten Dokumenteigenschaften kein Wert definieren beim Lesen der <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> -Eigenschaft für diese Dokumenteigenschaft einen Fehler generiert.</para>
-            <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> -Eigenschaft auf die Auflistung benutzerdefinierter Dokumenteigenschaften zurückzugeben.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-110">
-              <para>To return a single <see cref="T:Microsoft.Office.Core.DocumentProperty" /> object that represents a specific built-in document property, use <b>BuiltinDocumentProperties</b>(<paramref name="index" />), where <paramref name="index" /> is a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> constant.</para>
-              <para>If Microsoft Word doesn't define a value for one of the built-in document properties, reading the <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> property for that document property generates an error.</para>
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> property to return the collection of custom document properties.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-122">Wenn Sie ein einzelnes <see cref="T:Microsoft.Office.Core.DocumentProperty" /> Objekt zurückgeben möchten, das eine bestimmte integrierte Dokumenteigenschaft darstellt, verwenden<paramref name="index" />Sie <b>BuiltinDocumentProperties</b>( <paramref name="index" /> ), <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> wobei es sich um eine Konstante handelt.</span><span class="sxs-lookup"><span data-stu-id="5542a-122">To return a single <see cref="T:Microsoft.Office.Core.DocumentProperty" /> object that represents a specific built-in document property, use <b>BuiltinDocumentProperties</b>(<paramref name="index" />), where <paramref name="index" /> is a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> constant.</span></span></para>
+          <para><span data-ttu-id="5542a-123">Wenn Microsoft Word keinen Wert für eine der integrierten Dokumenteigenschaften definiert, wird beim Lesen der <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> Eigenschaft für diese Dokumenteigenschaft ein Fehler generiert.</span><span class="sxs-lookup"><span data-stu-id="5542a-123">If Microsoft Word doesn't define a value for one of the built-in document properties, reading the <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> property for that document property generates an error.</span></span></para>
+          <para><span data-ttu-id="5542a-124">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> die-Eigenschaft, um die Auflistung benutzerdefinierter Dokumenteigenschaften zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="5542a-124">Use the <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> property to return the collection of custom document properties.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -281,27 +210,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-111">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-125">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="5542a-125">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-112">
-            <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-112">
-              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-126">Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-126">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="5542a-127">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="5542a-127">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="5542a-128">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="5542a-128">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="5542a-129">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="5542a-129">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="5542a-130">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="5542a-130">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -327,25 +240,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-113">Gibt ein <see cref="T:Microsoft.Office.Core.DocumentProperties" /> -Auflistung, die alle benutzerdefinierten Dokumenteigenschaften für das angegebene Dokument darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-113">Returns a <see cref="T:Microsoft.Office.Core.DocumentProperties" /> collection that represents all the custom document properties for the specified document.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-131">Gibt eine <see cref="T:Microsoft.Office.Core.DocumentProperties" /> Auflistung zurück, die alle benutzerdefinierten Dokumenteigenschaften für das angegebene Dokument darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-131">Returns a <see cref="T:Microsoft.Office.Core.DocumentProperties" /> collection that represents all the custom document properties for the specified document.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-114">
-            <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> -Eigenschaft auf die Auflistung integrierter Dokumenteigenschaften zurückzugeben.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-114">
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> property to return the collection of built-in document properties.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-132">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> die-Eigenschaft, um die Auflistung der integrierten Dokumenteigenschaften zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="5542a-132">Use the <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> property to return the collection of built-in document properties.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLanguage">
@@ -374,51 +272,32 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-115">Zurückgeben oder festlegen die ostasiatische Sprache für den Zeilenumbruch von Text im angegebenen Dokument oder Vorlage verwenden.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-115">Returns or sets the East Asian language to use when breaking lines of text in the specified document or template.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-133">Gibt an oder legt fest, welche ostasiatische Sprache für den Zeilenumbruch von Text im angegebenen Dokument oder in der angegebenen Vorlage verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="5542a-133">Returns or sets the East Asian language to use when breaking lines of text in the specified document or template.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-116">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />kann eine der folgenden <b>WdFarEastLineBreakLanguageID</b> -Konstanten sein:</para>
-            <para>
-              <b>WdLineBreakJapanese</b>
-            </para>
-            <para>
-              <b>WdLineBreakKorean</b>
-            </para>
-            <para>
-              <b>WdLineBreakSimplifiedChinese</b>
-            </para>
-            <para>
-              <b>WdLineBreakTraditionalChinese</b>
-            </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-116">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" /> can be one of these <b>WdFarEastLineBreakLanguageID</b> constants:</para>
-              <para>
-                <b>wdLineBreakJapanese</b>
-              </para>
-              <para>
-                <b>wdLineBreakKorean</b>
-              </para>
-              <para>
-                <b>wdLineBreakSimplifiedChinese</b>
-              </para>
-              <para>
-                <b>wdLineBreakTraditionalChinese</b>
-              </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-134">
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />Dies kann eine der folgenden <b>WdFarEastLineBreakLanguageID</b> -Konstanten sein:</span><span class="sxs-lookup"><span data-stu-id="5542a-134">
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" /> can be one of these <b>WdFarEastLineBreakLanguageID</b> constants:</span></span></para>
+          <para><span data-ttu-id="5542a-135">
+            <b>wdLineBreakJapanese</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-135">
+            <b>wdLineBreakJapanese</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-136">
+            <b>wdLineBreakKorean</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-136">
+            <b>wdLineBreakKorean</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-137">
+            <b>wdLineBreakSimplifiedChinese</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-137">
+            <b>wdLineBreakSimplifiedChinese</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-138">
+            <b>wdLineBreakTraditionalChinese</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-138">
+            <b>wdLineBreakTraditionalChinese</b>
+          </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLevel">
@@ -447,47 +326,28 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-117">Zurück oder legt die Steuerungsebene des Zeilenumbruchs für das angegebene Dokument.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-117">Returns or sets the line break control level for the specified document.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-139">Gibt die Steuerungsebene des Zeilenumbruchs für das angegebene Dokument zurück oder legt diese Ebene fest.</span><span class="sxs-lookup"><span data-stu-id="5542a-139">Returns or sets the line break control level for the specified document.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-118">
-            <para>Diese Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> -Eigenschaft auf <b>False</b>festgelegt ist.</para>
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" /> kann eine der folgenden <b>WdFarEastLineBreakLevel</b> -Konstanten sein:</para>
-            <para>
-              <b>wdFarEastLineBreakLevelCustom</b>
-            </para>
-            <para>
-              <b>wdFarEastLineBreakLevelNormal</b>
-            </para>
-            <para>
-              <b>wdFarEastLineBreakLevelStrict</b>
-            </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-118">
-              <para>This property is ignored if the <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> property is set to <b>False</b>.</para>
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" /> can be one of these <b>WdFarEastLineBreakLevel</b> constants:</para>
-              <para>
-                <b>wdFarEastLineBreakLevelCustom</b>
-              </para>
-              <para>
-                <b>wdFarEastLineBreakLevelNormal</b>
-              </para>
-              <para>
-                <b>wdFarEastLineBreakLevelStrict</b>
-              </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-140">Diese Eigenschaft wird ignoriert, wenn <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> die Eigenschaft auf <b>false</b>festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="5542a-140">This property is ignored if the <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> property is set to <b>False</b>.</span></span></para>
+          <para><span data-ttu-id="5542a-141">
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />Dies kann eine der folgenden <b>WdFarEastLineBreakLevel</b> -Konstanten sein:</span><span class="sxs-lookup"><span data-stu-id="5542a-141">
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" /> can be one of these <b>WdFarEastLineBreakLevel</b> constants:</span></span></para>
+          <para><span data-ttu-id="5542a-142">
+            <b>wdFarEastLineBreakLevelCustom</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-142">
+            <b>wdFarEastLineBreakLevelCustom</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-143">
+            <b>wdFarEastLineBreakLevelNormal</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-143">
+            <b>wdFarEastLineBreakLevelNormal</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-144">
+            <b>wdFarEastLineBreakLevelStrict</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-144">
+            <b>wdFarEastLineBreakLevelStrict</b>
+          </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -513,25 +373,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-119">Gibt den Namen einer Vorlage, einschließlich der Laufwerk oder im Web an.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-119">Specifies the name of a template, including the drive or Web path.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-145">Gibt den Namen einer Vorlage einschließlich Laufwerk- oder Webpfad an.</span><span class="sxs-lookup"><span data-stu-id="5542a-145">Specifies the name of a template, including the drive or Web path.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-120">
-            <para>Die Verwendung dieser Eigenschaft entspricht der Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, und <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> Eigenschaften in Folge.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-120">
-              <para>Using this property is equivalent to using the <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, and <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> properties in sequence.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-146">Die Verwendung dieser Eigenschaft entspricht der nacheinander <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />Verwendung <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />der Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> , und.</span><span class="sxs-lookup"><span data-stu-id="5542a-146">Using this property is equivalent to using the <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, and <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> properties in sequence.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JustificationMode">
@@ -560,45 +405,27 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdJustificationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-121">Zurückgeben oder festlegen die zeichenabstandausrichtung für die angegebene Vorlage.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-121">Returns or sets the character spacing adjustment for the specified template.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-147">Gibt die Zeichenabstandausrichtung für die angegebene Vorlage zurück oder legt sie fest.</span><span class="sxs-lookup"><span data-stu-id="5542a-147">Returns or sets the character spacing adjustment for the specified template.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-122">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />kann eine der folgenden <b>WdJustificationMode</b> -Konstanten sein:</para>
-            <para>
-              <b>WdJustificationModeCompress</b>
-            </para>
-            <para>
-              <b>WdJustificationModeCompressKana</b>
-            </para>
-            <para>
-              <b>WdJustificationModeExpand</b>
-            </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-122">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" /> can be one of these <b>WdJustificationMode</b> constants:</para>
-              <para>
-                <b>wdJustificationModeCompress</b>
-              </para>
-              <para>
-                <b>wdJustificationModeCompressKana</b>
-              </para>
-              <para>
-                <b>wdJustificationModeExpand</b>
-              </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-148">
+            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />Dies kann eine der folgenden <b>WdJustificationMode</b> -Konstanten sein:</span><span class="sxs-lookup"><span data-stu-id="5542a-148">
+            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" /> can be one of these <b>WdJustificationMode</b> constants:</span></span></para>
+          <para><span data-ttu-id="5542a-149">
+            <b>wdJustificationModeCompress</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-149">
+            <b>wdJustificationModeCompress</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-150">
+            <b>wdJustificationModeCompressKana</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-150">
+            <b>wdJustificationModeCompressKana</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-151">
+            <b>wdJustificationModeExpand</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-151">
+            <b>wdJustificationModeExpand</b>
+          </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KerningByAlgorithm">
@@ -627,14 +454,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-123">
-            <b>True,</b> Wenn Microsoft Word halbbreite lateinische Zeichen und Interpunktionszeichen im angegebenen Dokument unterschnitten.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-123">
-              <b>True</b> if Microsoft Word kerns half-width Latin characters and punctuation marks in the specified document.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-152"><b>True</b>, falls halbbreite lateinische Zeichen und Interpunktionszeichen im angegebenen Dokument von Microsoft Word unterschnitten werden.</span><span class="sxs-lookup"><span data-stu-id="5542a-152"><b>True</b> if Microsoft Word kerns half-width Latin characters and punctuation marks in the specified document.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -665,27 +485,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-124">Zurückgeben oder festlegen die Sprache für das angegebene Objekt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-124">Returns or sets the language for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-153">Gibt die Sprache für das angegebene Objekt zurück oder legt die Sprache fest.</span><span class="sxs-lookup"><span data-stu-id="5542a-153">Returns or sets the language for the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-125">
-            <para>Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</para>
-            <para>Einige der <b>WdLanguageID</b> -Konstanten können möglicherweise nicht zur Verfügung, abhängig von der Unterstützung der Sprache (Englisch USA), beispielsweise), die Sie ausgewählt oder installiert haben.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-125">
-              <para>Can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</para>
-              <para>Some of the <b>WdLanguageID</b> constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-154">Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten sein.</span><span class="sxs-lookup"><span data-stu-id="5542a-154">Can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</span></span></para>
+          <para><span data-ttu-id="5542a-155">Je nach ausgewählter oder installierter Sprachunterstützung (z. B. Deutsch) stehen möglicherweise nicht alle <b>WdLanguageID</b>-Konstanten zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="5542a-155">Some of the <b>WdLanguageID</b> constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -714,27 +518,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-126">Zurückgeben oder festlegen eine ostasiatische Sprache für das angegebene Objekt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-126">Returns or sets an East Asian language for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-156">Gibt für das angegebene Objekt eine ostasiatische Sprache zurück oder legt diese fest.</span><span class="sxs-lookup"><span data-stu-id="5542a-156">Returns or sets an East Asian language for the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-127">
-            <para>Kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten.</para>
-            <para>Dies ist die empfohlene Option zum Zurückgeben oder Festlegen der Sprache des ostasiatischen Text in einem Dokument in eine ostasiatische Version von Microsoft Word erstellt.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-127">
-              <para>Can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</para>
-              <para>This is the recommended way to return or set the language of East Asian text in a document created in an East Asian version of Microsoft Word.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-157">Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten sein.</span><span class="sxs-lookup"><span data-stu-id="5542a-157">Can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</span></span></para>
+          <para><span data-ttu-id="5542a-158">Dies ist das empfohlene Verfahren für das Zurückgeben oder Festlegen einer ostasiatischen Sprache eines Dokuments, das in einer ostasiatischen Word-Version erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="5542a-158">This is the recommended way to return or set the language of East Asian text in a document created in an East Asian version of Microsoft Word.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -760,12 +548,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-128">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> -Auflistung, die alle in die Liste formatiert, für die angegebene Vorlage.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-128">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection that represents all the list formats for the specified template.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-159">Gibt eine <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> Auflistung zurück, die alle Listenformate für die angegebene Vorlage darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-159">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection that represents all the list formats for the specified template.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -793,12 +576,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-129">Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-129">Returns or sets the name of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-160">Gibt den Namen des angegebenen Objekts zurück oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="5542a-160">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -829,12 +607,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-130">Zurück oder legt den Kinsoku-Zeichen, nach denen kein von Microsoft Word Zeilenumbruch, eine Linie.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-130">Returns or sets the kinsoku characters after which Microsoft Word will not break a line.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-161">Gibt die Kinsoku-Zeichen zurück oder legt Sie fest, nach denen Microsoft Word eine Textreihe nicht unterbrechen wird.</span><span class="sxs-lookup"><span data-stu-id="5542a-161">Returns or sets the kinsoku characters after which Microsoft Word will not break a line.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -865,12 +638,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-131">Zurück oder legt den Kinsoku-Zeichen, vor denen kein von Microsoft Word Zeilenumbruch, eine Linie.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-131">Returns or sets the kinsoku characters before which Microsoft Word will not break a line.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-162">Gibt die Kinsoku-Zeichen zurück oder legt Sie fest, vor denen Microsoft Word eine Textreihe nicht unterbrechen wird.</span><span class="sxs-lookup"><span data-stu-id="5542a-162">Returns or sets the kinsoku characters before which Microsoft Word will not break a line.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -901,14 +669,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-132">
-            <b>True,</b> Wenn der Rechtschreib- und grammatikprüfung ignoriert auf dieser Vorlage basierende Dokumente.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-132">
-              <b>True</b> if the spelling and grammar checker ignores documents based on this template.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-163"><b>True</b>, wenn die Rechtschreib- und Grammatikprüfung die auf dieser Vorlage basierenden Dokumente ignoriert.</span><span class="sxs-lookup"><span data-stu-id="5542a-163"><b>True</b> if the spelling and grammar checker ignores documents based on this template.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -934,25 +695,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-133">Öffnet die angegebene Vorlage als Dokument und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-133">Opens the specified template as a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-164">Öffnet die angegebene Vorlage als Dokument und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Document" /> Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="5542a-164">Opens the specified template as a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <span data-ttu-id="6a75d-134">
-            <para>Öffnen eine Vorlage als Dokument ermöglicht dem Benutzer den Inhalt der Vorlage bearbeiten. Dies kann erforderlich sein, wenn eine Eigenschaft oder Methode (die <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> z. B.-Eigenschaft) ist nicht verfügbar, aus der <see cref="T:Microsoft.Office.Interop.Word.Template" /> Objekt.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-134">
-              <para>Opening a template as a document allows the user to edit the contents of the template. This may be necessary if a property or method (the <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> property, for example) isn't available from the <see cref="T:Microsoft.Office.Interop.Word.Template" /> object.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-165">Wenn eine Vorlage als Dokument geöffnet wird, kann der Benutzer den Inhalt der Vorlage bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="5542a-165">Opening a template as a document allows the user to edit the contents of the template.</span></span> <span data-ttu-id="5542a-166">Dies kann erforderlich sein, wenn eine Eigenschaft oder Methode ( <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> beispielsweise die Eigenschaft) nicht über das <see cref="T:Microsoft.Office.Interop.Word.Template" /> Objekt verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="5542a-166">This may be necessary if a property or method (the <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> property, for example) isn't available from the <see cref="T:Microsoft.Office.Interop.Word.Template" /> object.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -978,12 +724,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-135">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-135">Returns an object that represents the parent object of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-167">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="5542a-167">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1011,29 +752,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-136">Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-136">Returns the disk or Web path to the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-168">Gibt den Datenträger oder Webpfad zu dem angegebenen Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="5542a-168">Returns the disk or Web path to the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-137">
-            <para>Nicht den Pfad ein nachfolgendes Zeichen enthalten, z. B. "C:\MSOffice" oder "http://MyServer". Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft das Zeichen hinzufügen, die Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> -Eigenschaft auf den Dateinamen ohne Pfad und mit Zurückgeben der <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> -Eigenschaft auf den Dateinamen und den Pfad zusammen zurück.</para>
-            <para>
-              <b>Hinweis</b> Sie können <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl sie Schrägstriche (/) und der <b>PathSeparator</b> -Eigenschaft enthalten wird standardmäßig auf einen umgekehrten Schrägstrich (\).</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-137">
-              <para>The path doesn't include a trailing character— for example, "C:\MSOffice" or "http://MyServer". Use the <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> property to add the character that separates folders and drive letters. Use the <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> property to return the file name without the path and use the <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> property to return the file name and the path together.</para>
-              <para>
-                <b>Note</b>  You can use the <b>PathSeparator</b> property to build Web addresses even though they contain forward slashes (/) and the <b>PathSeparator</b> property defaults to a backslash (\).</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-169">Der Pfad enthält kein nachfolgendes Zeichen, beispielsweise "C:\MSOffice" oder "http://MyServer".</span><span class="sxs-lookup"><span data-stu-id="5542a-169">The path doesn't include a trailing character— for example, "C:\MSOffice" or "http://MyServer".</span></span> <span data-ttu-id="5542a-170">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt.</span><span class="sxs-lookup"><span data-stu-id="5542a-170">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> property to add the character that separates folders and drive letters.</span></span> <span data-ttu-id="5542a-171">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> die-Eigenschaft, um den Dateinamen ohne den Pfad zurück <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> zugeben, und verwenden Sie die-Eigenschaft, um den Dateinamen und den Pfad zusammen zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="5542a-171">Use the <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> property to return the file name without the path and use the <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> property to return the file name and the path together.</span></span></para>
+          <para><span data-ttu-id="5542a-172">
+            <b>Hinweis:</b>  Sie können die <b>PathSeparator</b> -Eigenschaft verwenden, um Webadressen zu erstellen, obwohl Sie Schrägstriche (/) enthalten und die <b>PathSeparator</b> -Eigenschaft\)standardmäßig einen umgekehrten Schrägstrich (.</span><span class="sxs-lookup"><span data-stu-id="5542a-172">
+            <b>Note</b>  You can use the <b>PathSeparator</b> property to build Web addresses even though they contain forward slashes (/) and the <b>PathSeparator</b> property defaults to a backslash (\).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1057,24 +782,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-138">Speichert das angegebene Dokument oder einer Vorlage.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-138">Saves the specified document or template.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="6a75d-139">
-            <para>Wenn das Dokument oder die Vorlage noch nicht gespeichert wurde, fordert das Dialogfeld Speichern unter den Benutzer für einen Dateinamen ein.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-139">
-              <para>If the document or template hasn't been saved before, the Save As dialog box prompts the user for a file name.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="5542a-173">Speichert das angegebene Dokument oder die angegebene Vorlage.</span><span class="sxs-lookup"><span data-stu-id="5542a-173">Saves the specified document or template.</span></span></summary>
+        <remarks><para><span data-ttu-id="5542a-174">Wenn das Dokument oder die Vorlage noch nicht gespeichert wurde, wird der Benutzer im Dialogfeld Speichern unter aufgefordert, einen Dateinamen einzugeben.</span><span class="sxs-lookup"><span data-stu-id="5542a-174">If the document or template hasn't been saved before, the Save As dialog box prompts the user for a file name.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -1103,20 +813,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-140">
-            <b>True,</b> Wenn das angegebene Dokument oder die Vorlage seit dem letzten Speichern geändert hat.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-140">
-              <b>True</b> if the specified document or template hasn't changed since it was last saved.</span>
-          </span>
-          <span data-ttu-id="6a75d-141">
-            <b>False,</b> Wenn Microsoft Word wird der Benutzer aufgefordert, die Änderungen zu speichern, wenn das Dokument geschlossen wird.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-141">
-              <b>False</b> if Microsoft Word displays a prompt to save changes when the document is closed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-175"><b>True</b> , wenn das angegebene Dokument oder die Vorlage seit dem letzten Speichern nicht geändert wurde.</span><span class="sxs-lookup"><span data-stu-id="5542a-175"><b>True</b> if the specified document or template hasn't changed since it was last saved.</span></span> <span data-ttu-id="5542a-176"><b>False</b>, wenn beim Schließen des Dokuments von Microsoft Office Word eine Aufforderung zum Speichern der Änderungen angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="5542a-176"><b>False</b> if Microsoft Word displays a prompt to save changes when the document is closed.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1144,45 +841,27 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTemplateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-142">Gibt den Vorlagentyp.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-142">Returns the template type.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-177">Gibt den Typ der Vorlage zurück.</span><span class="sxs-lookup"><span data-stu-id="5542a-177">Returns the template type.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-143">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />kann eine der folgenden <b>WdTemplateType</b> -Konstanten sein:</para>
-            <para>
-              <b>WdAttachedTemplate</b>
-            </para>
-            <para>
-              <b>WdGlobalTemplate</b>
-            </para>
-            <para>
-              <b>WdNormalTemplate</b>
-            </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-143">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" /> can be one of these <b>WdTemplateType</b> constants:</para>
-              <para>
-                <b>wdAttachedTemplate</b>
-              </para>
-              <para>
-                <b>wdGlobalTemplate</b>
-              </para>
-              <para>
-                <b>wdNormalTemplate</b>
-              </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-178">
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />Dies kann eine der folgenden <b>WdTemplateType</b> -Konstanten sein:</span><span class="sxs-lookup"><span data-stu-id="5542a-178">
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" /> can be one of these <b>WdTemplateType</b> constants:</span></span></para>
+          <para><span data-ttu-id="5542a-179">
+            <b>wdAttachedTemplate</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-179">
+            <b>wdAttachedTemplate</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-180">
+            <b>wdGlobalTemplate</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-180">
+            <b>wdGlobalTemplate</b>
+          </span></span></para>
+          <para><span data-ttu-id="5542a-181">
+            <b>wdNormalTemplate</b>
+          </span><span class="sxs-lookup"><span data-stu-id="5542a-181">
+            <b>wdNormalTemplate</b>
+          </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VBProject">
@@ -1208,27 +887,11 @@
         <ReturnType>Microsoft.Vbe.Interop.VBProject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="6a75d-144">Gibt das <b>VBProject</b>-Objekt für die angegebene Vorlage zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-144">Returns the <b>VBProject</b> object for the specified template.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="5542a-182">Gibt das <b>VBProject</b>-Objekt für die angegebene Vorlage zurück.</span><span class="sxs-lookup"><span data-stu-id="5542a-182">Returns the <b>VBProject</b> object for the specified template.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="6a75d-145">
-            <para>Verwenden Sie diese Eigenschaft für den Zugriff auf Codemodule und Benutzerformulare.</para>
-            <para>, Um das <b>VBProject</b> -Objekt im Objektbrowser anzuzeigen, Sie müssen auswählen das Microsoft Visual Basic für Applikationen-Erweiterung Kontrollkästchen im Dialogfeld Verweise (Menü Extras) im Visual Basic-Editor.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="6a75d-145">
-              <para>Use this property to gain access to code modules and user forms.</para>
-              <para>To view the <b>VBProject</b> object in the object browser, you must select the Microsoft Visual Basic for Applications Extensibility check box in the References dialog box (Tools menu) in the Visual Basic Editor.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="5542a-183">Mit dieser Eigenschaft erhalten Sie Zugriff auf Codemodule und Benutzerformulare.</span><span class="sxs-lookup"><span data-stu-id="5542a-183">Use this property to gain access to code modules and user forms.</span></span></para>
+          <para><span data-ttu-id="5542a-184">Um das <b>VBProject</b> -Objekt im Objektbrowser anzuzeigen, müssen Sie im Visual Basic-Editor im Dialogfeld Verweise (Menü Extras) das Kontrollkästchen für die Erweiterbarkeit von Anwendungen Microsoft Visual Basic aktivieren.</span><span class="sxs-lookup"><span data-stu-id="5542a-184">To view the <b>VBProject</b> object in the object browser, you must select the Microsoft Visual Basic for Applications Extensibility check box in the References dialog box (Tools menu) in the Visual Basic Editor.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

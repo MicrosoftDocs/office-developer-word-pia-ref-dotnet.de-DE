@@ -1,13 +1,5 @@
 <Type Name="BuildingBlock" FullName="Microsoft.Office.Interop.Word.BuildingBlock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc15f7587aceebb7da5afc606fbedbd78e590230" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20670023" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca9bed40f87117ccf911469b9c1d874a575c9129" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146227" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlock" />
@@ -26,32 +18,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="c41bf-p101">Stellt einen Baustein in einer Vorlage dar. Ein Baustein ist vordefinierter Inhalt, ähnlich AutoText, der Text, Bilder und Formatierung enthalten kann.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="c41bf-p101">Represents a building block in a template.  A building block is pre-built content, similar to autotext, that may contain text, images, and formatting.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="c41bf-103">
-        <para>Jede <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> und <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> Auflistungen. Bausteine werden in Microsoft Office Word-Vorlagen gespeichert.  Aus diesem Grund müssen den Zugriff auf die Bausteine für ein Dokument verfügbar verknüpfte Vorlage zugreifen.  Integrierte Bausteine werden in der Vorlage mit dem Namen "Building Blocks.dotx" gespeichert.</para>
-        <para>
-          <b>Hinweis</b>: Verwenden der <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> -Methode der Auflistung oder der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> Auflistung, um einen einzelnen Baustein zurückzugeben. Je nachdem, wie Sie die Auflistung zugreifen kann die zurückgegebene Auflistung ändern.  Beispielsweise, wenn Sie Zugriff auf eine Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> mit der Kategorie "Allgemein", die zurückgegebene Auflistung möglicherweise aus der Auflistung zurückgegeben, wenn Sie Zugriff auf eine Auflistung von Bausteinen mit einem anderen <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> mit einer Kategorie "Benutzerdefiniert". Es ist außerdem aus der Auflistung zurückgegeben, wenn Sie Zugriff auf die Auflistung von Bausteinen mit einem anderen <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> mit der Kategorie "Allgemein". Aus diesem Grund das erste Element in einer Auflistung aus der <b>BuildingBlockEntries</b> -Auflistung zugegriffen abweichen aus dem ersten Element in der Auflistung, die aus der <b>BuildingBlocks</b> -Auflistung zugegriffen.</para> Zum Erstellen eines neuen Bausteins 
-      <para>können Sie die <b>Add</b> -Methode für die <b>BuildingBlockEntries</b> -Auflistung oder der <b>BuildingBlocks</b> -Auflistung verwenden.  Jedoch ist die empfohlene Option zum Erstellen eines neuen Bausteins mithilfe der <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> -Methode der <b>BuildingBlockEntries</b> -Auflistung. </para><para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> -Methode, um einen neuen Baustein in ein Dokument eingefügt. Verwendung der <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> -Methode zum Entfernen eines Bausteins aus einer Vorlage.</para><para>Bausteine sind nach Kategorie und Typ angeordnet.  Verwendung der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> -Auflistung, um Zugriff auf einzelne <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> Objekte. Verwendung der <see cref="T:Microsoft.Office.Interop.Word.Categories" /> -Auflistung, um Zugriff auf einzelne <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> Objekte. Können Sie <b>BuildingBlocks</b> -Eigenschaft die <b>BuildingBlocks</b> -Auflistung für ein <b>Category</b> -Objekt zuzugreifen. </para><para>Jeder Baustein verfügt über Eigenschaften, die Informationen enthalten, die eindeutig, wie gilt <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, und <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</para><para>Weitere Informationen zu Bausteinen finden Sie unter <a href="HV10120827">Arbeiten mit Bausteinen</a></para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="c41bf-103">
-          <para>Each <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collections. Building blocks are stored in Microsoft Office Word templates.  Therefore, to access the building blocks available for a document, you need to access an attached template.  Built-in building blocks are stored in the template named "Building Blocks.dotx".</para>
-          <para>
-            <b>Note</b>: Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> method of the  collection or the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> collection to return an individual building block. Depending on how you access the collection, the collection returned may change.  For example, if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General", the returned collection may be different from the collection returned if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "Custom". It is also  different from the collection returned if you access the collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> with a category of "General". Therefore, the first item in a collection accessed from the <b>BuildingBlockEntries</b> collection may be different from the first item in the collection accessed from the <b>BuildingBlocks</b> collection.</para>
-          <para>To create a new building block, you can use the <b>Add</b> method for either the <b>BuildingBlockEntries</b> collection or the <b>BuildingBlocks</b> collection.  However, the recommended way to create a new building block is by using the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> method for the <b>BuildingBlockEntries</b> collection. </para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to insert a new building block into a document. Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> method to remove a building block from a template.</para>
-          <para>Building blocks are organized by category and type.  Use the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection to access individual <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objects. Use the <see cref="T:Microsoft.Office.Interop.Word.Categories" /> collection to access individual <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> objects. Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object. </para>
-          <para>Each building block has properties that contain information that applies uniquely to it, such as <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, and <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</para>
-          <para>For more information about building blocks, see <a href="HV10120827">Working with Building Blocks</a></para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="93e47-p101">Stellt einen Baustein in einer Vorlage dar. Ein Baustein ist vordefinierter Inhalt, ähnlich AutoText, der Text, Bilder und Formatierung enthalten kann.</span><span class="sxs-lookup"><span data-stu-id="93e47-p101">Represents a building block in a template.  A building block is pre-built content, similar to autotext, that may contain text, images, and formatting.</span></span></summary>
+    <remarks><para><span data-ttu-id="93e47-103">Jedes <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and- <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> Auflistungen.</span><span class="sxs-lookup"><span data-stu-id="93e47-103">Each <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collections.</span></span> <span data-ttu-id="93e47-104">Bausteine werden in Microsoft Office Word-Vorlagen gespeichert.</span><span class="sxs-lookup"><span data-stu-id="93e47-104">Building blocks are stored in Microsoft Office Word templates.</span></span>  <span data-ttu-id="93e47-105">Daher benötigen Sie Zugriff auf eine zugeordnete Vorlage, um auf die für ein Dokument verfügbaren Bausteine zugreifen zu können.</span><span class="sxs-lookup"><span data-stu-id="93e47-105">Therefore, to access the building blocks available for a document, you need to access an attached template.</span></span>  <span data-ttu-id="93e47-106">Integrierte Bausteine sind in der Vorlage mit dem Namen "Building Blocks.dotx" gespeichert.</span><span class="sxs-lookup"><span data-stu-id="93e47-106">Built-in building blocks are stored in the template named "Building Blocks.dotx".</span></span></para>
+      <para><span data-ttu-id="93e47-107">
+        <b>Hinweis</b>: Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> die-Methode der Auflistung oder <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> der Auflistung, um einen einzelnen Baustein zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="93e47-107">
+        <b>Note</b>: Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> method of the  collection or the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> collection to return an individual building block.</span></span> <span data-ttu-id="93e47-108">Je nachdem, wie Sie auf die Auflistung zugreifen, kann sich die zurückgegebene Auflistung ändern.</span><span class="sxs-lookup"><span data-stu-id="93e47-108">Depending on how you access the collection, the collection returned may change.</span></span>  <span data-ttu-id="93e47-109">Wenn Sie beispielsweise auf eine Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General" zugreifen, kann sich die zurückgegebene Auflistung von der Auflistung unterscheiden, die zurückgegeben wird, wenn Sie <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> auf eine Auflistung von Bausteinen mit einem Typ von mit einem Category-Objekt zugreifen. von "Custom".</span><span class="sxs-lookup"><span data-stu-id="93e47-109">For example, if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General", the returned collection may be different from the collection returned if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "Custom".</span></span> <span data-ttu-id="93e47-110">Es unterscheidet sich auch von der Auflistung, die zurückgegeben wird, wenn Sie auf die Auflistung <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> von Bausteinen mit einem Typ von mit einer Kategorie von "General" zugreifen.</span><span class="sxs-lookup"><span data-stu-id="93e47-110">It is also  different from the collection returned if you access the collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> with a category of "General".</span></span> <span data-ttu-id="93e47-111">Daher kann das erste Element in einer Auflistung, auf die von der <b>BuildingBlockEntries</b> -Auflistung zugegriffen wird, möglicherweise vom ersten Element in der Auflistung abweichen, auf das von der <b>BuildingBlocks</b> -Auflistung zugegriffen wird.</span><span class="sxs-lookup"><span data-stu-id="93e47-111">Therefore, the first item in a collection accessed from the <b>BuildingBlockEntries</b> collection may be different from the first item in the collection accessed from the <b>BuildingBlocks</b> collection.</span></span></para>
+      <para><span data-ttu-id="93e47-112">Zum Erstellen eines neuen Bausteins können Sie die <b>Add</b>-Methode der <b>BuildingBlockEntries</b>-Auflistung oder der <b>BuildingBlocks</b>-Auflistung verwenden.</span><span class="sxs-lookup"><span data-stu-id="93e47-112">To create a new building block, you can use the <b>Add</b> method for either the <b>BuildingBlockEntries</b> collection or the <b>BuildingBlocks</b> collection.</span></span>  <span data-ttu-id="93e47-113">Die empfohlene Vorgehensweise zum Erstellen eines neuen Bausteins ist jedoch <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> die Verwendung der-Methode für die <b>BuildingBlockEntries</b> -Auflistung.</span><span class="sxs-lookup"><span data-stu-id="93e47-113">However, the recommended way to create a new building block is by using the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> method for the <b>BuildingBlockEntries</b> collection.</span></span> </para>
+      <para><span data-ttu-id="93e47-114">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> die-Methode, um einen neuen Baustein in ein Dokument einzufügen.</span><span class="sxs-lookup"><span data-stu-id="93e47-114">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to insert a new building block into a document.</span></span> <span data-ttu-id="93e47-115">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> die-Methode, um einen Baustein aus einer Vorlage zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="93e47-115">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> method to remove a building block from a template.</span></span></para>
+      <para><span data-ttu-id="93e47-116">Building blocks are organized by category and type.</span><span class="sxs-lookup"><span data-stu-id="93e47-116">Building blocks are organized by category and type.</span></span>  <span data-ttu-id="93e47-117">Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> die-Auflistung, <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> um auf einzelne Objekte zuzugreifen.</span><span class="sxs-lookup"><span data-stu-id="93e47-117">Use the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection to access individual <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objects.</span></span> <span data-ttu-id="93e47-118">Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.Categories" /> die-Auflistung, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> um auf einzelne Objekte zuzugreifen.</span><span class="sxs-lookup"><span data-stu-id="93e47-118">Use the <see cref="T:Microsoft.Office.Interop.Word.Categories" /> collection to access individual <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> objects.</span></span> <span data-ttu-id="93e47-119">Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object.</span><span class="sxs-lookup"><span data-stu-id="93e47-119">Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object.</span></span> </para>
+      <para><span data-ttu-id="93e47-120">Jeder Baustein verfügt über Eigenschaften, die Informationen enthalten, die sich eindeutig auf ihn beziehen <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />Beispiels <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />Weise, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />, und.</span><span class="sxs-lookup"><span data-stu-id="93e47-120">Each building block has properties that contain information that applies uniquely to it, such as <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, and <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</span></span></para>
+      <para><span data-ttu-id="93e47-121">Weitere Informationen zum Erstellen von Bausteinen finden Sie unter <a href="HV10120827">Working with Building Blocks</a> .</span><span class="sxs-lookup"><span data-stu-id="93e47-121">For more information about building blocks, see <a href="HV10120827">Working with Building Blocks</a></span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -77,15 +54,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-104">Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-104">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary><span data-ttu-id="93e47-122">Gibt ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="93e47-122">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,19 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Category</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-105">Gibt die Kategorie für einen Baustein zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-105">Returns the category for a building block.</span>
-          </span>
-          <span data-ttu-id="c41bf-106">Schreibgeschützt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-106">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Category" />
-        </value>
+        <summary><span data-ttu-id="93e47-123">Gibt die Kategorie eines Bausteins zurück.</span><span class="sxs-lookup"><span data-stu-id="93e47-123">Returns the category for a building block.</span></span> <span data-ttu-id="93e47-124">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="93e47-124">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Category" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,42 +110,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-107">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das Add-in erstellt wurde.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-107">Returns a 32-bit integer that indicates the application in which the add-in was created.</span>
-          </span>
-          <span data-ttu-id="c41bf-108">Schreibgeschützt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-108">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-109">
-            <b>Integer</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-109">
-              <b>Integer</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="c41bf-110">
-            <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-            <para>
-              <b>Hinweis</b>: Dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-110">
-              <para>If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para>
-                <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="93e47-125">Gibt eine 32-Bit-Ganzzahl zurück, die auf die Anwendung verweist, in der das Add-In erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="93e47-125">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="93e47-126">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="93e47-126">Read-only.</span></span></summary>
+        <value><span data-ttu-id="93e47-127"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="93e47-127"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="93e47-128">Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="93e47-128">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="93e47-129">Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist.</span><span class="sxs-lookup"><span data-stu-id="93e47-129">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="93e47-130">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="93e47-130">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="93e47-131">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="93e47-131">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para><span data-ttu-id="93e47-132">
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="93e47-132">
+            <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -210,12 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-111">Löscht den angegebenen Baustein.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-111">Deletes the specified building block.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="93e47-133">Löscht den angegebenen Baustein.</span><span class="sxs-lookup"><span data-stu-id="93e47-133">Deletes the specified building block.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,26 +170,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-112">Gibt zurück oder legt die Beschreibung für einen Baustein.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-112">Returns or sets the description for a building block.</span>
-          </span>
-          <span data-ttu-id="c41bf-113">Lese-/Schreibzugriff.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-113">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-114">
-            <b>String</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-114">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="93e47-134">Gibt die Beschreibung eines Bausteins zurück oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="93e47-134">Returns or sets the description for a building block.</span></span> <span data-ttu-id="93e47-135">Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="93e47-135">Read/write.</span></span></summary>
+        <value><span data-ttu-id="93e47-136"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="93e47-136"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,38 +198,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-115">Gibt zurück, der die interne Identifikationsnummer für einen Baustein.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-115">Returns the internal identification number for a building block.</span>
-          </span>
-          <span data-ttu-id="c41bf-116">Schreibgeschützt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-116">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-117">
-            <b>String</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-117">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="c41bf-118">
-            <para>Die <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> -Eigenschaft gibt eine Identifikationszeichenfolge in Form eines GUID zurück.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-118">
-              <para>The <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> property returns an identification string that is in the form of a GUID.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="93e47-137">Gibt die interne Identifikationsnummer eines Bausteins zurück.</span><span class="sxs-lookup"><span data-stu-id="93e47-137">Returns the internal identification number for a building block.</span></span> <span data-ttu-id="93e47-138">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="93e47-138">Read-only.</span></span></summary>
+        <value><span data-ttu-id="93e47-139"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="93e47-139"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="93e47-140">Die <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> -Eigenschaft gibt eine Identifikationszeichenfolge zurück, die in Form einer GUID vorliegt.</span><span class="sxs-lookup"><span data-stu-id="93e47-140">The <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> property returns an identification string that is in the form of a GUID.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -348,26 +227,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-119">Gibt die Position eines Elements in einer Auflistung zurück.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-119">Returns the position of an item in a collection.</span>
-          </span>
-          <span data-ttu-id="c41bf-120">Schreibgeschützt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-120">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-121">
-            <b>Integer</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-121">
-              <b>Integer</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="93e47-141">Gibt die Position eines Elements in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="93e47-141">Returns the position of an item in a collection.</span></span> <span data-ttu-id="93e47-142">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="93e47-142">Read-only.</span></span></summary>
+        <value><span data-ttu-id="93e47-143"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="93e47-143"><b>Integer</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,29 +255,10 @@
         <Parameter Name="RichText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Where">
-          <span data-ttu-id="c41bf-122">Die Stelle, an der der Inhalt des Bausteins positioniert wird.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-122">The location of where to place the contents of the building block.</span>
-          </span>
-        </param>
-        <param name="RichText">
-          <span data-ttu-id="c41bf-p107">
-            <b>True</b> fügt den Baustein als formatierten Rich-Text ein. <b>False</b> fügt den Baustein als Nur-Text ein.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-p107">
-              <b>True</b> inserts the building block as rich, formatted text.  <b>False</b> inserts the building block as plain text.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="c41bf-125">Fügt den Wert eines Bausteins in ein Dokument und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt, das den Inhalt des Bausteins im Dokument darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-125">Inserts the value of a building block into a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the contents of the building block within the document.</span>
-          </span>
-        </summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </returns>
+        <param name="Where"><span data-ttu-id="93e47-144">Die Stelle, an der der Inhalt des Bausteins positioniert wird.</span><span class="sxs-lookup"><span data-stu-id="93e47-144">The location of where to place the contents of the building block.</span></span></param>
+        <param name="RichText"><span data-ttu-id="93e47-145"><b>True</b> fügt den Baustein als formatierten Rich-Text ein.</span><span class="sxs-lookup"><span data-stu-id="93e47-145"><b>True</b> inserts the building block as rich, formatted text.</span></span>  <span data-ttu-id="93e47-146"><b>False</b> fügt den Baustein als Nur-Text ein.</span><span class="sxs-lookup"><span data-stu-id="93e47-146"><b>False</b> inserts the building block as plain text.</span></span></param>
+        <summary><span data-ttu-id="93e47-147">Fügt den Wert eines Bausteins in ein Dokument ein und gibt <see cref="T:Microsoft.Office.Interop.Word.Range" /> ein Objekt zurück, das den Inhalt des Bausteins im Dokument darstellt.</span><span class="sxs-lookup"><span data-stu-id="93e47-147">Inserts the value of a building block into a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the contents of the building block within the document.</span></span></summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Range" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,38 +288,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-126">Zurück oder legt eine <b>ganze Zahl</b> , wie Sie den Inhalt eines Bausteins in ein Dokument einfügen darstellt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-126">Returns or sets an <b>Integer</b> that represents how to insert the contents of a building block into a document.</span>
-          </span>
-          <span data-ttu-id="c41bf-127">Lese-/Schreibzugriff.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-127">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-128">
-            <b>Integer</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-128">
-              <b>Integer</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="c41bf-129">
-            <para>Der Wert der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> -Eigenschaft kann eine der der <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> Enumerationswerte.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-129">
-              <para>The value of the <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> property can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> enumeration values.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="93e47-148">Gibt einen Wert vom <b>Typ Integer</b> zurück, der angibt, wie der Inhalt eines Bausteins in ein Dokument eingefügt werden soll, oder legt diesen Wert fest.</span><span class="sxs-lookup"><span data-stu-id="93e47-148">Returns or sets an <b>Integer</b> that represents how to insert the contents of a building block into a document.</span></span> <span data-ttu-id="93e47-149">Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="93e47-149">Read/write.</span></span></summary>
+        <value><span data-ttu-id="93e47-150"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="93e47-150"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="93e47-151">Der Wert der <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> Eigenschaft kann einer der <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> Aufzählungswerte sein.</span><span class="sxs-lookup"><span data-stu-id="93e47-151">The value of the <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> property can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> enumeration values.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -506,26 +320,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-130">Gibt zurück oder legt den Namen eines Bausteins.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-130">Returns or sets the name of a building block.</span>
-          </span>
-          <span data-ttu-id="c41bf-131">Lese-/Schreibzugriff.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-131">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-132">
-            <b>String</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-132">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="93e47-152">Gibt den Namen eines Bausteins zurück oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="93e47-152">Returns or sets the name of a building block.</span></span> <span data-ttu-id="93e47-153">Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="93e47-153">Read/write.</span></span></summary>
+        <value><span data-ttu-id="93e47-154"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="93e47-154"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,22 +348,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-133">Gibt zurück, das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-133">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-134">
-            <b>Objekt</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-134">
-              <b>Object</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="93e47-155">Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> angegebenen Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="93e47-155">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object.</span></span></summary>
+        <value><span data-ttu-id="93e47-156"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="93e47-156"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -594,19 +376,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-135">Gibt den Typ für einen Baustein.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-135">Returns the type for a building block.</span>
-          </span>
-          <span data-ttu-id="c41bf-136">Schreibgeschützt.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-136">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
-        </value>
+        <summary><span data-ttu-id="93e47-157">Gibt den Typ eines Bausteins zurück.</span><span class="sxs-lookup"><span data-stu-id="93e47-157">Returns the type for a building block.</span></span> <span data-ttu-id="93e47-158">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="93e47-158">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,26 +407,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="c41bf-137">Zurück oder legt den Inhalt eines Bausteins.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-137">Returns or sets the contents of a building block.</span>
-          </span>
-          <span data-ttu-id="c41bf-138">Lese-/Schreibzugriff.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-138">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="c41bf-139">
-            <b>String</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c41bf-139">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="93e47-159">Gibt den Inhalt eines Building Blocks zurück oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="93e47-159">Returns or sets the contents of a building block.</span></span> <span data-ttu-id="93e47-160">Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="93e47-160">Read/write.</span></span></summary>
+        <value><span data-ttu-id="93e47-161"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="93e47-161"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
