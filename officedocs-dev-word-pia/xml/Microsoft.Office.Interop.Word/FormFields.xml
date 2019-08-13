@@ -1,13 +1,5 @@
 <Type Name="FormFields" FullName="Microsoft.Office.Interop.Word.FormFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="46b21510386a35e4547b988b64b574860cd58ca2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669628" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="89a396030811c12cb95f62e8636d76407d533478" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148082" /></Metadata><TypeSignature Language="C#" Value="public interface FormFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FormFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormFields&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.FormField" /> -Objekten, die alle Formularfelder in einer Auswahl, einem Bereich oder einem Dokument darstellen.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>FormFields</b> -Eigenschaft, um die <b>FormFields</b> -Auflistung zurückzugeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> -Methode mit dem <b>FormFields</b> -Objekt zum Hinzufügen eines Formularfelds.</para>
-      <para>Verwendung <b>FormFields</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine Textmarkenname oder die Indexzahl darstellt, um ein einzelnes <b>FormField</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Formularfelds in der Auswahl, einem Bereich oder einem Dokument.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekten, die alle Formularfelder in einer Auswahl, einem Bereich oder einem Dokument darstellen.</summary>
+    <remarks><para>Mit der <b>FormFields</b>-Eigenschaft geben Sie die <b>FormFields</b>-Auflistung zurück.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> die-Methode mit dem <b>FormFields</b> -Objekt, um ein Formularfeld hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie FormFields<paramref name="index" />(), <paramref name="index" /> wobei ein Textmarke-Name oder eine Indexnummer ist, <b></b> um ein einzelnes FormField-Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Formularfelds in der Auswahl, im Bereich oder im Dokument dar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,9 +53,9 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdFieldType" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem Sie das Formularfeld hinzufügen möchten. Wenn der Bereich nicht reduziert ist, ersetzt das Formularfeld den Bereich an.</param>
-        <param name="Type">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />. Der Typ des hinzuzufügenden Formularfelds.</param>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FormField" /> -Objekt, das ein neues Formularfeld darstellt, das einem Bereich hinzugefügt.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem Sie das Formularfeld hinzufügen möchten. Wenn der Bereich nicht reduziert ist, wird der Bereich durch das Formularfeld ersetzt.</param>
+        <param name="Type">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />. Der Typ des hinzuzufügenden Formularfelds.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekt zurück, das ein neues Formularfeld darstellt, das in einem Bereich hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,11 +141,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -276,13 +264,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob die Schattierung für Formularfelder angewendet wird.</summary>
+        <summary>Bestimmt, ob die Schattierung auf Formularfelder angewendet wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Gibt diese Eigenschaft <b>True</b> zurück, wenn Formularfelder und <b>False,</b> Wenn keine Schattierung zugewiesen wird. Den Wert der Eigenschaft auf <b>True</b> oder <b>False</b> , aktivieren oder deaktivieren Sie die Funktionalität festgelegt.</para>
-          <para>Schattierung können Formularfelder einfacher in einem Dokument gefunden und hat keine Auswirkung auf die Druckausgabe.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn die Schattierung auf Formularfelder angewendet wird, und <b>false</b> , wenn dies nicht der Fall ist. Legen Sie den Eigenschaftswert auf <b>true</b> oder <b>false</b> fest, um die Funktionalität zu aktivieren oder zu deaktivieren.</para>
+          <para>Durch Schattierung können Formularfelder in einem Dokument leichter gefunden werden. Die Schattierung hat keinen Einfluss auf die Druckerausgabe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

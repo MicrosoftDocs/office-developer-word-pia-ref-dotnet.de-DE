@@ -1,13 +1,5 @@
 <Type Name="Fields" FullName="Microsoft.Office.Interop.Word.Fields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fdd77cf26598c9ff9a9d497e81fbed99577fb24" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669830" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57c76419b1fbb163aa0a4e6e8b8649d94596aa1d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148075" /></Metadata><TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Fields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Fields" />
   <TypeSignature Language="VB.NET" Value="Public Interface Fields&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Field" /> -Objekten, die alle Felder in einer Auswahl, einem Bereich oder einem Dokument darstellen.</summary>
-    <remarks>
-      <para>Verwenden Sie die <b>Fields</b> -Eigenschaft die <b>Fields</b> -Auflistung zurückgeben.</para>
-      <para>Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> Methode der <b>Fields</b> -Auflistung ein Feld hinzu.</para>
-      <para>Use <b>Feldern</b>(<paramref name="index" />), wobei Index die <paramref name="index" /> darstellt, um ein einzelnes <b>Field</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Felds in der Auswahl, einem Bereich oder einem Dokument.</para>
-      <para>Die <b>Fields</b> -Eigenschaft mit einem <b>MailMerge</b> -Objekt verwenden, um die <b>MailMergeFields</b> -Auflistung zurückzugeben.</para>
-      <para>Der <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> -Eigenschaft für diese Auflistung in einem Dokument gibt die Anzahl der Elemente im Hauptartikel nur zurück. Gezählt werden Elemente in anderen Textabschnitten verwenden Sie die Auflistung mit den <see cref="T:Microsoft.Office.Interop.Word.Range" /> -Objekt.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Field" /> Objekten, die alle Felder in einer Auswahl, einem Bereich oder einem Dokument darstellen.</summary>
+    <remarks><para>Mit der <b>Fields</b>-Eigenschaft geben Sie die <b>Fields</b>-Auflistung zurück.</para>
+      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> die-Methode, um der <b>Fields</b> -Auflistung ein Feld hinzuzufügen.</para>
+      <para>Verwenden <b></b>Sie Fields (<paramref name="index" />), wobei Index <paramref name="index" /> die Zahl ist, um ein einzelnes <b>Field</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Felds in der Auswahl, im Bereich oder im Dokument dar.</para>
+      <para>Verwenden Sie <b></b> die Fields-Eigenschaft mit einem MailMerge-Objekt, um die <b>MailMergeFields</b> -Auflistung zurückzugeben. <b></b></para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Zum zählen von Elementen in anderen Textabschnitten verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.Range" /> Auflistung mit dem-Objekt.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,17 +55,15 @@
         <Parameter Name="PreserveFormatting" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Erforderliche <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem Sie das Feld hinzufügen möchten. Wenn der Bereich nicht reduziert ist, ersetzt das Feld Bereich.</param>
-        <param name="Type">Optionales- <b>Objekt</b>. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> Konstante. Eine Liste der gültigen Konstanten finden Sie im Objektkatalog. Der Standardwert ist <b>WdFieldEmpty</b>.</param>
-        <param name="Text">Optionales- <b>Objekt</b>. Zusätzlicher Text für das Feld erforderlich ist. Angenommen, wenn Sie eine Option für das Feld angeben möchten, würden Sie es hier hinzufügen.</param>
-        <param name="PreserveFormatting">Optionales- <b>Objekt</b>. <b>True</b>, um die dem Feld zugewiesene Formatierung bei Aktualisierungen beizubehalten.</param>
-        <summary>Fügt ein <see cref="T:Microsoft.Office.Interop.Word.Field" /> -Objekt wird an die <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung.</summary>
+        <param name="Range">Erforderliches <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt. Der Bereich, in dem Sie das Feld hinzufügen möchten. Wenn der Bereich nicht reduziert ist, ersetzt das Feld den Bereich.</param>
+        <param name="Type">Optionales <b>Objekt</b>. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> Konstante sein. Eine Liste der gültigen Konstanten finden Sie im Objektkatalog. Der Standardwert ist <b>wdFieldEmpty</b>.</param>
+        <param name="Text">Optionales <b>Objekt</b>. Zusätzlich für das Feld benötigter Text. Wenn Sie zum Beispiel einen Schalter für das Feld angeben möchten, fügen Sie ihn hier hinzu.</param>
+        <param name="PreserveFormatting">Optionales <b>Objekt</b>. <b>True</b>, um die dem Feld zugewiesene Formatierung bei Aktualisierungen beizubehalten.</param>
+        <summary>Fügt der <see cref="T:Microsoft.Office.Interop.Word.Field" /> <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung ein-Objekt hinzu.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Diese Methode gibt das <b>Field</b> -Objekt im angegebenen Bereich zurück.</para>
-          <para>Einige Felder (wie <b>WdFieldOCX</b> und <b>WdFieldFormCheckBox</b>) einlegen kann nicht mithilfe der <b>Add</b> -Methode der <b>Fields</b> -Auflistung. Sie müssen stattdessen verwenden bestimmte Methoden wie die <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode und die <b>Add</b> -Methode für die <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Methode gibt das <b>Field</b> -Objekt im angegebenen Bereich zurück.</para>
+          <para>Einige Felder (z. B. <b>wdFieldOCX</b> und <b>wdFieldFormCheckBox</b>) können nicht mit der <b>Add</b>-Methode der <b>Fields</b>-Auflistung eingefügt werden. Stattdessen müssen Sie bestimmte Methoden wie die <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode und die <b>Add</b> -Methode für die <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung verwenden.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -101,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,11 +147,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -224,7 +210,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Eine <b>ganze Zahl</b> zurück, der die Ordnungsposition des einzelnen Objekts angibt.</param>
+        <param name="Index">Eine <b>ganze Zahl</b> , die die Ordnungsposition des einzelnen Objekts angibt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -256,12 +242,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bestimmt, ob alle Felder in der <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung gesperrt sind.</summary>
+        <summary>Bestimmt, ob alle Felder in <see cref="T:Microsoft.Office.Interop.Word.Fields" /> der Auflistung gesperrt sind.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn alle Felder in der <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung gesperrt sind, und <b>False,</b> Wenn nicht.</para>
-          <para />
-        </remarks>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, wenn alle Felder <see cref="T:Microsoft.Office.Interop.Word.Fields" /> in der Auflistung gesperrt sind, und <b>false</b> , wenn dies nicht der Fall ist.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -313,11 +297,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Schaltet die Anzeige der Felder zwischen Feldfunktionen und Feldergebnissen.</summary>
-        <remarks>
-          <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> Eigenschaft zum Steuern der Anzeige eines einzelnen Felds.</para>
-          <para />
-        </remarks>
+        <summary>Schaltet die Anzeige der Felder zwischen Feldfunktionen und Feldergebnissen um.</summary>
+        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> die-Eigenschaft, um die Anzeige eines einzelnen Felds zu steuern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlink">
@@ -341,11 +323,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ersetzt alle Felder in der <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung durch ihre aktuellen Ergebnisse.</summary>
-        <remarks>
-          <para>Wenn Sie die Verknüpfung ein Felds aufheben, wird sein aktuelle Ergebnis in Text oder eine Grafik konvertiert und kann nicht mehr automatisch aktualisiert werden. Beachten Sie, dass einige Felder – beispielsweise XE (Indexeintrag) und (Sequenz) SEQ-Felder – nicht aufgehoben werden kann.</para>
-          <para />
-        </remarks>
+        <summary>Ersetzt alle Felder in der <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung durch ihre neuesten Ergebnisse.</summary>
+        <remarks><para>Wenn Sie die Verknüpfung eines Felds aufheben, wird sein aktuelles Ergebnis in Text oder in eine Grafik konvertiert und kann nicht mehr automatisch aktualisiert werden. Beachten Sie, dass einige Felder wie XE-Felder (Index Eintrag) und SEQ-Felder (Sequenz) nicht aufheben können.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -371,10 +351,8 @@
       <Docs>
         <summary>Aktualisiert das Ergebnis des Fields-Objekts.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Bei Anwendung auf eine <see cref="T:Microsoft.Office.Interop.Word.Fields" /> -Auflistung, gibt 0 (null), wenn keine Fehler auftreten, wenn die Felder aktualisiert werden, oder gibt eine <b>ganze Zahl</b> , die den Index des ersten Felds darstellt, die einen Fehler enthält.</para>
-          <para />
-        </remarks>
+        <remarks><para>Bei Anwendung auf eine <see cref="T:Microsoft.Office.Interop.Word.Fields" /> Auflistung gibt 0 (null) zurück, wenn keine Fehler auftreten, wenn die Felder aktualisiert werden, oder gibt eine <b>ganze Zahl</b> zurück, die den Index des ersten Felds darstellt, das einen Fehler enthält.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateSource">
@@ -399,10 +377,8 @@
       <Parameters />
       <Docs>
         <summary>Speichert die Änderungen, die an den Ergebnissen eines INCLUDETEXT-Felds vorgenommen wurden, in das Quelldokument zurück.</summary>
-        <remarks>
-          <para>Das Quelldokument muss als Microsoft Word-Dokument formatiert sein.</para>
-          <para />
-        </remarks>
+        <remarks><para>Das Quelldokument muss als Microsoft Word Dokument formatiert sein.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

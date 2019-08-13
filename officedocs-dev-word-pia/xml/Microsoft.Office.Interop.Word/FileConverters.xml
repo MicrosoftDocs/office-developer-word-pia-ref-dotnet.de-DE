@@ -1,13 +1,5 @@
 <Type Name="FileConverters" FullName="Microsoft.Office.Interop.Word.FileConverters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a9991499cc222e4107034dfd282d099eaf96e217" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="de-DE" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20669698" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FileConverters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="32cfd447f3ab9be6786784ffbe11bd117040831a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148068" /></Metadata><TypeSignature Language="C#" Value="public interface FileConverters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileConverters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FileConverters" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileConverters&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> -Objekten, die alle zum Öffnen und Speichern von Dateien verfügbaren Dateikonverter darstellen.</summary>
-    <remarks>
-      <para>Verwendung der <see cref="P:Microsoft.Office.Interop.Word._Application.FileConverters" /> Eigenschaft, um der <b>FileConverters</b> -Auflistung zurückzugeben.</para>
-      <para>Der <b>Add</b> -Methode ist nicht verfügbar für die <b>FileConverters</b> -Auflistung. <b>FileConverter</b> -Objekten werden während der Installation von Microsoft Office oder durch Installieren von zusätzlichen Konvertern hinzugefügt.</para>
-      <para>Verwendung <b>FileConverters</b>(<paramref name="index" />), wobei <paramref name="index" /> ist eine Klassenname oder die Indexzahl darstellt, um ein einzelnes <b>FileConverter</b> -Objekt zurückzugeben.</para>
-      <para>Die Indexnummer stellt die Position des Dateikonverters in der <b>FileConverters</b> -Auflistung.</para>
-      <para>Datei Konverter zum Speichern von Dokumenten werden im Dialogfeld Speichern unter aufgelistet. Dateikonverter zum Öffnen von Dokumenten in einem Dialogfeld angezeigt werden, wenn das Konvertierung beim Öffnen Kontrollkästchen bestätigen auf der Registerkarte Allgemein im Dialogfeld Optionen (Menü Extras) ausgewählt ist.</para>
-      <para />
-    </remarks>
+    <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> Objekten, die alle zum Öffnen und Speichern von Dateien verfügbaren Dateikonverter darstellen.</summary>
+    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.FileConverters" /> die-Eigenschaft, um die FileConverters-Auflistung zurückzugeben. <b></b></para>
+      <para>Die <b>Add</b> -Methode ist nicht verfügbar für die <b>FileConverters</b> -Auflistung. <b>FileConverter</b> -Objekten werden während der Installation von Microsoft Office oder durch Installieren von zusätzlichen Konvertern hinzugefügt.</para>
+      <para>Verwenden <b></b>Sie FileConverters<paramref name="index" />(), <paramref name="index" /> wobei ein Klassenname oder eine Indexnummer ist, um ein <b></b> einzelnes FileConverter-Objekt zurückzugeben.</para>
+      <para>Die Indexnummer stellt die Position des Dateikonverters in der <b>FileConverters</b> -Auflistung dar.</para>
+      <para>Dateikonverter zum Speichern von Dokumenten werden im Dialogfeld Speichern unter aufgelistet. Dateikonverter zum Öffnen von Dateien werden in einem Dialogfeld angezeigt, wenn auf der Registerkarte Allgemein des Dialogfelds Optionen (Menü Extras) das Kontrollkästchen Konvertierung beim Öffnen bestätigen aktiviert ist.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> -Objekt, das die Microsoft Word-Anwendung darstellt.</summary>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,12 +85,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdChevronConvertRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Steuert, ob Text in Chevron-Zeichen eingeschlossen («»), um Felder Zusammenführen konvertiert wird.</summary>
+        <summary>Steuert, ob Text, der in Chevron-Zeichen («») eingeschlossen ist, in Seriendruckfelder konvertiert wird.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Verwenden Microsoft Word für Macintosh Version 4.0 und 5.x Dokumente Chevron-Zeichen, um Seriendruckfeldern.</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word für die Dokumente der Macintosh-Version 4,0 und 5. x verwenden Chevronzeichen zum Kennzeichnen von Seriendruckfeldern.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -156,11 +144,9 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die Hexadezimalzahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Dieser Wert kann auch durch die <b>WdCreatorCode</b>-Konstante dargestellt werden.</para>
-          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt. Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -221,7 +207,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Ein <b>Objekt</b> zurück, der die Ordnungsposition oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
+        <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
         <summary>Gibt ein einzelnes Objekt in einer Auflistung zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
