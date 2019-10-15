@@ -10,11 +10,15 @@
       ],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
+      "type_mapping": {
+        "NetEnum": "Content",
+        "NetDelegate": "Content",
+        "NetNamespace": "Content",
+        "NetMember": "Content",
+        "NetType": "Content"
+      },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "customized_template_paths": [
-        "_dependentPackages/memberpage.plugins/content"
-      ],
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
@@ -29,7 +33,8 @@
         "SourceXmlFolder": "officedocs-dev-word-pia/xml",
         "OutputYamlFolder": "officedocs-dev-word-pia/api",
         "Flatten": true,
-        "id": "officedocs-dev-word-pia"
+        "id": "officedocs-dev-word-pia",
+        "SDPMode": true
       },
       "SplitTOC": [
         "officedocs-dev-word-pia/api/officedocs-dev-word-pia/toc.yml"
@@ -81,13 +86,6 @@
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
       "nuget_feed": "https://www.myget.org/F/op/api/v2",
       "path_to_root": "_dependentPackages/ECMA2Yaml",
-      "target_framework": "net45",
-      "version": "latest"
-    },
-    {
-      "id": "memberpage.plugins",
-      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
-      "path_to_root": "_dependentPackages/memberpage.plugins",
       "target_framework": "net45",
       "version": "latest"
     }
