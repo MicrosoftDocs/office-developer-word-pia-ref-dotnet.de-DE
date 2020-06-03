@@ -1,9 +1,10 @@
 <Type Name="HangulHanjaConversionDictionaries" FullName="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7f106055e619307a9bffe6eb130466a321eefa69" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146738" /></Metadata><TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="636d3b64b5926fa6986ae82942b299149f98f195" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924039" /></Metadata><TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HangulHanjaConversionDictionaries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />
   <TypeSignature Language="VB.NET" Value="Public Interface HangulHanjaConversionDictionaries&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class HangulHanjaConversionDictionaries : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type HangulHanjaConversionDictionaries = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="82ed4-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekten, die die aktiven benutzerdefinierten Hangul-Hanja-Konvertierungswörterbücher enthält.</span><span class="sxs-lookup"><span data-stu-id="82ed4-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objects that includes the active custom Hangul-Hanja conversion dictionaries.</span></span></summary>
-    <remarks><para><span data-ttu-id="82ed4-102">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> die-Eigenschaft, um die Auflistung der derzeit aktiven benutzerdefinierten Konvertierungswörterbücher zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="82ed4-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> property to return the collection of currently active custom conversion dictionaries.</span></span></para>
-      <para><span data-ttu-id="82ed4-103">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> die-Methode, um der Auflistung der aktiven benutzerdefinierten Konvertierungswörterbücher ein neues benutzerdefiniertes Konvertierungswörterbuch hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="82ed4-103">Use the <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> method to add a new custom conversion dictionary to the collection of active custom conversion dictionaries.</span></span> <span data-ttu-id="82ed4-104">Wenn keine Datei mit dem von <paramref name="FileName" />Microsoft Word angegebenen Namen vorhanden ist, wird Sie erstellt.</span><span class="sxs-lookup"><span data-stu-id="82ed4-104">If there isn't a file with the name specified by <paramref name="FileName" />, Microsoft Word creates it.</span></span></para>
-      <para><span data-ttu-id="82ed4-105">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> die-Methode, um alle benutzerdefinierten Konvertierungswörterbücher zu entladen.</span><span class="sxs-lookup"><span data-stu-id="82ed4-105">Use the <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> method to unload all custom conversion dictionaries.</span></span> <span data-ttu-id="82ed4-106">Mit dieser Methode werden jedoch nicht die Dateien der Wörterbücher gelöscht.</span><span class="sxs-lookup"><span data-stu-id="82ed4-106">Note, however, that this method doesn't delete the dictionary files.</span></span> <span data-ttu-id="82ed4-107">Nachdem Sie diese Methode verwendet haben, ist die Anzahl der Benutzerkonvertierungswörterbücher gleich 0 (null).</span><span class="sxs-lookup"><span data-stu-id="82ed4-107">After you use this method, the number of custom conversion dictionaries in the collection is 0 (zero).</span></span></para>
-      <para><span data-ttu-id="82ed4-108">Sie legen das Benutzerwörterbuch fest, auf das neue Wörter mithilfe der <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> -Eigenschaft hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="82ed4-108">You set the custom dictionary to which new words are added by using the <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> property.</span></span> <span data-ttu-id="82ed4-109">Wenn Sie versuchen, diese Eigenschaft für ein Wörterbuch festzulegen, das kein Benutzerkonvertierungswörterbuch ist, tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="82ed4-109">If you try to set this property to a dictionary that isn't a custom conversion dictionary, an error occurs.</span></span></para>
-      <para><span data-ttu-id="82ed4-110">Die <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" /> -Eigenschaft gibt die maximale Anzahl gleichzeitiger benutzerdefinierter Konvertierungswörterbücher zurück, die von der Anwendung unterstützt werden können.</span><span class="sxs-lookup"><span data-stu-id="82ed4-110">The <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" /> property returns the maximum number of simultaneous custom conversion dictionaries that the application can support.</span></span> <span data-ttu-id="82ed4-111">Bei Word beträgt der maximal zulässige Wert 10.</span><span class="sxs-lookup"><span data-stu-id="82ed4-111">For Word, this maximum is 10.</span></span></para>
+    <summary><span data-ttu-id="c57d7-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekten, die die aktiven benutzerdefinierten Hangul-Hanja-Konvertierungswörterbücher enthält.</span><span class="sxs-lookup"><span data-stu-id="c57d7-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objects that includes the active custom Hangul-Hanja conversion dictionaries.</span></span></summary>
+    <remarks><para><span data-ttu-id="c57d7-102">Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> -Eigenschaft, um die Auflistung der derzeit aktiven benutzerdefinierten Konvertierungswörterbücher zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="c57d7-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> property to return the collection of currently active custom conversion dictionaries.</span></span></para>
+      <para><span data-ttu-id="c57d7-103">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> -Methode, um der Auflistung der aktiven benutzerdefinierten Konvertierungswörterbücher ein neues benutzerdefiniertes Konvertierungswörterbuch hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="c57d7-103">Use the <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> method to add a new custom conversion dictionary to the collection of active custom conversion dictionaries.</span></span> <span data-ttu-id="c57d7-104">Wenn keine Datei mit dem von Microsoft Word angegebenen Namen vorhanden ist <paramref name="FileName" /> , wird Sie erstellt.</span><span class="sxs-lookup"><span data-stu-id="c57d7-104">If there isn't a file with the name specified by <paramref name="FileName" />, Microsoft Word creates it.</span></span></para>
+      <para><span data-ttu-id="c57d7-105">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> -Methode, um alle benutzerdefinierten Konvertierungswörterbücher zu entladen.</span><span class="sxs-lookup"><span data-stu-id="c57d7-105">Use the <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> method to unload all custom conversion dictionaries.</span></span> <span data-ttu-id="c57d7-106">Mit dieser Methode werden jedoch nicht die Dateien der Wörterbücher gelöscht.</span><span class="sxs-lookup"><span data-stu-id="c57d7-106">Note, however, that this method doesn't delete the dictionary files.</span></span> <span data-ttu-id="c57d7-107">Nachdem Sie diese Methode verwendet haben, ist die Anzahl der Benutzerkonvertierungswörterbücher gleich 0 (null).</span><span class="sxs-lookup"><span data-stu-id="c57d7-107">After you use this method, the number of custom conversion dictionaries in the collection is 0 (zero).</span></span></para>
+      <para><span data-ttu-id="c57d7-108">Sie legen das Benutzerwörterbuch fest, auf das neue Wörter mithilfe der-Eigenschaft hinzugefügt werden <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> .</span><span class="sxs-lookup"><span data-stu-id="c57d7-108">You set the custom dictionary to which new words are added by using the <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> property.</span></span> <span data-ttu-id="c57d7-109">Wenn Sie versuchen, diese Eigenschaft für ein Wörterbuch festzulegen, das kein Benutzerkonvertierungswörterbuch ist, tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="c57d7-109">If you try to set this property to a dictionary that isn't a custom conversion dictionary, an error occurs.</span></span></para>
+      <para><span data-ttu-id="c57d7-110">Die <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" /> -Eigenschaft gibt die maximale Anzahl gleichzeitiger benutzerdefinierter Konvertierungswörterbücher zurück, die von der Anwendung unterstützt werden können.</span><span class="sxs-lookup"><span data-stu-id="c57d7-110">The <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" /> property returns the maximum number of simultaneous custom conversion dictionaries that the application can support.</span></span> <span data-ttu-id="c57d7-111">Bei Word beträgt der maximal zulässige Wert 10.</span><span class="sxs-lookup"><span data-stu-id="c57d7-111">For Word, this maximum is 10.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveCustomDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveCustomDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); void set(Microsoft::Office::Interop::Word::Dictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveCustomDictionary : Microsoft.Office.Interop.Word.Dictionary with get, set" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -57,7 +59,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82ed4-112">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das das Benutzerwörterbuch darstellt, dem Wörter hinzugefügt werden, oder legt dieses fest.</span><span class="sxs-lookup"><span data-stu-id="82ed4-112">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the custom dictionary to which words will be added.</span></span></summary>
+        <summary><span data-ttu-id="c57d7-112">Gibt ein Objekt zurück <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> , das das Benutzerwörterbuch darstellt, dem Wörter hinzugefügt werden, oder legt dieses fest.</span><span class="sxs-lookup"><span data-stu-id="c57d7-112">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the custom dictionary to which words will be added.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (FileName As String) As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Dictionary ^ Add(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; Microsoft.Office.Interop.Word.Dictionary" Usage="hangulHanjaConversionDictionaries.Add FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,11 +88,11 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName"><span data-ttu-id="82ed4-113"><b>String</b> erforderlich.</span><span class="sxs-lookup"><span data-stu-id="82ed4-113">Required <b>String</b>.</span></span> <span data-ttu-id="82ed4-114">Der Zeichenfolgename der Wörterbuchdatei.</span><span class="sxs-lookup"><span data-stu-id="82ed4-114">The string name of the dictionary file.</span></span> <span data-ttu-id="82ed4-115">Wenn in der Zeichenfolge kein Pfad angegeben ist, wird der Pfad für die Korrekturhilfen verwendet.</span><span class="sxs-lookup"><span data-stu-id="82ed4-115">If no path is specified in the string, the proofing tools path is used.</span></span></param>
-        <summary><span data-ttu-id="82ed4-116">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das ein neues Konvertierungswörterbuch darstellt, das der Auflistung von aktiven benutzerdefinierten Konvertierungs Wörterbüchern hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="82ed4-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents a new conversion dictionary added to the collection of active custom conversion dictionaries.</span></span></summary>
+        <param name="FileName"><span data-ttu-id="c57d7-113"><b>String</b> erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c57d7-113">Required <b>String</b>.</span></span> <span data-ttu-id="c57d7-114">Der Zeichenfolgename der Wörterbuchdatei.</span><span class="sxs-lookup"><span data-stu-id="c57d7-114">The string name of the dictionary file.</span></span> <span data-ttu-id="c57d7-115">Wenn in der Zeichenfolge kein Pfad angegeben ist, wird der Pfad für die Korrekturhilfen verwendet.</span><span class="sxs-lookup"><span data-stu-id="c57d7-115">If no path is specified in the string, the proofing tools path is used.</span></span></param>
+        <summary><span data-ttu-id="c57d7-116">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das ein neues Konvertierungswörterbuch darstellt, das der Auflistung von aktiven benutzerdefinierten Konvertierungs Wörterbüchern hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="c57d7-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents a new conversion dictionary added to the collection of active custom conversion dictionaries.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="82ed4-117">Wenn eine Datei mit dem angegebenen Namen <paramref name="FileName" /> nicht vorhanden ist, erstellt Microsoft Word eine.</span><span class="sxs-lookup"><span data-stu-id="82ed4-117">If a file with the name specified by <paramref name="FileName" /> doesn't exist, Microsoft Word creates one.</span></span></para>
-          <para><span data-ttu-id="82ed4-118">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> die-Eigenschaft, um die Auflistung von benutzerdefinierten Konvertierungs Wörterbüchern zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="82ed4-118">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> property to return the collection of custom conversion dictionaries.</span></span> <span data-ttu-id="82ed4-119">Die <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> Auflistung enthält nur die aktiven benutzerdefinierten Konvertierungswörterbücher.</span><span class="sxs-lookup"><span data-stu-id="82ed4-119">The <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> collection includes only the active custom conversion dictionaries.</span></span></para>
+        <remarks><para><span data-ttu-id="c57d7-117">Wenn eine Datei mit dem angegebenen Namen <paramref name="FileName" /> nicht vorhanden ist, erstellt Microsoft Word eine.</span><span class="sxs-lookup"><span data-stu-id="c57d7-117">If a file with the name specified by <paramref name="FileName" /> doesn't exist, Microsoft Word creates one.</span></span></para>
+          <para><span data-ttu-id="c57d7-118">Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> -Eigenschaft, um die Auflistung von benutzerdefinierten Konvertierungs Wörterbüchern zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="c57d7-118">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> property to return the collection of custom conversion dictionaries.</span></span> <span data-ttu-id="c57d7-119">Die <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> Auflistung enthält nur die aktiven benutzerdefinierten Konvertierungswörterbücher.</span><span class="sxs-lookup"><span data-stu-id="c57d7-119">The <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> collection includes only the active custom conversion dictionaries.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -116,7 +120,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82ed4-120">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="82ed4-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="c57d7-120">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="c57d7-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.BuiltinDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltinDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ BuiltinDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltinDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.BuiltinDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -147,7 +152,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82ed4-121">Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="82ed4-121">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="c57d7-121">Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="c57d7-121">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="abstract member ClearAll : unit -&gt; unit" Usage="hangulHanjaConversionDictionaries.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -173,8 +179,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="82ed4-122">Entfernt alle Benutzer- oder Konvertierungswörterbücher.</span><span class="sxs-lookup"><span data-stu-id="82ed4-122">Unloads all of the custom or conversion dictionaries.</span></span></summary>
-        <remarks><para><span data-ttu-id="82ed4-123">Die <b>ClearAll</b> -Methode, wenn Sie <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> in <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> einem oder-Objekt verwendet wird, werden die benutzerdefinierten oder Konvertierungswörterbuch-Dateien nicht gelöscht.</span><span class="sxs-lookup"><span data-stu-id="82ed4-123">The <b>ClearAll</b> method when used on a <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> or <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> object does not delete the custom or conversion dictionary files.</span></span> <span data-ttu-id="82ed4-124">Nachdem Sie diese Methode verwendet haben, ist die Anzahl der benutzerdefinierten oder Konvertierungswörterbücher in der Auflistung 0 (null).</span><span class="sxs-lookup"><span data-stu-id="82ed4-124">After using this method, the number of custom or conversion dictionaries in the collection is 0 (zero).</span></span></para>
+        <summary><span data-ttu-id="c57d7-122">Entfernt alle Benutzer- oder Konvertierungswörterbücher.</span><span class="sxs-lookup"><span data-stu-id="c57d7-122">Unloads all of the custom or conversion dictionaries.</span></span></summary>
+        <remarks><para><span data-ttu-id="c57d7-123">Die <b>ClearAll</b> -Methode, wenn Sie in einem oder-Objekt verwendet wird, <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> werden die benutzerdefinierten oder Konvertierungswörterbuch-Dateien nicht gelöscht.</span><span class="sxs-lookup"><span data-stu-id="c57d7-123">The <b>ClearAll</b> method when used on a <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> or <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> object does not delete the custom or conversion dictionary files.</span></span> <span data-ttu-id="c57d7-124">Nachdem Sie diese Methode verwendet haben, ist die Anzahl der benutzerdefinierten oder Konvertierungswörterbücher in der Auflistung 0 (null).</span><span class="sxs-lookup"><span data-stu-id="c57d7-124">After using this method, the number of custom or conversion dictionaries in the collection is 0 (zero).</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82ed4-125">Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="82ed4-125">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="c57d7-125">Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="c57d7-125">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,10 +237,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82ed4-126">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="82ed4-126">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="c57d7-126">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="c57d7-126">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="82ed4-127">Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="82ed4-127">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="82ed4-128">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="82ed4-128">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="82ed4-129">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="82ed4-129">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="82ed4-130">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="82ed4-130">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="82ed4-131">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="82ed4-131">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="c57d7-127">Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="c57d7-127">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="c57d7-128">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="c57d7-128">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="c57d7-129">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="c57d7-129">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="c57d7-130">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="c57d7-130">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="c57d7-131">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="c57d7-131">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="hangulHanjaConversionDictionaries.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Dictionary ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -291,11 +301,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="82ed4-132">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="82ed4-132">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="82ed4-133">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="82ed4-133">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="c57d7-132">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="c57d7-132">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="c57d7-133">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="c57d7-133">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -323,7 +334,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82ed4-134">Gibt die maximal zulässige Anzahl von Benutzer- oder Konvertierungswörterbüchern zurück.</span><span class="sxs-lookup"><span data-stu-id="82ed4-134">Returns the maximum number of custom or conversion dictionaries allowed.</span></span></summary>
+        <summary><span data-ttu-id="c57d7-134">Gibt die maximal zulässige Anzahl von Benutzer- oder Konvertierungswörterbüchern zurück.</span><span class="sxs-lookup"><span data-stu-id="c57d7-134">Returns the maximum number of custom or conversion dictionaries allowed.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -334,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -351,7 +363,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="82ed4-135">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="82ed4-135">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="c57d7-135">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="c57d7-135">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
