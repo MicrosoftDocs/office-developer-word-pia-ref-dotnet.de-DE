@@ -1,9 +1,10 @@
 <Type Name="Columns" FullName="Microsoft.Office.Interop.Word.Columns">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3ae32a4fd4b94ca8c949579a32bc324ed5723ab8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147257" /></Metadata><TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47fe2e35e00a9e5e9642827ad181c5bec493aa48" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922367" /></Metadata><TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Columns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Columns" />
   <TypeSignature Language="VB.NET" Value="Public Interface Columns&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Columns : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Columns = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="e3d80-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekten, die die Spalten in einer Tabelle darstellen.</span><span class="sxs-lookup"><span data-stu-id="e3d80-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Column" /> objects that represent the columns in a table.</span></span></summary>
-    <remarks><para><span data-ttu-id="e3d80-102">Verwenden Sie die <b>Columns</b> -Eigenschaft, um die <b>Columns</b> -Auflistung zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="e3d80-102">Use the <b>Columns</b> property to return the <b>Columns</b> collection.</span></span></para>
-      <para><span data-ttu-id="e3d80-103">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> die-Methode, um einer Tabelle eine Spalte hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e3d80-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> method to add a column to a table.</span></span></para>
-      <para><span data-ttu-id="e3d80-104">Verwenden <b></b>Sie Spalten<paramref name="index" />(), wobei <b>Index</b> die Indexnummer ist, um ein einzelnes <b>Column</b> -Objekt zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="e3d80-104">Use <b>Columns</b>(<paramref name="index" />), where <b>index</b> is the index number, to return a single <b>Column</b> object.</span></span></para>
+    <summary><span data-ttu-id="04929-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekten, die die Spalten in einer Tabelle darstellen.</span><span class="sxs-lookup"><span data-stu-id="04929-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Column" /> objects that represent the columns in a table.</span></span></summary>
+    <remarks><para><span data-ttu-id="04929-102">Verwenden Sie die <b>Columns</b> -Eigenschaft, um die <b>Columns</b> -Auflistung zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="04929-102">Use the <b>Columns</b> property to return the <b>Columns</b> collection.</span></span></para>
+      <para><span data-ttu-id="04929-103">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> -Methode, um einer Tabelle eine Spalte hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="04929-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> method to add a column to a table.</span></span></para>
+      <para><span data-ttu-id="04929-104">Verwenden Sie <b>Spalten</b>( <paramref name="index" /> ), wobei <b>Index</b> die Indexnummer ist, um ein einzelnes <b>Column</b> -Objekt zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="04929-104">Use <b>Columns</b>(<paramref name="index" />), where <b>index</b> is the index number, to return a single <b>Column</b> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Column Add([in]object&amp; BeforeColumn) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef BeforeColumn As Object) As Column" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; Microsoft.Office.Interop.Word.Column" Usage="columns.Add BeforeColumn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,11 +50,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="BeforeColumn" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="BeforeColumn" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeColumn"><span data-ttu-id="e3d80-105">Ein <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekt, das die Spalte darstellt, die unmittelbar rechts neben der neuen Spalte angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="e3d80-105">A <see cref="T:Microsoft.Office.Interop.Word.Column" /> object that represents the column that will appear immediately to the right of the new column.</span></span></param>
-        <summary><span data-ttu-id="e3d80-106">Fügt einer Tabelle eine Spalte hinzu.</span><span class="sxs-lookup"><span data-stu-id="e3d80-106">Adds a column to a table.</span></span></summary>
+        <param name="BeforeColumn"><span data-ttu-id="04929-105">Ein <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekt, das die Spalte darstellt, die unmittelbar rechts neben der neuen Spalte angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="04929-105">A <see cref="T:Microsoft.Office.Interop.Word.Column" /> object that represents the column that will appear immediately to the right of the new column.</span></span></param>
+        <summary><span data-ttu-id="04929-106">Fügt einer Tabelle eine Spalte hinzu.</span><span class="sxs-lookup"><span data-stu-id="04929-106">Adds a column to a table.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Columns.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-107">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-107">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="04929-107">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das den Ersteller des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="04929-107">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Columns.AutoFit" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoFit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoFit();" />
+      <MemberSignature Language="F#" Value="abstract member AutoFit : unit -&gt; unit" Usage="columns.AutoFit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,8 +110,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="e3d80-108">Ändert die Breite einer Tabellenspalte und passt diese an die Breite des Texts an, ohne die Art zu ändern, wie der Text in den Zellen umbrochen wird.</span><span class="sxs-lookup"><span data-stu-id="e3d80-108">Changes the width of a table column to accommodate the width of the text without changing the way text wraps in the cells.</span></span></summary>
-        <remarks><para><span data-ttu-id="e3d80-109">Wenn die Tabelle bereits so breit wie der Abstand zwischen dem linken und rechten Rand ist, hat diese Methode keine Auswirkung.</span><span class="sxs-lookup"><span data-stu-id="e3d80-109">If the table is already as wide as the distance between the left and right margins, this method has no effect.</span></span></para>
+        <summary><span data-ttu-id="04929-108">Ändert die Breite einer Tabellenspalte und passt diese an die Breite des Texts an, ohne die Art zu ändern, wie der Text in den Zellen umbrochen wird.</span><span class="sxs-lookup"><span data-stu-id="04929-108">Changes the width of a table column to accommodate the width of the text without changing the way text wraps in the cells.</span></span></summary>
+        <remarks><para><span data-ttu-id="04929-109">Wenn die Tabelle bereits so breit wie der Abstand zwischen dem linken und rechten Rand ist, hat diese Methode keine Auswirkung.</span><span class="sxs-lookup"><span data-stu-id="04929-109">If the table is already as wide as the distance between the left and right margins, this method has no effect.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.Columns.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,7 +142,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-110">Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.Borders" /> einer Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-110">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span></span></summary>
+        <summary><span data-ttu-id="04929-110">Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.Borders" /> Auflistung, die alle Rahmen für das angegebene Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="04929-110">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Columns.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-111">Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="e3d80-111">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="04929-111">Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="04929-111">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Columns.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,10 +200,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-112">Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="e3d80-112">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="04929-112">Gibt einen Wert zurück, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="04929-112">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="e3d80-113">Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-113">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="e3d80-114">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="e3d80-114">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="e3d80-115">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-115">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="e3d80-116">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="e3d80-116">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="e3d80-117">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="e3d80-117">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="04929-113">Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="04929-113">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="04929-114">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="04929-114">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="04929-115">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="04929-115">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="04929-116">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="04929-116">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="04929-117">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="04929-117">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Columns.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="columns.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -221,7 +229,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="e3d80-118">Löscht das angegebene Objekt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-118">Deletes the specified object.</span></span></summary>
+        <summary><span data-ttu-id="04929-118">Löscht das angegebene Objekt.</span><span class="sxs-lookup"><span data-stu-id="04929-118">Deletes the specified object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Columns.DistributeWidth" />
       <MemberSignature Language="VB.NET" Value="Public Sub DistributeWidth ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DistributeWidth();" />
+      <MemberSignature Language="F#" Value="abstract member DistributeWidth : unit -&gt; unit" Usage="columns.DistributeWidth " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -246,7 +255,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="e3d80-119">Passt die Breite der angegebenen Spalten so an, dass Sie gleich sind.</span><span class="sxs-lookup"><span data-stu-id="e3d80-119">Adjusts the width of the specified columns so that they're equal.</span></span></summary>
+        <summary><span data-ttu-id="04929-119">Passt die Breite der angegebenen Spalten so an, dass Sie gleich sind.</span><span class="sxs-lookup"><span data-stu-id="04929-119">Adjusts the width of the specified columns so that they're equal.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Column" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Column ^ First { Microsoft::Office::Interop::Word::Column ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : Microsoft.Office.Interop.Word.Column" Usage="Microsoft.Office.Interop.Word.Columns.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -273,7 +283,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-120">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekt zurück, das das erste Element in <see cref="T:Microsoft.Office.Interop.Word.Columns" /> der Auflistung darstellt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Column" /> object that represents the first item in the <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</span></span></summary>
+        <summary><span data-ttu-id="04929-120">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekt zurück, das das erste Element in der <see cref="T:Microsoft.Office.Interop.Word.Columns" /> Auflistung darstellt.</span><span class="sxs-lookup"><span data-stu-id="04929-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Column" /> object that represents the first item in the <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Columns.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="columns.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -316,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Column" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Column ^ default[int] { Microsoft::Office::Interop::Word::Column ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Column" Usage="Microsoft.Office.Interop.Word.Columns.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -336,8 +348,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="e3d80-121">Ein Wert, der die Ordnungsposition des einzelnen Objekts angibt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-121">A value that indicates the ordinal position of the individual object.</span></span></param>
-        <summary><span data-ttu-id="e3d80-122">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="e3d80-122">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="04929-121">Ein Wert, der die Ordnungsposition des einzelnen Objekts angibt.</span><span class="sxs-lookup"><span data-stu-id="04929-121">A value that indicates the ordinal position of the individual object.</span></span></param>
+        <summary><span data-ttu-id="04929-122">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="04929-122">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Column" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Column ^ Last { Microsoft::Office::Interop::Word::Column ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Last : Microsoft.Office.Interop.Word.Column" Usage="Microsoft.Office.Interop.Word.Columns.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -365,7 +378,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-123">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekt zurück, das das letzte Element in <see cref="T:Microsoft.Office.Interop.Word.Columns" /> der Auflistung darstellt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-123">Returns a <see cref="T:Microsoft.Office.Interop.Word.Column" /> object that represents the last item in the <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</span></span></summary>
+        <summary><span data-ttu-id="04929-123">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Column" /> Objekt zurück, das das letzte Element in der <see cref="T:Microsoft.Office.Interop.Word.Columns" /> Auflistung darstellt.</span><span class="sxs-lookup"><span data-stu-id="04929-123">Returns a <see cref="T:Microsoft.Office.Interop.Word.Column" /> object that represents the last item in the <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.NestingLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NestingLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NestingLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NestingLevel : int" Usage="Microsoft.Office.Interop.Word.Columns.NestingLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -393,9 +407,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-124">Gibt die Schachtelungsebene der angegebenen Spalten zurück.</span><span class="sxs-lookup"><span data-stu-id="e3d80-124">Returns the nesting level of the specified columns.</span></span></summary>
+        <summary><span data-ttu-id="04929-124">Gibt die Schachtelungsebene der angegebenen Spalten zurück.</span><span class="sxs-lookup"><span data-stu-id="04929-124">Returns the nesting level of the specified columns.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="e3d80-125">Die äußerste Tabelle liegt auf Verschachtelungsbene 1.</span><span class="sxs-lookup"><span data-stu-id="e3d80-125">The outermost table has a nesting level of 1.</span></span> <span data-ttu-id="e3d80-126">Die Verschachtelungsebene jeder folgenden geschachtelten Tabelle liegt um 1 höher als die der vorhergehenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="e3d80-126">The nesting level of each successively nested table is one higher than the previous table.</span></span></para>
+        <remarks><para><span data-ttu-id="04929-125">Die äußerste Tabelle liegt auf Verschachtelungsbene 1.</span><span class="sxs-lookup"><span data-stu-id="04929-125">The outermost table has a nesting level of 1.</span></span> <span data-ttu-id="04929-126">Die Verschachtelungsebene jeder folgenden geschachtelten Tabelle liegt um 1 höher als die der vorhergehenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="04929-126">The nesting level of each successively nested table is one higher than the previous table.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -405,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Columns.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -422,7 +437,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-127">Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e3d80-127">Returns the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="04929-127">Das übergeordnete Objekt des angegebenen Objekts wird zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="04929-127">Returns the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -433,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.PreferredWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float PreferredWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.Columns.PreferredWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -453,7 +469,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-128">Gibt die bevorzugte Breite (in Punkt oder als prozentualen Anteil der Fensterbreite) für die angegebenen Spalten zurück oder legt sie fest.</span><span class="sxs-lookup"><span data-stu-id="e3d80-128">Returns or sets the preferred width (in points or as a percentage of the window width) for the specified columns.</span></span></summary>
+        <summary><span data-ttu-id="04929-128">Gibt die bevorzugte Breite (in Punkt oder als prozentualen Anteil der Fensterbreite) für die angegebenen Spalten zurück oder legt sie fest.</span><span class="sxs-lookup"><span data-stu-id="04929-128">Returns or sets the preferred width (in points or as a percentage of the window width) for the specified columns.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -464,6 +480,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.PreferredWidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidthType As WdPreferredWidthType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPreferredWidthType PreferredWidthType { Microsoft::Office::Interop::Word::WdPreferredWidthType get(); void set(Microsoft::Office::Interop::Word::WdPreferredWidthType value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidthType : Microsoft.Office.Interop.Word.WdPreferredWidthType with get, set" Usage="Microsoft.Office.Interop.Word.Columns.PreferredWidthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -484,7 +501,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPreferredWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-129">Gibt die bevorzugte Maßeinheit zurück, die für die Breite der angegebenen Spalten verwendet werden soll, oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="e3d80-129">Returns or sets the preferred unit of measurement to use for the width of the specified columns.</span></span></summary>
+        <summary><span data-ttu-id="04929-129">Gibt die bevorzugte Maßeinheit zurück, die für die Breite der angegebenen Spalten verwendet werden soll, oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="04929-129">Returns or sets the preferred unit of measurement to use for the width of the specified columns.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,6 +512,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Columns.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="columns.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -510,8 +528,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="e3d80-130">Markiert das angegebene Objekt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-130">Selects the specified object.</span></span></summary>
-        <remarks><para><span data-ttu-id="e3d80-131">Nachdem Sie diese Methode verwendet haben, <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> verwenden Sie die-Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</span><span class="sxs-lookup"><span data-stu-id="e3d80-131">After using this method, use the <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> property to work with the selected items.</span></span></para>
+        <summary><span data-ttu-id="04929-130">Markiert das angegebene Objekt.</span><span class="sxs-lookup"><span data-stu-id="04929-130">Selects the specified object.</span></span></summary>
+        <remarks><para><span data-ttu-id="04929-131">Nachdem Sie diese Methode verwendet haben, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> -Eigenschaft, um mit den ausgewählten Elementen zu arbeiten.</span><span class="sxs-lookup"><span data-stu-id="04929-131">After using this method, use the <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> property to work with the selected items.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -521,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Columns.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetWidth (ColumnWidth As Single, RulerStyle As WdRulerStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetWidth(float ColumnWidth, Microsoft::Office::Interop::Word::WdRulerStyle RulerStyle);" />
+      <MemberSignature Language="F#" Value="abstract member SetWidth : single * Microsoft.Office.Interop.Word.WdRulerStyle -&gt; unit" Usage="columns.SetWidth (ColumnWidth, RulerStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -539,10 +558,10 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth"><span data-ttu-id="e3d80-132">Die Breite der angegebenen Spalten in Punkt.</span><span class="sxs-lookup"><span data-stu-id="e3d80-132">The width of the specified columns in points.</span></span></param>
-        <param name="RulerStyle"><span data-ttu-id="e3d80-133">Ein Wert, der steuert, wie Microsoft Word die Zellenbreite anpasst.</span><span class="sxs-lookup"><span data-stu-id="e3d80-133">A value that controls the way Microsoft Word adjusts cell widths.</span></span></param>
-        <summary><span data-ttu-id="e3d80-134">Legt die Breite von Spalten in einer Tabelle fest.</span><span class="sxs-lookup"><span data-stu-id="e3d80-134">Sets the width of columns in a table.</span></span></summary>
-        <remarks><para><span data-ttu-id="e3d80-135">Das <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> Verhalten gilt für Links ausgerichtete Tabellen.</span><span class="sxs-lookup"><span data-stu-id="e3d80-135">The <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> behavior applies to left-aligned tables.</span></span> <span data-ttu-id="e3d80-136">Das <b>WdRulerStyle</b> -Verhalten für zentrierte und rechtsbündige Tabellen kann unerwartet sein; in diesen Fällen sollte die <b>SetWidth</b> -Methode mit Bedacht verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e3d80-136">The <b>WdRulerStyle</b> behavior for center- and right-aligned tables can be unexpected; in these cases, the <b>SetWidth</b> method should be used with care.</span></span></para>
+        <param name="ColumnWidth"><span data-ttu-id="04929-132">Die Breite der angegebenen Spalten in Punkt.</span><span class="sxs-lookup"><span data-stu-id="04929-132">The width of the specified columns in points.</span></span></param>
+        <param name="RulerStyle"><span data-ttu-id="04929-133">Ein Wert, der steuert, wie Microsoft Word die Zellenbreite anpasst.</span><span class="sxs-lookup"><span data-stu-id="04929-133">A value that controls the way Microsoft Word adjusts cell widths.</span></span></param>
+        <summary><span data-ttu-id="04929-134">Legt die Breite von Spalten in einer Tabelle fest.</span><span class="sxs-lookup"><span data-stu-id="04929-134">Sets the width of columns in a table.</span></span></summary>
+        <remarks><para><span data-ttu-id="04929-135">Das <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> Verhalten gilt für Links ausgerichtete Tabellen.</span><span class="sxs-lookup"><span data-stu-id="04929-135">The <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> behavior applies to left-aligned tables.</span></span> <span data-ttu-id="04929-136">Das <b>WdRulerStyle</b> -Verhalten für zentrierte und rechtsbündige Tabellen kann unerwartet sein; in diesen Fällen sollte die <b>SetWidth</b> -Methode mit Bedacht verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="04929-136">The <b>WdRulerStyle</b> behavior for center- and right-aligned tables can be unexpected; in these cases, the <b>SetWidth</b> method should be used with care.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -552,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.Columns.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -569,7 +589,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-137">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</span><span class="sxs-lookup"><span data-stu-id="e3d80-137">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shading" /> object that refers to the shading formatting for the specified object.</span></span></summary>
+        <summary><span data-ttu-id="04929-137">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Objekt zurück, das auf die Formatierung der Schattierung für das angegebene Objekt verweist.</span><span class="sxs-lookup"><span data-stu-id="04929-137">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shading" /> object that refers to the shading formatting for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -580,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Columns.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.Columns.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -600,7 +621,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="e3d80-138">Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="e3d80-138">Returns or sets the width of the specified object in points.</span></span></summary>
+        <summary><span data-ttu-id="04929-138">Gibt die Breite des angegebenen Objekts in Punkt zurück oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="04929-138">Returns or sets the width of the specified object in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

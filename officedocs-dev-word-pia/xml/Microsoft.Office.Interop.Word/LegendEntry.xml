@@ -1,9 +1,10 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Word.LegendEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="059f71dc3edd40069b1147fe21cabdefa3e8042d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146626" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6f167d0bed7c79ad8313d4cfc13e01297da8efd3" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923885" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class LegendEntry" />
+  <TypeSignature Language="F#" Value="type LegendEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,15 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="9aa24-101">Stellt einen Legendeneintrag in einer Diagrammlegende dar.</span><span class="sxs-lookup"><span data-stu-id="9aa24-101">Represents a legend entry in a chart legend.</span></span></summary>
-    <remarks><para><span data-ttu-id="9aa24-102">Das <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Auflistung.</span><span class="sxs-lookup"><span data-stu-id="9aa24-102">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection.</span></span> <span data-ttu-id="9aa24-103">Die <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Auflistung enthält alle <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekte in der Legende.</span><span class="sxs-lookup"><span data-stu-id="9aa24-103">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection contains all the <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects in the legend.</span></span></para>
-      <para><span data-ttu-id="9aa24-104">Jeder Legendeneintrag besteht aus zwei Teilen: dem Eintragstext, also dem Namen der mit dem Legendeneintrag verknüpften Datenreihe, und einer Eintragsmarkierung, die den Legendeneintrag visuell mit der verknüpften Datenreihe oder Trendlinie im Diagramm verbindet.</span><span class="sxs-lookup"><span data-stu-id="9aa24-104">Each legend entry has two parts: the text of the entry, which is the name of the series associated with the legend entry; and an entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span></span> <span data-ttu-id="9aa24-105">Formatierungseigenschaften für die Eintragsmarkierung und die zugehörige Datenreihe oder Trendlinie <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> sind im-Objekt enthalten.</span><span class="sxs-lookup"><span data-stu-id="9aa24-105">Formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object.</span></span></para>
-      <para><span data-ttu-id="9aa24-106">Der Text eines Legendeneintrags kann nicht geändert werden.</span><span class="sxs-lookup"><span data-stu-id="9aa24-106">The text of a legend entry cannot be changed.</span></span> <span data-ttu-id="9aa24-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />Objekte unterstützen Schriftartformatierungen und können gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="9aa24-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects support font formatting, and they can be deleted.</span></span> <span data-ttu-id="9aa24-108">Keine Muster Formatierung wird für die Legendeneinträge unterstützt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-108">No pattern formatting is supported for legend entries.</span></span> <span data-ttu-id="9aa24-109">Position und Größe der Einträge sind festgelegt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-109">The position and size of entries is fixed.</span></span></para>
-      <para><span data-ttu-id="9aa24-110">Der direkte Zugriff auf die Datenreihe oder Trendlinie, die dem jeweiligen Legendeneintrag entspricht, ist nicht möglich.</span><span class="sxs-lookup"><span data-stu-id="9aa24-110">There’s no direct way to return the series or trendline corresponding to the legend entry.</span></span></para>
-      <para><span data-ttu-id="9aa24-111">Nachdem Legendeneinträge gelöscht wurden, können Sie Sie nur wiederherstellen, indem Sie die Legende entfernen und neu erstellen, indem Sie die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> Eigenschaft für das Diagramm auf " <b>false</b> " und dann auf <b>true</b>zurücksetzen.</span><span class="sxs-lookup"><span data-stu-id="9aa24-111">After legend entries have been deleted, the only way to restore them is to remove and recreate the legend that contained them by setting the <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> property for the chart to <b>False</b> and then back to <b>True</b>.</span></span></para>
+    <summary><span data-ttu-id="33491-101">Stellt einen Legendeneintrag in einer Diagrammlegende dar.</span><span class="sxs-lookup"><span data-stu-id="33491-101">Represents a legend entry in a chart legend.</span></span></summary>
+    <remarks><para><span data-ttu-id="33491-102">Das- <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Auflistung.</span><span class="sxs-lookup"><span data-stu-id="33491-102">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection.</span></span> <span data-ttu-id="33491-103">Die <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> Auflistung enthält alle <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> Objekte in der Legende.</span><span class="sxs-lookup"><span data-stu-id="33491-103">The <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection contains all the <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects in the legend.</span></span></para>
+      <para><span data-ttu-id="33491-104">Jeder Legendeneintrag besteht aus zwei Teilen: dem Eintragstext, also dem Namen der mit dem Legendeneintrag verknüpften Datenreihe, und einer Eintragsmarkierung, die den Legendeneintrag visuell mit der verknüpften Datenreihe oder Trendlinie im Diagramm verbindet.</span><span class="sxs-lookup"><span data-stu-id="33491-104">Each legend entry has two parts: the text of the entry, which is the name of the series associated with the legend entry; and an entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span></span> <span data-ttu-id="33491-105">Formatierungseigenschaften für die Eintragsmarkierung und die zugehörige Datenreihe oder Trendlinie sind im <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> -Objekt enthalten.</span><span class="sxs-lookup"><span data-stu-id="33491-105">Formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object.</span></span></para>
+      <para><span data-ttu-id="33491-106">Der Text eines Legendeneintrags kann nicht geändert werden.</span><span class="sxs-lookup"><span data-stu-id="33491-106">The text of a legend entry cannot be changed.</span></span> <span data-ttu-id="33491-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />Objekte unterstützen Schriftartformatierungen und können gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="33491-107"><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objects support font formatting, and they can be deleted.</span></span> <span data-ttu-id="33491-108">Keine Muster Formatierung wird für die Legendeneinträge unterstützt.</span><span class="sxs-lookup"><span data-stu-id="33491-108">No pattern formatting is supported for legend entries.</span></span> <span data-ttu-id="33491-109">Position und Größe der Einträge sind festgelegt.</span><span class="sxs-lookup"><span data-stu-id="33491-109">The position and size of entries is fixed.</span></span></para>
+      <para><span data-ttu-id="33491-110">Der direkte Zugriff auf die Datenreihe oder Trendlinie, die dem jeweiligen Legendeneintrag entspricht, ist nicht möglich.</span><span class="sxs-lookup"><span data-stu-id="33491-110">There’s no direct way to return the series or trendline corresponding to the legend entry.</span></span></para>
+      <para><span data-ttu-id="33491-111">Nachdem Legendeneinträge gelöscht wurden, können Sie Sie nur wiederherstellen, indem Sie die Legende entfernen und neu erstellen, indem Sie die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> Eigenschaft für das Diagramm auf " <b>false</b> " und dann auf <b>true</b>zurücksetzen.</span><span class="sxs-lookup"><span data-stu-id="33491-111">After legend entries have been deleted, the only way to restore them is to remove and recreate the legend that contained them by setting the <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> property for the chart to <b>False</b> and then back to <b>True</b>.</span></span></para>
       <para> </para></remarks>
-    <example><para><span data-ttu-id="9aa24-112">Verwenden <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />Sie<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer des Legendeneintrags ist, um <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> ein einzelnes Objekt zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="9aa24-112">Use <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object.</span></span> <span data-ttu-id="9aa24-113">Sie können nicht namentlich Legendeneinträge zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="9aa24-113">You cannot return legend entries by name.</span></span></para>
-      <para><span data-ttu-id="9aa24-114">Die Indexnummer stellt die Position des Eintrags innerhalb der Legende dar.</span><span class="sxs-lookup"><span data-stu-id="9aa24-114">The index number represents the position of the legend entry in the legend.</span></span> <span data-ttu-id="9aa24-115">LegendEntries(1) befindet sich oben in der Legende, LegendEntries(LegendEntries.Count) befindet sich unten.</span><span class="sxs-lookup"><span data-stu-id="9aa24-115">LegendEntries(1) is at the top of the legend, and LegendEntries(LegendEntries.Count) is at the bottom.</span></span> </para></example>
+    <example><para><span data-ttu-id="33491-112">Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> ( <paramref name="index" /> ), wobei <paramref name="index" /> die Indexnummer des Legendeneintrags ist, um ein einzelnes Objekt zurückzugeben <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> .</span><span class="sxs-lookup"><span data-stu-id="33491-112">Use <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> object.</span></span> <span data-ttu-id="33491-113">Sie können nicht namentlich Legendeneinträge zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="33491-113">You cannot return legend entries by name.</span></span></para>
+      <para><span data-ttu-id="33491-114">Die Indexnummer stellt die Position des Eintrags innerhalb der Legende dar.</span><span class="sxs-lookup"><span data-stu-id="33491-114">The index number represents the position of the legend entry in the legend.</span></span> <span data-ttu-id="33491-115">LegendEntries(1) befindet sich oben in der Legende, LegendEntries(LegendEntries.Count) befindet sich unten.</span><span class="sxs-lookup"><span data-stu-id="33491-115">LegendEntries(1) is at the top of the legend, and LegendEntries(LegendEntries.Count) is at the bottom.</span></span> </para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.LegendEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,8 +54,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-116">Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-116">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span> <span data-ttu-id="9aa24-117">Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.)</span><span class="sxs-lookup"><span data-stu-id="9aa24-117">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span></span> <span data-ttu-id="9aa24-118">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-118">Read-only.</span></span></summary>
-        <value><span data-ttu-id="9aa24-119"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-119"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="33491-116">Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt Sie ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-116">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span> <span data-ttu-id="33491-117">Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.)</span><span class="sxs-lookup"><span data-stu-id="33491-117">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span></span> <span data-ttu-id="33491-118">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="33491-118">Read-only.</span></span></summary>
+        <value><span data-ttu-id="33491-119"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="33491-119"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.AutoScaleFont" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleFont As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AutoScaleFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleFont : obj with get, set" Usage="Microsoft.Office.Interop.Word.LegendEntry.AutoScaleFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,8 +92,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-120"><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird.</span><span class="sxs-lookup"><span data-stu-id="9aa24-120"><b>True</b> if the text in the object changes font size when the object size changes.</span></span> <span data-ttu-id="9aa24-121">Der Standardwert lautet <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="9aa24-121">The default value is <b>True</b>.</span></span></summary>
-        <value><span data-ttu-id="9aa24-122"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-122"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="33491-120"><b>True</b>, wenn die Schriftgröße des Texts im Objekt bei einer Änderung der Objektgröße geändert wird.</span><span class="sxs-lookup"><span data-stu-id="33491-120"><b>True</b> if the text in the object changes font size when the object size changes.</span></span> <span data-ttu-id="33491-121">Der Standardwert lautet <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="33491-121">The default value is <b>True</b>.</span></span></summary>
+        <value><span data-ttu-id="33491-122"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="33491-122"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.LegendEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,9 +121,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-123">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="9aa24-123">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="9aa24-124">Schreibgeschützte <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="9aa24-124">Read-only <b>Integer</b>.</span></span></summary>
-        <value><span data-ttu-id="9aa24-125"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-125"><b>Integer</b></span></span></value>
-        <remarks><para><span data-ttu-id="9aa24-126">Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="9aa24-127">Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist.</span><span class="sxs-lookup"><span data-stu-id="9aa24-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="9aa24-128">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="9aa24-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="9aa24-129">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="9aa24-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <summary><span data-ttu-id="33491-123">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="33491-123">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="33491-124">Schreibgeschützte <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="33491-124">Read-only <b>Integer</b>.</span></span></summary>
+        <value><span data-ttu-id="33491-125"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="33491-125"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="33491-126">Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="33491-127">Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist.</span><span class="sxs-lookup"><span data-stu-id="33491-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="33491-128">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="33491-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="33491-129">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="33491-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LegendEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="legendEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,8 +149,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="9aa24-130">Löscht das Objekt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-130">Deletes the object.</span></span></summary>
-        <returns><span data-ttu-id="9aa24-131"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-131"><b>Object</b></span></span></returns>
+        <summary><span data-ttu-id="33491-130">Löscht das Objekt.</span><span class="sxs-lookup"><span data-stu-id="33491-130">Deletes the object.</span></span></summary>
+        <returns><span data-ttu-id="33491-131"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="33491-131"><b>Object</b></span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Font" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As ChartFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFont ^ Font { Microsoft::Office::Interop::Word::ChartFont ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.ChartFont" Usage="Microsoft.Office.Interop.Word.LegendEntry.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-132">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-132">Returns a <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> object that represents the font of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="33491-132">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> Objekt zurück, das die Schriftart des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-132">Returns a <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> object that represents the font of the specified object.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.LegendEntry.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,8 +207,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-133">Gibt die Linien-, Füll- und effektformatierung für das Objekt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-133">Returns the line, fill, and effect formatting for the object.</span></span>
-<span data-ttu-id="9aa24-134">Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span><span class="sxs-lookup"><span data-stu-id="9aa24-134">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span></span></summary>
+        <summary><span data-ttu-id="33491-133">Gibt die Linien-, Füll- und effektformatierung für das Objekt.</span><span class="sxs-lookup"><span data-stu-id="33491-133">Returns the line, fill, and effect formatting for the object.</span></span>
+<span data-ttu-id="33491-134">Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</span><span class="sxs-lookup"><span data-stu-id="33491-134">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,8 +237,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-135">Gibt einen <b>Double</b>-Wert zurück, der die Höhe des Objekts in Punkt darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-135">Returns a <b>Double</b> value that represents the height, in points, of the object.</span></span></summary>
-        <value><span data-ttu-id="9aa24-136"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-136"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="33491-135">Gibt einen <b>Double</b>-Wert zurück, der die Höhe des Objekts in Punkt darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-135">Returns a <b>Double</b> value that represents the height, in points, of the object.</span></span></summary>
+        <value><span data-ttu-id="33491-136"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="33491-136"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.LegendEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,8 +266,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-137">Gibt die Indexnummer des Objekts in einer Auflistung ähnlicher Objekte zurück.</span><span class="sxs-lookup"><span data-stu-id="9aa24-137">Returns the index number of the object within the collection of similar objects.</span></span></summary>
-        <value><span data-ttu-id="9aa24-138"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-138"><b>Integer</b></span></span></value>
+        <summary><span data-ttu-id="33491-137">Gibt die Indexnummer des Objekts in einer Auflistung ähnlicher Objekte zurück.</span><span class="sxs-lookup"><span data-stu-id="33491-137">Returns the index number of the object within the collection of similar objects.</span></span></summary>
+        <value><span data-ttu-id="33491-138"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="33491-138"><b>Integer</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -285,8 +295,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-139">Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) von der linken Seite des Objekts zur linken Seite des Diagrammbereichs darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-139">Returns a <b>Double</b> value that represents the distance, in points, from the left edge of the object to the left edge of the chart area.</span></span></summary>
-        <value><span data-ttu-id="9aa24-140"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-140"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="33491-139">Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) von der linken Seite des Objekts zur linken Seite des Diagrammbereichs darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-139">Returns a <b>Double</b> value that represents the distance, in points, from the left edge of the object to the left edge of the chart area.</span></span></summary>
+        <value><span data-ttu-id="33491-140"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="33491-140"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.LegendKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegendKey As LegendKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LegendKey ^ LegendKey { Microsoft::Office::Interop::Word::LegendKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegendKey : Microsoft.Office.Interop.Word.LegendKey" Usage="Microsoft.Office.Interop.Word.LegendEntry.LegendKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -313,7 +324,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-141">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> Objekt zurück, das den dem Eintrag zugeordneten Legendenschlüssel darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object that represents the legend key associated with the entry.</span></span></summary>
+        <summary><span data-ttu-id="33491-141">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> Objekt zurück, das den dem Eintrag zugeordneten Legendenschlüssel darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object that represents the legend key associated with the entry.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.LegendKey" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.LegendEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -341,8 +353,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-142">Gibt das übergeordnete Element für das angegebene Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="9aa24-142">Returns the parent for the specified object.</span></span> <span data-ttu-id="9aa24-143">Read-only- <b>Objekt</b>.</span><span class="sxs-lookup"><span data-stu-id="9aa24-143">Read-only <b>Object</b>.</span></span></summary>
-        <value><span data-ttu-id="9aa24-144"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-144"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="33491-142">Gibt das übergeordnete Element für das angegebene Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="33491-142">Returns the parent for the specified object.</span></span> <span data-ttu-id="33491-143">Read-only- <b>Objekt</b>.</span><span class="sxs-lookup"><span data-stu-id="33491-143">Read-only <b>Object</b>.</span></span></summary>
+        <value><span data-ttu-id="33491-144"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="33491-144"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LegendEntry.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="legendEntry.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -367,8 +380,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="9aa24-145">Markiert das Objekt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-145">Selects the object.</span></span></summary>
-        <returns><span data-ttu-id="9aa24-146"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-146"><b>Object</b></span></span></returns>
+        <summary><span data-ttu-id="33491-145">Markiert das Objekt.</span><span class="sxs-lookup"><span data-stu-id="33491-145">Selects the object.</span></span></summary>
+        <returns><span data-ttu-id="33491-146"><b>Objekt</b></span><span class="sxs-lookup"><span data-stu-id="33491-146"><b>Object</b></span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,8 +409,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-147">Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder bis zum oberen Rand des Diagrammbereichs (in einem Diagramm) darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-147">Returns a <b>Double</b> value that represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span></summary>
-        <value><span data-ttu-id="9aa24-148"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-148"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="33491-147">Gibt einen <b>Double</b>-Wert zurück, der den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand der Zeile 1 (auf einem Arbeitsblatt) oder bis zum oberen Rand des Diagrammbereichs (in einem Diagramm) darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-147">Returns a <b>Double</b> value that represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span></summary>
+        <value><span data-ttu-id="33491-148"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="33491-148"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -423,8 +438,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="9aa24-149">Gibt einen <b>Double</b> -Wert, der die Breite des Objekts in Punkt darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aa24-149">Returns a <b>Double</b> value that represents the width, in points, of the object.</span></span></summary>
-        <value><span data-ttu-id="9aa24-150"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="9aa24-150"><b>Double</b></span></span></value>
+        <summary><span data-ttu-id="33491-149">Gibt einen <b>Double</b> -Wert, der die Breite des Objekts in Punkt darstellt.</span><span class="sxs-lookup"><span data-stu-id="33491-149">Returns a <b>Double</b> value that represents the width, in points, of the object.</span></span></summary>
+        <value><span data-ttu-id="33491-150"><b>Double</b></span><span class="sxs-lookup"><span data-stu-id="33491-150"><b>Double</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
