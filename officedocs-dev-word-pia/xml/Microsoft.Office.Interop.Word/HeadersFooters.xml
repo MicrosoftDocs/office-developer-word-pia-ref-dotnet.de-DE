@@ -1,9 +1,10 @@
 <Type Name="HeadersFooters" FullName="Microsoft.Office.Interop.Word.HeadersFooters">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb3145635811002276f2778bca17d7fa3c40db1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147998" /></Metadata><TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="69f2ea2b9b57bc965d809b257de255bdb8fc668c" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924032" /></Metadata><TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadersFooters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadersFooters" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadersFooters&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class HeadersFooters : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type HeadersFooters = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,14 +24,14 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> Objekten, die die Kopf-oder Fußzeilen im angegebenen Abschnitt eines Dokuments darstellen.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> die <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> oder-Eigenschaft, um die <b>HeadersFooters</b> -Auflistung zurückzugeben.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> oder <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> -Eigenschaft, um die <b>HeadersFooters</b> -Auflistung zurückzugeben.</para>
       <para>
         <b>Hinweis</b>: Sie können der <b>HeadersFooters</b> -Auflistung keine <b>HeaderFooter</b> -Objekte hinzufügen.</para>
-      <para>Verwenden Sie <b>Kopfzeilen</b><paramref name="index" />() oder Fußzeilen ( <paramref name="index" /> <b></b><paramref name="index" />), wobei eine <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> der Konstanten (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>oder <b>wdHeaderFooterPrimary</b>) ist, um einen einzelnen <b>zurückzugeben. HeaderFooter</b> -Objekt.</para>
-      <para>Sie können auch ein einzelnes <b>HeaderFooter</b> -Objekt zurückgeben, <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> indem Sie die <see cref="T:Microsoft.Office.Interop.Word.Selection" /> -Eigenschaft mit einem-Objekt verwenden.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> mit dem Objekt, um eine andere erste Seite anzugeben.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> die-Eigenschaft mit dem <b>PageSetup</b> -Objekt, um verschiedene ungerade und gerade Seitenkopf-und Fußzeilen anzugeben. Wenn die <b>OddAndEvenPagesHeaderFooter</b> -Eigenschaft auf <b>true</b>festgelegt ist, können Sie eine ungerade Kopf-oder Fußzeile mithilfe von <b>wdHeaderFooterPrimary</b>zurückgeben, und Sie können eine gerade Kopfzeile oder Fußzeile mithilfe von <b>wdHeaderFooterEvenPages</b>zurückgeben.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> mit dem-Objekt, um eine Seitenzahl zu einer Kopf-oder Fußzeile hinzuzufügen.</para>
+      <para>Verwenden <b>Sie Kopfzeilen</b>( <paramref name="index" /> ) oder <b>Fußzeilen</b>( <paramref name="index" /> ), wobei eine der <paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> Konstanten (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>oder <b>wdHeaderFooterPrimary</b>) ist, um ein einzelnes <b>HeaderFooter</b> -Objekt zurückzugeben.</para>
+      <para>Sie können auch ein einzelnes <b>HeaderFooter</b> -Objekt zurückgeben, indem Sie die <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> -Eigenschaft mit einem- <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekt verwenden.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> -Eigenschaft mit dem <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> Objekt, um eine andere erste Seite anzugeben.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> -Eigenschaft mit dem <b>PageSetup</b> -Objekt, um verschiedene ungerade und gerade Seitenkopf-und Fußzeilen anzugeben. Wenn die <b>OddAndEvenPagesHeaderFooter</b> -Eigenschaft auf <b>true</b>festgelegt ist, können Sie eine ungerade Kopf-oder Fußzeile mithilfe von <b>wdHeaderFooterPrimary</b>zurückgeben, und Sie können eine gerade Kopfzeile oder Fußzeile mithilfe von <b>wdHeaderFooterEvenPages</b>zurückgeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> -Methode mit dem- <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Objekt, um eine Seitenzahl zu einer Kopf-oder Fußzeile hinzuzufügen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HeadersFooters.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="headersFooters.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Item(Microsoft.Office.Interop.Word.WdHeaderFooterIndex)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As WdHeaderFooterIndex) As HeaderFooter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::HeaderFooter ^ default[Microsoft::Office::Interop::Word::WdHeaderFooterIndex] { Microsoft::Office::Interop::Word::HeaderFooter ^ get(Microsoft::Office::Interop::Word::WdHeaderFooterIndex Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Microsoft.Office.Interop.Word.WdHeaderFooterIndex) : Microsoft.Office.Interop.Word.HeaderFooter" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -178,7 +184,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />. Eine Konstante, die die Kopf-oder Fußzeile in der Auswahl angibt. Kann eine der folgenden <b>WdHeaderFooterIndex</b> -Konstanten sein:<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></param>
+        <param name="Index">Erforderlich <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> . Eine Konstante, die die Kopf-oder Fußzeile in der Auswahl angibt. Kann eine der folgenden <b>WdHeaderFooterIndex</b> -Konstanten sein:<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></param>
         <summary>Gibt eine Kopf-oder Fußzeile in einem Bereich oder einer Auswahl zurück.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

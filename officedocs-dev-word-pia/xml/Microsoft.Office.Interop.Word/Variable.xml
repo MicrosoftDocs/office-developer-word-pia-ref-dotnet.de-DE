@@ -1,9 +1,10 @@
 <Type Name="Variable" FullName="Microsoft.Office.Interop.Word.Variable">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2a8fae352f5d719c8e9311fb04b65b7fefebfe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143769" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dac135c617d95f26e7bf7f3cc0690c7d5eb106a7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925912" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variable" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Variable" />
+  <TypeSignature Language="F#" Value="type Variable = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,9 +21,9 @@
   <Docs>
     <summary>Stellt eine Variable dar, die als Teil eines Dokuments abgelegt wird. Dokumentvariablen werden verwendet, um Makroeinstellungen zwischen Makrositzungen zu speichern.</summary>
     <remarks><para>Das <b>Variable</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Auflistung. Die <b>Variables</b> -Auflistung enthält alle Dokumentvariablen in einem Dokument oder einer Vorlage.</para>
-      <para>Verwenden <b></b>Sie Variablen<paramref name="index" />(), <paramref name="index" /> wobei der Name der Dokumentvariablen oder die Indexnummer ist, um ein einzelnes <b>Variablen</b> Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <b>Variablen</b>( <paramref name="index" /> ), wobei <paramref name="index" /> der Name der Dokumentvariablen oder die Indexnummer ist, um ein einzelnes <b>Variablen</b> Objekt zurückzugeben.</para>
       <para>Die Indexnummer stellt die Position der Dokumentvariablen in der <b>Variables</b>-Auflistung dar. Die letzte zur <b>Variables</b>-Auflistung hinzugefügte Variable ist Indexnummer 1, die vorletzte hinzugefügte Variable ist Indexnummer 2 usw.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> die der <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Collection-Methode, um eine Variable zu einem Dokument hinzuzufügen.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> der <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Collection-Methode, um eine Variable zu einem Dokument hinzuzufügen.</para>
       <para>Wenn Sie versuchen, eine Dokumentvariable mit einem Namen hinzuzufügen, der sich bereits in der <b>Variables</b>-Auflistung befindet, tritt ein Fehler auf. Dieser Fehler wird vermieden, wenn Sie die Auflistung aufzählen, bevor Sie neue Variablen hinzufügen.</para>
       <para>Dokumentvariablen werden so lange für den Benutzer ausgeblendet, bis ein DOCVARIABLE-Feld mit dem geeigneten Namen für die Variable eingefügt wird.</para>
       <para>Wenn Sie einer Vorlage eine Dokumentvariable hinzufügen möchten, öffnen Sie die Vorlage mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> -Methode als Dokument.</para>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Variable.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Variable.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Variable.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="variable.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Variable.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Variable.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Variable.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Value" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.Variable.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

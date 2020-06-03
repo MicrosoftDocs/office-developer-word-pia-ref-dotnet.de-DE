@@ -1,9 +1,10 @@
 <Type Name="ProofreadingErrors" FullName="Microsoft.Office.Interop.Word.ProofreadingErrors">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0c61f910fa45ca20cb739f36d01474a098c8703d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144141" /></Metadata><TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="674db7ee867162236a49a57099aa1330acc6551d" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924669" /></Metadata><TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProofreadingErrors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProofreadingErrors&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ProofreadingErrors : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ProofreadingErrors = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,9 +26,9 @@
     <summary>Eine Auflistung mit Rechtschreib- oder Grammatikfehlern für das angegebene Dokument oder den Bereich.</summary>
     <remarks><para>Es gibt kein ProofreadingError-Objekt; Stattdessen ist jedes Element in der <b>ProofreadingErrors</b> -Auflistung ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt, das einen Schreib-oder Grammatikfehler darstellt.</para>
       <para>Verwenden Sie die <b>SpellingErrors</b> -oder die <b>GrammaticalErrors</b> -Eigenschaft eines <see cref="T:Microsoft.Office.Interop.Word.Document" /> oder Range-Objekts, um die <b>ProofreadingErrors</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden <b></b>Sie SpellingErrors<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um einen einzelnen Rechtschreibfehler zurückzugeben (dargestellt durch ein <b>Range</b> -Objekt).</para>
-      <para>Verwenden <b></b>Sie GrammarErrors<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer ist, um einen einzelnen grammatischen Fehler zurückzugeben (dargestellt durch ein <b>Range</b> -Objekt).</para>
-      <para>Die <see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Verwenden Sie zum Zählen der Elemente in anderen Artikeln die Auflistung mit dem <b>Range</b> -Objekt. Wenn alle Wörter im Dokument oder Bereich richtig geschrieben sind und grammatikalisch korrekt sind, gibt die <b>count</b> -Eigenschaft für das <b>ProofreadingErrors</b> -Objekt 0 (null) und die <b>SpellingChecked</b> -und <b>GrammarChecked</b> -Eigenschaften von zurück. Das <b>Document</b> -oder <b>Range</b> -Objekt gibt <b>true</b>zurück.</para>
+      <para>Verwenden Sie <b>SpellingErrors</b>( <paramref name="index" /> ), wobei <paramref name="index" /> die Indexnummer ist, um einen einzelnen Rechtschreibfehler zurückzugeben (dargestellt durch ein <b>Range</b> -Objekt).</para>
+      <para>Verwenden Sie <b>GrammarErrors</b>( <paramref name="index" /> ), wobei <paramref name="index" /> die Indexnummer ist, um einen einzelnen grammatischen Fehler zurückzugeben (dargestellt durch ein <b>Range</b> -Objekt).</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" /> Eigenschaft für diese Auflistung in einem Dokument gibt nur die Anzahl der Elemente in der Hauptstory zurück. Verwenden Sie zum Zählen der Elemente in anderen Artikeln die Auflistung mit dem <b>Range</b> -Objekt. Wenn alle Wörter im Dokument oder Bereich richtig geschrieben sind und grammatikalisch korrekt sind, gibt die <b>count</b> -Eigenschaft für das <b>ProofreadingErrors</b> -Objekt 0 (null) zurück, und die <b>SpellingChecked</b> -und <b>GrammarChecked</b> -Eigenschaften des <b>Document</b> -oder <b>Range</b> -Objekts geben <b>true</b>zurück.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ProofreadingErrors.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ProofreadingErrors.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ProofreadingErrors.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ProofreadingErrors.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="proofreadingErrors.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default[int] { Microsoft::Office::Interop::Word::Range ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.ProofreadingErrors.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ProofreadingErrors.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdProofreadingErrorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdProofreadingErrorType Type { Microsoft::Office::Interop::Word::WdProofreadingErrorType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdProofreadingErrorType" Usage="Microsoft.Office.Interop.Word.ProofreadingErrors.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

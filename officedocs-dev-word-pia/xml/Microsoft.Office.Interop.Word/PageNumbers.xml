@@ -1,9 +1,10 @@
 <Type Name="PageNumbers" FullName="Microsoft.Office.Interop.Word.PageNumbers">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a31fe618fee1b2b001540181189751da6020270b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144217" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="15315d8e40c05d31df91c20d7d32593ed74343b8" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924761" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumbers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumbers" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumbers&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class PageNumbers : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type PageNumbers = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,10 +24,10 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> Objekten, die die Seitenzahlen in einer einzelnen Kopf-oder Fußzeile darstellen.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /> die-Eigenschaft, um die <b>PageNumbers</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> die-Methode, um einer Kopf-oder Fußzeile Seitenzahlen hinzuzufügen.</para>
-      <para>Wenn Sie Seitenzahlen in einem Dokument mit mehreren Abschnitten Hinzufügen oder ändern möchten, ändern Sie die Seitenzahlen in jedem <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> Abschnitt, oder legen Sie die Eigenschaft auf <b>true</b>fest.</para>
-      <para>Verwenden <b></b>Sie PageNumbers<paramref name="index" />(), <paramref name="index" /> wobei es sich um die Indexnummer handelt, um ein einzelnes <b>PageNumber</b> -Objekt zurückzugeben. In den meisten Fällen enthält eine Kopf-oder Fußzeile nur eine Seitenzahl, die Indexnummer 1 ist.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /> -Eigenschaft, um die <b>PageNumbers</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> -Methode, um einer Kopf-oder Fußzeile Seitenzahlen hinzuzufügen.</para>
+      <para>Wenn Sie Seitenzahlen in einem Dokument mit mehreren Abschnitten Hinzufügen oder ändern möchten, ändern Sie die Seitenzahlen in jedem Abschnitt, oder legen Sie die <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> Eigenschaft auf <b>true</b>fest.</para>
+      <para>Verwenden Sie <b>PageNumbers</b>( <paramref name="index" /> ), wobei <paramref name="index" /> es sich um die Indexnummer handelt, um ein einzelnes <b>PageNumber</b> -Objekt zurückzugeben. In den meisten Fällen enthält eine Kopf-oder Fußzeile nur eine Seitenzahl, die Indexnummer 1 ist.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.PageNumber Add([in]object&amp; PageNumberAlignment, [in]object&amp; FirstPage) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef PageNumberAlignment As Object, Optional ByRef FirstPage As Object) As PageNumber" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * obj -&gt; Microsoft.Office.Interop.Word.PageNumber" Usage="pageNumbers.Add (PageNumberAlignment, FirstPage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,8 +51,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageNumber</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="PageNumberAlignment" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FirstPage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PageNumberAlignment" Type="System.Object" RefType="ref" />
+        <Parameter Name="FirstPage" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="PageNumberAlignment">Optionales <b>Objekt</b>. Kann eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> Konstante sein.</param>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.PageNumbers.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.ChapterPageSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property ChapterPageSeparator As WdSeparatorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdSeparatorType ChapterPageSeparator { Microsoft::Office::Interop::Word::WdSeparatorType get(); void set(Microsoft::Office::Interop::Word::WdSeparatorType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChapterPageSeparator : Microsoft.Office.Interop.Word.WdSeparatorType with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.ChapterPageSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,7 +121,7 @@
       <Docs>
         <summary>Gibt das Trennzeichen, das zwischen der Kapitelnummer und der Seitenzahl verwendet wird, zurück oder legt dieses fest. Dies kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" /> Konstanten sein.</summary>
         <value>To be added.</value>
-        <remarks><para>Bevor Sie Seitenzahlen erstellen können, die Kapitelnummern enthalten, muss den Dokumentüberschriften ein Gliederungsformat mit Nummerierung zugewiesen worden sein, das Formatvorlagen aus dem Dialogfeld Nummerierung und Aufzählungszeichen verwendet. Verwenden Sie dazu die <b>ApplyListTemplate</b> -Methode des <see cref="T:Microsoft.Office.Interop.Word.List" /> oder <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekts, um dies programmgesteuert durchführen zu können.</para>
+        <remarks><para>Bevor Sie Seitenzahlen erstellen können, die Kapitelnummern enthalten, muss den Dokumentüberschriften ein Gliederungsformat mit Nummerierung zugewiesen worden sein, das Formatvorlagen aus dem Dialogfeld Nummerierung und Aufzählungszeichen verwendet. Verwenden Sie dazu die <b>ApplyListTemplate</b> -Methode des oder-Objekts, um dies programmgesteuert durchführen zu können <see cref="T:Microsoft.Office.Interop.Word.List" /> <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.PageNumbers.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.PageNumbers.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.DoubleQuote" />
       <MemberSignature Language="VB.NET" Value="Public Property DoubleQuote As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DoubleQuote { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleQuote : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.DoubleQuote" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -207,7 +214,7 @@
       <Docs>
         <summary><b>True</b> , wenn Microsoft Word das angegebene <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Objekt in doppelte Anführungszeichen (") einschließt.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie festlegen möchten, dass Word standardmäßig Seitenzahlen in doppelte Anführungszeichen <see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" /> einschließt, verwenden Sie die-Eigenschaft.</para>
+        <remarks><para>Wenn Sie festlegen möchten, dass Word standardmäßig Seitenzahlen in doppelte Anführungszeichen einschließt, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" /> -Eigenschaft.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PageNumbers.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="pageNumbers.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.HeadingLevelForChapter" />
       <MemberSignature Language="VB.NET" Value="Public Property HeadingLevelForChapter As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HeadingLevelForChapter { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HeadingLevelForChapter : int with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.HeadingLevelForChapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -271,7 +280,7 @@
       <Docs>
         <summary>Gibt die Formatvorlage der Überschriftenebene zurück, die den Kapitelüberschriften im Dokument zugewiesen wurde, oder legt sie fest. Kann eine Zahl zwischen 0 (null) und 8 sein, die den Überschriftenebenen 1 bis 9 entspricht.</summary>
         <value>To be added.</value>
-        <remarks><para>Bevor Sie Seitenzahlen erstellen können, die Kapitelnummern enthalten, muss den Dokumentüberschriften ein Gliederungsformat mit Nummerierung zugewiesen worden sein, das Formatvorlagen aus dem Dialogfeld Nummerierung und Aufzählungszeichen verwendet. Verwenden Sie dazu die <b>ApplyListTemplate</b> -Methode des <see cref="T:Microsoft.Office.Interop.Word.List" /> oder <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> -Objekts, um dies programmgesteuert durchführen zu können.</para>
+        <remarks><para>Bevor Sie Seitenzahlen erstellen können, die Kapitelnummern enthalten, muss den Dokumentüberschriften ein Gliederungsformat mit Nummerierung zugewiesen worden sein, das Formatvorlagen aus dem Dialogfeld Nummerierung und Aufzählungszeichen verwendet. Verwenden Sie dazu die <b>ApplyListTemplate</b> -Methode des oder-Objekts, um dies programmgesteuert durchführen zu können <see cref="T:Microsoft.Office.Interop.Word.List" /> <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.IncludeChapterNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeChapterNumber As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeChapterNumber { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeChapterNumber : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.IncludeChapterNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As PageNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PageNumber ^ default[int] { Microsoft::Office::Interop::Word::PageNumber ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.PageNumber" Usage="Microsoft.Office.Interop.Word.PageNumbers.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdPageNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPageNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdPageNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdPageNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdPageNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -364,7 +376,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Zahlenstil für das <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> Objekt zurück oder legt ihn fest.</summary>
+        <summary>Gibt den Zahlenstil für das Objekt zurück oder legt ihn fest <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> .</summary>
         <value>To be added.</value>
         <remarks><para>Die <b>NumberStyle</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" /> Konstanten sein. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung.</para>
           <para> </para></remarks>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.PageNumbers.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -404,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />
       <MemberSignature Language="VB.NET" Value="Public Property RestartNumberingAtSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestartNumberingAtSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RestartNumberingAtSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -426,7 +440,7 @@
       <Docs>
         <summary><b>True</b> , wenn die Seitennummerierung am Anfang des angegebenen Abschnitts erneut mit 1 beginnt.</summary>
         <value>To be added.</value>
-        <remarks><para>Bei Festlegung auf " <b>false</b>" wird die <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" /> Eigenschaft von der <b>RestartNumberingAtSection</b> -Eigenschaft so außer Kraft gesetzt, dass die Seitennummerierung im vorherigen Abschnitt fortgesetzt werden kann.</para>
+        <remarks><para>Bei Festlegung auf " <b>false</b>" wird die Eigenschaft von der <b>RestartNumberingAtSection</b> -Eigenschaft so außer Kraft gesetzt, <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" /> dass die Seitennummerierung im vorherigen Abschnitt fortgesetzt werden kann.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -436,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFirstPageNumber As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFirstPageNumber { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFirstPageNumber : bool with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -468,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property StartingNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartingNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartingNumber : int with get, set" Usage="Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -491,7 +507,7 @@
         <summary>Zurückgeben oder Festlegen der Start Notizen Nummer, die Nummer oder die Seitenzahl.</summary>
         <value>To be added.</value>
         <remarks><para>Die Zeilennummerierung ist nur in der Drucklayoutansicht sichtbar.</para>
-          <para>Wenn diese Eigenschaft auf Seitenzahlen angewendet wird, wird die erste Seitenzahl für das angegebene <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> Objekt zurückgegeben oder festgelegt. Diese Nummer ist je nach Einstellung der <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" /> Eigenschaft möglicherweise auf der ersten Seite sichtbar. Wenn <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" /> die Eigenschaft auf <b>false</b>festgelegt ist, wird die <b>StartingNumber</b> -Eigenschaft außer Kraft gesetzt, sodass die Seitennummerierung im vorherigen Abschnitt fortgesetzt werden kann.</para>
+          <para>Wenn diese Eigenschaft auf Seitenzahlen angewendet wird, wird die erste Seitenzahl für das angegebene Objekt zurückgegeben oder festgelegt <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> . Diese Nummer ist je nach Einstellung der Eigenschaft möglicherweise auf der ersten Seite sichtbar <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" /> . <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" />Wenn die Eigenschaft auf <b>false</b>festgelegt ist, wird die <b>StartingNumber</b> -Eigenschaft außer Kraft gesetzt, sodass die Seitennummerierung im vorherigen Abschnitt fortgesetzt werden kann.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

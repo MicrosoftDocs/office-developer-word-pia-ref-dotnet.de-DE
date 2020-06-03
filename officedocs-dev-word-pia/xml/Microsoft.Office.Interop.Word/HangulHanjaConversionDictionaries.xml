@@ -1,9 +1,10 @@
 <Type Name="HangulHanjaConversionDictionaries" FullName="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7f106055e619307a9bffe6eb130466a321eefa69" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146738" /></Metadata><TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="636d3b64b5926fa6986ae82942b299149f98f195" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924039" /></Metadata><TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HangulHanjaConversionDictionaries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />
   <TypeSignature Language="VB.NET" Value="Public Interface HangulHanjaConversionDictionaries&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class HangulHanjaConversionDictionaries : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type HangulHanjaConversionDictionaries = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,10 +24,10 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekten, die die aktiven benutzerdefinierten Hangul-Hanja-Konvertierungswörterbücher enthält.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> die-Eigenschaft, um die Auflistung der derzeit aktiven benutzerdefinierten Konvertierungswörterbücher zurückzugeben.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> die-Methode, um der Auflistung der aktiven benutzerdefinierten Konvertierungswörterbücher ein neues benutzerdefiniertes Konvertierungswörterbuch hinzuzufügen. Wenn keine Datei mit dem von <paramref name="FileName" />Microsoft Word angegebenen Namen vorhanden ist, wird Sie erstellt.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> die-Methode, um alle benutzerdefinierten Konvertierungswörterbücher zu entladen. Mit dieser Methode werden jedoch nicht die Dateien der Wörterbücher gelöscht. Nachdem Sie diese Methode verwendet haben, ist die Anzahl der Benutzerkonvertierungswörterbücher gleich 0 (null).</para>
-      <para>Sie legen das Benutzerwörterbuch fest, auf das neue Wörter mithilfe der <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> -Eigenschaft hinzugefügt werden. Wenn Sie versuchen, diese Eigenschaft für ein Wörterbuch festzulegen, das kein Benutzerkonvertierungswörterbuch ist, tritt ein Fehler auf.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> -Eigenschaft, um die Auflistung der derzeit aktiven benutzerdefinierten Konvertierungswörterbücher zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> -Methode, um der Auflistung der aktiven benutzerdefinierten Konvertierungswörterbücher ein neues benutzerdefiniertes Konvertierungswörterbuch hinzuzufügen. Wenn keine Datei mit dem von Microsoft Word angegebenen Namen vorhanden ist <paramref name="FileName" /> , wird Sie erstellt.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> -Methode, um alle benutzerdefinierten Konvertierungswörterbücher zu entladen. Mit dieser Methode werden jedoch nicht die Dateien der Wörterbücher gelöscht. Nachdem Sie diese Methode verwendet haben, ist die Anzahl der Benutzerkonvertierungswörterbücher gleich 0 (null).</para>
+      <para>Sie legen das Benutzerwörterbuch fest, auf das neue Wörter mithilfe der-Eigenschaft hinzugefügt werden <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> . Wenn Sie versuchen, diese Eigenschaft für ein Wörterbuch festzulegen, das kein Benutzerkonvertierungswörterbuch ist, tritt ein Fehler auf.</para>
       <para>Die <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" /> -Eigenschaft gibt die maximale Anzahl gleichzeitiger benutzerdefinierter Konvertierungswörterbücher zurück, die von der Anwendung unterstützt werden können. Bei Word beträgt der maximal zulässige Wert 10.</para>
       <para> </para></remarks>
   </Docs>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveCustomDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveCustomDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); void set(Microsoft::Office::Interop::Word::Dictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveCustomDictionary : Microsoft.Office.Interop.Word.Dictionary with get, set" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -57,7 +59,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das das Benutzerwörterbuch darstellt, dem Wörter hinzugefügt werden, oder legt dieses fest.</summary>
+        <summary>Gibt ein Objekt zurück <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> , das das Benutzerwörterbuch darstellt, dem Wörter hinzugefügt werden, oder legt dieses fest.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (FileName As String) As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Dictionary ^ Add(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; Microsoft.Office.Interop.Word.Dictionary" Usage="hangulHanjaConversionDictionaries.Add FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,7 +92,7 @@
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurück, das ein neues Konvertierungswörterbuch darstellt, das der Auflistung von aktiven benutzerdefinierten Konvertierungs Wörterbüchern hinzugefügt wird.</summary>
         <returns>To be added.</returns>
         <remarks><para>Wenn eine Datei mit dem angegebenen Namen <paramref name="FileName" /> nicht vorhanden ist, erstellt Microsoft Word eine.</para>
-          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> die-Eigenschaft, um die Auflistung von benutzerdefinierten Konvertierungs Wörterbüchern zurückzugeben. Die <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> Auflistung enthält nur die aktiven benutzerdefinierten Konvertierungswörterbücher.</para>
+          <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> -Eigenschaft, um die Auflistung von benutzerdefinierten Konvertierungs Wörterbüchern zurückzugeben. Die <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> Auflistung enthält nur die aktiven benutzerdefinierten Konvertierungswörterbücher.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.BuiltinDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltinDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ BuiltinDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltinDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.BuiltinDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="abstract member ClearAll : unit -&gt; unit" Usage="hangulHanjaConversionDictionaries.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,7 +180,7 @@
       <Parameters />
       <Docs>
         <summary>Entfernt alle Benutzer- oder Konvertierungswörterbücher.</summary>
-        <remarks><para>Die <b>ClearAll</b> -Methode, wenn Sie <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> in <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> einem oder-Objekt verwendet wird, werden die benutzerdefinierten oder Konvertierungswörterbuch-Dateien nicht gelöscht. Nachdem Sie diese Methode verwendet haben, ist die Anzahl der benutzerdefinierten oder Konvertierungswörterbücher in der Auflistung 0 (null).</para>
+        <remarks><para>Die <b>ClearAll</b> -Methode, wenn Sie in einem oder-Objekt verwendet wird, <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> werden die benutzerdefinierten oder Konvertierungswörterbuch-Dateien nicht gelöscht. Nachdem Sie diese Methode verwendet haben, ist die Anzahl der benutzerdefinierten oder Konvertierungswörterbücher in der Auflistung 0 (null).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="hangulHanjaConversionDictionaries.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Dictionary ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -291,7 +301,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -334,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

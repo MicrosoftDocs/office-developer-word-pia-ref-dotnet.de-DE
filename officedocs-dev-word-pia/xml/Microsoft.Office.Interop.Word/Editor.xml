@@ -1,9 +1,10 @@
 <Type Name="Editor" FullName="Microsoft.Office.Interop.Word.Editor">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4c3c24b5cd7783a2941b968d06d78d74af20a9dd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144554" /></Metadata><TypeSignature Language="C#" Value="public interface Editor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="24ff8ea4b3e90ca88105fd7102623ab6575c6e12" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924298" /></Metadata><TypeSignature Language="C#" Value="public interface Editor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Editor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Editor" />
   <TypeSignature Language="VB.NET" Value="Public Interface Editor" />
   <TypeSignature Language="C++ CLI" Value="public interface class Editor" />
+  <TypeSignature Language="F#" Value="type Editor = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,8 +21,8 @@
   <Docs>
     <summary>Stellt einen einzelnen Benutzer dar, der über spezifische Berechtigungen verfügt, um Teile eines Dokuments zu bearbeiten.</summary>
     <remarks><para>Bei Benutzern, denen Berechtigungen erteilt werden können, handelt es sich um einzelne beteiligte Teilnehmer und Gruppen von Benutzern, die auf der Dokumentarbeitsbereichssite definiert sind.</para>
-      <para>Die Berechtigungen, die Sie Bereichen und Abschnitten zuweisen, werden erst wirksam, nachdem ein Dokument geschützt ist. Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.Editors" /> die Auflistung und das <b>Editor-</b> Objekt, um bestimmte Berechtigungen für Abschnitte eines Dokuments zuzuweisen. Verwenden Sie dann <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> die-Methode, um das Dokument zu schützen.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.Editors" /> der Auflistung, um einem bestimmten Benutzer oder einer Gruppe die Berechtigung zum Ändern eines Bereichs oder einer Auswahl in einem Dokument zu erteilen.</para>
+      <para>Die Berechtigungen, die Sie Bereichen und Abschnitten zuweisen, werden erst wirksam, nachdem ein Dokument geschützt ist. Verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.Editors" /> Auflistung und das <b>Editor-</b> Objekt, um bestimmte Berechtigungen für Abschnitte eines Dokuments zuzuweisen. Verwenden Sie dann die <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode, um das Dokument zu schützen.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" /> -Methode der <see cref="T:Microsoft.Office.Interop.Word.Editors" /> Auflistung, um einem bestimmten Benutzer oder einer Gruppe die Berechtigung zum Ändern eines Bereichs oder einer Auswahl in einem Dokument zu erteilen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Editor.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Editor.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editor.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="editor.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editor.DeleteAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteAll();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAll : unit -&gt; unit" Usage="editor.DeleteAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.Editor.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Editor.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.NextRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextRange As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ NextRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextRange : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Editor.NextRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Editor.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Editor.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -272,7 +282,7 @@
       <Docs>
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Teil eines Dokuments darstellt, der im angegebenen Objekt enthalten ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie <see cref="P:Microsoft.Office.Interop.Word.Editor.Range" /> unter der-Methode.</para>
+        <remarks><para>Informationen zum Zurückgeben eines Bereichs aus einem Dokument oder Zurückgeben eines Formbereichs aus einer Auflistung von Formen finden Sie unter der <see cref="P:Microsoft.Office.Interop.Word.Editor.Range" /> -Methode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editor.SelectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberSignature Language="F#" Value="abstract member SelectAll : unit -&gt; unit" Usage="editor.SelectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

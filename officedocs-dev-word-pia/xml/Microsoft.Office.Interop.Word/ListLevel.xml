@@ -1,9 +1,10 @@
 <Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bba67b72f79c6b6f79e34d7a683261fcb43b7fc0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144498" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a021a7ac9d8cfb2d358eeb6e12a55cb551cbf07b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925289" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListLevel" />
+  <TypeSignature Language="F#" Value="type ListLevel = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,9 +21,9 @@
   <Docs>
     <summary>Stellt eine einzelne Listenebene dar, entweder die einzige Ebene für eine Aufzählungs-oder nummerierte Liste oder eine der neun Ebenen einer nummerierten Gliederungsliste.</summary>
     <remarks><para>Das <b>ListLevel</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> Auflistung.</para>
-      <para>Verwenden <b></b>Sie ListLevels<paramref name="index" />(), <paramref name="index" /> wobei eine Zahl zwischen 1 und 9 ist, um ein einzelnes <b>ListLevel</b> -Objekt zurückzugeben.</para>
-      <para>Mit <b>dem ListLevel</b> -Objekt können Sie auf alle Formatierungseigenschaften für die angegebene Listenebene zugreifen, Beispiels <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />Weise <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />auf <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />die <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />,, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> ,, und.</para>
-      <para>Um eine Listenebene anzuwenden, identifizieren Sie zuerst den Bereich oder die Liste, und verwenden <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> Sie dann die-Methode. Jeder Tabstopp am Anfang eines Absatzes wird in eine Listenebene übersetzt. Aus einem Absatz, der z. B. mit drei Tabstopps beginnt, wird nach Verwendung der <b>ApplyListTemplate</b>-Methode eine Liste mit drei Ebenen.</para>
+      <para>Verwenden Sie <b>ListLevels</b>( <paramref name="index" /> ), wobei <paramref name="index" /> eine Zahl zwischen 1 und 9 ist, um ein einzelnes <b>ListLevel</b> -Objekt zurückzugeben.</para>
+      <para>Mit dem <b>ListLevel</b> -Objekt können Sie auf alle Formatierungseigenschaften für die angegebene Listenebene zugreifen, beispielsweise auf die <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" /> Eigenschaften,,,, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> und <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> .</para>
+      <para>Um eine Listenebene anzuwenden, identifizieren Sie zuerst den Bereich oder die Liste, und verwenden Sie dann die <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> -Methode. Jeder Tabstopp am Anfang eines Absatzes wird in eine Listenebene übersetzt. Aus einem Absatz, der z. B. mit drei Tabstopps beginnt, wird nach Verwendung der <b>ApplyListTemplate</b>-Methode eine Liste mit drei Ebenen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As WdListLevelAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListLevelAlignment Alignment { Microsoft::Office::Interop::Word::WdListLevelAlignment get(); void set(Microsoft::Office::Interop::Word::WdListLevelAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : Microsoft.Office.Interop.Word.WdListLevelAlignment with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> einer Konstanten, die die Ausrichtung für die Listenebene der Listenvorlage darstellt.</summary>
+        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> Konstanten, die die Ausrichtung für die Listenebene der Listenvorlage darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListLevel.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListLevel.ApplyPictureBullet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyPictureBullet (FileName As String) As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ ApplyPictureBullet(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyPictureBullet : string -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="listLevel.ApplyPictureBullet FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListLevel.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.Font with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Font" /> Objekt zurück, das die Zeichenformatierung des angegebenen Objekts darstellt, oder legt dieses fest.</summary>
+        <summary>Gibt ein Objekt zurück <see cref="T:Microsoft.Office.Interop.Word.Font" /> , das die Zeichenformatierung des angegebenen Objekts darstellt, oder legt dieses fest.</summary>
         <value>To be added.</value>
         <remarks><para>Geben Sie zum Festlegen dieser Eigenschaft einen Ausdruck an, der ein <b>Font</b>-Objekt zurückgibt.</para>
           <para> </para></remarks>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.ListLevel.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.LinkedStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkedStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinkedStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkedStyle : string with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.LinkedStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,7 +238,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Namen der Formatvorlage zurück, die mit dem angegebenen <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt verknüpft ist, oder legt diesen fest.</summary>
+        <summary>Gibt den Namen der Formatvorlage zurück, die mit dem angegebenen Objekt verknüpft ist, oder legt diesen fest <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,7 +272,7 @@
       <Docs>
         <summary>Gibt das Zahlenformat für die angegebene Listenebene zurück oder legt es fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Das Prozentzeichen (%) gefolgt von einer beliebigen Zahl von 1 bis 9 steht für die Zahlenformatvorlage auf der jeweiligen Listenebene. Wenn Sie beispielsweise möchten, dass das Format für die erste Ebene "Artikel I", "" Artikel II "usw. lautet, lautet die Zeichenfolge für die <b>NumberFormat</b> -Eigenschaft" Artikel% 1 ", und <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> die Eigenschaft würde auf <b>wdListNumberStyleUpperCaseRoman</b>festgelegt.</para>
+        <remarks><para>Das Prozentzeichen (%) gefolgt von einer beliebigen Zahl von 1 bis 9 steht für die Zahlenformatvorlage auf der jeweiligen Listenebene. Wenn Sie beispielsweise möchten, dass das Format für die erste Ebene "Artikel I", "" Artikel II "usw. lautet, lautet die Zeichenfolge für die <b>NumberFormat</b> -Eigenschaft" Artikel %1 ", und die <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> Eigenschaft würde auf <b>wdListNumberStyleUpperCaseRoman</b>festgelegt.</para>
           <para>Wurde die <b>NumberStyle</b>-Eigenschaft auf <b>wdListNumberStyleBullet</b> festgelegt, darf die Zeichenfolge für die <b>NumberFormat</b>-Eigenschaft nur ein Zeichen enthalten.</para>
           <para> </para></remarks>
       </Docs>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float NumberPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,7 +304,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Position (in Punkt) der Zahl oder des Aufzählungszeichens für <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> das angegebene Objekt zurück oder legt Sie fest.</summary>
+        <summary>Gibt die Position (in Punkt) der Zahl oder des Aufzählungszeichens für das angegebene Objekt zurück oder legt Sie fest <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> .</summary>
         <value>To be added.</value>
         <remarks><para>Sie können die Position der Nummer oder des Aufzählungszeichens, die Position des Tabulators und die Position des Texts, der umbrochen wird, für alle Listenebenen festlegen.</para>
           <para> </para></remarks>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdListNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdListNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdListNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdListNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -326,7 +337,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Zahlenstil für das <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt ihn fest.</summary>
+        <summary>Gibt den Zahlenstil für das Objekt zurück oder legt ihn fest <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> .</summary>
         <value>To be added.</value>
         <remarks><para>Die <b>NumberStyle</b> -Eigenschaft kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> Konstanten sein. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung.</para>
           <para> </para></remarks>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListLevel.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -366,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.PictureBullet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureBullet As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ PictureBullet { Microsoft::Office::Interop::Word::InlineShape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PictureBullet : Microsoft.Office.Interop.Word.InlineShape" Usage="Microsoft.Office.Interop.Word.ListLevel.PictureBullet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigher" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigher As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResetOnHigher { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnHigher : int with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.ResetOnHigher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -416,7 +430,7 @@
       <Docs>
         <summary>Gibt die Listenebene zurück, die erreicht werden muss, bevor bei der angegebenen Listenebene mit dem Nummerierungsvorgang wieder bei 1 begonnen wird, oder legt diese fest. <b>False</b> , wenn die Nummerierung jedes Mal fortgesetzt wird, wenn die Listenebene angezeigt wird.</summary>
         <value>To be added.</value>
-        <remarks><para>Dieses Feature erlaubt Überlappungen von Listen unter Wahrung der numerischen Abfolge. Sie können die <b>ResetOnHigher</b> -Eigenschaft einer Listenebene nicht auf einen Wert festlegen, der größer oder gleich dem Index in <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> der Auflistung ist.</para>
+        <remarks><para>Dieses Feature erlaubt Überlappungen von Listen unter Wahrung der numerischen Abfolge. Sie können die <b>ResetOnHigher</b> -Eigenschaft einer Listenebene nicht auf einen Wert festlegen, der größer oder gleich dem Index in der <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> Auflistung ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -426,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigherOld" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigherOld As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnHigherOld { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnHigherOld : bool with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.ResetOnHigherOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -463,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.StartAt" />
       <MemberSignature Language="VB.NET" Value="Public Property StartAt As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartAt { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartAt : int with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.StartAt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -483,7 +499,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Startnummer für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt Sie fest.</summary>
+        <summary>Gibt die Startnummer für das angegebene Objekt zurück oder legt Sie fest <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -494,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TabPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property TabPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TabPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TabPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TabPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -514,7 +531,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Tabstoppposition für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt Sie fest.</summary>
+        <summary>Gibt die Tabstoppposition für das angegebene Objekt zurück oder legt Sie fest <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -525,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TextPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property TextPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TextPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -545,7 +563,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Position (in Punkt) für die zweite Zeilenumbruch Text für das angegebene <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> Objekt zurück oder legt diese fest.</summary>
+        <summary>Gibt die Position (in Punkt) für die zweite Zeilenumbruch Text für das angegebene Objekt zurück oder legt diese fest <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -556,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />
       <MemberSignature Language="VB.NET" Value="Public Property TrailingCharacter As WdTrailingCharacter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTrailingCharacter TrailingCharacter { Microsoft::Office::Interop::Word::WdTrailingCharacter get(); void set(Microsoft::Office::Interop::Word::WdTrailingCharacter value); };" />
+      <MemberSignature Language="F#" Value="member this.TrailingCharacter : Microsoft.Office.Interop.Word.WdTrailingCharacter with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Word.Shape">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="acacfe3317c3167f71680de182a642ad6c015546" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144071" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0e6d8f9736cdf5c75717720b1a171899acf3143d" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924417" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shape" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shape" />
   <TypeSignature Language="C++ CLI" Value="public interface class Shape" />
+  <TypeSignature Language="F#" Value="type Shape = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,21 +22,21 @@
     <summary>Stellt ein Objekt in der Zeichnungsebene, wie beispielsweise eine AutoForm, Freihandform, OLE-Objekt, ActiveX-Steuerelement oder Bild.</summary>
     <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung, das alle Formen im Haupt Text eines Dokuments oder in allen Kopf-und Fußzeilen eines Dokuments enthält.</para>
       <para>Eine Form ist immer mit einem Verankerungsbereich verbunden. Sie können die Form an einer beliebigen Stelle auf der Seite positionieren, die den Anker enthält.</para>
-      <para>Es gibt drei Objekte, die Shapes darstellen: <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> die Auflistung, die alle Formen in einem Dokument darstellt. die <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Auflistung, die eine angegebene Teilmenge der Formen in einem Dokument darstellt (beispielsweise kann ein <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Objekt die Formen 1 und 4 im Dokument darstellen oder alle markierten Formen im Dokument darstellen); Das <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt, das eine einzelne Form in einem Dokument darstellt. Wenn Sie mit mehreren Formen gleichzeitig oder mit Formen in der Auswahl arbeiten möchten, verwenden Sie eine <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Auflistung.</para>
-      <para>Verwenden <b></b>Sie Shapes<paramref name="index" />(), <paramref name="index" /> wobei es sich um den Namen oder die Indexnummer handelt, <see cref="T:Microsoft.Office.Interop.Word.Shape" /> um ein einzelnes Objekt zurückzugeben. </para>
-      <para>Jedes Shape erhält einen Standardnamen erstellt wird. Angenommen, wenn Sie drei verschiedene Formen zu einem Dokument hinzufügen, sie möglicherweise werden mit dem Namen "Rechteck 2", "Textfeld 3" und "Oval 4". Wenn Sie einer Form einen aussagekräftigeren Namen geben möchten <see cref="P:Microsoft.Office.Interop.Word.Shape.Name" /> , legen Sie die Eigenschaft fest.</para>
-      <para>Verwenden Sie <b>Selection. ShapeRange</b>(<paramref name="index" />), <paramref name="index" /> wobei es sich um den Namen oder die Indexnummer handelt <see cref="T:Microsoft.Office.Interop.Word.Shape" /> , um ein Objekt zurückzugeben, das eine Form innerhalb einer Auswahl darstellt.</para>
-      <para>Verwenden Sie eine <see cref="T:Microsoft.Office.Interop.Word.Shape" /> der folgenden Methoden <see cref="T:Microsoft.Office.Interop.Word.Shape" /> der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung, um der Auflistung von Formen für das angegebene Dokument ein Objekt hinzuzufügen und ein Objekt zurückzugeben, das die neu erstellte Form darstellt <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />: <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> , , <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />, oder <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />.</para>
-      <para>Verwenden <b></b>Sie GroupItems<paramref name="index" />(), <paramref name="index" /> wobei der Name der Form oder die Indexnummer innerhalb der Gruppe ist, um ein <b>Shape</b> -Objekt zurückzugeben, das eine einzelne Form in einer gruppierten Form darstellt.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" /> die <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" /> oder-Methode, um einen Bereich von Formen zu gruppieren <see cref="T:Microsoft.Office.Interop.Word.Shape" /> und ein einzelnes Objekt zurückzugeben, das die neu gebildete Gruppe darstellt. Nach dem bilden einer Gruppe können Sie arbeiten mit der Gruppe der gleichen Weise wie Arbeit mit einem anderen Shape.</para>
+      <para>Es gibt drei Objekte, die Shapes darstellen: die <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung, die alle Formen in einem Dokument darstellt; die <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Auflistung, die eine angegebene Teilmenge der Formen in einem Dokument darstellt (beispielsweise <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> kann ein Objekt die Formen 1 und 4 im Dokument darstellen oder alle markierten Formen im Dokument darstellen); das <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt, das eine einzelne Form in einem Dokument darstellt. Wenn Sie mit mehreren Formen gleichzeitig oder mit Formen in der Auswahl arbeiten möchten, verwenden Sie eine <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Auflistung.</para>
+      <para>Verwenden Sie <b>Shapes</b>( <paramref name="index" /> ), wobei <paramref name="index" /> es sich um den Namen oder die Indexnummer handelt, um ein einzelnes Objekt zurückzugeben <see cref="T:Microsoft.Office.Interop.Word.Shape" /> . </para>
+      <para>Jedes Shape erhält einen Standardnamen erstellt wird. Angenommen, wenn Sie drei verschiedene Formen zu einem Dokument hinzufügen, sie möglicherweise werden mit dem Namen "Rechteck 2", "Textfeld 3" und "Oval 4". Wenn Sie einer Form einen aussagekräftigeren Namen geben möchten, legen Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.Name" /> Eigenschaft fest.</para>
+      <para>Verwenden Sie <b>Selection. ShapeRange</b>( <paramref name="index" /> ), wobei <paramref name="index" /> es sich um den Namen oder die Indexnummer handelt, um ein Objekt zurückzugeben <see cref="T:Microsoft.Office.Interop.Word.Shape" /> , das eine Form innerhalb einer Auswahl darstellt.</para>
+      <para><see cref="T:Microsoft.Office.Interop.Word.Shape" />Verwenden Sie eine der folgenden Methoden der Auflistung, um der Auflistung von Formen für das angegebene Dokument ein Objekt hinzuzufügen und ein Objekt zurückzugeben, das <see cref="T:Microsoft.Office.Interop.Word.Shape" /> die neu erstellte Form darstellt:,,,,,, <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> ,, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> , <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" /> , oder <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> .</para>
+      <para>Verwenden Sie <b>GroupItems</b>( <paramref name="index" /> ), wobei <paramref name="index" /> der Name der Form oder die Indexnummer innerhalb der Gruppe ist, um ein <b>Shape</b> -Objekt zurückzugeben, das eine einzelne Form in einer gruppierten Form darstellt.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" /> oder <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" /> -Methode, um einen Bereich von Formen zu gruppieren und ein einzelnes Objekt zurückzugeben <see cref="T:Microsoft.Office.Interop.Word.Shape" /> , das die neu gebildete Gruppe darstellt. Nach dem bilden einer Gruppe können Sie arbeiten mit der Gruppe der gleichen Weise wie Arbeit mit einem anderen Shape.</para>
       <para>Jedes <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt ist mit einem Textbereich verankert. Eine Form ist mit dem Anfang des ersten Absatzes verankert, der den Verankerungsbereich enthält. Die Form verbleibt immer auf der gleichen Seite wie ihr Anker.</para>
-      <para>Sie können den Anker selbst anzeigen, indem Sie <see cref="P:Microsoft.Office.Interop.Word.View.ShowObjectAnchors" /> die-Eigenschaft auf <b>true</b>festlegen. Die Shapes <see cref="P:Microsoft.Office.Interop.Word.Shape.Top" /> und <see cref="P:Microsoft.Office.Interop.Word.Shape.Left" /> Eigenschaften bestimmen ihre vertikalen und horizontalen Positionen. <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" /> Mit den Formen und <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" /> Eigenschaften wird bestimmt, ob die Position aus dem verankerten Absatz, der Spalte mit dem Anker Absatz, dem Rand oder dem Rand der Seite gemessen wird.</para>
+      <para>Sie können den Anker selbst anzeigen, indem Sie die <see cref="P:Microsoft.Office.Interop.Word.View.ShowObjectAnchors" /> -Eigenschaft auf <b>true</b>festlegen. Die Shapes <see cref="P:Microsoft.Office.Interop.Word.Shape.Top" /> und <see cref="P:Microsoft.Office.Interop.Word.Shape.Left" /> Eigenschaften bestimmen ihre vertikalen und horizontalen Positionen. Mit den Formen <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" /> und <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" /> Eigenschaften wird bestimmt, ob die Position aus dem verankerten Absatz, der Spalte mit dem Anker Absatz, dem Rand oder dem Rand der Seite gemessen wird.</para>
       <para>Wenn die <see cref="P:Microsoft.Office.Interop.Word.Shape.LockAnchor" /> Eigenschaft für die Form auf <b>true</b>festgelegt ist, können Sie den Anker nicht aus seiner Position auf der Seite ziehen.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Fill" /> die-Eigenschaft, <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> um das Objekt zurückzugeben, das alle Eigenschaften und Methoden zum Formatieren der Füllung einer geschlossenen Form enthält. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" /> -Eigenschaft gibt <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> das Objekt zurück, das Sie zum Formatieren eines Schattens verwenden. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> die-Eigenschaft, <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> um das Objekt zurückzugeben, das Eigenschaften und Methoden zum Formatieren von Linien und Pfeilen enthält. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" /> -Eigenschaft gibt <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> das Objekt zurück, das Sie zum Formatieren von WordArt verwenden. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> -Eigenschaft gibt <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> das Objekt zurück, das Sie zum Formatieren von Positions Beschriftungen verwenden. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.WrapFormat" /> -Eigenschaft gibt <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> das Objekt zurück, das Sie verwenden, um zu definieren, wie Text um Formen umbrochen wird. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.ThreeD" /> -Eigenschaft gibt <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> das Objekt zurück, das Sie zum Erstellen von 3D-Formen verwenden. Sie können die- <see cref="M:Microsoft.Office.Interop.Word.Shape.PickUp" /> und <see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" /> -Methoden verwenden, um die Formatierung von einer Form an eine andere zu übertragen.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Shape.SetShapesDefaultProperties" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.Shape" /> für ein Objekt, um die Formatierung der Standardform für das Dokument festzulegen. Neue Formen erben viele Attribute von der Standardform.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Type" /> die-Eigenschaft, um den Typ der Form anzugeben: Freihandform, AutoForm, OLE-Objekt, Legende oder verknüpfte Grafik, zum Beispiel. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> die-Eigenschaft, um den Typ der AutoForm anzugeben: Oval, Rechteck oder Ballon, zum Beispiel.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.Fill" /> -Eigenschaft, um das Objekt zurückzugeben <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> , das alle Eigenschaften und Methoden zum Formatieren der Füllung einer geschlossenen Form enthält. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" /> -Eigenschaft gibt das <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> Objekt zurück, das Sie zum Formatieren eines Schattens verwenden. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> -Eigenschaft, um das Objekt zurückzugeben <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> , das Eigenschaften und Methoden zum Formatieren von Linien und Pfeilen enthält. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" /> -Eigenschaft gibt das <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> Objekt zurück, das Sie zum Formatieren von WordArt verwenden. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> -Eigenschaft gibt das <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> Objekt zurück, das Sie zum Formatieren von Positions Beschriftungen verwenden. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.WrapFormat" /> -Eigenschaft gibt das <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> Objekt zurück, das Sie verwenden, um zu definieren, wie Text um Formen umbrochen wird. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.ThreeD" /> -Eigenschaft gibt das <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> Objekt zurück, das Sie zum Erstellen von 3D-Formen verwenden. Sie können die <see cref="M:Microsoft.Office.Interop.Word.Shape.PickUp" /> -und- <see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" /> Methoden verwenden, um die Formatierung von einer Form an eine andere zu übertragen.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shape.SetShapesDefaultProperties" /> -Methode für ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt, um die Formatierung der Standardform für das Dokument festzulegen. Neue Formen erben viele Attribute von der Standardform.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.Type" /> -Eigenschaft, um den Typ der Form anzugeben: Freihandform, AutoForm, OLE-Objekt, Legende oder verknüpfte Grafik, zum Beispiel. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> -Eigenschaft, um den Typ der AutoForm anzugeben: Oval, Rechteck oder Ballon, zum Beispiel.</para>
       <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Width" /> die <see cref="P:Microsoft.Office.Interop.Word.Shape.Height" /> Eigenschaften und, um die Größe der Form anzugeben.</para>
-      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> -Eigenschaft gibt <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> das Objekt zurück, das alle Eigenschaften und Methoden zum Anfügen von Text an Formen und Verknüpfen des Texts zwischen Textrahmen enthält.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> -Eigenschaft gibt das <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> Objekt zurück, das alle Eigenschaften und Methoden zum Anfügen von Text an Formen und Verknüpfen des Texts zwischen Textrahmen enthält.</para>
       <para>
         <see cref="T:Microsoft.Office.Interop.Word.Shape" />Objekte werden in einem Textbereich verankert, sind jedoch frei verschiebbar und können an beliebiger Stelle auf der Seite positioniert werden. <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />Objekte werden wie Zeichen behandelt und als Zeichen in einer Textzeile positioniert. Sie können die <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> -Methode und die <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> -Methode verwenden, um Formen von einem Typ in einen anderen zu konvertieren. Nur Bilder, OLE-Objekte und ActiveX-Steuerelemente können in Inlineformen konvertiert werden.</para>
       <para> </para></remarks>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="shape.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Adjustments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adjustments As Adjustments" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Adjustments ^ Adjustments { Microsoft::Office::Interop::Word::Adjustments ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Adjustments : Microsoft.Office.Interop.Word.Adjustments" Usage="Microsoft.Office.Interop.Word.Shape.Adjustments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.AlternativeText" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternativeText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternativeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternativeText : string with get, set" Usage="Microsoft.Office.Interop.Word.Shape.AlternativeText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Anchor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Anchor As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Anchor { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Anchor : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Shape.Anchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.AnchorID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnchorID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AnchorID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorID : int" Usage="Microsoft.Office.Interop.Word.Shape.AnchorID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Shape.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.Apply" />
       <MemberSignature Language="VB.NET" Value="Public Sub Apply ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply();" />
+      <MemberSignature Language="F#" Value="abstract member Apply : unit -&gt; unit" Usage="shape.Apply " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -237,7 +245,7 @@
       <Parameters />
       <Docs>
         <summary>Gilt für die angegebene Formformatierung, die mithilfe der <see cref="M:Microsoft.Office.Interop.Word.Shape.PickUp" /> -Methode kopiert wurde.</summary>
-        <remarks><para>Wenn die Formatierung für <see cref="T:Microsoft.Office.Interop.Word.Shape" /> das Objekt zuvor nicht mithilfe der <see cref="M:Microsoft.Office.Core.Shape.PickUp" /> -Methode kopiert wurde, wird <see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" /> bei Verwendung der-Methode ein Fehler generiert.</para>
+        <remarks><para>Wenn die Formatierung für das <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt zuvor nicht mithilfe der <see cref="M:Microsoft.Office.Core.Shape.PickUp" /> -Methode kopiert wurde, wird bei Verwendung der <see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" /> -Methode ein Fehler generiert.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoShapeType As MsoAutoShapeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoAutoShapeType AutoShapeType { Microsoft::Office::Core::MsoAutoShapeType get(); void set(Microsoft::Office::Core::MsoAutoShapeType value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoShapeType : Microsoft.Office.Core.MsoAutoShapeType with get, set" Usage="Microsoft.Office.Interop.Word.Shape.AutoShapeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -267,7 +276,7 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Typ des Typs für das angegebene <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt zurück oder legt ihn fest, der eine andere AutoForm als eine Linien-oder Freihandformzeichnung darstellen muss.</summary>
+        <summary>Gibt den Typ des Typs für das angegebene Objekt zurück oder legt ihn fest <see cref="T:Microsoft.Office.Interop.Word.Shape" /> , der eine andere AutoForm als eine Linien-oder Freihandformzeichnung darstellen muss.</summary>
         <value>To be added.</value>
         <remarks><para>[!HINWEIS] Wenn Sie den Typ der Form ändern, bleiben Größe, Farbe und andere Eigenschaften der Form erhalten.</para>
           <para> </para></remarks>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.BackgroundStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackgroundStyle As MsoBackgroundStyleIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBackgroundStyleIndex BackgroundStyle { Microsoft::Office::Core::MsoBackgroundStyleIndex get(); void set(Microsoft::Office::Core::MsoBackgroundStyleIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundStyle : Microsoft.Office.Core.MsoBackgroundStyleIndex with get, set" Usage="Microsoft.Office.Interop.Word.Shape.BackgroundStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -301,7 +311,7 @@
       <Docs>
         <summary>Dient zum Abrufen oder Festlegen der Hintergrundformat Vorlage der angegebenen Form.</summary>
         <value>Das Hintergrundformat der angegebenen Form.</value>
-        <remarks><para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />.</para>
+        <remarks><para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Callout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callout As CalloutFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CalloutFormat ^ Callout { Microsoft::Office::Interop::Word::CalloutFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Callout : Microsoft.Office.Interop.Word.CalloutFormat" Usage="Microsoft.Office.Interop.Word.Shape.Callout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.CanvasCropBottom(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropBottom (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropBottom(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropBottom : single -&gt; unit" Usage="shape.CanvasCropBottom Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -359,7 +371,7 @@
       <Docs>
         <param name="Increment">Erforderlicher <b>Single</b>-Wert. Der prozentuale Anteil der Höhe eines Zeichenbereichs, der nach dem Zuschneiden des Zeichenbereichs verbleiben soll. Bei Eingabe von 0,9 als Schrittweite werden zehn Prozent der Höhe des Zeichenbereichs vom unteren Rand abgeschnitten. Bei Eingabe von 0,1 werden 90 Prozent der Höhe des Zeichenbereichs vom unteren Rand abgeschnitten.</param>
         <summary>Schneidet einen prozentualen Anteil der Höhe eines Zeichenbereichs vom unteren Rand des Zeichenbereichs ab.</summary>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropTop(System.Single)" /> die-Methode, um von oben zuschneiden.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropTop(System.Single)" /> -Methode, um von oben zuschneiden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -369,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.CanvasCropLeft(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropLeft (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropLeft(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropLeft : single -&gt; unit" Usage="shape.CanvasCropLeft Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -388,7 +401,7 @@
       <Docs>
         <param name="Increment">Erforderlicher <b>Single</b>-Wert. Der prozentuale Anteil der Breite des Zeichenbereichs, der nach dem Zuschneiden des Zeichenbereichs verbleiben soll. Bei Eingabe von 0,9 als Schrittweite werden zehn Prozent der Breite des Zeichenbereichs vom linken Rand abgeschnitten. Bei Eingabe von 0,1 werden 90 Prozent der Breite des Zeichenbereichs vom linken Rand abgeschnitten.</param>
         <summary>Schneidet einen prozentualen Anteil der Breite eines Zeichenbereichs vom linken Rand des Zeichenbereichs ab.</summary>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropRight(System.Single)" /> die-Methode, um von der rechten Seite eines Zeichenbereichs zuschneiden.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropRight(System.Single)" /> -Methode, um von der rechten Seite eines Zeichenbereichs zuschneiden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -398,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.CanvasCropRight(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropRight (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropRight(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropRight : single -&gt; unit" Usage="shape.CanvasCropRight Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -417,7 +431,7 @@
       <Docs>
         <param name="Increment">Erforderlicher <b>Single</b>-Wert. Der prozentuale Anteil der Breite des Zeichenbereichs, der nach dem Zuschneiden des Zeichenbereichs verbleiben soll. Bei Eingabe von 0,9 als Schrittweite werden zehn Prozent der Breite des Zeichenbereichs vom rechten Rand abgeschnitten. Bei Eingabe von 0,1 werden 90 Prozent der Breite des Zeichenbereichs vom rechten Rand abgeschnitten.</param>
         <summary>Schneidet einen prozentualen Anteil der Breite eines Zeichenbereichs vom rechten Rand des Zeichenbereichs ab.</summary>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropLeft(System.Single)" /> die-Methode, um von der linken Seite eines Zeichenbereichs zuzuschneiden.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropLeft(System.Single)" /> -Methode, um von der linken Seite eines Zeichenbereichs zuzuschneiden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.CanvasCropTop(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropTop (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropTop(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member CanvasCropTop : single -&gt; unit" Usage="shape.CanvasCropTop Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -446,7 +461,7 @@
       <Docs>
         <param name="Increment">Erforderlicher <b>Single</b>-Wert. Der prozentuale Anteil der Höhe eines Zeichenbereichs, der nach dem Zuschneiden des Zeichenbereichs verbleiben soll. Bei Eingabe von 0,9 als Schrittweite werden zehn Prozent der Höhe des Zeichenbereichs vom oberen Rand abgeschnitten. Bei Eingabe von 0,1 werden 90 Prozent der Höhe des Zeichenbereichs vom oberen Rand abgeschnitten.</param>
         <summary>Schneidet einen prozentualen Anteil der Höhe eines Zeichenbereichs vom oberen Rand des Zeichenbereichs ab.</summary>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropBottom(System.Single)" /> die-Methode, um von unten zu schneiden.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropBottom(System.Single)" /> -Methode, um von unten zu schneiden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.CanvasItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanvasItems As CanvasShapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CanvasShapes ^ CanvasItems { Microsoft::Office::Interop::Word::CanvasShapes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanvasItems : Microsoft.Office.Interop.Word.CanvasShapes" Usage="Microsoft.Office.Interop.Word.Shape.CanvasItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -484,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Chart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Chart As Chart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Chart ^ Chart { Microsoft::Office::Interop::Word::Chart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chart : Microsoft.Office.Interop.Word.Chart" Usage="Microsoft.Office.Interop.Word.Shape.Chart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -512,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Child" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Child As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Child { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.Child : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -541,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.ConnectionSiteCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionSiteCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionSiteCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionSiteCount : int" Usage="Microsoft.Office.Interop.Word.Shape.ConnectionSiteCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -572,6 +591,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Connector" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connector As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Connector { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connector : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.Connector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -603,6 +623,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.ConnectorFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectorFormat As ConnectorFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ConnectorFormat ^ ConnectorFormat { Microsoft::Office::Interop::Word::ConnectorFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectorFormat : Microsoft.Office.Interop.Word.ConnectorFormat" Usage="Microsoft.Office.Interop.Word.Shape.ConnectorFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -634,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.ConvertToFrame" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToFrame () As Frame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Frame ^ ConvertToFrame();" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToFrame : unit -&gt; Microsoft.Office.Interop.Word.Frame" Usage="shape.ConvertToFrame " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -655,7 +677,7 @@
         <summary>Konvertiert die angegebene Form in einen Rahmen.</summary>
         <returns>To be added.</returns>
         <remarks><para>Diese Eigenschaft gibt ein <see cref="T:Microsoft.Office.Interop.Word.Frame" /> Objekt zurück, das den neuen Frame darstellt.</para>
-          <para>Formen, die Textbeilagen nicht unterstützen, können nicht in Rahmen konvertiert werden. Verwenden Sie für Bilder, OLE-Objekte und ActiveX-Steuer <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> Elemente die-Methode.</para>
+          <para>Formen, die Textbeilagen nicht unterstützen, können nicht in Rahmen konvertiert werden. Verwenden Sie für Bilder, OLE-Objekte und ActiveX-Steuerelemente die <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> -Methode.</para>
           <para>In Microsoft Word 97 und höher wurden Frames durch Textfelder ersetzt.</para>
           <para> </para></remarks>
       </Docs>
@@ -666,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToInlineShape () As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ ConvertToInlineShape();" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToInlineShape : unit -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="shape.ConvertToInlineShape " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -683,7 +706,7 @@
       <Docs>
         <summary>Konvertiert die angegebene Form in der Zeichnungsebene eines Dokuments in eine Inlineform in der Textebene.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Sie können nur Formen konvertieren, die Bilder, OLE-Objekte oder ActiveX-Steuerelemente darstellen. Diese Methode gibt einen <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Wert vom Datentyp Object zurück, der das Bild oder OLE-Objekt darstellt.</para>
+        <remarks><para>Sie können nur Formen konvertieren, die Bilder, OLE-Objekte oder ActiveX-Steuerelemente darstellen. Diese Methode gibt einen Wert <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> vom Datentyp Object zurück, der das Bild oder OLE-Objekt darstellt.</para>
           <para>Formen, die Textbeilagen unterstützen, können nicht in Inlineformen konvertiert werden. Verwenden Sie für diese Shapes die <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToFrame" /> -Methode.</para>
           <para> </para></remarks>
       </Docs>
@@ -694,6 +717,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Shape.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -724,6 +748,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="shape.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -749,6 +774,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Diagram" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Diagram As IMsoDiagram" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::IMsoDiagram ^ Diagram { Microsoft::Office::Core::IMsoDiagram ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Diagram : Microsoft.Office.Core.IMsoDiagram" Usage="Microsoft.Office.Interop.Word.Shape.Diagram" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -780,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.DiagramNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiagramNode As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ DiagramNode { Microsoft::Office::Interop::Word::DiagramNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DiagramNode : Microsoft.Office.Interop.Word.DiagramNode" Usage="Microsoft.Office.Interop.Word.Shape.DiagramNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -811,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.Duplicate" />
       <MemberSignature Language="VB.NET" Value="Public Function Duplicate () As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ Duplicate();" />
+      <MemberSignature Language="F#" Value="abstract member Duplicate : unit -&gt; Microsoft.Office.Interop.Word.Shape" Usage="shape.Duplicate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -837,6 +865,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.EditID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EditID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditID : int" Usage="Microsoft.Office.Interop.Word.Shape.EditID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -868,6 +897,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As FillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FillFormat ^ Fill { Microsoft::Office::Interop::Word::FillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.FillFormat" Usage="Microsoft.Office.Interop.Word.Shape.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -896,6 +926,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flip (FlipCmd As MsoFlipCmd)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flip(Microsoft::Office::Core::MsoFlipCmd FlipCmd);" />
+      <MemberSignature Language="F#" Value="abstract member Flip : Microsoft.Office.Core.MsoFlipCmd -&gt; unit" Usage="shape.Flip FlipCmd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -913,7 +944,7 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">Erforderlich <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />. Die Richtung, in die die Form gekippt wird.</param>
+        <param name="FlipCmd">Erforderlich <see cref="T:Microsoft.Office.Core.MsoFlipCmd" /> . Die Richtung, in die die Form gekippt wird.</param>
         <summary>Kippt eine Form horizontal oder vertikal.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -924,6 +955,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Glow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glow As GlowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GlowFormat ^ Glow { Microsoft::Office::Interop::Word::GlowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glow : Microsoft.Office.Interop.Word.GlowFormat" Usage="Microsoft.Office.Interop.Word.Shape.Glow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -952,6 +984,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupItems As GroupShapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GroupShapes ^ GroupItems { Microsoft::Office::Interop::Word::GroupShapes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupItems : Microsoft.Office.Interop.Word.GroupShapes" Usage="Microsoft.Office.Interop.Word.Shape.GroupItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -971,7 +1004,7 @@
       <Docs>
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /> Objekt zurück, das die einzelnen Formen in der angegebenen Gruppe darstellt.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> die-Methode des <b>GroupShapes</b> -Objekts, um eine einzelne Form aus der Gruppe zurückzugeben.</para>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> -Methode des <b>GroupShapes</b> -Objekts, um eine einzelne Form aus der Gruppe zurückzugeben.</para>
           <para>Diese Eigenschaft gilt für <see cref="T:Microsoft.Office.Interop.Word.Shape" /> oder <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Objekte, die gruppierte Formen darstellen.</para>
           <para> </para></remarks>
       </Docs>
@@ -982,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.HasChart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChart As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasChart { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasChart : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.HasChart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1000,7 +1034,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn die angegebene Form ein Diagramm aufweist. Schreibgeschützt.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Diese Eigenschaft gibt immer false für OLE-Diagramme zurück. Verwenden Sie für OLE-Diagramme InlineShape. OLEFormat. ProgID, und überprüfen Sie die folgenden möglichen Werte: "Excel. Chart. 8", "MSGraph. Chart. 8", "Excel. Sheet. 8", "Excel. Chart. 5", "MSGraph. Chart. 5" oder "Excel. Sheet. 5".</para>
           <para> </para></remarks>
       </Docs>
@@ -1011,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.HasDiagram" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagram As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagram { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDiagram : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.HasDiagram" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1043,6 +1078,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.HasDiagramNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagramNode As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagramNode { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDiagramNode : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.HasDiagramNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1075,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.HasSmartArt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSmartArt As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasSmartArt { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasSmartArt : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.HasSmartArt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1104,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1135,6 +1173,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.HeightRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float HeightRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.HeightRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1157,7 +1196,7 @@
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Single</b> zurück, der den Prozentsatz der relativen Höhe einer Form darstellt, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
         <value><b>Single</b></value>
-        <remarks><para>Verwenden Sie diese Eigenschaft mit <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" /> der-Eigenschaft. Bei Festlegung auf <b>wdShapeSizeRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da die Größe der Form nicht prozentual verwendet wird. Die Höhe wird ausschließlich von der <see cref="P:Microsoft.Office.Interop.Word.Shape.Height" /> Eigenschaft bestimmt.</para>
+        <remarks><para>Verwenden Sie diese Eigenschaft mit der <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" /> -Eigenschaft. Bei Festlegung auf <b>wdShapeSizeRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da die Größe der Form nicht prozentual verwendet wird. Die Höhe wird ausschließlich von der <see cref="P:Microsoft.Office.Interop.Word.Shape.Height" /> Eigenschaft bestimmt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1167,6 +1206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.HorizontalFlip" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalFlip As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HorizontalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalFlip : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.HorizontalFlip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1195,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hyperlink As Hyperlink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Hyperlink ^ Hyperlink { Microsoft::Office::Interop::Word::Hyperlink ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hyperlink : Microsoft.Office.Interop.Word.Hyperlink" Usage="Microsoft.Office.Interop.Word.Shape.Hyperlink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1212,7 +1253,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> Wert vom Typs Object zurück, der den Hyperlink darstellt, der der angegebenen Form zugeordnet ist.</summary>
+        <summary>Gibt einen Wert <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> vom Typs Object zurück, der den Hyperlink darstellt, der der angegebenen Form zugeordnet ist.</summary>
         <value>To be added.</value>
         <remarks><para>Wenn der angegebenen Form kein Hyperlink zugeordnet ist, tritt ein Fehler auf.</para>
           <para> </para></remarks>
@@ -1224,6 +1265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : int" Usage="Microsoft.Office.Interop.Word.Shape.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1252,6 +1294,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.IncrementLeft(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementLeft (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementLeft(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementLeft : single -&gt; unit" Usage="shape.IncrementLeft Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1280,6 +1323,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.IncrementRotation(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementRotation (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementRotation(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementRotation : single -&gt; unit" Usage="shape.IncrementRotation Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1299,8 +1343,8 @@
       <Docs>
         <param name="Increment">Erforderlicher <b>Single</b>-Wert. Gibt an (in Grad), wie weit die Form horizontal gedreht werden soll. Bei einem positiven Wert wird die Form im Uhrzeigersinn gedreht, bei einem negativen Wert entgegen dem Uhrzeigersinn.</param>
         <summary>Ändert die Drehung der angegebenen Form um die z-Achse um die angegebene Gradzahl.</summary>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" /> die-Eigenschaft, um die absolute Drehung der Form festzulegen.</para>
-          <para>Wenn Sie eine dreidimensionale Form um die x-Achse oder die y-Achse drehen möchten, <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" /> verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" /> -Methode oder die-Methode.</para>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" /> -Eigenschaft, um die absolute Drehung der Form festzulegen.</para>
+          <para>Wenn Sie eine dreidimensionale Form um die x-Achse oder die y-Achse drehen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" /> -Methode oder die <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" /> -Methode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1310,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.IncrementTop(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementTop (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementTop(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementTop : single -&gt; unit" Usage="shape.IncrementTop Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1338,6 +1383,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.LayoutInCell" />
       <MemberSignature Language="VB.NET" Value="Public Property LayoutInCell As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LayoutInCell { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutInCell : int with get, set" Usage="Microsoft.Office.Interop.Word.Shape.LayoutInCell" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1361,7 +1407,7 @@
         <summary>Gibt einen Wert vom <b>Typ Integer</b> zurück, der angibt, ob eine Form in einer Tabelle innerhalb der Tabelle oder außerhalb der Tabelle angezeigt wird.</summary>
         <value>To be added.</value>
         <remarks><para>Diese Eigenschaft gibt <b>true</b> zurück, um anzugeben, dass in der Tabelle ein angegebenes Bild angezeigt wird, und <b>false</b> , um anzugeben, dass ein angegebenes Bild außerhalb der Tabelle angezeigt wird.</para>
-          <para>Das Festlegen <b>der LayoutInCell</b> -Eigenschaft wird nur wirksam, <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> wenn die Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> des Objekts auf einen anderen Wert als <b>wdWrapTypeInline</b> oder <b>wdWrapTypeNone</b>festgelegt ist.</para>
+          <para>Das Festlegen der <b>LayoutInCell</b> -Eigenschaft wird nur wirksam, wenn die <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> Objekts auf einen anderen Wert als <b>wdWrapTypeInline</b> oder <b>wdWrapTypeNone</b>festgelegt ist.</para>
           <para>Die <b>LayoutInCell</b> -Eigenschaft entspricht der Option Layout in Tabellenzelle im Dialogfeld Erweitertes Layout für die Bild Formatierung.</para>
           <para> </para></remarks>
       </Docs>
@@ -1372,6 +1418,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Left { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1394,7 +1441,7 @@
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Single</b> zurück, der die horizontale Position (gemessen in Punkten) der angegebenen Form oder des Formbereichs darstellt, oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft gibt eine beliebige <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> gültige Konstante zurück.</para>
+        <remarks><para>Diese Eigenschaft gibt eine beliebige gültige <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> Konstante zurück.</para>
           <para>Die Position einer Form wird von der oberen linken Ecke des umgebenden Felds der Form zu seiner Verankerung gemessen. Die <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" /> -Eigenschaft steuert, ob der Anker neben einem Zeichen, einer Spalte, einem Rand oder dem Rand der Seite positioniert wird.</para>
           <para> </para></remarks>
       </Docs>
@@ -1405,6 +1452,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.LeftRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property LeftRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LeftRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.LeftRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1427,7 +1475,7 @@
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Single</b> zurück, der die relative linke Position einer Form darstellt, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
         <value><b>Single</b></value>
-        <remarks><para>Verwenden Sie diese Eigenschaft mit <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" /> der-Eigenschaft. Bei Festlegung auf <b>wdShapePositionRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da für die Form keine prozentuale Positionierung verwendet wird. Die horizontale Position wird ausschließlich durch die <see cref="P:Microsoft.Office.Interop.Word.Shape.Left" /> -Eigenschaft bestimmt.</para>
+        <remarks><para>Verwenden Sie diese Eigenschaft mit der <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" /> -Eigenschaft. Bei Festlegung auf <b>wdShapePositionRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da für die Form keine prozentuale Positionierung verwendet wird. Die horizontale Position wird ausschließlich durch die <see cref="P:Microsoft.Office.Interop.Word.Shape.Left" /> -Eigenschaft bestimmt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1437,6 +1485,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Line" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As LineFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LineFormat ^ Line { Microsoft::Office::Interop::Word::LineFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : Microsoft.Office.Interop.Word.LineFormat" Usage="Microsoft.Office.Interop.Word.Shape.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1466,6 +1515,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.LinkFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkFormat As LinkFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LinkFormat ^ LinkFormat { Microsoft::Office::Interop::Word::LinkFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkFormat : Microsoft.Office.Interop.Word.LinkFormat" Usage="Microsoft.Office.Interop.Word.Shape.LinkFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1494,6 +1544,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.LockAnchor" />
       <MemberSignature Language="VB.NET" Value="Public Property LockAnchor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LockAnchor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LockAnchor : int with get, set" Usage="Microsoft.Office.Interop.Word.Shape.LockAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1516,7 +1567,7 @@
       <Docs>
         <summary>Bestimmt, ob der <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Anker des angegebenen Objekts im Verankerungsbereich gesperrt ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft gibt true zurück, wenn <see cref="T:Microsoft.Office.Interop.Word.Shape" /> der Anker des angegebenen Objekts im Verankerungsbereich gesperrt ist. Wenn ein Shape einen fixierten Anker hat, können Sie den Anker des Shapes nicht verschieben, indem Sie es ziehen (der Anker wird nicht verschoben, wenn das Shape verschoben wird).</para>
+        <remarks><para>Diese Eigenschaft gibt true zurück, wenn der Anker des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekts im Verankerungsbereich gesperrt ist. Wenn ein Shape einen fixierten Anker hat, können Sie den Anker des Shapes nicht verschieben, indem Sie es ziehen (der Anker wird nicht verschoben, wenn das Shape verschoben wird).</para>
           <para>Ein <b>Shape</b>-Objekt ist mit einem Textbereich verankert, aber Sie können es an beliebiger Stelle der Seite positionieren. Die Form ist mit dem Anfang des ersten Absatzes verankert, der den Verankerungsbereich enthält. Eine Form bleibt immer auf derselben Seite wie ihre Verankerung.</para>
           <para> </para></remarks>
       </Docs>
@@ -1527,6 +1578,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.LockAspectRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property LockAspectRatio As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState LockAspectRatio { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.LockAspectRatio : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.Shape.LockAspectRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1559,6 +1611,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1590,6 +1643,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Nodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As ShapeNodes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShapeNodes ^ Nodes { Microsoft::Office::Interop::Word::ShapeNodes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Nodes : Microsoft.Office.Interop.Word.ShapeNodes" Usage="Microsoft.Office.Interop.Word.Shape.Nodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1618,6 +1672,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.OLEFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLEFormat As OLEFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OLEFormat ^ OLEFormat { Microsoft::Office::Interop::Word::OLEFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OLEFormat : Microsoft.Office.Interop.Word.OLEFormat" Usage="Microsoft.Office.Interop.Word.Shape.OLEFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1635,7 +1690,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> Wert vom Datentyp Object zurück, der die OLE-Merkmale (außer Verknüpfung) für die angegebene Form darstellt.</summary>
+        <summary>Gibt einen Wert <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> vom Datentyp Object zurück, der die OLE-Merkmale (außer Verknüpfung) für die angegebene Form darstellt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1646,6 +1701,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Shape.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1674,6 +1730,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.ParentGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentGroup As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ ParentGroup { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentGroup : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.Shape.ParentGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1702,6 +1759,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.PickUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub PickUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PickUp();" />
+      <MemberSignature Language="F#" Value="abstract member PickUp : unit -&gt; unit" Usage="shape.PickUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1718,7 +1776,7 @@
       <Parameters />
       <Docs>
         <summary>Kopiert die Formatierung der angegebenen Form.</summary>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" /> die-Methode, um die kopierte Formatierung auf eine andere Form anzuwenden.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" /> -Methode, um die kopierte Formatierung auf eine andere Form anzuwenden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1728,6 +1786,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.PictureFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureFormat As PictureFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PictureFormat ^ PictureFormat { Microsoft::Office::Interop::Word::PictureFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PictureFormat : Microsoft.Office.Interop.Word.PictureFormat" Usage="Microsoft.Office.Interop.Word.Shape.PictureFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1757,6 +1816,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Reflection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reflection As ReflectionFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ReflectionFormat ^ Reflection { Microsoft::Office::Interop::Word::ReflectionFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reflection : Microsoft.Office.Interop.Word.ReflectionFormat" Usage="Microsoft.Office.Interop.Word.Shape.Reflection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1785,6 +1845,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeHorizontalPosition As WdRelativeHorizontalPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition RelativeHorizontalPosition { Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition get(); void set(Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeHorizontalPosition : Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition with get, set" Usage="Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1816,6 +1877,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalSize" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeHorizontalSize As WdRelativeHorizontalSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeHorizontalSize RelativeHorizontalSize { Microsoft::Office::Interop::Word::WdRelativeHorizontalSize get(); void set(Microsoft::Office::Interop::Word::WdRelativeHorizontalSize value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeHorizontalSize : Microsoft.Office.Interop.Word.WdRelativeHorizontalSize with get, set" Usage="Microsoft.Office.Interop.Word.Shape.RelativeHorizontalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1836,9 +1898,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Zurückgeben <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /> oder Festlegen einer Konstanten, die das Objekt darstellt, für das ein Bereich von Formen relativ ist. Lese-/Schreibzugriff.</summary>
+        <summary>Dient zum Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /> Konstanten, die das Objekt darstellt, für das ein Bereich von Formen relativ ist. Lese-/Schreibzugriff.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /></value>
-        <remarks><para>Verwenden Sie diese Eigenschaft mit <see cref="P:Microsoft.Office.Interop.Word.Shape.WidthRelative" /> der-Eigenschaft.</para>
+        <remarks><para>Verwenden Sie diese Eigenschaft mit der <see cref="P:Microsoft.Office.Interop.Word.Shape.WidthRelative" /> -Eigenschaft.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1848,6 +1910,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeVerticalPosition As WdRelativeVerticalPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeVerticalPosition RelativeVerticalPosition { Microsoft::Office::Interop::Word::WdRelativeVerticalPosition get(); void set(Microsoft::Office::Interop::Word::WdRelativeVerticalPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeVerticalPosition : Microsoft.Office.Interop.Word.WdRelativeVerticalPosition with get, set" Usage="Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1879,6 +1942,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeVerticalSize As WdRelativeVerticalSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeVerticalSize RelativeVerticalSize { Microsoft::Office::Interop::Word::WdRelativeVerticalSize get(); void set(Microsoft::Office::Interop::Word::WdRelativeVerticalSize value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeVerticalSize : Microsoft.Office.Interop.Word.WdRelativeVerticalSize with get, set" Usage="Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1899,9 +1963,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /> einer Konstanten, die die relative vertikale Größe eines Shapes darstellt. Lese-/Schreibzugriff.</summary>
+        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /> Konstanten, die die relative vertikale Größe eines Shapes darstellt. Lese-/Schreibzugriff.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /></value>
-        <remarks><para>Verwenden Sie diese Eigenschaft mit <see cref="P:Microsoft.Office.Interop.Word.Shape.HeightRelative" /> der-Eigenschaft.</para>
+        <remarks><para>Verwenden Sie diese Eigenschaft mit der <see cref="P:Microsoft.Office.Interop.Word.Shape.HeightRelative" /> -Eigenschaft.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1911,6 +1975,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.RerouteConnections" />
       <MemberSignature Language="VB.NET" Value="Public Sub RerouteConnections ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RerouteConnections();" />
+      <MemberSignature Language="F#" Value="abstract member RerouteConnections : unit -&gt; unit" Usage="shape.RerouteConnections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1939,6 +2004,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Rotation As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Rotation { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1962,7 +2028,7 @@
         <summary>Gibt die Gradzahl zurück, um die die angegebene Form um die z-Achse gedreht wird, oder legt diese Gradzahl fest.</summary>
         <value>To be added.</value>
         <remarks><para>Ein positiver Wert bedeutet Drehung im Uhrzeigersinn; ein negativer Wert bedeutet Drehung gegen den Uhrzeigersinn.</para>
-          <para>Um die Drehung einer dreidimensionalen Form um die x-Achse oder die y-Achse festzulegen, verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> die-Eigenschaft <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> oder die- <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> Eigenschaft des-Objekts.</para>
+          <para>Um die Drehung einer dreidimensionalen Form um die x-Achse oder die y-Achse festzulegen, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> -Eigenschaft oder die <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> -Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1972,6 +2038,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.RTF" />
       <MemberSignature Language="VB.NET" Value="Public Property RTF As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RTF {  void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RTF : string" Usage="Microsoft.Office.Interop.Word.Shape.RTF" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2002,6 +2069,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleHeight([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]valuetype Microsoft.Office.Core.MsoScaleFrom Scale) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.ScaleHeight(System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoScaleFrom)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleHeight (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As MsoScaleFrom = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft)" />
+      <MemberSignature Language="F#" Value="abstract member ScaleHeight : single * Microsoft.Office.Core.MsoTriState * Microsoft.Office.Core.MsoScaleFrom -&gt; unit" Usage="shape.ScaleHeight (Factor, RelativeToOriginalSize, Scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2022,8 +2090,8 @@
       </Parameters>
       <Docs>
         <param name="Factor">Erforderlicher <b>Single</b>-Wert. Gibt das Verhältnis zwischen der Höhe der Form nach der Änderung ihrer Größe und der aktuellen oder ursprünglichen Höhe an. Beispiel: Um ein Rechteck um 50 Prozent zu vergrößern, geben Sie für dieses Argument 1,5 an.</param>
-        <param name="RelativeToOriginalSize">Erforderlich <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>True</b>, wenn die Form relativ zu ihrer ursprünglichen Größe skaliert werden soll. Mit  <b>False</b> wird die Form relativ zu ihrer aktuellen Größe skaliert. Sie können den Wert <b>True</b> für dieses Argument nur angeben, wenn es sich bei der angegebenen Form um ein Bild oder ein OLE-Objekt handelt.</param>
-        <param name="Scale">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Der Teil der Form, der seine Position beibehält, wenn die Form skaliert wird.</param>
+        <param name="RelativeToOriginalSize">Erforderlich <see cref="T:Microsoft.Office.Core.MsoTriState" /> . <b>True</b>, wenn die Form relativ zu ihrer ursprünglichen Größe skaliert werden soll. Mit  <b>False</b> wird die Form relativ zu ihrer aktuellen Größe skaliert. Sie können den Wert <b>True</b> für dieses Argument nur angeben, wenn es sich bei der angegebenen Form um ein Bild oder ein OLE-Objekt handelt.</param>
+        <param name="Scale">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> . Der Teil der Form, der seine Position beibehält, wenn die Form skaliert wird.</param>
         <summary>Skaliert die Höhe der Form anhand eines angegebenen Faktors.</summary>
         <remarks><para>Für Bilder und OLE-Objekte können Sie angeben, ob die Form relativ zu ihrer ursprünglichen Größe oder relativ zur aktuellen Größe skaliert werden soll. Formen, die weder Bilder noch OLE-Objekte sind, werden immer relativ zu ihrer aktuellen Höhe skaliert.</para>
           <para> </para></remarks>
@@ -2034,6 +2102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleWidth([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]valuetype Microsoft.Office.Core.MsoScaleFrom Scale) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.ScaleWidth(System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoScaleFrom)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleWidth (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As MsoScaleFrom = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft)" />
+      <MemberSignature Language="F#" Value="abstract member ScaleWidth : single * Microsoft.Office.Core.MsoTriState * Microsoft.Office.Core.MsoScaleFrom -&gt; unit" Usage="shape.ScaleWidth (Factor, RelativeToOriginalSize, Scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2054,8 +2123,8 @@
       </Parameters>
       <Docs>
         <param name="Factor">Erforderlicher <b>Single</b>-Wert. Gibt das Verhältnis zwischen der Breite der Form nach der Änderung ihrer Größe und der aktuellen oder ursprünglichen Breite an. Beispiel: Um ein Rechteck um 50 Prozent zu verbreitern, geben Sie für dieses Argument 1,5 an.</param>
-        <param name="RelativeToOriginalSize">Erforderlich <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>True</b>, wenn die Form relativ zu ihrer ursprünglichen Größe skaliert werden soll. Mit  <b>False</b> wird die Form relativ zu ihrer aktuellen Größe skaliert. Sie können den Wert <b>True</b> für dieses Argument nur angeben, wenn es sich bei der angegebenen Form um ein Bild oder ein OLE-Objekt handelt.</param>
-        <param name="Scale">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Der Teil der Form, der seine Position beibehält, wenn die Form skaliert wird.</param>
+        <param name="RelativeToOriginalSize">Erforderlich <see cref="T:Microsoft.Office.Core.MsoTriState" /> . <b>True</b>, wenn die Form relativ zu ihrer ursprünglichen Größe skaliert werden soll. Mit  <b>False</b> wird die Form relativ zu ihrer aktuellen Größe skaliert. Sie können den Wert <b>True</b> für dieses Argument nur angeben, wenn es sich bei der angegebenen Form um ein Bild oder ein OLE-Objekt handelt.</param>
+        <param name="Scale">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> . Der Teil der Form, der seine Position beibehält, wenn die Form skaliert wird.</param>
         <summary>Skaliert die Breite der Form anhand eines angegebenen Faktors.</summary>
         <remarks><para>Für Bilder und OLE-Objekte können Sie angeben, ob die Form relativ zu ihrer ursprünglichen Größe oder relativ zur aktuellen Größe skaliert werden soll. Formen, die weder Bilder noch OLE-Objekte sind, werden immer relativ zu ihrer aktuellen Breite skaliert.</para>
           <para> </para></remarks>
@@ -2067,6 +2136,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Script" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Script As Script" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::Script ^ Script { Microsoft::Office::Core::Script ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Script : Microsoft.Office.Core.Script" Usage="Microsoft.Office.Interop.Word.Shape.Script" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2095,6 +2165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select([in]object&amp; Replace) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.Select(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select (Optional ByRef Replace As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Select : obj -&gt; unit" Usage="shape.Select Replace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2109,7 +2180,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Replace" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Replace">Optionales <b>Objekt</b>. Beim Hinzufügen einer Form wird die Auswahl durch den Wert <b>True</b> ersetzt. Bei <b>False</b> wird die neue Form zur Auswahl hinzugefügt.</param>
@@ -2123,6 +2194,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.SetShapesDefaultProperties" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetShapesDefaultProperties ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetShapesDefaultProperties();" />
+      <MemberSignature Language="F#" Value="abstract member SetShapesDefaultProperties : unit -&gt; unit" Usage="shape.SetShapesDefaultProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2149,6 +2221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As ShadowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShadowFormat ^ Shadow { Microsoft::Office::Interop::Word::ShadowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : Microsoft.Office.Interop.Word.ShadowFormat" Usage="Microsoft.Office.Interop.Word.Shape.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2177,6 +2250,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.ShapeStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ShapeStyle As MsoShapeStyleIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeStyleIndex ShapeStyle { Microsoft::Office::Core::MsoShapeStyleIndex get(); void set(Microsoft::Office::Core::MsoShapeStyleIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.ShapeStyle : Microsoft.Office.Core.MsoShapeStyleIndex with get, set" Usage="Microsoft.Office.Interop.Word.Shape.ShapeStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2199,7 +2273,7 @@
       <Docs>
         <summary>Dient zum Abrufen oder Festlegen der Form Formatvorlage für die angegebene Form.</summary>
         <value>Der Form Stil für die angegebene Form.</value>
-        <remarks><para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />.</para>
+        <remarks><para>Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2209,6 +2283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.SmartArt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartArt As SmartArt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArt ^ SmartArt { Microsoft::Office::Core::SmartArt ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartArt : Microsoft.Office.Core.SmartArt" Usage="Microsoft.Office.Interop.Word.Shape.SmartArt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2238,6 +2313,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.SoftEdge" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftEdge As SoftEdgeFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SoftEdgeFormat ^ SoftEdge { Microsoft::Office::Interop::Word::SoftEdgeFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoftEdge : Microsoft.Office.Interop.Word.SoftEdgeFormat" Usage="Microsoft.Office.Interop.Word.Shape.SoftEdge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2266,6 +2342,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.TextEffect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextEffect As TextEffectFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextEffectFormat ^ TextEffect { Microsoft::Office::Interop::Word::TextEffectFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextEffect : Microsoft.Office.Interop.Word.TextEffectFormat" Usage="Microsoft.Office.Interop.Word.Shape.TextEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2295,6 +2372,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.TextFrame" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame As TextFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ TextFrame { Microsoft::Office::Interop::Word::TextFrame ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextFrame : Microsoft.Office.Interop.Word.TextFrame" Usage="Microsoft.Office.Interop.Word.Shape.TextFrame" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2323,6 +2401,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.TextFrame2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame2 As TextFrame2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextFrame2 ^ TextFrame2 { Microsoft::Office::Core::TextFrame2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextFrame2 : Microsoft.Office.Core.TextFrame2" Usage="Microsoft.Office.Interop.Word.Shape.TextFrame2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2351,6 +2430,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.ThreeD" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreeD As ThreeDFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ThreeDFormat ^ ThreeD { Microsoft::Office::Interop::Word::ThreeDFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreeD : Microsoft.Office.Interop.Word.ThreeDFormat" Usage="Microsoft.Office.Interop.Word.Shape.ThreeD" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2379,6 +2459,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2411,6 +2492,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Top { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2443,6 +2525,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.TopRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property TopRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TopRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TopRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.TopRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2465,7 +2548,7 @@
       <Docs>
         <summary>Gibt einen <b>Single</b> -Wert zurück, der die relative obere Position einer Form darstellt, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
         <value><b>Single</b></value>
-        <remarks><para>Verwenden Sie diese Eigenschaft mit <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" /> der-Eigenschaft. Bei Festlegung auf <b>wdShapePositionRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da für die Form keine prozentuale Positionierung verwendet wird. Die vertikale Position wird ausschließlich durch die <see cref="P:Microsoft.Office.Interop.Word.Shape.Top" /> -Eigenschaft bestimmt.</para>
+        <remarks><para>Verwenden Sie diese Eigenschaft mit der <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" /> -Eigenschaft. Bei Festlegung auf <b>wdShapePositionRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da für die Form keine prozentuale Positionierung verwendet wird. Die vertikale Position wird ausschließlich durch die <see cref="P:Microsoft.Office.Interop.Word.Shape.Top" /> -Eigenschaft bestimmt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2475,6 +2558,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoShapeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeType Type { Microsoft::Office::Core::MsoShapeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoShapeType" Usage="Microsoft.Office.Interop.Word.Shape.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2503,6 +2587,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.Ungroup" />
       <MemberSignature Language="VB.NET" Value="Public Function Ungroup () As ShapeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Ungroup();" />
+      <MemberSignature Language="F#" Value="abstract member Ungroup : unit -&gt; Microsoft.Office.Interop.Word.ShapeRange" Usage="shape.Ungroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2522,7 +2607,7 @@
         <returns>To be added.</returns>
         <remarks><para>Zerlegt Bilder und OLE-Objekte innerhalb der angegebenen Form.</para>
           <para>Gibt die nicht gruppierten Formen als einzelnes <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> Objekt zurück.</para>
-          <para>Da eine Gruppe von Formen als ein einzelnes Objekt behandelt wird, ändert das Gruppieren und Aufheben der Gruppierung von Formen die Anzahl der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Elemente in der Auflistung und ändert die Indexnummern von Elementen, die nach den betroffenen Elementen in der Auflistung stammen.</para>
+          <para>Da eine Gruppe von Formen als ein einzelnes Objekt behandelt wird, ändert das Gruppieren und Aufheben der Gruppierung von Formen die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung und ändert die Indexnummern von Elementen, die nach den betroffenen Elementen in der Auflistung stammen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2532,6 +2617,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.VerticalFlip" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalFlip As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState VerticalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalFlip : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.Shape.VerticalFlip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2561,6 +2647,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Vertices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vertices As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Vertices { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Vertices : obj" Usage="Microsoft.Office.Interop.Word.Shape.Vertices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2580,7 +2667,7 @@
       <Docs>
         <summary>Gibt die Koordinaten der Scheitelpunkte der angegebenen Freihandform (und der Kontrollpunkte für Bézierkurven) als Folge von Koordinatenpaaren zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>Sie können das von dieser Eigenschaft zurückgegebene Array als Argument für <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" /> die <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" /> or-Methode verwenden.</para>
+        <remarks><para>Sie können das von dieser Eigenschaft zurückgegebene Array als Argument für die <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" /> -Methode verwenden.</para>
           <para>Die folgende Tabelle zeigt, wie die <b>Vertices</b> -Eigenschaft Werte im Array vertArray () mit den Koordinaten der Scheitelpunkte eines Dreiecks verknüpft.</para>
           <list type="table">
             <item>
@@ -2617,6 +2704,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Visible { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2650,6 +2738,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2681,6 +2770,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.WidthRelative" />
       <MemberSignature Language="VB.NET" Value="Public Property WidthRelative As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float WidthRelative { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.WidthRelative : single with get, set" Usage="Microsoft.Office.Interop.Word.Shape.WidthRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2702,8 +2792,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Single</b> zurück, der die relative Breite einer Form darstellt, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
-        <value>Gibt <see cref="T:System.Single" />zurück.</value>
-        <remarks><para>Verwenden Sie diese Eigenschaft mit <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" /> der-Eigenschaft. Bei Festlegung auf <b>wdShapeSizeRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da die Größe der Form nicht prozentual verwendet wird. Die Breite wird ausschließlich durch die <see cref="P:Microsoft.Office.Interop.Word.Shape.Width" /> -Eigenschaft bestimmt.</para>
+        <value>Gibt zurück <see cref="T:System.Single" /> .</value>
+        <remarks><para>Verwenden Sie diese Eigenschaft mit der <see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" /> -Eigenschaft. Bei Festlegung auf <b>wdShapeSizeRelativeNone</b> (-999999) (siehe <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> Aufzählung) sollte diese Eigenschaft ignoriert werden, da die Größe der Form nicht prozentual verwendet wird. Die Breite wird ausschließlich durch die <see cref="P:Microsoft.Office.Interop.Word.Shape.Width" /> -Eigenschaft bestimmt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2713,6 +2803,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.WrapFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrapFormat As WrapFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WrapFormat ^ WrapFormat { Microsoft::Office::Interop::Word::WrapFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrapFormat : Microsoft.Office.Interop.Word.WrapFormat" Usage="Microsoft.Office.Interop.Word.Shape.WrapFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2741,6 +2832,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ZOrder (ZOrderCmd As MsoZOrderCmd)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ZOrder(Microsoft::Office::Core::MsoZOrderCmd ZOrderCmd);" />
+      <MemberSignature Language="F#" Value="abstract member ZOrder : Microsoft.Office.Core.MsoZOrderCmd -&gt; unit" Usage="shape.ZOrder ZOrderCmd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2758,9 +2850,9 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">Erforderlich <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />. Legt fest, wohin die angegebene Form relativ zu den anderen Formen verschoben werden soll.</param>
+        <param name="ZOrderCmd">Erforderlich <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" /> . Legt fest, wohin die angegebene Form relativ zu den anderen Formen verschoben werden soll.</param>
         <summary>Verschiebt die angegebene Form vor oder hinter andere Formen in der Sammlung (d. h. ändert die Position der Form in der Z-Reihenfolge).</summary>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Shape.ZOrderPosition" /> die-Eigenschaft, um die aktuelle Position eines Shapes in der z-Reihenfolge zu bestimmen.</para>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Shape.ZOrderPosition" /> -Eigenschaft, um die aktuelle Position eines Shapes in der z-Reihenfolge zu bestimmen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2770,6 +2862,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shape.ZOrderPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ZOrderPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ZOrderPosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ZOrderPosition : int" Usage="Microsoft.Office.Interop.Word.Shape.ZOrderPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2789,7 +2882,7 @@
       <Docs>
         <summary>Gibt die Position der angegebenen Form in der Z-Ordnung zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>Um die Position der Form in der z-Reihenfolge festzulegen, <see cref="M:Microsoft.Office.Interop.Word.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> verwenden Sie die-Methode.</para>
+        <remarks><para>Um die Position der Form in der z-Reihenfolge festzulegen, verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> -Methode.</para>
           <para>Die Position eines Shapes in der z-Reihenfolge entspricht der Indexnummer der Form in der <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Auflistung.</para>
           <para>Jedes Mal, wenn Sie einer Auflistung eine neue Form hinzufügen, wird Sie standardmäßig am Anfang der z-Reihenfolge hinzugefügt.</para>
           <para> </para></remarks>

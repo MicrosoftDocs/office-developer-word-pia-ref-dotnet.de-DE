@@ -1,9 +1,10 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Word.Point">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e59e39b44825c3b2a985f05858eb282283053524" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144148" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5d931e162fe6fa0f05ec54b35be5f03edd30a833" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924683" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Point" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Point" />
   <TypeSignature Language="VB.NET" Value="Public Interface Point" />
   <TypeSignature Language="C++ CLI" Value="public interface class Point" />
+  <TypeSignature Language="F#" Value="type Point = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt einen einzelnen Punkt einer Datenreihe in einem Diagramm dar.</summary>
-    <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.Point" /> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Points" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.Points" /> Auflistung enthält alle Punkte in einer Datenreihe.</para>
+    <remarks><para>Das- <see cref="T:Microsoft.Office.Interop.Word.Point" /> Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Points" /> Auflistung. Die <see cref="T:Microsoft.Office.Interop.Word.Points" /> Auflistung enthält alle Punkte in einer Datenreihe.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Point.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt Sie ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
         <value><b>Anwendung</b> (siehe oben)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ApplyDataLabels([in]valuetype Microsoft.Office.Interop.Word.XlDataLabelsType Type, [in]object LegendKey, [in]object AutoText, [in]object HasLeaderLines, [in]object ShowSeriesName, [in]object ShowCategoryName, [in]object ShowValue, [in]object ShowPercentage, [in]object ShowBubbleSize, [in]object Separator) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyDataLabels (Optional Type As XlDataLabelsType = Microsoft.Office.Interop.Word.XlDataLabelsType.xlDataLabelsShowValue, Optional LegendKey As Object, Optional AutoText As Object, Optional HasLeaderLines As Object, Optional ShowSeriesName As Object, Optional ShowCategoryName As Object, Optional ShowValue As Object, Optional ShowPercentage As Object, Optional ShowBubbleSize As Object, Optional Separator As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDataLabels : Microsoft.Office.Interop.Word.XlDataLabelsType * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; obj" Usage="point.ApplyDataLabels (Type, LegendKey, AutoText, HasLeaderLines, ShowSeriesName, ShowCategoryName, ShowValue, ShowPercentage, ShowBubbleSize, Separator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
         <param name="Type">Der anzuwendende Datenbeschriftungstyp.</param>
         <param name="LegendKey">Mit  <b>True</b> wird das Legendensymbol neben dem Datenpunkt angezeigt. Der Standardwert ist <b>False</b>.</param>
         <param name="AutoText"><b>True,</b> Wenn das Objekt automatisch basierend auf dem Inhalt angemessenen Text generiert.</param>
-        <param name="HasLeaderLines">True für <see cref="T:Microsoft.Office.Interop.Word.Chart" /> die <see cref="T:Microsoft.Office.Interop.Word.Series" /> und- <b></b> Objekte, wenn die Datenreihe Führungslinien aufweist.</param>
+        <param name="HasLeaderLines">True für die <see cref="T:Microsoft.Office.Interop.Word.Chart" /> und- <see cref="T:Microsoft.Office.Interop.Word.Series" /> Objekte, wenn die Datenreihe Führungslinien aufweist. <b>True</b></param>
         <param name="ShowSeriesName">Übergeben Sie einen booleschen Wert, um den Datenreihennamen für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="ShowCategoryName">Übergeben Sie einen booleschen Wert, um den Rubrikennamen für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="ShowValue">Übergeben Sie einen booleschen Wert, um den Wert für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.ApplyPictToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToEnd As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToEnd { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToEnd : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.ApplyPictToEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -126,7 +130,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn eine Grafik dem Ende des Punktes oder aller Punkte der Datenreihe zugeordnet wird. <b>Boolean</b> mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.ApplyPictToFront" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToFront As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToFront { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToFront : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.ApplyPictToFront" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -157,7 +162,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn eine Grafik dem Anfang des Punkts oder allen Punkten der Datenreihe zugeordnet wird. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.ApplyPictToSides" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToSides As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToSides { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToSides : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.ApplyPictToSides" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -188,7 +194,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn den Seiten des Punktes oder aller Punkte der Datenreihe eine Grafik zugeordnet wird. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.Point.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.ClearFormats" />
       <MemberSignature Language="VB.NET" Value="Public Function ClearFormats () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ClearFormats();" />
+      <MemberSignature Language="F#" Value="abstract member ClearFormats : unit -&gt; obj" Usage="point.ClearFormats " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; obj" Usage="point.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Point.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -300,7 +310,7 @@
       <Docs>
         <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützte <b>ganze Zahl</b>.</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.Point.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, <see cref="P:Microsoft.Office.Interop.Word.Point.Creator" /> gibt die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.DataLabel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataLabel As DataLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DataLabel ^ DataLabel { Microsoft::Office::Interop::Word::DataLabel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataLabel : Microsoft.Office.Interop.Word.DataLabel" Usage="Microsoft.Office.Interop.Word.Point.DataLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -327,7 +338,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> Wert vom Datentyp Object zurück, der die dem Komma zugeordnete Datenbeschriftung darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> vom Datentyp Object zurück, der die dem Komma zugeordnete Datenbeschriftung darstellt. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="point.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -355,7 +367,7 @@
       <Docs>
         <summary>Löscht das Objekt.</summary>
         <returns><b>Objekt</b></returns>
-        <remarks><para>Durch das <see cref="T:Microsoft.Office.Interop.Word.Point" /> Löschen eines Objekts wird die gesamte Datenreihe gelöscht.</para>
+        <remarks><para>Durch das Löschen eines <see cref="T:Microsoft.Office.Interop.Word.Point" /> Objekts wird die gesamte Datenreihe gelöscht.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -365,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Explosion" />
       <MemberSignature Language="VB.NET" Value="Public Property Explosion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Explosion { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Explosion : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.Explosion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -396,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As ChartFillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFillFormat ^ Fill { Microsoft::Office::Interop::Word::ChartFillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.ChartFillFormat" Usage="Microsoft.Office.Interop.Word.Point.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.Point.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -445,7 +460,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt die Linien-, Füll- und effektformatierung für das Objekt.
-Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -456,6 +471,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Has3DEffect" />
       <MemberSignature Language="VB.NET" Value="Public Property Has3DEffect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Has3DEffect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Has3DEffect : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.Has3DEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -477,7 +493,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn ein Punkt dreidimensional dargestellt wird. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Diese Eigenschaft gilt nur für Blasendiagramme.</para>
           <para> </para></remarks>
       </Docs>
@@ -488,6 +504,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.HasDataLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDataLabel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDataLabel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDataLabel : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.HasDataLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -509,7 +526,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn der Datenpunkt eine Datenbeschriftung enthält. <b>Boolean</b> -Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,6 +536,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="Microsoft.Office.Interop.Word.Point.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -548,6 +566,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Interior" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Interior ^ Interior { Microsoft::Office::Interop::Word::Interior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Interior : Microsoft.Office.Interop.Word.Interior" Usage="Microsoft.Office.Interop.Word.Point.Interior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -579,6 +598,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.InvertIfNegative" />
       <MemberSignature Language="VB.NET" Value="Public Property InvertIfNegative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvertIfNegative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InvertIfNegative : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.InvertIfNegative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -600,7 +620,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       </ReturnValue>
       <Docs>
         <summary><b>True,</b> Wenn Microsoft Word das Muster im Objekt invertiert, wenn es eine negative Zahl entspricht. <b>Boolescher</b> Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -610,6 +630,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double" Usage="Microsoft.Office.Interop.Word.Point.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -639,6 +660,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerBackgroundColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBackgroundColor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerBackgroundColor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBackgroundColor : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerBackgroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -670,6 +692,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerBackgroundColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBackgroundColorIndex As XlColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlColorIndex MarkerBackgroundColorIndex { Microsoft::Office::Interop::Word::XlColorIndex get(); void set(Microsoft::Office::Interop::Word::XlColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBackgroundColorIndex : Microsoft.Office.Interop.Word.XlColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerBackgroundColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -690,7 +713,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Hintergrundfarbe der Markierung als Index in der aktuellen Farbpalette oder als eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> Konstanten zurück oder legt Sie fest <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> : <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />oder. Gilt nur für Linien-, Punkt- und Netzdiagramme. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />.</summary>
+        <summary>Gibt die Hintergrundfarbe der Markierung als Index in der aktuellen Farbpalette oder als eine der folgenden Konstanten zurück oder legt Sie fest <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> : <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> oder <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> . Gilt nur für Linien-, Punkt- und Netzdiagramme. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -701,6 +724,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerForegroundColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerForegroundColor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerForegroundColor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerForegroundColor : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerForegroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -732,6 +756,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerForegroundColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerForegroundColorIndex As XlColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlColorIndex MarkerForegroundColorIndex { Microsoft::Office::Interop::Word::XlColorIndex get(); void set(Microsoft::Office::Interop::Word::XlColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerForegroundColorIndex : Microsoft.Office.Interop.Word.XlColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerForegroundColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -752,7 +777,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Vordergrundfarbe des Markers als Index in der aktuellen Farbpalette oder als eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> Konstanten zurück oder legt Sie <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> fest <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />: oder. Gilt nur für Linien-, Punkt- und Netzdiagramme. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />.</summary>
+        <summary>Gibt die Vordergrundfarbe des Markers als Index in der aktuellen Farbpalette oder als eine der folgenden Konstanten zurück oder legt Sie fest <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> : <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> oder <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> . Gilt nur für Linien-, Punkt- und Netzdiagramme. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -763,6 +788,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerSize : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -794,6 +820,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerStyle As XlMarkerStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlMarkerStyle MarkerStyle { Microsoft::Office::Interop::Word::XlMarkerStyle get(); void set(Microsoft::Office::Interop::Word::XlMarkerStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerStyle : Microsoft.Office.Interop.Word.XlMarkerStyle with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -814,7 +841,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
         <ReturnType>Microsoft.Office.Interop.Word.XlMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Art der Markierung für einen Datenpunkt oder für eine Datenreihe in einem Liniendiagramm, Punkt (XY)-Diagramm oder Netzdiagramm zurück oder legt diese fest. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />.</summary>
+        <summary>Gibt die Art der Markierung für einen Datenpunkt oder für eine Datenreihe in einem Liniendiagramm, Punkt (XY)-Diagramm oder Netzdiagramm zurück oder legt diese fest. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -825,6 +852,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Point.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -855,6 +883,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Point.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -883,6 +912,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Paste" />
       <MemberSignature Language="VB.NET" Value="Public Function Paste () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Paste();" />
+      <MemberSignature Language="F#" Value="abstract member Paste : unit -&gt; obj" Usage="point.Paste " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -900,7 +930,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <Docs>
         <summary>Fügt ein Bild aus der Zwischenablage als Markierung für den ausgewählten Punkt ein.</summary>
         <returns><b>Objekt</b></returns>
-        <remarks><para>Diese Methode kann für Säulen-, Balken-, Netz-oder Netzdiagramme verwendet werden und legt die <see cref="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" /> Eigenschaft auf <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" />fest.</para>
+        <remarks><para>Diese Methode kann für Säulen-, Balken-, Netz-oder Netzdiagramme verwendet werden und legt die <see cref="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" /> Eigenschaft auf fest <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -910,6 +940,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.PictureType" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureType As XlChartPictureType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlChartPictureType PictureType { Microsoft::Office::Interop::Word::XlChartPictureType get(); void set(Microsoft::Office::Interop::Word::XlChartPictureType value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureType : Microsoft.Office.Interop.Word.XlChartPictureType with get, set" Usage="Microsoft.Office.Interop.Word.Point.PictureType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -930,7 +961,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
         <ReturnType>Microsoft.Office.Interop.Word.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> Wert zurück, der angibt, wie Bilder in einem Säulen-oder Balkendiagramm angezeigt werden, oder legt diesen Wert fest.</summary>
+        <summary>Gibt einen Wert zurück <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> , der angibt, wie Bilder in einem Säulen-oder Balkendiagramm angezeigt werden, oder legt diesen Wert fest.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -941,6 +972,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.PictureUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureUnit As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PictureUnit { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureUnit : double with get, set" Usage="Microsoft.Office.Interop.Word.Point.PictureUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -967,7 +999,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Einheit für jedes Bild im Diagramm zurück oder legt Sie fest <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> , wenn die Eigenschaft <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> auf festgelegt ist (wenn dies nicht der Fall ist, wird diese Eigenschaft ignoriert).</summary>
+        <summary>Gibt die Einheit für jedes Bild im Diagramm zurück oder legt Sie fest <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> , wenn die Eigenschaft auf festgelegt ist <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (wenn dies nicht der Fall ist, wird diese Eigenschaft ignoriert).</summary>
         <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -978,6 +1010,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.PictureUnit2" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureUnit2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PictureUnit2 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureUnit2 : double with get, set" Usage="Microsoft.Office.Interop.Word.Point.PictureUnit2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -998,7 +1031,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Einheit für jedes Bild im Diagramm zurück oder legt Sie fest <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> , wenn die Eigenschaft <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> auf festgelegt ist (wenn dies nicht der Fall ist, wird diese Eigenschaft ignoriert). <b>Doppelter</b> Wert mit Lese-/Schreibzugriff.</summary>
+        <summary>Gibt die Einheit für jedes Bild im Diagramm zurück oder legt Sie fest <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> , wenn die Eigenschaft auf festgelegt ist <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (wenn dies nicht der Fall ist, wird diese Eigenschaft ignoriert). <b>Doppelter</b> Wert mit Lese-/Schreibzugriff.</summary>
         <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1008,6 +1041,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 PieSliceLocation([in]valuetype Microsoft.Office.Interop.Word.XlPieSliceLocation loc, [in]valuetype Microsoft.Office.Interop.Word.XlPieSliceIndex Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.PieSliceLocation(Microsoft.Office.Interop.Word.XlPieSliceLocation,Microsoft.Office.Interop.Word.XlPieSliceIndex)" />
       <MemberSignature Language="VB.NET" Value="Public Function PieSliceLocation (loc As XlPieSliceLocation, Optional Index As XlPieSliceIndex = Microsoft.Office.Interop.Word.XlPieSliceIndex.xlOuterCenterPoint) As Double" />
+      <MemberSignature Language="F#" Value="abstract member PieSliceLocation : Microsoft.Office.Interop.Word.XlPieSliceLocation * Microsoft.Office.Interop.Word.XlPieSliceIndex -&gt; double" Usage="point.PieSliceLocation (loc, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1040,6 +1074,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.SecondaryPlot" />
       <MemberSignature Language="VB.NET" Value="Public Property SecondaryPlot As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SecondaryPlot { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SecondaryPlot : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.SecondaryPlot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1061,7 +1096,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn sich der Punkt im sekundären Abschnitt eines Kreis-aus-Kreis-Diagramms oder Balken-aus-Kreis-Diagramms befindet. Trifft nur auf Punkte zu, die sich auf Kreis-aus-Kreis-Diagrammen oder Balken-aus-Kreis-Diagrammen befinden. <b>Boolean</b>-Wert mit Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1071,6 +1106,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="point.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1097,6 +1133,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public Property Shadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shadow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1118,7 +1155,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       </ReturnValue>
       <Docs>
         <summary>Gibt einen <b>Boolean</b>-Wert zurück, der bestimmt, ob das Objekt einen Schatten aufweist, oder legt diesen Wert fest.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1128,6 +1165,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double" Usage="Microsoft.Office.Interop.Word.Point.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1157,6 +1195,7 @@ Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</s
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="Microsoft.Office.Interop.Word.Point.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

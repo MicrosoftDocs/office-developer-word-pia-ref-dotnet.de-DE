@@ -1,9 +1,10 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Word.FreeformBuilder">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f7da0a16c045e6dc0d03c5438ac63fb5b3f441a0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148047" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="db9db2782b2a0206181c5868db7aa403ea6c180e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924130" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FreeformBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FreeformBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Interface FreeformBuilder" />
   <TypeSignature Language="C++ CLI" Value="public interface class FreeformBuilder" />
+  <TypeSignature Language="F#" Value="type FreeformBuilder = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Geometrie einer Freihandform dar, während Sie erstellt wird.</summary>
-    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> die-Methode, um ein <b>FreeformBuilder</b> -Objekt zurückzugeben. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> die-Methode, um der Freihandform Knoten hinzuzufügen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> die-Methode, um die im <b>FreeformBuilder</b> -Objekt definierte Form zu erstellen und <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> Sie der Auflistung hinzuzufügen.</para>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> -Methode, um ein <b>FreeformBuilder</b> -Objekt zurückzugeben. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> -Methode, um der Freihandform Knoten hinzuzufügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> -Methode, um die im <b>FreeformBuilder</b> -Objekt definierte Form zu erstellen und Sie der Auflistung hinzuzufügen <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddNodes([in]valuetype Microsoft.Office.Core.MsoSegmentType SegmentType, [in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1, [in]float32 X2, [in]float32 Y2, [in]float32 X3, [in]float32 Y3) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNodes (SegmentType As MsoSegmentType, EditingType As MsoEditingType, X1 As Single, Y1 As Single, Optional X2 As Single = 0, Optional Y2 As Single = 0, Optional X3 As Single = 0, Optional Y3 As Single = 0)" />
+      <MemberSignature Language="F#" Value="abstract member AddNodes : Microsoft.Office.Core.MsoSegmentType * Microsoft.Office.Core.MsoEditingType * single * single * single * single * single * single -&gt; unit" Usage="freeformBuilder.AddNodes (SegmentType, EditingType, X1, Y1, X2, Y2, X3, Y3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,8 +54,8 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="SegmentType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Der Typ des hinzuzufügenden Segments.</param>
-        <param name="EditingType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoEditingType" />. Die Bearbeitungseigenschaft des Scheitelpunkts. Wenn <paramref name="SegmentType" /> ist <b>msoSegmentLine</b>, <paramref name="EditingType" /> muss <b>msoEditingAuto</b>sein.</param>
+        <param name="SegmentType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> . Der Typ des hinzuzufügenden Segments.</param>
+        <param name="EditingType">Erforderlich <see cref="T:Microsoft.Office.Core.MsoEditingType" /> . Die Bearbeitungseigenschaft des Scheitelpunkts. Wenn <paramref name="SegmentType" /> ist <b>msoSegmentLine</b>, <paramref name="EditingType" /> muss <b>msoEditingAuto</b>sein.</param>
         <param name="X1">Erforderlicher <b>Single</b>-Wert. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingAuto</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn der <paramref name="EditingType" /> neue Knoten <b>msoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum ersten Kontrollpunkt für das neue Segment an.</param>
         <param name="Y1">Erforderlicher <b>Single</b>-Wert. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingAuto</b>ist, gibt dieses Argument den vertikalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn der <paramref name="EditingType" /> neue Knoten <b>msoEditingCorner</b>ist, gibt dieses Argument den vertikalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum ersten Kontrollpunkt für das neue Segment an.</param>
         <param name="X2">Optional <b>Single</b>. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments zum zweiten Kontrollpunkt für das neue Segment an. Wenn die <paramref name="EditingType" /> des neuen Segments <b>msoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument an.</param>
@@ -61,7 +63,7 @@
         <param name="X3">Optional <b>Single</b>. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingCorner</b>ist, gibt dieses Argument den horizontalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn die <paramref name="EditingType" /> des neuen Segments <b>msoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument an.</param>
         <param name="Y3">Optional <b>Single</b>. Wenn das <paramref name="EditingType" /> neue Segment <b>msoEditingCorner</b>ist, gibt dieses Argument den vertikalen Abstand (in Punkt) von der oberen linken Ecke des Dokuments bis zum Endpunkt des neuen Segments an. Wenn die <paramref name="EditingType" /> des neuen Segments <b>msoEditingAuto</b>ist, geben Sie keinen Wert für dieses Argument an.</param>
         <summary>Fügt einen neuen Abschnitt am Ende der Freihandform, der erstellt wird, und fügt die Knoten, die das Segment definieren.</summary>
-        <remarks><para>Sie können diese Methode verwenden, so oft wie Sie die Freihandform Knoten hinzuzufügen, den Sie erstellen möchten. Wenn Sie das Hinzufügen von Knoten abgeschlossen <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> haben, verwenden Sie die-Methode, um die gerade definierte Freihandform zu erstellen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> -Methode der <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> Auflistung, um einer Freihandform Knoten hinzuzufügen, nachdem Sie erstellt wurde.</para>
+        <remarks><para>Sie können diese Methode verwenden, so oft wie Sie die Freihandform Knoten hinzuzufügen, den Sie erstellen möchten. Wenn Sie das Hinzufügen von Knoten abgeschlossen haben, verwenden <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> Sie die-Methode, um die gerade definierte Freihandform zu erstellen. Verwenden Sie die-Methode der Auflistung, um einer Freihandform Knoten hinzuzufügen, nachdem Sie erstellt wurde <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FreeformBuilder.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FreeformBuilder.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape ConvertToShape([in]object&amp; Anchor) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToShape (Optional ByRef Anchor As Object) As Shape" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToShape : obj -&gt; Microsoft.Office.Interop.Word.Shape" Usage="freeformBuilder.ConvertToShape Anchor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,13 +116,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Anchor">Optionales <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt, das den Text darstellt, an den die Form gebunden ist. Wenn <paramref name="Anchor" /> angegeben ist, wird der Anker am Anfang des ersten Absatzes im Verankerungsbereich positioniert. Wenn dieses Argument nicht angegeben ist, wird der Verankerungsbereich automatisch ausgewählt, und die Form wird relativ zum oberen und linken Rand der Seite positioniert.</param>
         <summary>Erstellt eine Form mit den geometrischen Eigenschaften des angegebenen Objekts. Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt zurück, das die neue Form darstellt.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Sie müssen die <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> Methode mindestens einmal auf <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> ein Objekt anwenden, bevor Sie die <b>ConvertToShape</b> -Methode verwenden.</para>
+        <remarks><para>Sie müssen die <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> Methode mindestens einmal auf ein Objekt anwenden, <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> bevor Sie die <b>ConvertToShape</b> -Methode verwenden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FreeformBuilder.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FreeformBuilder.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FreeformBuilder.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FreeformBuilder.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
