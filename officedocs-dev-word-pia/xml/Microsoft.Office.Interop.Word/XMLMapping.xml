@@ -1,9 +1,10 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142640" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a613d872defc3b239ef077ce2ad4da03a037e7ee" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926752" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLMapping" />
+  <TypeSignature Language="F#" Value="type XMLMapping = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stellt die XML-Zuordnung für <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> ein Objekt zwischen benutzerdefiniertem XML und einem Inhaltssteuerelement dar. Eine XML-Zuordnung ist eine Verknüpfung zwischen dem Text in einem Inhaltssteuerelement und einem XML-Element im benutzerdefinierten XML-Datenspeicher für dieses Dokument.</summary>
-    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> die-Methode, um die XML-Zuordnung für ein Inhaltssteuerelement mithilfe einer XPath-Zeichenfolge hinzuzufügen oder zu ändern. Im folgenden Beispiel wird die integrierte Dokumenteigenschaft für den Autor des Dokuments festgelegt, ein neues Inhaltssteuerelement in das aktive Dokument eingefügt und dann die XML-Zuordnung für das Steuerelement auf die integrierte Dokumenteigenschaft festgelegt.</para>
+    <summary>Stellt die XML-Zuordnung für ein <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Objekt zwischen benutzerdefiniertem XML und einem Inhaltssteuerelement dar. Eine XML-Zuordnung ist eine Verknüpfung zwischen dem Text in einem Inhaltssteuerelement und einem XML-Element im benutzerdefinierten XML-Datenspeicher für dieses Dokument.</summary>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> -Methode, um die XML-Zuordnung für ein Inhaltssteuerelement mithilfe einer XPath-Zeichenfolge hinzuzufügen oder zu ändern. Im folgenden Beispiel wird die integrierte Dokumenteigenschaft für den Autor des Dokuments festgelegt, ein neues Inhaltssteuerelement in das aktive Dokument eingefügt und dann die XML-Zuordnung für das Steuerelement auf die integrierte Dokumenteigenschaft festgelegt.</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1813,7 +1814,7 @@ If blnMap = False Then
 
 
 End If&lt;/span&gt;</code>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> die-Methode, um die XML-Zuordnung für ein Inhaltssteuerelement mithilfe eines <b>CustomXMLNode</b> -Objekts hinzuzufügen oder zu ändern. Im folgenden Beispiel werden dieselben Aufgaben wie im vorherigen Beispiel ausgeführt, allerdings wird dazu die <b>SetMappingByNode</b>-Methode verwendet.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> -Methode, um die XML-Zuordnung für ein Inhaltssteuerelement mithilfe eines <b>CustomXMLNode</b> -Objekts hinzuzufügen oder zu ändern. Im folgenden Beispiel werden dieselben Aufgaben wie im vorherigen Beispiel ausgeführt, allerdings wird dazu die <b>SetMappingByNode</b>-Methode verwendet.</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -7833,7 +7834,7 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> die-Methode, um die XML-Zuordnung für ein Inhaltssteuerelement zu entfernen.  Beim Löschen der XML-Zuordnung für ein Inhaltssteuerelement wird lediglich die Verbindung zwischen dem Inhaltssteuerelement und den XML-Daten entfernt.  Sowohl das Inhaltssteuerelement als auch die XML-Daten verbleiben im Dokument.  Im folgenden Beispiel wird die XML-Zuordnung für alle Inhaltssteuerelemente im aktiven Dokument gelöscht, die derzeit zugeordnet sind.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> -Methode, um die XML-Zuordnung für ein Inhaltssteuerelement zu entfernen.  Beim Löschen der XML-Zuordnung für ein Inhaltssteuerelement wird lediglich die Verbindung zwischen dem Inhaltssteuerelement und den XML-Daten entfernt.  Sowohl das Inhaltssteuerelement als auch die XML-Daten verbleiben im Dokument.  Im folgenden Beispiel wird die XML-Zuordnung für alle Inhaltssteuerelemente im aktiven Dokument gelöscht, die derzeit zugeordnet sind.</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8603,7 +8604,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> die-Eigenschaft, um zu bestimmen, ob ein Inhaltssteuerelement einem XML-Knoten im Datenspeicher des Dokuments zugeordnet ist. Im folgenden Beispiel wird die XML-Zuordnung für alle zugeordneten Inhaltssteuerelemente im aktiven Dokument gelöscht.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> -Eigenschaft, um zu bestimmen, ob ein Inhaltssteuerelement einem XML-Knoten im Datenspeicher des Dokuments zugeordnet ist. Im folgenden Beispiel wird die XML-Zuordnung für alle zugeordneten Inhaltssteuerelemente im aktiven Dokument gelöscht.</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9373,7 +9374,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> die-Eigenschaft, um auf den XML-Knoten zuzugreifen, dem ein Inhaltssteuerelement zugeordnet ist. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> die-Eigenschaft, um auf die XML-Komponente zuzugreifen, auf die ein Inhaltssteuerelement zuordnet. Informationen zum Arbeiten mit dem <b>CustomXMLNode</b>-Objekt und dem <b>CustomXMLPart</b>-Objekt finden Sie unter den jeweiligen Objektthemen.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> -Eigenschaft, um auf den XML-Knoten zuzugreifen, dem ein Inhaltssteuerelement zugeordnet ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> -Eigenschaft, um auf die XML-Komponente zuzugreifen, auf die ein Inhaltssteuerelement zuordnet. Informationen zum Arbeiten mit dem <b>CustomXMLNode</b>-Objekt und dem <b>CustomXMLPart</b>-Objekt finden Sie unter den jeweiligen Objektthemen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -9383,6 +9384,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9411,6 +9413,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9442,6 +9445,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLNode As CustomXMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ CustomXMLNode { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLNode : Microsoft.Office.Core.CustomXMLNode" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11138,6 +11142,7 @@ Set objNode = objMap.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLPart As CustomXMLPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPart ^ CustomXMLPart { Microsoft::Office::Core::CustomXMLPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLPart : Microsoft.Office.Core.CustomXMLPart" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11812,6 +11817,7 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="xMLMapping.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12354,6 +12360,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property IsMapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMapped : bool" Usage="Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12770,6 +12777,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12798,6 +12806,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrefixMappings As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrefixMappings { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrefixMappings : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12817,15 +12826,16 @@ For Each objCC In ActiveDocument.ContentControls
       <Docs>
         <summary>Gibt eine <b>Zeichenfolge</b> zurück, die die Präfixzuordnungen darstellt, die zum Auswerten des XPaths für die aktuelle XML-Zuordnung verwendet werden. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie die-Methode oder die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> -Methode, um die Zuordnung für ein Inhaltssteuerelement festzulegen.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> -Methode oder die-Methode, um die Zuordnung für ein Inhaltssteuerelement festzulegen <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
-      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = null);" />
+      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetMapping([in]string XPath, [in]string PrefixMapping, [in]class Microsoft.Office.Core.CustomXMLPart Source) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMapping (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional Source As CustomXMLPart = null) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SetMapping : string * string * Microsoft.Office.Core.CustomXMLPart -&gt; bool" Usage="xMLMapping.SetMapping (XPath, PrefixMapping, Source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12846,10 +12856,10 @@ For Each objCC In ActiveDocument.ContentControls
       </Parameters>
       <Docs>
         <param name="XPath">Gibt eine XPath-Zeichenfolge an, die den XML-Knoten darstellt, dem das Inhaltssteuerelement zugeordnet werden soll. Bei einer ungültigen XPath-Zeichenfolge tritt ein Laufzeitfehler auf.</param>
-        <param name="PrefixMapping">Gibt die Präfixzuordnungen an, die beim Abfragen des im- <paramref name="XPath" /> Parameter bereitgestellten Ausdrucks verwendet werden sollen. Wenn dieser Parameter ausgelassen wird, wird von Word die Gruppe von Präfixzuordnungen für die angegebene benutzerdefinierte XML-Komponente im aktuellen Dokument verwendet.</param>
+        <param name="PrefixMapping">Gibt die Präfixzuordnungen an, die beim Abfragen des im-Parameter bereitgestellten Ausdrucks verwendet werden sollen <paramref name="XPath" /> . Wenn dieser Parameter ausgelassen wird, wird von Word die Gruppe von Präfixzuordnungen für die angegebene benutzerdefinierte XML-Komponente im aktuellen Dokument verwendet.</param>
         <param name="Source">Gibt die gewünschten benutzerdefinierten XML-Daten an, denen das Inhaltssteuerelement zugeordnet werden soll. Wenn dieser Parameter ausgelassen wird, wird der XPath-Code für alle benutzerdefinierten XML-Werte im aktuellen Dokument ausgewertet, und die Zuordnung wird mit dem ersten <b>CustomXMLPart</b> , in dem der XPath in einen XML-Knoten aufgelöst wird, festgelegt.</param>
         <summary>Ermöglicht das Erstellen oder Ändern der XML-Zuordnung für ein Inhaltssteuerelement. Gibt <b>true</b> zurück, wenn Microsoft Office Word das Inhaltssteuerelement einem benutzerdefinierten XML-Knoten im benutzerdefinierten XML-Datenspeicher des Dokuments zuordnet.</summary>
-        <returns>Boolesch</returns>
+        <returns>Boolean</returns>
         <remarks><para>Wenn die XML-Zuordnung bereits vorhanden ist, ersetzt Word die vorhandene XML-Zuordnung, und der Text des Inhaltssteuerelements wird durch den Inhalt des neu zugeordneten XML-Knotens ersetzt. Wenn der angegebene XPath nicht bezüglich eines XML-Knotens in der bzw. den angegebenen XML-Komponente(n) ausgewertet wird, können Sie die Zuordnung dennoch angeben. Daraufhin wird eine Zuordnung erstellt. Diese Zuordnung stellt automatisch eine Verknüpfung her, wenn der angegebene XPath bezüglich eines XML-Knotens in der bzw. den angegebenen benutzerdefinierten XML-Komponente(n) ausgewertet wird.</para>
           <para>Siehe auch die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> -Methode.</para>
           <para>
@@ -15301,6 +15311,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMappingByNode (Node As CustomXMLNode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetMappingByNode(Microsoft::Office::Core::CustomXMLNode ^ Node);" />
+      <MemberSignature Language="F#" Value="abstract member SetMappingByNode : Microsoft.Office.Core.CustomXMLNode -&gt; bool" Usage="xMLMapping.SetMappingByNode Node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -15320,7 +15331,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <Docs>
         <param name="Node">Gibt den XML-Knoten an, dem das aktuelle Inhaltssteuerelement zugeordnet werden soll.</param>
         <summary>Ermöglicht das Erstellen oder Ändern der XML-Datenzuordnung für ein Inhaltssteuerelement. Gibt <b>true</b> zurück, wenn Microsoft Office Word das Inhaltssteuerelement einem benutzerdefinierten XML-Knoten im benutzerdefinierten XML-Datenspeicher des Dokuments zuordnet.</summary>
-        <returns>Boolesch</returns>
+        <returns>Boolean</returns>
         <remarks><para>Wenn die XML-Zuordnung bereits vorhanden ist, ersetzt Word die vorhandene XML-Zuordnung, und der Text des Inhaltssteuerelements wird durch den Inhalt des neu zugeordneten XML-Knotens ersetzt. Siehe auch die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> -Methode.</para>
           <para>
             <b>Hinweis</b>: das Erstellen einer Zuordnung für ein Rich-Text-Inhaltssteuerelement führt zu einem Laufzeitfehler.</para>
@@ -19821,6 +19832,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -19840,7 +19852,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <Docs>
         <summary>Gibt einen Wert vom <b>Typ String</b> zurück, der den XPath für die XML-Zuordnung darstellt, der zum aktuell zugeordneten XML-Knoten ausgewertet wird. Schreibgeschützt.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie die-Methode oder die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> -Methode, um die Zuordnung für ein Inhaltssteuerelement festzulegen. Wenn die Zuordnung nicht aktiviert ist, wird bei Verwendung dieser Eigenschaft ein Fehler ausgegeben.</para>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> -Methode oder die-Methode, um die Zuordnung für ein Inhaltssteuerelement festzulegen <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> . Wenn die Zuordnung nicht aktiviert ist, wird bei Verwendung dieser Eigenschaft ein Fehler ausgegeben.</para>
           <para> </para></remarks>
         <example><para>Im folgenden Beispiel wird überprüft, ob das erste Inhaltssteuerelement im aktiven Dokument ein Datums-Inhaltssteuerelement und ob die XPath-Zeichenfolge auf eine bestimmte integrierte Dokumenteigenschaft festgelegt ist. Dann wird die Zuordnung auf das Steuerelement festgelegt, wenn die XPath-Zeichenfolge nicht übereinstimmt und das Steuerelement ein Datumssteuerelement ist.</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl

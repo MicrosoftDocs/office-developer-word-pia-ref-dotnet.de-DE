@@ -1,9 +1,10 @@
 <Type Name="TextColumns" FullName="Microsoft.Office.Interop.Word.TextColumns">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c1d6c908a7e72752109b1c98cf6bbd36a0e9196e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143826" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="428fcb612d36593a938100de04729cd478d4996e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926024" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextColumns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextColumns" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextColumns&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextColumns : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type TextColumns = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,9 +24,9 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> Objekten, die alle Textspalten in einem Dokument oder einem Abschnitt eines Dokuments darstellen.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.PageSetup.TextColumns" /> die-Eigenschaft, um die TextColumns-Auflistung zurückzugeben. <b></b></para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> die-Methode, um der Auflistung von Spalten eine Spalte hinzuzufügen. Standardmäßig gibt es eine Textspalte in der TextColumns-Auflistung. <b></b></para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" /> die-Methode, um Text in Spalten anzuordnen.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.PageSetup.TextColumns" /> -Eigenschaft, um die <b>TextColumns</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> -Methode, um der Auflistung von Spalten eine Spalte hinzuzufügen. Standardmäßig gibt es eine Textspalte in der <b>TextColumns</b> -Auflistung.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" /> -Methode, um Text in Spalten anzuordnen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TextColumn Add([in]object&amp; Width, [in]object&amp; Spacing, [in]object&amp; EvenlySpaced) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef Width As Object, Optional ByRef Spacing As Object, Optional ByRef EvenlySpaced As Object) As TextColumn" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * obj * obj -&gt; Microsoft.Office.Interop.Word.TextColumn" Usage="textColumns.Add (Width, Spacing, EvenlySpaced)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,9 +50,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextColumn</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Spacing" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="EvenlySpaced" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object" RefType="ref" />
+        <Parameter Name="Spacing" Type="System.Object" RefType="ref" />
+        <Parameter Name="EvenlySpaced" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Width">Optionales <b>Objekt</b>. Die Breite der neuen Textspalte im Dokument (in Punkt).</param>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextColumns.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.TextColumns.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextColumns.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" />
       <MemberSignature Language="VB.NET" Value="Public Property EvenlySpaced As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EvenlySpaced { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EvenlySpaced : int with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,7 +181,7 @@
       <Docs>
         <summary><b>True</b>, wenn Textspalten gleichen Abstand voneinander haben. Kann <b>True</b>, <b>False</b> oder <b>wdUndefined</b> sein.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" /> Sie die oder <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Width" /> -Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> Objekts festlegen, wird die <b>dieevenlyspaced</b> -Eigenschaft automatisch auf <b>true</b>festgelegt. Durch Festlegen der <b>EvenlySpaced</b>-Eigenschaft können auch die Einstellungen für die <b>Spacing</b>- und die <b>Width</b>-Eigenschaft des <b>TextColumns</b>-Objekts geändert werden.</para>
+        <remarks><para>Wenn Sie die <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" /> oder <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Width" /> -Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> Objekts festlegen, wird die <b>dieevenlyspaced</b> -Eigenschaft automatisch auf <b>true</b>festgelegt. Durch Festlegen der <b>EvenlySpaced</b>-Eigenschaft können auch die Einstellungen für die <b>Spacing</b>- und die <b>Width</b>-Eigenschaft des <b>TextColumns</b>-Objekts geändert werden.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As WdFlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFlowDirection FlowDirection { Microsoft::Office::Interop::Word::WdFlowDirection get(); void set(Microsoft::Office::Interop::Word::WdFlowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : Microsoft.Office.Interop.Word.WdFlowDirection with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextColumns.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="textColumns.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As TextColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextColumn ^ default[int] { Microsoft::Office::Interop::Word::TextColumn ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.TextColumn" Usage="Microsoft.Office.Interop.Word.TextColumns.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.LineBetween" />
       <MemberSignature Language="VB.NET" Value="Public Property LineBetween As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineBetween { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LineBetween : int with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.LineBetween" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,7 +316,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> , wenn zwischen allen Spalten in der <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> Auflistung vertikale Linien angezeigt werden. Kann <b>True</b>, <b>False</b> oder <b>wdUndefined</b> sein.</summary>
+        <summary><b>True</b> , wenn zwischen allen Spalten in der Auflistung vertikale Linien angezeigt werden <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> . Kann <b>True</b>, <b>False</b> oder <b>wdUndefined</b> sein.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TextColumns.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -345,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCount (NumColumns As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCount(int NumColumns);" />
+      <MemberSignature Language="F#" Value="abstract member SetCount : int -&gt; unit" Usage="textColumns.SetCount NumColumns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -365,7 +377,7 @@
         <param name="NumColumns">Erforderliche <b>ganze Zahl</b>. Die Anzahl der Spalten, in denen der Text angeordnet werden soll.</param>
         <summary>Ordnet Text in der angegebenen Anzahl von Textspalten an.</summary>
         <remarks><para>
-            <b>Hinweis:</b>  Sie können auch die <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> -Methode des- <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> Objekts verwenden, um der TextColumns <b></b> -Auflistung eine einzelne Spalte hinzuzufügen.</para>
+            <b>Hinweis:</b>  Sie können auch die <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> -Methode des- <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> Objekts verwenden, um der <b>TextColumns</b> -Auflistung eine einzelne Spalte hinzuzufügen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" />
       <MemberSignature Language="VB.NET" Value="Public Property Spacing As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Spacing { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Spacing : single with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.Spacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,9 +408,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt den Abstand (in Punkt) zwischen den Spalten eines <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> Objekts zurück oder legt ihn fest.</summary>
+        <summary>Gibt den Abstand (in Punkt) zwischen den Spalten eines Objekts zurück oder legt ihn fest <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> .</summary>
         <value>To be added.</value>
-        <remarks><para>Nachdem diese Eigenschaft für ein TextColumns <b></b> -Objekt festgelegt wurde, <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> wird die Eigenschaft auf <b>true</b>festgelegt. Wenn Sie den Abstand für eine einzelne Textspalte zurückgeben oder <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> festlegen möchten, wenn es <see cref="P:Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" /> sich um <b>false</b>handelt, verwenden Sie die-Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> Objekts.</para>
+        <remarks><para>Nachdem diese Eigenschaft für ein <b>TextColumns</b> -Objekt festgelegt wurde, <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> wird die Eigenschaft auf <b>true</b>festgelegt. Wenn Sie den Abstand für eine einzelne Textspalte zurückgeben oder festlegen möchten <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> , wenn es sich um <b>false</b>handelt, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" /> -Eigenschaft des- <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> Objekts.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -407,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

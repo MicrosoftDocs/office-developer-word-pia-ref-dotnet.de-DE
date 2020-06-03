@@ -1,9 +1,10 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Word.WebOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f88f221df7d67e0a725679f57bd1b9a883ba6147" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142731" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cbbc3f8103b28c4847f6ca3c812d08d59b7a8c52" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926794" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
   <TypeSignature Language="C++ CLI" Value="public interface class WebOptions" />
+  <TypeSignature Language="F#" Value="type WebOptions = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>Enthält Attribute der Dokumentebene, die von Microsoft Word verwendet werden, wenn Sie ein Dokument als Webseite speichern oder eine Webseite öffnen.</summary>
-    <remarks><para>Sie können Attribute entweder auf der Anwendungsebene (Global) oder auf Dokumentebene zurückgeben oder festlegen. (Beachten Sie, dass Attributwerte je nach Attributwert zu dem Zeitpunkt, zu dem das Dokument gespeichert wurde, von einem Dokument in einem anderen unterschiedlich sein können.) Attributeinstellungen auf Dokumentebene setzen Attributeinstellungen auf Anwendungsebene außer Kraft. Attribute auf Anwendungsebene sind im- <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> Objekt enthalten.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" /> die-Eigenschaft, um das WebOptions-Objekt zurückzugeben. <b></b></para>
+    <remarks><para>Sie können Attribute entweder auf der Anwendungsebene (Global) oder auf Dokumentebene zurückgeben oder festlegen. (Beachten Sie, dass Attributwerte je nach Attributwert zu dem Zeitpunkt, zu dem das Dokument gespeichert wurde, von einem Dokument in einem anderen unterschiedlich sein können.) Attributeinstellungen auf Dokumentebene setzen Attributeinstellungen auf Anwendungsebene außer Kraft. Attribute auf Anwendungsebene sind im <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> -Objekt enthalten.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" /> -Eigenschaft, um das <b>WebOptions</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.AllowPNG" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPNG As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPNG { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPNG : bool with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.AllowPNG" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.WebOptions.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowserLevel As WdBrowserLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBrowserLevel BrowserLevel { Microsoft::Office::Interop::Word::WdBrowserLevel get(); void set(Microsoft::Office::Interop::Word::WdBrowserLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowserLevel : Microsoft.Office.Interop.Word.WdBrowserLevel with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,7 +116,7 @@
       <Docs>
         <summary>Gibt eine Konstante zurück, die die Ebene des Webbrowsers darstellt, für die Sie die angegebene Webseite als Ziel festlegen möchten, oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft wird ignoriert, wenn <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" /> die Eigenschaft auf <b>false</b>festgelegt ist. </para>
+        <remarks><para>Diese Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" /> Eigenschaft auf <b>false</b>festgelegt ist. </para>
           <para>
             <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" />Dies kann eine der folgenden <b>WdBrowserLevel</b> -Konstanten sein: </para>
           <para>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.WebOptions.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As MsoEncoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEncoding Encoding { Microsoft::Office::Core::MsoEncoding get(); void set(Microsoft::Office::Core::MsoEncoding value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : Microsoft.Office.Core.MsoEncoding with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FolderSuffix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FolderSuffix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FolderSuffix : string" Usage="Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,11 +218,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das Ordnersuffix zurück, das Microsoft Word verwendet, wenn Sie ein Dokument als Webseite speichern, lange Dateinamen verwenden und die unterstützenden Dateien in einem separaten Ordner speichern möchten (also, wenn <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> Eigenschaften "and" auf " <b>true</b>" festgelegt sind).</summary>
+        <summary>Gibt das Ordnersuffix zurück, das Microsoft Word verwendet, wenn Sie ein Dokument als Webseite speichern, lange Dateinamen verwenden und die unterstützenden Dateien in einem separaten Ordner speichern möchten (also, wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> Eigenschaften "and" auf " <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> <b>true</b>" festgelegt sind).</summary>
         <value>To be added.</value>
-        <remarks><para>Neu erstellte Dokumente verwenden das Suffix, das von <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> der Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> Objekts zurückgegeben wird. Der Wert der <b>FolderSuffix</b> -Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> Objekts kann von dem des <b>DefaultWebOptions</b> -Objekts abweichen, wenn das Dokument zuvor in einer anderen Sprachversion von Microsoft Word bearbeitet wurde. Sie können die <see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" /> -Methode verwenden, um das Suffix in die Sprache zu ändern, die Sie derzeit in Microsoft Office verwenden.</para>
+        <remarks><para>Neu erstellte Dokumente verwenden das Suffix, das von der <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> Eigenschaft des Objekts zurückgegeben wird <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> . Der Wert der <b>FolderSuffix</b> -Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> Objekts kann von dem des <b>DefaultWebOptions</b> -Objekts abweichen, wenn das Dokument zuvor in einer anderen Sprachversion von Microsoft Word bearbeitet wurde. Sie können die <see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" /> -Methode verwenden, um das Suffix in die Sprache zu ändern, die Sie derzeit in Microsoft Office verwenden.</para>
           <para>Standardmäßig besteht der Name des Unterstützungsordners aus dem Namen der Webseite und einem Unterstrich (_), einem Punkt (.) oder einem Bindestrich (-) sowie dem Wort files (das in der Sprache der Version von Word angezeigt wird, in der die Datei als Webseite gespeichert wurde). Wenn Sie beispielsweise die niederländische Sprachversion von Word verwenden, um eine Datei Page1 als Webseite zu speichern, lautet der Standardname des Unterstützungsordners Page1_bestanden.</para>
-          <para>In der folgenden Tabelle sind die einzelnen Sprachversionen von Office aufgeführt und <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> der zugehörige Eigenschaftswert und das Ordnersuffix angegeben. Bei Sprachen, die nicht in der Tabelle aufgeführt sind, wird das Suffix FILES verwendet.</para>
+          <para>In der folgenden Tabelle sind die einzelnen Sprachversionen von Office aufgeführt und der zugehörige <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> Eigenschaftswert und das Ordnersuffix angegeben. Bei Sprachen, die nicht in der Tabelle aufgeführt sind, wird das Suffix FILES verwendet.</para>
           <list type="table">
             <item>
               <description>Arabisch</description>
@@ -223,7 +230,7 @@
               <description>. Files</description>
             </item>
             <item>
-              <description>Baskisch</description>
+              <description>Basque</description>
               <description>1069</description>
               <description>_fitxategiak</description>
             </item>
@@ -426,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" />
       <MemberSignature Language="VB.NET" Value="Public Property OptimizeForBrowser As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OptimizeForBrowser { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OptimizeForBrowser : bool with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -446,7 +454,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> , wenn Microsoft Word neue Webseiten optimiert, die in Word für den Webbrowser erstellt wurden, der <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" /> durch die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> (für das Objekt) angegeben wurde. <b>True</b> , wenn Word die angegebene Webseite für den Webbrowser optimiert, der durch die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> -Eigenschaft angegeben wird ( <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> für das Objekt).</summary>
+        <summary><b>True</b> , wenn Microsoft Word neue Webseiten optimiert, die in Word für den Webbrowser erstellt wurden, der durch die <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" /> -Eigenschaft (für das <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> Objekt) angegeben wurde. <b>True</b> , wenn Word die angegebene Webseite für den Webbrowser optimiert, der durch die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> -Eigenschaft angegeben wird (für das <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> Objekt).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -457,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />
       <MemberSignature Language="VB.NET" Value="Public Property OrganizeInFolder As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OrganizeInFolder { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OrganizeInFolder : bool with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -491,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.WebOptions.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -519,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.PixelsPerInch" />
       <MemberSignature Language="VB.NET" Value="Public Property PixelsPerInch As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelsPerInch { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PixelsPerInch : int with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.PixelsPerInch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -543,7 +554,7 @@
         <value>To be added.</value>
         <remarks><para>Der Einstellungsbereich beträgt normalerweise 19 bis 480; gebräuchliche Einstellungen für verbreitete Bildschirmgrößen betragen 72, 96 und 120. Die Standardeinstellung ist 96.</para>
           <para>Diese Eigenschaft bestimmt die Größe der Bilder und Zellen auf der angegebenen Webseite relativ zu der Textgröße, wenn das gespeicherte Dokument in einem Webbrowser angezeigt wird. Die physikalischen Abmessungen des resultierenden Bildes oder der resultierenden Zelle ergeben sich aus den ursprünglichen Abmessungen (in Zoll) multipliziert mit der Anzahl der Pixel pro Zoll.</para>
-          <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" /> die-Eigenschaft, um die optimale Bildschirmgröße für die Zielbrowser festzulegen.</para>
+          <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" /> -Eigenschaft, um die optimale Bildschirmgröße für die Zielbrowser festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -553,6 +564,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.RelyOnCSS" />
       <MemberSignature Language="VB.NET" Value="Public Property RelyOnCSS As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnCSS { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RelyOnCSS : bool with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.RelyOnCSS" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -575,7 +587,7 @@
       <Docs>
         <summary><b>True</b>, wenn Sie beim Anzeigen eines gespeicherten Dokuments in einem Webbrowser Cascading Stylesheets (CSS) zum Formatieren der Schriftart verwenden.</summary>
         <value>To be added.</value>
-        <remarks><para>In Microsoft Word wird eine Cascading Stylesheet-Datei erstellt, die je nach Wert der <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> Eigenschaft im angegebenen Ordner oder im gleichen Ordner wie die Webseite gespeichert wird. <b>False</b> , wenn &lt;HTML&gt; -Schriftart Tags und Cascading Stylesheets verwendet werden. Der Standardwert ist <b>True</b>.</para>
+        <remarks><para>In Microsoft Word wird eine Cascading Stylesheet-Datei erstellt, die je nach Wert der Eigenschaft im angegebenen Ordner oder im gleichen Ordner wie die Webseite gespeichert wird <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> . <b>False</b> , wenn HTML- &lt; Schriftart &gt; Tags und Cascading Stylesheets verwendet werden. Der Standardwert ist <b>True</b>.</para>
           <para>Sie sollten diese Eigenschaft auf <b>true</b> festlegen, wenn Ihr Webbrowser Cascading Stylesheets unterstützt, da dies Ihnen genauere Layout-und Formatierungssteuerelemente auf Ihrer Webseite bietet und es Ihrem Dokument ähnelt (wie es in Word angezeigt wird).</para>
           <para> </para></remarks>
       </Docs>
@@ -586,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.RelyOnVML" />
       <MemberSignature Language="VB.NET" Value="Public Property RelyOnVML As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnVML { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RelyOnVML : bool with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.RelyOnVML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -619,6 +632,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ScreenSize As MsoScreenSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScreenSize ScreenSize { Microsoft::Office::Core::MsoScreenSize get(); void set(Microsoft::Office::Core::MsoScreenSize value); };" />
+      <MemberSignature Language="F#" Value="member this.ScreenSize : Microsoft.Office.Core.MsoScreenSize with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.ScreenSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -684,6 +698,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.TargetBrowser" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetBrowser As MsoTargetBrowser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTargetBrowser TargetBrowser { Microsoft::Office::Core::MsoTargetBrowser get(); void set(Microsoft::Office::Core::MsoTargetBrowser value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetBrowser : Microsoft.Office.Core.MsoTargetBrowser with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.TargetBrowser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -718,7 +733,7 @@
             <b>msoTargetBrowserV3</b> Netscape Navigator 3. x. </para>
           <para>
             <b>msoTargetBrowserV4</b> Netscape Navigator 4. x.</para>
-          <para>Die <b>TargetBrowser</b> -Eigenschaft legt <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> die Eigenschaft fest, aber <b>BrowserLevel</b> ist nur wichtig <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" /> , wenn die Eigenschaft auf <b>true</b>festgelegt ist. Andernfalls wird Sie ignoriert. Die <b>TargetBrowser</b> -Eigenschaft wird jedoch nicht ignoriert, und die Browserebene wird für alle Webdokumente oder für ein einzelnes Webdokument festgelegt.</para>
+          <para>Die <b>TargetBrowser</b> -Eigenschaft legt die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> Eigenschaft fest, aber <b>BrowserLevel</b> ist nur wichtig, wenn die <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" /> Eigenschaft auf <b>true</b>festgelegt ist. Andernfalls wird Sie ignoriert. Die <b>TargetBrowser</b> -Eigenschaft wird jedoch nicht ignoriert, und die Browserebene wird für alle Webdokumente oder für ein einzelnes Webdokument festgelegt.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -728,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" />
       <MemberSignature Language="VB.NET" Value="Public Sub UseDefaultFolderSuffix ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UseDefaultFolderSuffix();" />
+      <MemberSignature Language="F#" Value="abstract member UseDefaultFolderSuffix : unit -&gt; unit" Usage="webOptions.UseDefaultFolderSuffix " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -744,7 +760,7 @@
       <Parameters />
       <Docs>
         <summary>Legt das Ordnersuffix für das angegebene Dokument auf das Standardsuffix für die ausgewählte oder installierte Sprachunterstützung fest.</summary>
-        <remarks><para>Microsoft Word verwendet das Ordnersuffix, wenn Sie ein Dokument als Webseite speichern, lange Dateinamen verwenden und die unterstützenden Dateien in einem separaten Ordner speichern (wenn die <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> Eigenschaften "and <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> " auf " <b>true</b>" festgelegt sind).</para>
+        <remarks><para>Microsoft Word verwendet das Ordnersuffix, wenn Sie ein Dokument als Webseite speichern, lange Dateinamen verwenden und die unterstützenden Dateien in einem separaten Ordner speichern (wenn die Eigenschaften "and" <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> auf " <b>true</b>" festgelegt sind).</para>
           <para>Das Suffix wird im Ordnernamen nach dem Dokumentnamen angezeigt. Wenn das Dokument beispielsweise "Doc1" heißt und die Sprache Englisch ist, lautet der Ordnername Doc1_files. Die verfügbaren Ordnersuffixe werden im <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> Thema Property aufgeführt.</para>
           <para> </para></remarks>
       </Docs>
@@ -755,6 +771,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />
       <MemberSignature Language="VB.NET" Value="Public Property UseLongFileNames As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLongFileNames { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseLongFileNames : bool with get, set" Usage="Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

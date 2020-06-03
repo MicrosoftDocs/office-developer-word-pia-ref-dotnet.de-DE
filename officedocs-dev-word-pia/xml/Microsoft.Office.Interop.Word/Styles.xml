@@ -1,9 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Word.Styles">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="eb701dd3171af93b44fe6b5810f09450463725fa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143938" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87e4ac12b95087bfc726d1151536235f423c2be7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926213" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Styles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Styles" />
   <TypeSignature Language="VB.NET" Value="Public Interface Styles&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Styles : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Styles = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,12 +24,12 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Style" /> Objekten, die die integrierten und benutzerdefinierten Formatvorlagen in einem Dokument darstellen.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> die-Eigenschaft, um die <b>Styles</b> -Auflistung zurückzugeben.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> die-Methode, um eine neue benutzerdefinierte Formatvorlage zu erstellen und Sie der <b>Styles</b> -Auflistung hinzuzufügen.</para>
-      <para>Verwenden <b>Sie Formatvorlagen</b><paramref name="index" />() <paramref name="index" /> , wobei der Name der Format <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Vorlage, eine Konstante oder eine Indexnummer ist, um ein einzelnes <b>Style</b> -Objekt zurückzugeben. Sie müssen die Rechtschreibung und die Abstände zwischen den Namen der Formatvorlage, aber nicht unbedingt die Groß-/Kleinschreibung exakt übereinstimmen.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> -Eigenschaft, um die <b>Styles</b> -Auflistung zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> -Methode, um eine neue benutzerdefinierte Formatvorlage zu erstellen und Sie der <b>Styles</b> -Auflistung hinzuzufügen.</para>
+      <para>Verwenden Sie <b>Formatvorlagen</b>( <paramref name="index" /> ), wobei <paramref name="index" /> der Name der Formatvorlage, eine <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Konstante oder eine Indexnummer ist, um ein einzelnes <b>Style</b> -Objekt zurückzugeben. Sie müssen die Rechtschreibung und die Abstände zwischen den Namen der Formatvorlage, aber nicht unbedingt die Groß-/Kleinschreibung exakt übereinstimmen.</para>
       <para>Die Indexnummer der Formatvorlage stellt die Position der Formatvorlage in der alphabetisch sortierten Liste der Formatvorlagennamen dar. </para>
-      <para>Das <b>Styles</b> -Objekt ist nicht <see cref="T:Microsoft.Office.Interop.Word.Template" /> über das-Objekt verfügbar. Sie können die <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> -Methode jedoch verwenden, um eine Vorlage als Dokument zu öffnen, damit Sie Formatvorlagen in der Vorlage ändern können.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> die-Methode, um Formatvorlagen zwischen Dokumenten und Vorlagen zu kopieren. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> die-Methode, um die Formatvorlagen im aktiven Dokument so zu aktualisieren, dass Sie den Formatvorlagendefinitionen in der angefügten Vorlage entsprechen.</para>
+      <para>Das <b>Styles</b> -Objekt ist nicht über das <see cref="T:Microsoft.Office.Interop.Word.Template" /> -Objekt verfügbar. Sie können die-Methode jedoch verwenden, <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> um eine Vorlage als Dokument zu öffnen, damit Sie Formatvorlagen in der Vorlage ändern können.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> -Methode, um Formatvorlagen zwischen Dokumenten und Vorlagen zu kopieren. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> -Methode, um die Formatvorlagen im aktiven Dokument so zu aktualisieren, dass Sie den Formatvorlagendefinitionen in der angefügten Vorlage entsprechen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Style Add([in]string Name, [in]object&amp; Type) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Optional ByRef Type As Object) As Style" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; Microsoft.Office.Interop.Word.Style" Usage="styles.Add (Name, Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,12 +54,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Type" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name"><b>String</b> erforderlich. Der Name der Zeichenfolge für die neue Formatvorlage.</param>
-        <param name="Type">Optionales <b>Objekt</b>. Der Formatvorlagentyp der neuen Formatvorlage. Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> der folgenden Konstanten sein: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>oder <b>wdStyleTypeTable</b>.</param>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Style" /> Wert vom Typ Object zurück, der eine neue benutzerdefinierte Formatvorlage darstellt, die der Liste der Formatvorlagen hinzugefügt wurde.</summary>
+        <param name="Type">Optionales <b>Objekt</b>. Der Formatvorlagentyp der neuen Formatvorlage. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> : <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>oder <b>wdStyleTypeTable</b>.</param>
+        <summary>Gibt einen Wert <see cref="T:Microsoft.Office.Interop.Word.Style" /> vom Typ Object zurück, der eine neue benutzerdefinierte Formatvorlage darstellt, die der Liste der Formatvorlagen hinzugefügt wurde.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Styles.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Styles.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Styles.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Styles.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="styles.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Style ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Style" Usage="Microsoft.Office.Interop.Word.Styles.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,7 +210,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</param>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Styles.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

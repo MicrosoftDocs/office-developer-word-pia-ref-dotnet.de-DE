@@ -1,9 +1,10 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143987" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4dda4b414bab01205c0c91563416a35026dc2a2f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926297" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
   <TypeSignature Language="C++ CLI" Value="public interface class SmartTagType" />
+  <TypeSignature Language="F#" Value="type SmartTagType = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,8 +22,8 @@
     <summary>Stellt einen Smarttag-Typ dar.</summary>
     <remarks><para>Ein Smarttag-Typ ist ein einzelnes Element in einer Smarttag-Liste. Smarttag-Listen können mehrere Smarttag-Typen enthalten. So enthält z. B. die Smarttag-Liste Adresse, die auf englischen Systemen standardmäßig installiert wird, u. A. Smarttag-Typen für den Namen, die Straße und die Stadt.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich darauf, dass jedes Element, das eine Smarttag-Komponente erkennt, ein <b>SmartTagType</b> -Objekt ist. Beispielsweise ist "City" in der Smarttag-Adresskomponente ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttagtyp City enthält dann verwandte <b>SmartTagRecognizer</b> -Objekte (der Teil der Smarttag-Komponente, der Smarttags vom Typ "City" in Documents erkennt) <b></b> und Smarttags-Objekte (der Teil der Smarttag-Komponente, der die Aktionen im Zusammenhang mit dem bestimmten Smarttagtyp, der möglicherweise die Suche nach einer anerkannten Stadt in Microsoft MapPoint in MSN umfasst. Einfach ausgedrückt: das Erkennungsmodul führt die Benennung aus, der Aktionshandler bietet Endbenutzerfunktionen, und was bindet sie zusammen, ist der Typ des Smarttags, an dem Sie arbeiten.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> die-Methode, um einen bestimmten Smarttag-Typ in einer Auflistung von Smarttagtypen zurückzugeben. Verwenden Sie dann <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> die-Eigenschaft, um alle Smarttag-Erkennungsmodule zurückzugeben, die einem angegebenen Smarttagtyp zugeordnet sind <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> , und verwenden Sie die-Eigenschaft, um alle Smarttag-Aktionen zurückzugeben, die einem angegebenen Smarttag-Typ zugeordnet sind.</para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" /> und <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> Objekte beziehen sich darauf, dass jedes Element, das eine Smarttag-Komponente erkennt, ein <b>SmartTagType</b> -Objekt ist. Beispielsweise ist "City" in der Smarttag-Adresskomponente ein bestimmtes <b>SmartTagType</b> -Objekt. Der Smarttagtyp City enthält dann verwandte <b>SmartTagRecognizer</b> -Objekte (den Teil der Smarttag-Komponente, der Smarttags vom Typ "City" in Documents erkennt) und <b>Smarttag</b> Action-Objekte (der Teil der Smarttag-Komponente, der die Aktionen im Zusammenhang mit dem bestimmten Smarttagtyp enthält, der möglicherweise das Suchen nach einer anerkannten Stadt in Microsoft MapPoint in MSN umfasst). Einfach ausgedrückt: das Erkennungsmodul führt die Benennung aus, der Aktionshandler bietet Endbenutzerfunktionen, und was bindet sie zusammen, ist der Typ des Smarttags, an dem Sie arbeiten.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> -Methode, um einen bestimmten Smarttag-Typ in einer Auflistung von Smarttagtypen zurückzugeben. Verwenden Sie dann die <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> -Eigenschaft, um alle Smarttag-Erkennungsmodule zurückzugeben, die einem angegebenen Smarttagtyp zugeordnet sind, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> -Eigenschaft, um alle Smarttag-Aktionen zurückzugeben, die einem angegebenen Smarttag-Typ zugeordnet sind.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FriendlyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagActions As SmartTagActions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagActions ^ SmartTagActions { Microsoft::Office::Interop::Word::SmartTagActions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagActions : Microsoft.Office.Interop.Word.SmartTagActions" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagRecognizers As SmartTagRecognizers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagRecognizers ^ SmartTagRecognizers { Microsoft::Office::Interop::Word::SmartTagRecognizers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagRecognizers : Microsoft.Office.Interop.Word.SmartTagRecognizers" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
