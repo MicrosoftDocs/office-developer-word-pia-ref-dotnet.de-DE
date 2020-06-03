@@ -1,9 +1,10 @@
 <Type Name="Browser" FullName="Microsoft.Office.Interop.Word.Browser">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e5e86aacf7d033fcc00092f89397514c1330f141" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146201" /></Metadata><TypeSignature Language="C#" Value="public interface Browser" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7571ccaf05cc8d795c64803807d36a85904b0446" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922640" /></Metadata><TypeSignature Language="C#" Value="public interface Browser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Browser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Browser" />
   <TypeSignature Language="VB.NET" Value="Public Interface Browser" />
   <TypeSignature Language="C++ CLI" Value="public interface class Browser" />
+  <TypeSignature Language="F#" Value="type Browser = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Stellt das Browsertool dar, mit dem die Einfügemarke auf Objekte im Dokument verschoben wird.</summary>
     <remarks><para>Das Browser Tool besteht aus den drei Schaltflächen am unteren Rand der vertikalen Bildlaufleiste.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.Browser" /> die-Eigenschaft, um das <b>Browser</b> -Objekt zurückzugeben.</para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.Browser" /> -Eigenschaft, um das <b>Browser</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Browser.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Browser.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Browser.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Browser.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Browser.Next" />
       <MemberSignature Language="VB.NET" Value="Public Sub Next ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Next();" />
+      <MemberSignature Language="F#" Value="abstract member Next : unit -&gt; unit" Usage="browser.Next " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,7 +108,7 @@
       <Parameters />
       <Docs>
         <summary>Verschiebt die Markierung zum nächsten Element, das vom Browserziel angegeben wird.</summary>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> die-Eigenschaft, um das Browser Ziel zu ändern.</para>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> -Eigenschaft, um das Browser Ziel zu ändern.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Browser.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Browser.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Browser.Previous" />
       <MemberSignature Language="VB.NET" Value="Public Sub Previous ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Previous();" />
+      <MemberSignature Language="F#" Value="abstract member Previous : unit -&gt; unit" Usage="browser.Previous " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -157,8 +163,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Verschiebt die <see cref="T:Microsoft.Office.Interop.Word.Browser" /> Auswahl für das Objekt zu dem vorherigen Element, das vom Browser Ziel angezeigt wird.</summary>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> die-Eigenschaft, um das Browser Ziel zu ändern.</para>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.Browser" />Verschiebt die Auswahl für das Objekt zu dem vorherigen Element, das vom Browser Ziel angezeigt wird.</summary>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> -Eigenschaft, um das Browser Ziel zu ändern.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Browser.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As WdBrowseTarget" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBrowseTarget Target { Microsoft::Office::Interop::Word::WdBrowseTarget get(); void set(Microsoft::Office::Interop::Word::WdBrowseTarget value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : Microsoft.Office.Interop.Word.WdBrowseTarget with get, set" Usage="Microsoft.Office.Interop.Word.Browser.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -188,7 +195,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBrowseTarget</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen das Dokumentelement, <see cref="M:Microsoft.Office.Interop.Word.Browser.Previous" /> das <see cref="M:Microsoft.Office.Interop.Word.Browser.Next" /> die und-Methoden suchen.</summary>
+        <summary>Zurückgeben oder festlegen das Dokumentelement, das die <see cref="M:Microsoft.Office.Interop.Word.Browser.Previous" /> und- <see cref="M:Microsoft.Office.Interop.Word.Browser.Next" /> Methoden suchen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="CheckBox" FullName="Microsoft.Office.Interop.Word.CheckBox">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="44f3ebc6503c36473eb317875150d1134c7933aa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147179" /></Metadata><TypeSignature Language="C#" Value="public interface CheckBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8f7d4493e051b3287f20b84ce8d90b71332e8ecf" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922549" /></Metadata><TypeSignature Language="C#" Value="public interface CheckBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CheckBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CheckBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface CheckBox" />
   <TypeSignature Language="C++ CLI" Value="public interface class CheckBox" />
+  <TypeSignature Language="F#" Value="type CheckBox = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt ein einzelnes Kontrollkästchen-Formularfeld dar.</summary>
-    <remarks><para>Verwenden <b></b>Sie FormFields<paramref name="index" />(), <paramref name="index" /> wobei die Indexnummer oder der dem Kontrollkästchen zugeordnete Name der Textmarke ist, um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> ein einzelnes Objekt zurückzugeben. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> die-Eigenschaft mit dem <b>FormField</b> -Objekt, um ein <b>CheckBox</b> -Objekt zurückzugeben.</para>
+    <remarks><para>Verwenden Sie <b>FormFields</b>( <paramref name="index" /> ), wobei die <paramref name="index" /> Indexnummer oder der dem Kontrollkästchen zugeordnete Name der Textmarke ist, um ein einzelnes Objekt zurückzugeben <see cref="T:Microsoft.Office.Interop.Word.FormField" /> . Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> -Eigenschaft mit dem <b>FormField</b> -Objekt, um ein <b>CheckBox</b> -Objekt zurückzugeben.</para>
       <para>Die Indexnummer stellt die Position des Formularfelds in der <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> Auflistung dar.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> die-Methode mit dem <b>FormFields </b>-Objekt, um ein Kontrollkästchen-Formularfeld hinzuzufügen.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> -Methode mit dem <b>FormFields </b>-Objekt, um ein Kontrollkästchen-Formularfeld hinzuzufügen.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CheckBox.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,7 +82,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bei <b>True</b> wird die Größe des Kontrollkästchens oder des Textrahmens entsprechend dem Schriftgrad des umgebenden Texts angepasst. <b>False</b> passt die Größe des Kontrollkästchens oder Textrahmens <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> entsprechend der Eigenschaft an.</summary>
+        <summary>Bei <b>True</b> wird die Größe des Kontrollkästchens oder des Textrahmens entsprechend dem Schriftgrad des umgebenden Texts angepasst. <b>False</b> passt die Größe des Kontrollkästchens oder Textrahmens entsprechend der <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> Eigenschaft an.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CheckBox.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Default { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : bool with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CheckBox.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Size { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : single with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Valid" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Valid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Valid : bool" Usage="Microsoft.Office.Interop.Word.CheckBox.Valid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,7 +237,7 @@
       <Docs>
         <summary>Gibt einen Wert zurück, der angibt, ob das angegebene Formularfeldobjekt ein gültiges Kontrollkästchen-Formularfeld ist.</summary>
         <value>To be added.</value>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> die-Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.FormField" /> des Objekts, um den Typ des Formularfelds<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" />( <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" />, oder <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />) vor dem Anwenden <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> der Eigenschaft zu bestimmen. Durch diese Vorsichts <b> </b>Maßnahme wird sichergestellt, dass das FormField-Objekt der erwartete Typ ist.</para>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> -Eigenschaft des <see cref="T:Microsoft.Office.Interop.Word.FormField" /> Objekts, um den Typ des Formularfelds ( <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" /> , <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" /> oder <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" /> ) vor dem Anwenden der Eigenschaft <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> zu bestimmen. Durch diese Vorsichtsmaßnahme wird sichergestellt, dass das <b>FormField </b>-Objekt der erwartete Typ ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

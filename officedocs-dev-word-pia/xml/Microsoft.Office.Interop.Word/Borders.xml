@@ -1,9 +1,10 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Word.Borders">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ad36491c761b9b9237c3b6b768cb3c389e6e7842" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146241" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b217821c716a1b83c15ecb16434216f8bef36c5e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922828" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Borders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Borders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Borders&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Borders : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Borders = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -26,7 +27,7 @@
     <remarks><para>Verwenden Sie die <b>Borders</b>-Eigenschaft, um die <b>Borders</b>-Auflistung zurückzugeben.</para>
       <para>
         <b>Border</b> -Objekte können nicht zur <b>Borders</b> -Auflistung hinzugefügt werden. Die Anzahl der Elemente in der <b>Borders</b>-Auflistung ist begrenzt und richtet sich nach dem Objekttyp. Die <b>Borders</b>-Auflistung für Tabellen enthält z. B. sechs Elemente, die für Absätze aber nur vier.</para>
-      <para>Verwenden <b></b>Sie Rahmen<paramref name="index" />(), <paramref name="index" /> wobei der Rahmen identifiziert wird, um ein einzelnes <b>Border</b> -Objekt zurückzugeben. <paramref name="Index" />kann eine der <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> folgenden Konstanten sein: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>oder <b> wdBorderVertical</b>. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> die-Eigenschaft, um eine Rahmenlinie auf ein <b>Border</b> -Objekt anzuwenden.</para>
+      <para>Verwenden Sie <b>Rahmen</b>( <paramref name="index" /> ), wobei <paramref name="index" /> der Rahmen identifiziert wird, um ein einzelnes <b>Border</b> -Objekt zurückzugeben. <paramref name="Index" />kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> : <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>oder <b>wdBorderVertical</b>. Einige dieser Konstanten stehen Ihnen je nach ausgewählter oder installierter Sprachunterstützung (z. B. US-Englisch) möglicherweise nicht zur Verfügung. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> -Eigenschaft, um eine Rahmenlinie auf ein <b>Border</b> -Objekt anzuwenden.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.AlwaysInFront" />
       <MemberSignature Language="VB.NET" Value="Public Property AlwaysInFront As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysInFront { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AlwaysInFront : bool with get, set" Usage="Microsoft.Office.Interop.Word.Borders.AlwaysInFront" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Borders.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Borders.ApplyPageBordersToAllSections" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyPageBordersToAllSections ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyPageBordersToAllSections();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyPageBordersToAllSections : unit -&gt; unit" Usage="borders.ApplyPageBordersToAllSections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Borders.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Borders.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceFrom As WdBorderDistanceFrom" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBorderDistanceFrom DistanceFrom { Microsoft::Office::Interop::Word::WdBorderDistanceFrom get(); void set(Microsoft::Office::Interop::Word::WdBorderDistanceFrom value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceFrom : Microsoft.Office.Interop.Word.WdBorderDistanceFrom with get, set" Usage="Microsoft.Office.Interop.Word.Borders.DistanceFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.DistanceFromBottom" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceFromBottom As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DistanceFromBottom { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceFromBottom : int with get, set" Usage="Microsoft.Office.Interop.Word.Borders.DistanceFromBottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -231,7 +239,7 @@
       <Docs>
         <summary>Gibt den Abstand (in Punkt) zwischen Text und dem unteren Rahmen zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie diese Eigenschaft mit einem Seitenrahmen verwenden, können Sie entweder den Abstand zwischen Text und unterem Seitenrahmen oder den Abstand zwischen Seitenrand und unterem Seitenrahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> Eigenschaft ab.</para>
+        <remarks><para>Wenn Sie diese Eigenschaft mit einem Seitenrahmen verwenden, können Sie entweder den Abstand zwischen Text und unterem Seitenrahmen oder den Abstand zwischen Seitenrand und unterem Seitenrahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der Eigenschaft ab <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.DistanceFromLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceFromLeft As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DistanceFromLeft { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceFromLeft : int with get, set" Usage="Microsoft.Office.Interop.Word.Borders.DistanceFromLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,7 +272,7 @@
       <Docs>
         <summary>Gibt den Abstand (in Punkt) zwischen dem Text und dem linken Rand zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie diese Eigenschaft bei einem Seitenrahmen anwenden, können Sie entweder den Abstand zwischen Text und linkem Rahmen oder den Abstand zwischen linkem Seitenrand und linkem Rahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> Eigenschaft ab.</para>
+        <remarks><para>Wenn Sie diese Eigenschaft bei einem Seitenrahmen anwenden, können Sie entweder den Abstand zwischen Text und linkem Rahmen oder den Abstand zwischen linkem Seitenrand und linkem Rahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der Eigenschaft ab <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.DistanceFromRight" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceFromRight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DistanceFromRight { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceFromRight : int with get, set" Usage="Microsoft.Office.Interop.Word.Borders.DistanceFromRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -295,7 +305,7 @@
       <Docs>
         <summary>Gibt den Abstand (in Punkt) zwischen der rechten Textkante und dem rechten Rahmen zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie diese Eigenschaft auf einen Seitenrahmen anwenden, können Sie entweder den Abstand zwischen Text und rechtem Rahmen oder den Abstand zwischen rechtem Seitenrand und rechtem Rahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> Eigenschaft ab.</para>
+        <remarks><para>Wenn Sie diese Eigenschaft auf einen Seitenrahmen anwenden, können Sie entweder den Abstand zwischen Text und rechtem Rahmen oder den Abstand zwischen rechtem Seitenrand und rechtem Rahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der Eigenschaft ab <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.DistanceFromTop" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceFromTop As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DistanceFromTop { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceFromTop : int with get, set" Usage="Microsoft.Office.Interop.Word.Borders.DistanceFromTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -327,7 +338,7 @@
       <Docs>
         <summary>Gibt den Abstand (in Punkt) zwischen Text und oberem Rahmen zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie diese Eigenschaft auf einen Seitenrahmen anwenden, können Sie entweder den Abstand zwischen Text und oberem Seitenrahmen oder den Abstand zwischen Seitenrand und oberem Seitenrahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> Eigenschaft ab.</para>
+        <remarks><para>Wenn Sie diese Eigenschaft auf einen Seitenrahmen anwenden, können Sie entweder den Abstand zwischen Text und oberem Seitenrahmen oder den Abstand zwischen Seitenrand und oberem Seitenrahmen festlegen. Wo der Abstand gemessen wird, hängt vom Wert der Eigenschaft ab <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -337,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.Enable" />
       <MemberSignature Language="VB.NET" Value="Public Property Enable As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Enable { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Enable : int with get, set" Usage="Microsoft.Office.Interop.Word.Borders.Enable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -359,10 +371,10 @@
       <Docs>
         <summary>Gibt die Rahmenformatierung für das angegebene Objekt zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft gibt <b>true</b> oder <b>wdUndefined</b> zurück, wenn die Rahmenformatierung ganz oder teilweise auf das angegebene Objekt angewendet wird. Kann auf <b>true</b>, <b>false</b>oder eine <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> Konstante festgelegt werden.</para>
-          <para>Die <b>Enable</b>-Eigenschaft betrifft alle Ränder für das angegebene Objekt. Mit <b>True</b> wird als Linienart die Standardlinienart und als Linienstärke die Standardlinienstärke festgelegt. Die Standardlinienart und Linienbreite können mit den <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> Eigenschaften und <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> festgelegt werden.</para>
+        <remarks><para>Diese Eigenschaft gibt <b>true</b> oder <b>wdUndefined</b> zurück, wenn die Rahmenformatierung ganz oder teilweise auf das angegebene Objekt angewendet wird. Kann auf <b>true</b>, <b>false</b>oder eine Konstante festgelegt werden <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> .</para>
+          <para>Die <b>Enable</b>-Eigenschaft betrifft alle Ränder für das angegebene Objekt. Mit <b>True</b> wird als Linienart die Standardlinienart und als Linienstärke die Standardlinienstärke festgelegt. Die Standardlinienart und Linienbreite können mit den Eigenschaften und festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> .</para>
           <para>Wenn Sie alle Rahmen eines Objekts entfernen möchten, legen Sie die <b>enable</b> -Eigenschaft auf <b>false</b>fest.</para>
-          <para>Wenn Sie einen einzelnen Rahmen entfernen oder anwenden möchten <b></b>, verwenden<paramref name="index" />Sie Rahmen ( <paramref name="index" /> ), <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> wobei es sich um eine Konstante handelt, um einen einzelnen Rahmen <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> zurückzugeben, und legen Sie dann die Eigenschaft fest.</para>
+          <para>Wenn Sie einen einzelnen Rahmen entfernen oder anwenden möchten, verwenden Sie <b>Rahmen</b>( <paramref name="index" /> ), wobei <paramref name="index" /> es sich <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> um eine Konstante handelt, um einen einzelnen Rahmen zurückzugeben, und legen Sie dann die Eigenschaft fest <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.EnableFirstPageInSection" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableFirstPageInSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableFirstPageInSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableFirstPageInSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.Borders.EnableFirstPageInSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -403,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.EnableOtherPagesInSection" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableOtherPagesInSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableOtherPagesInSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableOtherPagesInSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.Borders.EnableOtherPagesInSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -434,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Borders.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="borders.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -466,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.HasHorizontal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasHorizontal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasHorizontal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasHorizontal : bool" Usage="Microsoft.Office.Interop.Word.Borders.HasHorizontal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -494,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.HasVertical" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasVertical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasVertical { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasVertical : bool" Usage="Microsoft.Office.Interop.Word.Borders.HasVertical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -523,6 +540,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.InsideColor" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideColor As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor InsideColor { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideColor : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.Borders.InsideColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -556,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.InsideColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideColorIndex As WdColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColorIndex InsideColorIndex { Microsoft::Office::Interop::Word::WdColorIndex get(); void set(Microsoft::Office::Interop::Word::WdColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideColorIndex : Microsoft.Office.Interop.Word.WdColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Borders.InsideColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -588,6 +607,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideLineStyle As WdLineStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineStyle InsideLineStyle { Microsoft::Office::Interop::Word::WdLineStyle get(); void set(Microsoft::Office::Interop::Word::WdLineStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideLineStyle : Microsoft.Office.Interop.Word.WdLineStyle with get, set" Usage="Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -610,9 +630,9 @@
       <Docs>
         <summary>Gibt den inneren Rahmen für das angegebene Objekt zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder eine <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> Konstante festgelegt werden. <b>WdUndefined</b> wird zurückgegeben, wenn auf das angegebene Objekt mehrere Arten von Rahmen angewendet werden; andernfalls <b>false</b> oder eine <b>WdLineStyle</b> -Konstante.</para>
+        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder eine Konstante festgelegt werden <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> . <b>WdUndefined</b> wird zurückgegeben, wenn auf das angegebene Objekt mehrere Arten von Rahmen angewendet werden; andernfalls <b>false</b> oder eine <b>WdLineStyle</b> -Konstante.</para>
           <para>
-            <b>True</b> legt die Linienart auf die Standardlinienart und die Linienstärke auf die Standardlinienstärke fest. Die Standardlinienart und Linienbreite können mit den <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> Eigenschaften und <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> festgelegt werden.</para>
+            <b>True</b> legt die Linienart auf die Standardlinienart und die Linienstärke auf die Standardlinienstärke fest. Die Standardlinienart und Linienbreite können mit den Eigenschaften und festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -622,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.InsideLineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideLineWidth As WdLineWidth" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineWidth InsideLineWidth { Microsoft::Office::Interop::Word::WdLineWidth get(); void set(Microsoft::Office::Interop::Word::WdLineWidth value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideLineWidth : Microsoft.Office.Interop.Word.WdLineWidth with get, set" Usage="Microsoft.Office.Interop.Word.Borders.InsideLineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -644,7 +665,7 @@
       <Docs>
         <summary>Gibt die Linienbreite des Innenrahmens eines Objekts zurück oder legt Sie fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder auf eine der <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> Konstanten festgelegt werden. Er gibt <b>wdUndefined</b> zurück, wenn das Objekt innerhalb von mehr als einer Linienbreite eine Begrenzung besitzt. andernfalls <b>false</b> oder eine <b>WdLineWidth</b> -Konstante.</para>
+        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder auf eine der Konstanten festgelegt werden <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> . Er gibt <b>wdUndefined</b> zurück, wenn das Objekt innerhalb von mehr als einer Linienbreite eine Begrenzung besitzt. andernfalls <b>false</b> oder eine <b>WdLineWidth</b> -Konstante.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -654,6 +675,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.Item(Microsoft.Office.Interop.Word.WdBorderType)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As WdBorderType) As Border" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Border ^ default[Microsoft::Office::Interop::Word::WdBorderType] { Microsoft::Office::Interop::Word::Border ^ get(Microsoft::Office::Interop::Word::WdBorderType Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Microsoft.Office.Interop.Word.WdBorderType) : Microsoft.Office.Interop.Word.Border" Usage="Microsoft.Office.Interop.Word.Borders.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -686,6 +708,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.JoinBorders" />
       <MemberSignature Language="VB.NET" Value="Public Property JoinBorders As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool JoinBorders { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.JoinBorders : bool with get, set" Usage="Microsoft.Office.Interop.Word.Borders.JoinBorders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -717,6 +740,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.OutsideColor" />
       <MemberSignature Language="VB.NET" Value="Public Property OutsideColor As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor OutsideColor { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.OutsideColor : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.Borders.OutsideColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -750,6 +774,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.OutsideColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property OutsideColorIndex As WdColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColorIndex OutsideColorIndex { Microsoft::Office::Interop::Word::WdColorIndex get(); void set(Microsoft::Office::Interop::Word::WdColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.OutsideColorIndex : Microsoft.Office.Interop.Word.WdColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Borders.OutsideColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -782,6 +807,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property OutsideLineStyle As WdLineStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineStyle OutsideLineStyle { Microsoft::Office::Interop::Word::WdLineStyle get(); void set(Microsoft::Office::Interop::Word::WdLineStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.OutsideLineStyle : Microsoft.Office.Interop.Word.WdLineStyle with get, set" Usage="Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -804,9 +830,9 @@
       <Docs>
         <summary>Gibt den äußeren Rahmen für das angegebene Objekt zurück oder legt ihn fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder eine <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> Konstante festgelegt werden. <b>WdUndefined</b> wird zurückgegeben, wenn auf das angegebene Objekt mehrere Arten von Rahmen angewendet werden; andernfalls <b>false</b> oder eine <b>WdLineStyle</b> -Konstante.</para>
+        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder eine Konstante festgelegt werden <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> . <b>WdUndefined</b> wird zurückgegeben, wenn auf das angegebene Objekt mehrere Arten von Rahmen angewendet werden; andernfalls <b>false</b> oder eine <b>WdLineStyle</b> -Konstante.</para>
           <para>
-            <b>True</b> legt die Linienart auf die Standardlinienart und die Linienstärke auf die Standardlinienstärke fest. Die Standardlinienart und-Breite können mit den <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> Eigenschaften und <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> festgelegt werden.</para>
+            <b>True</b> legt die Linienart auf die Standardlinienart und die Linienstärke auf die Standardlinienstärke fest. Die Standardlinienart und-Breite können mit den Eigenschaften und festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -816,6 +842,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.OutsideLineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property OutsideLineWidth As WdLineWidth" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineWidth OutsideLineWidth { Microsoft::Office::Interop::Word::WdLineWidth get(); void set(Microsoft::Office::Interop::Word::WdLineWidth value); };" />
+      <MemberSignature Language="F#" Value="member this.OutsideLineWidth : Microsoft.Office.Interop.Word.WdLineWidth with get, set" Usage="Microsoft.Office.Interop.Word.Borders.OutsideLineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -838,7 +865,7 @@
       <Docs>
         <summary>Gibt die Linienstärke des Außenrahmens eines Objekts zurück oder legt diese Stärke fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder eine <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> Konstante festgelegt werden. Er gibt <b>wdUndefined</b> zurück, wenn das Objekt Außenrahmen mit mehr als einer Linienbreite aufweist. andernfalls <b>false</b> oder eine <b>WdLineWidth</b> -Konstante.</para>
+        <remarks><para>Diese Eigenschaft kann auf <b>true</b>, <b>false</b>oder eine Konstante festgelegt werden <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> . Er gibt <b>wdUndefined</b> zurück, wenn das Objekt Außenrahmen mit mehr als einer Linienbreite aufweist. andernfalls <b>false</b> oder eine <b>WdLineWidth</b> -Konstante.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -848,6 +875,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Borders.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -876,6 +904,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public Property Shadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shadow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : bool with get, set" Usage="Microsoft.Office.Interop.Word.Borders.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -907,6 +936,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.SurroundFooter" />
       <MemberSignature Language="VB.NET" Value="Public Property SurroundFooter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SurroundFooter { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SurroundFooter : bool with get, set" Usage="Microsoft.Office.Interop.Word.Borders.SurroundFooter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -938,6 +968,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Borders.SurroundHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property SurroundHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SurroundHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SurroundHeader : bool with get, set" Usage="Microsoft.Office.Interop.Word.Borders.SurroundHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

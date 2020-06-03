@@ -1,9 +1,10 @@
 <Type Name="LinkFormat" FullName="Microsoft.Office.Interop.Word.LinkFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c971517dcfc20eb4687dbc3c18cb470ffe6557a7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146598" /></Metadata><TypeSignature Language="C#" Value="public interface LinkFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="145b96641700f504a6a381173a342235e7ce3a78" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923822" /></Metadata><TypeSignature Language="C#" Value="public interface LinkFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LinkFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LinkFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface LinkFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class LinkFormat" />
+  <TypeSignature Language="F#" Value="type LinkFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>Stellt die Verknüpfungseigenschaften für ein OLE-Objekt oder eine OLE-Grafik dar.</summary>
-    <remarks><para>Verwenden Sie die <b>LinkFormat</b> -Eigenschaft <see cref="T:Microsoft.Office.Interop.Word.Shape" />eines <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />,- <see cref="T:Microsoft.Office.Interop.Word.Field" /> oder-Objekts, um das <b>LinkFormat</b> -Objekt zurückzugeben.</para>
-      <para>Nicht alle Arten von Formen, Inlineformen und Felder können mit einer Quelle verknüpft werden. Verwenden Sie die <b>Type</b> -Eigenschaft eines <b>Shape</b> -oder InlineShape-Objekts, um zu bestimmen, ob eine bestimmte Form verknüpft werden kann. <b></b> Die <b>Type</b>-Eigenschaft für ein <b>Field</b>-Objekt gibt den Typ des Felds zurück.</para>
-      <para>Sie können sowohl die <see cref="M:Microsoft.Office.Interop.Word.LinkFormat.Update" /> -Methode als auch <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" /> die-Eigenschaft verwenden, um Verknüpfungen zu aktualisieren. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> -Eigenschaft, um den vollständigen Pfad für die Quelldatei einer bestimmten Verknüpfung zurückzugeben oder festzulegen.</para>
+    <remarks><para>Verwenden Sie die <b>LinkFormat</b> -Eigenschaft eines <see cref="T:Microsoft.Office.Interop.Word.Shape" /> , <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -oder-Objekts, <see cref="T:Microsoft.Office.Interop.Word.Field" /> um das <b>LinkFormat</b> -Objekt zurückzugeben.</para>
+      <para>Nicht alle Arten von Formen, Inlineformen und Felder können mit einer Quelle verknüpft werden. Verwenden Sie die <b>Type</b> -Eigenschaft eines <b>Shape</b> -oder <b>InlineShape</b> -Objekts, um zu bestimmen, ob eine bestimmte Form verknüpft werden kann. Die <b>Type</b>-Eigenschaft für ein <b>Field</b>-Objekt gibt den Typ des Felds zurück.</para>
+      <para>Sie können sowohl die <see cref="M:Microsoft.Office.Interop.Word.LinkFormat.Update" /> -Methode als auch die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" /> -Eigenschaft verwenden, um Verknüpfungen zu aktualisieren. Verwenden Sie die-Eigenschaft, um den vollständigen Pfad für die Quelldatei einer bestimmten Verknüpfung zurückzugeben oder festzulegen <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.LinkFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoUpdate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoUpdate : bool with get, set" Usage="Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LinkFormat.BreakLink" />
       <MemberSignature Language="VB.NET" Value="Public Sub BreakLink ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BreakLink();" />
+      <MemberSignature Language="F#" Value="abstract member BreakLink : unit -&gt; unit" Usage="linkFormat.BreakLink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.LinkFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="Microsoft.Office.Interop.Word.LinkFormat.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -166,9 +172,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> , wenn <see cref="T:Microsoft.Office.Interop.Word.Field" />ein <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />-, <see cref="T:Microsoft.Office.Interop.Word.Shape" /> -oder-Objekt gesperrt ist, um die automatische Aktualisierung zu verhindern.</summary>
+        <summary><b>True</b> , wenn ein <see cref="T:Microsoft.Office.Interop.Word.Field" /> -, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> -oder- <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Objekt gesperrt ist, um die automatische Aktualisierung zu verhindern.</summary>
         <value>To be added.</value>
-        <remarks><para>Wenn Sie diese Eigenschaft mit einem <b>Shape</b> -Objekt verwenden, bei dem es sich um eine unverankerte verknüpfte <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> Grafik handelt ( <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> ein Bild, das mit der-Methode des Objekts hinzugefügt wurde), tritt ein Fehler auf.</para>
+        <remarks><para>Wenn Sie diese Eigenschaft mit einem <b>Shape</b> -Objekt verwenden, bei dem es sich um eine unverankerte verknüpfte Grafik handelt (ein Bild, das mit der <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> -Methode des Objekts hinzugefügt wurde <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> ), tritt ein Fehler auf.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.LinkFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SavePictureWithDocument" />
       <MemberSignature Language="VB.NET" Value="Public Property SavePictureWithDocument As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SavePictureWithDocument { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SavePictureWithDocument : bool with get, set" Usage="Microsoft.Office.Interop.Word.LinkFormat.SavePictureWithDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceFullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceFullName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceFullName : string with get, set" Usage="Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -260,7 +269,7 @@
       <Docs>
         <summary>Gibt den Pfad und den Namen der Quelldatei für das angegebene verknüpfte OLE-Objekt, Bild oder Feld zurück oder legt diesen fest.</summary>
         <value>To be added.</value>
-        <remarks><para>Die Verwendung dieser Eigenschaft entspricht der Verwendung in Sequence für <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />die <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />Eigenschaften, <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> und.</para>
+        <remarks><para>Die Verwendung dieser Eigenschaft entspricht der Verwendung in Sequence für <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" /> die <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> Eigenschaften, und <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceName : string" Usage="Microsoft.Office.Interop.Word.LinkFormat.SourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourcePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourcePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourcePath : string" Usage="Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -318,7 +329,7 @@
       <Docs>
         <summary>Gibt den Pfad der Quelldatei für das angegebene verknüpfte OLE-Objekt, das Bild oder das Feld zurück.</summary>
         <value>To be added.</value>
-        <remarks><para>Der Pfad enthält kein nachfolgendes Zeichen (beispielsweise "C:\MSOffice"). Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> die-Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> die-Eigenschaft, um den Dateinamen ohne den Pfad zurück <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> zugeben, und verwenden Sie die-Eigenschaft, um den Pfad und den Dateinamen zusammen zurückzugeben.</para>
+        <remarks><para>Der Pfad enthält kein nachfolgendes Zeichen (beispielsweise "C:\MSOffice"). Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> -Eigenschaft, um das Zeichen hinzuzufügen, das Ordner und Laufwerkbuchstaben trennt. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> -Eigenschaft, um den Dateinamen ohne den Pfad zurückzugeben, und verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> -Eigenschaft, um den Pfad und den Dateinamen zusammen zurückzugeben.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -328,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LinkFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdLinkType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLinkType Type { Microsoft::Office::Interop::Word::WdLinkType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdLinkType" Usage="Microsoft.Office.Interop.Word.LinkFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LinkFormat.Update" />
       <MemberSignature Language="VB.NET" Value="Public Sub Update ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update();" />
+      <MemberSignature Language="F#" Value="abstract member Update : unit -&gt; unit" Usage="linkFormat.Update " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147291" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb566690cab48722a67b50e3f5c88f37f2d83d7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922318" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControl" />
+  <TypeSignature Language="F#" Value="type ContentControl = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>Ein einzelnes Inhaltssteuerelement. Inhaltssteuerelemente sind gebundene und möglicherweise mit Beschriftungen versehene Bereiche in einem Dokument, die als Container für bestimmte Typen von Inhalt dienen. Einzelne Inhaltssteuerelemente können Inhalt wie Daten, Listen oder Absätze mit formatiertem Text enthalten. Das <b>ContentControl</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> Auflistung.</summary>
-    <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> der Auflistung, um ein Inhaltssteuerelement zu erstellen. Verwenden Sie <paramref name="Type" /> den-Parameter der <b>Add</b> -Methode, um den Typ des zu erstellende Inhaltssteuerelements anzugeben. </para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> die-Eigenschaft, um das Inhaltssteuerelement in einen anderen Typ des Inhaltssteuerelements zu ändern.  Sie können z. B. ein Datumssteuerelement in ein Textsteuerelement ändern. Allerdings können nicht alle Inhaltssteuerelemente in einen anderen Typ geändert werden, da bei einigen Inhaltssteuerelementen das Ändern des Typs nicht zulässig ist.  Außerdem kann es auch an dem Inhalt eines Inhaltssteuerelements liegen, dass der Typ nicht geändert werden kann. Wenn z. B. das Inhaltssteuerelement, in das Sie die Änderung vornehmen möchten, den Typ von Inhalt nicht zulässt, der sich im vorhandenen Inhaltssteuerelement befindet, wird eine Änderung nicht zugelassen, und es wird ein Laufzeitfehler ausgegeben.</para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> die-Methode, um den Platzhaltertext von der Standardzeichenfolge in einen Zweck zu ändern, der für das Steuerelement besser geeignet ist. Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> die-Eigenschaft, um den Titeltext für das Steuerelement anzugeben.  Dieser wird oberhalb des Steuerelements angezeigt, wenn Sie den Cursor innerhalb des Steuerelements positionieren oder den Mauszeiger über das Steuerelement bewegen.</para>
+    <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> -Methode der <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> Auflistung, um ein Inhaltssteuerelement zu erstellen. Verwenden Sie den <paramref name="Type" /> -Parameter der <b>Add</b> -Methode, um den Typ des zu erstellende Inhaltssteuerelements anzugeben. </para>
+      <para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> -Eigenschaft, um das Inhaltssteuerelement in einen anderen Typ des Inhaltssteuerelements zu ändern.  Sie können z. B. ein Datumssteuerelement in ein Textsteuerelement ändern. Allerdings können nicht alle Inhaltssteuerelemente in einen anderen Typ geändert werden, da bei einigen Inhaltssteuerelementen das Ändern des Typs nicht zulässig ist.  Außerdem kann es auch an dem Inhalt eines Inhaltssteuerelements liegen, dass der Typ nicht geändert werden kann. Wenn z. B. das Inhaltssteuerelement, in das Sie die Änderung vornehmen möchten, den Typ von Inhalt nicht zulässt, der sich im vorhandenen Inhaltssteuerelement befindet, wird eine Änderung nicht zugelassen, und es wird ein Laufzeitfehler ausgegeben.</para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> -Methode, um den Platzhaltertext von der Standardzeichenfolge in einen Zweck zu ändern, der für das Steuerelement besser geeignet ist. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> -Eigenschaft, um den Titeltext für das Steuerelement anzugeben.  Dieser wird oberhalb des Steuerelements angezeigt, wenn Sie den Cursor innerhalb des Steuerelements positionieren oder den Mauszeiger über das Steuerelement bewegen.</para>
       <para>Je nach Typ des vorliegenden Steuerelements können Sie möglicherweise nicht alle Eigenschaften und Methoden des <b>ContentControl</b>-Objekts verwenden.</para>
       <code />
       <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowInsertDeleteSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInsertDeleteSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowInsertDeleteSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberSignature Language="VB.NET" Value="Public Property Appearance As WdContentControlAppearance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlAppearance Appearance { Microsoft::Office::Interop::Word::WdContentControlAppearance get(); void set(Microsoft::Office::Interop::Word::WdContentControlAppearance value); };" />
+      <MemberSignature Language="F#" Value="member this.Appearance : Microsoft.Office.Interop.Word.WdContentControlAppearance with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockCategory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuildingBlockCategory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockCategory : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockType As WdBuildingBlockTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBuildingBlockTypes BuildingBlockType { Microsoft::Office::Interop::Word::WdBuildingBlockTypes get(); void set(Microsoft::Office::Interop::Word::WdBuildingBlockTypes value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockType : Microsoft.Office.Interop.Word.WdBuildingBlockTypes with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor Color { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -303,7 +311,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Farbe des Inhaltssteuerelements zurück oder legt Sie fest. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</summary>
+        <summary>Gibt die Farbe des Inhaltssteuerelements zurück oder legt Sie fest. Lese-/Schreibzugriff <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="contentControl.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -330,7 +339,7 @@
       <Parameters />
       <Docs>
         <summary>Kopiert das Inhaltssteuerelement aus dem aktiven Dokument in die Zwischenablage.</summary>
-        <remarks><para>Wenn Sie die <b>Copy</b> -Methode verwenden, verbleibt das ursprüngliche Inhaltssteuerelement im aktiven Dokument, aber eine Kopie des Steuerelements, einschließlich aller Text-und Eigenschafteneinstellungen, wird in die Zwischenablage verschoben. Anschließend können Sie das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.Selection" /> des Objekts oder <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> die Methode des <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
+        <remarks><para>Wenn Sie die <b>Copy</b> -Methode verwenden, verbleibt das ursprüngliche Inhaltssteuerelement im aktiven Dokument, aber eine Kopie des Steuerelements, einschließlich aller Text-und Eigenschafteneinstellungen, wird in die Zwischenablage verschoben. Anschließend können Sie das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> -Methode des <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekts oder die <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> Methode des <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -361,7 +371,7 @@
         <value><b>Integer</b></value>
         <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="contentControl.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -387,7 +398,7 @@
       <Parameters />
       <Docs>
         <summary>Entfernt das Inhaltssteuerelement aus dem aktiven Dokument und verschiebt dieses in die Zwischenablage.</summary>
-        <remarks><para>Wenn Sie die <b>Copy</b> -Methode verwenden, verbleibt das ursprüngliche Inhaltssteuerelement im aktiven Dokument, aber eine Kopie des Steuerelements, einschließlich aller Text-und Eigenschafteneinstellungen, wird in die Zwischenablage verschoben. Anschließend können Sie das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> die-Methode <see cref="T:Microsoft.Office.Interop.Word.Selection" /> des Objekts oder <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> die Methode des <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
+        <remarks><para>Wenn Sie die <b>Copy</b> -Methode verwenden, verbleibt das ursprüngliche Inhaltssteuerelement im aktiven Dokument, aber eine Kopie des Steuerelements, einschließlich aller Text-und Eigenschafteneinstellungen, wird in die Zwischenablage verschoben. Anschließend können Sie das Inhaltssteuerelement in andere Abschnitte des aktiven Dokuments einfügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> -Methode des <see cref="T:Microsoft.Office.Interop.Word.Selection" /> Objekts oder die <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> Methode des <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekts, um das kopierte Inhaltssteuerelement einzufügen, oder verwenden Sie die Paste-Funktion in Microsoft Office Word.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -397,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberSignature Language="VB.NET" Value="Public Property DateCalendarType As WdCalendarType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCalendarType DateCalendarType { Microsoft::Office::Interop::Word::WdCalendarType get(); void set(Microsoft::Office::Interop::Word::WdCalendarType value); };" />
+      <MemberSignature Language="F#" Value="member this.DateCalendarType : Microsoft.Office.Interop.Word.WdCalendarType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -428,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DateDisplayFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -450,7 +463,7 @@
       <Docs>
         <summary>Gibt das Format zurück, in dem Datumsangaben angezeigt werden, oder legt dieses fest. Lese-/Schreibzugriff.</summary>
         <value><b>String</b></value>
-        <remarks><para>Das Standardformat ist die in Microsoft Office Word auf dem Benutzer System angegebene Formateinstellung, die in der Regel von der Standorteinstellung in Microsoft Windows abhängt. Das Standardformat der Daten für Englisch (USA) ist beispielsweise "mm/tt/jjjj". Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> die-Eigenschaft, um ein anderes Datumsformat anzugeben.</para>
+        <remarks><para>Das Standardformat ist die in Microsoft Office Word auf dem Benutzer System angegebene Formateinstellung, die in der Regel von der Standorteinstellung in Microsoft Windows abhängt. Das Standardformat der Daten für Englisch (USA) ist beispielsweise "mm/tt/jjjj". Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> -Eigenschaft, um ein anderes Datumsformat anzugeben.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -460,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayLocale As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID DateDisplayLocale { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayLocale : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -492,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateStorageFormat As WdContentControlDateStorageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat DateStorageFormat { Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat get(); void set(Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DateStorageFormat : Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -514,7 +529,7 @@
       <Docs>
         <summary>Gibt das Format für das Speichern und Abrufen von Datumsangaben zurück, wenn ein Datums-Inhaltssteuerelement an den XML-Datenspeicher des aktiven Dokuments gebunden ist, oder legt dieses fest. Lese-/Schreibzugriff.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" /></value>
-        <remarks><para>Mit <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> der-Eigenschaft können Sie Datumsangaben im Datumsformat, im Format für Datum/Uhrzeit oder im Text Format speichern.</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />Mit der-Eigenschaft können Sie Datumsangaben im Datumsformat, im Format für Datum/Uhrzeit oder im Text Format speichern.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -524,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultTextStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultTextStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTextStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -554,6 +570,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]bool DeleteContents) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Delete(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional DeleteContents As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool -&gt; unit" Usage="contentControl.Delete DeleteContents" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -582,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropdownListEntries As ContentControlListEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControlListEntries ^ DropdownListEntries { Microsoft::Office::Interop::Word::ContentControlListEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropdownListEntries : Microsoft.Office.Interop.Word.ContentControlListEntries" Usage="Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -610,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -639,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As WdContentControlLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlLevel Level { Microsoft::Office::Interop::Word::WdContentControlLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Microsoft.Office.Interop.Word.WdContentControlLevel" Usage="Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -656,7 +676,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt die Ebene des Inhaltssteuerelements zurück, unabhängig davon, ob das Inhaltssteuerelement Text, Absätze, Tabellenzellen oder Tabellenzeilen umgibt. oder wenn es Inline ist. Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</summary>
+        <summary>Gibt die Ebene des Inhaltssteuerelements zurück, unabhängig davon, ob das Inhaltssteuerelement Text, Absätze, Tabellenzellen oder Tabellenzeilen umgibt. oder wenn es Inline ist. Schreibgeschützt <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -667,6 +687,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContentControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContentControl { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContentControl : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -688,7 +709,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob der Benutzer ein Inhaltssteuerelement aus dem aktiven Dokument löschen kann, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Der Standardwert dieser Eigenschaft ist <b>False</b>.  Diese Eigenschaft entspricht dem Kontrollkästchen Das Inhaltssteuerelement kann nicht gelöscht werden im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
           <para>
             <b>Hinweis</b>: Diese Eigenschaft kann nicht festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> , wenn die Eigenschaft auf <b>true</b>festgelegt ist.</para>
@@ -701,6 +722,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContents : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -722,7 +744,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob der Benutzer den Inhalt eines Inhaltssteuerelements bearbeiten kann, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Der Standardwert dieser Eigenschaft ist <b>False</b>.  Diese Eigenschaft entspricht dem Kontrollkästchen Der Inhalt kann nicht bearbeitet werden im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
           <para> </para></remarks>
       </Docs>
@@ -733,6 +755,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberSignature Language="VB.NET" Value="Public Property MultiLine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiLine { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultiLine : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -754,7 +777,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob ein Text-Inhaltssteuerelement mehrere Textzeilen zulässt. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Diese Eigenschaft gilt nur für Text-Inhaltssteuerelemente sowie Rich-Text-Inhaltssteuerelemente.</para>
           <para> </para></remarks>
       </Docs>
@@ -765,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -782,7 +806,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen zurück, der das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> des angegebenen Objekts darstellt.</summary>
+        <summary>Gibt einen zurück, der das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> Objekts darstellt.</summary>
         <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -793,6 +817,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentContentControl As ContentControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControl ^ ParentContentControl { Microsoft::Office::Interop::Word::ContentControl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentContentControl : Microsoft.Office.Interop.Word.ContentControl" Usage="Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -822,6 +847,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlaceholderText As BuildingBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlock ^ PlaceholderText { Microsoft::Office::Interop::Word::BuildingBlock ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock" Usage="Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -840,8 +866,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt zurück, das den Platzhaltertext für ein Inhaltssteuerelement darstellt. Schreibgeschützt.</summary>
-        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />zurück.</value>
-        <remarks><para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> die-Methode, um den Platzhaltertext für ein Inhaltssteuerelement festzulegen.</para>
+        <value>Gibt zurück <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> .</value>
+        <remarks><para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> -Methode, um den Platzhaltertext für ein Inhaltssteuerelement festzulegen.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -851,6 +877,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -868,9 +895,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Range" /> zurück, der den Inhalt des Inhaltssteuerelements im aktiven Dokument darstellt. Schreibgeschützt.</summary>
-        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Range" />zurück.</value>
-        <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> die-Eigenschaft, um auf den Text, die Formatierung für den Text und andere Texteigenschaften zuzugreifen.  Weitere Informationen finden Sie unter <a href="HV10056876">Arbeiten mit Range-Objekten</a> .</para>
+        <summary>Gibt einen zurück <see cref="T:Microsoft.Office.Interop.Word.Range" /> , der den Inhalt des Inhaltssteuerelements im aktiven Dokument darstellt. Schreibgeschützt.</summary>
+        <value>Gibt zurück <see cref="T:Microsoft.Office.Interop.Word.Range" /> .</value>
+        <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> -Eigenschaft, um auf den Text, die Formatierung für den Text und andere Texteigenschaften zuzugreifen.  Weitere Informationen finden Sie unter <a href="HV10056876">Arbeiten mit Range-Objekten</a> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -880,6 +907,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RepeatingSectionItems As RepeatingSectionItemColl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ RepeatingSectionItems { Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItems : Microsoft.Office.Interop.Word.RepeatingSectionItemColl" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -909,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatingSectionItemTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RepeatingSectionItemTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItemTitle : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -940,6 +969,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetCheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetCheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -958,16 +988,18 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer gleich der Summe aus 31 (der Anzahl der Steuerelementsymbole am Anfang der Schriftart) und der Zahl, die der Position des Symbols in der Tabelle der Symbole entspricht (gezählt von links nach rechts). Um beispielsweise ein Delta Zeichen an Position 37 in der Tabelle mit Symbolen in der Symbol Schriftart anzugeben, legen Sie <paramref name="CharacterNumber" /> den Wert auf 68 fest.</param>
+        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer gleich der Summe aus 31 (der Anzahl der Steuerelementsymbole am Anfang der Schriftart) und der Zahl, die der Position des Symbols in der Tabelle der Symbole entspricht (gezählt von links nach rechts). Um beispielsweise ein Delta Zeichen an Position 37 in der Tabelle mit Symbolen in der Symbol Schriftart anzugeben, legen Sie den Wert <paramref name="CharacterNumber" /> auf 68 fest.</param>
         <param name="Font">Der Name der Schriftart, die das Symbol enthält.</param>
         <summary>Legt das Symbol fest, mit dem der aktivierte Zustand eines Kontrollkästchen-Inhaltssteuerelements dargestellt wird.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPlaceholderText">
-      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = null, Microsoft.Office.Interop.Word.Range Range = null, string Text = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = default, Microsoft.Office.Interop.Word.Range Range = default, string Text = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPlaceholderText([in]class Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock, [in]class Microsoft.Office.Interop.Word.Range Range, [in]string Text) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPlaceholderText (Optional BuildingBlock As BuildingBlock = null, Optional Range As Range = null, Optional Text As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetPlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock * Microsoft.Office.Interop.Word.Range * string -&gt; unit" Usage="contentControl.SetPlaceholderText (BuildingBlock, Range, Text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1000,6 +1032,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUncheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetUncheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUncheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetUncheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetUncheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1018,7 +1051,7 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer gleich der Summe aus 31 (der Anzahl der Steuerelementsymbole am Anfang der Schriftart) und der Zahl, die der Position des Symbols in der Tabelle der Symbole entspricht (gezählt von links nach rechts). Um beispielsweise ein Delta Zeichen an Position 37 in der Tabelle mit Symbolen in der Symbol Schriftart anzugeben, legen Sie <paramref name="CharacterNumber" /> den Wert auf 68 fest.</param>
+        <param name="CharacterNumber">Die Unicode-Zeichennummer für das angegebene Symbol. Dieser Wert ist immer gleich der Summe aus 31 (der Anzahl der Steuerelementsymbole am Anfang der Schriftart) und der Zahl, die der Position des Symbols in der Tabelle der Symbole entspricht (gezählt von links nach rechts). Um beispielsweise ein Delta Zeichen an Position 37 in der Tabelle mit Symbolen in der Symbol Schriftart anzugeben, legen Sie den Wert <paramref name="CharacterNumber" /> auf 68 fest.</param>
         <param name="Font">Der Name der Schriftart, die das Symbol enthält.</param>
         <summary>Legt das Symbol fest, mit dem der deaktivierte Zustand eines Kontrollkästchen-Inhaltssteuerelements dargestellt wird.</summary>
         <remarks>To be added.</remarks>
@@ -1030,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowingPlaceholderText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowingPlaceholderText { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowingPlaceholderText : bool" Usage="Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1048,7 +1082,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob der Platzhaltertext für das Inhaltssteuerelement angezeigt wird. Schreibgeschützt.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1058,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1080,7 +1115,7 @@
       <Docs>
         <summary>Gibt einen Wert zum Identifizieren eines Inhaltssteuerelements zurück oder legt ihn fest. Lese-/Schreibzugriff.</summary>
         <value><b>String</b></value>
-        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> -Eigenschaft unterscheidet <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> sich von der Eigenschaft darin, dass ein Tag niemals angezeigt wird, während ein Benutzer ein Dokument bearbeitet.  Stattdessen können Entwickler mit der Eigenschaft einen Wert für die programmgesteuerte Bearbeitung speichern, während das Dokument geöffnet ist.</para>
+        <remarks><para>Die <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> -Eigenschaft unterscheidet sich von der <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> Eigenschaft darin, dass ein Tag niemals angezeigt wird, während ein Benutzer ein Dokument bearbeitet.  Stattdessen können Entwickler mit der Eigenschaft einen Wert für die programmgesteuerte Bearbeitung speichern, während das Dokument geöffnet ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1090,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberSignature Language="VB.NET" Value="Public Property Temporary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Temporary { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Temporary : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1111,7 +1147,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt einen Wert vom Typ <b>Boolean</b> zurück, der angibt, ob ein Inhaltssteuerelement aus dem aktiven Dokument entfernt wird, wenn der Benutzer den Inhalt des Steuerelements bearbeitet, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Der Standardwert ist <b>False</b>. Diese Eigenschaft entspricht dem Kontrollkästchen Inhaltssteuerelement beim Bearbeiten des Inhalts entfernen im Dialogfeld Eigenschaften von Inhaltssteuerelementen.</para>
           <para>
             <b>Hinweis</b>: Diese Eigenschaft kann nicht festgelegt werden <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> , wenn die Eigenschaft auf <b>true</b>festgelegt ist.</para>
@@ -1124,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1155,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As WdContentControlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlType Type { Microsoft::Office::Interop::Word::WdContentControlType get(); void set(Microsoft::Office::Interop::Word::WdContentControlType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdContentControlType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1187,6 +1225,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" />
       <MemberSignature Language="VB.NET" Value="Public Sub Ungroup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ungroup();" />
+      <MemberSignature Language="F#" Value="abstract member Ungroup : unit -&gt; unit" Usage="contentControl.Ungroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1203,7 +1242,7 @@
       <Parameters />
       <Docs>
         <summary>Entfernt ein Gruppen-Inhaltssteuerelement aus einem Dokument, sodass die zugehörigen untergeordneten Inhaltssteuerelemente nicht mehr geschachtelt sind und uneingeschränkt bearbeitet werden können.</summary>
-        <remarks><para>Diese Methode schlägt fehl, wenn Sie Sie auf einem Steuerelement ausführen, das <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />nicht vom Typ ist.</para>
+        <remarks><para>Diese Methode schlägt fehl, wenn Sie Sie auf einem Steuerelement ausführen, das nicht vom Typ ist <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1213,6 +1252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XMLMapping As XMLMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLMapping ^ XMLMapping { Microsoft::Office::Interop::Word::XMLMapping ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XMLMapping : Microsoft.Office.Interop.Word.XMLMapping" Usage="Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

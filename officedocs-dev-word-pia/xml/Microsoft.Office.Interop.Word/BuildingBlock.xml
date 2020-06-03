@@ -1,9 +1,10 @@
 <Type Name="BuildingBlock" FullName="Microsoft.Office.Interop.Word.BuildingBlock">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ca9bed40f87117ccf911469b9c1d874a575c9129" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146227" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c9b2e5436ba2864a5dad62aa444a46e005baf56" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922612" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlock" />
   <TypeSignature Language="C++ CLI" Value="public interface class BuildingBlock" />
+  <TypeSignature Language="F#" Value="type BuildingBlock = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,11 +22,11 @@
     <summary>Stellt einen Baustein in einer Vorlage dar. Ein Baustein ist vordefinierter Inhalt, ähnlich AutoText, der Text, Bilder und Formatierung enthalten kann.</summary>
     <remarks><para>Jedes <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and- <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> Auflistungen. Bausteine werden in Microsoft Office Word-Vorlagen gespeichert.  Daher benötigen Sie Zugriff auf eine zugeordnete Vorlage, um auf die für ein Dokument verfügbaren Bausteine zugreifen zu können.  Integrierte Bausteine sind in der Vorlage mit dem Namen "Building Blocks.dotx" gespeichert.</para>
       <para>
-        <b>Hinweis</b>: Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> die-Methode der Auflistung oder <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> der Auflistung, um einen einzelnen Baustein zurückzugeben. Je nachdem, wie Sie auf die Auflistung zugreifen, kann sich die zurückgegebene Auflistung ändern.  Wenn Sie beispielsweise auf eine Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General" zugreifen, kann sich die zurückgegebene Auflistung von der Auflistung unterscheiden, die zurückgegeben wird, wenn Sie <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> auf eine Auflistung von Bausteinen mit einem Typ von mit einem Category-Objekt zugreifen. von "Custom". Es unterscheidet sich auch von der Auflistung, die zurückgegeben wird, wenn Sie auf die Auflistung <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> von Bausteinen mit einem Typ von mit einer Kategorie von "General" zugreifen. Daher kann das erste Element in einer Auflistung, auf die von der <b>BuildingBlockEntries</b> -Auflistung zugegriffen wird, möglicherweise vom ersten Element in der Auflistung abweichen, auf das von der <b>BuildingBlocks</b> -Auflistung zugegriffen wird.</para>
-      <para>Zum Erstellen eines neuen Bausteins können Sie die <b>Add</b>-Methode der <b>BuildingBlockEntries</b>-Auflistung oder der <b>BuildingBlocks</b>-Auflistung verwenden.  Die empfohlene Vorgehensweise zum Erstellen eines neuen Bausteins ist jedoch <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> die Verwendung der-Methode für die <b>BuildingBlockEntries</b> -Auflistung. </para>
-      <para>Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> die-Methode, um einen neuen Baustein in ein Dokument einzufügen. Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> die-Methode, um einen Baustein aus einer Vorlage zu entfernen.</para>
-      <para>Building blocks are organized by category and type.  Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> die-Auflistung, <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> um auf einzelne Objekte zuzugreifen. Verwenden Sie <see cref="T:Microsoft.Office.Interop.Word.Categories" /> die-Auflistung, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> um auf einzelne Objekte zuzugreifen. Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object. </para>
-      <para>Jeder Baustein verfügt über Eigenschaften, die Informationen enthalten, die sich eindeutig auf ihn beziehen <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />Beispiels <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />Weise, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />, und.</para>
+        <b>Hinweis</b>: Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> -Methode der Auflistung oder der <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> Auflistung, um einen einzelnen Baustein zurückzugeben. Je nachdem, wie Sie auf die Auflistung zugreifen, kann sich die zurückgegebene Auflistung ändern.  Wenn Sie beispielsweise auf eine Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General" zugreifen, kann sich die zurückgegebene Auflistung von der Auflistung unterscheiden, die zurückgegeben wird, wenn Sie auf eine Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> mit einer Kategorie von "Custom" zugreifen. Es unterscheidet sich auch von der Auflistung, die zurückgegeben wird, wenn Sie auf die Auflistung von Bausteinen mit einem Typ von <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> mit einer Kategorie von "General" zugreifen. Daher kann das erste Element in einer Auflistung, auf die von der <b>BuildingBlockEntries</b> -Auflistung zugegriffen wird, möglicherweise vom ersten Element in der Auflistung abweichen, auf das von der <b>BuildingBlocks</b> -Auflistung zugegriffen wird.</para>
+      <para>Zum Erstellen eines neuen Bausteins können Sie die <b>Add</b>-Methode der <b>BuildingBlockEntries</b>-Auflistung oder der <b>BuildingBlocks</b>-Auflistung verwenden.  Die empfohlene Vorgehensweise zum Erstellen eines neuen Bausteins ist jedoch die Verwendung der <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> -Methode für die <b>BuildingBlockEntries</b> -Auflistung. </para>
+      <para>Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> -Methode, um einen neuen Baustein in ein Dokument einzufügen. Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> -Methode, um einen Baustein aus einer Vorlage zu entfernen.</para>
+      <para>Building blocks are organized by category and type.  Verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> -Auflistung, um auf einzelne Objekte zuzugreifen <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> . Verwenden Sie die <see cref="T:Microsoft.Office.Interop.Word.Categories" /> -Auflistung, um auf einzelne Objekte zuzugreifen <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> . Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object. </para>
+      <para>Jeder Baustein verfügt über Eigenschaften, die Informationen enthalten, die sich eindeutig auf ihn beziehen, beispielsweise,, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> und <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> .</para>
       <para>Weitere Informationen zum Erstellen von Bausteinen finden Sie unter <a href="HV10120827">Working with Building Blocks</a> .</para>
       <para> </para></remarks>
   </Docs>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As Category" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Category ^ Category { Microsoft::Office::Interop::Word::Category ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : Microsoft.Office.Interop.Word.Category" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,7 +117,7 @@
         <value><b>Integer</b></value>
         <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt die <b>Creator</b> -Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para>
-            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />dargestellt werden.</para>
+            <b>Hinweis</b>: dieser Wert kann auch durch die Konstante dargestellt werden <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="buildingBlock.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.BuildingBlock.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Range Insert([in]class Microsoft.Office.Interop.Word.Range Where, [in]object&amp; RichText) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (Where As Range, Optional ByRef RichText As Object) As Range" />
+      <MemberSignature Language="F#" Value="abstract member Insert : Microsoft.Office.Interop.Word.Range * obj -&gt; Microsoft.Office.Interop.Word.Range" Usage="buildingBlock.Insert (Where, RichText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -250,12 +259,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="RichText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RichText" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Where">Die Stelle, an der der Inhalt des Bausteins positioniert wird.</param>
         <param name="RichText"><b>True</b> fügt den Baustein als formatierten Rich-Text ein.  <b>False</b> fügt den Baustein als Nur-Text ein.</param>
-        <summary>Fügt den Wert eines Bausteins in ein Dokument ein und gibt <see cref="T:Microsoft.Office.Interop.Word.Range" /> ein Objekt zurück, das den Inhalt des Bausteins im Dokument darstellt.</summary>
+        <summary>Fügt den Wert eines Bausteins in ein Dokument ein und gibt ein <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objekt zurück, das den Inhalt des Bausteins im Dokument darstellt.</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.Range" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertOptions As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InsertOptions { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertOptions : int with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -346,7 +358,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> angegebenen Objekts zurück.</summary>
+        <summary>Gibt das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> Objekts zurück.</summary>
         <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As BuildingBlockType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockType ^ Type { Microsoft::Office::Interop::Word::BuildingBlockType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.BuildingBlockType" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -385,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.BuildingBlock.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

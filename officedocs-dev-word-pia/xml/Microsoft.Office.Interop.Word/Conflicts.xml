@@ -1,9 +1,10 @@
 <Type Name="Conflicts" FullName="Microsoft.Office.Interop.Word.Conflicts">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="51c75eb68c226ad55f02f5d6aaf9e02311ccbc95" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147243" /></Metadata><TypeSignature Language="C#" Value="public interface Conflicts : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dcdf487af04fb4b6224641a44ab4822ad6092990" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922332" /></Metadata><TypeSignature Language="C#" Value="public interface Conflicts : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflicts implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflicts" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflicts&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Conflicts : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Conflicts = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,7 +24,7 @@
   </Attributes>
   <Docs>
     <summary>Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekten, die die Konflikte in einem Dokument darstellt. Der Typ eines <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> Objekts wird durch die <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> -Enumeration angegeben.</summary>
-    <remarks><para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" /> die-Eigenschaft, um die <b>Conflicts</b> -Auflistung für ein Dokument zurückzugeben. Verwenden <b></b>Sie Konflikte<paramref name="Index" />(), <paramref name="Index" /> wobei die Indexnummer des Konflikts ist, um ein einzelnes <b>Conflict</b> -Objekt zurückzugeben.</para>
+    <remarks><para>Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" /> -Eigenschaft, um die <b>Conflicts</b> -Auflistung für ein Dokument zurückzugeben. Verwenden Sie <b>Konflikte</b>( <paramref name="Index" /> ), wobei <paramref name="Index" /> die Indexnummer des Konflikts ist, um ein einzelnes <b>Conflict</b> -Objekt zurückzugeben.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflicts.AcceptAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcceptAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptAll();" />
+      <MemberSignature Language="F#" Value="abstract member AcceptAll : unit -&gt; unit" Usage="conflicts.AcceptAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Conflicts.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Conflicts.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Conflicts.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflicts.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="conflicts.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -169,7 +175,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Gibt <see cref="T:System.Collections.IEnumerator" />zurück.</returns>
+        <returns>Gibt zurück <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Conflict" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Conflict ^ default[int] { Microsoft::Office::Interop::Word::Conflict ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Conflict" Usage="Microsoft.Office.Interop.Word.Conflicts.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
       <Docs>
         <param name="Index">Das einzelne Objekt zurückgegeben werden soll.</param>
         <summary>Gibt ein einzelnes <b>Conflicts</b>-Objekt in einer Auflistung zurück.</summary>
-        <value>Gibt <see cref="T:Microsoft.Office.Interop.Word.Conflict" />zurück.</value>
+        <value>Gibt zurück <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflicts.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Conflicts.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,8 +236,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> des angegebenen Objekts darstellt.</summary>
-        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> angegebenen Objekts darstellt.</value>
+        <summary>Ruft ein <see cref="T:System.Object" /> ab, das das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Objekts darstellt.</summary>
+        <value>Ein <see cref="T:System.Object" /> , das das übergeordnete Objekt des angegebenen <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> Objekts darstellt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflicts.RejectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RejectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectAll();" />
+      <MemberSignature Language="F#" Value="abstract member RejectAll : unit -&gt; unit" Usage="conflicts.RejectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

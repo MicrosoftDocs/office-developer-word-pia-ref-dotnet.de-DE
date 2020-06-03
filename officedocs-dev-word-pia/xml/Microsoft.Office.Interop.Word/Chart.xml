@@ -1,9 +1,10 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Word.Chart">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b01d3cd03a0e6d162566e25b45eaa2b405ccb58a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147305" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="366b1f3031d8130d3c0fc483de7409f386838a56" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922521" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart" />
   <TypeSignature Language="C++ CLI" Value="public interface class Chart" />
+  <TypeSignature Language="F#" Value="type Chart = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -33,8 +34,8 @@
       </list>
       <para> </para>
       <para> </para></remarks>
-    <example><para>Die <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung enthält ein Objekt für jede Inlineform, einschließlich Diagrammen, in einem Dokument. Verwenden <b></b>Sie InlineShapes<paramref name="Index" />(), <paramref name="Index" /> wobei es sich um die Indexnummer einer Inlineform handelt, um ein einzelnes InlineShape-Objekt zurückzugeben. <b></b> Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> die-Eigenschaft, um zu bestimmen, ob das InlineShape-Objekt ein Diagramm darstellt. <b></b> Wenn die <b>HasChart</b> -Eigenschaft auf <b>true</b>festgelegt ist, <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> verwenden Sie die-Eigenschaft, um ein <b>Chart</b> -Objekt zurückzugeben.</para>
-      <para>Sie können auch die <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> -Eigenschaft verwenden, um zu bestimmen, ob das InlineShape-Objekt ein Diagramm darstellt. <b></b> Ist die <b>Type</b>-Eigenschaft auf <b>WdInlineShapeChart</b> gesetzt, stellt die Inlineform ein Diagramm dar.</para></example>
+    <example><para>Die <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> Auflistung enthält ein Objekt für jede Inlineform, einschließlich Diagrammen, in einem Dokument. Verwenden Sie <b>InlineShapes</b>( <paramref name="Index" /> ), wobei <paramref name="Index" /> es sich um die Indexnummer einer Inlineform handelt, um ein einzelnes <b>InlineShape</b> -Objekt zurückzugeben. Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> -Eigenschaft, um zu bestimmen, ob das <b>InlineShape</b> -Objekt ein Diagramm darstellt. Wenn die <b>HasChart</b> -Eigenschaft auf <b>true</b>festgelegt ist, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> -Eigenschaft, um ein <b>Chart</b> -Objekt zurückzugeben.</para>
+      <para>Sie können auch die <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> -Eigenschaft verwenden, um zu bestimmen, ob das <b>InlineShape</b> -Objekt ein Diagramm darstellt. Ist die <b>Type</b>-Eigenschaft auf <b>WdInlineShapeChart</b> gesetzt, stellt die Inlineform ein Diagramm dar.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Chart.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,7 +62,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt <see cref="T:Microsoft.Office.Interop.Word._Application" /> Sie ein Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
+        <summary>Wenn diese Eigenschaft ohne einen Objektbezeichner verwendet wird, gibt Sie ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt. Mit Objektkennzeichner hingegen gibt diese Eigenschaft ein <b>Application</b>-Objekt zurück, das die Erstellungsanwendung des angegebenen Objekts darstellt. (Sie können diese Eigenschaft mit einem OLE-Automatisierungsobjekt verwenden, um die Anwendung dieses Objekts zurückzugeben.) Schreibgeschützt.</summary>
         <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyChartTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyChartTemplate (FileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyChartTemplate(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyChartTemplate : string -&gt; unit" Usage="chart.ApplyChartTemplate FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyCustomType([in]valuetype Microsoft.Office.Core.XlChartType ChartType, [in]object TypeName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyCustomType(Microsoft.Office.Core.XlChartType,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyCustomType (ChartType As XlChartType, Optional TypeName As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyCustomType : Microsoft.Office.Core.XlChartType * obj -&gt; unit" Usage="chart.ApplyCustomType (ChartType, TypeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDataLabels([in]valuetype Microsoft.Office.Interop.Word.XlDataLabelsType Type, [in]object LegendKey, [in]object AutoText, [in]object HasLeaderLines, [in]object ShowSeriesName, [in]object ShowCategoryName, [in]object ShowValue, [in]object ShowPercentage, [in]object ShowBubbleSize, [in]object Separator) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyDataLabels (Optional Type As XlDataLabelsType = Microsoft.Office.Interop.Word.XlDataLabelsType.xlDataLabelsShowValue, Optional LegendKey As Object, Optional AutoText As Object, Optional HasLeaderLines As Object, Optional ShowSeriesName As Object, Optional ShowCategoryName As Object, Optional ShowValue As Object, Optional ShowPercentage As Object, Optional ShowBubbleSize As Object, Optional Separator As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDataLabels : Microsoft.Office.Interop.Word.XlDataLabelsType * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="chart.ApplyDataLabels (Type, LegendKey, AutoText, HasLeaderLines, ShowSeriesName, ShowCategoryName, ShowValue, ShowPercentage, ShowBubbleSize, Separator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -160,10 +165,10 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Der <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> Typ der anzuwendenden Datenbeschriftung ist erforderlich.</param>
+        <param name="Type"><see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />Der Typ der anzuwendenden Datenbeschriftung ist erforderlich.</param>
         <param name="LegendKey">Mit  <b>True</b> wird das Legendensymbol neben dem Datenpunkt angezeigt. Der Standardwert ist <b>False</b>.</param>
         <param name="AutoText"><b>True,</b> Wenn das Objekt automatisch basierend auf dem Inhalt angemessenen Text generiert.</param>
-        <param name="HasLeaderLines">True für <see cref="T:Microsoft.Office.Interop.Word.Chart" /> die <see cref="T:Microsoft.Office.Interop.Word.Series" /> und- <b></b> Objekte, wenn die Datenreihe Führungslinien aufweist.</param>
+        <param name="HasLeaderLines">True für die <see cref="T:Microsoft.Office.Interop.Word.Chart" /> und- <see cref="T:Microsoft.Office.Interop.Word.Series" /> Objekte, wenn die Datenreihe Führungslinien aufweist. <b>True</b></param>
         <param name="ShowSeriesName">Übergeben Sie einen booleschen Wert, um den Datenreihennamen für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="ShowCategoryName">Übergeben Sie einen booleschen Wert, um den Rubrikennamen für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="ShowValue">Übergeben Sie einen booleschen Wert, um den Wert für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
@@ -171,7 +176,7 @@
         <param name="ShowBubbleSize">Übergeben Sie einen booleschen Wert, um die Blasengröße für die Datenbeschriftung zu aktivieren oder zu deaktivieren.</param>
         <param name="Separator">Das Trennzeichen für die Datenbeschriftung</param>
         <summary>Wendet auf alle Reihen in einem Diagramm Datenbeschriftungen an.</summary>
-        <remarks><para>In der folgenden Tabelle sind <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> die Argumente dargestellt, die an den <paramref name="Type" /> Parameter einer <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> Methode übergeben werden können.</para>
+        <remarks><para>In der folgenden Tabelle sind die <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> Argumente dargestellt, die an den <paramref name="Type" /> Parameter einer Methode übergeben werden können <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> .</para>
           <list type="table">
             <item>
               <description>
@@ -206,6 +211,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyLayout([in]int32 Layout, [in]object ChartType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyLayout(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyLayout (Layout As Integer, Optional ChartType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyLayout : int * obj -&gt; unit" Usage="chart.ApplyLayout (Layout, ChartType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Area3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Area3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Area3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Area3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Area3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AreaGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.AreaGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AreaGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member AreaGroups : obj -&gt; obj" Usage="chart.AreaGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AutoFormat([in]int32 Gallery, [in]object Format) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.AutoFormat(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoFormat (Gallery As Integer, Optional Format As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AutoFormat : int * obj -&gt; unit" Usage="chart.AutoFormat (Gallery, Format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.AutoScaling" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaling As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoScaling { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaling : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.AutoScaling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -364,8 +374,8 @@
       </ReturnValue>
       <Docs>
         <summary>Skaliert ein 3D-Diagramm so, dass es der Größe des äquivalenten 2D-Diagramms näher kommt. Die <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> -Eigenschaft muss <b>true</b>sein. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolescher Wert</b> 
-          <b>True</b> , wenn Microsoft Word ein 3D-Diagramm so skaliert, dass es näher an der Größe des äquivalenten 2D-Diagramms liegt; andernfalls <b>false</b>.</value>
+        <value><b>Boolean</b>
+          <b>true</b> , wenn Microsoft Word ein 3D-Diagramm so skaliert, dass es näher an der Größe des äquivalenten 2D-Diagramms liegt; andernfalls <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,6 +384,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Axes([in]object Type, [in]valuetype Microsoft.Office.Interop.Word.XlAxisGroup AxisGroup) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Axes (Optional Type As Object, Optional AxisGroup As XlAxisGroup = Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Axes : obj * Microsoft.Office.Interop.Word.XlAxisGroup -&gt; obj" Usage="chart.Axes (Type, AxisGroup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,7 +406,7 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Word.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">Required- <b>Objekt</b> gibt die zurückzugebende Achse an. Kann eine <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> der folgenden Konstanten sein: <b>xlValue</b>, <b>xlCategory</b>oder <b>xlSeriesAxis</b> (<b>xlSeriesAxis</b> ist nur für 3D-Diagramme gültig).</param>
+        <param name="Type">Required- <b>Objekt</b> gibt die zurückzugebende Achse an. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> : <b>xlValue</b>, <b>xlCategory</b>oder <b>xlSeriesAxis</b> (<b>xlSeriesAxis</b> ist nur für 3D-Diagramme gültig).</param>
         <param name="AxisGroup">Optional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> gibt die Gruppe Axis an. Wenn dieses Argument ausgelassen wird, wird die primäre Gruppe verwendet. 3D-Diagramme verfügen nur über eine Achsengruppe.</param>
         <summary>Ruft ein Objekt ab, das entweder eine einzelne Achse oder eine Auflistung von Achsen im Diagramm darstellt.</summary>
         <returns><b>Objekt</b></returns>
@@ -408,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.BackWall" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackWall As Walls" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ BackWall { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BackWall : Microsoft.Office.Interop.Word.Walls" Usage="Microsoft.Office.Interop.Word.Chart.BackWall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -436,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Bar3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bar3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Bar3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bar3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Bar3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -469,6 +482,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BarGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.BarGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BarGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member BarGroups : obj -&gt; obj" Usage="chart.BarGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -504,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.BarShape" />
       <MemberSignature Language="VB.NET" Value="Public Property BarShape As XlBarShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlBarShape BarShape { Microsoft::Office::Interop::Word::XlBarShape get(); void set(Microsoft::Office::Interop::Word::XlBarShape value); };" />
+      <MemberSignature Language="F#" Value="member this.BarShape : Microsoft.Office.Interop.Word.XlBarShape with get, set" Usage="Microsoft.Office.Interop.Word.Chart.BarShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.CategoryLabelLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryLabelLevel As XlCategoryLabelLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlCategoryLabelLevel CategoryLabelLevel { Microsoft::Office::Interop::Word::XlCategoryLabelLevel get(); void set(Microsoft::Office::Interop::Word::XlCategoryLabelLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryLabelLevel : Microsoft.Office.Interop.Word.XlCategoryLabelLevel with get, set" Usage="Microsoft.Office.Interop.Word.Chart.CategoryLabelLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -555,7 +571,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlCategoryLabelLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Zurückgeben oder festlegen <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> einer Konstanten, die die Quellebene der Diagrammkategorie Bezeichnungen angibt. Lese-/Schreibzugriff.</summary>
+        <summary>Zurückgeben oder Festlegen einer <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> Konstanten, die die Quellebene der Diagrammkategorie Bezeichnungen angibt. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartArea As ChartArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartArea ^ ChartArea { Microsoft::Office::Interop::Word::ChartArea ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartArea : Microsoft.Office.Interop.Word.ChartArea" Usage="Microsoft.Office.Interop.Word.Chart.ChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -597,6 +614,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartColor As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartColor { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartColor : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ChartColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -629,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartData As ChartData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartData ^ ChartData { Microsoft::Office::Interop::Word::ChartData ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartData : Microsoft.Office.Interop.Word.ChartData" Usage="Microsoft.Office.Interop.Word.Chart.ChartData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -657,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartGroups(Optional Index As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartGroups[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberSignature Language="F#" Value="member this.ChartGroups(obj) : obj" Usage="Microsoft.Office.Interop.Word.Chart.ChartGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -680,7 +700,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Die Anzahl der Diagrammgruppen. Wenn angegeben, wird ein <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> einzelnes Objekt zurückgegeben. Wird kein Wert angegeben <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> , wird ein Objekt zurückgegeben, das eine <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Auflistung aller Objekte für dieses Diagramm enthält.</param>
+        <param name="Index">Die Anzahl der Diagrammgruppen. Wenn angegeben, wird ein einzelnes <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekt zurückgegeben. Wird kein Wert angegeben, <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> wird ein Objekt zurückgegeben, das eine Auflistung aller <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> Objekte für dieses Diagramm enthält.</param>
         <summary>Gibt ein Objekt zurück, das entweder eine einzelne Diagrammgruppe oder eine Auflistung aller Diagrammgruppen im Diagramm darstellt.</summary>
         <value><b>Objekt</b></value>
         <remarks>To be added.</remarks>
@@ -692,6 +712,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ChartStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -724,6 +745,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartTitle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartTitle As ChartTitle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartTitle ^ ChartTitle { Microsoft::Office::Interop::Word::ChartTitle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartTitle : Microsoft.Office.Interop.Word.ChartTitle" Usage="Microsoft.Office.Interop.Word.Chart.ChartTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -746,7 +768,7 @@
       <Docs>
         <summary>Gibt ein <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt zurück, das den Titel des angegebenen Diagramms darstellt. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /></value>
-        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt ist nicht vorhanden und kann nur verwendet werden <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> , wenn die Eigenschaft für das Diagramm auf <b>true</b>festgelegt ist.</para>
+        <remarks><para>Das <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt ist nicht vorhanden und kann nur verwendet werden, wenn die <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> Eigenschaft für das Diagramm auf <b>true</b>festgelegt ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -756,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartType" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartType As XlChartType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::XlChartType ChartType { Microsoft::Office::Core::XlChartType get(); void set(Microsoft::Office::Core::XlChartType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartType : Microsoft.Office.Core.XlChartType with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ChartType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -787,6 +810,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChartWizard([in]object Source, [in]object Gallery, [in]object Format, [in]object PlotBy, [in]object CategoryLabels, [in]object SeriesLabels, [in]object HasLegend, [in]object Title, [in]object CategoryTitle, [in]object ValueTitle, [in]object ExtraTitle) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChartWizard (Optional Source As Object, Optional Gallery As Object, Optional Format As Object, Optional PlotBy As Object, Optional CategoryLabels As Object, Optional SeriesLabels As Object, Optional HasLegend As Object, Optional Title As Object, Optional CategoryTitle As Object, Optional ValueTitle As Object, Optional ExtraTitle As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ChartWizard : obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="chart.ChartWizard (Source, Gallery, Format, PlotBy, CategoryLabels, SeriesLabels, HasLegend, Title, CategoryTitle, ValueTitle, ExtraTitle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -820,7 +844,7 @@
         <param name="Source">Optionales <b>Objekt</b> der Bereich, der die Quelldaten für das neue Diagramm enthält. Wenn Sie dieses Argument nicht angeben, wird das aktive Diagrammblatt oder das ausgewählte Diagramm des aktiven Arbeitsblatts von Microsoft Word bearbeitet.</param>
         <param name="Gallery">Das optionale <b>Objekt</b> enthält eine der Konstanten zur <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> Angabe des Diagrammtyps.</param>
         <param name="Format">Optionales <b>Objekt</b> die Optionsnummer für die integrierten AutoFormate. Dabei kann es sich um eine Zahl von 1 bis 10 handeln, je nach Katalogtyp. Wenn dieses Argument ausgelassen wird, wählt Microsoft Word auf der Grundlage des Katalogtyps und der Datenquelle einen Standardwert aus.</param>
-        <param name="PlotBy">Optionales <b>Objekt</b> gibt an, ob sich die Daten für jede Reihe in Zeilen oder Spalten befinden. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten sein: <b>xlRows</b> oder <b>xlColumns</b>.</param>
+        <param name="PlotBy">Optionales <b>Objekt</b> gibt an, ob sich die Daten für jede Reihe in Zeilen oder Spalten befinden. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> : <b>xlRows</b> oder <b>xlColumns</b>.</param>
         <param name="CategoryLabels">Das optionale <b>Objekt</b> enthält eine <b>ganze Zahl</b> , die die Anzahl der Zeilen oder Spalten innerhalb des Quellbereichs angibt, die Kategorien Bezeichnungen enthalten. Zulässige Werte liegen im Bereich von Null bis zu dem Wert, der um eins kleiner ist als die maximale Anzahl von entsprechenden Rubriken oder Reihen.</param>
         <param name="SeriesLabels">Das optionale <b>Objekt</b> enthält eine <b>ganze Zahl</b> , die die Anzahl der Zeilen oder Spalten innerhalb des Quellbereichs angibt, die Datenreihenbeschriftungen enthalten. Zulässige Werte liegen im Bereich von Null bis zu dem Wert, der um eins kleiner ist als die maximale Anzahl von entsprechenden Rubriken oder Reihen.</param>
         <param name="HasLegend">Optionales <b>Objekt</b> , das auf <b>true</b> festgelegt ist, um eine Legende einzubeziehen.</param>
@@ -839,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ClearToMatchColorStyle" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearToMatchColorStyle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearToMatchColorStyle();" />
+      <MemberSignature Language="F#" Value="abstract member ClearToMatchColorStyle : unit -&gt; unit" Usage="chart.ClearToMatchColorStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -865,6 +890,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ClearToMatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearToMatchStyle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearToMatchStyle();" />
+      <MemberSignature Language="F#" Value="abstract member ClearToMatchStyle : unit -&gt; unit" Usage="chart.ClearToMatchStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -891,6 +917,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Column3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Column3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Column3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -924,6 +951,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ColumnGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ColumnGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ColumnGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ColumnGroups : obj -&gt; obj" Usage="chart.ColumnGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -958,6 +986,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy([in]object Before, [in]object After) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Copy(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (Optional Before As Object, Optional After As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Copy : obj * obj -&gt; unit" Usage="chart.Copy (Before, After)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -990,6 +1019,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyPicture([in]valuetype Microsoft.Office.Interop.Word.XlPictureAppearance Appearance, [in]valuetype Microsoft.Office.Interop.Word.XlCopyPictureFormat Format, [in]valuetype Microsoft.Office.Interop.Word.XlPictureAppearance Size) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.CopyPicture(Microsoft.Office.Interop.Word.XlPictureAppearance,Microsoft.Office.Interop.Word.XlCopyPictureFormat,Microsoft.Office.Interop.Word.XlPictureAppearance)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyPicture (Optional Appearance As XlPictureAppearance = Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen, Optional Format As XlCopyPictureFormat = Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture, Optional Size As XlPictureAppearance = Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter)" />
+      <MemberSignature Language="F#" Value="abstract member CopyPicture : Microsoft.Office.Interop.Word.XlPictureAppearance * Microsoft.Office.Interop.Word.XlCopyPictureFormat * Microsoft.Office.Interop.Word.XlPictureAppearance -&gt; unit" Usage="chart.CopyPicture (Appearance, Format, Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1025,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Corners" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Corners As Corners" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Corners ^ Corners { Microsoft::Office::Interop::Word::Corners ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Corners : Microsoft.Office.Interop.Word.Corners" Usage="Microsoft.Office.Interop.Word.Chart.Corners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1059,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Chart.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1078,7 +1110,7 @@
       <Docs>
         <summary>Gibt eine 32-Bit- <b>Ganzzahl</b> , die die Anwendung angibt, in der das angegebene Objekt erstellt wurde. Schreibgeschützt.</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
+        <remarks><para>Wenn das Objekt in Microsoft Word erstellt wurde, <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> gibt die Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.  Diese Eigenschaft wurde in erster Linie für die Verwendung auf dem Macintosh entwickelt, wobei jede Anwendung einen Erstellercode mit vier Zeichen aufweist. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1088,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DataTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTable As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DataTable ^ DataTable { Microsoft::Office::Interop::Word::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataTable : Microsoft.Office.Interop.Word.DataTable" Usage="Microsoft.Office.Interop.Word.Chart.DataTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1105,7 +1138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> Wert vom Datentyp Object zurück, der die Diagrammdatentabelle darstellt. Schreibgeschützt.</summary>
+        <summary>Gibt einen Wert <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> vom Datentyp Object zurück, der die Diagrammdatentabelle darstellt. Schreibgeschützt.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.DataTable" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1116,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="chart.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1145,6 +1179,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.DeleteHiddenContent" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteHiddenContent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteHiddenContent();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteHiddenContent : unit -&gt; unit" Usage="chart.DeleteHiddenContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1173,6 +1208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DepthPercent" />
       <MemberSignature Language="VB.NET" Value="Public Property DepthPercent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DepthPercent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DepthPercent : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.DepthPercent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1211,6 +1247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DisplayBlanksAs" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayBlanksAs As XlDisplayBlanksAs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlDisplayBlanksAs DisplayBlanksAs { Microsoft::Office::Interop::Word::XlDisplayBlanksAs get(); void set(Microsoft::Office::Interop::Word::XlDisplayBlanksAs value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayBlanksAs : Microsoft.Office.Interop.Word.XlDisplayBlanksAs with get, set" Usage="Microsoft.Office.Interop.Word.Chart.DisplayBlanksAs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1247,6 +1284,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DoughnutGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.DoughnutGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function DoughnutGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member DoughnutGroups : obj -&gt; obj" Usage="chart.DoughnutGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1282,6 +1320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Elevation" />
       <MemberSignature Language="VB.NET" Value="Public Property Elevation As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Elevation { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Elevation : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Elevation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1321,6 +1360,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Export([in]string FileName, [in]object FilterName, [in]object Interactive) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Export(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Export (FileName As String, Optional FilterName As Object, Optional Interactive As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Export : string * obj * obj -&gt; bool" Usage="chart.Export (FileName, FilterName, Interactive)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1344,7 +1384,7 @@
         <param name="FilterName">Optionales <b>Objekt</b> der sprachunabhängige Name des Grafikfilters, wie er in der Registrierung angezeigt wird.</param>
         <param name="Interactive">Optionales <b>Objekt</b><b>true</b> , um das Dialogfeld anzuzeigen, das die filterspezifischen Optionen enthält. Wenn dieses Argument auf <b>false festgelegt</b>ist, verwendet Microsoft Word die Standardwerte für den Filter. Der Standardwert ist <b>False</b>.</param>
         <summary>Exportiert das Diagramm in einem Grafikformat. Diese Methode gibt einen <b>booleschen</b> Wert zurück, der angibt, ob der Export erfolgreich war.</summary>
-        <returns><b>Boolean</b></returns>
+        <returns><b>Boolescher Wert</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1354,6 +1394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Floor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Floor As Floor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Floor ^ Floor { Microsoft::Office::Interop::Word::Floor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Floor : Microsoft.Office.Interop.Word.Floor" Usage="Microsoft.Office.Interop.Word.Chart.Floor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1384,6 +1425,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FullSeriesCollection([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.FullSeriesCollection(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FullSeriesCollection (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member FullSeriesCollection : obj -&gt; obj" Usage="chart.FullSeriesCollection Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1416,6 +1458,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.GapDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property GapDepth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GapDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.GapDepth : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.GapDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1455,6 +1498,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.GetChartElement(System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetChartElement (x As Integer, y As Integer, ByRef ElementID As Integer, ByRef Arg1 As Integer, ByRef Arg2 As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetChartElement(int x, int y, [Runtime::InteropServices::Out] int % ElementID, [Runtime::InteropServices::Out] int % Arg1, [Runtime::InteropServices::Out] int % Arg2);" />
+      <MemberSignature Language="F#" Value="abstract member GetChartElement : int * int * int * int * int -&gt; unit" Usage="chart.GetChartElement (x, y, ElementID, Arg1, Arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1471,24 +1515,24 @@
       <Parameters>
         <Parameter Name="x" Type="System.Int32" />
         <Parameter Name="y" Type="System.Int32" />
-        <Parameter Name="ElementID" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="Arg1" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="Arg2" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="ElementID" Type="System.Int32" RefType="out" />
+        <Parameter Name="Arg1" Type="System.Int32" RefType="out" />
+        <Parameter Name="Arg2" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="x">Required <b>Integer</b> die X-Koordinate des Chart-Elements.</param>
         <param name="y">Required <b>Integer</b> die Y-Koordinate des Chart-Elements.</param>
-        <param name="ElementID"><b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> Argument den Wert des Chart-Elements an den angegebenen Koordinaten. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
+        <param name="ElementID"><b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses Argument den <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> Wert des Chart-Elements an den angegebenen Koordinaten. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
         <param name="Arg1"><b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses Argumentinformationen im Zusammenhang mit dem Chart-Element. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
         <param name="Arg2"><b>Ganze Zahl</b> Wenn die Methode zurückgegeben wird, enthält dieses Argumentinformationen im Zusammenhang mit dem Chart-Element. Weitere Informationen finden Sie im Abschnitt "Hinweise".</param>
         <summary>Gibt Informationen zum Diagrammelement an der angegebenen X-und Y-Koordinate zurück. Diese Methode ist insofern ungewöhnlich, als dass Sie nur Werte für die ersten beiden Argumente angeben. Microsoft Word füllt die anderen Argumente, und diese Werte sollten bei der Beendigung der Methode mithilfe Ihres Codes geprüft werden.</summary>
-        <remarks><para>Der Wert von <paramref name="ElementID" /> , nachdem die Methode zurückgibt <paramref name="Arg1" /> , <paramref name="Arg2" /> bestimmt, ob und enthält alle Informationen, wie in der folgenden Tabelle dargestellt.</para>
+        <remarks><para>Der Wert von <paramref name="ElementID" /> , nachdem die Methode zurückgibt <paramref name="Arg1" /> , bestimmt, ob und <paramref name="Arg2" /> enthält alle Informationen, wie in der folgenden Tabelle dargestellt.</para>
           <list type="table">
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxis" />
               </description>
-              <description>21</description>
+              <description> 21</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1496,7 +1540,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxisTitle" />
               </description>
-              <description>17</description>
+              <description>17 </description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1520,7 +1564,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMinorGridlines" />
               </description>
-              <description>16</description>
+              <description>16 </description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1584,7 +1628,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlUpBars" />
               </description>
-              <description>18</description>
+              <description>18 </description>
               <description>GroupIndex</description>
               <description>None</description>
             </item>
@@ -1600,7 +1644,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" />
               </description>
-              <description>4</description>
+              <description>4 </description>
               <description>Keine</description>
               <description>Keine</description>
             </item>
@@ -1608,7 +1652,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlCorners" />
               </description>
-              <description>6</description>
+              <description>6 </description>
               <description>Keine</description>
               <description>Keine</description>
             </item>
@@ -1616,7 +1660,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" />
               </description>
-              <description>7</description>
+              <description>7 </description>
               <description>Keine</description>
               <description>Keine</description>
             </item>
@@ -1664,7 +1708,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" />
               </description>
-              <description>5</description>
+              <description>5 </description>
               <description>Keine</description>
               <description>Keine</description>
             </item>
@@ -1672,7 +1716,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataLabel" />
               </description>
-              <description>7</description>
+              <description>7 </description>
               <description>SeriesIndex</description>
               <description>PointIndex</description>
             </item>
@@ -1680,7 +1724,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlErrorBars" />
               </description>
-              <description>9</description>
+              <description>9 </description>
               <description>SeriesIndex</description>
               <description>Keine</description>
             </item>
@@ -1688,7 +1732,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendEntry" />
               </description>
-              <description>12</description>
+              <description>12 </description>
               <description>SeriesIndex</description>
               <description>Keine</description>
             </item>
@@ -1712,7 +1756,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlShape" />
               </description>
-              <description>14</description>
+              <description>14 </description>
               <description>ShapeIndex</description>
               <description>Keines</description>
             </item>
@@ -1720,7 +1764,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlTrendline" />
               </description>
-              <description>8</description>
+              <description>8 </description>
               <description>SeriesIndex</description>
               <description>TrendLineIndex</description>
             </item>
@@ -1728,7 +1772,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" />
               </description>
-              <description>10 </description>
+              <description>10  </description>
               <description>SeriesIndex</description>
               <description>Keine</description>
             </item>
@@ -1741,19 +1785,19 @@
               <description>Keine</description>
             </item>
           </list>
-          <para>In der folgenden Tabelle wird die Bedeutung <paramref name="Arg1" /> von <paramref name="Arg2" /> und nach der Rückgabe der Methode beschrieben.</para>
+          <para>In der folgenden Tabelle wird die Bedeutung von <paramref name="Arg1" /> und <paramref name="Arg2" /> nach der Rückgabe der Methode beschrieben.</para>
           <list type="table">
             <item>
               <description>AxisIndex</description>
-              <description>Gibt an, ob die Achse Primär oder sekundär ist. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> Konstanten sein: <b>xlPrimary</b> oder <b>xlSecondary</b>.</description>
+              <description>Gibt an, ob die Achse Primär oder sekundär ist. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> : <b>xlPrimary</b> oder <b>xlSecondary</b>.</description>
             </item>
             <item>
               <description>AxisType</description>
-              <description>Gibt den Typ der Achse an. Kann <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> eine der folgenden Konstanten sein: <b>xlCategory</b>, <b>xlSeriesAxis</b>oder <b>xlValue</b>.</description>
+              <description>Gibt den Typ der Achse an. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> : <b>xlCategory</b>, <b>xlSeriesAxis</b>oder <b>xlValue</b>.</description>
             </item>
             <item>
               <description>DropZoneType</description>
-              <description>Gibt den Typ der Dropzone: Spalte, Daten, Seite oder Zeilenfeld. Kann eine <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> der folgenden Konstanten sein: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>oder <b>xlRowField</b>. Die Spalten-als auch die Feld-Konstanten geben die Datenreihe und die Kategorie an.</description>
+              <description>Gibt den Typ der Dropzone: Spalte, Daten, Seite oder Zeilenfeld. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> : <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>oder <b>xlRowField</b>. Die Spalten-als auch die Feld-Konstanten geben die Datenreihe und die Kategorie an.</description>
             </item>
             <item>
               <description>GroupIndex</description>
@@ -1785,6 +1829,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasAxis(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Property HasAxis(Optional Index1 As Object, Optional Index2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HasAxis[System::Object ^, System::Object ^] { System::Object ^ get(System::Object ^ Index1, System::Object ^ Index2); void set(System::Object ^ Index1, System::Object ^ Index2, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HasAxis(obj * obj) : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasAxis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1820,7 +1865,7 @@
         <summary>Gibt zurück oder legt fest, welche Achsen im Diagramm vorhanden sind. Lese-/Schreibzugriff.</summary>
         <value><b>Objekt</b></value>
         <remarks><para>Wenn Sie diese Eigenschaft festlegen, müssen Sie für mindestens einen Parameter einen Wert eingeben.</para>
-          <para>Microsoft Word möglicherweise Achsen erstellen oder löschen, wenn Sie den Diagrammtyp <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> oder die Eigenschaft ändern.</para>
+          <para>Microsoft Word möglicherweise Achsen erstellen oder löschen, wenn Sie den Diagrammtyp oder die <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> Eigenschaft ändern.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1830,6 +1875,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasDataTable" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDataTable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDataTable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDataTable : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasDataTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1850,9 +1896,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dient zum Abrufen oder Festlegen eines Werts, der <see cref="T:Microsoft.Office.Interop.Word.Chart" /> angibt, ob das eine Datentabelle enthält. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolescher Wert</b> 
-          <b>True</b> , wenn das Diagramm eine Datentabelle enthält. Andernfalls<b>false</b></value>
+        <summary>Dient zum Abrufen oder Festlegen eines Werts, der angibt, ob das <see cref="T:Microsoft.Office.Interop.Word.Chart" /> eine Datentabelle enthält. Lese-/Schreibzugriff.</summary>
+        <value><b>Boolean</b>
+          <b>true</b> , wenn das Diagramm eine Datentabelle enthält. Andernfalls<b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1862,6 +1908,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasHiddenContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasHiddenContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasHiddenContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasHiddenContent : bool" Usage="Microsoft.Office.Interop.Word.Chart.HasHiddenContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1893,6 +1940,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />
       <MemberSignature Language="VB.NET" Value="Public Property HasLegend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLegend { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasLegend : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasLegend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1920,7 +1968,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt <b>true</b> zurück, wenn das Diagramm eine Legende enthält. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1930,6 +1978,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasPivotFields" />
       <MemberSignature Language="VB.NET" Value="Public Property HasPivotFields As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPivotFields { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasPivotFields : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasPivotFields" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1968,6 +2017,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property HasTitle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTitle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasTitle : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1995,7 +2045,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b>, wenn die Achse eine sichtbare Beschriftung oder das Diagramm einen sichtbaren Titel aufweist. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Ein Diagrammtitel wird durch ein <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> Objekt dargestellt.</para>
           <para> </para></remarks>
       </Docs>
@@ -2006,6 +2056,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HeightPercent" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightPercent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HeightPercent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightPercent : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HeightPercent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2043,6 +2094,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Legend" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Legend As Legend" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Legend ^ Legend { Microsoft::Office::Interop::Word::Legend ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Legend : Microsoft.Office.Interop.Word.Legend" Usage="Microsoft.Office.Interop.Word.Chart.Legend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2074,6 +2126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Line3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Line3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Line3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2107,6 +2160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object LineGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.LineGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function LineGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member LineGroups : obj -&gt; obj" Usage="chart.LineGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2142,6 +2196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Chart.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2169,6 +2224,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Paste([in]object Type) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Paste(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Paste (Optional Type As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Paste : obj -&gt; unit" Usage="chart.Paste Type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2200,6 +2256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Perspective" />
       <MemberSignature Language="VB.NET" Value="Public Property Perspective As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Perspective { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Perspective : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Perspective" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2226,9 +2283,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt einen ganzzahligen <b></b> Wert zurück, der die Perspektive für die 3D-Diagrammansicht darstellt, oder legt diesen fest.</summary>
+        <summary>Gibt einen <b>ganzzahligen</b> Wert zurück, der die Perspektive für die 3D-Diagrammansicht darstellt, oder legt diesen fest.</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Der Wert dieser Eigenschaft muss zwischen 0 und 100. Diese Eigenschaft wird ignoriert, wenn <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> die Eigenschaft auf <b>true</b>festgelegt ist.</para>
+        <remarks><para>Der Wert dieser Eigenschaft muss zwischen 0 und 100. Diese Eigenschaft wird ignoriert, wenn die <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> Eigenschaft auf <b>true</b>festgelegt ist.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2238,6 +2295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Pie3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pie3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Pie3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pie3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Pie3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2271,6 +2329,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object PieGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.PieGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function PieGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member PieGroups : obj -&gt; obj" Usage="chart.PieGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2306,6 +2365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PivotLayout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotLayout As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PivotLayout { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PivotLayout : obj" Usage="Microsoft.Office.Interop.Word.Chart.PivotLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2324,7 +2384,7 @@
       </ReturnValue>
       <Docs>
         <summary>Für dieses Objekt nicht unterstützt.</summary>
-        <value>Gibt <see cref="T:System.Object" />zurück.</value>
+        <value>Gibt zurück <see cref="T:System.Object" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2334,6 +2394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlotArea As PlotArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PlotArea ^ PlotArea { Microsoft::Office::Interop::Word::PlotArea ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlotArea : Microsoft.Office.Interop.Word.PlotArea" Usage="Microsoft.Office.Interop.Word.Chart.PlotArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2365,6 +2426,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotBy" />
       <MemberSignature Language="VB.NET" Value="Public Property PlotBy As XlRowCol" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlRowCol PlotBy { Microsoft::Office::Interop::Word::XlRowCol get(); void set(Microsoft::Office::Interop::Word::XlRowCol value); };" />
+      <MemberSignature Language="F#" Value="member this.PlotBy : Microsoft.Office.Interop.Word.XlRowCol with get, set" Usage="Microsoft.Office.Interop.Word.Chart.PlotBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2385,7 +2447,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt zurück, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden, oder legt dies fest. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten sein: <b>xlColumns</b> oder <b>xlRows</b>. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt zurück, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden, oder legt dies fest. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> : <b>xlColumns</b> oder <b>xlRows</b>. Lese-/Schreibzugriff.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /></value>
         <remarks><para>Für PivotChart-Berichten ist diese Eigenschaft ist schreibgeschützt und gibt immer <b>XlColumns</b> zurück.</para>
           <para> </para></remarks>
@@ -2397,6 +2459,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotVisibleOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property PlotVisibleOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PlotVisibleOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PlotVisibleOnly : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.PlotVisibleOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2424,8 +2487,8 @@
       </ReturnValue>
       <Docs>
         <summary>Dient zum Abrufen oder Festlegen eines Werts, der angibt, ob nur sichtbare Zellen geplottet werden. Lese-/Schreibzugriff.</summary>
-        <value><b>Boolescher Wert</b> 
-          <b>True</b> , wenn nur sichtbare Zellen geplottet werden. <b>False,</b> Wenn sichtbare und ausgeblendete Zellen gezeichnet werden.</value>
+        <value><b>Boolean</b>
+          <b>true</b> , wenn nur sichtbare Zellen geplottet werden. <b>False,</b> Wenn sichtbare und ausgeblendete Zellen gezeichnet werden.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2434,6 +2497,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object RadarGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.RadarGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function RadarGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member RadarGroups : obj -&gt; obj" Usage="chart.RadarGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2469,6 +2533,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="F#" Value="abstract member Refresh : unit -&gt; unit" Usage="chart.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2494,6 +2559,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />
       <MemberSignature Language="VB.NET" Value="Public Property RightAngleAxes As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RightAngleAxes { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RightAngleAxes : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2532,6 +2598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Rotation As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Rotation { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2570,6 +2637,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SaveChartTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveChartTemplate (FileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveChartTemplate(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member SaveChartTemplate : string -&gt; unit" Usage="chart.SaveChartTemplate FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2598,6 +2666,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Select([in]object Replace) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Select(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (Optional Replace As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Select : obj -&gt; obj" Usage="chart.Select Replace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2629,6 +2698,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SeriesCollection([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function SeriesCollection (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member SeriesCollection : obj -&gt; obj" Usage="chart.SeriesCollection Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2661,6 +2731,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SeriesNameLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property SeriesNameLevel As XlSeriesNameLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlSeriesNameLevel SeriesNameLevel { Microsoft::Office::Interop::Word::XlSeriesNameLevel get(); void set(Microsoft::Office::Interop::Word::XlSeriesNameLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.SeriesNameLevel : Microsoft.Office.Interop.Word.XlSeriesNameLevel with get, set" Usage="Microsoft.Office.Interop.Word.Chart.SeriesNameLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2681,7 +2752,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSeriesNameLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gibt eine <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> Konstante zurück, die die Quellebene der Datenreihennamen angibt, oder legt diese fest. Lese-/Schreibzugriff.</summary>
+        <summary>Gibt eine Konstante zurück <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> , die die Quellebene der Datenreihennamen angibt, oder legt diese fest. Lese-/Schreibzugriff.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2692,6 +2763,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetBackgroundPicture(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBackgroundPicture (FileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackgroundPicture(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member SetBackgroundPicture : string -&gt; unit" Usage="chart.SetBackgroundPicture FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2720,6 +2792,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetDefaultChart(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDefaultChart (Name As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaultChart(System::Object ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member SetDefaultChart : obj -&gt; unit" Usage="chart.SetDefaultChart Name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2737,7 +2810,7 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Erforderlich. <b>Objekt</b> Gibt den Namen der Standarddiagrammvorlage an, die beim Erstellen neuer Diagramme verwendet wird.  Dieser Name kann entweder auf den Namen einer benutzerdefinierten Diagrammvorlage im Katalog oder auf eine spezielle <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> Konstante <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />festgelegt werden, um eine integrierte Diagrammvorlage anzugeben.</param>
+        <param name="Name">Erforderlich. <b>Objekt</b> Gibt den Namen der Standarddiagrammvorlage an, die beim Erstellen neuer Diagramme verwendet wird.  Dieser Name kann entweder auf den Namen einer benutzerdefinierten Diagrammvorlage im Katalog oder auf eine spezielle Konstante festgelegt werden, <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" /> um eine integrierte Diagrammvorlage anzugeben.</param>
         <summary>Gibt den Namen der Diagrammvorlage an, die Microsoft Word beim Erstellen neuer Diagramme verwendet.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2748,6 +2821,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetElement (Element As MsoChartElementType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetElement(Microsoft::Office::Core::MsoChartElementType Element);" />
+      <MemberSignature Language="F#" Value="abstract member SetElement : Microsoft.Office.Core.MsoChartElementType -&gt; unit" Usage="chart.SetElement Element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2792,6 +2866,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSourceData([in]string Source, [in]object PlotBy) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetSourceData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSourceData (Source As String, Optional PlotBy As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetSourceData : string * obj -&gt; unit" Usage="chart.SetSourceData (Source, PlotBy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2811,8 +2886,8 @@
       </Parameters>
       <Docs>
         <param name="Source">Erforderliche <b>Zeichenfolge</b> die Adresse des Diagrammdatenbereichs, der die Quelldaten enthält.</param>
-        <param name="PlotBy">Optionales <b>Objekt</b> gibt an, wie die Daten geplottet werden sollen. Kann eine der folgenden <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> Konstanten sein: <b>xlColumns</b> oder <b>xlRows</b>.</param>
-        <summary>Legt den Quelldatenbereich für die <see cref="T:Microsoft.Office.Interop.Word.Chart" />fest.</summary>
+        <param name="PlotBy">Optionales <b>Objekt</b> gibt an, wie die Daten geplottet werden sollen. Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> : <b>xlColumns</b> oder <b>xlRows</b>.</param>
+        <summary>Legt den Quelldatenbereich für die fest <see cref="T:Microsoft.Office.Interop.Word.Chart" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2822,6 +2897,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Shapes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shapes As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Shapes { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shapes : obj" Usage="Microsoft.Office.Interop.Word.Chart.Shapes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2850,6 +2926,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowAllFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowAllFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAllFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowAllFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowAllFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2881,6 +2958,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowAxisFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowAxisFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAxisFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowAxisFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowAxisFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2912,6 +2990,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowDataLabelsOverMaximum" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowDataLabelsOverMaximum As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDataLabelsOverMaximum { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowDataLabelsOverMaximum : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowDataLabelsOverMaximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2933,7 +3012,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gibt zurück oder legt fest, ob die Datenbeschriftungen angezeigt werden sollen, wenn der Wert größer als der Maximalwert auf der Größenachse ist.  Lese-/Schreibzugriff.</summary>
-        <value><b>Boolean</b></value>
+        <value><b>Boolescher Wert</b></value>
         <remarks><para>Wenn Sie die Größenachse so ändern, dass Sie kleiner als die Größe der Datenpunkte wurde, können Sie diese Eigenschaft verwenden, um festzulegen, ob die Datenbeschriftungen angezeigt werden sollen. Diese Eigenschaft kann nur auf 2D-Diagramme angewendet werden.</para>
           <para> </para></remarks>
       </Docs>
@@ -2944,6 +3023,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowLegendFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowLegendFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowLegendFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowLegendFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowLegendFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2975,6 +3055,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowReportFilterFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowReportFilterFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReportFilterFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowReportFilterFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowReportFilterFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3006,6 +3087,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowValueFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowValueFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowValueFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowValueFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowValueFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3037,6 +3119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SideWall" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SideWall As Walls" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ SideWall { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SideWall : Microsoft.Office.Interop.Word.Walls" Usage="Microsoft.Office.Interop.Word.Chart.SideWall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3065,6 +3148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SubType" />
       <MemberSignature Language="VB.NET" Value="Public Property SubType As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubType { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SubType : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.SubType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3108,6 +3192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SurfaceGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SurfaceGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ SurfaceGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SurfaceGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.SurfaceGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3142,6 +3227,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3185,6 +3271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Walls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Walls As Walls" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ Walls { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Walls : Microsoft.Office.Interop.Word.Walls" Usage="Microsoft.Office.Interop.Word.Chart.Walls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3215,6 +3302,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object XYGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.XYGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function XYGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member XYGroups : obj -&gt; obj" Usage="chart.XYGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146661" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9fe8c1156f3d3ac7c1a8824b329e4d3e5775e2c1" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923920" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
   <TypeSignature Language="C++ CLI" Value="public interface class Language" />
+  <TypeSignature Language="F#" Value="type Language = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,12 +21,12 @@
   <Docs>
     <summary>Stellt eine Sprache dar, die bei der Korrektur oder Formatierung in Microsoft Word verwendet wird.</summary>
     <remarks><para>Das <b>Language</b> -Objekt ist ein Element der <see cref="T:Microsoft.Office.Interop.Word.Languages" /> Auflistung.</para>
-      <para>Verwenden <b></b>Sie languages (<paramref name="index" />), um ein einzelnes <b>Language</b> - <paramref name="index" /> Objekt zurückzugeben, wobei der <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> Wert der Eigenschaft, der Wert <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> der Eigenschaft, eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten oder eine der <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> Konstanten sein kann.</para>
-      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> -Eigenschaft gibt den Namen einer Sprache zurück, während <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> die-Eigenschaft den Namen einer Sprache in der Sprache des Benutzers zurückgibt.</para>
-      <para>Für jede Sprache, für die Korrekturhilfen installiert sind, können Sie die <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />Eigenschaften <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, und <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> verwenden, um das entsprechende <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurückzugeben.</para>
+      <para>Verwenden Sie <b>Languages</b>( <paramref name="index" /> ), um ein einzelnes <b>Language</b> -Objekt zurückzugeben, wobei der <paramref name="index" /> Wert der <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> Eigenschaft, der Wert der <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> Eigenschaft, eine der <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> Konstanten oder eine der Konstanten <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> sein kann.</para>
+      <para>Die <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> -Eigenschaft gibt den Namen einer Sprache zurück, während die <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> -Eigenschaft den Namen einer Sprache in der Sprache des Benutzers zurückgibt.</para>
+      <para>Für jede Sprache, für die Korrekturhilfen installiert sind, können Sie die <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> Eigenschaften,, und verwenden, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> um das entsprechende <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> Objekt zurückzugeben.</para>
       <para>Der Schreibstil besteht aus einer Reihe von Regeln, die von der Grammatikprüfung verwendet werden. Die <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> -Eigenschaft gibt ein Array von Zeichenfolgen zurück, die die verfügbaren Schreibstile für die angegebene Sprache darstellen.</para>
-      <para>Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> die-Eigenschaft, um den standardmäßigen Schreibstil festzulegen, den Word verwenden soll.</para>
-      <para>Sie können den Standardschreibstil mit der <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> -Eigenschaft außer Kraft setzen. Diese Eigenschaft wird dem angegebenen Dokument für Text in einer bestimmten Sprache zugewiesen.</para>
+      <para>Verwenden <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> Sie die-Eigenschaft, um den standardmäßigen Schreibstil festzulegen, den Word verwenden soll.</para>
+      <para>Sie können den Standardschreibstil mit der-Eigenschaft außer Kraft setzen <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> . Diese Eigenschaft wird dem angegebenen Dokument für Text in einer bestimmten Sprache zugewiesen.</para>
       <para>Für jede zu überprüfende Sprache müssen Korrekturhilfen installiert werden.</para>
       <para>Wenn Sie Text als <b>wdNoProofing</b> markieren, überspringt ihn Word bei der Rechtschreib- und Grammatikprüfung.</para>
       <para> </para></remarks>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveGrammarDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveGrammarDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveGrammarDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveHyphenationDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveHyphenationDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveHyphenationDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveSpellingDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveSpellingDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveSpellingDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveThesaurusDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveThesaurusDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveThesaurusDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Language.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Language.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultWritingStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultWritingStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultWritingStyle : string with get, set" Usage="Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID ID { Microsoft::Office::Interop::Word::WdLanguageID get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : Microsoft.Office.Interop.Word.WdLanguageID" Usage="Microsoft.Office.Interop.Word.Language.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Language.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.NameLocal" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property NameLocal As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameLocal : string" Usage="Microsoft.Office.Interop.Word.Language.NameLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Language.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.SpellingDictionaryType" />
       <MemberSignature Language="VB.NET" Value="Public Property SpellingDictionaryType As WdDictionaryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdDictionaryType SpellingDictionaryType { Microsoft::Office::Interop::Word::WdDictionaryType get(); void set(Microsoft::Office::Interop::Word::WdDictionaryType value); };" />
+      <MemberSignature Language="F#" Value="member this.SpellingDictionaryType : Microsoft.Office.Interop.Word.WdDictionaryType with get, set" Usage="Microsoft.Office.Interop.Word.Language.SpellingDictionaryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WritingStyleList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WritingStyleList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WritingStyleList : obj" Usage="Microsoft.Office.Interop.Word.Language.WritingStyleList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
