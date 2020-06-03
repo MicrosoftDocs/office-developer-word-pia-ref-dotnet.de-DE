@@ -1,9 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Word.Styles">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="eb701dd3171af93b44fe6b5810f09450463725fa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143938" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87e4ac12b95087bfc726d1151536235f423c2be7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926213" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Styles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Styles" />
   <TypeSignature Language="VB.NET" Value="Public Interface Styles&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Styles : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Styles = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,13 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="c9fbc-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Style" /> Objekten, die die integrierten und benutzerdefinierten Formatvorlagen in einem Dokument darstellen.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Style" /> objects that represent both the built-in and user-defined styles in a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="c9fbc-102">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> die-Eigenschaft, um die <b>Styles</b> -Auflistung zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> property to return the <b>Styles</b> collection.</span></span></para>
-      <para><span data-ttu-id="c9fbc-103">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> die-Methode, um eine neue benutzerdefinierte Formatvorlage zu erstellen und Sie der <b>Styles</b> -Auflistung hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> method to create a new user-defined style and add it to the <b>Styles</b> collection.</span></span></para>
-      <para><span data-ttu-id="c9fbc-104">Verwenden <b>Sie Formatvorlagen</b><paramref name="index" />() <paramref name="index" /> , wobei der Name der Format <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Vorlage, eine Konstante oder eine Indexnummer ist, um ein einzelnes <b>Style</b> -Objekt zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-104">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style name, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant or index number, to return a single <b>Style</b> object.</span></span> <span data-ttu-id="c9fbc-105">Sie müssen die Rechtschreibung und die Abstände zwischen den Namen der Formatvorlage, aber nicht unbedingt die Groß-/Kleinschreibung exakt übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-105">You must exactly match the spelling and spacing of the style name, but not necessarily its capitalization.</span></span></para>
-      <para><span data-ttu-id="c9fbc-106">Die Indexnummer der Formatvorlage stellt die Position der Formatvorlage in der alphabetisch sortierten Liste der Formatvorlagennamen dar.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-106">The style index number represents the position of the style in the alphabetically sorted list of style names.</span></span> </para>
-      <para><span data-ttu-id="c9fbc-107">Das <b>Styles</b> -Objekt ist nicht <see cref="T:Microsoft.Office.Interop.Word.Template" /> über das-Objekt verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-107">The <b>Styles</b> object isn't available from the <see cref="T:Microsoft.Office.Interop.Word.Template" /> object.</span></span> <span data-ttu-id="c9fbc-108">Sie können die <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> -Methode jedoch verwenden, um eine Vorlage als Dokument zu öffnen, damit Sie Formatvorlagen in der Vorlage ändern können.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-108">However, you can use the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method to open a template as a document so that you can modify styles in the template.</span></span></para>
-      <para><span data-ttu-id="c9fbc-109">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> die-Methode, um Formatvorlagen zwischen Dokumenten und Vorlagen zu kopieren.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-109">Use the <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> method to copy styles between documents and templates.</span></span> <span data-ttu-id="c9fbc-110">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> die-Methode, um die Formatvorlagen im aktiven Dokument so zu aktualisieren, dass Sie den Formatvorlagendefinitionen in der angefügten Vorlage entsprechen.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-110">Use the <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> method to update the styles in the active document to match the style definitions in the attached template.</span></span></para>
+    <summary><span data-ttu-id="aa40f-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.Style" /> Objekten, die die integrierten und benutzerdefinierten Formatvorlagen in einem Dokument darstellen.</span><span class="sxs-lookup"><span data-stu-id="aa40f-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Style" /> objects that represent both the built-in and user-defined styles in a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="aa40f-102">Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> -Eigenschaft, um die <b>Styles</b> -Auflistung zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="aa40f-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> property to return the <b>Styles</b> collection.</span></span></para>
+      <para><span data-ttu-id="aa40f-103">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> -Methode, um eine neue benutzerdefinierte Formatvorlage zu erstellen und Sie der <b>Styles</b> -Auflistung hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="aa40f-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> method to create a new user-defined style and add it to the <b>Styles</b> collection.</span></span></para>
+      <para><span data-ttu-id="aa40f-104">Verwenden Sie <b>Formatvorlagen</b>( <paramref name="index" /> ), wobei <paramref name="index" /> der Name der Formatvorlage, eine <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> Konstante oder eine Indexnummer ist, um ein einzelnes <b>Style</b> -Objekt zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="aa40f-104">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style name, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant or index number, to return a single <b>Style</b> object.</span></span> <span data-ttu-id="aa40f-105">Sie müssen die Rechtschreibung und die Abstände zwischen den Namen der Formatvorlage, aber nicht unbedingt die Groß-/Kleinschreibung exakt übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="aa40f-105">You must exactly match the spelling and spacing of the style name, but not necessarily its capitalization.</span></span></para>
+      <para><span data-ttu-id="aa40f-106">Die Indexnummer der Formatvorlage stellt die Position der Formatvorlage in der alphabetisch sortierten Liste der Formatvorlagennamen dar.</span><span class="sxs-lookup"><span data-stu-id="aa40f-106">The style index number represents the position of the style in the alphabetically sorted list of style names.</span></span> </para>
+      <para><span data-ttu-id="aa40f-107">Das <b>Styles</b> -Objekt ist nicht über das <see cref="T:Microsoft.Office.Interop.Word.Template" /> -Objekt verfügbar.</span><span class="sxs-lookup"><span data-stu-id="aa40f-107">The <b>Styles</b> object isn't available from the <see cref="T:Microsoft.Office.Interop.Word.Template" /> object.</span></span> <span data-ttu-id="aa40f-108">Sie können die-Methode jedoch verwenden, <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> um eine Vorlage als Dokument zu öffnen, damit Sie Formatvorlagen in der Vorlage ändern können.</span><span class="sxs-lookup"><span data-stu-id="aa40f-108">However, you can use the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method to open a template as a document so that you can modify styles in the template.</span></span></para>
+      <para><span data-ttu-id="aa40f-109">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> -Methode, um Formatvorlagen zwischen Dokumenten und Vorlagen zu kopieren.</span><span class="sxs-lookup"><span data-stu-id="aa40f-109">Use the <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> method to copy styles between documents and templates.</span></span> <span data-ttu-id="aa40f-110">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> -Methode, um die Formatvorlagen im aktiven Dokument so zu aktualisieren, dass Sie den Formatvorlagendefinitionen in der angefügten Vorlage entsprechen.</span><span class="sxs-lookup"><span data-stu-id="aa40f-110">Use the <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> method to update the styles in the active document to match the style definitions in the attached template.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Style Add([in]string Name, [in]object&amp; Type) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Optional ByRef Type As Object) As Style" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; Microsoft.Office.Interop.Word.Style" Usage="styles.Add (Name, Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,12 +54,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Type" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name"><span data-ttu-id="c9fbc-111"><b>String</b> erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-111">Required <b>String</b>.</span></span> <span data-ttu-id="c9fbc-112">Der Name der Zeichenfolge für die neue Formatvorlage.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-112">The string name for the new style.</span></span></param>
-        <param name="Type"><span data-ttu-id="c9fbc-113">Optionales <b>Objekt</b>.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-113">Optional <b>Object</b>.</span></span> <span data-ttu-id="c9fbc-114">Der Formatvorlagentyp der neuen Formatvorlage.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-114">The style type of the new style.</span></span> <span data-ttu-id="c9fbc-115">Kann eine <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> der folgenden Konstanten sein: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>oder <b>wdStyleTypeTable</b>.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-115">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> constants: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>, or <b>wdStyleTypeTable</b>.</span></span></param>
-        <summary><span data-ttu-id="c9fbc-116">Gibt einen <see cref="T:Microsoft.Office.Interop.Word.Style" /> Wert vom Typ Object zurück, der eine neue benutzerdefinierte Formatvorlage darstellt, die der Liste der Formatvorlagen hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Style" /> object that represents a new user-defined style added to the list of styles.</span></span></summary>
+        <param name="Name"><span data-ttu-id="aa40f-111"><b>String</b> erforderlich.</span><span class="sxs-lookup"><span data-stu-id="aa40f-111">Required <b>String</b>.</span></span> <span data-ttu-id="aa40f-112">Der Name der Zeichenfolge für die neue Formatvorlage.</span><span class="sxs-lookup"><span data-stu-id="aa40f-112">The string name for the new style.</span></span></param>
+        <param name="Type"><span data-ttu-id="aa40f-113">Optionales <b>Objekt</b>.</span><span class="sxs-lookup"><span data-stu-id="aa40f-113">Optional <b>Object</b>.</span></span> <span data-ttu-id="aa40f-114">Der Formatvorlagentyp der neuen Formatvorlage.</span><span class="sxs-lookup"><span data-stu-id="aa40f-114">The style type of the new style.</span></span> <span data-ttu-id="aa40f-115">Kann eine der folgenden Konstanten sein <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> : <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>oder <b>wdStyleTypeTable</b>.</span><span class="sxs-lookup"><span data-stu-id="aa40f-115">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> constants: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>, or <b>wdStyleTypeTable</b>.</span></span></param>
+        <summary><span data-ttu-id="aa40f-116">Gibt einen Wert <see cref="T:Microsoft.Office.Interop.Word.Style" /> vom Typ Object zurück, der eine neue benutzerdefinierte Formatvorlage darstellt, die der Liste der Formatvorlagen hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="aa40f-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Style" /> object that represents a new user-defined style added to the list of styles.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Styles.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c9fbc-117">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="aa40f-117">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="aa40f-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Styles.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,7 +117,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c9fbc-118">Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-118">Returns the number of items in the specified collection.</span></span> <span data-ttu-id="c9fbc-119">Schreibgeschützte <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-119">Read-only <b>Integer</b>.</span></span></summary>
+        <summary><span data-ttu-id="aa40f-118">Gibt die Anzahl der Elemente in der angegebenen Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="aa40f-118">Returns the number of items in the specified collection.</span></span> <span data-ttu-id="aa40f-119">Schreibgeschützte <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="aa40f-119">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Styles.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,10 +146,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c9fbc-120">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-120">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="c9fbc-121">Schreibgeschützte <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-121">Read-only <b>Integer</b>.</span></span></summary>
+        <summary><span data-ttu-id="aa40f-120">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="aa40f-120">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="aa40f-121">Schreibgeschützte <b>ganze Zahl</b>.</span><span class="sxs-lookup"><span data-stu-id="aa40f-121">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c9fbc-122">Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-122">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="c9fbc-123">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-123">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="c9fbc-124">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-124">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="c9fbc-125">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-125">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="c9fbc-126">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-126">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="aa40f-122">Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="aa40f-122">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="aa40f-123">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="aa40f-123">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="aa40f-124">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="aa40f-124">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="aa40f-125">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="aa40f-125">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="aa40f-126">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="aa40f-126">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Styles.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="styles.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Style ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Style" Usage="Microsoft.Office.Interop.Word.Styles.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,11 +210,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="c9fbc-127">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-127">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="c9fbc-128">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-128">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="aa40f-127">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="aa40f-127">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="aa40f-128">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="aa40f-128">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Styles.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,7 +243,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c9fbc-129">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="c9fbc-129">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="aa40f-129">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="aa40f-129">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

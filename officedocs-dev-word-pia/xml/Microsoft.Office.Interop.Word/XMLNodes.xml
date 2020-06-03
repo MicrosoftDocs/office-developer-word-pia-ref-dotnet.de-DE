@@ -1,9 +1,10 @@
 <Type Name="XMLNodes" FullName="Microsoft.Office.Interop.Word.XMLNodes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb0a31f85f85e8cdffe7c844d4d494ab8d5858b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142626" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f843e090d441e8d069245cd7dee97c3e3c7f9de" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="de-DE" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926710" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNodes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLNodes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XMLNodes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="3f520-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Objekten, die die Knoten in der Strukturansicht des Aufgabenbereichs XML-Struktur darstellt, der die Elemente angibt, die ein Benutzer auf ein Dokument angewendet hat.</span><span class="sxs-lookup"><span data-stu-id="3f520-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objects that represents the nodes in the tree view of the XML Structure task pane, which indicates the elements that a user has applied to a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="3f520-102">Jeder Knoten in der Strukturansicht ist eine Instanz eines <b>XMLNode</b>-Objekts.</span><span class="sxs-lookup"><span data-stu-id="3f520-102">Each node in the tree view is an instance of an <b>XMLNode</b> object.</span></span> <span data-ttu-id="3f520-103">Die Hierarchie in der Strukturansicht zeigt an, ob ein Knoten untergeordnete Knoten enthält.</span><span class="sxs-lookup"><span data-stu-id="3f520-103">The hierarchy in the tree view indicates whether a node contains child nodes.</span></span></para>
-      <para><span data-ttu-id="3f520-104">Sie können eine XMLNodes-Auflistung für eine Auswahl, einen Bereich oder das gesamte Dokument zurückgeben. <b></b></span><span class="sxs-lookup"><span data-stu-id="3f520-104">You can return an <b>XMLNodes</b> collection for a selection, a range, or the entire document.</span></span> <span data-ttu-id="3f520-105">Die Reihenfolge, in der die <b>XMLNode</b>-Objekte in der <b>XMLNodes</b>-Auflistung angezeigt werden, entspricht der Reihenfolge, in der ihre Start- oder Endtags innerhalb der angegebenen Auswahl, des Bereichs oder des Dokuments enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="3f520-105">The order in which the <b>XMLNode</b> objects appear in the <b>XMLNodes</b> collection is the same order in which their start or end tags appear within the specified selection, range, or document.</span></span></para>
-      <para><span data-ttu-id="3f520-106">Verwenden Sie <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> die-Eigenschaft der XMLNodes-Auflistung, um ein einzelnes <b>XmlNode</b> -Objekt zurückzugeben. <b></b></span><span class="sxs-lookup"><span data-stu-id="3f520-106">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> property of the <b>XMLNodes</b> collection to return an individual <b>XMLNode</b> object.</span></span> <span data-ttu-id="3f520-107">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> die-Methode, um zu überprüfen, ob ein XML-Element gemäß den angewendeten Schemas gültig ist und dass alle erforderlichen untergeordneten Elemente vorhanden sind und in der erforderlichen Reihenfolge sind.</span><span class="sxs-lookup"><span data-stu-id="3f520-107">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> method to verify that an XML element is valid according to the applied schemas and that any required child elements exist and are in the required order.</span></span> <span data-ttu-id="3f520-108">Nachdem Sie die <b>Validate</b> -Methode ausgeführt haben, <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> verwenden Sie die-Eigenschaft, um zu überprüfen <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> , ob ein Element gültig ist, und die-Eigenschaft, um dem Benutzer eine Meldung darüber anzuzeigen, was der Benutzer beheben muss, damit die XML im Dokument mit den XML-Schema Regeln übereinstimmt.</span><span class="sxs-lookup"><span data-stu-id="3f520-108">Once you run the <b>Validate</b> method, use the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> property to verify whether an element is valid and the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> property to display a message to the user as to what the user needs to fix in order to make the XML in the document conform to the XML schema rules.</span></span></para>
-      <para><span data-ttu-id="3f520-109">Verwenden Sie <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> die-Methode, um ein XML-Element zu einer Auswahl, einem Bereich oder dem Dokument hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="3f520-109">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> method to add an XML element to a selection, a range, or the document.</span></span></para>
-      <para><span data-ttu-id="3f520-110">Da bei XML die Groß-/Kleinschreibung beachtet wird, muss das im- <paramref name="Name" /> Parameter der <b>Add</b> -Methode eingegebene XML-Element exakt so eingegeben werden, wie es in dem <paramref name="Namespace" /> im Parameter referenzierten Schema angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="3f520-110">Because XML is case-sensitive, the XML element as typed in the <paramref name="Name" /> parameter of the <b>Add</b> method must be typed exactly as it appears in the schema referenced in the <paramref name="Namespace" /> parameter.</span></span></para>
+    <summary><span data-ttu-id="5be06-101">Eine Auflistung von <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Objekten, die die Knoten in der Strukturansicht des Aufgabenbereichs XML-Struktur darstellt, der die Elemente angibt, die ein Benutzer auf ein Dokument angewendet hat.</span><span class="sxs-lookup"><span data-stu-id="5be06-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objects that represents the nodes in the tree view of the XML Structure task pane, which indicates the elements that a user has applied to a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="5be06-102">Jeder Knoten in der Strukturansicht ist eine Instanz eines <b>XMLNode</b>-Objekts.</span><span class="sxs-lookup"><span data-stu-id="5be06-102">Each node in the tree view is an instance of an <b>XMLNode</b> object.</span></span> <span data-ttu-id="5be06-103">Die Hierarchie in der Strukturansicht zeigt an, ob ein Knoten untergeordnete Knoten enthält.</span><span class="sxs-lookup"><span data-stu-id="5be06-103">The hierarchy in the tree view indicates whether a node contains child nodes.</span></span></para>
+      <para><span data-ttu-id="5be06-104">Sie können eine <b>XMLNodes</b> -Auflistung für eine Auswahl, einen Bereich oder das gesamte Dokument zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="5be06-104">You can return an <b>XMLNodes</b> collection for a selection, a range, or the entire document.</span></span> <span data-ttu-id="5be06-105">Die Reihenfolge, in der die <b>XMLNode</b>-Objekte in der <b>XMLNodes</b>-Auflistung angezeigt werden, entspricht der Reihenfolge, in der ihre Start- oder Endtags innerhalb der angegebenen Auswahl, des Bereichs oder des Dokuments enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="5be06-105">The order in which the <b>XMLNode</b> objects appear in the <b>XMLNodes</b> collection is the same order in which their start or end tags appear within the specified selection, range, or document.</span></span></para>
+      <para><span data-ttu-id="5be06-106">Verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> -Eigenschaft der <b>XMLNodes</b> -Auflistung, um ein einzelnes <b>XmlNode</b> -Objekt zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="5be06-106">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> property of the <b>XMLNodes</b> collection to return an individual <b>XMLNode</b> object.</span></span> <span data-ttu-id="5be06-107">Verwenden <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> Sie die-Methode, um zu überprüfen, ob ein XML-Element gemäß den angewendeten Schemas gültig ist und dass alle erforderlichen untergeordneten Elemente vorhanden sind und in der erforderlichen Reihenfolge sind.</span><span class="sxs-lookup"><span data-stu-id="5be06-107">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> method to verify that an XML element is valid according to the applied schemas and that any required child elements exist and are in the required order.</span></span> <span data-ttu-id="5be06-108">Nachdem Sie die <b>Validate</b> -Methode ausgeführt haben, verwenden Sie die <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> -Eigenschaft, um zu überprüfen, ob ein Element gültig ist, und die <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> -Eigenschaft, um dem Benutzer eine Meldung darüber anzuzeigen, was der Benutzer beheben muss, damit die XML im Dokument mit den XML-Schema Regeln übereinstimmt.</span><span class="sxs-lookup"><span data-stu-id="5be06-108">Once you run the <b>Validate</b> method, use the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> property to verify whether an element is valid and the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> property to display a message to the user as to what the user needs to fix in order to make the XML in the document conform to the XML schema rules.</span></span></para>
+      <para><span data-ttu-id="5be06-109">Verwenden Sie die <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> -Methode, um ein XML-Element zu einer Auswahl, einem Bereich oder dem Dokument hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="5be06-109">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> method to add an XML element to a selection, a range, or the document.</span></span></para>
+      <para><span data-ttu-id="5be06-110">Da bei XML die Groß-/Kleinschreibung beachtet wird, muss das im- <paramref name="Name" /> Parameter der <b>Add</b> -Methode eingegebene XML-Element exakt so eingegeben werden, wie es in dem im Parameter referenzierten Schema angezeigt wird <paramref name="Namespace" /> .</span><span class="sxs-lookup"><span data-stu-id="5be06-110">Because XML is case-sensitive, the XML element as typed in the <paramref name="Name" /> parameter of the <b>Add</b> method must be typed exactly as it appears in the schema referenced in the <paramref name="Namespace" /> parameter.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNode Add([in]string Name, [in]string Namespace, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Namespace As String, Optional ByRef Range As Object) As XMLNode" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * obj -&gt; Microsoft.Office.Interop.Word.XMLNode" Usage="xMLNodes.Add (Name, Namespace, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -55,13 +57,13 @@
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
         <Parameter Name="Namespace" Type="System.String" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name">To be added.</param>
         <param name="Namespace">To be added.</param>
         <param name="Range">To be added.</param>
-        <summary><span data-ttu-id="3f520-111">Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="3f520-111">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="5be06-111">Dieses Objekt, dieses Mitglied oder diese Aufzählung ist veraltet und kann nicht in Ihrem Code verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="5be06-111">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLNodes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,7 +92,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3f520-112">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="3f520-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="5be06-112">Gibt ein <see cref="T:Microsoft.Office.Interop.Word.Application" /> Objekt zurück, das die Microsoft Word Anwendung darstellt.</span><span class="sxs-lookup"><span data-stu-id="5be06-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.XMLNodes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,7 +121,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3f520-113">Ruft die Anzahl der Elemente in der angegebenen Auflistung ab.</span><span class="sxs-lookup"><span data-stu-id="3f520-113">Gets the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="5be06-113">Ruft die Anzahl der Elemente in der angegebenen Auflistung ab.</span><span class="sxs-lookup"><span data-stu-id="5be06-113">Gets the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLNodes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,10 +150,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3f520-114">Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="3f520-114">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="5be06-114">Ruft eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="5be06-114">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="3f520-115">Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="3f520-115">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="3f520-116">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="3f520-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="3f520-117">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="3f520-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="3f520-118">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="3f520-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="3f520-119">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="3f520-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="5be06-115">Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft die hexadezimale Zahl 4D535744 zurück, die die Zeichenfolge "MSWD" darstellt.</span><span class="sxs-lookup"><span data-stu-id="5be06-115">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="5be06-116">Der Wert kann auch durch die <b>wdCreatorCode</b>-Konstante dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="5be06-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="5be06-117">Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt.</span><span class="sxs-lookup"><span data-stu-id="5be06-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="5be06-118">Beispielsweise hat Microsoft Word den Erstellercode MSWD.</span><span class="sxs-lookup"><span data-stu-id="5be06-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="5be06-119">Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe von Microsoft Office Macintosh Edition enthalten.</span><span class="sxs-lookup"><span data-stu-id="5be06-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNodes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xMLNodes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ default[int] { Microsoft::Office::Interop::Word::XMLNode ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNodes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,8 +217,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="3f520-120">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="3f520-120">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="3f520-121">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="3f520-121">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="5be06-120">Ein <b>Objekt</b> , das die Ordnungsposition angibt, oder eine Zeichenfolge, die den Namen des einzelnen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="5be06-120">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="5be06-121">Gibt ein einzelnes Objekt in einer Auflistung zurück.</span><span class="sxs-lookup"><span data-stu-id="5be06-121">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLNodes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,7 +247,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="3f520-122">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="3f520-122">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5be06-122">Gibt ein Objekt zurück, das das übergeordnete Objekt des angegebenen Objekts darstellt.</span><span class="sxs-lookup"><span data-stu-id="5be06-122">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
